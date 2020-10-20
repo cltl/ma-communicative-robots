@@ -1,18 +1,13 @@
 {
-    "sui": {
-        "sui": "scene1",
-        "modality": "jpg",
-        "time_begin": 1603139705,
-        "time_end": 1603139705
-    },
-    "suifile": "data/piek.jpg",
+    "sui": "scene1",
+    "suifile": "data/pexels-victoria-borodinova-1648358.jpg",
     "time_begin": 1603139705,
     "time_end": 1603139705,
     "box": [
-        1,
-        18,
-        21,
-        18
+        4,
+        8,
+        11,
+        8
     ],
     "speaker": {
         "url": "http://leolani.cltl.nl/people/piek",
