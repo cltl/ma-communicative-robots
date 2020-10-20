@@ -42,7 +42,8 @@ class friend:
 
 # Define ImageAnnotation Class        
 class ImageAnnotation:
-    def __init__(self, sui, suifile, time_begin, time_end, boxsegment, speaker, emotion):
+    def __init__(self, sui, suifile, time_begin, time_end, boxsegment, speaker, 
+                 emotion):
         self.sui = sui
         self.suifile = suifile
         self.time_begin = time_begin
@@ -75,7 +76,8 @@ class ImageAnnotation:
         
 # Define ImageAnnotation Class        
 class TextAnnotation:
-    def __init__(self, sui, suifile, time_begin, time_end, utterance, tokens, speaker, emotion, mention, referent):
+    def __init__(self, sui, suifile, time_begin, time_end, utterance, tokens, 
+                 speaker, emotion, mention, referent):
 
         self.sui = sui
         self.suifile = suifile
@@ -92,7 +94,7 @@ class TextAnnotation:
     def print(self):
         print('sui', self.sui) 
         print('sui_file', self.suifile)
-        print('time_start', self.time_begin)
+        print('time_begin', self.time_begin)
         print('time_end', self.time_end)
         print('speaker', self.speaker)
         print('emotion', self.emotion)
@@ -107,12 +109,12 @@ class TextAnnotation:
         jsonout["sui"] = self.sui
         jsonout["suifile"] = self.suifile
         jsonout["time_begin"] = self.time_begin
-        jsonout["time_end"] = self.time_end       
+        jsonout["time_end"] = self.time_end    
+        jsonout["speaker"] = self.speaker
+        jsonout["emotion"] = self.emotion
         jsonout["utterance"] = self.utterance
         jsonout["tokens"] = self.tokens      
         jsonout["mention"] = self.mention      
         jsonout["referent"] = self.referent  
-        jsonout["speaker"] = self.speaker
-        jsonout["emotion"] = self.emotion
         return jsonout
 
