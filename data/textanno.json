@@ -1,8 +1,8 @@
 {
     "sui": "scene1",
     "suifile": "data/pexels-victoria-borodinova-1648358.jpg",
-    "time_begin": 1603139705,
-    "time_end": 1603139705,
+    "time_begin": 1603139850,
+    "time_end": 1603149890,
     "utterance": "That is my brother Jim",
     "tokens": [
         [
@@ -49,7 +49,10 @@
     },
     "emotion": "joy",
     "mention": [
-        19,
+        [
+            11,
+            18
+        ],
         "brother"
     ],
     "referent": {

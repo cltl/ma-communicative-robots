@@ -3,11 +3,11 @@
         "sui": "scene1",
         "modality": "jpg",
         "time_begin": 1603139705,
-        "time_end": 1603140000
+        "time_end": 1603139705
     },
     "suifile": "data/piek.jpg",
-    "time_begin": 1603139800,
-    "time_end": 1603149850,
+    "time_begin": 1603139705,
+    "time_end": 1603139705,
     "box": [
         1,
         18,
