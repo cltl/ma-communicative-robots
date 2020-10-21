@@ -1,44 +1,51 @@
 {
     "sui": "scene1",
-    "suifile": "data/pexels-victoria-borodinova-1648358.jpg",
+    "suifile": "",
     "time_begin": 1603139850,
     "time_end": 1603149890,
+    "chat_id": "1",
+    "utterance_id": "1",
     "utterance": "That is my brother Jim",
     "tokens": [
         [
+            0,
             [
                 0,
                 4
             ],
-            0
+            "That"
         ],
         [
+            1,
             [
                 5,
                 7
             ],
-            1
+            "is"
         ],
         [
+            2,
             [
                 8,
                 10
             ],
-            2
+            "my"
         ],
         [
+            3,
             [
                 11,
                 18
             ],
-            3
+            "brother"
         ],
         [
+            4,
             [
                 19,
                 22
             ],
-            4
+            "Jim"
         ]
     ],
     "speaker": {
@@ -48,17 +55,37 @@
         "gender": "male"
     },
     "emotion": "joy",
-    "mention": [
-        [
-            11,
-            18
-        ],
-        "brother"
+    "mentions": [
+        {
+            "token_id": 4,
+            "offset": [
+                19,
+                22
+            ],
+            "phrase": "Jim",
+            "referent": {
+                "url": "http://leolani.cltl.nl/people/Jim",
+                "name": "Jim",
+                "age": "32",
+                "gender": "male"
+            }
+        }
     ],
-    "referent": {
-        "url": "http://leolani.cltl.nl/people/John",
-        "name": "John",
-        "age": "32",
-        "gender": "male"
-    }
+    "triples": [
+        [
+            "brother-of",
+            {
+                "url": "http://leolani.cltl.nl/people/piek",
+                "name": "piek",
+                "age": "59",
+                "gender": "male"
+            },
+            {
+                "url": "http://leolani.cltl.nl/people/Jim",
+                "name": "Jim",
+                "age": "32",
+                "gender": "male"
+            }
+        ]
+    ]
 }

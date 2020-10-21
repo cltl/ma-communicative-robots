@@ -9,11 +9,6 @@
         11,
         8
     ],
-    "speaker": {
-        "url": "http://leolani.cltl.nl/people/piek",
-        "name": "piek",
-        "age": "59",
-        "gender": "male"
-    },
+    "speaker": null,
     "emotion": "joy"
 }
