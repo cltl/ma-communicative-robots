@@ -1,0 +1,24 @@
+{
+    "sui": {
+        "sui": "scene1",
+        "modality": "jpg",
+        "time_begin": 1603139705,
+        "time_end": 1603140000
+    },
+    "suifile": "data/piek.jpg",
+    "time_begin": 1603139800,
+    "time_end": 1603149850,
+    "bbox": [
+        1,
+        18,
+        21,
+        18
+    ],
+    "speaker": {
+        "url": "http://leolani.cltl.nl/people/piek",
+        "name": "piek",
+        "age": "59",
+        "gender": "male"
+    },
+    "emotion": "joy"
+}
