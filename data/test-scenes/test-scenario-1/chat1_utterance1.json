@@ -1,6 +1,6 @@
 {
-    "sui": "scene1",
-    "suifile": "",
+    "sui": "test-scenario-1",
+    "suifile": "chat1_utterance1.txt",
     "time_begin": 1603139850,
     "time_end": 1603149890,
     "chat_id": "1",

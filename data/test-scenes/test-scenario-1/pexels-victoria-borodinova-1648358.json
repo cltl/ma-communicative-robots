@@ -1,6 +1,6 @@
 {
-    "sui": "scene1",
-    "suifile": "data/pexels-victoria-borodinova-1648358.jpg",
+    "sui": "test-scenario-1",
+    "suifile": "pexels-victoria-borodinova-1648358.jpg",
     "time_begin": 1603139840,
     "time_end": 1603149860,
     "box": [

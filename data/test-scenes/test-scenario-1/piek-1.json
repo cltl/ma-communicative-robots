@@ -1,11 +1,6 @@
 {
-    "sui": {
-        "sui": "scene1",
-        "modality": "jpg",
-        "time_begin": 1603139705,
-        "time_end": 1603140000
-    },
-    "suifile": "data/piek.jpg",
+    "sui": "test-scenario-1",
+    "suifile": "piek-1.jpg",
     "time_begin": 1603139800,
     "time_end": 1603149850,
     "box": [
