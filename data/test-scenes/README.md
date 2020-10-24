@@ -11,7 +11,7 @@ Each scenario contains data files for 4 possible modalities and a single corresp
 Assume our scenario folder has the name "my-first-scenario". This is how the data structure could look like:
 
 
-
+```
 my-first-scenario
 	my-first-scenario.json --> overall data on the scenario
 	conversation-in-text.csv --> csv file with utterances from conversations that take place in this scenario
@@ -26,5 +26,5 @@ my-first-scenario
 	audio2.wav
 	audio3.wav
 	audion.json
-
+```
 
