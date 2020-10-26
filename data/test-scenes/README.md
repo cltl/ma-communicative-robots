@@ -14,17 +14,51 @@ Assume our scenario folder has the name "my-first-scenario". This is how the dat
 ```
 my-first-scenario
 	my-first-scenario.json --> overall data on the scenario
+    
+    #### conversations in text
 	conversation-in-text.csv --> csv file with utterances from conversations that take place in this scenario
 	conversation-in-text.json --> meta data and annotations on the conversation and each unit within the conversations, usually the utterances of each turn
-	interaction-video.mpeg4 --> video with the interaction
+
+    #### video shoot of the scenario
+    interaction-video.mpeg4 --> video with the interaction
 	interaction-video.json
-	image1.jpg
+
+    #### stills from the video signals
+    image1.jpg --> images representing stills of situations, possibly drawn from the video
 	image2.jpg
 	image3.jpg
 	images.json
-	audio1.wav
+
+    #### audio files possibly representing speech
+    audio1.wav --> audio files representing sound events, possibly speech acts or utterances 
 	audio2.wav
 	audio3.wav
 	audion.json
 ```
+
+The file "my-first-scenario.json" describes the scenario in terms of meta data using standard data categories (Dublin core and CMDI) but also the 'spatial and temporal comtainers' with which the scenario takes place.
+
+<ol>
+    <li>Spatial container: geo-location and coordinates that define the area, possibly the name that identifies the area
+    <li>Temporal container: date and begin and end time within which events take place
+</ol>
+
+The spatial and temporal containers define the primary context for interpretating any data in the scenario. In addition, the scenario can also have a specification of the participants, such as:
+
+<ol>
+    <li>Identity of the agent
+    <li>Identity of the speaker
+    <li>Any other people present
+    <li>Objects and their spatial orientation
+</ol>
+
+Although the data can be streamed as in video and audio, any system needs to define units within the stream to interpret states and changes between these states. Therefore, we can represent the scenario by the video itself or by a collection of stills in the form of images taken at different time points.
+
+## Mentions
+
+## Identities
+
+## Properties and relations
+
+## Annotations
 
