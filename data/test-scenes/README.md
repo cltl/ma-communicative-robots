@@ -60,8 +60,23 @@ The content of the scenario is represented by a series of files in the scenario 
 
 Although the data can be streamed as in video and audio, any system needs to define units within the stream to interpret states and changes between these states. Therefore, we can represent the scenario by the video itself or by a collection of stills in the form of images taken at different time points.
 
+Through the spatial and temporal grounding of each signal, we can organise all data as a two dimensional matrix with the rows presenting temporal units and each modality as a signal column with possible data elements for each row:
+
+```
+time | video | audio | text  | image |
+1:02 | ...   |       |       |       |
+1:03 | ...   | wav   |       | jpg   |
+1:04 | ...   |       | utter | jpg   |
+1:05 | ...   | wav   | utter |       |
+1:06 | ...   |       |       | jpg   |
+1:07 | ...   | wav   | utter |       |
+```
+
 
 ## Annotations
+The JSON files contain annotations of signals. Each annotation defines a segment from the signal and an interpretation label of the segements. In the case of text, segements are defined by the offsets. In the case of images, these are box coordinates.
+
+Conversations can be represented as a CSV file with all utterances, identifiers and temporal grounding.
 
 ### Mentions
 
