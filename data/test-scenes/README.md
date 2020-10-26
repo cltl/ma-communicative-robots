@@ -27,13 +27,13 @@ my-first-scenario
     image1.jpg --> images representing stills of situations, possibly drawn from the video
 	image2.jpg
 	image3.jpg
-	images.json
+	image.json
 
     #### audio files possibly representing speech
     audio1.wav --> audio files representing sound events, possibly speech acts or utterances 
 	audio2.wav
 	audio3.wav
-	audion.json
+	audio.json
 ```
 
 ## Context
@@ -53,13 +53,20 @@ The spatial and temporal containers define the primary context for interpretatin
     <li>Objects and their spatial orientation
 </ol>
 
+In addition to the meta data, the JSON file of the scenario provides an overview of all the data files in the folder and their grounding to the spatial and temporal containers. These data files represent all the recorded signals in the scenario as its content. Each of these content file is further described in specific JSON files.
+
+## Content
+The content of the scenario is represented by a series of files in the scenario folder representing the data in different modalities. In the above example, we have separate files for the conversations, a video stream of the interaction, images of scenarios, and audio files. Each modality has a JSON file that describes the data that contain signals and any interpretation of the signal in the form of an annotation. Any signal is grounded in the spatial and temporal container using specific data elements in the JSON file. Similarly, the 
+
 Although the data can be streamed as in video and audio, any system needs to define units within the stream to interpret states and changes between these states. Therefore, we can represent the scenario by the video itself or by a collection of stills in the form of images taken at different time points.
 
-## Mentions
-
-## Identities
-
-## Properties and relations
 
 ## Annotations
+
+### Mentions
+
+### Identities
+
+### Properties and relations
+
 
