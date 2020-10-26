@@ -1,10 +1,10 @@
-Multimodal Interaction Data Representation (MIDR)
+# Multimodal Interaction Data Representation (MIDR)
 
 This data folder contains test data for multimodal interaction systems with robots and virtual agents. This data can be rendered by interacting system that record the interaction and it can be annotated with interpretations.
 
 The data consists of a series of folders, each folder representing a single scenario with multimodal data files and JSON files that contain meta data on the data files and annotations of units within the multimodal data.
 
-Scenario structure
+## Scenario structure
 
 Each scenario contains data files for 4 possible modalities and a single corresponding JSON file that contains the meta data and the annotations for all units in that modality. Furthermore, there is a separate JSON file with the meta data on the complete scenario. This JSON file has the same name as the folder name of the scenario.
 
@@ -36,6 +36,7 @@ my-first-scenario
 	audion.json
 ```
 
+## Context
 The file "my-first-scenario.json" describes the scenario in terms of meta data using standard data categories (Dublin core and CMDI) but also the 'spatial and temporal comtainers' with which the scenario takes place.
 
 <ol>
