@@ -60,10 +60,11 @@ The content of the scenario is represented by a series of files in the scenario 
 
 Although the data can be streamed as in video and audio, any system needs to define units within the stream to interpret states and changes between these states. Therefore, we can represent the scenario by the video itself or by a collection of stills in the form of images taken at different time points.
 
-Through the spatial and temporal grounding of each signal, we can organise all data as a two dimensional matrix with the rows presenting temporal units and each modality as a signal column with possible data elements for each row:
+Through the spatial and temporal grounding of each signal, we can organise all data as a two dimensional matrix with the rows presenting temporal units and each modality as a signal column with possible data elements for each row. The next example shows a temporal ruler with 6 time points and 4 modalities of signals grounded to these units:
 
 ```
 time | video | audio | text  | image |
+-------------------------------------
 1:02 | ...   |       |       |       |
 1:03 | ...   | wav   |       | jpg   |
 1:04 | ...   |       | utter | jpg   |
@@ -72,11 +73,12 @@ time | video | audio | text  | image |
 1:07 | ...   | wav   | utter |       |
 ```
 
+We assume that the video is a continuous stream. The other modalities fill separate slots at time points. The temporal ruler (the first column) can have any granularity. It can be used to align the different signals across the modalities. 
 
 ## Annotations
 The JSON files contain annotations of signals. Each annotation defines a segment from the signal and an interpretation label of the segements. In the case of text, segements are defined by the offsets. In the case of images, these are box coordinates.
 
-Conversations can be represented as a CSV file with all utterances, identifiers and temporal grounding.
+Conversations can be represented as a CSV file with all utterances, identifiers and temporal grounding. The JSON file describes each utterance with the CSV and provided the grounding and annotations for each.
 
 ### Mentions
 
