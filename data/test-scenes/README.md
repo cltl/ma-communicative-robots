@@ -56,11 +56,11 @@ The spatial and temporal containers define the primary context for interpretatin
 In addition to the meta data, the JSON file of the scenario provides an overview of all the data files in the folder and their grounding to the spatial and temporal containers. These data files represent all the recorded signals in the scenario as its content. Each of these content file is further described in specific JSON files.
 
 ## Content
-The content of the scenario is represented by a series of files in the scenario folder representing the data in different modalities. In the above example, we have separate files for the conversations, a video stream of the interaction, images of scenarios, and audio files. Each modality has a JSON file that describes the data that contain signals and any interpretation of the signal in the form of an annotation. Any signal is grounded in the spatial and temporal container using specific data elements in the JSON file. Similarly, the 
+The content of the scenario is represented by a series of files in the scenario folder representing the data in different modalities. In the above example, we have separate files for the conversations, a video stream of the interaction, images of scenarios, and audio files. Each modality has a JSON file that describes the data that contain signals and any interpretation of the signal in the form of an annotation. Any signal is grounded in the spatial and temporal container using specific data elements in the JSON file. 
 
-Although the data can be streamed as in video and audio, any system needs to define units within the stream to interpret states and changes between these states. Therefore, we can represent the scenario by the video itself or by a collection of stills in the form of images taken at different time points.
+Although the data can be streamed as in video and audio, any system needs to define units within the stream to interpret states and changes between these states. Therefore, we can not only represent a scenario by the video but also through a collection of stills in the form of images taken at different time points, as a collection of audio files for speech interaction or as the transcribed text of the audio to represent a dialogue. 
 
-Through the spatial and temporal grounding of each signal, we can organise all data as a two dimensional matrix with the rows presenting temporal units and each modality as a signal column with possible data elements for each row. The next example shows a temporal ruler with 6 time points and 4 modalities of signals grounded to these units:
+Through the spatial and temporal grounding of each of these data files (treated as a signal), they can be organised through a a two dimensional matrix (T x M), where T is the temporal ruler segmenting time in Tn units and M is a series of modalities with data files at the time points in the ruler. The next example shows such a Matrix with a temporal ruler of 6 time points and 4 modalities of signals grounded to these units:
 
 ```
 time | video | audio | text  | image |
@@ -73,17 +73,46 @@ time | video | audio | text  | image |
 1:07 | ...   | wav   | utter |       |
 ```
 
-We assume that the video is a continuous stream. The other modalities fill separate slots at time points. The temporal ruler (the first column) can have any granularity. It can be used to align the different signals across the modalities. 
+We assume that the video is a continuous stream from begin to end which is not cut to the time points. However, the other modalities fill separate slots at the time points, where we do not necessarily data in each time point. The temporal ruler (the first column) aligns the different signals across the modalities. This temporal ruler can have any granularity, in this example it is by minutes.
 
 ## Annotations
-The JSON files contain annotations of signals. Each annotation defines a segment from the signal and an interpretation label of the segements. In the case of text, segements are defined by the offsets. In the case of images, these are box coordinates.
 
-Conversations can be represented as a CSV file with all utterances, identifiers and temporal grounding. The JSON file describes each utterance with the CSV and provided the grounding and annotations for each.
+In addition to the modality data files, we have JSON files for each modality with annotations and meta data. Meta data captures the type of modality, quality, ownership, source identifiers, etc. The annotations relate a segment from the media file or signal to an interpretation. In the case of text, these segments are defined by offsets in the text source file. In the case of images, these are box coordinates in the image file.
+
+The complete conversation for a scenario can be represented through a single CSV file with all utterances, identifiers and temporal grounding on separate rows. The JSON file describes each utterance within the CSV and provides the spatial and temporal grounding within the scenario. In addition, the content of the utterance is annotated by a series of labels related to the tokens from text, whereas the tokens are grounded through offsets (following a layer annotation approach).
+
 
 ### Mentions
 
+The annotation labels can represent any type of interpretation, ranging from emotions to people or objects and events. Since our models need to relate interpretations across modalities, some of these annotations need to identify instances of people and objects depicted in the visual world. Consider the following examples: 
+
+* "That is my son sitting next to me"
+* "Sam is eating a sandwich"
+
+An annotation of these utterances could define the tokens "my son" as making reference to a person who is a male child of me (the speaker). Similarly, the token "Sam" can be annotated as the name of a person. 
+
+Similary, we can annote certain areas in images as representing people of certain age or gender, surrounded by objects that are annotated with object labels. By annotating segments in the signal with interpretation labels, we indicate the mentions of things in signals.
+
 ### Identities
 
-### Properties and relations
+It is however not enough to mark "my son" as making reference to a person or "Sam" as a named entity expression. We also need to link these expressions to the actualy people in our shared world. For this, we follow the GAF/GRaSP framework (Fokkens et al, 2013, 2017) that makes a distinction between mentions in texts and a representation of the invidiuals these mentions refer to. Individuals are represented through unique resource identifiers or URIs following Semantic Web standards. Since both "my son" and "Sam" refer to the same URI, they thus become coreferential.
+
+By following the same procedure for other modalities, we thus can ground the text mentions to visual coordinates, such as a box segment in an image, which is labeled as a person with an age and gender but also annoted with the URI representing the same individual.
+
+### Properties and relations as RDF triples
+
+On top of the people and objects depicted or mentioned, there may be particular relations expressed, such as "eating" the sandwich or "throwing" a ball. Such relations and properties can be seen as states of events and can be annotated as well although their identity is more difficult to establish and represented by a URI. Within our model, we represent the mentioning of these relations and properties through RDF triples, where our identified people and objects fill the subject and object positions and the relations and properties form the predicates. Likewise, the expression "my son" is eventually mapped to the following triples:
+
+```
+    :my-uri   parent-of   :sam
+    :sam      gender      male
+    :sam      son-of      :my-uri
+```
+
+The JSON annotations will also include such triples as the result of interpreting the signals to explicit knowledge that is stored in triple store.
 
 
+## References
+
+* A. Fokkens, M. van Erp, P. Vossen, S. Tonelli, W. R. van Hage, L. Serafini, R. Sprugnoli, and J. Hoeksema, “Gaf: a grounded annotation framework for events,” in Proceedings of the 1st workshop on events: definition, detection, coreference, and representation at the conference of the north american chapter of the association for computational linguistics: human language technologies (naacl2013), Atlanta, GA, USA, 2013
+* A. Fokkens, P. Vossen, M. Rospocher, R. Hoekstra, and W. van Hage, “Grasp: grounded representation and source perspective,” in Proceedings of knowrsh, Varna, Bulgaria, 2017. 
