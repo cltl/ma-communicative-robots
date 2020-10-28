@@ -1,4 +1,5 @@
 # Define Annotation Class
+import os
 import enum
 import json
 import uuid
@@ -120,7 +121,7 @@ class Object:
 
 
 class Person:
-    def __init__(self, id: Union[uuid.UUID, None], name: str, age: int, gender: Gender, emotion: Emotion):
+    def __init__(self, id: Union[uuid.UUID, str, None], name: str, age: int, gender: Gender, emotion: Emotion):
         self.id = id if id else uuid.uuid4()
         self.name = name
         self.age = age
@@ -167,7 +168,7 @@ class SpeakerAnnotation(Generic[T]):
 
 # Does it makes sense to separate annotations
 class UtteranceAnnotation:
-    def __init__(self, chat_id: Union[uuid.UUID, None], utterance_id: [uuid.UUID, None], utterance: str,
+    def __init__(self, chat_id: Union[uuid.UUID, str, None], utterance_id: [uuid.UUID, str, None], utterance: str,
                  tokens: Iterable[Tuple[(str, OffsetSegment)]], speaker: Friend, emotion: Emotion, mentions: Iterable[Mention]) -> None:
         self.chat_id = chat_id if chat_id else uuid.uuid4()
         self.utterance_id = utterance_id if utterance_id else uuid.uuid4()
@@ -179,7 +180,7 @@ class UtteranceAnnotation:
 
 
 class Signal(TemporalContainer):
-    def __init__(self, id: Union[uuid.UUID, None], modality: Modality, time: TimeSegment, files: Iterable[str]) -> None:
+    def __init__(self, id: Union[uuid.UUID, str, None], modality: Modality, time: TimeSegment, files: Iterable[str]) -> None:
         self.id = id if id else uuid.uuid4()
         self.modality = modality
         self.time = time
@@ -188,7 +189,7 @@ class Signal(TemporalContainer):
 
 
 class TextSignal(Signal):
-    def __init__(self, id: Union[uuid.UUID, None], time: TimeSegment, files: Iterable[str],
+    def __init__(self, id: Union[uuid.UUID, str, None], time: TimeSegment, files: Iterable[str],
                  utterances: Iterable[UtteranceAnnotation], triples: Iterable[Triple]):
         super().__init__(id, Modality.TEXT, time, files)
         self.utterances = utterances
@@ -196,7 +197,7 @@ class TextSignal(Signal):
 
 
 class ImageSignal(Signal):
-    def __init__(self, id: Union[uuid.UUID, None], time: TimeSegment, files: Iterable[str], emotion: Emotion, speaker: SpeakerAnnotation) -> None:
+    def __init__(self, id: Union[uuid.UUID, str, None], time: TimeSegment, files: Iterable[str], emotion: Emotion, speaker: SpeakerAnnotation) -> None:
         super().__init__(id, Modality.IMAGE, time, files)
         # TODO speaker and image should have emotion?
         self.speaker = speaker
@@ -205,15 +206,39 @@ class ImageSignal(Signal):
 
 # TODO
 class AudioSignal(Signal):
-    def __init__(self, id: Union[uuid.UUID, None], time: TimeSegment, files: Iterable[str], speaker: SpeakerAnnotation) -> None:
+    def __init__(self, id: Union[uuid.UUID, str, None], time: TimeSegment, files: Iterable[str], speaker: SpeakerAnnotation) -> None:
         super().__init__(id, Modality.IMAGE, time, files)
         self.speaker = speaker
 
 
-# TODO Scenario and signal "container"
-class Scenario(TemporalContainer):
-    def __init__(self, id: uuid.UUID, start: int, end: int, signals: Dict[str, str]) -> None:
-        pass
+class ScenarioContext:
+    def __init__(self, agent: Union[uuid.UUID, str], speaker: Person, persons: Iterable[Person], objects: Iterable[Object]) -> None:
+        self.agent = agent
+        self.speaker = speaker
+        self.persons = persons
+        self.objects = objects
+
+
+class Scenario:
+    def __init__(self, id: Union[uuid.UUID, str, None], time: TimeSegment, context: ScenarioContext, signals: Dict[Modality, str]) -> None:
+        self.id = id
+        self.time = time
+        self.context = context
+        self.signals = signals
+
+
+def append_signal(path: str, signal: object, terminate: bool=False, indent=4):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    initialize = not os.path.isfile(path)
+    with open(path, "a") as signal_file:
+        if initialize:
+            signal_file.write("[\n")
+        if signal:
+            json.dump(signal, signal_file, default=serializer, indent=indent)
+            signal_file.write(",\n")
+        if terminate:
+            signal_file.write("]")
 
 
 def serializer(object):
