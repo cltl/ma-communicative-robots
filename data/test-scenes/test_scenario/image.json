@@ -1,0 +1,44 @@
+[
+{
+    "id": "a29f87b6-56c9-4f12-a1da-211ab7f068e9",
+    "modality": "IMAGE",
+    "time": {
+        "end": 1603140000,
+        "start": 1603139705
+    },
+    "files": [
+        "data/test-scenes/test_scenario/image/piek-1.jpg"
+    ],
+    "speaker": {
+        "person": {
+            "id": "34babd2e-411f-4938-b9ba-329daede0395",
+            "name": "Piek",
+            "age": 59,
+            "gender": "MALE",
+            "emotion": "JOY"
+        },
+        "segment": {
+            "bounding_box": [
+                10,
+                15,
+                521,
+                518
+            ]
+        }
+    },
+    "emotion": "HAPPINESS"
+},
+{
+    "id": "a941e0d0-b028-40b7-80bf-fdd40646f74f",
+    "modality": "IMAGE",
+    "time": {
+        "end": 1603149860,
+        "start": 1603139840
+    },
+    "files": [
+        "data/test-scenes/test_scenario/image/pexels-victoria-borodinova-1648358.jpg"
+    ],
+    "speaker": null,
+    "emotion": "HAPPINESS"
+},
+]
