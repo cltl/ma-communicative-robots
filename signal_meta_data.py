@@ -160,14 +160,9 @@ class Mention:
 
 
 class SpeakerAnnotation(Generic[T]):
-    def __init__(self, speaker: Friend, segment: Segment[T]):
-        self.speaker = speaker
+    def __init__(self, person: Person, segment: Segment[T]):
+        self.person = person
         self.segment = segment
-
-
-class TripleAnnotation:
-    def __init__(self, triples: Iterable[Triple]):
-        self.triples = tuple(triples)
 
 
 # Does it makes sense to separate annotations
@@ -194,7 +189,7 @@ class Signal(TemporalContainer):
 
 class TextSignal(Signal):
     def __init__(self, id: Union[uuid.UUID, None], time: TimeSegment, files: Iterable[str],
-                 utterances: Iterable[UtteranceAnnotation], triples: TripleAnnotation):
+                 utterances: Iterable[UtteranceAnnotation], triples: Iterable[Triple]):
         super().__init__(id, Modality.TEXT, time, files)
         self.utterances = utterances
         self.triples = triples
