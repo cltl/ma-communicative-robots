@@ -14,9 +14,6 @@ data_namespace = Namespace("http://cltl.nl/combot/signal/")
 predicate_namespace = Namespace("http://cltl.nl/combot/predicate/")
 
 
-T = TypeVar("T")
-
-
 class EntityType(enum.Enum):
     PERSON = 0
     FRIEND = 1
@@ -46,19 +43,8 @@ class Gender(enum.Enum):
     OTHER = 3
 
 
-class Segment(Generic[T]):
-    # TODO This is not relevant for the data representation, but it would be nice if we could relate segment to a ruler/container type
+class Segment():
     """Base class of segments that allow to identify a segment relative to a ruler in a signal"""
-    def extract(self, signal: T) -> T:
-        """
-        Extract this segment specified from the provided signal.
-
-        Parameters
-        ----------
-        signal : object
-        The base signal the segement refers to.
-        """
-        raise NotImplementedError
 
 
 class OffsetSegment(Segment[Sequence]):
@@ -72,9 +58,6 @@ class OffsetSegment(Segment[Sequence]):
     @property
     def end(self):
         return self.offset[1]
-
-    def extract(self, sequence: Sequence):
-        return sequence[self.start:self.end]
 
 
 class BoundingBoxSegment(Segment[np.array]):
@@ -97,22 +80,11 @@ class BoundingBoxSegment(Segment[np.array]):
     def y_max(self):
         return self.bounding_box[3]
 
-    def extract(self, image: np.array):
-        return image[self.x_min:self.y_max,self.y_min:self.y_max]
 
-# TODO see comment on Segment
-class TemporalContainer:
-    def extract(self, start: int, end: int):
-        pass
-
-
-class TimeSegment(Segment[TemporalContainer]):
+class TimeSegment(Segment):
     def __init__(self, start: int, end: int) -> None:
         self.end = end
         self.start = start
-
-    def extract(self, container: TemporalContainer):
-        return container.extract(self.start, self.end)
 
 
 # TODO do we need that?
@@ -128,6 +100,7 @@ class Person:
         self.age = age
         self.gender = gender
         self.emotion = emotion
+
 
 # TODO do we need a Person?
 class Friend(Person):
@@ -161,8 +134,8 @@ class Mention:
         self.referent = referent
 
 
-class SpeakerAnnotation(Generic[T]):
-    def __init__(self, person: Person, segment: Segment[T]):
+class SpeakerAnnotation:
+    def __init__(self, person: Person, segment: Segment):
         self.person = person
         self.segment = segment
 
@@ -180,7 +153,7 @@ class UtteranceAnnotation:
         self.emotion = emotion
 
 
-class Signal(TemporalContainer):
+class Signal:
     def __init__(self, id: Union[uuid.UUID, str, None], modality: Modality, time: TimeSegment, files: Iterable[str]) -> None:
         self.id = id if id else uuid.uuid4()
         self.modality = modality
