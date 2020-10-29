@@ -121,6 +121,7 @@ class Object:
 
 
 class Person:
+    # TODO Should be identified by its properties not by an ID (though it should have an ID)
     def __init__(self, id: Union[uuid.UUID, str, None], name: str, age: int, gender: Gender, emotion: Emotion):
         self.id = id if id else uuid.uuid4()
         self.name = name
@@ -166,7 +167,7 @@ class SpeakerAnnotation(Generic[T]):
         self.segment = segment
 
 
-# Does it makes sense to separate annotations
+# TODO Does it makes sense to separate annotations
 class UtteranceAnnotation:
     def __init__(self, chat_id: Union[uuid.UUID, str, None], utterance_id: [uuid.UUID, str, None], utterance: str,
                  tokens: Iterable[Tuple[(str, OffsetSegment)]], speaker: Friend, emotion: Emotion, mentions: Iterable[Mention]) -> None:
@@ -184,7 +185,7 @@ class Signal(TemporalContainer):
         self.id = id if id else uuid.uuid4()
         self.modality = modality
         self.time = time
-        # TODO multiple files?
+        # TODO multiple files: do we need to relate them to each other or the attributes to the files?
         self.files = files
 
 
@@ -199,7 +200,7 @@ class TextSignal(Signal):
 class ImageSignal(Signal):
     def __init__(self, id: Union[uuid.UUID, str, None], time: TimeSegment, files: Iterable[str], emotion: Emotion, speaker: SpeakerAnnotation) -> None:
         super().__init__(id, Modality.IMAGE, time, files)
-        # TODO speaker and image should have emotion?
+        # TODO speaker and image should both have emotion?
         self.speaker = speaker
         self.emotion = emotion
 
@@ -211,6 +212,7 @@ class AudioSignal(Signal):
         self.speaker = speaker
 
 
+# TODO Should be dynamic or static, should be a Chat instead?
 class ScenarioContext:
     def __init__(self, agent: Union[uuid.UUID, str], speaker: Person, persons: Iterable[Person], objects: Iterable[Object]) -> None:
         self.agent = agent
@@ -219,6 +221,7 @@ class ScenarioContext:
         self.objects = objects
 
 
+# TODO Location -> Spatial container
 class Scenario:
     def __init__(self, id: Union[uuid.UUID, str, None], time: TimeSegment, context: ScenarioContext, signals: Dict[Modality, str]) -> None:
         self.id = id
@@ -248,10 +251,3 @@ def serializer(object):
         return str(object)
 
     return vars(object)
-
-
-if __name__ == '__main__':
-    piek = Friend(uuid.uuid4(), "Piek", 60, Gender.MALE)
-    speaker = SpeakerAnnotation(piek, BoundingBoxSegment(0,0,1,1))
-    image_signal = ImageSignal(uuid.uuid4(), TimeSegment(0, 2), [], Emotion.HAPPINESS, speaker)
-    print(json.dumps(image_signal, default=serializer, indent=4))
