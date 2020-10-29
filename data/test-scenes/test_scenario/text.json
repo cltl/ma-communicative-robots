@@ -1,6 +1,6 @@
 [
 {
-    "id": "e76d60fe-e9f0-454e-bdbb-f3fdeda65d6b",
+    "id": "2ec83de9-9701-44db-90cc-4df5ba41f93c",
     "modality": "TEXT",
     "time": {
         "end": 1603149890,
@@ -11,8 +11,8 @@
     ],
     "utterances": [
         {
-            "chat_id": "f767b44c-a634-40c1-a31c-cc9c984e3bca",
-            "utterance_id": "1893ca16-c9fd-4bc4-8a53-5601a4b13c4e",
+            "chat_id": "9bdf5723-8bd1-4b57-b9a2-f61af07e6245",
+            "utterance_id": "e419f966-6f7b-444b-aa30-378dbdeaf07a",
             "utterance": "That is my brother Jim",
             "tokens": [
                 [
@@ -53,7 +53,7 @@
             ],
             "speaker": {
                 "person": {
-                    "id": "34babd2e-411f-4938-b9ba-329daede0395",
+                    "id": "0e182be6-29e9-4f44-aae5-3eb22a2dc071",
                     "name": "Piek",
                     "age": 59,
                     "gender": "MALE",
@@ -82,7 +82,7 @@
                         "Jim"
                     ],
                     "referent": {
-                        "id": "4fd38435-a9f9-4a26-917a-b5002cfa24b0",
+                        "id": "668c04e8-259f-4325-b6b2-c791aead2434",
                         "name": "Jim",
                         "age": 32,
                         "gender": "MALE",
@@ -96,12 +96,12 @@
     "triples": [
         {
             "subject": {
-                "id": "http://cltl.nl/leolani/friends/",
+                "id": "http://cltl.nl/leolani/friends/0e182be6-29e9-4f44-aae5-3eb22a2dc071",
                 "type": "FRIEND"
             },
             "predicate": "http://cltl.nl/combot/predicate/brother-of",
             "object": {
-                "id": "http://cltl.nl/leolani/friends/",
+                "id": "http://cltl.nl/leolani/friends/668c04e8-259f-4325-b6b2-c791aead2434",
                 "type": "FRIEND"
             }
         }

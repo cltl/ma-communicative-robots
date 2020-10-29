@@ -200,6 +200,7 @@ class TextSignal(Signal):
 class ImageSignal(Signal):
     def __init__(self, id: Union[uuid.UUID, str, None], time: TimeSegment, files: Iterable[str], emotion: Emotion, speaker: SpeakerAnnotation) -> None:
         super().__init__(id, Modality.IMAGE, time, files)
+        # TODO other persons on the image?
         # TODO speaker and image should both have emotion?
         self.speaker = speaker
         self.emotion = emotion

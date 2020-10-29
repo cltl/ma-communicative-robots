@@ -1,25 +1,27 @@
 import numpy as np
 from PIL import Image
-from typing import Tuple, Iterable
-
+from leolani.datarepresentation.interaction import Context as LeolaniContext
+from leolani.datarepresentation.language import Chat as LeolaniChat
+from leolani.datarepresentation.language import Utterance as LeolaniUtterance
+from leolani.datarepresentation.language import UtteranceHypothesis, UtteranceType
+from leolani.datarepresentation.rdf_builder import RdfBuilder
+from leolani.datarepresentation.representation import Triple as LeolaniTriple
+from leolani.datarepresentation.vision import Bounds as LeolaniBounds
+from leolani.datarepresentation.vision import Face as LeolaniFace
+from leolani.datarepresentation.vision import Object as LeolaniObject, AbstractImage
 from rdflib import URIRef
+from typing import Tuple
 
-from interaction import Context as LeolaniContext
-from language import UtteranceHypothesis, UtteranceType
-from language import Utterance as LeolaniUtterance
-from rdf_builder import RdfBuilder
-from signal_meta_data import ScenarioContext, Object, BoundingBoxSegment, Person, SpeakerAnnotation, TimeSegment, \
+from signal_meta_data import Object, BoundingBoxSegment, Person, SpeakerAnnotation, TimeSegment, \
     ImageSignal, TextSignal, UtteranceAnnotation, Triple, Entity, Scenario
-from language import Chat as LeolaniChat
-from representation import Triple as LeolaniTriple
-from vision import Bounds as LeolaniBounds
-from vision import Face as LeolaniFace
-from vision import Object as LeolaniObject, AbstractImage
-
 
 TOPIC_ON_CHAT_ENTER = "pepper.framework.context.topic.chat_enter"
 TOPIC_ON_CHAT_TURN = "pepper.framework.context.topic.chat_turn"
 TOPIC_ON_CHAT_EXIT = "pepper.framework.context.topic.chat_exit"
+
+TOPIC_FACE = "pepper.framework.sensor.api.face_detector.topic"
+TOPIC_FACE_NEW = "pepper.framework.sensor.api.face_detector.topic.new"
+TOPIC_FACE_KNOWN = "pepper.framework.sensor.api.face_detector.topic.known"
 
 
 class Event:
@@ -45,8 +47,10 @@ def convert_speaker(speaker: SpeakerAnnotation) -> str:
 
 
 def convert_speaker_from_image(speaker: SpeakerAnnotation, image_path: str, time: TimeSegment) -> LeolaniFace:
+    # TODO Representation of the face (image)
+    representation = None
     # TODO Emotion?
-    return LeolaniFace(speaker.person.name, 1.0, convert(speaker.segment), convert_image(image_path, speaker.segment, time))
+    return LeolaniFace(speaker.person.name, 1.0, representation, convert(speaker.segment), convert_image(image_path, speaker.segment, time))
 
 
 def read_image(path):
@@ -56,7 +60,7 @@ def read_image(path):
 
 def convert_image(path: str, bounding_box: BoundingBoxSegment, time: TimeSegment) -> AbstractImage:
     image_array = read_image(path)
-    return AbstractImage(image_array, convert(bounding_box), np.empty(), time.start)
+    return AbstractImage(image_array, convert(bounding_box), np.array(()), time.start)
 
 
 # TODO Object class is just a dummy
@@ -69,14 +73,14 @@ def convert_bounding_box(bounding_box: BoundingBoxSegment):
 
 
 def convert_entity(entity: Entity) -> dict:
-    return {"label": str(entity.id), "type": entity.type}
+    return {"label": str(entity.id), "type": entity.type.name.lower()}
 
 
 def convert_predicate(predicate: URIRef) -> dict:
     return {"type": str(predicate)}
 
 
-def convert_triples(triple: Triple) -> LeolaniTriple:
+def convert_triple(triple: Triple) -> LeolaniTriple:
     builder = RdfBuilder()
 
     subject = convert(triple.subject)
@@ -87,13 +91,15 @@ def convert_triples(triple: Triple) -> LeolaniTriple:
 
 
 # TODO we could directly add to the context here, but that would not make it available to intentions
-def integrate_image_signal(signal: ImageSignal) -> LeolaniFace:
+def integrate_image_signal(signal: ImageSignal) -> Tuple[Event]:
     # Convert annotation from Face recognition to event payload
     speaker = signal.speaker
     time = signal.time
+    img_path = signal.files[0]
+
 
     # TODO Convert annotation from Object recognition to event payload
-    return (Event(convert_speaker_from_image(speaker, time), None), )
+    return ((TOPIC_FACE, Event(convert_speaker_from_image(speaker, img_path, time), None)),)
 
 
 def integrate_text_signal(signal: TextSignal, context: LeolaniContext) -> Tuple[Tuple[Tuple[(str, Event)]], Tuple[LeolaniTriple]]:
@@ -164,6 +170,8 @@ def convert(obj: object):
         return convert_person(obj)
     if isinstance(obj, Entity):
         return convert_entity(obj)
+    if isinstance(obj, Triple):
+        return convert_triple(obj)
 
 
 if __name__ == "__main__":
