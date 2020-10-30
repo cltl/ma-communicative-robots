@@ -1,6 +1,6 @@
 # Multimodal Interaction Data Representation (MIDR)
 
-This data folder contains test data for multimodal interaction systems with robots and virtual agents. This data can be rendered by interacting system that record the interaction and it can be annotated with interpretations.
+This data folder contains test data for multimodal interaction systems with robots and virtual agents. This data can be rendered by interacting systems that record the interaction and it can be annotated with interpretations (by people and/or systems).
 
 The data consists of a series of folders, each folder representing a single scenario with multimodal data files and JSON files that contain meta data on the data files and annotations of units within the multimodal data.
 
@@ -37,7 +37,7 @@ my-first-scenario
 ```
 
 ## Context
-The file "my-first-scenario.json" describes the scenario in terms of meta data using standard data categories (Dublin core and CMDI) but also the 'spatial and temporal comtainers' with which the scenario takes place.
+The file "my-first-scenario.json" describes the scenario in terms of meta data using standard data categories (e.g. Dublin core and CMDI) but also the 'spatial and temporal containers' within which the scenario takes place.
 
 <ol>
     <li>Spatial container: geo-location and coordinates that define the area, possibly the name that identifies the area
@@ -49,18 +49,18 @@ The spatial and temporal containers define the primary context for interpretatin
 <ol>
     <li>Identity of the agent
     <li>Identity of the speaker
-    <li>Any other people present
+    <li>Any other people present and their spatial orientation
     <li>Objects and their spatial orientation
 </ol>
 
-In addition to the meta data, the JSON file of the scenario provides an overview of all the data files in the folder and their grounding to the spatial and temporal containers. These data files represent all the recorded signals in the scenario as its content. Each of these content file is further described in specific JSON files.
+In addition to the meta data, the JSON file of the scenario provides an overview of all the data files in the folder and their grounding to the spatial and temporal containers. These data files represent all the recorded signals in the scenario as its content. Each of these content files is further described in specific JSON files.
 
 ## Content
 The content of the scenario is represented by a series of files in the scenario folder representing the data in different modalities. In the above example, we have separate files for the conversations, a video stream of the interaction, images of scenarios, and audio files. Each modality has a JSON file that describes the data that contain signals and any interpretation of the signal in the form of an annotation. Any signal is grounded in the spatial and temporal container using specific data elements in the JSON file. 
 
 Although the data can be streamed as in video and audio, any system needs to define units within the stream to interpret states and changes between these states. Therefore, we can not only represent a scenario by the video but also through a collection of stills in the form of images taken at different time points, as a collection of audio files for speech interaction or as the transcribed text of the audio to represent a dialogue. 
 
-Through the spatial and temporal grounding of each of these data files (treated as a signal), they can be organised through a a two dimensional matrix (T x M), where T is the temporal ruler segmenting time in Tn units and M is a series of modalities with data files at the time points in the ruler. The next example shows such a Matrix with a temporal ruler of 6 time points and 4 modalities of signals grounded to these units:
+Through the spatial and temporal grounding of each of these data files (treated as a signal), they can be organised through a a two dimensional matrix (T x M), where T is the temporal ruler segmenting time in Tn units and M is a series of modalities with data files at the time points in the ruler. The next example shows such a Matrix with a temporal ruler for 6 time points and 4 modalities of signals grounded to these units:
 
 ```
 time | video | audio | text  | image |
@@ -73,7 +73,7 @@ time | video | audio | text  | image |
 1:07 | ...   | wav   | utter |       |
 ```
 
-We assume that the video is a continuous stream from begin to end which is not cut to the time points. However, the other modalities fill separate slots at the time points, where we do not necessarily data in each time point. The temporal ruler (the first column) aligns the different signals across the modalities. This temporal ruler can have any granularity, in this example it is by minutes.
+We assume that the video is a continuous stream from begin to end which is not cut to the time points. However, the other modalities fill separate slots at the time points, where we do not necessarily have data at each time point. The temporal ruler (the first column) aligns the different signals across the modalities. This temporal ruler can have any granularity, in this example it is by minutes.
 
 ## Annotations
 
@@ -83,25 +83,22 @@ The complete conversation for a scenario can be represented through a single CSV
 
 
 ### Mentions
-
-The annotation labels can represent any type of interpretation, ranging from emotions to people or objects and events. Since our models need to relate interpretations across modalities, some of these annotations need to identify instances of people and objects depicted in the visual world. Consider the following examples: 
+The annotation labels can represent any type of interpretation, ranging from emotions, people, objects or events. Since our models need to relate interpretations across modalities, some of these annotations identify instances of people and objects depicted in the visual world. Consider the following examples: 
 
 * "That is my son sitting next to me"
 * "Sam is eating a sandwich"
 
 An annotation of these utterances could define the tokens "my son" as making reference to a person who is a male child of me (the speaker). Similarly, the token "Sam" can be annotated as the name of a person. 
 
-Similary, we can annote certain areas in images as representing people of certain age or gender, surrounded by objects that are annotated with object labels. By annotating segments in the signal with interpretation labels, we indicate the mentions of things in signals.
+Similary, we can annote certain areas in images as representing people of certain age or gender, surrounded by objects that are annotated with object labels. By annotating segments in the signal with interpretation labels, we indicate the mention of things in signals.
 
 ### Identities
-
-It is however not enough to mark "my son" as making reference to a person or "Sam" as a named entity expression. We also need to link these expressions to the actualy people in our shared world. For this, we follow the GAF/GRaSP framework (Fokkens et al, 2013, 2017) that makes a distinction between mentions in texts and a representation of the invidiuals these mentions refer to. Individuals are represented through unique resource identifiers or URIs following Semantic Web standards. Since both "my son" and "Sam" refer to the same URI, they thus become coreferential.
+It is however not enough to mark "my son" as making reference to a person or "Sam" as a named entity expression. We also need to link these expressions to the actual people in our shared world. For this, we follow the GAF/GRaSP framework (Fokkens et al, 2013, 2017) that makes a distinction between mentions in texts and a representation of the invidiuals these mentions refer to. Individuals are represented through unique resource identifiers or URIs following Semantic Web standards. Since both "my son" and "Sam" refer to the same URI, they thus become coreferential.
 
 By following the same procedure for other modalities, we thus can ground the text mentions to visual coordinates, such as a box segment in an image, which is labeled as a person with an age and gender but also annoted with the URI representing the same individual.
 
 ### Properties and relations as RDF triples
-
-On top of the people and objects depicted or mentioned, there may be particular relations expressed, such as "eating" the sandwich or "throwing" a ball. Such relations and properties can be seen as states of events and can be annotated as well although their identity is more difficult to establish and represented by a URI. Within our model, we represent the mentioning of these relations and properties through RDF triples, where our identified people and objects fill the subject and object positions and the relations and properties form the predicates. Likewise, the expression "my son" is eventually mapped to the following triples:
+On top of the people and objects depicted or mentioned, there may be particular relations expressed, such as "eating" the sandwich or "throwing" a ball. Such relations and properties can be seen as states of events and can be annotated as well although their identity is more difficult to establish and represent by a URI. Within our model, we represent the mentioning of these relations and properties through RDF triples, where identified people and objects fill the subject and object positions and the relations and properties form the predicates. Likewise, the expression "my son" is eventually mapped to the following triples:
 
 ```
     :my-uri   parent-of   :sam
@@ -110,7 +107,6 @@ On top of the people and objects depicted or mentioned, there may be particular 
 ```
 
 The JSON annotations will also include such triples as the result of interpreting the signals to explicit knowledge that is stored in triple store.
-
 
 ## References
 
