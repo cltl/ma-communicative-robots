@@ -9,7 +9,8 @@ Students team up with the TAs.
 ## Proposals and Presentations
 
 Check proposal_<name>.md
-Check presentation_<name>.md
+  
+Check presentation_<name>.pdf
 
 ## Contributing
 
