@@ -6,6 +6,11 @@ Communicative Robots is a master's course taught at VU Amsterdam.
 
 Students team up with the TAs.
 
+## Proposals and Presentations
+
+Check proposal_<name>.md
+Check presentation_<name>.md
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
