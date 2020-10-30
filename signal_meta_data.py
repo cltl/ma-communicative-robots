@@ -128,6 +128,7 @@ class Triple:
                    Entity(friends_namespace.term(object_id), EntityType.FRIEND))
 
 
+# TODO Mentions should be subclasses of Annotations, refering to identities?
 class Mention:
     def __init__(self, token_offset: OffsetSegment, phrase: str, referent: Union[Friend, Person, Object]):
         self.token_offset = token_offset
