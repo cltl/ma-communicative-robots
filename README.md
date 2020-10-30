@@ -11,6 +11,10 @@ Students team up with the TAs.
 Check proposal_<name>.md
   
 Check presentation_<name>.pdf
+  
+## Multimodal Signal Processing
+
+Check the directory `multimodal` for details.
 
 ## Contributing
 
