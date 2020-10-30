@@ -12,7 +12,7 @@ from leolani.datarepresentation.vision import Object as LeolaniObject, AbstractI
 from rdflib import URIRef
 from typing import Tuple
 
-from signal_meta_data import Object, BoundingBoxSegment, Person, SpeakerAnnotation, TimeSegment, \
+from signal_meta_data import Object, BoundingBoxSegment, Person, FaceAnnotation, TimeSegment, \
     ImageSignal, TextSignal, UtteranceAnnotation, Triple, Entity, Scenario
 
 TOPIC_ON_CHAT_ENTER = "pepper.framework.context.topic.chat_enter"
@@ -42,11 +42,11 @@ def convert_person(person: Person) -> str:
     return person.name
 
 
-def convert_speaker(speaker: SpeakerAnnotation) -> str:
+def convert_speaker(speaker: FaceAnnotation) -> str:
     return speaker.person.name
 
 
-def convert_speaker_from_image(speaker: SpeakerAnnotation, image_path: str, time: TimeSegment) -> LeolaniFace:
+def convert_speaker_from_image(speaker: FaceAnnotation, image_path: str, time: TimeSegment) -> LeolaniFace:
     # TODO Representation of the face (image)
     representation = None
     # TODO Emotion?
@@ -164,7 +164,7 @@ def convert(obj: object):
         return convert_object(obj)
     if isinstance(obj, BoundingBoxSegment):
         return convert_bounding_box(obj)
-    if isinstance(obj, SpeakerAnnotation):
+    if isinstance(obj, FaceAnnotation):
         return convert_speaker(obj)
     if isinstance(obj, Person):
         return convert_person(obj)

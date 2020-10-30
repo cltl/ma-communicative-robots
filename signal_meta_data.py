@@ -1,12 +1,11 @@
 # Define Annotation Class
-import os
 import enum
+import os
+
 import json
 import uuid
-import numpy as np
-from typing import Iterable, Sequence, Tuple, Generic, TypeVar, Union, Dict
-
 from rdflib import URIRef, Namespace
+from typing import Iterable, Tuple, Union, Dict
 
 friends_namespace = Namespace("http://cltl.nl/leolani/friends/")
 data_namespace = Namespace("http://cltl.nl/combot/signal/")
@@ -27,13 +26,14 @@ class Modality(enum.Enum):
 
 
 class Emotion(enum.Enum):
-    ANGER = 0
-    DISGUST = 1
-    FEAR = 2
-    HAPPINESS = 3
-    JOY = 4
-    SADNESS = 5
-    SURPRISE = 6
+    NEUTRAL = 0
+    ANGER = 1
+    DISGUST = 2
+    FEAR = 3
+    HAPPINESS = 4
+    JOY = 5
+    SADNESS = 6
+    SURPRISE = 7
 
 
 class Gender(enum.Enum):
@@ -43,11 +43,12 @@ class Gender(enum.Enum):
     OTHER = 3
 
 
+# TODO Relate the container/ruler, or at least add a type
 class Segment():
     """Base class of segments that allow to identify a segment relative to a ruler in a signal"""
 
 
-class OffsetSegment(Segment[Sequence]):
+class OffsetSegment(Segment):
     def __init__(self, start: int, end: int) -> None:
         self.offset = (start, end)
 
@@ -60,7 +61,7 @@ class OffsetSegment(Segment[Sequence]):
         return self.offset[1]
 
 
-class BoundingBoxSegment(Segment[np.array]):
+class BoundingBoxSegment(Segment):
     def __init__(self, x_min: int, y_min: int, x_max: int, y_max: int) -> None:
         self.bounding_box = (x_min, y_min, x_max, y_max)
 
@@ -87,13 +88,13 @@ class TimeSegment(Segment):
         self.start = start
 
 
-# TODO do we need that?
+# TODO do we need objects?
 class Object:
     pass
 
 
 class Person:
-    # TODO Should be identified by its properties not by an ID (though it should have an ID)
+    # TODO Should be identified by its properties not by an ID (though it should have an ID)?
     def __init__(self, id: Union[uuid.UUID, str, None], name: str, age: int, gender: Gender, emotion: Emotion):
         self.id = id if id else uuid.uuid4()
         self.name = name
@@ -134,13 +135,15 @@ class Mention:
         self.referent = referent
 
 
-class SpeakerAnnotation:
+# TODO Does it makes sense to separate annotations
+# TODO Annotations don't have timestamps
+# TODO Annotations as nested attributes or with an ID referencing the signal
+class FaceAnnotation:
     def __init__(self, person: Person, segment: Segment):
         self.person = person
         self.segment = segment
 
 
-# TODO Does it makes sense to separate annotations
 class UtteranceAnnotation:
     def __init__(self, chat_id: Union[uuid.UUID, str, None], utterance_id: [uuid.UUID, str, None], utterance: str,
                  tokens: Iterable[Tuple[(str, OffsetSegment)]], speaker: Friend, emotion: Emotion, mentions: Iterable[Mention]) -> None:
@@ -148,7 +151,7 @@ class UtteranceAnnotation:
         self.utterance_id = utterance_id if utterance_id else uuid.uuid4()
         self.utterance = utterance
         self.tokens = tuple(tokens)
-        self.speaker = SpeakerAnnotation(speaker, OffsetSegment(0, len(self.tokens)))
+        self.speaker = FaceAnnotation(speaker, OffsetSegment(0, len(self.tokens)))
         self.mentions = tuple(mentions)
         self.emotion = emotion
 
@@ -171,17 +174,24 @@ class TextSignal(Signal):
 
 
 class ImageSignal(Signal):
-    def __init__(self, id: Union[uuid.UUID, str, None], time: TimeSegment, files: Iterable[str], emotion: Emotion, speaker: SpeakerAnnotation) -> None:
+    def __init__(self, id: Union[uuid.UUID, str, None], time: TimeSegment, files: Iterable[str], emotion: Emotion,
+                 faces: Iterable[FaceAnnotation], speaker: FaceAnnotation) -> None:
         super().__init__(id, Modality.IMAGE, time, files)
-        # TODO other persons on the image?
         # TODO speaker and image should both have emotion?
+        self.faces = faces
         self.speaker = speaker
         self.emotion = emotion
 
 
-# TODO
+# TODO Audio Signal
 class AudioSignal(Signal):
-    def __init__(self, id: Union[uuid.UUID, str, None], time: TimeSegment, files: Iterable[str], speaker: SpeakerAnnotation) -> None:
+    def __init__(self, id: Union[uuid.UUID, str, None], time: TimeSegment, files: Iterable[str], speaker: FaceAnnotation) -> None:
+        super().__init__(id, Modality.IMAGE, time, files)
+        self.speaker = speaker
+
+# TODO Video Signal
+class VideoSignal(Signal):
+    def __init__(self, id: Union[uuid.UUID, str, None], time: TimeSegment, files: Iterable[str], speaker: FaceAnnotation) -> None:
         super().__init__(id, Modality.IMAGE, time, files)
         self.speaker = speaker
 
@@ -195,7 +205,7 @@ class ScenarioContext:
         self.objects = objects
 
 
-# TODO Location -> Spatial container
+# TODO Location -> Spatial container?
 class Scenario:
     def __init__(self, id: Union[uuid.UUID, str, None], time: TimeSegment, context: ScenarioContext, signals: Dict[Modality, str]) -> None:
         self.id = id
@@ -204,6 +214,7 @@ class Scenario:
         self.signals = signals
 
 
+# TODO Just a list or with some structure, e.g. relate the ruler in the file (dict: time -> event)
 def append_signal(path: str, signal: object, terminate: bool=False, indent=4):
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
