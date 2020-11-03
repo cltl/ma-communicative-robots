@@ -1,0 +1,110 @@
+[
+{
+    "id": "2ec83de9-9701-44db-90cc-4df5ba41f93c",
+    "modality": "TEXT",
+    "time": {
+        "end": 1603149890,
+        "start": 1603139850
+    },
+    "files": [
+        "data/test-scenes/test_scenario/text/chat1_utterance1.txt"
+    ],
+    "utterances": [
+        {
+            "chat_id": "9bdf5723-8bd1-4b57-b9a2-f61af07e6245",
+            "utterance_id": "e419f966-6f7b-444b-aa30-378dbdeaf07a",
+            "utterance": "That is my brother Jim",
+            "tokens": [
+                [
+                    [
+                        0,
+                        4
+                    ],
+                    "That"
+                ],
+                [
+                    [
+                        5,
+                        7
+                    ],
+                    "is"
+                ],
+                [
+                    [
+                        8,
+                        10
+                    ],
+                    "my"
+                ],
+                [
+                    [
+                        11,
+                        18
+                    ],
+                    "brother"
+                ],
+                [
+                    [
+                        19,
+                        22
+                    ],
+                    "Jim"
+                ]
+            ],
+            "speaker": {
+                "person": {
+                    "id": "0e182be6-29e9-4f44-aae5-3eb22a2dc071",
+                    "name": "Piek",
+                    "age": 59,
+                    "gender": "MALE",
+                    "emotion": "JOY"
+                },
+                "segment": {
+                    "offset": [
+                        0,
+                        5
+                    ]
+                }
+            },
+            "mentions": [
+                {
+                    "token_offset": {
+                        "offset": [
+                            4,
+                            5
+                        ]
+                    },
+                    "phrase": [
+                        [
+                            19,
+                            22
+                        ],
+                        "Jim"
+                    ],
+                    "referent": {
+                        "id": "668c04e8-259f-4325-b6b2-c791aead2434",
+                        "name": "Jim",
+                        "age": 32,
+                        "gender": "MALE",
+                        "emotion": null
+                    }
+                }
+            ],
+            "emotion": "JOY"
+        }
+    ],
+    "triples": [
+        {
+            "subject": {
+                "id": "http://cltl.nl/leolani/friends/0e182be6-29e9-4f44-aae5-3eb22a2dc071",
+                "type": "FRIEND"
+            },
+            "predicate": "http://cltl.nl/combot/predicate/brother-of",
+            "object": {
+                "id": "http://cltl.nl/leolani/friends/668c04e8-259f-4325-b6b2-c791aead2434",
+                "type": "FRIEND"
+            }
+        }
+    ]
+},
+]

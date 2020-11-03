@@ -1,0 +1,23 @@
+{
+    "id": "test_scenario",
+    "time": {
+        "end": 1603150000,
+        "start": 1603139000
+    },
+    "context": {
+        "agent": "leolani",
+        "speaker": {
+            "id": "5ae67b9c-dcde-4d37-bc86-ddd2fcbc05b4",
+            "name": "Piek",
+            "age": 59,
+            "gender": "MALE",
+            "emotion": null
+        },
+        "persons": [],
+        "objects": []
+    },
+    "signals": {
+        "image": "data/test-scenes/test_scenario/image.json",
+        "text": "data/test-scenes/test_scenario/text.json"
+    }
+}
