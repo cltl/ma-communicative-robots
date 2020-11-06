@@ -19,10 +19,17 @@ class Modality(enum.Enum):
 
 
 class Mention:
-    def __init__(self, segment: Union[Ruler, Iterable[Ruler]], referent: Optional[Identifier]=None):
+    def __init__(self, segment: Union[Ruler, Iterable[Ruler]]):
         self.type = self.__class__.__name__
         self.segment = segment
-        self.referent = referent
+
+
+class Annotation(Mention):
+    def __init__(self, segment: Union[Ruler, Iterable[Ruler]], source: Identifier, timestamp: int):
+        super(Annotation, self).__init__(segment)
+        self.type = self.__class__.__name__
+        self.source = source
+        self.timestamp = timestamp
 
 
 R = TypeVar('R', bound=Ruler)
@@ -32,7 +39,6 @@ class Signal(Container[R, T]):
                  mentions: Iterable[Mention]=None) -> None:
         self.modality = modality
         self.time = time
-        # TODO multiple files: do we need to relate them to each other or the attributes to the files?
         self.files = files
         self.mentions = mentions if mentions is not None else []
 

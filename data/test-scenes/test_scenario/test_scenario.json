@@ -1,6 +1,6 @@
 {
-    "start_date": 1603139000,
-    "end_date": 1603150000,
+    "start_time": 1603139000,
+    "end_time": 1603150000,
     "id": "test_scenario",
     "ruler": {
         "type": "TemporalRuler",
@@ -11,7 +11,7 @@
     "context": {
         "agent": "leolani",
         "speaker": {
-            "id": "9ece5275-f6fc-4a20-a7f0-8832fbaf2f5e",
+            "id": "971f8578-1b16-4740-a62b-9d1ed1de1420",
             "name": "Piek",
             "age": 59,
             "gender": "MALE",

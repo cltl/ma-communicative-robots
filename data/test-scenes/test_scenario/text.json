@@ -15,196 +15,207 @@
             "type": "Token",
             "segment": {
                 "type": "Index",
-                "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
                 "start": 0,
                 "stop": 4
             },
-            "referent": null,
+            "source": "treebank_tokenizer",
+            "timestamp": 1604698020.87868,
             "value": "That",
-            "id": "33c13370-6e1c-4240-b8df-db9ebf8c398d",
+            "id": "2d8725d8-b306-49c0-b85a-8614dd7e807f",
             "ruler": {
                 "type": "AtomicRuler",
-                "container_id": "33c13370-6e1c-4240-b8df-db9ebf8c398d"
+                "container_id": "2d8725d8-b306-49c0-b85a-8614dd7e807f"
             }
         },
         {
             "type": "Token",
             "segment": {
                 "type": "Index",
-                "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
                 "start": 5,
                 "stop": 7
             },
-            "referent": null,
+            "source": "treebank_tokenizer",
+            "timestamp": 1604698020.878762,
             "value": "is",
-            "id": "0f3df922-0d46-4f72-8352-287e035317d1",
+            "id": "64a15b7a-0bff-4b51-8d4c-7fc514dfcc31",
             "ruler": {
                 "type": "AtomicRuler",
-                "container_id": "0f3df922-0d46-4f72-8352-287e035317d1"
+                "container_id": "64a15b7a-0bff-4b51-8d4c-7fc514dfcc31"
             }
         },
         {
             "type": "Token",
             "segment": {
                 "type": "Index",
-                "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
                 "start": 8,
                 "stop": 10
             },
-            "referent": null,
+            "source": "treebank_tokenizer",
+            "timestamp": 1604698020.8788202,
             "value": "my",
-            "id": "ea69a172-061e-45a8-830e-00bde6da1f52",
+            "id": "50009fdc-9d1f-46a1-9db0-6619ac56997a",
             "ruler": {
                 "type": "AtomicRuler",
-                "container_id": "ea69a172-061e-45a8-830e-00bde6da1f52"
+                "container_id": "50009fdc-9d1f-46a1-9db0-6619ac56997a"
             }
         },
         {
             "type": "Token",
             "segment": {
                 "type": "Index",
-                "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
                 "start": 11,
                 "stop": 18
             },
-            "referent": null,
+            "source": "treebank_tokenizer",
+            "timestamp": 1604698020.87887,
             "value": "brother",
-            "id": "84572ed8-aa87-4101-b089-f5caa6afa342",
+            "id": "7d297761-5ead-4fab-a579-0eeeb09b5c73",
             "ruler": {
                 "type": "AtomicRuler",
-                "container_id": "84572ed8-aa87-4101-b089-f5caa6afa342"
+                "container_id": "7d297761-5ead-4fab-a579-0eeeb09b5c73"
             }
         },
         {
             "type": "Token",
             "segment": {
                 "type": "Index",
-                "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
                 "start": 19,
                 "stop": 22
             },
-            "referent": null,
+            "source": "treebank_tokenizer",
+            "timestamp": 1604698020.878895,
             "value": "Jim",
-            "id": "ca15ce12-5767-4cdd-91a9-01ffa8858a77",
+            "id": "3038ad06-1a6e-4b8b-8763-3de1a6c3dfef",
             "ruler": {
                 "type": "AtomicRuler",
-                "container_id": "ca15ce12-5767-4cdd-91a9-01ffa8858a77"
+                "container_id": "3038ad06-1a6e-4b8b-8763-3de1a6c3dfef"
             }
         },
         {
-            "chat_id": "291b693e-2835-4596-b90f-15a684b4a594",
-            "utterance": "That is my brother Jim",
+            "chat_id": "823457b2-8bb6-4d83-803c-ca6cfcc279c4",
+            "utterance": "That is my brother Jim\n",
             "emotion": "JOY",
             "type": "UtteranceAnnotation",
             "segment": [
                 {
                     "type": "AtomicRuler",
-                    "container_id": "33c13370-6e1c-4240-b8df-db9ebf8c398d"
+                    "container_id": "2d8725d8-b306-49c0-b85a-8614dd7e807f"
                 },
                 {
                     "type": "AtomicRuler",
-                    "container_id": "0f3df922-0d46-4f72-8352-287e035317d1"
+                    "container_id": "64a15b7a-0bff-4b51-8d4c-7fc514dfcc31"
                 },
                 {
                     "type": "AtomicRuler",
-                    "container_id": "ea69a172-061e-45a8-830e-00bde6da1f52"
+                    "container_id": "50009fdc-9d1f-46a1-9db0-6619ac56997a"
                 },
                 {
                     "type": "AtomicRuler",
-                    "container_id": "84572ed8-aa87-4101-b089-f5caa6afa342"
+                    "container_id": "7d297761-5ead-4fab-a579-0eeeb09b5c73"
                 },
                 {
                     "type": "AtomicRuler",
-                    "container_id": "ca15ce12-5767-4cdd-91a9-01ffa8858a77"
+                    "container_id": "3038ad06-1a6e-4b8b-8763-3de1a6c3dfef"
                 }
             ],
-            "referent": "2994d536-37d4-4bd4-bbdb-f633d36c4e7a",
+            "source": "annotator_1",
+            "timestamp": 1604698020.879057,
             "seq": [
                 {
                     "type": "Token",
                     "segment": {
                         "type": "Index",
-                        "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                        "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
                         "start": 0,
                         "stop": 4
                     },
-                    "referent": null,
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604698020.87868,
                     "value": "That",
-                    "id": "33c13370-6e1c-4240-b8df-db9ebf8c398d",
+                    "id": "2d8725d8-b306-49c0-b85a-8614dd7e807f",
                     "ruler": {
                         "type": "AtomicRuler",
-                        "container_id": "33c13370-6e1c-4240-b8df-db9ebf8c398d"
+                        "container_id": "2d8725d8-b306-49c0-b85a-8614dd7e807f"
                     }
                 },
                 {
                     "type": "Token",
                     "segment": {
                         "type": "Index",
-                        "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                        "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
                         "start": 5,
                         "stop": 7
                     },
-                    "referent": null,
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604698020.878762,
                     "value": "is",
-                    "id": "0f3df922-0d46-4f72-8352-287e035317d1",
+                    "id": "64a15b7a-0bff-4b51-8d4c-7fc514dfcc31",
                     "ruler": {
                         "type": "AtomicRuler",
-                        "container_id": "0f3df922-0d46-4f72-8352-287e035317d1"
+                        "container_id": "64a15b7a-0bff-4b51-8d4c-7fc514dfcc31"
                     }
                 },
                 {
                     "type": "Token",
                     "segment": {
                         "type": "Index",
-                        "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                        "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
                         "start": 8,
                         "stop": 10
                     },
-                    "referent": null,
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604698020.8788202,
                     "value": "my",
-                    "id": "ea69a172-061e-45a8-830e-00bde6da1f52",
+                    "id": "50009fdc-9d1f-46a1-9db0-6619ac56997a",
                     "ruler": {
                         "type": "AtomicRuler",
-                        "container_id": "ea69a172-061e-45a8-830e-00bde6da1f52"
+                        "container_id": "50009fdc-9d1f-46a1-9db0-6619ac56997a"
                     }
                 },
                 {
                     "type": "Token",
                     "segment": {
                         "type": "Index",
-                        "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                        "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
                         "start": 11,
                         "stop": 18
                     },
-                    "referent": null,
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604698020.87887,
                     "value": "brother",
-                    "id": "84572ed8-aa87-4101-b089-f5caa6afa342",
+                    "id": "7d297761-5ead-4fab-a579-0eeeb09b5c73",
                     "ruler": {
                         "type": "AtomicRuler",
-                        "container_id": "84572ed8-aa87-4101-b089-f5caa6afa342"
+                        "container_id": "7d297761-5ead-4fab-a579-0eeeb09b5c73"
                     }
                 },
                 {
                     "type": "Token",
                     "segment": {
                         "type": "Index",
-                        "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                        "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
                         "start": 19,
                         "stop": 22
                     },
-                    "referent": null,
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604698020.878895,
                     "value": "Jim",
-                    "id": "ca15ce12-5767-4cdd-91a9-01ffa8858a77",
+                    "id": "3038ad06-1a6e-4b8b-8763-3de1a6c3dfef",
                     "ruler": {
                         "type": "AtomicRuler",
-                        "container_id": "ca15ce12-5767-4cdd-91a9-01ffa8858a77"
+                        "container_id": "3038ad06-1a6e-4b8b-8763-3de1a6c3dfef"
                     }
                 }
             ],
-            "id": "5cc9f4cb-f364-4e0d-82d4-1121da5f9c38",
+            "id": "50c9cf6c-01e1-4a62-ac11-4e57dee7b736",
             "ruler": {
                 "type": "Index",
-                "container_id": "5cc9f4cb-f364-4e0d-82d4-1121da5f9c38",
+                "container_id": "50c9cf6c-01e1-4a62-ac11-4e57dee7b736",
                 "start": 0,
                 "stop": 5
             }
@@ -213,13 +224,14 @@
             "type": "PersonAnnotation",
             "segment": {
                 "type": "Index",
-                "container_id": "5cc9f4cb-f364-4e0d-82d4-1121da5f9c38",
+                "container_id": "50c9cf6c-01e1-4a62-ac11-4e57dee7b736",
                 "start": 4,
                 "stop": 4
             },
-            "referent": "931b0ddf-52ab-4cb8-a3fb-0bbb5a32ba18",
+            "source": "annotator_1",
+            "timestamp": 1604698020.879356,
             "person": {
-                "id": "931b0ddf-52ab-4cb8-a3fb-0bbb5a32ba18",
+                "id": "89e96526-a59d-436f-9461-597ca89b9114",
                 "name": "Jim",
                 "age": 32,
                 "gender": "MALE",
@@ -228,11 +240,12 @@
         }
     ],
     "seq": null,
-    "id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+    "id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
     "ruler": {
         "type": "Index",
-        "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+        "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
         "start": 0,
-        "stop": 22
+        "stop": 23
     }
 },
+]

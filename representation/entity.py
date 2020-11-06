@@ -1,5 +1,6 @@
 # Define Annotation Class
 import enum
+from datetime import date
 
 import uuid
 
@@ -29,7 +30,6 @@ class Instance:
         self.id = id if id else uuid.uuid4()
 
 
-# TODO do we need objects?
 class Object(Instance):
     def __init__(self, id: Identifier, label: str):
         super().__init__(id)
@@ -37,7 +37,6 @@ class Object(Instance):
 
 
 class Person(Instance):
-    # TODO Should be identified by its properties not by an ID (though it should have an ID)?
     def __init__(self, id: Identifier, name: str, age: int, gender: Gender, emotion: Emotion):
         super().__init__(id)
         self.name = name
@@ -46,6 +45,5 @@ class Person(Instance):
         self.emotion = emotion
 
 
-# TODO do we need a Person?
 class Friend(Person):
     pass

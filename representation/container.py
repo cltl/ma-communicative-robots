@@ -19,14 +19,11 @@ class Ruler:
 R = TypeVar('R', bound=Ruler)
 T = TypeVar('T')
 class Container(Generic[R, T]):
-    """Base class of segments that allow to identify a segment relative to a ruler in a signal"""
     def __getitem__(self, segment: R) -> T:
         raise NotImplementedError()
 
 
 class BaseContainer(Container[R, T]):
-    """Base class of segments that allow to identify a segment relative to a ruler in a signal"""
-
     def __init__(self, id_: Identifier, ruler: R) -> None:
         self.id = id_
         self.ruler = ruler
@@ -98,8 +95,8 @@ class TemporalRuler(Ruler):
 class TemporalContainer(BaseContainer[TemporalRuler, TemporalRuler]):
     def __init__(self, start: int, end: int, id_: Identifier = None) -> None:
         id_ = id_ if id_ else uuid.uuid4()
-        self.start_date = start
-        self.end_date = end
+        self.start_time = start
+        self.end_time = end
         super().__init__(id_, TemporalRuler(id_, start, end))
 
     def __getitem__(self, segment: TemporalRuler) -> TemporalRuler:
