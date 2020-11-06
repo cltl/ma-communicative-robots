@@ -1,110 +1,238 @@
 [
 {
-    "id": "2ec83de9-9701-44db-90cc-4df5ba41f93c",
     "modality": "TEXT",
     "time": {
-        "end": 1603149890,
-        "start": 1603139850
+        "type": "TemporalRuler",
+        "container_id": "test_scenario",
+        "start": 1603139850,
+        "end": 1603149890
     },
     "files": [
         "data/test-scenes/test_scenario/text/chat1_utterance1.txt"
     ],
-    "utterances": [
+    "mentions": [
         {
-            "chat_id": "9bdf5723-8bd1-4b57-b9a2-f61af07e6245",
-            "utterance_id": "e419f966-6f7b-444b-aa30-378dbdeaf07a",
-            "utterance": "That is my brother Jim",
-            "tokens": [
-                [
-                    [
-                        0,
-                        4
-                    ],
-                    "That"
-                ],
-                [
-                    [
-                        5,
-                        7
-                    ],
-                    "is"
-                ],
-                [
-                    [
-                        8,
-                        10
-                    ],
-                    "my"
-                ],
-                [
-                    [
-                        11,
-                        18
-                    ],
-                    "brother"
-                ],
-                [
-                    [
-                        19,
-                        22
-                    ],
-                    "Jim"
-                ]
-            ],
-            "speaker": {
-                "person": {
-                    "id": "0e182be6-29e9-4f44-aae5-3eb22a2dc071",
-                    "name": "Piek",
-                    "age": 59,
-                    "gender": "MALE",
-                    "emotion": "JOY"
-                },
-                "segment": {
-                    "offset": [
-                        0,
-                        5
-                    ]
-                }
+            "type": "Token",
+            "segment": {
+                "type": "Index",
+                "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                "start": 0,
+                "stop": 4
             },
-            "mentions": [
+            "referent": null,
+            "value": "That",
+            "id": "33c13370-6e1c-4240-b8df-db9ebf8c398d",
+            "ruler": {
+                "type": "AtomicRuler",
+                "container_id": "33c13370-6e1c-4240-b8df-db9ebf8c398d"
+            }
+        },
+        {
+            "type": "Token",
+            "segment": {
+                "type": "Index",
+                "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                "start": 5,
+                "stop": 7
+            },
+            "referent": null,
+            "value": "is",
+            "id": "0f3df922-0d46-4f72-8352-287e035317d1",
+            "ruler": {
+                "type": "AtomicRuler",
+                "container_id": "0f3df922-0d46-4f72-8352-287e035317d1"
+            }
+        },
+        {
+            "type": "Token",
+            "segment": {
+                "type": "Index",
+                "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                "start": 8,
+                "stop": 10
+            },
+            "referent": null,
+            "value": "my",
+            "id": "ea69a172-061e-45a8-830e-00bde6da1f52",
+            "ruler": {
+                "type": "AtomicRuler",
+                "container_id": "ea69a172-061e-45a8-830e-00bde6da1f52"
+            }
+        },
+        {
+            "type": "Token",
+            "segment": {
+                "type": "Index",
+                "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                "start": 11,
+                "stop": 18
+            },
+            "referent": null,
+            "value": "brother",
+            "id": "84572ed8-aa87-4101-b089-f5caa6afa342",
+            "ruler": {
+                "type": "AtomicRuler",
+                "container_id": "84572ed8-aa87-4101-b089-f5caa6afa342"
+            }
+        },
+        {
+            "type": "Token",
+            "segment": {
+                "type": "Index",
+                "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                "start": 19,
+                "stop": 22
+            },
+            "referent": null,
+            "value": "Jim",
+            "id": "ca15ce12-5767-4cdd-91a9-01ffa8858a77",
+            "ruler": {
+                "type": "AtomicRuler",
+                "container_id": "ca15ce12-5767-4cdd-91a9-01ffa8858a77"
+            }
+        },
+        {
+            "chat_id": "291b693e-2835-4596-b90f-15a684b4a594",
+            "utterance": "That is my brother Jim",
+            "emotion": "JOY",
+            "type": "UtteranceAnnotation",
+            "segment": [
                 {
-                    "token_offset": {
-                        "offset": [
-                            4,
-                            5
-                        ]
+                    "type": "AtomicRuler",
+                    "container_id": "33c13370-6e1c-4240-b8df-db9ebf8c398d"
+                },
+                {
+                    "type": "AtomicRuler",
+                    "container_id": "0f3df922-0d46-4f72-8352-287e035317d1"
+                },
+                {
+                    "type": "AtomicRuler",
+                    "container_id": "ea69a172-061e-45a8-830e-00bde6da1f52"
+                },
+                {
+                    "type": "AtomicRuler",
+                    "container_id": "84572ed8-aa87-4101-b089-f5caa6afa342"
+                },
+                {
+                    "type": "AtomicRuler",
+                    "container_id": "ca15ce12-5767-4cdd-91a9-01ffa8858a77"
+                }
+            ],
+            "referent": "2994d536-37d4-4bd4-bbdb-f633d36c4e7a",
+            "seq": [
+                {
+                    "type": "Token",
+                    "segment": {
+                        "type": "Index",
+                        "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                        "start": 0,
+                        "stop": 4
                     },
-                    "phrase": [
-                        [
-                            19,
-                            22
-                        ],
-                        "Jim"
-                    ],
-                    "referent": {
-                        "id": "668c04e8-259f-4325-b6b2-c791aead2434",
-                        "name": "Jim",
-                        "age": 32,
-                        "gender": "MALE",
-                        "emotion": null
+                    "referent": null,
+                    "value": "That",
+                    "id": "33c13370-6e1c-4240-b8df-db9ebf8c398d",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "33c13370-6e1c-4240-b8df-db9ebf8c398d"
+                    }
+                },
+                {
+                    "type": "Token",
+                    "segment": {
+                        "type": "Index",
+                        "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                        "start": 5,
+                        "stop": 7
+                    },
+                    "referent": null,
+                    "value": "is",
+                    "id": "0f3df922-0d46-4f72-8352-287e035317d1",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "0f3df922-0d46-4f72-8352-287e035317d1"
+                    }
+                },
+                {
+                    "type": "Token",
+                    "segment": {
+                        "type": "Index",
+                        "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                        "start": 8,
+                        "stop": 10
+                    },
+                    "referent": null,
+                    "value": "my",
+                    "id": "ea69a172-061e-45a8-830e-00bde6da1f52",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "ea69a172-061e-45a8-830e-00bde6da1f52"
+                    }
+                },
+                {
+                    "type": "Token",
+                    "segment": {
+                        "type": "Index",
+                        "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                        "start": 11,
+                        "stop": 18
+                    },
+                    "referent": null,
+                    "value": "brother",
+                    "id": "84572ed8-aa87-4101-b089-f5caa6afa342",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "84572ed8-aa87-4101-b089-f5caa6afa342"
+                    }
+                },
+                {
+                    "type": "Token",
+                    "segment": {
+                        "type": "Index",
+                        "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+                        "start": 19,
+                        "stop": 22
+                    },
+                    "referent": null,
+                    "value": "Jim",
+                    "id": "ca15ce12-5767-4cdd-91a9-01ffa8858a77",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "ca15ce12-5767-4cdd-91a9-01ffa8858a77"
                     }
                 }
             ],
-            "emotion": "JOY"
-        }
-    ],
-    "triples": [
+            "id": "5cc9f4cb-f364-4e0d-82d4-1121da5f9c38",
+            "ruler": {
+                "type": "Index",
+                "container_id": "5cc9f4cb-f364-4e0d-82d4-1121da5f9c38",
+                "start": 0,
+                "stop": 5
+            }
+        },
         {
-            "subject": {
-                "id": "http://cltl.nl/leolani/friends/0e182be6-29e9-4f44-aae5-3eb22a2dc071",
-                "type": "FRIEND"
+            "type": "PersonAnnotation",
+            "segment": {
+                "type": "Index",
+                "container_id": "5cc9f4cb-f364-4e0d-82d4-1121da5f9c38",
+                "start": 4,
+                "stop": 4
             },
-            "predicate": "http://cltl.nl/combot/predicate/brother-of",
-            "object": {
-                "id": "http://cltl.nl/leolani/friends/668c04e8-259f-4325-b6b2-c791aead2434",
-                "type": "FRIEND"
+            "referent": "931b0ddf-52ab-4cb8-a3fb-0bbb5a32ba18",
+            "person": {
+                "id": "931b0ddf-52ab-4cb8-a3fb-0bbb5a32ba18",
+                "name": "Jim",
+                "age": 32,
+                "gender": "MALE",
+                "emotion": null
             }
         }
-    ]
+    ],
+    "seq": null,
+    "id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+    "ruler": {
+        "type": "Index",
+        "container_id": "a70a2d5e-5675-47e6-a2f9-b80d3062b28f",
+        "start": 0,
+        "stop": 22
+    }
 },
-]
