@@ -31,3 +31,4 @@ Contributions are what make the open source community such an amazing place to b
 * Taewoon Kim (t.kim@vu.nl)
 * Lea Krause (l.krause@vu.nl)
 * Jaap Kruijt (j.m.kruijt@vu.nl)
+* Thomas Baier (t.baier@vu.nl)
