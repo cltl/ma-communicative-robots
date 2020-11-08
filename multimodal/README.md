@@ -10,7 +10,7 @@ There is a lot of information in the videos (moving pictures). However, we canâ€
 Facial feature extraction can be done as follows:
 
 ## Face detection
-This is normally always the first step. This is to get the bounding boxes around the faces. This is implemented here: https://github.com/leolani/cltl-facedetection 
+This is normally always the first step. This is to get the bounding boxes around the faces. This is implemented here: https://github.com/leolani/cltl-facedetection. The predictions on the MELD dataset are saved as json. [Here](https://drive.google.com/drive/folders/1BllPXGAOH434O6P35bKuFcVUzfTEaSxf?usp=sharing) is the link.
 
 ## Face embeddings
 After cropping the face using the bounding box, we can compute their embeddings. Face recognition (i.e. trying to determine who this person is) is normally done using the embedding vectors. This will be implemented here: https://github.com/leolani/cltl-facerecognition 
