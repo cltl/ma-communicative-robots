@@ -39,13 +39,14 @@ class Object(Instance):
 
 
 class Person(Instance):
+    #### emotion should be taken out here and should become an annotation
     def __init__(self, id: Identifier, name: str, age: int, gender: Gender, emotion: Emotion):
         super().__init__(id)
         self.name = name  # this could be a list of names
         #self.pronoun = pronoun # this could be a list of pronouns
         self.age = age # this should be changed to day of birth
         self.gender = gender
-        self.emotion = emotion
+        self.emotion = emotion  ### to be removed
 
 
 class Friend(Person):
