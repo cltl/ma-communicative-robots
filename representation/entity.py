@@ -39,10 +39,10 @@ class Object(Instance):
 
 
 class Person(Instance):
-    def __init__(self, id: Identifier, name: str, pronoun: str, age: int, gender: Gender, emotion: Emotion):
+    def __init__(self, id: Identifier, name: str, age: int, gender: Gender, emotion: Emotion):
         super().__init__(id)
         self.name = name  # this could be a list of names
-        self.pronoun = pronoun # this could be a list of pronouns
+        #self.pronoun = pronoun # this could be a list of pronouns
         self.age = age # this should be changed to day of birth
         self.gender = gender
         self.emotion = emotion
