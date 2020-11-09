@@ -19,14 +19,16 @@ class Modality(enum.Enum):
 
 
 class Mention:
-    def __init__(self, segment: Union[Ruler, Iterable[Ruler]]):
+    def __init__(self, segment: Union[Ruler, Iterable[Ruler]], value: object = None):
         self.type = self.__class__.__name__
         self.segment = segment
+        self.value = value
 
 
 class Annotation(Mention):
-    def __init__(self, segment: Union[Ruler, Iterable[Ruler]], source: Identifier, timestamp: int):
-        super(Annotation, self).__init__(segment)
+    def __init__(self, segment: Union[Ruler, Iterable[Ruler]], source: Identifier, timestamp: int,
+                 value: object = None):
+        super(Annotation, self).__init__(segment, value)
         self.type = self.__class__.__name__
         self.source = source
         self.timestamp = timestamp

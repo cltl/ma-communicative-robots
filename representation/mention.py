@@ -55,8 +55,12 @@ class FaceAnnotation(Generic[T], Annotation):
 
 class PersonAnnotation(Generic[T], Annotation):
     def __init__(self, person: Person, segment: T, source: Identifier, timestamp: int):
-        super().__init__(segment, source, timestamp)
-        self.person = person
+        super().__init__(segment, source, timestamp, person)
+
+
+class EmotionAnnotation(Generic[T], Annotation):
+    def __init__(self, emotion: Emotion, segment: T, source: Identifier, timestamp: int):
+        super().__init__(segment, source, timestamp, value=emotion)
 
 
 class Token(Annotation, AtomicContainer):
