@@ -3,12 +3,12 @@
     "modality": "IMAGE",
     "time": {
         "type": "TemporalRuler",
-        "container_id": "test_scenario",
+        "container_id": "test-scenario-2",
         "start": 1603139705,
         "end": 1603140000
     },
     "files": [
-        "data/test-scenes/test_scenario/image/piek-1.jpg"
+        "data/test-scenes/test-scenario-2/image/piek-sunglasses.jpg"
     ],
     "mentions": [
         {
@@ -59,12 +59,12 @@
     "modality": "IMAGE",
     "time": {
         "type": "TemporalRuler",
-        "container_id": "test_scenario",
+        "container_id": "test-scenario-2",
         "start": 1603139840,
         "end": 1603149860
     },
     "files": [
-        "data/test-scenes/test_scenario/image/pexels-victoria-borodinova-1648358.jpg"
+        "data/test-scenes/test-scenario-2/image/maxima.jpg"
     ],
     "mentions": [
         {
@@ -87,8 +87,120 @@
             "timestamp": 1604698020.89704,
             "person": {
                 "id": "89e96526-a59d-436f-9461-597ca89b9114",
-                "name": "Jim",
-                "age": 32,
+                "name": "Maxima",
+                "age": 42,
+                "gender": "FEMALE",
+                "emotion": null
+            }
+        }
+    ],
+    "array": null,
+    "id": "1763b226-8036-4d18-9bf7-45420a1d24d3",
+    "ruler": {
+        "type": "MultiIndex",
+        "container_id": "1763b226-8036-4d18-9bf7-45420a1d24d3",
+        "bounds": [
+            [
+                0,
+                3456
+            ],
+            [
+                0,
+                5184
+            ]
+        ]
+    }
+},
+{
+    "modality": "IMAGE",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test-scenario-2",
+        "start": 1603139840,
+        "end": 1603149860
+    },
+    "files": [
+        "data/test-scenes/test-scenario-2/image/niqee-2020-10-25 at 17.30.51.png"
+    ],
+    "mentions": [
+        {
+            "type": "PersonAnnotation",
+            "segment": {
+                "type": "MultiIndex",
+                "container_id": "1763b226-8036-4d18-9bf7-45420a1d24d3",
+                "bounds": [
+                    [
+                        450,
+                        1200
+                    ],
+                    [
+                        1280,
+                        1900
+                    ]
+                ]
+            },
+            "source": "face_recognition",
+            "timestamp": 1604698020.89704,
+            "person": {
+                "id": "89e96526-a59d-436f-9461-597ca89b9114",
+                "name": "Niqee",
+                "age": 17,
+                "gender": "FEMALE",
+                "emotion": null
+            }
+        }
+    ],
+    "array": null,
+    "id": "1763b226-8036-4d18-9bf7-45420a1d24d3",
+    "ruler": {
+        "type": "MultiIndex",
+        "container_id": "1763b226-8036-4d18-9bf7-45420a1d24d3",
+        "bounds": [
+            [
+                0,
+                3456
+            ],
+            [
+                0,
+                5184
+            ]
+        ]
+    }
+},
+{
+    "modality": "IMAGE",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test-scenario-2",
+        "start": 1603139840,
+        "end": 1603149860
+    },
+    "files": [
+        "data/test-scenes/test-scenario-2/image/sam-2020-10-25 at 17.30.25.png"
+    ],
+    "mentions": [
+        {
+            "type": "PersonAnnotation",
+            "segment": {
+                "type": "MultiIndex",
+                "container_id": "1763b226-8036-4d18-9bf7-45420a1d24d3",
+                "bounds": [
+                    [
+                        450,
+                        1200
+                    ],
+                    [
+                        1280,
+                        1900
+                    ]
+                ]
+            },
+            "source": "face_recognition",
+            "timestamp": 1604698020.89704,
+            "person": {
+                "id": "89e96526-a59d-436f-9461-597ca89b9114",
+                "name": "Sam",
+                "age": 12,
                 "gender": "MALE",
                 "emotion": null
             }
@@ -111,4 +223,57 @@
         ]
     }
 },
+{
+    "modality": "IMAGE",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test-scenario-2",
+        "start": 1603139840,
+        "end": 1603149860
+    },
+    "files": [
+        "data/test-scenes/test-scenario-2/image/soccer-balll.jpg"
+    ],
+    "mentions": [
+        {
+            "type": "PersonAnnotation",
+            "segment": {
+                "type": "MultiIndex",
+                "container_id": "1763b226-8036-4d18-9bf7-45420a1d24d3",
+                "bounds": [
+                    [
+                        450,
+                        1200
+                    ],
+                    [
+                        1280,
+                        1900
+                    ]
+                ]
+            },
+            "source": "object_recognition",
+            "timestamp": 1604698020.89704,
+            "object": {
+                "id": "89e96526-a59d-436f-9461-597ca89b9114",
+                "name": "soccer_ball"
+            }
+        }
+    ],
+    "array": null,
+    "id": "1763b226-8036-4d18-9bf7-45420a1d24d3",
+    "ruler": {
+        "type": "MultiIndex",
+        "container_id": "1763b226-8036-4d18-9bf7-45420a1d24d3",
+        "bounds": [
+            [
+                0,
+                3456
+            ],
+            [
+                0,
+                5184
+            ]
+        ]
+    }
+}
 ]

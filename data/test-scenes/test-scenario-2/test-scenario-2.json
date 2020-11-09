@@ -21,7 +21,7 @@
         "objects": []
     },
     "signals": {
-        "image": "data/test-scenes/test_scenario/image.json",
-        "text": "data/test-scenes/test_scenario/text.json"
+        "image": "data/test-scenes/test-scenario-2/image.json",
+        "text": "data/test-scenes/test-scenario-2/text.json"
     }
 }
