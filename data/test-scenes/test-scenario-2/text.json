@@ -9,7 +9,6 @@
     },
     "files": [
         "data/test-scenes/test_scenario/text/chat1.csv#1#1"
-        #This is Maxima.
     ],
     "mentions": [
         {
@@ -39,9 +38,9 @@
                 "start": 5,
                 "stop": 6
             },
-            annotations: [
+            "annotations": [
                 {
-                    "type": "Token"
+                    "type": "Token",
                     "value": "is",
                     "source": "treebank_tokenizer",
                     "timestamp": 1604957866.5572171,
@@ -60,9 +59,9 @@
                 "start": 7,
                 "stop": 14
             },
-            annotations: [
+            "annotations": [
                 {
-                    "type": "Token"
+                    "type": "Token",
                     "value": "Maxima",
                     "source": "treebank_tokenizer",
                     "timestamp": 1604957866.5572171,
@@ -75,44 +74,44 @@
             ]
         },
         {
-            segment: {
+            "segment": {
                 "type": "AtomicRuler",
                 "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1"
             },
-            annotations: [
+            "annotations": [
                 {
-                    type: POS,
-                    value: "Pronoun",
-                    source: pos_tagger,
-                    timestamp: 1234
+                    "type": "POS",
+                    "value": "Pronoun",
+                    "source": "pos_tagger",
+                    "timestamp": 1234
                 }
             ]
         },
         {
-            segment: {
+            "segment": {
                 "type": "AtomicRuler",
                 "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t2"
             },
-            annotations: [
+            "annotations": [
                 {
-                    type: POS,
-                    value: "Verb",
-                    source: pos_tagger,
-                    timestamp: 1234
+                    "type": "POS",
+                    "value": "Verb",
+                    "source": "pos_tagger",
+                    "timestamp": 1234
                 }
             ]
         },
         {
-            segment: {
+            "segment": {
                 "type": "AtomicRuler",
                 "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t3"
             },
-            annotations: [
+            "annotations": [
                 {
-                    type: POS,
-                    value: "Propernoun",
-                    source: pos_tagger,
-                    timestamp: 1234
+                    "type": "POS",
+                    "value": "Propernoun",
+                    "source": "pos_tagger",
+                    "timestamp": 1234
                 },
                 {
                     "type": "PersonAnnotation",
