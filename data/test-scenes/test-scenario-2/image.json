@@ -235,4 +235,66 @@
         }
     ]
 }
+,
+{
+    "modality": "IMAGE",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test-scenario-2",
+        "start": 1603139840,
+        "end": 1603149860
+    },
+    "files": [
+        "data/test-scenes/test-scenario-2/image/family-1.jpg"
+    ],
+    "mentions": [
+        {
+            "segment": {
+                "type": "MultiIndex",
+                "container_id": "0c1b7ffd-d22b-41c5-a55d-0f4a16b9ad89",
+                "bounds": [
+                    [
+                        10,
+                        521
+                    ],
+                    [
+                        15,
+                        518
+                    ]
+                ]
+            }
+        }
+    ]
+}
+,
+{
+    "modality": "IMAGE",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test-scenario-2",
+        "start": 1603139840,
+        "end": 1603149860
+    },
+    "files": [
+        "data/test-scenes/test-scenario-2/image/family-2.jpg"
+    ],
+    "mentions": [
+        {
+            "segment": {
+                "type": "MultiIndex",
+                "container_id": "0c1b7ffd-d22b-41c5-a55d-0f4a16b9ad89",
+                "bounds": [
+                    [
+                        10,
+                        521
+                    ],
+                    [
+                        15,
+                        518
+                    ]
+                ]
+            }
+        }
+    ]
+}
 ]

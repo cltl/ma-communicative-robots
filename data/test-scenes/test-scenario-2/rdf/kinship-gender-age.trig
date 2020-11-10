@@ -1,0 +1,73 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniFriends: <http://cltl.nl/leolani/friends/> .
+@prefix leolaniInputs: <http://cltl.nl/leolani/inputs/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:Claims {
+
+    leolaniWorld:leolani_know_piek a gaf:Assertion, sem:Event .
+
+	leolaniWorld:piek-daughter-niqee a gaf:Assertion, sem:Event .
+
+	leolaniWorld:piek-son-sam a gaf:Assertion, sem:Event .
+
+	leolaniWorld:niqee-gender-female a gaf:Assertion, sem:Event .
+
+	leolaniWorld:same-gender-male  a gaf:Assertion, sem:Event .
+
+	leolaniWorld:anja-daughter-niqee a gaf:Assertion, sem:Event .
+
+	leolaniWorld:anja-daughter-niqee a gaf:Assertion, sem:Event .
+
+	leolaniWorld:piek-gender-male a gaf:Assertion, sem:Event .
+
+	leolaniWorld:anja-gender-female a gaf:Assertion, sem:Event .
+
+ }
+
+leolaniWorld:piek-daughter-niqee {
+	:piek :has-daughter :niqee .
+}
+
+leolaniWorld:piek-son-sam {
+	:piek :has-son :sam .
+}
+
+leolaniWorld:niqee-gender-female {
+	:niqee :has-gender :female .
+}
+
+leolaniWorld:same-gender-male {
+	:sam :has-gender :male .
+}
+
+leolaniWorld:anja-daughter-niqee {
+	:anja :has-daughter :niqee .
+}
+
+leolaniWorld:anja-daughter-niqee {
+	:anja :has-son :sam .
+}
+
+leolaniWorld:piek-gender-male {
+	:piek :has-gender :male .
+
+}
+
+leolaniWorld:anja-gender-female {
+	:anja :has-gender :female .
+}
