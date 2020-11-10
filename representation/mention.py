@@ -17,6 +17,10 @@ data_namespace = Namespace("http://cltl.nl/combot/signal/")
 predicate_namespace = Namespace("http://cltl.nl/combot/predicate/")
 
 
+class ImageLabel(enum.Enum):
+    FACE = 0
+
+
 class EntityType(enum.Enum):
     PERSON = 0
     FRIEND = 1
@@ -29,51 +33,27 @@ class Entity:
         self.type = type
 
 
-class Triple(Annotation):
-    def __init__(self, segment: Tuple[Ruler, Ruler, Ruler], subject: Entity, predicate: URIRef, object_: Entity,
-                 source: Identifier, timestamp: int) -> None:
-        super().__init__(segment, source, timestamp)
+class Triple:
+    def __init__(self, subject: Entity, predicate: URIRef, object_: Entity) -> None:
         self.subject = subject
         self.predicate = predicate
         self.object = object_
 
     # TODO make this more generic
     @classmethod
-    def from_friends(cls, segment: Tuple[Ruler, Ruler, Ruler], subject_id, predicate_id, object_id,
-                     source: Identifier, timestamp: int) -> Triple:
-        return cls(segment, Entity(friends_namespace.term(subject_id), EntityType.FRIEND),
+    def from_friends(cls, subject_id, predicate_id, object_id) -> Triple:
+        return cls(Entity(friends_namespace.term(subject_id), EntityType.FRIEND),
                    predicate_namespace.term(predicate_id),
-                   Entity(friends_namespace.term(object_id), EntityType.FRIEND),
-                   source, timestamp)
+                   Entity(friends_namespace.term(object_id), EntityType.FRIEND))
 
 
-T = TypeVar('T')
-class FaceAnnotation(Generic[T], Annotation):
-    def __init__(self, segment: T, source: Identifier, timestamp: int):
-        super().__init__(segment, source, timestamp)
-
-
-class PersonAnnotation(Generic[T], Annotation):
-    def __init__(self, person: Person, segment: T, source: Identifier, timestamp: int):
-        super().__init__(segment, source, timestamp, person)
-
-
-class EmotionAnnotation(Generic[T], Annotation):
-    def __init__(self, emotion: Emotion, segment: T, source: Identifier, timestamp: int):
-        super().__init__(segment, source, timestamp, value=emotion)
-
-
-class Token(Annotation, AtomicContainer):
-    def __init__(self, value: str, offset: Index, source: Identifier, timestamp: int) -> None:
-        Annotation.__init__(self, offset, source, timestamp)
+class Token(AtomicContainer):
+    def __init__(self, value: str) -> None:
         AtomicContainer.__init__(self, value)
 
 
-class UtteranceAnnotation(Annotation, Sequence):
-    def __init__(self, id_: Identifier, chat_id: Identifier, utterance: str, tokens: Iterable[Token],
-                 speaker: Person, emotion: Emotion, source: Identifier, timestamp: int) -> None:
+class Utterance(Sequence):
+    def __init__(self, chat_id: Identifier, utterance: str, tokens: Iterable[Token], id_: Identifier = None) -> None:
         self.chat_id = chat_id if chat_id else uuid.uuid4()
         self.utterance = utterance
-        self.emotion = emotion
-        Annotation.__init__(self, tuple(t.ruler for t in tokens), source, timestamp)
         Sequence.__init__(self, tuple(tokens))
