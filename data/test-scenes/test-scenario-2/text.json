@@ -8,244 +8,139 @@
         "end": 1603149890
     },
     "files": [
-        "data/test-scenes/test_scenario/text/chat1_utterance1.txt"
+        "data/test-scenes/test_scenario/text/chat1.csv#1#1"
+        #This is Maxima.
     ],
     "mentions": [
         {
-            "type": "Token",
             "segment": {
                 "type": "Index",
-                "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
+                "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
                 "start": 0,
                 "stop": 4
             },
-            "source": "treebank_tokenizer",
-            "timestamp": 1604698020.87868,
-            "value": "That",
-            "id": "2d8725d8-b306-49c0-b85a-8614dd7e807f",
-            "ruler": {
-                "type": "AtomicRuler",
-                "container_id": "2d8725d8-b306-49c0-b85a-8614dd7e807f"
-            }
+            "annotations": [
+                {   "type": "Token",
+                    "value": "This",
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604957866.557157,
+                    "id": "t1",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1"
+                    }
+                }
+            ]
         },
         {
-            "type": "Token",
             "segment": {
                 "type": "Index",
-                "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
+                "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
                 "start": 5,
-                "stop": 7
+                "stop": 6
             },
-            "source": "treebank_tokenizer",
-            "timestamp": 1604698020.878762,
-            "value": "is",
-            "id": "64a15b7a-0bff-4b51-8d4c-7fc514dfcc31",
-            "ruler": {
-                "type": "AtomicRuler",
-                "container_id": "64a15b7a-0bff-4b51-8d4c-7fc514dfcc31"
-            }
-        },
-        {
-            "type": "Token",
-            "segment": {
-                "type": "Index",
-                "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
-                "start": 8,
-                "stop": 10
-            },
-            "source": "treebank_tokenizer",
-            "timestamp": 1604698020.8788202,
-            "value": "my",
-            "id": "50009fdc-9d1f-46a1-9db0-6619ac56997a",
-            "ruler": {
-                "type": "AtomicRuler",
-                "container_id": "50009fdc-9d1f-46a1-9db0-6619ac56997a"
-            }
-        },
-        {
-            "type": "Token",
-            "segment": {
-                "type": "Index",
-                "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
-                "start": 11,
-                "stop": 18
-            },
-            "source": "treebank_tokenizer",
-            "timestamp": 1604698020.87887,
-            "value": "brother",
-            "id": "7d297761-5ead-4fab-a579-0eeeb09b5c73",
-            "ruler": {
-                "type": "AtomicRuler",
-                "container_id": "7d297761-5ead-4fab-a579-0eeeb09b5c73"
-            }
-        },
-        {
-            "type": "Token",
-            "segment": {
-                "type": "Index",
-                "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
-                "start": 19,
-                "stop": 22
-            },
-            "source": "treebank_tokenizer",
-            "timestamp": 1604698020.878895,
-            "value": "Jim",
-            "id": "3038ad06-1a6e-4b8b-8763-3de1a6c3dfef",
-            "ruler": {
-                "type": "AtomicRuler",
-                "container_id": "3038ad06-1a6e-4b8b-8763-3de1a6c3dfef"
-            }
-        },
-        {
-            "chat_id": "823457b2-8bb6-4d83-803c-ca6cfcc279c4",
-            "utterance": "That is my brother Jim\n",
-            "emotion": "JOY",
-            "type": "UtteranceAnnotation",
-            "segment": [
+            annotations: [
                 {
-                    "type": "AtomicRuler",
-                    "container_id": "2d8725d8-b306-49c0-b85a-8614dd7e807f"
-                },
-                {
-                    "type": "AtomicRuler",
-                    "container_id": "64a15b7a-0bff-4b51-8d4c-7fc514dfcc31"
-                },
-                {
-                    "type": "AtomicRuler",
-                    "container_id": "50009fdc-9d1f-46a1-9db0-6619ac56997a"
-                },
-                {
-                    "type": "AtomicRuler",
-                    "container_id": "7d297761-5ead-4fab-a579-0eeeb09b5c73"
-                },
-                {
-                    "type": "AtomicRuler",
-                    "container_id": "3038ad06-1a6e-4b8b-8763-3de1a6c3dfef"
-                }
-            ],
-            "source": "annotator_1",
-            "timestamp": 1604698020.879057,
-            "seq": [
-                {
-                    "type": "Token",
-                    "segment": {
-                        "type": "Index",
-                        "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
-                        "start": 0,
-                        "stop": 4
-                    },
-                    "source": "treebank_tokenizer",
-                    "timestamp": 1604698020.87868,
-                    "value": "That",
-                    "id": "2d8725d8-b306-49c0-b85a-8614dd7e807f",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "2d8725d8-b306-49c0-b85a-8614dd7e807f"
-                    }
-                },
-                {
-                    "type": "Token",
-                    "segment": {
-                        "type": "Index",
-                        "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
-                        "start": 5,
-                        "stop": 7
-                    },
-                    "source": "treebank_tokenizer",
-                    "timestamp": 1604698020.878762,
+                    "type": "Token"
                     "value": "is",
-                    "id": "64a15b7a-0bff-4b51-8d4c-7fc514dfcc31",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "64a15b7a-0bff-4b51-8d4c-7fc514dfcc31"
-                    }
-                },
-                {
-                    "type": "Token",
-                    "segment": {
-                        "type": "Index",
-                        "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
-                        "start": 8,
-                        "stop": 10
-                    },
                     "source": "treebank_tokenizer",
-                    "timestamp": 1604698020.8788202,
-                    "value": "my",
-                    "id": "50009fdc-9d1f-46a1-9db0-6619ac56997a",
+                    "timestamp": 1604957866.5572171,
+                    "id": "t2",
                     "ruler": {
                         "type": "AtomicRuler",
-                        "container_id": "50009fdc-9d1f-46a1-9db0-6619ac56997a"
-                    }
-                },
-                {
-                    "type": "Token",
-                    "segment": {
-                        "type": "Index",
-                        "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
-                        "start": 11,
-                        "stop": 18
-                    },
-                    "source": "treebank_tokenizer",
-                    "timestamp": 1604698020.87887,
-                    "value": "brother",
-                    "id": "7d297761-5ead-4fab-a579-0eeeb09b5c73",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "7d297761-5ead-4fab-a579-0eeeb09b5c73"
-                    }
-                },
-                {
-                    "type": "Token",
-                    "segment": {
-                        "type": "Index",
-                        "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
-                        "start": 19,
-                        "stop": 22
-                    },
-                    "source": "treebank_tokenizer",
-                    "timestamp": 1604698020.878895,
-                    "value": "Jim",
-                    "id": "3038ad06-1a6e-4b8b-8763-3de1a6c3dfef",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "3038ad06-1a6e-4b8b-8763-3de1a6c3dfef"
+                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t2"
                     }
                 }
-            ],
-            "id": "50c9cf6c-01e1-4a62-ac11-4e57dee7b736",
-            "ruler": {
-                "type": "Index",
-                "container_id": "50c9cf6c-01e1-4a62-ac11-4e57dee7b736",
-                "start": 0,
-                "stop": 5
-            }
+            ]
         },
         {
-            "type": "PersonAnnotation",
             "segment": {
                 "type": "Index",
-                "container_id": "50c9cf6c-01e1-4a62-ac11-4e57dee7b736",
-                "start": 4,
-                "stop": 4
+                "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
+                "start": 7,
+                "stop": 14
             },
-            "source": "annotator_1",
-            "timestamp": 1604698020.879356,
-            "person": {
-                "id": "89e96526-a59d-436f-9461-597ca89b9114",
-                "name": "Jim",
-                "age": 32,
-                "gender": "MALE",
-                "emotion": null
-            }
+            annotations: [
+                {
+                    "type": "Token"
+                    "value": "Maxima",
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604957866.5572171,
+                    "id": "t3",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t3"
+                    }
+                }
+            ]
+        },
+        {
+            segment: {
+                "type": "AtomicRuler",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1"
+            },
+            annotations: [
+                {
+                    type: POS,
+                    value: "Pronoun",
+                    source: pos_tagger,
+                    timestamp: 1234
+                }
+            ]
+        },
+        {
+            segment: {
+                "type": "AtomicRuler",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t2"
+            },
+            annotations: [
+                {
+                    type: POS,
+                    value: "Verb",
+                    source: pos_tagger,
+                    timestamp: 1234
+                }
+            ]
+        },
+        {
+            segment: {
+                "type": "AtomicRuler",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t3"
+            },
+            annotations: [
+                {
+                    type: POS,
+                    value: "Propernoun",
+                    source: pos_tagger,
+                    timestamp: 1234
+                },
+                {
+                    "type": "PersonAnnotation",
+                    "value": {
+                        "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#INSTANCE1",
+                        "name": "Maxima",
+                        "age": 45,
+                        "gender": "FEMALE"
+                    },
+                    "source": "face_recognition",
+                    "timestamp": 1604957866.524172
+                },
+                {
+                    "type": "EmotionAnnotation",
+                    "value": "JOY",
+                    "source": "annotator_1",
+                    "timestamp": 1604957866.5242481
+                }
+            ]
         }
     ],
     "seq": null,
-    "id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
+    "id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
     "ruler": {
         "type": "Index",
-        "container_id": "ecfddafa-968f-43e8-b489-0b2210fe4335",
+        "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
         "start": 0,
         "stop": 23
     }
-},
+}
 ]
