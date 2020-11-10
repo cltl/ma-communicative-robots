@@ -121,13 +121,13 @@
                         "age": 45,
                         "gender": "FEMALE"
                     },
-                    "source": "face_recognition",
+                    "source": "annotator_1",
                     "timestamp": 1604957866.524172
                 },
                 {
                     "type": "EmotionAnnotation",
                     "value": "JOY",
-                    "source": "annotator_1",
+                    "source": "annotator_2",
                     "timestamp": 1604957866.5242481
                 }
             ]
@@ -140,6 +140,327 @@
         "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
         "start": 0,
         "stop": 23
+    }
+}
+{
+    "modality": "TEXT",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test_scenario",
+        "start": 1603139850,
+        "end": 1603149890
+    },
+    "files": [
+        "data/test-scenes/test_scenario/text/chat2.csv#7#1"
+    ],
+    "mentions": [
+          {
+            "segment": {
+                "type": "Index",
+                "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
+                "start": 0,
+                "stop": 43
+            },
+            "annotations": [
+                {   "type": "Utterance",
+                    "value": "My daughter is called Niqee and my son is called Sam",
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604957866.557157,
+                    "id": "turn7"
+                }
+            ]
+        },
+        {
+            "segment": {
+                "type": "Index",
+                "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
+                "start": 0,
+                "stop": 1
+            },
+            "annotations": [
+                {   "type": "Token",
+                    "value": "My",
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604957866.557157,
+                    "id": "t1",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1"
+                    }
+                }
+            ]
+        },
+        {
+            "segment": {
+                "type": "Index",
+                "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
+                "start": 3,
+                "stop": 10
+            },
+            "annotations": [
+                {
+                    "type": "Token",
+                    "value": "daughter",
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604957866.5572171,
+                    "id": "t2",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t2"
+                    }
+                }
+            ]
+        },
+        {
+            "segment": {
+                "type": "Index",
+                "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
+                "start": 12,
+                "stop": 13
+            },
+            "annotations": [
+                {
+                    "type": "Token",
+                    "value": "is",
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604957866.5572171,
+                    "id": "t3",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t3"
+                    }
+                }
+            ]
+        },
+        {
+            "segment": {
+                "type": "Index",
+                "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
+                "start": 15,
+                "stop": 21
+            },
+            "annotations": [
+                {
+                    "type": "Token",
+                    "value": "called",
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604957866.5572171,
+                    "id": "t4",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t4"
+                    }
+                }
+            ]
+        },
+        {
+            "segment": {
+                "type": "Index",
+                "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
+                "start": 22,
+                "stop": 27
+            },
+            "annotations": [
+                {
+                    "type": "Token",
+                    "value": "Niqee",
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604957866.5572171,
+                    "id": "t5",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t5"
+                    }
+                }
+            ]
+        },
+        {
+            "segment": {
+                "type": "Index",
+                "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
+                "start": 28,
+                "stop": 31
+            },
+            "annotations": [
+                {
+                    "type": "Token",
+                    "value": "and",
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604957866.5572171,
+                    "id": "t6",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t6"
+                    }
+                }
+            ]
+        },
+        {
+            "segment": {
+                "type": "Index",
+                "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
+                "start": 33,
+                "stop": 35
+            },
+            "annotations": [
+                {
+                    "type": "Token",
+                    "value": "my",
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604957866.5572171,
+                    "id": "t7",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t7"
+                    }
+                }
+            ]
+        },
+        {
+            "segment": {
+                "type": "Index",
+                "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
+                "start": 37,
+                "stop": 40
+            },
+            "annotations": [
+                {
+                    "type": "Token",
+                    "value": "son",
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604957866.5572171,
+                    "id": "t8",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t8"
+                    }
+                }
+            ]
+        },
+        {
+            "segment": {
+                "type": "Index",
+                "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
+                "start": 42,
+                "stop": 45
+            },
+            "annotations": [
+                {
+                    "type": "Token",
+                    "value": "Sam",
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604957866.5572171,
+                    "id": "t9",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t9"
+                    }
+                }
+            ]
+        },
+        {
+            "segment": {
+                "type": "AtomicRuler",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t2",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t3",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t4",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t5"
+            },
+            "annotations": [
+                {
+                    "type": "Claim",
+                    "value": "leolaniWorld:piek-daughter-niqee",
+                    "source": "textToTriple",
+                    "timestamp": 1234
+                }
+            ]
+        },
+        {
+            "segment": {
+                "type": "AtomicRuler",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t7",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t8",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t9"
+            },
+            "annotations": [
+                {
+                    "type": "Claim",
+                    "value": "leolaniWorld:piek-son-sam",
+                    "source": "textToTriple",
+                    "timestamp": 1234
+                }
+            ]
+        },
+        {
+            "segment": {
+                "type": "AtomicRuler",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1"
+            },
+
+            "annotations": [
+                {
+                    "type": "PersonAnnotation",
+                    "value": "leolaniWorld:piek",
+                    "source": "entity_linking",
+                    "timestamp": 1604957866.524172
+                },
+            ]
+        },
+        {
+            "segment": {
+                "type": "AtomicRuler",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t5"
+            },
+
+            "annotations": [
+                {
+                    "type": "PersonAnnotation",
+                    "value": "leolaniWorld:niqee",
+                    "source": "entity_linking",
+                    "timestamp": 1604957866.524172
+                },
+            ]
+        },
+,
+        {
+            "segment": {
+                "type": "AtomicRuler",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t7"
+            },
+
+            "annotations": [
+                {
+                    "type": "PersonAnnotation",
+                    "value": "leolaniWorld:piek",
+                    "source": "entity_linking",
+                    "timestamp": 1604957866.524172
+                },
+            ]
+        },
+        {
+            "segment": {
+                "type": "AtomicRuler",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t9"
+            },
+
+            "annotations": [
+                {
+                    "type": "PersonAnnotation",
+                    "value": "leolaniWorld:sam",
+                    "source": "entity_linking",
+                    "timestamp": 1604957866.524172
+                },
+            ]
+        }
+    ],
+    "seq": null,
+    "id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
+    "ruler": {
+        "type": "Index",
+        "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
+        "start": 0,
+        "stop": 43
     }
 }
 ]
