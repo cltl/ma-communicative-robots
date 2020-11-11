@@ -7,7 +7,7 @@ it can be used to hold, combine and share data across many different experiments
 
 This README explains the data folder in this repository, which illustrates how to structure data.
 This data can be rendered by interacting systems that record the interaction and it can be annotated 
-with interpretations (by people and/or systems). In the ''representation'' module of this repository, 
+with interpretations (by people and/or systems). In the **representation** module of this repository, 
 we provide python classes that represent the data elements, which are used to create and load data. 
 We also provide a basic annotation tool that can be used to create and annotate scenarios. 
 In the future, we will release here public data sets used in other experiments converted to our proposed format.
