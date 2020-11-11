@@ -15,7 +15,7 @@ This data can also be loaded and annotated.
 
 ## 1. Overall data view
 
-![Entity relationship diagram](data/Datarepresentation.png)
+![Entity relationship diagram](/data/Datarepresentation.png)
 
 ## 1. Scenario structure
 We consider an interaction as a scenario. Scenarios are stored as subfolders within the data folder. 
