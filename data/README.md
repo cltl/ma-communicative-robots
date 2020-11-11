@@ -1,12 +1,29 @@
 # Multimodal Interaction Data Representation (MIDR)
 
-This data folder contains test data for multimodal interaction systems with robots and virtual agents. This data can be rendered by interacting systems that record the interaction and it can be annotated with interpretations (by people and/or systems).
+We are proposing a generic and simple structure for representing multimodal interaction data. 
+This data can be recorded from human-human, human-agent and agent-agent interactions, 
+where agents can be robots or virtual agents.
 
-The data consists of a series of folders, each folder representing a single scenario with multimodal data files and JSON files that contain meta data on the data files and annotations of units within the multimodal data.
+Our motivation for doing this is that it can be used to hold, combine and share data across 
+many different experiments and allows to compare these.
+
+This README explains the data folder in this repository that illustrates how to structure data for training and testing systems.
+In the *representation* module, we provide the python classes that represent the data elements.
+In the future, we will also release public data sets used in other experiments converted to our proposed format.
+
+This data folder contains test data for multimodal interaction systems with robots and virtual agents. 
+This data can be rendered by interacting systems that record the interaction and it can be annotated 
+with interpretations (by people and/or systems).
+
+The data consists of a series of folders, each folder representing a single scenario with multimodal 
+data files and JSON files that contain meta data on the data files and annotations of units within the multimodal data.
 
 ## Scenario structure
 
-Each scenario contains data files for 4 possible modalities and a single corresponding JSON file that contains the meta data and the annotations for all units in that modality. Furthermore, there is a separate JSON file with the meta data on the complete scenario. This JSON file has the same name as the folder name of the scenario.
+Each scenario contains data files for 4 possible modalities and a single corresponding JSON file 
+that contains the meta data and the annotations for all units in that modality. 
+Furthermore, there is a separate JSON file with the meta data on the complete scenario. 
+This JSON file has the same name as the folder name of the scenario.
 
 Assume our scenario folder has the name "my-first-scenario". This is how the data structure could look like:
 
@@ -110,5 +127,43 @@ The JSON annotations will also include such triples as the result of interpretin
 
 ## References
 
-* A. Fokkens, M. van Erp, P. Vossen, S. Tonelli, W. R. van Hage, L. Serafini, R. Sprugnoli, and J. Hoeksema, “Gaf: a grounded annotation framework for events,” in Proceedings of the 1st workshop on events: definition, detection, coreference, and representation at the conference of the north american chapter of the association for computational linguistics: human language technologies (naacl2013), Atlanta, GA, USA, 2013
-* A. Fokkens, P. Vossen, M. Rospocher, R. Hoekstra, and W. van Hage, “Grasp: grounded representation and source perspective,” in Proceedings of knowrsh, Varna, Bulgaria, 2017. 
+@inproceedings{fokkens2014naf,
+  title={NAF and GAF: Linking linguistic annotations},
+  author={Fokkens, Antske and Soroa, Aitor and Beloki, Zuhaitz and Ockeloen, Niels and Rigau, German and Van Hage, Willem Robert and Vossen, Piek},
+  booktitle={Proceedings 10th Joint ISO-ACL SIGSEM Workshop on Interoperable Semantic Annotation},
+  pages={9--16},
+  year={2014}
+}
+
+@article{fokkensnaf,
+  title={NAF: the NLP Annotation Format Technical Report NWR-2014-3},
+  author={Fokkens, Antske and Soroa, Aitor and Beloki, Zuhaitz and Rigau, German and van Hage, Willem Robert and Vossen, Piek and Donostia, Basque Country}
+}
+
+@inproceedings{fokkens2013gaf,
+  title={GAF: A grounded annotation framework for events},
+  author={Fokkens, Antske and Van Erp, Marieke and Vossen, Piek and Tonelli, Sara and Van Hage, Willem Robert and Serafini, Luciano and Sprugnoli, Rachele and Hoeksema, Jesper},
+  booktitle={Workshop on Events: Definition, Detection, Coreference, and Representation},
+  pages={11--20},
+  year={2013}
+}
+
+@inproceedings{van2016grasp,
+  title={GRaSP: A Multilayered Annotation Scheme for Perspectives},
+  author={van Son, Chantal and Caselli, Tommaso and Fokkens, Antske and Maks, Isa and Morante, Roser and Aroyo, Lora and Vossen, Piek},
+  booktitle={Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC'16)},
+  pages={1177--1184},
+  year={2016}
+}
+
+@article{van2011design,
+  title={Design and use of the Simple Event Model (SEM)},
+  author={Van Hage, Willem Robert and Malais{\'e}, V{\'e}ronique and Segers, Roxane and Hollink, Laura and Schreiber, Guus},
+  journal={Journal of Web Semantics},
+  volume={9},
+  number={2},
+  pages={128--136},
+  year={2011},
+  publisher={Elsevier}
+}
+
