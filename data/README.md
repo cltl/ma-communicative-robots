@@ -36,7 +36,7 @@ This README explains the data laysers and representations in more detail and is 
 ## 1. Overall data view
 
 Figure-1 shows an overview of the different data layers in our representation. 
-![Entity relationship diagram](/data/Datarepresentation.png ""Overview of data elements and relations")
+![Entity relationship diagram](/data/Datarepresentation.png "Overview of data elements and relations")
 
  
 ## 2. Scenario structure
