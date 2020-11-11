@@ -13,11 +13,33 @@ We also provide a basic annotation tool for creating and annotating scenarios.
 In the future, we will release here public data sets used in other experiments converted to our proposed format.
 This data can also be loaded and annotated.
 
+The formats and classes for representing data are derived from presentations that were developed 
+in various others projects and combined in the [NewsReader](www.newsreader-project.eu): the Simple Event Model (SEM), 
+the NewsReader Annotation Format (NAF), the Grounded Annotation Framework (GAF) and its successor 
+the Grounded Annotation and Source Perspective model (GRaSP). The core idea behind the latter two is 
+that we create a relation between a signal and the interpretation of that signal. These interpretations are seen
+as annotations that express a relation between a **segment** of the signal (e.g. a bounding box in an image or
+a token in a text) and some interpretation label defined in another framework. We use the SEM model to model
+the interpretation of situations depicted in the multimodal signal. These situations are represented in RDF as
+instances of people, objects, relations and properties. Annotations relate these instances to specific segments
+in the signals.
+
+This README explain the data laysers and representations in more detail and 
+is further divided into the following subsections.
+<ol>
+<li>Overall data view
+<li>Scenario structure
+<li>Context
+<li>Content
+</li>Annotation
+</ol>
+
 ## 1. Overall data view
 
+In Figure-1 below, we show an overview of the different data layers in our representation. 
 ![Entity relationship diagram](/data/Datarepresentation.png)
 
-## 1. Scenario structure
+## 2. Scenario structure
 We consider an interaction as a scenario. Scenarios are stored as subfolders within the data folder. 
 Within a scenario folder, we store multimodal data in media folders, where each data 
 The data consists of a series of folders, each folder representing a single scenario with multimodal 
