@@ -24,8 +24,7 @@ the interpretation of situations depicted in the multimodal signal. These situat
 instances of people, objects, relations and properties. Annotations relate these instances to specific segments
 in the signals.
 
-This README explain the data laysers and representations in more detail and 
-is further divided into the following subsections.
+This README explains the data laysers and representations in more detail and is further divided into the following subsections:
 <ol>
 <li>Overall data view
 <li>Scenario structure
@@ -36,9 +35,10 @@ is further divided into the following subsections.
 
 ## 1. Overall data view
 
-In Figure-1 below, we show an overview of the different data layers in our representation. 
-![Entity relationship diagram](/data/Datarepresentation.png)
+Figure-1 shows an overview of the different data layers in our representation. 
+![Entity relationship diagram](/data/Datarepresentation.png ""Overview of data elements and relations")
 
+ 
 ## 2. Scenario structure
 We consider an interaction as a scenario. Scenarios are stored as subfolders within the data folder. 
 Within a scenario folder, we store multimodal data in media folders, where each data 
