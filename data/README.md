@@ -35,22 +35,30 @@ This README explains the data laysers and representations in more detail and is 
 
 ## 1. Overall data view
 
-Figure-1 shows an overview of the different data layers in our representation. 
+Figure-1 shows an overview of the different data layers in our representation. From the top, we see different layers for segments,
+rulers, containers. A segment can consists of smaller segments and there are different subtypes
+of segments per modality of the data. A ruler is made up of a specific unit of segments, which can be used to index a signal as a set of
+segments with a particular granularity. Again, we can have subtypes of rulers for each modality. Next, we have containers for each modality.
+Containers ground the data in a spatial and temporal world and can be used to define the order of segments, as in a sequence, 
+or a position of regions.
+
+A scenario inherits from both a temporal and spatial container. It is further defined with specific atttributes and the signalS
+of a certain modality. These signals consist of segments. Segments that are annotated are mentions. The annotation relates a segment to an interpretation.
+Some of these annotations are instances in the model of the world and others are labels that represent concepts. Here we show different types of
+concepts, such as tokens, faces, and named entity expressions, and types of instances, such as objects, friends and persons.
+
 ![Entity relationship diagram](/data/Datarepresentation.png "Overview of data elements and relations")
+Figure-1: Overview of data elements and relations.
 
  
 ## 2. Scenario structure
 We consider an interaction as a scenario. Scenarios are stored as subfolders within the data folder. 
-Within a scenario folder, we store multimodal data in media folders, where each data 
-The data consists of a series of folders, each folder representing a single scenario with multimodal 
-data files and JSON files that contain meta data on the data files and annotations of units within the multimodal data.
-
-Each scenario contains data files for 4 possible modalities and a single corresponding JSON file 
-that contains the meta data and the annotations for all units in that modality. 
-Furthermore, there is a separate JSON file with the meta data on the complete scenario. 
+Within a scenario folder, we store multimodal data in media folders as separate files. Furthermore, we have JSON files for each modality
+which define the metadata and the annotations. Finally, there is a separate JSON file with the meta data on the complete scenario. 
 This JSON file has the same name as the folder name of the scenario.
 
-Assume our scenario folder has the name "my-first-scenario". This is how the data structure could look like:
+**An example**
+Assume our scenario folder has the name "my-first-scenario". This is how its structure could look like:
 
 ```
 my-first-scenario
