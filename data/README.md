@@ -9,13 +9,14 @@ This README explains the data folder in this repository, which illustrates how t
 This data can be rendered by interacting systems that record the interaction and it can be annotated 
 with interpretations (by people and/or systems). In the **representation** module of this repository, 
 we provide python classes that represent the data elements, which are used to create and load data. 
-We also provide a basic annotation tool that can be used to create and annotate scenarios. 
+We also provide a basic annotation tool for creating and annotating scenarios. 
 In the future, we will release here public data sets used in other experiments converted to our proposed format.
 This data can also be loaded and annotated.
 
 ## 1. Overall data view
 
-<img href="Datarepresentation.png">Entity relationship diagram</img>
+(./Datarepresentation.png)
+">Entity relationship diagram</img>
 
 ## 1. Scenario structure
 We consider an interaction as a scenario. Scenarios are stored as subfolders within the data folder. 
