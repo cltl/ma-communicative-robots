@@ -164,7 +164,7 @@ The maximal segment of a data file for a modality is the actual data file itself
 the modality, the temporal ruler identity in which it is grounded and the start and end point of the maximal segment it represents.
 Below we show the JSON structure for one **image** file, where the start and end are represented here in milliseconds.
 
-```
+```example
 "modality": "IMAGE",
     "time": {
         "type": "TemporalRuler",
@@ -181,7 +181,7 @@ For images such annoations could be linked to bounding boxes defined in the imag
 indicate the coordinates that make up this segment and two annotations are provided, one for the person identified and one
 for the emotion expressed by the face:
 
-```
+```example
     "mentions": [
         {
             "segment": {
@@ -229,7 +229,7 @@ The JSON for **text** data has a similar structure for the data file except that
 than a separate data file for each utterance. This is just for pragmatic reasons to make it easier to process Natural Language data.
 As a result of that, we separate the data by the rows and columns in the CSV file as shown in the JSON fragment below:
 
-```
+```example
 {
     "modality": "TEXT",
     "time": {
@@ -245,20 +245,22 @@ As a result of that, we separate the data by the rows and columns in the CSV fil
 
 We see that the file "chat1.csv" which is in the **text** folder is indexed with "#1#1", which refers to the second row and the second
 column of the csv file that contains the text of an utterance. Other columns can be used to represent the speaker of the utterance and the
-start and end time of speaking (possibly derived from an audio file).
+start and end time of speaking (possibly derived from an audio file). The complete conversation for a scenario can thus 
+be represented through a single CSV file with all utterances, identifiers and temporal grounding on separate rows. 
+
 
 An annotation of the above text fragment is shown below. The segment is defined by the start and end offset position in the text
 utterance from row 1 and column 1 in the CSV file. The annotation of the segment shown here defines the offset range as a Token a
 and isolated the word "This".
 
-```
+```example
     "mentions": [
         {
             "segment": {
                 "type": "Index",
                 "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
                 "start": 0,
-                "stop": 4
+                "end": 4
             },
             "annotations": [
                 {   "type": "Token",
@@ -276,33 +278,129 @@ and isolated the word "This".
         .... etc....
     ]
 ```
+More details on the annotations are given in the next section.
 
 ## 5. Annotations
+As explained above, annotations define a relation between a segment and an interpretation. Each annotation has the following attributes:
 
-In addition to the modality data files, we have JSON files for each modality with annotations and meta data. Meta data captures the type of modality, quality, ownership, source identifiers, etc. The annotations relate a segment from the media file or signal to an interpretation. In the case of text, these segments are defined by offsets in the text source file. In the case of images, these are box coordinates in the image file.
+<ul>
+<li> type: kind of annotation
+<li> value: the actual label, which can be a JSON structure or some defined label or identifier
+<li> source: name of the software or person that created the annotation
+<li> timestamp: indicate when the annotation was created</li>
+<li> id: local identifier that differentiates the snnoations in a JSON file</li>
+<li> (OPTIONAL) ruler: defines the annotation as a segment in a rule so that it can be referenced</li>
+</ul>
 
-The complete conversation for a scenario can be represented through a single CSV file with all utterances, identifiers and temporal grounding on separate rows. The JSON file describes each utterance within the CSV and provides the spatial and temporal grounding within the scenario. In addition, the content of the utterance is annotated by a series of labels related to the tokens from text, whereas the tokens are grounded through offsets (following a layer annotation approach).
+The above examples illustrate the attributes and possible values.
+
+The ruler attribute defines unique identifiers for each annotation. This allows us to build annotations on other annotations,
+following the layer annotation framework as defined by Ide and Romary (2007). In NLP pipelines, modules typically take the output
+of one annotation as the input for the next annoation. As such we can first define the tokens of a text as segments grounded through
+offsets and next refer to these tokens to add another annotation. This is shown in the next example, in which a PersonAnnotation is given
+for a segment that is defined elsewhere as the token "My":
+
+```example
+        {
+            "segment": {
+                "type": "Index",
+                "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
+                "start": 0,
+                "end": 1
+            },
+            "annotations": [
+                {   "type": "Token",
+                    "value": "My",
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604957866.557157,
+                    "id": "t1",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1"
+                    }
+                }
+            ]
+        },
+        {
+            "segment": {
+                "type": "AtomicRuler",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1"
+            },
+
+            "annotations": [
+                {
+                    "type": "PersonAnnotation",
+                    "value": "leolaniWorld:piek",
+                    "source": "entity_linking",
+                    "timestamp": 1604957866.524172
+                },
+            ]
+        }
+```
+
+Similarly, we can provide a whole set of segments by listing the identifiers that represent the mention of an annotation.
+In the next example, we show a set of four segments that have been annotated as representing a "Claim" by a "textToTriple" module:
+
+```example
+       {
+            "segment": {
+                "type": "AtomicRuler",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t2",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t3",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t4",
+                "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t5"
+            },
+            "annotations": [
+                {
+                    "type": "Claim",
+                    "value": "leolaniWorld:piek-daughter-niqee",
+                    "source": "textToTriple",
+                    "timestamp": 1234
+                }
+            ]
+        }
+```
 
 
 ### 5.1 Mentions
-The annotation labels can represent any type of interpretation, ranging from emotions, people, objects or events. Since our models need to relate interpretations across modalities, some of these annotations identify instances of people and objects depicted in the visual world. Consider the following examples: 
+The annotation labels can represent any type of interpretation, ranging from emotions, people, objects or events. 
+Since our models need to relate interpretations across modalities, some of these annotations identify instances of people and objects 
+depicted in the visual world. Consider the following examples: 
 
 * "That is my son sitting next to me"
 * "Sam is eating a sandwich"
 
-An annotation of these utterances could define the tokens "my son" as making reference to a person who is a male child of me (the speaker). Similarly, the token "Sam" can be annotated as the name of a person. 
+An annotation of these utterances could define the tokens "my son" as making reference to a person who is a male child of me (the speaker). 
+Similarly, the token "Sam" can be annotated as the name of a person. 
 
-Similary, we can annote certain areas in images as representing people of certain age or gender, surrounded by objects that are annotated with object labels. By annotating segments in the signal with interpretation labels, we indicate the mention of things in signals.
+Similary, we can annotate certain areas in images as representing people of certain age or gender, surrounded by objects that are annotated 
+with object labels. By annotating segments in the signal with interpretation labels, we indicate that these segment **mention** things in signals.
 
 ### 5.2. Identities
-It is however not enough to mark "my son" as making reference to a person or "Sam" as a named entity expression. We also need to link these expressions to the actual people in our shared world. For this, we follow the GAF/GRaSP framework (Fokkens et al, 2013, 2017) that makes a distinction between mentions in texts and a representation of the invidiuals these mentions refer to. Individuals are represented through unique resource identifiers or URIs following Semantic Web standards. Since both "my son" and "Sam" refer to the same URI, they thus become coreferential.
+It is however not enough to mark "my son" as making reference to a person or "Sam" as a named entity expression. 
+We also need to link these expressions to the actual people in our shared world. 
+For this, we follow the GAF/GRaSP framework (Fokkens et al, 2013, 2017) that makes a distinction between mentions 
+in texts and a representation of the individuals these mentions refer to. 
+Individuals are represented through unique resource identifiers or URIs following Semantic Web standards. 
+Since both "my son" and "Sam" refer to the same URI, they thus become coreferential.
 
-By following the same procedure for other modalities, we thus can ground the text mentions to visual coordinates, such as a box segment in an image, which is labeled as a person with an age and gender but also annoted with the URI representing the same individual.
+By following the same procedure for other modalities, we thus can ground the text mentions to visual coordinates, 
+such as a box segment in an image, 
+which is labeled as a person with an age and gender but also annoted with the URI representing the same individual.
 
 ### 5.3. Properties and relations as RDF triples
-On top of the people and objects depicted or mentioned, there may be particular relations expressed, such as "eating" the sandwich or "throwing" a ball. Such relations and properties can be seen as states of events and can be annotated as well although their identity is more difficult to establish and represent by a URI. Within our model, we represent the mentioning of these relations and properties through RDF triples, where identified people and objects fill the subject and object positions and the relations and properties form the predicates. Likewise, the expression "my son" is eventually mapped to the following triples:
+On top of the people and objects depicted or mentioned, there may be particular relations expressed, such as "eating" the sandwich or 
+"throwing" a ball. 
+Such relations and properties can be seen as states of events and can be annotated as well although their identity is 
+more difficult to establish 
+and represent by a URI. Within our model, we represent the mentioning of these relations and properties through RDF triples, 
+where identified people 
+and objects fill the subject and object positions and the relations and properties form the predicates. 
+Likewise, the expression "my son" is eventually 
+mapped to the following triples:
 
-```
+```example
     :my-uri   parent-of   :sam
     :sam      gender      male
     :sam      son-of      :my-uri
@@ -312,6 +410,16 @@ The JSON annotations will also include such triples as the result of interpretin
 
 ## References
 ```
+
+@incollection{ide2007towards,
+  title={Towards International Standards for Language Resources Nancy Ide and Laurent Romary},
+  author={Ide, Nancy and Romary, Laurent},
+  booktitle={Evaluation of text and speech systems},
+  pages={263--284},
+  year={2007},
+  publisher={Springer}
+}
+
 @inproceedings{fokkens2014naf,
   title={NAF and GAF: Linking linguistic annotations},
   author={Fokkens, Antske and Soroa, Aitor and Beloki, Zuhaitz and Ockeloen, Niels and Rigau, German and Van Hage, Willem Robert and Vossen, Piek},
