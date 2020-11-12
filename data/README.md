@@ -182,6 +182,7 @@ indicate the coordinates that make up this segment and two annotations are provi
 for the emotion expressed by the face:
 
 ```
+    "mentions": [
         {
             "segment": {
                 "type": "MultiIndex",
@@ -216,10 +217,13 @@ for the emotion expressed by the face:
                 }
             ]
         }
+
+        .... etc....
+    ]
 ```
 
 We can have any number of segments with any number of annotations defined for any number of image files. 
-Annotated segmenbts are listed as mentions in te JSON file.
+Annotated segments are listed as mentions in te JSON file.
 
 The JSON for **text** data has a similar structure for the data file except that we have a single CSV file with all the text utterances rather
 than a separate data file for each utterance. This is just for pragmatic reasons to make it easier to process Natural Language data.
@@ -243,7 +247,9 @@ We see that the file "chat1.csv" which is in the **text** folder is indexed with
 column of the csv file that contains the text of an utterance. Other columns can be used to represent the speaker of the utterance and the
 start and end time of speaking (possibly derived from an audio file).
 
-An annotation of the above text fragment, 
+An annotation of the above text fragment is shown below. The segment is defined by the start and end offset position in the text
+utterance from row 1 and column 1 in the CSV file. The annotation of the segment shown here defines the offset range as a Token a
+and isolated the word "This".
 
 ```
     "mentions": [
@@ -266,6 +272,9 @@ An annotation of the above text fragment,
                     }
                 }
             ]
+        }
+        .... etc....
+    ]
 ```
 
 ## 5. Annotations
