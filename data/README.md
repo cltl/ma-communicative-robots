@@ -53,9 +53,18 @@ Figure-1: Overview of data elements and relations.
  
 ## 2. Scenario structure
 We consider an interaction as a scenario. Scenarios are stored as subfolders within the data folder. 
-Within a scenario folder, we store multimodal data in media folders as separate files. Furthermore, we have JSON files for each modality
-which define the metadata and the annotations. Finally, there is a separate JSON file with the meta data on the complete scenario. 
-This JSON file has the same name as the folder name of the scenario.
+Within a scenario folder, we store multimodal data in four media subfolders as separate files: text, video, image, audio. 
+Furthermore, JSON files for each modality define the metadata and the annotations. There is one JSON file per modality.
+The JSON file contain meta data on the source, creation time, the scenario it is part of, the owener, license, etc. The annotations
+in the JSON file define a segment in a specific data file and the interpretation label of the segement, e.g. a person, object, an emotion,
+a part-oof-speech, named-entity-expressions, etc. A specific folder "rdf" contains the RDF triples extracted from the annotated signals.
+For example, an utterance in a conversation may mention somebody's age, which yields an RDF triple with the person's URI as the subject, 
+the has-age property and the actual age as a value.
+
+Finally, there is a separate JSON file with meta data on the complete scenario. This scenario JSON defines the temporal and spatial ruler
+within which the scenario is located (date, begin and end time, geo-location, place-name), the participants of the interaction 
+(e.g. the agent and the human speaker) and any other people and objects that participate in the scene.
+This scenario JSON file has the same name as the folder name of the scenario. 
 
 **An example**
 Assume our scenario folder has the name "my-first-scenario". This is how its structure could look like:
@@ -64,24 +73,24 @@ Assume our scenario folder has the name "my-first-scenario". This is how its str
 my-first-scenario
 	my-first-scenario.json --> overall data on the scenario
 
-	text.json --> meta data and annotations on the conversation and each unit within the conversations, usually the utterances of each turn
-	video.json
-	audio.json
-	image.json
+	text.json -->  meta data and annotations on the conversation and segments within, typically the utterances of each turn form a unit
+	video.json --> meta data and annotations of video fragments and segments within
+	audio.json --> meta data and annotations of audio fragments and segments within
+	image.json --> meta data and annotations of images and segments within
     
     text
         #### conversations in text
-	    conversation-in-text.csv --> csv file with utterances from conversations that take place in this scenario
+	    conversation-as-text.csv --> csv file with utterances from conversations that take place in this scenario in text format
 
     image
         #### stills from the video signals
-        image1.jpg --> images representing stills of situations, possibly drawn from the video
+        image1.jpg --> images representing stills of situations, possibly drawn from a video
 	    image2.jpg
 	    image3.jpg
   
     video
         #### video shoot of the scenario
-        interaction-video.mpeg4 --> video with the interaction
+        interaction-video.mpeg4 --> video with interaction, either the agent view or another camera view
 
     audio
         #### audio files possibly representing speech
@@ -92,7 +101,6 @@ my-first-scenario
     rdf
         #### 
         some-triples.trig
-        more-triples.trig
 ```
 
 ## 2. Context
