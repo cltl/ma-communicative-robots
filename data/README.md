@@ -14,15 +14,15 @@ In the future, we will release here public data sets used in other experiments c
 This data can also be loaded and annotated.
 
 The formats and classes for representing data are derived from presentations that were developed 
-in various others projects and combined in the [NewsReader](www.newsreader-project.eu): the Simple Event Model (SEM), 
-the NewsReader Annotation Format (NAF), the Grounded Annotation Framework (GAF) and its successor 
-the Grounded Annotation and Source Perspective model (GRaSP). The core idea behind the latter two is 
-that we create a relation between a signal and the interpretation of that signal. These interpretations are seen
-as annotations that express a relation between a **segment** of the signal (e.g. a bounding box in an image or
-a token in a text) and some interpretation label defined in another framework. We use the SEM model to model
-the interpretation of situations depicted in the multimodal signal. These situations are represented in RDF as
-instances of people, objects, relations and properties. Annotations relate these instances to specific segments
-in the signals.
+in various others projects and combined in the [NewsReader](www.newsreader-project.eu): the Simple Event Model (SEM, Hage et al. 2011), 
+the NewsReader Annotation Format (NAF, Fokkens et al, 2014), the Grounded Annotation Framework (GAF, Fokkens et al, 2013, 2014) 
+and its successor the Grounded Annotation and Source Perspective model (GRaSP, Son et al, 2016, Fokkens et al, 2017). 
+The core idea behind the latter two is that we create a relation between a signal and the interpretation of that signal. 
+These interpretations are seen as annotations that express a relation between a **segment** of the signal 
+(e.g. a bounding box in an image or a token in a text) and some interpretation label defined in another framework. 
+We use the SEM model to model the interpretation of situations depicted in the multimodal signal. 
+These situations are represented in RDF as instances of people, objects, relations and properties. 
+Annotations relate these instances to specific segments in the signals.
 
 This README explains the data laysers and representations in more detail and is further divided into the following subsections:
 <ol>
@@ -126,14 +126,22 @@ In addition, the scenario can also have a specification of the participants, suc
 </ol>
 
 Finally, the JSON file of the scenario provides an overview of all the data files in the folder and their grounding to the spatial and temporal containers. 
-These data files represent all the recorded signals in the scenario as its content. Each of these content files is further described in specific JSON files.
 
 ## 3. Content
-The content of the scenario is represented by a series of files in the scenario folder representing the data in different modalities. In the above example, we have separate files for the conversations, a video stream of the interaction, images of scenarios, and audio files. Each modality has a JSON file that describes the data that contain signals and any interpretation of the signal in the form of an annotation. Any signal is grounded in the spatial and temporal container using specific data elements in the JSON file. 
+The content of the scenario is represented by a series of files in the scenario folder representing the data in different modalities. 
+In the above example, we have separate files for the conversations, a video stream of the interaction, images of scenarios, and audio files. 
+Each modality has a JSON file that describes the data that contain signals and any interpretation of the signal in the form of an annotation.
+Any signal is grounded in the spatial and temporal container using specific data elements in the JSON file. 
 
-Although the data can be streamed as in video and audio, any system needs to define units within the stream to interpret states and changes between these states. Therefore, we can not only represent a scenario by the video but also through a collection of stills in the form of images taken at different time points, as a collection of audio files for speech interaction or as the transcribed text of the audio to represent a dialogue. 
+Although the data can be streamed as in video and audio, any system needs to define units within the stream to interpret states 
+and changes between these states. Therefore, we can not only represent a scenario by the video but also through 
+a collection of stills in the form of images taken at different time points, as a collection of audio files for speech interaction 
+or as the transcribed text of the audio to represent a dialogue. 
 
-Through the spatial and temporal grounding of each of these data files (treated as a signal), they can be organised through a a two dimensional matrix (T x M), where T is the temporal ruler segmenting time in Tn units and M is a series of modalities with data files at the time points in the ruler. The next example shows such a Matrix with a temporal ruler for 6 time points and 4 modalities of signals grounded to these units:
+Through the spatial and temporal grounding of each of these data files (treated as a signal), 
+they can be organised through a a two dimensional matrix (T x M), where T is the temporal ruler segmenting time in Tn units and M 
+is a series of modalities with data files at the time points in the ruler. 
+The next example shows such a Matrix with a temporal ruler for 6 time points and 4 modalities of signals grounded to these units:
 
 ```
 time | video | audio | text  | image |
@@ -146,9 +154,119 @@ time | video | audio | text  | image |
 1:07 | ...   | wav   | utter |       |
 ```
 
-We assume that the video is a continuous stream from begin to end which is not cut to the time points. However, the other modalities fill separate slots at the time points, where we do not necessarily have data at each time point. The temporal ruler (the first column) aligns the different signals across the modalities. This temporal ruler can have any granularity, in this example it is by minutes.
+We assume that the video is a continuous stream from begin to end which is not cut to the time points. 
+However, the other modalities fill separate slots at the time points, where we do not necessarily have data at each time point. 
+The temporal ruler (the first column) aligns the different signals across the modalities. 
+his temporal ruler can have any granularity, in this example it is by minutes.
 
 ## 4. Segments, rulers and containers
+The maximal segment of a data file for a modality is the actual data file itself. The JSON file for that modality defines for every data file
+the modality, the temporal ruler identity in which it is grounded and the start and end point of the maximal segment it represents.
+Below we show the JSON structure for one **image** file, where the start and end are represented here in milliseconds.
+
+```
+"modality": "IMAGE",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test-scenario-2",
+        "start": 1603139705,
+        "end": 1603140000
+    },
+    "files": [
+        "data/test-scenes/test-scenario-2/image/piek-sunglasses.jpg"
+    ],
+```
+Within the overall segment of the grounded image file, we can define smaller spatial segments by annotation.
+For images such annoations could be linked to bounding boxes defined in the image, as shown next, where the bounds
+indicate the coordinates that make up this segment and two annotations are provided, one for the person identified and one
+for the emotion expressed by the face:
+
+```
+        {
+            "segment": {
+                "type": "MultiIndex",
+                "container_id": "0c1b7ffd-d22b-41c5-a55d-0f4a16b9ad89",
+                "bounds": [
+                    [
+                        10,
+                        521
+                    ],
+                    [
+                        15,
+                        518
+                    ]
+                ]
+            },
+            "annotations": [
+                {
+                    "type": "PersonAnnotation",
+                    "value": {
+                        "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#PERSON1",
+                        "name": "Piek",
+                        "age": 59,
+                        "gender": "MALE"
+                    },
+                    "source": "face_recognition",
+                    "timestamp": 1604957866.524172
+                }, {
+                    "type": "EmotionAnnotation",
+                    "value": "ANGRY",
+                    "source": "annotator_1",
+                    "timestamp": 1604957866.5242481
+                }
+            ]
+        }
+```
+
+We can have any number of segments with any number of annotations defined for any number of image files. 
+Annotated segmenbts are listed as mentions in te JSON file.
+
+The JSON for **text** data has a similar structure for the data file except that we have a single CSV file with all the text utterances rather
+than a separate data file for each utterance. This is just for pragmatic reasons to make it easier to process Natural Language data.
+As a result of that, we separate the data by the rows and columns in the CSV file as shown in the JSON fragment below:
+
+```
+{
+    "modality": "TEXT",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test_scenario",
+        "start": 1603139850,
+        "end": 1603149890
+    },
+    "files": [
+        "data/test-scenes/test_scenario/text/chat1.csv#1#1"
+    ],
+```
+
+We see that the file "chat1.csv" which is in the **text** folder is indexed with "#1#1", which refers to the second row and the second
+column of the csv file that contains the text of an utterance. Other columns can be used to represent the speaker of the utterance and the
+start and end time of speaking (possibly derived from an audio file).
+
+An annotation of the above text fragment, 
+
+```
+    "mentions": [
+        {
+            "segment": {
+                "type": "Index",
+                "container_id": "265a5bd0-a8b7-4de6-9f4d-2c4d8d200f70",
+                "start": 0,
+                "stop": 4
+            },
+            "annotations": [
+                {   "type": "Token",
+                    "value": "This",
+                    "source": "treebank_tokenizer",
+                    "timestamp": 1604957866.557157,
+                    "id": "t1",
+                    "ruler": {
+                        "type": "AtomicRuler",
+                        "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1"
+                    }
+                }
+            ]
+```
 
 ## 5. Annotations
 
