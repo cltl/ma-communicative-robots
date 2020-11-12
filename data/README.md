@@ -55,8 +55,8 @@ Figure-1: Overview of data elements and relations.
 We consider an interaction as a scenario. Scenarios are stored as subfolders within the data folder. 
 Within a scenario folder, we store multimodal data in four media subfolders as separate files: text, video, image, audio. 
 Furthermore, JSON files for each modality define the metadata and the annotations. There is one JSON file per modality.
-The JSON file contain meta data on the source, creation time, the scenario it is part of, the owener, license, etc. The annotations
-in the JSON file define a segment in a specific data file and the interpretation label of the segement, e.g. a person, object, an emotion,
+The JSON file contain meta data on the source, creation time, the scenario it is part of, the owner, license, etc. The annotations
+in the JSON file define a segment in a specific data file and the interpretation label of the segment, e.g. a person, object, an emotion,
 a part-oof-speech, named-entity-expressions, etc. A specific folder "rdf" contains the RDF triples extracted from the annotated signals.
 For example, an utterance in a conversation may mention somebody's age, which yields an RDF triple with the person's URI as the subject, 
 the has-age property and the actual age as a value.
@@ -104,14 +104,19 @@ my-first-scenario
 ```
 
 ## 2. Context
-The file "my-first-scenario.json" describes the scenario in terms of meta data using standard data categories (e.g. Dublin core and CMDI) but also the 'spatial and temporal containers' within which the scenario takes place.
+The file "my-first-scenario.json" describes the scenario in terms of meta data using standard data categories (e.g. Dublin core and CMDI) 
+but also the 'spatial and temporal containers' within which the scenario takes place.
 
 <ol>
     <li>Spatial container: geo-location and coordinates that define the area, possibly the name that identifies the area
     <li>Temporal container: date and begin and end time within which events take place
 </ol>
 
-The spatial and temporal containers define the primary context for interpretating any data in the scenario. In addition, the scenario can also have a specification of the participants, such as:
+The spatial and temporal containers define the primary context for interpreting data in the scenario. For example, knowing the date
+and the location, a system can infer it is winter or summer, guess what the weather is like, whether it is morning or evening, or
+that you birthday is soon.
+
+In addition, the scenario can also have a specification of the participants, such as:
 
 <ol>
     <li>Identity of the agent
@@ -120,7 +125,8 @@ The spatial and temporal containers define the primary context for interpretatin
     <li>Objects and their spatial orientation
 </ol>
 
-In addition to the meta data, the JSON file of the scenario provides an overview of all the data files in the folder and their grounding to the spatial and temporal containers. These data files represent all the recorded signals in the scenario as its content. Each of these content files is further described in specific JSON files.
+Finally, the JSON file of the scenario provides an overview of all the data files in the folder and their grounding to the spatial and temporal containers. 
+These data files represent all the recorded signals in the scenario as its content. Each of these content files is further described in specific JSON files.
 
 ## 3. Content
 The content of the scenario is represented by a series of files in the scenario folder representing the data in different modalities. In the above example, we have separate files for the conversations, a video stream of the interaction, images of scenarios, and audio files. Each modality has a JSON file that describes the data that contain signals and any interpretation of the signal in the form of an annotation. Any signal is grounded in the spatial and temporal container using specific data elements in the JSON file. 
@@ -178,7 +184,7 @@ On top of the people and objects depicted or mentioned, there may be particular 
 The JSON annotations will also include such triples as the result of interpreting the signals to explicit knowledge that is stored in triple store.
 
 ## References
-
+```
 @inproceedings{fokkens2014naf,
   title={NAF and GAF: Linking linguistic annotations},
   author={Fokkens, Antske and Soroa, Aitor and Beloki, Zuhaitz and Ockeloen, Niels and Rigau, German and Van Hage, Willem Robert and Vossen, Piek},
@@ -218,4 +224,4 @@ The JSON annotations will also include such triples as the result of interpretin
   year={2011},
   publisher={Elsevier}
 }
-
+```

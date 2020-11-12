@@ -14,8 +14,7 @@
             "id": "971f8578-1b16-4740-a62b-9d1ed1de1420",
             "name": "Piek",
             "age": 59,
-            "gender": "MALE",
-            "emotion": null
+            "gender": "MALE"
         },
         "persons": [],
         "objects": []
