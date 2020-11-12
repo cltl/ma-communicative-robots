@@ -27,7 +27,7 @@ leolaniWorld:Claims {
 
 	leolaniWorld:niqee-gender-female a gaf:Assertion, sem:Event .
 
-	leolaniWorld:same-gender-male  a gaf:Assertion, sem:Event .
+	leolaniWorld:sam-gender-male  a gaf:Assertion, sem:Event .
 
 	leolaniWorld:anja-daughter-niqee a gaf:Assertion, sem:Event .
 
@@ -51,7 +51,7 @@ leolaniWorld:niqee-gender-female {
 	:niqee :has-gender :female .
 }
 
-leolaniWorld:same-gender-male {
+leolaniWorld:sam-gender-male {
 	:sam :has-gender :male .
 }
 
