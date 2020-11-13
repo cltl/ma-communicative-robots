@@ -201,17 +201,14 @@ for the emotion expressed by the face:
             "annotations": [
                 {
                     "type": "PersonAnnotation",
-                    "value": {
-                        "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#PERSON1",
-                        "name": "Piek",
-                        "age": 59,
-                        "gender": "MALE"
-                    },
+                    "value": "leolaniWorld:piek",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#PERSON1",
                     "source": "face_recognition",
                     "timestamp": 1604957866.524172
                 }, {
                     "type": "EmotionAnnotation",
                     "value": "ANGRY",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#EMO1",
                     "source": "annotator_1",
                     "timestamp": 1604957866.5242481
                 }
@@ -265,13 +262,9 @@ and isolated the word "This".
             "annotations": [
                 {   "type": "Token",
                     "value": "This",
+                    "id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1",
                     "source": "treebank_tokenizer",
-                    "timestamp": 1604957866.557157,
-                    "id": "t1",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1"
-                    }
+                    "timestamp": 1604957866.557157
                 }
             ]
         }
@@ -311,13 +304,9 @@ for a segment that is defined elsewhere as the token "My":
             "annotations": [
                 {   "type": "Token",
                     "value": "My",
+                    "id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1",
                     "source": "treebank_tokenizer",
-                    "timestamp": 1604957866.557157,
-                    "id": "t1",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1"
-                    }
+                    "timestamp": 1604957866.557157
                 }
             ]
         },
@@ -356,7 +345,7 @@ In the next example, we show a set of four segments that have been annotated as 
                     "type": "Claim",
                     "value": "leolaniWorld:piek-daughter-niqee",
                     "source": "textToTriple",
-                    "timestamp": 1234
+                    "timestamp": 1604957866.524172
                 }
             ]
         }

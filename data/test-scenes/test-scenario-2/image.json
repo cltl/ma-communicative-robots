@@ -29,12 +29,8 @@
             "annotations": [
                 {
                     "type": "PersonAnnotation",
-                    "value": {
-                        "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#PERSON1",
-                        "name": "Piek",
-                        "age": 59,
-                        "gender": "MALE"
-                    },
+                    "value": "leolaniWorld:piek",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#PERSON1",
                     "source": "face_recognition",
                     "timestamp": 1604957866.524172
                 }, {
@@ -78,19 +74,16 @@
             "annotations": [
                 {
                     "type": "PersonAnnotation",
-                    "value": {
-                        "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#PERSON2",
-                        "name": "Maxima",
-                        "age": 42,
-                        "gender": "FEMALE"
-                    },
+                    "value": "leolaniWorld:maxima",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#PERSON2",
                     "source": "face_recognition",
                     "timestamp": 1604957866.524172
                 },
                 {
                     "type": "EmotionAnnotation",
                     "value": "SURPRISE",
-                    "source": "annotator_1",
+                     "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#EMO1",
+                   "source": "annotator_1",
                     "timestamp": 1604957866.5242481
                 }
             ]
@@ -128,17 +121,14 @@
             "annotations": [
                 {
                     "type": "PersonAnnotation",
-                    "value": {
-                        "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#PERSON3",
-                        "name": "Niqee",
-                        "age": 16,
-                        "gender": "FEMALE"
-                    },
+                    "value": "leolaniWorld:niqee",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#PERSON3",
                     "source": "face_recognition",
                     "timestamp": 1604957866.524172
                 }, {
                     "type": "EmotionAnnotation",
                     "value": "JOY",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#EMO2",
                     "source": "annotator_1",
                     "timestamp": 1604957866.5242481
                 }
@@ -176,17 +166,15 @@
             "annotations": [
                 {
                     "type": "PersonAnnotation",
-                    "value": {
-                        "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#PERSON4",
-                        "name": "Sam",
-                        "age": 12,
-                        "gender": "MALE"
-                    },
+                    "value": "leolaniWorld:sam",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#PERSON4",
                     "source": "face_recognition",
                     "timestamp": 1604957866.524172
-                }, {
+                },
+                {
                     "type": "EmotionAnnotation",
                     "value": "JOY",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#EMO3",
                     "source": "annotator_1",
                     "timestamp": 1604957866.5242481
                 }
@@ -224,10 +212,8 @@
             "annotations": [
                 {
                     "type": "ObjectAnnotation",
-                    "value": {
-                        "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#OBJECT1",
-                        "name": "soccer_ball"
-                    },
+                    "value": "soccer_ball",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#OBJECT1",
                     "source": "face_recognition",
                     "timestamp": 1604957866.524172
                 }

@@ -21,13 +21,9 @@
             "annotations": [
                 {   "type": "Token",
                     "value": "This",
+                    "id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1",
                     "source": "treebank_tokenizer",
-                    "timestamp": 1604957866.557157,
-                    "id": "t1",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1"
-                    }
+                    "timestamp": 1604957866.557157
                 }
             ]
         },
@@ -42,13 +38,9 @@
                 {
                     "type": "Token",
                     "value": "is",
+                    "id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t2",
                     "source": "treebank_tokenizer",
-                    "timestamp": 1604957866.5572171,
-                    "id": "t2",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t2"
-                    }
+                    "timestamp": 1604957866.5572171
                 }
             ]
         },
@@ -63,13 +55,9 @@
                 {
                     "type": "Token",
                     "value": "Maxima",
+                    "id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t3",
                     "source": "treebank_tokenizer",
-                    "timestamp": 1604957866.5572171,
-                    "id": "t3",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t3"
-                    }
+                    "timestamp": 1604957866.5572171
                 }
             ]
         },
@@ -115,18 +103,15 @@
                 },
                 {
                     "type": "PersonAnnotation",
-                    "value": {
-                        "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#INSTANCE1",
-                        "name": "Maxima",
-                        "age": 45,
-                        "gender": "FEMALE"
-                    },
+                    "value": "leolaniWorld:maxima",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#INSTANCE1",
                     "source": "annotator_1",
                     "timestamp": 1604957866.524172
                 },
                 {
                     "type": "EmotionAnnotation",
                     "value": "JOY",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#EMO1",
                     "source": "annotator_2",
                     "timestamp": 1604957866.5242481
                 }
@@ -163,10 +148,10 @@
             },
             "annotations": [
                 {   "type": "Utterance",
-                    "value": "My daughter is called Niqee and my son is called Sam",
-                    "source": "treebank_tokenizer",
-                    "timestamp": 1604957866.557157,
-                    "id": "turn7"
+                    "value": "My daughter is called Niqee and my son Sam",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#TURN7",
+                    "source": "sentence_tokenizer",
+                    "timestamp": 1604957866.557157
                 }
             ]
         },
@@ -180,13 +165,9 @@
             "annotations": [
                 {   "type": "Token",
                     "value": "My",
+                    "id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1",
                     "source": "treebank_tokenizer",
-                    "timestamp": 1604957866.557157,
-                    "id": "t1",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1"
-                    }
+                    "timestamp": 1604957866.557157
                 }
             ]
         },
@@ -201,13 +182,9 @@
                 {
                     "type": "Token",
                     "value": "daughter",
+                    "id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t2",
                     "source": "treebank_tokenizer",
-                    "timestamp": 1604957866.5572171,
-                    "id": "t2",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t2"
-                    }
+                    "timestamp": 1604957866.5572171
                 }
             ]
         },
@@ -222,13 +199,9 @@
                 {
                     "type": "Token",
                     "value": "is",
+                    "id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t3",
                     "source": "treebank_tokenizer",
-                    "timestamp": 1604957866.5572171,
-                    "id": "t3",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t3"
-                    }
+                    "timestamp": 1604957866.5572171
                 }
             ]
         },
@@ -243,13 +216,9 @@
                 {
                     "type": "Token",
                     "value": "called",
+                    "id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t4",
                     "source": "treebank_tokenizer",
-                    "timestamp": 1604957866.5572171,
-                    "id": "t4",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t4"
-                    }
+                    "timestamp": 1604957866.5572171
                 }
             ]
         },
@@ -264,13 +233,9 @@
                 {
                     "type": "Token",
                     "value": "Niqee",
+                    "id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t5",
                     "source": "treebank_tokenizer",
-                    "timestamp": 1604957866.5572171,
-                    "id": "t5",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t5"
-                    }
+                    "timestamp": 1604957866.5572171
                 }
             ]
         },
@@ -285,13 +250,8 @@
                 {
                     "type": "Token",
                     "value": "and",
-                    "source": "treebank_tokenizer",
-                    "timestamp": 1604957866.5572171,
-                    "id": "t6",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t6"
-                    }
+                    "id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t6",
+                    "source": "treebank_tokenizer"
                 }
             ]
         },
@@ -306,13 +266,9 @@
                 {
                     "type": "Token",
                     "value": "my",
+                    "id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t7",
                     "source": "treebank_tokenizer",
-                    "timestamp": 1604957866.5572171,
-                    "id": "t7",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t7"
-                    }
+                    "timestamp": 1604957866.5572171
                 }
             ]
         },
@@ -327,13 +283,9 @@
                 {
                     "type": "Token",
                     "value": "son",
+                    "id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t8",
                     "source": "treebank_tokenizer",
-                    "timestamp": 1604957866.5572171,
-                    "id": "t8",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t8"
-                    }
+                    "timestamp": 1604957866.5572171
                 }
             ]
         },
@@ -348,13 +300,9 @@
                 {
                     "type": "Token",
                     "value": "Sam",
+                    "id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t9",
                     "source": "treebank_tokenizer",
-                    "timestamp": 1604957866.5572171,
-                    "id": "t9",
-                    "ruler": {
-                        "type": "AtomicRuler",
-                        "container_id": "ed2c6817-ee21-4ba3-860e-c78346e62eb0#t9"
-                    }
+                    "timestamp": 1604957866.5572171
                 }
             ]
         },
@@ -372,7 +320,7 @@
                     "type": "Claim",
                     "value": "leolaniWorld:piek-daughter-niqee",
                     "source": "textToTriple",
-                    "timestamp": 1234
+                    "timestamp": 1604957866.5572171
                 }
             ]
         },
@@ -388,7 +336,7 @@
                     "type": "Claim",
                     "value": "leolaniWorld:piek-son-sam",
                     "source": "textToTriple",
-                    "timestamp": 1234
+                    "timestamp": 1604957866.5572171
                 }
             ]
         },
@@ -404,7 +352,7 @@
                     "value": "leolaniWorld:piek",
                     "source": "entity_linking",
                     "timestamp": 1604957866.524172
-                },
+                }
             ]
         },
         {
@@ -419,7 +367,7 @@
                     "value": "leolaniWorld:niqee",
                     "source": "entity_linking",
                     "timestamp": 1604957866.524172
-                },
+                }
             ]
         },
 ,
@@ -435,7 +383,7 @@
                     "value": "leolaniWorld:piek",
                     "source": "entity_linking",
                     "timestamp": 1604957866.524172
-                },
+                }
             ]
         },
         {
@@ -450,7 +398,7 @@
                     "value": "leolaniWorld:sam",
                     "source": "entity_linking",
                     "timestamp": 1604957866.524172
-                },
+                }
             ]
         }
     ],
