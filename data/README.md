@@ -371,11 +371,12 @@ with object labels. By annotating segments in the signal with interpretation lab
 ### 5.2. Identities
 It is however not enough to mark "my son" as making reference to a person or "Sam" as a named entity expression. 
 We also need to link these expressions to the actual people in our shared world. 
-The GAF/GRaSP framework (Fokkens et al, 2013, 2017) therefore uses so-called **grasp:denotes** and **grasp:denotesBy** to mentions
+The GAF/GRaSP framework (Fokkens et al, 2013, 2017) therefore uses so-called **grasp:denotes** and **grasp:denotesBy** relations to mentions
 and identifiers in a semantic model of the world. Following Semantic Web practices and standards, individuals are represented 
-through unique resource identifiers or URIs/IRIs. In the above example, we have seen the annotation of the Token "my" by making reference
-to the value "leolaniWorld:piek". The latter being short-cut identifier for an instance within the name-space "leolaniWorld". This could
-also have been a DBPedia URI or any other identifier in the Semanic Web Linked Open Data Cloud.
+through unique resource identifiers or URIs (also called IRIs). In the above example, we have seen the annotation of the Token "my" 
+by making reference to the value "leolaniWorld:piek". The latter being short-cut identifier for an instance within the name-space "leolaniWorld".
+Any name space and any identifier will do here. This could also have been a DBPedia URI or any other identifier in 
+the Semantic Web Linked Open Data Cloud.
 
 {
             "segment": {
@@ -394,16 +395,16 @@ also have been a DBPedia URI or any other identifier in the Semanic Web Linked O
         }
         
 
-Identify across these URIs/IRIs establishes **co-reference** relations across different mentions. If we annotate the tokens "piek" and "my" are
-annotated by the same URI/IRI they automatically become coreferential. By following the same procedure for other modalities, 
-we thus can annotate visual data with similar identifiers, creating cross-modal coreference.
+Identity across these URIs establishes **co-reference** relations across different mentions. If the tokens "piek" and "my" are
+annotated with the same URI they automatically become co-referential. By following the same procedure for other modalities, 
+we can thus annotate visual data with similar identifiers, creating cross-modal co-reference.
 
 ### 5.3. Properties and relations as RDF triples
-By using URIs or IRIs for referential annotations of segments, we can also represent properties and relations between identified people and objects.
-These properties and relations, such as "eating a sandwich" or "throwing a ball", can be expressed in the utterances and in images.
-When an annotator (human or machine) detects these properties, the multimodal signals can yield RDF triples that represent these as
-interpretations of states of the world. Such properties are typically represented as RDF triples consisting of a subject URI 
-and predicate or property and an object URI or value, as shown below (leaving out the name spaces):
+By using URIs for referential annotations of segments, we can also represent properties and relations of and between identified people and objects.
+These properties and relations, such as 'wearing a hat", ""eating a sandwich" or "throwing a ball", can be expressed in the utterances and in images.
+When an annotator (human or machine) detects these properties, the multimodal signals yield triples (in RDF format) that represent these as
+interpretations of states of the (multimodal) world. Such RDF triples consist of a subject URI, a predicate or property and an object URI or value, 
+as shown below (leaving out the name spaces):
 
 ```example
     :piek   :has-gender         :male
@@ -411,16 +412,19 @@ and predicate or property and an object URI or value, as shown below (leaving ou
     :piek   :shows-emotion      "smile"
 ```
 
-Using the referntial grounding discussed in the previous section, we can now use the multimodal signal to generate triples expressing properties and
-relations across different modalities and different data files that aggregate world models over time. The triples stored in a data base (triiple store) 
+Through the referential grounding discussed in the previous section, we can use multimodal signals to generate triples expressing properties and
+relations across different modalities and different data files. Shared identifiers (URIs) aggregate of these eproperties and relations
+resulting in a world model over time. The triples stored in a data base (triple store) 
 likewise reflect this cumulation over time, while each triple can still be grounded to a segment in a modality. By faceting the triples in time, they
-model changes of state such as smiling then and crying next.
+also model changes of states, such as smiling first and being angry next.
 
 The GRaSP framework considers the triples depicted in segments of any modality as claims. Different sources and different perceptions can make different claims
 about the same triple relation. For example, source could dispute the gender of ":piek" or his emotion at any moment in time.
 
-In our triple representation, we therefore used named-graphs that embed the extracted triples in "claims".
-Below, we show that we define a graph with claims that have a URI/IRI as well so that we can state properties of these claims:
+### 5.4 Claims
+In our triple representation, we therefore used **named-graphs** that embed the extracted triples within "claims".
+Below, we show a representation of triples in which claims are listed through URIs as well such that we can express properties about them
+and also embed world relations and properties within a named claim-graph:
 
 ```example
 
@@ -434,20 +438,24 @@ Below, we show that we define a graph with claims that have a URI/IRI as well so
 
     leolaniWorld:Claims {
 	    leolaniWorld:piek-gender-male a gaf:Assertion ;
-                                      gaf:denotedBy "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t9" . 
+                                      gaf:denotedBy "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t9" ; 
+                                      gad:attributedTo :piek . 
 	    leolaniWorld:piek-gender-female a gaf:Assertion ;
-                                      gaf:denotedBy "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t45" .
+                                      gaf:denotedBy "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t45" ;
+                                      gad:attributedTo :carl . 
     }
 
 ```
 
-In this example, there are two claims: one embedding the triple that ":piek" has gender ":male" and another embedding the triple
-that he has gender ":female". We furthermore see that we state that these claims are instances of the class "gaf:Assertion" and they
+In this example, there are two claims: one claim with the URI *leolaniWorld:piek-gender-male* that embeds the triple that ":piek" has gender ":male" 
+and another claim with the URI *leolaniWorld:piek-gender-female* that embeds the triple that he has gender ":female". 
+We furthermore see that we state that these claims are instances of the class "gaf:Assertion" and they
 are grounded through "gaf:denotedBy" links to identifiers that are defined in the JSON file of a modality by grounding it to a segment.
+In addition to the mention, we also see that there is a gaf:attributionTo relation to the person that made the claim.
 
 If we return to the JSON structure for our text fragment above, we see in the last examples that we can annotate tokens with claim
 identifiers that are also used in the triples that explicitly model the claims. In that way, we do not need to represent the triples
-explicitly in the JSON file, but we can annotate segments through URIs/IRIs that are further defined in the associated triple file.
+explicitly in the JSON file, but we can annotate segments through URIs that are further defined in the associated triple file.
 
 ## References
 ```
