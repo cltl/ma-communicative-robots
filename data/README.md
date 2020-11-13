@@ -177,7 +177,7 @@ Below we show the JSON structure for one **image** file, where the start and end
     ],
 ```
 Within the overall segment of the grounded image file, we can define smaller spatial segments by annotation.
-For images such annoations could be linked to bounding boxes defined in the image, as shown next, where the bounds
+For images such annotations could be linked to bounding boxes defined in the image, as shown next, where the bounds
 indicate the coordinates that make up this segment and two annotations are provided, one for the person identified and one
 for the emotion expressed by the face:
 
@@ -220,7 +220,7 @@ for the emotion expressed by the face:
 ```
 
 We can have any number of segments with any number of annotations defined for any number of image files. 
-Annotated segments are listed as mentions in te JSON file.
+Annotated segments are listed as mentions in the JSON file.
 
 The JSON for **text** data has a similar structure for the data file except that we have a single CSV file with all the text utterances rather
 than a separate data file for each utterance. This is just for pragmatic reasons to make it easier to process Natural Language data.
@@ -241,14 +241,14 @@ As a result of that, we separate the data by the rows and columns in the CSV fil
 ```
 
 We see that the file "chat1.csv" which is in the **text** folder is indexed with "#1#1", which refers to the second row and the second
-column of the csv file that contains the text of an utterance. Other columns can be used to represent the speaker of the utterance and the
+column of the csv file that contains the text of an utterance (#0#0 would refer to the header and the first column). 
+Other columns can be used to represent the speaker (column 0 in our example) of the utterance and the
 start and end time of speaking (possibly derived from an audio file). The complete conversation for a scenario can thus 
 be represented through a single CSV file with all utterances, identifiers and temporal grounding on separate rows. 
 
-
 An annotation of the above text fragment is shown below. The segment is defined by the start and end offset position in the text
-utterance from row 1 and column 1 in the CSV file. The annotation of the segment shown here defines the offset range as a Token a
-and isolated the word "This".
+utterance from row 1 and column 1 in the CSV file. The annotation of the segment shown here defines the offset range as a Token which
+isolated the word "This".
 
 ```example
     "mentions": [
@@ -281,16 +281,17 @@ As explained above, annotations define a relation between a segment and an inter
 <li> value: the actual label, which can be a JSON structure or some defined label or identifier
 <li> source: name of the software or person that created the annotation
 <li> timestamp: indicate when the annotation was created</li>
-<li> id: local identifier that differentiates the snnoations in a JSON file</li>
-<li> (OPTIONAL) ruler: defines the annotation as a segment in a rule so that it can be referenced</li>
+<li> (OPTIONAL) id: local identifier that differentiates annotations within a JSON file</li>
 </ul>
 
-The above examples illustrate the attributes and possible values.
+The above examples illustrate these attributes and possible values.
 
-The ruler attribute defines unique identifiers for each annotation. This allows us to build annotations on other annotations,
-following the layer annotation framework as defined by Ide and Romary (2007). In NLP pipelines, modules typically take the output
-of one annotation as the input for the next annoation. As such we can first define the tokens of a text as segments grounded through
-offsets and next refer to these tokens to add another annotation. This is shown in the next example, in which a PersonAnnotation is given
+The id attribute holds a unique identifiers for each annotation. This allows us to build annotations on top of other annotations, as
+NLP pipelines, modules typically take the output of one annotation as the input for the next annotation 
+(following the layered annotation framework as defined by Ide and Romary 2007). 
+For example, we can first define the tokens of a text as segments grounded through
+offsets and next refer to these tokens to add another annotation. 
+This is shown in the next example, in which a PersonAnnotation is given
 for a segment that is defined elsewhere as the token "My":
 
 ```example
@@ -353,8 +354,9 @@ In the next example, we show a set of four segments that have been annotated as 
 
 
 ### 5.1 Mentions
-The annotation labels can represent any type of interpretation, ranging from emotions, people, objects or events. 
-Since our models need to relate interpretations across modalities, some of these annotations identify instances of people and objects 
+The annotation labels can represent any type of interpretation, ranging from part-of-speech, syntactic dependencies, pixel colour, pitch, loudness,
+shape, emotions, people, objects or events. Since our models need to relate interpretations across modalities, 
+some of these annotations identify instances of people and objects 
 depicted in the visual world. Consider the following examples: 
 
 * "That is my son sitting next to me"
@@ -363,7 +365,7 @@ depicted in the visual world. Consider the following examples:
 An annotation of these utterances could define the tokens "my son" as making reference to a person who is a male child of me (the speaker). 
 Similarly, the token "Sam" can be annotated as the name of a person. 
 
-Similary, we can annotate certain areas in images as representing people of certain age or gender, surrounded by objects that are annotated 
+Similarly, we can annotate certain areas in images as representing people of certain age or gender, surrounded by objects that are annotated 
 with object labels. By annotating segments in the signal with interpretation labels, we indicate that these segment **mention** things in signals.
 
 ### 5.2. Identities
