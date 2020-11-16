@@ -17,27 +17,55 @@
 @prefix time: <http://www.w3.org/TR/owl-time/#> .
 @prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
 
+leolaniWorld:Instances {
+  leolaniWorld:piek a grasp:Instance, :person ;
+                    rdfs:label "piek" .
+  leolaniWorld:carl a grasp:Instance, :person ;
+                    rdfs:label "carl" .
+  leolaniWorld:anja a grasp:Instance, :person  ;
+                    rdfs:label "anja" .
+  leolaniWorld:sam a grasp:Instance, :person  ;
+                    rdfs:label "sam" .
+  leolaniWorld:niqee a grasp:Instance, :person  ;
+                    rdfs:label "niqee" .
+
+  leolaniWorld:schaesberg a grasp:Instance, n2mu:city  ;
+                    rdfs:label "schaesberg" .
+
+  leolaniWorld:landgraaf a grasp:Instance, n2mu:city  ;
+                    rdfs:label "landgraaf" .
+}
+
 leolaniWorld:Claims {
 
-    leolaniWorld:leolani_know_piek a gaf:Assertion, sem:Event .
+    leolaniWorld:leolani_know_piek a grasp:Statement .
 
-	leolaniWorld:piek-daughter-niqee a gaf:Assertion, sem:Event .
+	leolaniWorld:piek-daughter-niqee a grasp:Statement .
 
-	leolaniWorld:piek-son-sam a gaf:Assertion, sem:Event .
+	leolaniWorld:piek-son-sam a grasp:Statement .
 
-	leolaniWorld:niqee-gender-female a gaf:Assertion, sem:Event .
+	leolaniWorld:niqee-gender-female a grasp:Statement .
 
-	leolaniWorld:sam-gender-male  a gaf:Assertion, sem:Event .
+	leolaniWorld:sam-gender-male a grasp:Statement .
 
-	leolaniWorld:anja-daughter-niqee a gaf:Assertion, sem:Event .
+	leolaniWorld:anja-daughter-niqee a grasp:Statement .
 
-	leolaniWorld:anja-daughter-niqee a gaf:Assertion, sem:Event .
+	leolaniWorld:anja-daughter-niqee a grasp:Statement .
 
-	leolaniWorld:piek-gender-male a gaf:Assertion, sem:Event .
+	leolaniWorld:piek-from-schaesberg a grasp:Statement ;
+	                                  grasp:denotedBy leolaniTalk:2ac58d89-76e8-41c5-8997-cd36e38fab9e#t9 .
 
-	leolaniWorld:anja-gender-female a gaf:Assertion, sem:Event .
-
+  	leolaniWorld:piek-from-landgraaf  a grasp:Statement ;
+                                      grasp:denotedBy leolaniTalk:2ac58d89-76e8-41c5-8997-cd36e38fab9e#t45 .
  }
+
+leolaniTalk:Perspectives {
+  leolaniTalk:2ac58d89-76e8-41c5-8997-cd36e38fab9e#t9  a grasp:Mention ;
+                                                       grasp:wasAttributedTo :piek .
+
+  leolaniTalk:2ac58d89-76e8-41c5-8997-cd36e38fab9e#t45 a grasp:Mention ;
+                                                       grasp:wasAttributedTo :carl.
+}
 
 leolaniWorld:piek-daughter-niqee {
 	:piek :has-daughter :niqee .
@@ -63,11 +91,11 @@ leolaniWorld:anja-daughter-niqee {
 	:anja :has-son :sam .
 }
 
-leolaniWorld:piek-gender-male {
-	:piek :has-gender :male .
-
+leolaniWorld:piek-from-schaesberg {
+	:piek :born-in :schaesberg .
 }
 
-leolaniWorld:anja-gender-female {
-	:anja :has-gender :female .
+
+leolaniWorld:piek-from-landgraaf {
+	:piek :born-in :landgraaf .
 }

@@ -428,35 +428,49 @@ about the same triple relation. For example, source could dispute the gender of 
 
 ### 5.4 Claims
 In our triple representation, we therefore used **named-graphs** that embed the extracted triples within "claims".
-Below, we show a representation of triples in which claims are listed through URIs as well such that we can express properties about them
-and also embed world relations and properties within a named claim-graph:
+Below, we show a representation of triples in which claims are listed through URIs as well such that we can express 
+properties about them and also embed world relations and properties within a named claim-graph:
 
 ```example
 
-    leolaniWorld:piek-gender-male {
-	    :piek :has-gender :male .
-    }    
+    leolaniWorld:piek-from-schaesberg {
+	    :piek :born-in :schaesberg .
+    }
 
-    leolaniWorld:piek-gender-female {
-	    :piek :has-gender :female .
+
+    leolaniWorld:piek-from-landgraaf {
+	    :piek :born-in :landgraaf .
     }
 
     leolaniWorld:Claims {
-	    leolaniWorld:piek-gender-male a gaf:Assertion ;
-                                      gaf:denotedBy "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t9" ; 
-                                      gad:attributedTo :piek . 
-	    leolaniWorld:piek-gender-female a gaf:Assertion ;
-                                      gaf:denotedBy "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t45" ;
-                                      gad:attributedTo :carl . 
+
+	leolaniWorld:piek-from-schaesberg a grasp:Statement ;
+	                                  grasp:denotedBy leolaniTalk:2ac58d89-76e8-41c5-8997-cd36e38fab9e#t9 .
+
+  	leolaniWorld:piek-from-landgraaf  a grasp:Statement ;
+                                      grasp:denotedBy leolaniTalk:2ac58d89-76e8-41c5-8997-cd36e38fab9e#t45 .
+
+    } 
+
+    leolaniTalk:Perspectives {
+        leolaniTalk:2ac58d89-76e8-41c5-8997-cd36e38fab9e#t9 
+                                      a grasp:Mention ;
+                                      grasp:wasAttributedTo :piek .
+
+        leolaniTalk:2ac58d89-76e8-41c5-8997-cd36e38fab9e#t45  
+                                      a grasp:Mention ;
+                                      grasp:wasAttributedTo :carl.
     }
+
 
 ```
 
-In this example, there are two claims: one claim with the URI *leolaniWorld:piek-gender-male* that embeds the triple that ":piek" has gender ":male" 
-and another claim with the URI *leolaniWorld:piek-gender-female* that embeds the triple that he has gender ":female". 
-We furthermore see that we state that these claims are instances of the class "gaf:Assertion" and they
-are grounded through "gaf:denotedBy" links to identifiers that are defined in the JSON file of a modality by grounding it to a segment.
-In addition to the mention, we also see that there is a gaf:attributionTo relation to the person that made the claim.
+In this example, there are two claims: one claim with the URI *leolaniWorld:piek-from-schaesberg* that embeds the triple 
+that ":piek" was born in the city "schaesberg" and another claim with the URI *leolaniWorld:piek-from-landgraaf* 
+which embeds the triple that he was born in "landgraaf". 
+We furthermore see that these claims are instances of the class "grasp:Statement" and they
+are grounded through "gaf:denotedBy" links to identifiers grouped within the "leolaniTalk:Perspectives" subgraph, where
+they are defined as "mentions" and have a grasp:wasAttrubutedTo relation to the speaker.
 
 If we return to the JSON structure for our text fragment above, we see in the last examples that we can annotate tokens with claim
 identifiers that are also used in the triples that explicitly model the claims. In that way, we do not need to represent the triples
