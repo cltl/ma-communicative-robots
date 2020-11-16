@@ -462,9 +462,11 @@ properties about them and also embed world relations and properties within a nam
                                       grasp:wasAttributedTo :carl.
     }
 
-
 ```
 
+This RDF representation uses name spaces: **leolaniWorld** and **leolaniTalk**, that are defined in a robot platform
+called **Leolani**: http://makerobotstalk.nl. The implementation is further defined in the following Github: https://github.com/cltl/pepper
+  
 In this example, there are two claims: one claim with the URI *leolaniWorld:piek-from-schaesberg* that embeds the triple 
 that ":piek" was born in the city "schaesberg" and another claim with the URI *leolaniWorld:piek-from-landgraaf* 
 which embeds the triple that he was born in "landgraaf". 
