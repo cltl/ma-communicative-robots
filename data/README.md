@@ -19,8 +19,8 @@ the NewsReader Annotation Format (NAF, Fokkens et al, 2014), the Grounded Annota
 and its successor the Grounded Annotation and Source Perspective model (GRaSP, Son et al, 2016, Fokkens et al, 2017). 
 The core idea behind the latter two is that we create a relation between a signal and the interpretation of that signal. 
 These interpretations are seen as annotations that express a relation between a **segment** of the signal 
-(e.g. a bounding box in an image or a token in a text) and some interpretation label defined in another framework. 
-We use the SEM model to model the interpretation of situations depicted in the multimodal signal. 
+(e.g. a bounding box in an image or an offset position and length in a text) and some interpretation label defined in another framework. 
+We use the Simple Event Model or **SEM**  to model the interpretation of situations depicted in the multimodal signal. 
 These situations are represented in RDF as instances of people, objects, relations and properties. 
 Annotations relate these instances to specific segments in the signals.
 
@@ -244,7 +244,12 @@ We see that the file "chat1.csv" which is in the **text** folder is indexed with
 column of the csv file that contains the text of an utterance (#0#0 would refer to the header and the first column). 
 Other columns can be used to represent the speaker (column 0 in our example) of the utterance and the
 start and end time of speaking (possibly derived from an audio file). The complete conversation for a scenario can thus 
-be represented through a single CSV file with all utterances, identifiers and temporal grounding on separate rows. 
+be represented through a single CSV file with all utterances, identifiers and temporal grounding on separate rows.
+
+Note: In the case of text, it is also possible to represent the data only in the JSON file and not separately in a CSV file.
+
+Note: Text as data can be derived from the audio data, in which case it is a form of annotation, or it can be raw data (without audio)
+for example taken from chat platforms, forums or novels.
 
 An annotation of the above text fragment is shown below. The segment is defined by the start and end offset position in the text
 utterance from row 1 and column 1 in the CSV file. The annotation of the segment shown here defines the offset range as a Token which
