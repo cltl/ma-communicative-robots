@@ -5,13 +5,15 @@ This directory includes works by Taewoon Kim (t.kim@vu.nl).
 
 Download the full datasets from here https://affective-meld.github.io/.
 
-There are in total of 1039, 114, and 280 dialogues in train, dev, and test datasets, respectively. 
+I've also created smaller datasets from the original train dataset. The mp4 videos are saved in `./smaller-dataset`, which includes 80 dialogues, which again include 789 utterances.
 
-To start small, I've randomly selected 200, 20, and 20 dialogues from the original train dataset to create a `small_dataset.json`. 
+`dataset-large.json` has 64, 8, and 8 dialogues in its train, dev, and test dataset, respectively.
 
-Again, I've also randomly selected 500, 50, and 50 dialogues from the original train dataset to create a `medium_dataset.json`.
+`dataset-medium.json` has 32, 4, and 4 dialogues in its train, dev, and test dataset, respectively.
 
-I've created a list of videos, `vids-dyadic.json`, where only dyadic conversations took place. There are 20, 15, and 19 dialogues, each of which has 99, 81, and 78 utterances, respectively. The video files are saved in `dyadic-dataset`.
+`dataset-small.json` has 16, 2, and 2 dialogues in its train, dev, and test dataset, respectively.
+
+The smaller dataset is part of the bigger dataset's train data.
 
 ## MELD Annotations
 
@@ -37,7 +39,7 @@ The utterance also comes with an annotated text as well. Let’s assume that for
 The three different modalities all give us different time length. Of course we can just resample them so that they can have the same time length, but there’s gotta be a better and smarter way.
 
 ## Jupyter notebooks (run this locally)
-* `dyadic-extraction.ipynb` to find the dyadic videos.
-* `copy-dyadic-videos.ipynb` to copy the dyadic videos.
+* `smaller-datasets.ipynb` to reproduce the smaller datasets.
 
 ## Google colab
+* WIP
