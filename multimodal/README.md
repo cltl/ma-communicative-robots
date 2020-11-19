@@ -1,34 +1,30 @@
-# Datasets
+# Multimodal
+This directory includes works by Taewoon Kim (t.kim@vu.nl).
+
+## MELD Datasets
+
 Download the full datasets from here https://affective-meld.github.io/.
 
-There are in total of 1039, 114, and 280 dialogues in train, dev, and test datasets, respectively. To start small, I've randomly selected 200, 20, and 20 dialogues from the original train dataset to create a `small_dataset.json`. Again, I've also randomly selected 500, 50, and 50 dialogues from the original train dataset to create a `medium_dataset.json`.  
+There are in total of 1039, 114, and 280 dialogues in train, dev, and test datasets, respectively. 
 
-# Visual feature extraction from the videos.
+To start small, I've randomly selected 200, 20, and 20 dialogues from the original train dataset to create a `small_dataset.json`. 
 
-There is a lot of information in the videos (moving pictures). However, we can’t use all of it and we have to prioritize. Therefore, we’ll first extract the information from the faces.
+Again, I've also randomly selected 500, 50, and 50 dialogues from the original train dataset to create a `medium_dataset.json`.
 
-Facial feature extraction can be done as follows:
+I've created a list of videos, `vids-dyadic.json`, where only dyadic conversations took place. There are 20, 15, and 19 dialogues, each of which has 99, 81, and 78 utterances, respectively. The video files are saved in `dyadic-dataset`.
 
-## Face detection
-This is normally always the first step. This is to get the bounding boxes around the faces. This is implemented here: https://github.com/leolani/cltl-facedetection. The predictions on the MELD dataset are saved as json. [Here](https://drive.google.com/drive/folders/1BllPXGAOH434O6P35bKuFcVUzfTEaSxf?usp=sharing) is the link.
+## MELD Annotations
 
-## Face embeddings
-After cropping the face using the bounding box, we can compute their embeddings. Face recognition (i.e. trying to determine who this person is) is normally done using the embedding vectors. This will be implemented here: https://github.com/leolani/cltl-facerecognition 
+Full annotations can be found here https://github.com/declare-lab/MELD/tree/master/data/MELD
 
-## Face landmarks
-The face detection I’ve implemented actually gives you five landmarks. This can be enough in some cases, but there are other landmark detectors that give you 68 or even more landmarks. Face landmarks are very useful (e.g. deep fake, avatar, etc.). But I’m not sure how relevant this is to our case. Nonetheless, I’ll implement this at https://github.com/leolani/cltl-facelandmark
+Dyadic annotations can be found here https://github.com/declare-lab/MELD/tree/master/data/MELD_Dyadic
 
-## Age/Gender
-As far as I understood, a lot of neural networks predict age and gender altogether. This is not a surprise since the information can be shared. This will be implemented at https://github.com/leolani/cltl-genderdetection and https://github.com/leolani/cltl-agedetection 
+## Visual feature extraction from the videos
 
-I’ll implement the four repos as soon as possible. As of writing this page (4th of November, 2020), I’ve implemented the first and currently working on the second.
-
-I’ll upload the extracted features on google drive so that you can download and use them.
-
-At CLTL, we aim to use all of the above repos for our future Leolani platform. With such given information, we believe that Leolani can better understand the world, and thus better communicate with us.
+Refer to this python package https://github.com/leolani/cltl-face-all. It gives you every visual feature from a given image.
 
 
-# Signal time-alignment
+## Signal time-alignment
 
 I’m thinking about how this can be done.
 
@@ -40,3 +36,8 @@ The utterance also comes with an annotated text as well. Let’s assume that for
 
 The three different modalities all give us different time length. Of course we can just resample them so that they can have the same time length, but there’s gotta be a better and smarter way.
 
+## Jupyter notebooks (run this locally)
+* `dyadic-extraction.ipynb` to find the dyadic videos.
+* `copy-dyadic-videos.ipynb` to copy the dyadic videos.
+
+## Google colab
