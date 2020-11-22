@@ -40,6 +40,9 @@ The three different modalities all give us different time length. Of course we c
 
 ## Jupyter notebooks (run this locally)
 * `smaller-datasets.ipynb` to reproduce the smaller datasets.
+* `visual-features-extraction.ipynb` to extract visual features from the entire datasets.
+* `visual-features-check.ipynb` to check the extracted visual features.
 
 ## Google colab
-* WIP
+* `visual-features-extraction-colab.ipynb` to extract visual features from the smaller datasets.
+* `visual-features-check-colab.ipynb` to check the extracted visual features.
