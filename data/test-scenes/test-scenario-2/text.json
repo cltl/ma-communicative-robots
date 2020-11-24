@@ -319,6 +319,7 @@
                 {
                     "type": "Claim",
                     "value": "leolaniWorld:piek-daughter-niqee",
+                    "confidence": 0.76,
                     "source": "textToTriple",
                     "timestamp": 1604957866.5572171
                 }
@@ -336,6 +337,7 @@
                     "type": "Claim",
                     "value": "leolaniWorld:piek-son-sam",
                     "source": "textToTriple",
+                    "confidence": 0.76,
                     "timestamp": 1604957866.5572171
                 }
             ]
@@ -351,6 +353,7 @@
                     "type": "PersonAnnotation",
                     "value": "leolaniWorld:piek",
                     "source": "entity_linking",
+                    "confidence": 0.76,
                     "timestamp": 1604957866.524172
                 }
             ]
@@ -366,6 +369,7 @@
                     "type": "PersonAnnotation",
                     "value": "leolaniWorld:niqee",
                     "source": "entity_linking",
+                    "confidence": 0.76,
                     "timestamp": 1604957866.524172
                 }
             ]
@@ -382,6 +386,7 @@
                     "type": "PersonAnnotation",
                     "value": "leolaniWorld:piek",
                     "source": "entity_linking",
+                    "confidence": 0.76,
                     "timestamp": 1604957866.524172
                 }
             ]
@@ -397,6 +402,7 @@
                     "type": "PersonAnnotation",
                     "value": "leolaniWorld:sam",
                     "source": "entity_linking",
+                    "confidence": 0.76,
                     "timestamp": 1604957866.524172
                 }
             ]
