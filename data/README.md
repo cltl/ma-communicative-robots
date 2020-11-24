@@ -399,6 +399,7 @@ the Semantic Web Linked Open Data Cloud.
                     "type": "PersonAnnotation",
                     "value": "leolaniWorld:sam",
                     "source": "entity_linking",
+                    "confidence": 0.76,
                     "timestamp": 1604957866.524172
                 },
             ]
