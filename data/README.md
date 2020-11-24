@@ -204,12 +204,14 @@ for the emotion expressed by the face:
                     "value": "leolaniWorld:piek",
                     "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#PERSON1",
                     "source": "face_recognition",
+                    "confidence": 0.76,
                     "timestamp": 1604957866.524172
                 }, {
                     "type": "EmotionAnnotation",
                     "value": "ANGRY",
                     "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#EMO1",
                     "source": "annotator_1",
+                    "confidence": 0.76,
                     "timestamp": 1604957866.5242481
                 }
             ]
@@ -312,6 +314,7 @@ for a segment that is defined elsewhere as the token "My":
                     "value": "My",
                     "id": "2ac58d89-76e8-41c5-8997-cd36e38fab9e#t1",
                     "source": "treebank_tokenizer",
+                    "confidence": 0.76,
                     "timestamp": 1604957866.557157
                 }
             ]
@@ -327,6 +330,7 @@ for a segment that is defined elsewhere as the token "My":
                     "type": "PersonAnnotation",
                     "value": "leolaniWorld:piek",
                     "source": "entity_linking",
+                    "confidence": 0.76,
                     "timestamp": 1604957866.524172
                 },
             ]
@@ -351,6 +355,7 @@ In the next example, we show a set of four segments that have been annotated as 
                     "type": "Claim",
                     "value": "leolaniWorld:piek-daughter-niqee",
                     "source": "textToTriple",
+                    "confidence": 0.76,
                     "timestamp": 1604957866.524172
                 }
             ]
