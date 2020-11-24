@@ -12,10 +12,9 @@
     ],
     "mentions": [
         {
-            "type": "PersonAnnotation",
             "segment": {
                 "type": "MultiIndex",
-                "container_id": "fb2d96db-1369-48e7-afef-c1049f6cb2cd",
+                "container_id": "c0bf19da-ee25-4f6e-bcb5-3d8f29943e31",
                 "bounds": [
                     [
                         10,
@@ -27,22 +26,32 @@
                     ]
                 ]
             },
-            "source": "face_recognition",
-            "timestamp": 1604698020.834639,
-            "person": {
-                "id": "383aff72-f9ba-4876-b844-06967f603919",
-                "name": "Piek",
-                "age": 59,
-                "gender": "MALE",
-                "emotion": "JOY"
-            }
+            "annotations": [
+                {
+                    "type": "Friend",
+                    "value": {
+                        "id": "862c4e60-f822-47c1-94db-9eabe13f74ef",
+                        "name": "Piek",
+                        "age": 59,
+                        "gender": "MALE"
+                    },
+                    "source": "face_recognition",
+                    "timestamp": 1605002193.87345
+                },
+                {
+                    "type": "Emotion",
+                    "value": "JOY",
+                    "source": "annotator_1",
+                    "timestamp": 1605002193.873485
+                }
+            ]
         }
     ],
     "array": null,
-    "id": "fb2d96db-1369-48e7-afef-c1049f6cb2cd",
+    "id": "c0bf19da-ee25-4f6e-bcb5-3d8f29943e31",
     "ruler": {
         "type": "MultiIndex",
-        "container_id": "fb2d96db-1369-48e7-afef-c1049f6cb2cd",
+        "container_id": "c0bf19da-ee25-4f6e-bcb5-3d8f29943e31",
         "bounds": [
             [
                 0,
@@ -68,10 +77,9 @@
     ],
     "mentions": [
         {
-            "type": "PersonAnnotation",
             "segment": {
                 "type": "MultiIndex",
-                "container_id": "1763b226-8036-4d18-9bf7-45420a1d24d3",
+                "container_id": "9e91da36-5371-467e-b0f2-dcff33c25e7e",
                 "bounds": [
                     [
                         450,
@@ -83,22 +91,26 @@
                     ]
                 ]
             },
-            "source": "face_recognition",
-            "timestamp": 1604698020.89704,
-            "person": {
-                "id": "89e96526-a59d-436f-9461-597ca89b9114",
-                "name": "Jim",
-                "age": 32,
-                "gender": "MALE",
-                "emotion": null
-            }
+            "annotations": [
+                {
+                    "type": "Friend",
+                    "value": {
+                        "id": "5b0ef991-f8f5-49e0-9bed-b74c9e92deb8",
+                        "name": "Jim",
+                        "age": 32,
+                        "gender": "MALE"
+                    },
+                    "source": "face_recognition",
+                    "timestamp": 1605002193.957775
+                }
+            ]
         }
     ],
     "array": null,
-    "id": "1763b226-8036-4d18-9bf7-45420a1d24d3",
+    "id": "9e91da36-5371-467e-b0f2-dcff33c25e7e",
     "ruler": {
         "type": "MultiIndex",
-        "container_id": "1763b226-8036-4d18-9bf7-45420a1d24d3",
+        "container_id": "9e91da36-5371-467e-b0f2-dcff33c25e7e",
         "bounds": [
             [
                 0,

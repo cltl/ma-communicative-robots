@@ -1,0 +1,14 @@
+[
+{
+    "modality": "VIDEO",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test-scenario-2",
+        "start": 1603139850,
+        "end": 1603149890
+    },
+    "files": [
+        "data/test-scenes/test-scenario-2/video/"
+    ],
+},
+]

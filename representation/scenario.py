@@ -18,18 +18,18 @@ class Modality(enum.Enum):
     VIDEO = 3
 
 
-class Mention:
-    def __init__(self, segment: Union[Ruler, Iterable[Ruler]]):
-        self.type = self.__class__.__name__
-        self.segment = segment
-
-
-class Annotation(Mention):
-    def __init__(self, segment: Union[Ruler, Iterable[Ruler]], source: Identifier, timestamp: int):
-        super(Annotation, self).__init__(segment)
-        self.type = self.__class__.__name__
+class Annotation:
+    def __init__(self, value: object, source: Identifier, timestamp: int):
+        self.type = value.__class__.__name__
+        self.value = value
         self.source = source
         self.timestamp = timestamp
+
+
+class Mention:
+    def __init__(self, segment: Union[Ruler, Iterable[Ruler]], annotations: Iterable[Annotation]):
+        self.segment = segment
+        self.annotations = annotations
 
 
 R = TypeVar('R', bound=Ruler)

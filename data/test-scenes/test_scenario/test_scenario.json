@@ -11,11 +11,10 @@
     "context": {
         "agent": "leolani",
         "speaker": {
-            "id": "971f8578-1b16-4740-a62b-9d1ed1de1420",
+            "id": "cfaffeec-9f68-46da-b716-ea7b43708b96",
             "name": "Piek",
             "age": 59,
-            "gender": "MALE",
-            "emotion": null
+            "gender": "MALE"
         },
         "persons": [],
         "objects": []
