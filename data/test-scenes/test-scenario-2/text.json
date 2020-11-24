@@ -71,6 +71,7 @@
                     "type": "POS",
                     "value": "Pronoun",
                     "source": "pos_tagger",
+                    "confidence": 0.76,
                     "timestamp": 1234
                 }
             ]
@@ -85,6 +86,7 @@
                     "type": "POS",
                     "value": "Verb",
                     "source": "pos_tagger",
+                    "confidence": 0.76,
                     "timestamp": 1234
                 }
             ]
@@ -99,6 +101,7 @@
                     "type": "POS",
                     "value": "Propernoun",
                     "source": "pos_tagger",
+                    "confidence": 0.76,
                     "timestamp": 1234
                 },
                 {
@@ -106,6 +109,7 @@
                     "value": "leolaniWorld:maxima",
                     "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#INSTANCE1",
                     "source": "annotator_1",
+                    "confidence": 0.76,
                     "timestamp": 1604957866.524172
                 },
                 {
@@ -113,6 +117,7 @@
                     "value": "JOY",
                     "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#EMO1",
                     "source": "annotator_2",
+                    "confidence": 0.76,
                     "timestamp": 1604957866.5242481
                 }
             ]
