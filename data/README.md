@@ -57,7 +57,7 @@ Within a scenario folder, we store multimodal data in four media subfolders as s
 Furthermore, JSON files for each modality define the metadata and the annotations. There is one JSON file per modality.
 The JSON file contain meta data on the source, creation time, the scenario it is part of, the owner, license, etc. The annotations
 in the JSON file define a segment in a specific data file and the interpretation label of the segment, e.g. a person, object, an emotion,
-a part-oof-speech, named-entity-expressions, etc. A specific folder "rdf" contains the RDF triples extracted from the annotated signals.
+a part-of-speech, named-entity-expressions, etc. A specific folder "rdf" contains the RDF triples extracted from the annotated signals.
 For example, an utterance in a conversation may mention somebody's age, which yields an RDF triple with the person's URI as the subject, 
 the has-age property and the actual age as a value.
 
