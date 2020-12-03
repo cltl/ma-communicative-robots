@@ -42,7 +42,7 @@ segments with a particular granularity. Again, we can have subtypes of rulers fo
 Containers ground the data in a spatial and temporal world and can be used to define the order of segments, as in a sequence, 
 or a position of regions.
 
-A scenario inherits from both a temporal and spatial container. It is further defined with specific atttributes and the signalS
+A scenario inherits from both a temporal and spatial container. It is further defined with specific atttributes and the signals
 of a certain modality. These signals consist of segments. Segments that are annotated are mentions. The annotation relates a segment to an interpretation.
 Some of these annotations are instances in the model of the world and others are labels that represent concepts. Here we show different types of
 concepts, such as tokens, faces, and named entity expressions, and types of instances, such as objects, friends and persons.
