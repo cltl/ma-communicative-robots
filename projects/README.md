@@ -7,7 +7,7 @@ Communicative Robots is a master's course taught at VU Amsterdam.
 ## Ethical gender detection
 Check the directory ['gender'](https://github.com/cltl/ma-communicative-robots/tree/master/projects/gender) for details 
 
-## kinship relation detection
+## Kinship relation detection
 Check the directory [kinship](https://github.com/cltl/ma-communicative-robots/tree/master/projects/kinship) for details 
  
 ## Multimodal Signal Processing
