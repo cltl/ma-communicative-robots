@@ -1,6 +1,6 @@
 import random # Only for the example to get a random gender
 import requests
-NAMEAPI_KEY="c5daf3adac2a3e85791630c643d55611-user1"
+NAMEAPI_KEY=
 url = ("http://api.nameapi.org/rest/v5.3/genderizer/persongenderizer?"
     f"apiKey={NAMEAPI_KEY}"
 )
