@@ -14,7 +14,7 @@ Check presentation_<name>.pdf
   
 ## Multimodal Signal Processing
 
-Check the directory [`multimodal`](https://github.com/cltl/ma-communicative-robots/tree/master/multimodal) for details.
+Check the directory `projects/multimodal` for details.
 
 ## Contributing
 
