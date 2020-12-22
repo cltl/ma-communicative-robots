@@ -12,4 +12,4 @@ Check the directory [kinship](https://github.com/cltl/ma-communicative-robots/tr
  
 ## Multimodal Signal Processing
 
-Check the directory [`multimodal`](https://github.com/cltl/ma-communicative-robots/tree/master/multimodal) for details.
+Check the directory [`multimodal`](https://github.com/cltl/ma-communicative-robots/tree/master/projects/multimodal) for details.
