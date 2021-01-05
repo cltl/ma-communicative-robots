@@ -1,0 +1,1136 @@
+@prefix : <http://www.semanticweb.org/selin/ontologies/2020/10/kinship1> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix kinship1: <http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#> .
+@base <http://www.semanticweb.org/selin/ontologies/2020/10/kinship1> .
+
+<http://www.semanticweb.org/selin/ontologies/2020/10/kinship1> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#axiom
+kinship1:axiom rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Aunt
+kinship1:Aunt rdf:type owl:ObjectProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain kinship1:woman ;
+              rdfs:range kinship1:Human ;
+              owl:propertyDisjointWith kinship1:Uncle ;
+              rdfs:label "aunt"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Brother
+kinship1:Brother rdf:type owl:ObjectProperty ,
+                          owl:TransitiveProperty ,
+                          owl:IrreflexiveProperty ;
+                 rdfs:domain kinship1:man ;
+                 rdfs:range kinship1:Human ;
+                 owl:propertyDisjointWith kinship1:Sister ;
+                 rdfs:comment """owl:comment \"The general relationship of being a brother. (brother ?MAN ?PERSON)
+means that ?MAN is the brother of ?PERSON.\"@en"""@en ;
+                 rdfs:label "Brother"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Brother_in_law
+kinship1:Brother_in_law rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf kinship1:In_law ;
+                        rdf:type owl:IrreflexiveProperty ;
+                        rdfs:domain kinship1:man ;
+                        rdfs:range kinship1:Human ;
+                        owl:propertyDisjointWith kinship1:Sister_in_law ;
+                        rdfs:label "Brother in law"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Child
+kinship1:Child rdf:type owl:ObjectProperty ;
+               owl:inverseOf kinship1:Father ,
+                             kinship1:Mother ;
+               rdf:type owl:AsymmetricProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:domain kinship1:Human ;
+               rdfs:range kinship1:Human ;
+               rdfs:label "Child"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Cousin
+kinship1:Cousin rdf:type owl:ObjectProperty ,
+                         owl:SymmetricProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:domain kinship1:Human ;
+                rdfs:range kinship1:Human ;
+                rdfs:label "Cousin"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Cousins_husband
+kinship1:Cousins_husband rdf:type owl:ObjectProperty ,
+                                  owl:AsymmetricProperty ,
+                                  owl:IrreflexiveProperty ;
+                         rdfs:domain kinship1:man ;
+                         rdfs:range kinship1:Human ;
+                         owl:propertyDisjointWith kinship1:Cousins_wife ;
+                         rdfs:label "Cousins husband"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Cousins_wife
+kinship1:Cousins_wife rdf:type owl:ObjectProperty ,
+                               owl:AsymmetricProperty ,
+                               owl:IrreflexiveProperty ;
+                      rdfs:domain kinship1:woman ;
+                      rdfs:range kinship1:Human ;
+                      rdfs:label "Cousins wife"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Daugther_in_law
+kinship1:Daugther_in_law rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf kinship1:In_law ;
+                         owl:inverseOf kinship1:Father_in_law ,
+                                       kinship1:Mother_in_law ;
+                         rdf:type owl:IrreflexiveProperty ;
+                         rdfs:domain kinship1:woman ;
+                         rdfs:range kinship1:Human ;
+                         owl:propertyDisjointWith kinship1:Son_in_law ;
+                         rdfs:label "Daughter in law"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Dauther
+kinship1:Dauther rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf kinship1:Child ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain kinship1:woman ;
+                 rdfs:range kinship1:Human ;
+                 owl:propertyDisjointWith kinship1:Son ;
+                 rdfs:label "Daugther"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Ex_husband
+kinship1:Ex_husband rdf:type owl:ObjectProperty ,
+                             owl:IrreflexiveProperty ;
+                    rdfs:domain kinship1:man ;
+                    rdfs:range kinship1:Human ;
+                    owl:propertyDisjointWith kinship1:Ex_wife ;
+                    rdfs:label "ex husband" .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Ex_wife
+kinship1:Ex_wife rdf:type owl:ObjectProperty ,
+                          owl:IrreflexiveProperty ;
+                 rdfs:domain kinship1:woman ;
+                 rdfs:range kinship1:Human ;
+                 rdfs:label "ex wife" .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Father
+kinship1:Father rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf kinship1:parent ;
+                rdf:type owl:AsymmetricProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:domain kinship1:man ;
+                rdfs:range kinship1:Human ;
+                owl:propertyDisjointWith kinship1:Mother ;
+                rdfs:label "Father"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Father_in_law
+kinship1:Father_in_law rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf kinship1:In_law ;
+                       owl:inverseOf kinship1:Son_in_law ;
+                       rdf:type owl:IrreflexiveProperty ;
+                       rdfs:domain kinship1:man ;
+                       rdfs:range kinship1:Human ;
+                       owl:propertyDisjointWith kinship1:Mother_in_law ;
+                       rdfs:label "Father in law"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#First_cousin_once_removed
+kinship1:First_cousin_once_removed rdf:type owl:ObjectProperty ,
+                                            owl:AsymmetricProperty ,
+                                            owl:IrreflexiveProperty ;
+                                   rdfs:domain kinship1:Human ;
+                                   rdfs:range kinship1:Human ;
+                                   rdfs:comment "Child of your first Cousin."@en ;
+                                   rdfs:label "First cousin once removed"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Grand_Child
+kinship1:Grand_Child rdf:type owl:ObjectProperty ;
+                     owl:inverseOf kinship1:Grandparent ;
+                     rdf:type owl:SymmetricProperty ,
+                              owl:IrreflexiveProperty ;
+                     rdfs:domain kinship1:Human ;
+                     rdfs:range kinship1:Human ;
+                     rdfs:label "Grand child"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Grand_daughter
+kinship1:Grand_daughter rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf kinship1:Grand_Child ;
+                        rdf:type owl:AsymmetricProperty ,
+                                 owl:IrreflexiveProperty ;
+                        rdfs:domain kinship1:woman ;
+                        rdfs:range kinship1:Human ;
+                        owl:propertyDisjointWith kinship1:Grand_son ;
+                        rdfs:label "Grand daughter"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Grand_nephew
+kinship1:Grand_nephew rdf:type owl:ObjectProperty ,
+                               owl:AsymmetricProperty ,
+                               owl:IrreflexiveProperty ;
+                      rdfs:domain kinship1:man ;
+                      rdfs:range kinship1:Human ;
+                      owl:propertyDisjointWith kinship1:Grand_niece ;
+                      rdfs:label "grand nephew"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Grand_niece
+kinship1:Grand_niece rdf:type owl:ObjectProperty ;
+                     rdfs:domain kinship1:woman ;
+                     rdfs:range kinship1:Human ;
+                     rdfs:label "grand niece"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Grand_son
+kinship1:Grand_son rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf kinship1:Grand_Child ;
+                   rdf:type owl:AsymmetricProperty ,
+                            owl:IrreflexiveProperty ;
+                   rdfs:domain kinship1:man ;
+                   rdfs:range kinship1:Human ;
+                   rdfs:label "Grand son"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Grandchild
+kinship1:Grandchild rdf:type owl:ObjectProperty ;
+                    owl:inverseOf kinship1:Grandparent ;
+                    rdf:type owl:AsymmetricProperty ,
+                             owl:IrreflexiveProperty ;
+                    rdfs:domain kinship1:Human ;
+                    rdfs:range kinship1:Human ;
+                    rdfs:label "Grandchild"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Granddaughter
+kinship1:Granddaughter rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf kinship1:Grandchild ;
+                       rdf:type owl:AsymmetricProperty ,
+                                owl:IrreflexiveProperty ;
+                       rdfs:domain kinship1:woman ;
+                       rdfs:range kinship1:Human ;
+                       owl:propertyDisjointWith kinship1:Grandson ;
+                       rdfs:label "Granddaughter"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Grandfather
+kinship1:Grandfather rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf kinship1:Grandparent ;
+                     rdf:type owl:AsymmetricProperty ,
+                              owl:IrreflexiveProperty ;
+                     rdfs:domain kinship1:man ;
+                     rdfs:range kinship1:Human ;
+                     owl:propertyDisjointWith kinship1:Grandmother ;
+                     rdfs:label "Grandfather"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Grandmother
+kinship1:Grandmother rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf kinship1:Grandparent ;
+                     rdf:type owl:AsymmetricProperty ,
+                              owl:IrreflexiveProperty ;
+                     rdfs:domain kinship1:woman ;
+                     rdfs:range kinship1:Human ;
+                     rdfs:label "grandmother"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Grandparent
+kinship1:Grandparent rdf:type owl:ObjectProperty ,
+                              owl:AsymmetricProperty ,
+                              owl:IrreflexiveProperty ;
+                     rdfs:domain kinship1:Human ;
+                     rdfs:range kinship1:Human ;
+                     rdfs:label "Grandparent"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Grandson
+kinship1:Grandson rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf kinship1:Grandchild ;
+                  rdf:type owl:AsymmetricProperty ,
+                           owl:IrreflexiveProperty ;
+                  rdfs:domain kinship1:man ;
+                  rdfs:range kinship1:Human ;
+                  rdfs:label "Grandson"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Great_aunt
+kinship1:Great_aunt rdf:type owl:ObjectProperty ,
+                             owl:IrreflexiveProperty ;
+                    rdfs:domain kinship1:woman ;
+                    rdfs:range kinship1:Human ;
+                    owl:propertyDisjointWith kinship1:Great_uncle ;
+                    rdfs:comment "Sister of a Grandparent."@en ;
+                    rdfs:label "Great aunt"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Great_grandfather
+kinship1:Great_grandfather rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf kinship1:Great_grandparents ;
+                           rdf:type owl:AsymmetricProperty ,
+                                    owl:IrreflexiveProperty ;
+                           rdfs:domain kinship1:man ;
+                           rdfs:range kinship1:Human ;
+                           owl:propertyDisjointWith kinship1:Great_grandmother ;
+                           rdfs:comment "The Father of your Grandfather."@en ;
+                           rdfs:label "Great grandfather"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Great_grandmother
+kinship1:Great_grandmother rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf kinship1:Great_grandparents ;
+                           rdf:type owl:AsymmetricProperty ,
+                                    owl:IrreflexiveProperty ;
+                           rdfs:domain kinship1:woman ;
+                           rdfs:range kinship1:Human ;
+                           rdfs:comment "The Mother of your Grandmother."@en ;
+                           rdfs:label "Great grandmother"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Great_grandparents
+kinship1:Great_grandparents rdf:type owl:ObjectProperty ,
+                                     owl:IrreflexiveProperty ;
+                            rdfs:domain kinship1:Human ;
+                            rdfs:range kinship1:Human ;
+                            rdfs:comment "The Parents of your Grandparents."@en ;
+                            rdfs:label "Great grandparents"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Great_uncle
+kinship1:Great_uncle rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdf:type owl:IrreflexiveProperty ;
+                     rdfs:domain kinship1:man ;
+                     rdfs:range kinship1:Human ;
+                     rdfs:comment "Brother of a grandparent"@en ;
+                     rdfs:label "Great uncle"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Husband
+kinship1:Husband rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf kinship1:Spouse ;
+                 owl:inverseOf kinship1:Wife ;
+                 rdfs:domain kinship1:man ;
+                 rdfs:range kinship1:Human ;
+                 owl:propertyDisjointWith kinship1:Wife ;
+                 rdfs:label "Husband"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#In_law
+kinship1:In_law rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:comment "NOT SURE IF I SHOULD PUT ALL THESE RELATIONS IN THE SUBCLASS RELATION"@en ;
+                rdfs:label "In law"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Mother
+kinship1:Mother rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf kinship1:parent ;
+                rdf:type owl:AsymmetricProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:domain kinship1:woman ;
+                rdfs:range kinship1:Human ;
+                rdfs:label "Mother"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Mother_in_law
+kinship1:Mother_in_law rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf kinship1:In_law ;
+                       owl:inverseOf kinship1:Son_in_law ;
+                       rdf:type owl:IrreflexiveProperty ;
+                       rdfs:domain kinship1:woman ;
+                       rdfs:range kinship1:Human ;
+                       rdfs:label "Mother in law"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Nephew
+kinship1:Nephew rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf kinship1:Cousin ;
+                rdf:type owl:IrreflexiveProperty ;
+                rdfs:domain kinship1:man ;
+                rdfs:range kinship1:Human ;
+                owl:propertyDisjointWith kinship1:Niece ;
+                rdfs:label "Nephew"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Niece
+kinship1:Niece rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf kinship1:Cousin ;
+               rdfs:domain kinship1:woman ;
+               rdfs:range kinship1:Human ;
+               rdfs:label "Niece"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Partner
+kinship1:Partner rdf:type owl:ObjectProperty ;
+                 owl:equivalentProperty kinship1:Spouse ;
+                 rdf:type owl:SymmetricProperty ,
+                          owl:IrreflexiveProperty ;
+                 rdfs:domain kinship1:Human ;
+                 rdfs:range kinship1:Human ;
+                 rdfs:label "Partner"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Sibling
+kinship1:Sibling rdf:type owl:ObjectProperty ,
+                          owl:SymmetricProperty ,
+                          owl:IrreflexiveProperty ;
+                 rdfs:domain kinship1:Human ;
+                 rdfs:range kinship1:Human ;
+                 kinship1:axiom kinship1:axiom752504862Mid-level-ontology.kif ;
+                 rdfs:comment """owl:comment \"The relationship between two Organisms that have the same mother and
+father. Note that this relationship does not hold between
+half-brothers, half-sisters, etc.\"@en"""@en ;
+                 rdfs:label "sibiling"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Sister
+kinship1:Sister rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdf:type owl:TransitiveProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:domain kinship1:woman ;
+                rdfs:range kinship1:Human ;
+                rdfs:comment """owl:comment \"The general relationship of being a sister. (sister ?WOMAN ?PERSON)
+means that ?WOMAN is the sister of ?PERSON.\"@en"""@en ;
+                rdfs:label "sister"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Sister_in_law
+kinship1:Sister_in_law rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf kinship1:In_law ;
+                       rdfs:domain kinship1:woman ;
+                       rdfs:range kinship1:Human ;
+                       rdfs:label "Sister in law"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Son
+kinship1:Son rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf kinship1:Child ;
+             rdf:type owl:FunctionalProperty ,
+                      owl:AsymmetricProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:domain kinship1:man ;
+             rdfs:range kinship1:Human ;
+             rdfs:label "Son"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Son_in_law
+kinship1:Son_in_law rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf kinship1:In_law ;
+                    rdf:type owl:IrreflexiveProperty ;
+                    rdfs:domain kinship1:man ;
+                    rdfs:range kinship1:Human ;
+                    rdfs:label "Son in law"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Spouse
+kinship1:Spouse rdf:type owl:ObjectProperty ,
+                         owl:SymmetricProperty ;
+                rdfs:domain kinship1:Human ;
+                rdfs:range kinship1:Human ;
+                rdfs:label "Spouse"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Step_aunt
+kinship1:Step_aunt rdf:type owl:ObjectProperty ,
+                            owl:AsymmetricProperty ,
+                            owl:IrreflexiveProperty ;
+                   rdfs:domain kinship1:woman ;
+                   rdfs:range kinship1:Human ;
+                   owl:propertyDisjointWith kinship1:Step_uncle ;
+                   rdfs:label "step aunt"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Step_brother
+kinship1:Step_brother rdf:type owl:ObjectProperty ,
+                               owl:IrreflexiveProperty ;
+                      rdfs:domain kinship1:man ;
+                      rdfs:range kinship1:Human ;
+                      owl:propertyDisjointWith kinship1:Step_sister ;
+                      rdfs:label "step brother"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Step_child
+kinship1:Step_child rdf:type owl:ObjectProperty ;
+                    owl:inverseOf kinship1:step_parent ;
+                    rdf:type owl:IrreflexiveProperty ;
+                    rdfs:domain kinship1:Human ;
+                    rdfs:range kinship1:Human ;
+                    rdfs:label "step child"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Step_daughter
+kinship1:Step_daughter rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf kinship1:Step_child ;
+                       rdfs:domain kinship1:woman ;
+                       rdfs:range kinship1:Human ;
+                       owl:propertyDisjointWith kinship1:Step_son ;
+                       rdfs:label "step daughter"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Step_father
+kinship1:Step_father rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf kinship1:step_parent ;
+                     rdfs:domain kinship1:man ;
+                     rdfs:range kinship1:Human ;
+                     owl:propertyDisjointWith kinship1:Step_mother ;
+                     rdfs:label "step father"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Step_mother
+kinship1:Step_mother rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf kinship1:step_parent ;
+                     rdfs:domain kinship1:woman ;
+                     rdfs:range kinship1:Human ;
+                     rdfs:label "step mother"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Step_sister
+kinship1:Step_sister rdf:type owl:ObjectProperty ,
+                              owl:IrreflexiveProperty ;
+                     rdfs:domain kinship1:woman ;
+                     rdfs:range kinship1:Human ;
+                     rdfs:label "step sister"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Step_son
+kinship1:Step_son rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf kinship1:Step_child ;
+                  rdfs:domain kinship1:man ;
+                  rdfs:range kinship1:Human ;
+                  rdfs:label "step son"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Step_uncle
+kinship1:Step_uncle rdf:type owl:ObjectProperty ,
+                             owl:AsymmetricProperty ,
+                             owl:IrreflexiveProperty ;
+                    rdfs:domain kinship1:man ;
+                    rdfs:range kinship1:Human ;
+                    rdfs:label "step uncle"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Uncle
+kinship1:Uncle rdf:type owl:ObjectProperty ,
+                        owl:AsymmetricProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:domain kinship1:man ;
+               rdfs:range kinship1:Human ;
+               rdfs:label "Uncle"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Wife
+kinship1:Wife rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf kinship1:Spouse ;
+              rdfs:domain kinship1:woman ;
+              rdfs:range kinship1:Human ;
+              rdfs:comment "I AM NOT SURE WHETHER THIS RELATION SHOULD BE INVERSE OR DISJOINT, SINCE THE RELATION WILL NOT ALWAY BE HUSBAND AND WIFE"@en ;
+              rdfs:label "Wife"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#age
+kinship1:age rdf:type owl:ObjectProperty ;
+             rdfs:label "age"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#ancestor
+kinship1:ancestor rdf:type owl:ObjectProperty ,
+                           owl:TransitiveProperty ;
+                  rdfs:domain kinship1:Human ;
+                  rdfs:range kinship1:Human ;
+                  rdfs:comment """The transitive closure of the parent predicate. (ancestor ?DESCENDANT
+?ANCESTOR) means that ?ANCESTOR is either the parent of ?DESCENDANT or
+the parent of the parent of DESCENDANT or etc."""@en ;
+                  rdfs:label "ancestor"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#birthdate
+kinship1:birthdate rdf:type owl:ObjectProperty ;
+                   rdfs:domain kinship1:Human ;
+                   rdfs:range kinship1:day ;
+                   rdfs:comment """(birthdate ?PERSON ?DAY) means that ?DAY is the Day on which the
+?PERSON was born."""@en ;
+                   rdfs:label "birthdate"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#nephew_in_law
+kinship1:nephew_in_law rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf kinship1:In_law ;
+                       rdf:type owl:IrreflexiveProperty ;
+                       rdfs:domain kinship1:man ;
+                       rdfs:range kinship1:Human ;
+                       owl:propertyDisjointWith kinship1:niece_in_law ;
+                       rdfs:label "Nephew in law"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#niece_in_law
+kinship1:niece_in_law rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf kinship1:In_law ;
+                      rdf:type owl:IrreflexiveProperty ;
+                      rdfs:domain kinship1:woman ;
+                      rdfs:range kinship1:Human ;
+                      rdfs:label "Niece in law"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#parent
+kinship1:parent rdf:type owl:ObjectProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:domain kinship1:Human ;
+                rdfs:range kinship1:Human ;
+                owl:propertyDisjointWith kinship1:step_parent ;
+                rdfs:comment """The general relationship of parenthood. (parent ?CHILD ?PARENT) means
+that ?PARENT is a biological parent of ?CHILD."""@en ;
+                rdfs:label "parent"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#step_parent
+kinship1:step_parent rdf:type owl:ObjectProperty ,
+                              owl:IrreflexiveProperty ;
+                     rdfs:domain kinship1:Human ;
+                     rdfs:range owl:Thing ;
+                     rdfs:label "step parent"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#twin
+kinship1:twin rdf:type owl:ObjectProperty ,
+                       owl:SymmetricProperty ,
+                       owl:TransitiveProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain kinship1:Human ;
+              rdfs:range kinship1:Human ;
+              rdfs:label "twin"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Human
+kinship1:Human rdf:type owl:Class ;
+               rdfs:label "human"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#boy
+kinship1:boy rdf:type owl:Class ;
+             rdfs:subClassOf kinship1:human_child ,
+                             kinship1:man ;
+             owl:disjointWith kinship1:girl ;
+             rdfs:comment "A HumanChild who is Male."@en ;
+             rdfs:label "boy"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#day
+kinship1:day rdf:type owl:Class ;
+             rdfs:subClassOf kinship1:time_interval ;
+             rdfs:label "day"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#friday
+kinship1:friday rdf:type owl:Class ;
+                rdfs:subClassOf kinship1:day ;
+                rdfs:comment "The Class of all calandar Fridays."@en ;
+                rdfs:label "Friday"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#girl
+kinship1:girl rdf:type owl:Class ;
+              rdfs:subClassOf kinship1:human_child ,
+                              kinship1:woman ;
+              rdfs:comment "A HumanChild who is Female."@en ;
+              rdfs:label "girl"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#hour
+kinship1:hour rdf:type owl:Class ;
+              rdfs:subClassOf kinship1:time_interval ;
+              rdfs:comment "The Class of all clock Hours."@en ;
+              rdfs:label "hour"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#human_adult
+kinship1:human_adult rdf:type owl:Class ;
+                     rdfs:subClassOf kinship1:Human ;
+                     rdfs:comment "The class of Humans that are 18 years of age or older."@en ;
+                     rdfs:label "human adult"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#human_baby
+kinship1:human_baby rdf:type owl:Class ;
+                    rdfs:subClassOf kinship1:human_child ;
+                    rdfs:comment "A Human between birth and the first year of age."@en ;
+                    rdfs:label "human baby"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#human_child
+kinship1:human_child rdf:type owl:Class ;
+                     rdfs:subClassOf kinship1:human_youth .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#human_youth
+kinship1:human_youth rdf:type owl:Class ;
+                     rdfs:subClassOf kinship1:Human .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#man
+kinship1:man rdf:type owl:Class ;
+             rdfs:subClassOf kinship1:Human ;
+             owl:disjointWith kinship1:woman ;
+             rdfs:label "man"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#minute
+kinship1:minute rdf:type owl:Class ;
+                rdfs:subClassOf kinship1:time_interval ;
+                rdfs:comment "The Class of all clock Minutes."@en ;
+                rdfs:label "minute"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#monday
+kinship1:monday rdf:type owl:Class ;
+                rdfs:subClassOf kinship1:day ;
+                rdfs:comment "The Class of all calandar Mondays."@en ;
+                rdfs:label "Monday"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#month
+kinship1:month rdf:type owl:Class ;
+               rdfs:subClassOf kinship1:time_interval ;
+               rdfs:comment "The Class of all calendar Months."@en ;
+               rdfs:label "month"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#saturday
+kinship1:saturday rdf:type owl:Class ;
+                  rdfs:subClassOf kinship1:day ;
+                  rdfs:comment "The Class of all calandar Saturday."@en ;
+                  rdfs:label "Saturday"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#season_of_year
+kinship1:season_of_year rdf:type owl:Class ;
+                        rdfs:subClassOf kinship1:time_interval ;
+                        rdfs:comment """SeasonOfYear is the class of four seasons correlated with the calendar
+Year and associated with changes in the length of daylight and with
+overall temperature changes. Depending upon the GeographicArea, a
+SeasonOfYear may also be associated with weather patterns (e.g.,
+rainy, dry, windy). The characteristics of seasons (cold vs. hot
+temperatures, long vs. short days) are reversed from the
+NorthernHemisphere to the SouthernHemisphere."""@en ;
+                        rdfs:label "seasons of year"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#second
+kinship1:second rdf:type owl:Class ;
+                rdfs:subClassOf kinship1:time_interval ;
+                rdfs:comment "The Class of all clock Seconds."@en ;
+                rdfs:label "second"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#sunday
+kinship1:sunday rdf:type owl:Class ;
+                rdfs:subClassOf kinship1:day ;
+                rdfs:comment "The Class of all calandar Sundays."@en ;
+                rdfs:label "Sunday"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#teenager
+kinship1:teenager rdf:type owl:Class ;
+                  rdfs:subClassOf kinship1:human_youth ;
+                  rdfs:comment "A HumanYouth between puberty and the age of 20."@en ;
+                  rdfs:label "teenager"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#thursday
+kinship1:thursday rdf:type owl:Class ;
+                  rdfs:subClassOf kinship1:day ;
+                  rdfs:comment "The Class of all calandar Thursdays."@en ;
+                  rdfs:label "Thursday"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#time_interval
+kinship1:time_interval rdf:type owl:Class ;
+                       rdfs:subClassOf kinship1:time_position ;
+                       rdfs:label "time interval"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#time_measure
+kinship1:time_measure rdf:type owl:Class ;
+                      rdfs:comment """The class of temporal durations (instances of TimeDuration) and
+positions of TimePoints and TimeIntervals along the universal timeline
+(instances of TimePosition)."""@en ;
+                      rdfs:label "time measure"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#time_position
+kinship1:time_position rdf:type owl:Class ;
+                       rdfs:subClassOf kinship1:time_measure ;
+                       rdfs:comment """Any TimePoint or TimeInterval along the universal timeline from
+NegativeInfinity to PositiveInfinity."""@en ;
+                       rdfs:label "time position"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#tuesday
+kinship1:tuesday rdf:type owl:Class ;
+                 rdfs:subClassOf kinship1:day ;
+                 rdfs:comment "The Class of all calandar Tuesdays."@en ;
+                 rdfs:label "Tuesday"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#wednesday
+kinship1:wednesday rdf:type owl:Class ;
+                   rdfs:subClassOf kinship1:day ;
+                   rdfs:comment "The Class of all calandar Wednesdays."@en ;
+                   rdfs:label "Wednesday"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#week
+kinship1:week rdf:type owl:Class ;
+              rdfs:subClassOf kinship1:time_interval ;
+              rdfs:comment "The Class of all calander Weeks"@en ;
+              rdfs:label "week"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#weekend
+kinship1:weekend rdf:type owl:Class ;
+                 rdfs:subClassOf kinship1:time_interval ;
+                 rdfs:label "Any Saturday and Sunday which are contiguous."@en ,
+                            "weekend"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#woman
+kinship1:woman rdf:type owl:Class ;
+               rdfs:subClassOf kinship1:Human .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#year
+kinship1:year rdf:type owl:Class ;
+              rdfs:subClassOf kinship1:time_interval ;
+              rdfs:label "year"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Alice_Knight
+kinship1:Alice_Knight rdf:type owl:NamedIndividual ,
+                               kinship1:Human ,
+                               kinship1:woman ;
+                      kinship1:Husband kinship1:Frank_Buffay .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Amy_Green
+kinship1:Amy_Green rdf:type owl:NamedIndividual ,
+                            kinship1:Human ,
+                            kinship1:woman ;
+                   kinship1:Sister kinship1:Jill_Green ,
+                                   kinship1:Rachel .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Andrea_Waltham
+kinship1:Andrea_Waltham rdf:type owl:NamedIndividual ,
+                                 kinship1:Human ,
+                                 kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Ben
+kinship1:Ben rdf:type owl:NamedIndividual ,
+                      kinship1:Human ,
+                      kinship1:boy ,
+                      kinship1:man .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Bitsy_Hannigan
+kinship1:Bitsy_Hannigan rdf:type owl:NamedIndividual ,
+                                 kinship1:Human ,
+                                 kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Carol_Willick
+kinship1:Carol_Willick rdf:type owl:NamedIndividual ,
+                                kinship1:Human ,
+                                kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Cassie_Geller
+kinship1:Cassie_Geller rdf:type owl:NamedIndividual ,
+                                kinship1:Human ,
+                                kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Chandler_Bing
+kinship1:Chandler_Bing rdf:type owl:NamedIndividual ,
+                                kinship1:Human ,
+                                kinship1:man ;
+                       kinship1:Father kinship1:Charles_Bing ;
+                       rdfs:label "Chandler Bing" .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Charles_Bing
+kinship1:Charles_Bing rdf:type owl:NamedIndividual ,
+                               kinship1:Human ,
+                               kinship1:man ;
+                      kinship1:Mother kinship1:Nora_Tyler_Bing .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Cookie
+kinship1:Cookie rdf:type owl:NamedIndividual ,
+                         kinship1:Human ,
+                         kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Dina
+kinship1:Dina rdf:type owl:NamedIndividual ,
+                       kinship1:Human ,
+                       kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Duncan
+kinship1:Duncan rdf:type owl:NamedIndividual ,
+                         kinship1:Human ,
+                         kinship1:man .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Emily_Waltham
+kinship1:Emily_Waltham rdf:type owl:NamedIndividual ,
+                                kinship1:Human ,
+                                kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Emma
+kinship1:Emma rdf:type owl:NamedIndividual ,
+                       kinship1:Human ,
+                       kinship1:girl ,
+                       kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Frances
+kinship1:Frances rdf:type owl:NamedIndividual ,
+                          kinship1:Human ,
+                          kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Frank_Buffay
+kinship1:Frank_Buffay rdf:type owl:NamedIndividual ,
+                               kinship1:Human ,
+                               kinship1:man ;
+                      rdfs:label "Frank Buffay" .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Gina
+kinship1:Gina rdf:type owl:NamedIndividual ,
+                       kinship1:Human ,
+                       kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Gloria_Tribbiani
+kinship1:Gloria_Tribbiani rdf:type owl:NamedIndividual ,
+                                   kinship1:Human ,
+                                   kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Helena_Handbasket
+kinship1:Helena_Handbasket rdf:type owl:NamedIndividual ,
+                                    kinship1:Human .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Jack_Geller
+kinship1:Jack_Geller rdf:type owl:NamedIndividual ,
+                              kinship1:Human ,
+                              kinship1:man .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Jill_Green
+kinship1:Jill_Green rdf:type owl:NamedIndividual ,
+                             kinship1:Human ,
+                             kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Joey_Tribbiani
+kinship1:Joey_Tribbiani rdf:type owl:NamedIndividual ,
+                                 kinship1:Human ,
+                                 kinship1:man ;
+                        kinship1:Father kinship1:Joseph_Tribbiani ;
+                        kinship1:Mother kinship1:Gloria_Tribbiani ;
+                        kinship1:Sister kinship1:Cookie ,
+                                        kinship1:Dina ,
+                                        kinship1:Gina ,
+                                        kinship1:Mary_Angela_Tribbiani ,
+                                        kinship1:Mary_Therese_Tribbiani ,
+                                        kinship1:Tina ,
+                                        kinship1:Veronica ;
+                        rdfs:label "Joey Tribbiani"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Joseph_Tribbiani
+kinship1:Joseph_Tribbiani rdf:type owl:NamedIndividual ,
+                                   kinship1:Human ,
+                                   kinship1:man .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Judy_Geller
+kinship1:Judy_Geller rdf:type owl:NamedIndividual ,
+                              kinship1:Human ,
+                              kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Leonard_Green
+kinship1:Leonard_Green rdf:type owl:NamedIndividual ,
+                                kinship1:Human ,
+                                kinship1:man .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Mary_Angela_Tribbiani
+kinship1:Mary_Angela_Tribbiani rdf:type owl:NamedIndividual ,
+                                        kinship1:Human ,
+                                        kinship1:woman ;
+                               kinship1:Sister kinship1:Dina .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Mary_Therese_Tribbiani
+kinship1:Mary_Therese_Tribbiani rdf:type owl:NamedIndividual ,
+                                         kinship1:Human ,
+                                         kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Mike_Hannigan
+kinship1:Mike_Hannigan rdf:type owl:NamedIndividual ,
+                                kinship1:Human ,
+                                kinship1:man .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Monica
+kinship1:Monica rdf:type owl:NamedIndividual ,
+                         kinship1:Human ,
+                         kinship1:woman ;
+                kinship1:Cousin kinship1:Cassie_Geller ;
+                kinship1:Father kinship1:Jack_Geller ;
+                kinship1:Mother kinship1:Judy_Geller ;
+                kinship1:Nephew kinship1:Ben ;
+                rdfs:label "Monica"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Nora_Tyler_Bing
+kinship1:Nora_Tyler_Bing rdf:type owl:NamedIndividual ,
+                                  kinship1:Human ,
+                                  kinship1:woman ;
+                         kinship1:Son kinship1:Chandler_Bing .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Phoebe
+kinship1:Phoebe rdf:type owl:NamedIndividual ,
+                         kinship1:Human ,
+                         kinship1:woman ;
+                kinship1:Brother kinship1:Frank_Buffay ;
+                kinship1:Ex_husband kinship1:Duncan ;
+                kinship1:Grandmother kinship1:Frances ;
+                kinship1:Husband kinship1:Mike_Hannigan ;
+                kinship1:Mother kinship1:Phoebe_Abbott ;
+                kinship1:twin kinship1:Ursula_Buffay .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Phoebe_Abbott
+kinship1:Phoebe_Abbott rdf:type owl:NamedIndividual ,
+                                kinship1:Human ,
+                                kinship1:woman ;
+                       rdfs:label "Phoebe Abbott"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Rachel
+kinship1:Rachel rdf:type owl:NamedIndividual ,
+                         kinship1:Human ,
+                         kinship1:woman ;
+                kinship1:Dauther kinship1:Emma ;
+                kinship1:Father kinship1:Leonard_Green ;
+                kinship1:Mother kinship1:Sandra_Green ;
+                kinship1:Sister kinship1:Amy_Green ,
+                                kinship1:Jill_Green ;
+                rdfs:label "Rachel"@en .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Ross
+kinship1:Ross rdf:type owl:NamedIndividual ,
+                       kinship1:Human ,
+                       kinship1:man ;
+              kinship1:Cousin kinship1:Cassie_Geller ;
+              kinship1:Ex_wife kinship1:Carol_Willick ,
+                               kinship1:Emily_Waltham ;
+              kinship1:Father kinship1:Jack_Geller ;
+              kinship1:Mother kinship1:Judy_Geller ;
+              kinship1:Sister kinship1:Monica .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Sandra_Green
+kinship1:Sandra_Green rdf:type owl:NamedIndividual ,
+                               kinship1:Human ,
+                               kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Stephen_Waltham
+kinship1:Stephen_Waltham rdf:type owl:NamedIndividual ,
+                                  kinship1:Human ,
+                                  kinship1:man .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Susan_Bunch
+kinship1:Susan_Bunch rdf:type owl:NamedIndividual ,
+                              kinship1:Human ,
+                              kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Theodore_Hannigan
+kinship1:Theodore_Hannigan rdf:type owl:NamedIndividual ,
+                                    kinship1:Human ,
+                                    kinship1:man .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Tina
+kinship1:Tina rdf:type owl:NamedIndividual ,
+                       kinship1:Human ,
+                       kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Ursula_Buffay
+kinship1:Ursula_Buffay rdf:type owl:NamedIndividual ,
+                                kinship1:Human ,
+                                kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#Veronica
+kinship1:Veronica rdf:type owl:NamedIndividual ,
+                           kinship1:Human ,
+                           kinship1:woman .
+
+
+###  http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#axiom752504862Mid-level-ontology.kif
+kinship1:axiom752504862Mid-level-ontology.kif rdf:type owl:NamedIndividual ,
+                                                       owl:Thing ;
+                                              rdfs:comment """rdfs:comment \"A SUO-KIF axiom that may not be directly expressible in OWL. See www.ontologyportal.org for the original SUO-KIF source.
+ (iff
+  (nephew ?N ?H)
+  (exists (?S)
+    (and
+      (sibling ?S ?H)
+      (son ?N ?S))))\"@en"""@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,1026 @@
+Prefix(:=<http://www.semanticweb.org/selin/ontologies/2020/10/kinship1>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(kinship1:=<http://www.semanticweb.org/selin/ontologies/2020/10/kinship1#>)
+
+
+Ontology(<http://www.semanticweb.org/selin/ontologies/2020/10/kinship1>
+
+Declaration(Class(kinship1:Human))
+Declaration(Class(kinship1:boy))
+Declaration(Class(kinship1:day))
+Declaration(Class(kinship1:friday))
+Declaration(Class(kinship1:girl))
+Declaration(Class(kinship1:hour))
+Declaration(Class(kinship1:human_adult))
+Declaration(Class(kinship1:human_baby))
+Declaration(Class(kinship1:human_child))
+Declaration(Class(kinship1:human_youth))
+Declaration(Class(kinship1:man))
+Declaration(Class(kinship1:minute))
+Declaration(Class(kinship1:monday))
+Declaration(Class(kinship1:month))
+Declaration(Class(kinship1:saturday))
+Declaration(Class(kinship1:season_of_year))
+Declaration(Class(kinship1:second))
+Declaration(Class(kinship1:sunday))
+Declaration(Class(kinship1:teenager))
+Declaration(Class(kinship1:thursday))
+Declaration(Class(kinship1:time_interval))
+Declaration(Class(kinship1:time_measure))
+Declaration(Class(kinship1:time_position))
+Declaration(Class(kinship1:tuesday))
+Declaration(Class(kinship1:wednesday))
+Declaration(Class(kinship1:week))
+Declaration(Class(kinship1:weekend))
+Declaration(Class(kinship1:woman))
+Declaration(Class(kinship1:year))
+Declaration(ObjectProperty(kinship1:Aunt))
+Declaration(ObjectProperty(kinship1:Brother))
+Declaration(ObjectProperty(kinship1:Brother_in_law))
+Declaration(ObjectProperty(kinship1:Child))
+Declaration(ObjectProperty(kinship1:Cousin))
+Declaration(ObjectProperty(kinship1:Cousins_husband))
+Declaration(ObjectProperty(kinship1:Cousins_wife))
+Declaration(ObjectProperty(kinship1:Daugther_in_law))
+Declaration(ObjectProperty(kinship1:Dauther))
+Declaration(ObjectProperty(kinship1:Ex_husband))
+Declaration(ObjectProperty(kinship1:Ex_wife))
+Declaration(ObjectProperty(kinship1:Father))
+Declaration(ObjectProperty(kinship1:Father_in_law))
+Declaration(ObjectProperty(kinship1:First_cousin_once_removed))
+Declaration(ObjectProperty(kinship1:Grand_Child))
+Declaration(ObjectProperty(kinship1:Grand_daughter))
+Declaration(ObjectProperty(kinship1:Grand_nephew))
+Declaration(ObjectProperty(kinship1:Grand_niece))
+Declaration(ObjectProperty(kinship1:Grand_son))
+Declaration(ObjectProperty(kinship1:Grandchild))
+Declaration(ObjectProperty(kinship1:Granddaughter))
+Declaration(ObjectProperty(kinship1:Grandfather))
+Declaration(ObjectProperty(kinship1:Grandmother))
+Declaration(ObjectProperty(kinship1:Grandparent))
+Declaration(ObjectProperty(kinship1:Grandson))
+Declaration(ObjectProperty(kinship1:Great_aunt))
+Declaration(ObjectProperty(kinship1:Great_grandfather))
+Declaration(ObjectProperty(kinship1:Great_grandmother))
+Declaration(ObjectProperty(kinship1:Great_grandparents))
+Declaration(ObjectProperty(kinship1:Great_uncle))
+Declaration(ObjectProperty(kinship1:Husband))
+Declaration(ObjectProperty(kinship1:In_law))
+Declaration(ObjectProperty(kinship1:Mother))
+Declaration(ObjectProperty(kinship1:Mother_in_law))
+Declaration(ObjectProperty(kinship1:Nephew))
+Declaration(ObjectProperty(kinship1:Niece))
+Declaration(ObjectProperty(kinship1:Partner))
+Declaration(ObjectProperty(kinship1:Sibling))
+Declaration(ObjectProperty(kinship1:Sister))
+Declaration(ObjectProperty(kinship1:Sister_in_law))
+Declaration(ObjectProperty(kinship1:Son))
+Declaration(ObjectProperty(kinship1:Son_in_law))
+Declaration(ObjectProperty(kinship1:Spouse))
+Declaration(ObjectProperty(kinship1:Step_aunt))
+Declaration(ObjectProperty(kinship1:Step_brother))
+Declaration(ObjectProperty(kinship1:Step_child))
+Declaration(ObjectProperty(kinship1:Step_daughter))
+Declaration(ObjectProperty(kinship1:Step_father))
+Declaration(ObjectProperty(kinship1:Step_mother))
+Declaration(ObjectProperty(kinship1:Step_sister))
+Declaration(ObjectProperty(kinship1:Step_son))
+Declaration(ObjectProperty(kinship1:Step_uncle))
+Declaration(ObjectProperty(kinship1:Uncle))
+Declaration(ObjectProperty(kinship1:Wife))
+Declaration(ObjectProperty(kinship1:age))
+Declaration(ObjectProperty(kinship1:ancestor))
+Declaration(ObjectProperty(kinship1:birthdate))
+Declaration(ObjectProperty(kinship1:nephew_in_law))
+Declaration(ObjectProperty(kinship1:niece_in_law))
+Declaration(ObjectProperty(kinship1:parent))
+Declaration(NamedIndividual(kinship1:Alice_Knight))
+Declaration(NamedIndividual(kinship1:Amy_Green))
+Declaration(NamedIndividual(kinship1:Andrea_Waltham))
+Declaration(NamedIndividual(kinship1:Ben))
+Declaration(NamedIndividual(kinship1:Bitsy_Hannigan))
+Declaration(NamedIndividual(kinship1:Carol_Willick))
+Declaration(NamedIndividual(kinship1:Cassie_Geller))
+Declaration(NamedIndividual(kinship1:Chandler))
+Declaration(NamedIndividual(kinship1:Charles_Bing))
+Declaration(NamedIndividual(kinship1:Cookie))
+Declaration(NamedIndividual(kinship1:Dina))
+Declaration(NamedIndividual(kinship1:Duncan))
+Declaration(NamedIndividual(kinship1:Emily_Waltham))
+Declaration(NamedIndividual(kinship1:Emma))
+Declaration(NamedIndividual(kinship1:Frances))
+Declaration(NamedIndividual(kinship1:Gina))
+Declaration(NamedIndividual(kinship1:Gloria_Tribbiani))
+Declaration(NamedIndividual(kinship1:Helena_Handbasket))
+Declaration(NamedIndividual(kinship1:Jack_Geller))
+Declaration(NamedIndividual(kinship1:Jill_Green))
+Declaration(NamedIndividual(kinship1:Joey))
+Declaration(NamedIndividual(kinship1:Joseph_Tribbiani))
+Declaration(NamedIndividual(kinship1:Judy_Geller))
+Declaration(NamedIndividual(kinship1:Leonard_Green))
+Declaration(NamedIndividual(kinship1:Mary_Angela_Tribbiani))
+Declaration(NamedIndividual(kinship1:Mary_Therese_Tribbiani))
+Declaration(NamedIndividual(kinship1:Mike_Hannigan))
+Declaration(NamedIndividual(kinship1:Monica))
+Declaration(NamedIndividual(kinship1:Nora_Tyler_Bing))
+Declaration(NamedIndividual(kinship1:Phoebe))
+Declaration(NamedIndividual(kinship1:Rachel))
+Declaration(NamedIndividual(kinship1:Ross))
+Declaration(NamedIndividual(kinship1:Sandra_Green))
+Declaration(NamedIndividual(kinship1:Stephen_Waltham))
+Declaration(NamedIndividual(kinship1:Susan_Bunch))
+Declaration(NamedIndividual(kinship1:Theodore_Hannigan))
+Declaration(NamedIndividual(kinship1:Tina))
+Declaration(NamedIndividual(kinship1:Ursula_Buffay))
+Declaration(NamedIndividual(kinship1:Veronica))
+Declaration(NamedIndividual(kinship1:axiom752504862Mid-level-ontology.kif))
+Declaration(AnnotationProperty(kinship1:axiom))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: kinship1:Aunt (aunt)
+
+AnnotationAssertion(rdfs:label kinship1:Aunt "aunt"@en)
+AsymmetricObjectProperty(kinship1:Aunt)
+IrreflexiveObjectProperty(kinship1:Aunt)
+ObjectPropertyDomain(kinship1:Aunt kinship1:woman)
+ObjectPropertyRange(kinship1:Aunt kinship1:Human)
+
+# Object Property: kinship1:Brother (Brother)
+
+AnnotationAssertion(rdfs:comment kinship1:Brother "owl:comment \"The general relationship of being a brother. (brother ?MAN ?PERSON)
+means that ?MAN is the brother of ?PERSON.\"@en"@en)
+AnnotationAssertion(rdfs:label kinship1:Brother "Brother"@en)
+TransitiveObjectProperty(kinship1:Brother)
+IrreflexiveObjectProperty(kinship1:Brother)
+ObjectPropertyDomain(kinship1:Brother kinship1:man)
+ObjectPropertyRange(kinship1:Brother kinship1:Human)
+DisjointObjectProperties(kinship1:Brother kinship1:Sister)
+
+# Object Property: kinship1:Brother_in_law (Brother in law)
+
+AnnotationAssertion(rdfs:label kinship1:Brother_in_law "Brother in law"@en)
+SubObjectPropertyOf(kinship1:Brother_in_law kinship1:In_law)
+IrreflexiveObjectProperty(kinship1:Brother_in_law)
+ObjectPropertyDomain(kinship1:Brother_in_law kinship1:man)
+ObjectPropertyRange(kinship1:Brother_in_law kinship1:Human)
+DisjointObjectProperties(kinship1:Brother_in_law kinship1:Sister_in_law)
+
+# Object Property: kinship1:Child (Child)
+
+AnnotationAssertion(rdfs:label kinship1:Child "Child"@en)
+InverseObjectProperties(kinship1:Child kinship1:Father)
+InverseObjectProperties(kinship1:Child kinship1:Mother)
+AsymmetricObjectProperty(kinship1:Child)
+IrreflexiveObjectProperty(kinship1:Child)
+ObjectPropertyDomain(kinship1:Child kinship1:Human)
+ObjectPropertyRange(kinship1:Child kinship1:Human)
+
+# Object Property: kinship1:Cousin (Cousin)
+
+AnnotationAssertion(rdfs:label kinship1:Cousin "Cousin"@en)
+SymmetricObjectProperty(kinship1:Cousin)
+IrreflexiveObjectProperty(kinship1:Cousin)
+ObjectPropertyDomain(kinship1:Cousin kinship1:Human)
+ObjectPropertyRange(kinship1:Cousin kinship1:Human)
+
+# Object Property: kinship1:Cousins_husband (Cousins husband)
+
+AnnotationAssertion(rdfs:label kinship1:Cousins_husband "Cousins husband"@en)
+AsymmetricObjectProperty(kinship1:Cousins_husband)
+IrreflexiveObjectProperty(kinship1:Cousins_husband)
+ObjectPropertyDomain(kinship1:Cousins_husband kinship1:man)
+ObjectPropertyRange(kinship1:Cousins_husband kinship1:Human)
+DisjointObjectProperties(kinship1:Cousins_husband kinship1:Cousins_wife)
+
+# Object Property: kinship1:Cousins_wife (Cousins wife)
+
+AnnotationAssertion(rdfs:label kinship1:Cousins_wife "Cousins wife"@en)
+AsymmetricObjectProperty(kinship1:Cousins_wife)
+IrreflexiveObjectProperty(kinship1:Cousins_wife)
+ObjectPropertyDomain(kinship1:Cousins_wife kinship1:woman)
+ObjectPropertyRange(kinship1:Cousins_wife kinship1:Human)
+
+# Object Property: kinship1:Daugther_in_law (Daughter in law)
+
+AnnotationAssertion(rdfs:label kinship1:Daugther_in_law "Daughter in law"@en)
+SubObjectPropertyOf(kinship1:Daugther_in_law kinship1:In_law)
+InverseObjectProperties(kinship1:Daugther_in_law kinship1:Father_in_law)
+InverseObjectProperties(kinship1:Daugther_in_law kinship1:Mother_in_law)
+IrreflexiveObjectProperty(kinship1:Daugther_in_law)
+ObjectPropertyDomain(kinship1:Daugther_in_law kinship1:woman)
+ObjectPropertyRange(kinship1:Daugther_in_law kinship1:Human)
+DisjointObjectProperties(kinship1:Daugther_in_law kinship1:Son_in_law)
+
+# Object Property: kinship1:Dauther (Daugther)
+
+AnnotationAssertion(rdfs:label kinship1:Dauther "Daugther"@en)
+SubObjectPropertyOf(kinship1:Dauther kinship1:Child)
+ObjectPropertyDomain(kinship1:Dauther kinship1:woman)
+ObjectPropertyRange(kinship1:Dauther kinship1:Human)
+DisjointObjectProperties(kinship1:Dauther kinship1:Son)
+
+# Object Property: kinship1:Ex_husband (kinship1:Ex_husband)
+
+ObjectPropertyDomain(kinship1:Ex_husband kinship1:man)
+ObjectPropertyRange(kinship1:Ex_husband kinship1:Human)
+DisjointObjectProperties(kinship1:Ex_husband kinship1:Ex_wife)
+
+# Object Property: kinship1:Ex_wife (kinship1:Ex_wife)
+
+ObjectPropertyDomain(kinship1:Ex_wife kinship1:woman)
+ObjectPropertyRange(kinship1:Ex_wife kinship1:Human)
+
+# Object Property: kinship1:Father (Father)
+
+AnnotationAssertion(rdfs:label kinship1:Father "Father"@en)
+AsymmetricObjectProperty(kinship1:Father)
+IrreflexiveObjectProperty(kinship1:Father)
+ObjectPropertyDomain(kinship1:Father kinship1:man)
+ObjectPropertyRange(kinship1:Father kinship1:Human)
+DisjointObjectProperties(kinship1:Father kinship1:Mother)
+
+# Object Property: kinship1:Father_in_law (Father in law)
+
+AnnotationAssertion(rdfs:label kinship1:Father_in_law "Father in law"@en)
+SubObjectPropertyOf(kinship1:Father_in_law kinship1:In_law)
+InverseObjectProperties(kinship1:Father_in_law kinship1:Son_in_law)
+IrreflexiveObjectProperty(kinship1:Father_in_law)
+ObjectPropertyDomain(kinship1:Father_in_law kinship1:man)
+ObjectPropertyRange(kinship1:Father_in_law kinship1:Human)
+DisjointObjectProperties(kinship1:Father_in_law kinship1:Mother_in_law)
+
+# Object Property: kinship1:First_cousin_once_removed (First cousin once removed)
+
+AnnotationAssertion(rdfs:label kinship1:First_cousin_once_removed "Child of your first Cousin."@en)
+AnnotationAssertion(rdfs:label kinship1:First_cousin_once_removed "First cousin once removed"@en)
+AsymmetricObjectProperty(kinship1:First_cousin_once_removed)
+IrreflexiveObjectProperty(kinship1:First_cousin_once_removed)
+ObjectPropertyDomain(kinship1:First_cousin_once_removed kinship1:Human)
+ObjectPropertyRange(kinship1:First_cousin_once_removed kinship1:Human)
+
+# Object Property: kinship1:Grand_Child (Grand child)
+
+AnnotationAssertion(rdfs:label kinship1:Grand_Child "Grand child"@en)
+InverseObjectProperties(kinship1:Grand_Child kinship1:Grandparent)
+SymmetricObjectProperty(kinship1:Grand_Child)
+IrreflexiveObjectProperty(kinship1:Grand_Child)
+ObjectPropertyDomain(kinship1:Grand_Child kinship1:Human)
+ObjectPropertyRange(kinship1:Grand_Child kinship1:Human)
+
+# Object Property: kinship1:Grand_daughter (Grand daughter)
+
+AnnotationAssertion(rdfs:label kinship1:Grand_daughter "Grand daughter"@en)
+SubObjectPropertyOf(kinship1:Grand_daughter kinship1:Grand_Child)
+AsymmetricObjectProperty(kinship1:Grand_daughter)
+IrreflexiveObjectProperty(kinship1:Grand_daughter)
+ObjectPropertyDomain(kinship1:Grand_daughter kinship1:woman)
+ObjectPropertyRange(kinship1:Grand_daughter kinship1:Human)
+DisjointObjectProperties(kinship1:Grand_daughter kinship1:Grand_son)
+
+# Object Property: kinship1:Grand_nephew (kinship1:Grand_nephew)
+
+ObjectPropertyDomain(kinship1:Grand_nephew kinship1:man)
+ObjectPropertyRange(kinship1:Grand_nephew kinship1:Human)
+DisjointObjectProperties(kinship1:Grand_nephew kinship1:Grand_niece)
+
+# Object Property: kinship1:Grand_niece (kinship1:Grand_niece)
+
+ObjectPropertyDomain(kinship1:Grand_niece kinship1:woman)
+ObjectPropertyRange(kinship1:Grand_niece kinship1:Human)
+
+# Object Property: kinship1:Grand_son (Grand son)
+
+AnnotationAssertion(rdfs:label kinship1:Grand_son "Grand son"@en)
+SubObjectPropertyOf(kinship1:Grand_son kinship1:Grand_Child)
+AsymmetricObjectProperty(kinship1:Grand_son)
+IrreflexiveObjectProperty(kinship1:Grand_son)
+ObjectPropertyDomain(kinship1:Grand_son kinship1:man)
+ObjectPropertyRange(kinship1:Grand_son kinship1:Human)
+
+# Object Property: kinship1:Grandchild (Grandchild)
+
+AnnotationAssertion(rdfs:label kinship1:Grandchild "Grandchild"@en)
+InverseObjectProperties(kinship1:Grandchild kinship1:Grandparent)
+AsymmetricObjectProperty(kinship1:Grandchild)
+IrreflexiveObjectProperty(kinship1:Grandchild)
+ObjectPropertyDomain(kinship1:Grandchild kinship1:Human)
+ObjectPropertyRange(kinship1:Grandchild kinship1:Human)
+
+# Object Property: kinship1:Granddaughter (Granddaughter)
+
+AnnotationAssertion(rdfs:label kinship1:Granddaughter "Granddaughter"@en)
+SubObjectPropertyOf(kinship1:Granddaughter kinship1:Grandchild)
+AsymmetricObjectProperty(kinship1:Granddaughter)
+IrreflexiveObjectProperty(kinship1:Granddaughter)
+ObjectPropertyDomain(kinship1:Granddaughter kinship1:woman)
+ObjectPropertyRange(kinship1:Granddaughter kinship1:Human)
+DisjointObjectProperties(kinship1:Granddaughter kinship1:Grandson)
+
+# Object Property: kinship1:Grandfather (Grandfather)
+
+AnnotationAssertion(rdfs:label kinship1:Grandfather "Grandfather"@en)
+SubObjectPropertyOf(kinship1:Grandfather kinship1:Grandparent)
+AsymmetricObjectProperty(kinship1:Grandfather)
+IrreflexiveObjectProperty(kinship1:Grandfather)
+ObjectPropertyDomain(kinship1:Grandfather kinship1:man)
+ObjectPropertyRange(kinship1:Grandfather kinship1:Human)
+DisjointObjectProperties(kinship1:Grandfather kinship1:Grandmother)
+
+# Object Property: kinship1:Grandmother (grandmother)
+
+AnnotationAssertion(rdfs:label kinship1:Grandmother "grandmother"@en)
+SubObjectPropertyOf(kinship1:Grandmother kinship1:Grandparent)
+AsymmetricObjectProperty(kinship1:Grandmother)
+IrreflexiveObjectProperty(kinship1:Grandmother)
+ObjectPropertyDomain(kinship1:Grandmother kinship1:woman)
+ObjectPropertyRange(kinship1:Grandmother kinship1:Human)
+
+# Object Property: kinship1:Grandparent (Grandparent)
+
+AnnotationAssertion(rdfs:label kinship1:Grandparent "Grandparent"@en)
+AsymmetricObjectProperty(kinship1:Grandparent)
+IrreflexiveObjectProperty(kinship1:Grandparent)
+ObjectPropertyDomain(kinship1:Grandparent kinship1:Human)
+ObjectPropertyRange(kinship1:Grandparent kinship1:Human)
+
+# Object Property: kinship1:Grandson (Grandson)
+
+AnnotationAssertion(rdfs:label kinship1:Grandson "Grandson"@en)
+SubObjectPropertyOf(kinship1:Grandson kinship1:Grandchild)
+AsymmetricObjectProperty(kinship1:Grandson)
+IrreflexiveObjectProperty(kinship1:Grandson)
+ObjectPropertyDomain(kinship1:Grandson kinship1:man)
+ObjectPropertyRange(kinship1:Grandson kinship1:Human)
+
+# Object Property: kinship1:Great_aunt (Great aunt)
+
+AnnotationAssertion(rdfs:comment kinship1:Great_aunt "Sister of a Grandparent."@en)
+AnnotationAssertion(rdfs:label kinship1:Great_aunt "Great aunt"@en)
+IrreflexiveObjectProperty(kinship1:Great_aunt)
+ObjectPropertyDomain(kinship1:Great_aunt kinship1:woman)
+ObjectPropertyRange(kinship1:Great_aunt kinship1:Human)
+DisjointObjectProperties(kinship1:Great_aunt kinship1:Great_uncle)
+
+# Object Property: kinship1:Great_grandfather (Great grandfather)
+
+AnnotationAssertion(rdfs:comment kinship1:Great_grandfather "The Father of your Grandfather."@en)
+AnnotationAssertion(rdfs:label kinship1:Great_grandfather "Great grandfather"@en)
+SubObjectPropertyOf(kinship1:Great_grandfather kinship1:Great_grandparents)
+AsymmetricObjectProperty(kinship1:Great_grandfather)
+IrreflexiveObjectProperty(kinship1:Great_grandfather)
+ObjectPropertyDomain(kinship1:Great_grandfather kinship1:man)
+ObjectPropertyRange(kinship1:Great_grandfather kinship1:Human)
+DisjointObjectProperties(kinship1:Great_grandfather kinship1:Great_grandmother)
+
+# Object Property: kinship1:Great_grandmother (Great grandmother)
+
+AnnotationAssertion(rdfs:comment kinship1:Great_grandmother "The Mother of your Grandmother."@en)
+AnnotationAssertion(rdfs:label kinship1:Great_grandmother "Great grandmother"@en)
+SubObjectPropertyOf(kinship1:Great_grandmother kinship1:Great_grandparents)
+AsymmetricObjectProperty(kinship1:Great_grandmother)
+IrreflexiveObjectProperty(kinship1:Great_grandmother)
+ObjectPropertyDomain(kinship1:Great_grandmother kinship1:woman)
+ObjectPropertyRange(kinship1:Great_grandmother kinship1:Human)
+
+# Object Property: kinship1:Great_grandparents (Great grandparents)
+
+AnnotationAssertion(rdfs:comment kinship1:Great_grandparents "The Parents of your Grandparents."@en)
+AnnotationAssertion(rdfs:label kinship1:Great_grandparents "Great grandparents"@en)
+IrreflexiveObjectProperty(kinship1:Great_grandparents)
+ObjectPropertyDomain(kinship1:Great_grandparents kinship1:Human)
+ObjectPropertyRange(kinship1:Great_grandparents kinship1:Human)
+
+# Object Property: kinship1:Great_uncle (Great uncle)
+
+AnnotationAssertion(rdfs:comment kinship1:Great_uncle "Brother of a grandparent"@en)
+AnnotationAssertion(rdfs:label kinship1:Great_uncle "Great uncle"@en)
+SubObjectPropertyOf(kinship1:Great_uncle owl:topObjectProperty)
+IrreflexiveObjectProperty(kinship1:Great_uncle)
+ObjectPropertyDomain(kinship1:Great_uncle kinship1:man)
+ObjectPropertyRange(kinship1:Great_uncle kinship1:Human)
+
+# Object Property: kinship1:Husband (Husband)
+
+AnnotationAssertion(rdfs:label kinship1:Husband "Husband"@en)
+SubObjectPropertyOf(kinship1:Husband kinship1:Spouse)
+InverseObjectProperties(kinship1:Husband kinship1:Wife)
+ObjectPropertyDomain(kinship1:Husband kinship1:man)
+ObjectPropertyRange(kinship1:Husband kinship1:Human)
+DisjointObjectProperties(kinship1:Husband kinship1:Wife)
+
+# Object Property: kinship1:In_law (In law)
+
+AnnotationAssertion(rdfs:comment kinship1:In_law "NOT SURE IF I SHOULD PUT ALL THESE RELATIONS IN THE SUBCLASS RELATION"@en)
+AnnotationAssertion(rdfs:label kinship1:In_law "In law"@en)
+SubObjectPropertyOf(kinship1:In_law owl:topObjectProperty)
+
+# Object Property: kinship1:Mother (Mother)
+
+AnnotationAssertion(rdfs:label kinship1:Mother "Mother"@en)
+AsymmetricObjectProperty(kinship1:Mother)
+IrreflexiveObjectProperty(kinship1:Mother)
+ObjectPropertyDomain(kinship1:Mother kinship1:woman)
+ObjectPropertyRange(kinship1:Mother kinship1:Human)
+
+# Object Property: kinship1:Mother_in_law (Mother in law)
+
+AnnotationAssertion(rdfs:label kinship1:Mother_in_law "Mother in law"@en)
+SubObjectPropertyOf(kinship1:Mother_in_law kinship1:In_law)
+InverseObjectProperties(kinship1:Mother_in_law kinship1:Son_in_law)
+IrreflexiveObjectProperty(kinship1:Mother_in_law)
+ObjectPropertyDomain(kinship1:Mother_in_law kinship1:woman)
+ObjectPropertyRange(kinship1:Mother_in_law kinship1:Human)
+
+# Object Property: kinship1:Nephew (Nephew)
+
+AnnotationAssertion(rdfs:label kinship1:Nephew "Nephew"@en)
+SubObjectPropertyOf(kinship1:Nephew kinship1:Cousin)
+IrreflexiveObjectProperty(kinship1:Nephew)
+ObjectPropertyDomain(kinship1:Nephew kinship1:man)
+ObjectPropertyRange(kinship1:Nephew kinship1:Human)
+DisjointObjectProperties(kinship1:Nephew kinship1:Niece)
+
+# Object Property: kinship1:Niece (Niece)
+
+AnnotationAssertion(rdfs:label kinship1:Niece "Niece"@en)
+SubObjectPropertyOf(kinship1:Niece kinship1:Cousin)
+ObjectPropertyDomain(kinship1:Niece kinship1:woman)
+ObjectPropertyRange(kinship1:Niece kinship1:Human)
+
+# Object Property: kinship1:Partner (Partner)
+
+AnnotationAssertion(rdfs:label kinship1:Partner "Partner"@en)
+EquivalentObjectProperties(kinship1:Partner kinship1:Spouse)
+SymmetricObjectProperty(kinship1:Partner)
+ObjectPropertyDomain(kinship1:Partner kinship1:Human)
+ObjectPropertyRange(kinship1:Partner kinship1:Human)
+
+# Object Property: kinship1:Sibling (sibiling)
+
+AnnotationAssertion(kinship1:axiom kinship1:Sibling kinship1:axiom752504862Mid-level-ontology.kif)
+AnnotationAssertion(rdfs:comment kinship1:Sibling "owl:comment \"The relationship between two Organisms that have the same mother and
+father. Note that this relationship does not hold between
+half-brothers, half-sisters, etc.\"@en"@en)
+AnnotationAssertion(rdfs:label kinship1:Sibling "sibiling"@en)
+SymmetricObjectProperty(kinship1:Sibling)
+IrreflexiveObjectProperty(kinship1:Sibling)
+ObjectPropertyDomain(kinship1:Sibling kinship1:Human)
+ObjectPropertyRange(kinship1:Sibling kinship1:Human)
+
+# Object Property: kinship1:Sister (sister)
+
+AnnotationAssertion(rdfs:comment kinship1:Sister "owl:comment \"The general relationship of being a sister. (sister ?WOMAN ?PERSON)
+means that ?WOMAN is the sister of ?PERSON.\"@en"@en)
+AnnotationAssertion(rdfs:label kinship1:Sister "sister"@en)
+SubObjectPropertyOf(kinship1:Sister owl:topObjectProperty)
+TransitiveObjectProperty(kinship1:Sister)
+IrreflexiveObjectProperty(kinship1:Sister)
+ObjectPropertyDomain(kinship1:Sister kinship1:woman)
+ObjectPropertyRange(kinship1:Sister kinship1:Human)
+
+# Object Property: kinship1:Sister_in_law (Sister in law)
+
+AnnotationAssertion(rdfs:label kinship1:Sister_in_law "Sister in law"@en)
+SubObjectPropertyOf(kinship1:Sister_in_law kinship1:In_law)
+ObjectPropertyDomain(kinship1:Sister_in_law kinship1:woman)
+ObjectPropertyRange(kinship1:Sister_in_law kinship1:Human)
+
+# Object Property: kinship1:Son (Son)
+
+AnnotationAssertion(rdfs:label kinship1:Son "Son"@en)
+SubObjectPropertyOf(kinship1:Son kinship1:Child)
+AsymmetricObjectProperty(kinship1:Son)
+IrreflexiveObjectProperty(kinship1:Son)
+ObjectPropertyDomain(kinship1:Son kinship1:man)
+ObjectPropertyRange(kinship1:Son kinship1:Human)
+
+# Object Property: kinship1:Son_in_law (Son in law)
+
+AnnotationAssertion(rdfs:label kinship1:Son_in_law "Son in law"@en)
+SubObjectPropertyOf(kinship1:Son_in_law kinship1:In_law)
+IrreflexiveObjectProperty(kinship1:Son_in_law)
+ObjectPropertyDomain(kinship1:Son_in_law kinship1:man)
+ObjectPropertyRange(kinship1:Son_in_law kinship1:Human)
+
+# Object Property: kinship1:Spouse (Spouse)
+
+AnnotationAssertion(rdfs:label kinship1:Spouse "Spouse"@en)
+SymmetricObjectProperty(kinship1:Spouse)
+ObjectPropertyDomain(kinship1:Spouse kinship1:Human)
+ObjectPropertyRange(kinship1:Spouse kinship1:Human)
+
+# Object Property: kinship1:Step_aunt (kinship1:Step_aunt)
+
+ObjectPropertyDomain(kinship1:Step_aunt kinship1:woman)
+ObjectPropertyRange(kinship1:Step_aunt kinship1:Human)
+DisjointObjectProperties(kinship1:Step_aunt kinship1:Step_uncle)
+
+# Object Property: kinship1:Step_brother (kinship1:Step_brother)
+
+ObjectPropertyDomain(kinship1:Step_brother kinship1:man)
+ObjectPropertyRange(kinship1:Step_brother kinship1:Human)
+DisjointObjectProperties(kinship1:Step_brother kinship1:Step_sister)
+
+# Object Property: kinship1:Step_child (kinship1:Step_child)
+
+ObjectPropertyDomain(kinship1:Step_child kinship1:Human)
+ObjectPropertyRange(kinship1:Step_child kinship1:Human)
+
+# Object Property: kinship1:Step_daughter (kinship1:Step_daughter)
+
+SubObjectPropertyOf(kinship1:Step_daughter kinship1:Step_child)
+ObjectPropertyDomain(kinship1:Step_daughter kinship1:woman)
+ObjectPropertyRange(kinship1:Step_daughter kinship1:Human)
+DisjointObjectProperties(kinship1:Step_daughter kinship1:Step_son)
+
+# Object Property: kinship1:Step_father (kinship1:Step_father)
+
+ObjectPropertyDomain(kinship1:Step_father kinship1:man)
+ObjectPropertyRange(kinship1:Step_father kinship1:Human)
+DisjointObjectProperties(kinship1:Step_father kinship1:Step_mother)
+
+# Object Property: kinship1:Step_mother (kinship1:Step_mother)
+
+ObjectPropertyDomain(kinship1:Step_mother kinship1:woman)
+ObjectPropertyRange(kinship1:Step_mother kinship1:Human)
+
+# Object Property: kinship1:Step_sister (kinship1:Step_sister)
+
+ObjectPropertyDomain(kinship1:Step_sister kinship1:woman)
+ObjectPropertyRange(kinship1:Step_sister kinship1:Human)
+
+# Object Property: kinship1:Step_son (kinship1:Step_son)
+
+SubObjectPropertyOf(kinship1:Step_son kinship1:Step_child)
+ObjectPropertyDomain(kinship1:Step_son kinship1:man)
+ObjectPropertyRange(kinship1:Step_son kinship1:Human)
+
+# Object Property: kinship1:Step_uncle (kinship1:Step_uncle)
+
+ObjectPropertyDomain(kinship1:Step_uncle kinship1:man)
+ObjectPropertyRange(kinship1:Step_uncle kinship1:Human)
+
+# Object Property: kinship1:Uncle (Uncle)
+
+AnnotationAssertion(rdfs:label kinship1:Uncle "Uncle"@en)
+AsymmetricObjectProperty(kinship1:Uncle)
+IrreflexiveObjectProperty(kinship1:Uncle)
+ObjectPropertyDomain(kinship1:Uncle kinship1:man)
+ObjectPropertyRange(kinship1:Uncle kinship1:Human)
+
+# Object Property: kinship1:Wife (Wife)
+
+AnnotationAssertion(rdfs:comment kinship1:Wife "I AM NOT SURE WHETHER THIS RELATION SHOULD BE INVERSE OR DISJOINT, SINCE THE RELATION WILL NOT ALWAY BE HUSBAND AND WIFE"@en)
+AnnotationAssertion(rdfs:label kinship1:Wife "Wife"@en)
+SubObjectPropertyOf(kinship1:Wife kinship1:Spouse)
+ObjectPropertyDomain(kinship1:Wife kinship1:woman)
+ObjectPropertyRange(kinship1:Wife kinship1:Human)
+
+# Object Property: kinship1:age (age)
+
+AnnotationAssertion(rdfs:label kinship1:age "age"@en)
+
+# Object Property: kinship1:ancestor (ancestor)
+
+AnnotationAssertion(rdfs:comment kinship1:ancestor "The transitive closure of the parent predicate. (ancestor ?DESCENDANT
+?ANCESTOR) means that ?ANCESTOR is either the parent of ?DESCENDANT or
+the parent of the parent of DESCENDANT or etc."@en)
+AnnotationAssertion(rdfs:label kinship1:ancestor "ancestor"@en)
+TransitiveObjectProperty(kinship1:ancestor)
+ObjectPropertyDomain(kinship1:ancestor kinship1:Human)
+ObjectPropertyRange(kinship1:ancestor kinship1:Human)
+
+# Object Property: kinship1:birthdate (birthdate)
+
+AnnotationAssertion(rdfs:comment kinship1:birthdate "(birthdate ?PERSON ?DAY) means that ?DAY is the Day on which the
+?PERSON was born."@en)
+AnnotationAssertion(rdfs:label kinship1:birthdate "birthdate"@en)
+ObjectPropertyDomain(kinship1:birthdate kinship1:Human)
+ObjectPropertyRange(kinship1:birthdate kinship1:day)
+
+# Object Property: kinship1:nephew_in_law (Nephew in law)
+
+AnnotationAssertion(rdfs:label kinship1:nephew_in_law "Nephew in law"@en)
+SubObjectPropertyOf(kinship1:nephew_in_law kinship1:In_law)
+IrreflexiveObjectProperty(kinship1:nephew_in_law)
+ObjectPropertyDomain(kinship1:nephew_in_law kinship1:man)
+ObjectPropertyRange(kinship1:nephew_in_law kinship1:Human)
+DisjointObjectProperties(kinship1:nephew_in_law kinship1:niece_in_law)
+
+# Object Property: kinship1:niece_in_law (Niece in law)
+
+AnnotationAssertion(rdfs:label kinship1:niece_in_law "Niece in law"@en)
+SubObjectPropertyOf(kinship1:niece_in_law kinship1:In_law)
+IrreflexiveObjectProperty(kinship1:niece_in_law)
+ObjectPropertyDomain(kinship1:niece_in_law kinship1:woman)
+ObjectPropertyRange(kinship1:niece_in_law kinship1:Human)
+
+# Object Property: kinship1:parent (parent)
+
+AnnotationAssertion(rdfs:comment kinship1:parent "The general relationship of parenthood. (parent ?CHILD ?PARENT) means
+that ?PARENT is a biological parent of ?CHILD."@en)
+AnnotationAssertion(rdfs:label kinship1:parent "parent"@en)
+ObjectPropertyDomain(kinship1:parent kinship1:Human)
+ObjectPropertyRange(kinship1:parent kinship1:Human)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: kinship1:Human (human)
+
+AnnotationAssertion(rdfs:label kinship1:Human "human"@en)
+
+# Class: kinship1:boy (boy)
+
+AnnotationAssertion(rdfs:comment kinship1:boy "A HumanChild who is Male."@en)
+AnnotationAssertion(rdfs:label kinship1:boy "boy"@en)
+SubClassOf(kinship1:boy kinship1:human_child)
+SubClassOf(kinship1:boy kinship1:man)
+DisjointClasses(kinship1:boy kinship1:girl)
+
+# Class: kinship1:day (day)
+
+AnnotationAssertion(rdfs:label kinship1:day "day"@en)
+SubClassOf(kinship1:day kinship1:time_interval)
+
+# Class: kinship1:friday (Friday)
+
+AnnotationAssertion(rdfs:comment kinship1:friday "The Class of all calandar Fridays."@en)
+AnnotationAssertion(rdfs:label kinship1:friday "Friday"@en)
+SubClassOf(kinship1:friday kinship1:day)
+
+# Class: kinship1:girl (girl)
+
+AnnotationAssertion(rdfs:comment kinship1:girl "A HumanChild who is Female."@en)
+AnnotationAssertion(rdfs:label kinship1:girl "girl"@en)
+SubClassOf(kinship1:girl kinship1:human_child)
+SubClassOf(kinship1:girl kinship1:woman)
+
+# Class: kinship1:hour (hour)
+
+AnnotationAssertion(rdfs:comment kinship1:hour "The Class of all clock Hours."@en)
+AnnotationAssertion(rdfs:label kinship1:hour "hour"@en)
+SubClassOf(kinship1:hour kinship1:time_interval)
+
+# Class: kinship1:human_adult (human adult)
+
+AnnotationAssertion(rdfs:comment kinship1:human_adult "The class of Humans that are 18 years of age or older."@en)
+AnnotationAssertion(rdfs:label kinship1:human_adult "human adult"@en)
+SubClassOf(kinship1:human_adult kinship1:Human)
+
+# Class: kinship1:human_baby (human baby)
+
+AnnotationAssertion(rdfs:comment kinship1:human_baby "A Human between birth and the first year of age."@en)
+AnnotationAssertion(rdfs:label kinship1:human_baby "human baby"@en)
+SubClassOf(kinship1:human_baby kinship1:human_child)
+
+# Class: kinship1:human_child (kinship1:human_child)
+
+SubClassOf(kinship1:human_child kinship1:human_youth)
+
+# Class: kinship1:human_youth (kinship1:human_youth)
+
+SubClassOf(kinship1:human_youth kinship1:Human)
+
+# Class: kinship1:man (man)
+
+AnnotationAssertion(rdfs:label kinship1:man "man"@en)
+SubClassOf(kinship1:man kinship1:Human)
+DisjointClasses(kinship1:man kinship1:woman)
+
+# Class: kinship1:minute (minute)
+
+AnnotationAssertion(rdfs:comment kinship1:minute "The Class of all clock Minutes."@en)
+AnnotationAssertion(rdfs:label kinship1:minute "minute"@en)
+SubClassOf(kinship1:minute kinship1:time_interval)
+
+# Class: kinship1:monday (Monday)
+
+AnnotationAssertion(rdfs:comment kinship1:monday "The Class of all calandar Mondays."@en)
+AnnotationAssertion(rdfs:label kinship1:monday "Monday"@en)
+SubClassOf(kinship1:monday kinship1:day)
+
+# Class: kinship1:month (month)
+
+AnnotationAssertion(rdfs:comment kinship1:month "The Class of all calendar Months."@en)
+AnnotationAssertion(rdfs:label kinship1:month "month"@en)
+SubClassOf(kinship1:month kinship1:time_interval)
+
+# Class: kinship1:saturday (Saturday)
+
+AnnotationAssertion(rdfs:comment kinship1:saturday "The Class of all calandar Saturday."@en)
+AnnotationAssertion(rdfs:label kinship1:saturday "Saturday"@en)
+SubClassOf(kinship1:saturday kinship1:day)
+
+# Class: kinship1:season_of_year (seasons of year)
+
+AnnotationAssertion(rdfs:comment kinship1:season_of_year "SeasonOfYear is the class of four seasons correlated with the calendar
+Year and associated with changes in the length of daylight and with
+overall temperature changes. Depending upon the GeographicArea, a
+SeasonOfYear may also be associated with weather patterns (e.g.,
+rainy, dry, windy). The characteristics of seasons (cold vs. hot
+temperatures, long vs. short days) are reversed from the
+NorthernHemisphere to the SouthernHemisphere."@en)
+AnnotationAssertion(rdfs:label kinship1:season_of_year "seasons of year"@en)
+SubClassOf(kinship1:season_of_year kinship1:time_interval)
+
+# Class: kinship1:second (second)
+
+AnnotationAssertion(rdfs:comment kinship1:second "The Class of all clock Seconds."@en)
+AnnotationAssertion(rdfs:label kinship1:second "second"@en)
+SubClassOf(kinship1:second kinship1:time_interval)
+
+# Class: kinship1:sunday (Sunday)
+
+AnnotationAssertion(rdfs:comment kinship1:sunday "The Class of all calandar Sundays."@en)
+AnnotationAssertion(rdfs:label kinship1:sunday "Sunday"@en)
+SubClassOf(kinship1:sunday kinship1:day)
+
+# Class: kinship1:teenager (teenager)
+
+AnnotationAssertion(rdfs:comment kinship1:teenager "A HumanYouth between puberty and the age of 20."@en)
+AnnotationAssertion(rdfs:label kinship1:teenager "teenager"@en)
+SubClassOf(kinship1:teenager kinship1:human_youth)
+
+# Class: kinship1:thursday (Thursday)
+
+AnnotationAssertion(rdfs:comment kinship1:thursday "The Class of all calandar Thursdays."@en)
+AnnotationAssertion(rdfs:label kinship1:thursday "Thursday"@en)
+SubClassOf(kinship1:thursday kinship1:day)
+
+# Class: kinship1:time_interval (time interval)
+
+AnnotationAssertion(rdfs:label kinship1:time_interval "time interval"@en)
+SubClassOf(kinship1:time_interval kinship1:time_position)
+
+# Class: kinship1:time_measure (time measure)
+
+AnnotationAssertion(rdfs:comment kinship1:time_measure "The class of temporal durations (instances of TimeDuration) and
+positions of TimePoints and TimeIntervals along the universal timeline
+(instances of TimePosition)."@en)
+AnnotationAssertion(rdfs:label kinship1:time_measure "time measure"@en)
+
+# Class: kinship1:time_position (time position)
+
+AnnotationAssertion(rdfs:comment kinship1:time_position "Any TimePoint or TimeInterval along the universal timeline from
+NegativeInfinity to PositiveInfinity."@en)
+AnnotationAssertion(rdfs:label kinship1:time_position "time position"@en)
+SubClassOf(kinship1:time_position kinship1:time_measure)
+
+# Class: kinship1:tuesday (Tuesday)
+
+AnnotationAssertion(rdfs:comment kinship1:tuesday "The Class of all calandar Tuesdays."@en)
+AnnotationAssertion(rdfs:label kinship1:tuesday "Tuesday"@en)
+SubClassOf(kinship1:tuesday kinship1:day)
+
+# Class: kinship1:wednesday (Wednesday)
+
+AnnotationAssertion(rdfs:comment kinship1:wednesday "The Class of all calandar Wednesdays."@en)
+AnnotationAssertion(rdfs:label kinship1:wednesday "Wednesday"@en)
+SubClassOf(kinship1:wednesday kinship1:day)
+
+# Class: kinship1:week (week)
+
+AnnotationAssertion(rdfs:comment kinship1:week "The Class of all calander Weeks"@en)
+AnnotationAssertion(rdfs:label kinship1:week "week"@en)
+SubClassOf(kinship1:week kinship1:time_interval)
+
+# Class: kinship1:weekend (weekend)
+
+AnnotationAssertion(rdfs:label kinship1:weekend "Any Saturday and Sunday which are contiguous."@en)
+AnnotationAssertion(rdfs:label kinship1:weekend "weekend"@en)
+SubClassOf(kinship1:weekend kinship1:time_interval)
+
+# Class: kinship1:woman (kinship1:woman)
+
+SubClassOf(kinship1:woman kinship1:Human)
+
+# Class: kinship1:year (year)
+
+AnnotationAssertion(rdfs:label kinship1:year "year"@en)
+SubClassOf(kinship1:year kinship1:time_interval)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: kinship1:Alice_Knight (kinship1:Alice_Knight)
+
+ClassAssertion(kinship1:Human kinship1:Alice_Knight)
+ClassAssertion(kinship1:woman kinship1:Alice_Knight)
+
+# Individual: kinship1:Amy_Green (kinship1:Amy_Green)
+
+ClassAssertion(kinship1:Human kinship1:Amy_Green)
+ClassAssertion(kinship1:woman kinship1:Amy_Green)
+
+# Individual: kinship1:Andrea_Waltham (kinship1:Andrea_Waltham)
+
+ClassAssertion(kinship1:Human kinship1:Andrea_Waltham)
+ClassAssertion(kinship1:woman kinship1:Andrea_Waltham)
+
+# Individual: kinship1:Ben (kinship1:Ben)
+
+ClassAssertion(kinship1:Human kinship1:Ben)
+ClassAssertion(kinship1:boy kinship1:Ben)
+ClassAssertion(kinship1:man kinship1:Ben)
+
+# Individual: kinship1:Bitsy_Hannigan (kinship1:Bitsy_Hannigan)
+
+ClassAssertion(kinship1:Human kinship1:Bitsy_Hannigan)
+ClassAssertion(kinship1:woman kinship1:Bitsy_Hannigan)
+
+# Individual: kinship1:Carol_Willick (kinship1:Carol_Willick)
+
+ClassAssertion(kinship1:Human kinship1:Carol_Willick)
+ClassAssertion(kinship1:woman kinship1:Carol_Willick)
+
+# Individual: kinship1:Cassie_Geller (kinship1:Cassie_Geller)
+
+ClassAssertion(kinship1:Human kinship1:Cassie_Geller)
+ClassAssertion(kinship1:woman kinship1:Cassie_Geller)
+
+# Individual: kinship1:Chandler (kinship1:Chandler)
+
+ClassAssertion(kinship1:Human kinship1:Chandler)
+ClassAssertion(kinship1:man kinship1:Chandler)
+
+# Individual: kinship1:Charles_Bing (kinship1:Charles_Bing)
+
+ClassAssertion(kinship1:Human kinship1:Charles_Bing)
+ClassAssertion(kinship1:man kinship1:Charles_Bing)
+
+# Individual: kinship1:Cookie (kinship1:Cookie)
+
+ClassAssertion(kinship1:Human kinship1:Cookie)
+ClassAssertion(kinship1:woman kinship1:Cookie)
+
+# Individual: kinship1:Dina (kinship1:Dina)
+
+ClassAssertion(kinship1:Human kinship1:Dina)
+ClassAssertion(kinship1:woman kinship1:Dina)
+
+# Individual: kinship1:Duncan (kinship1:Duncan)
+
+ClassAssertion(kinship1:Human kinship1:Duncan)
+ClassAssertion(kinship1:man kinship1:Duncan)
+
+# Individual: kinship1:Emily_Waltham (kinship1:Emily_Waltham)
+
+ClassAssertion(kinship1:Human kinship1:Emily_Waltham)
+ClassAssertion(kinship1:woman kinship1:Emily_Waltham)
+
+# Individual: kinship1:Emma (kinship1:Emma)
+
+ClassAssertion(kinship1:Human kinship1:Emma)
+ClassAssertion(kinship1:girl kinship1:Emma)
+ClassAssertion(kinship1:woman kinship1:Emma)
+
+# Individual: kinship1:Frances (kinship1:Frances)
+
+ClassAssertion(kinship1:Human kinship1:Frances)
+ClassAssertion(kinship1:woman kinship1:Frances)
+
+# Individual: kinship1:Gina (kinship1:Gina)
+
+ClassAssertion(kinship1:Human kinship1:Gina)
+ClassAssertion(kinship1:woman kinship1:Gina)
+
+# Individual: kinship1:Gloria_Tribbiani (kinship1:Gloria_Tribbiani)
+
+ClassAssertion(kinship1:Human kinship1:Gloria_Tribbiani)
+ClassAssertion(kinship1:woman kinship1:Gloria_Tribbiani)
+
+# Individual: kinship1:Helena_Handbasket (kinship1:Helena_Handbasket)
+
+ClassAssertion(kinship1:Human kinship1:Helena_Handbasket)
+
+# Individual: kinship1:Jack_Geller (kinship1:Jack_Geller)
+
+ClassAssertion(kinship1:Human kinship1:Jack_Geller)
+ClassAssertion(kinship1:man kinship1:Jack_Geller)
+
+# Individual: kinship1:Jill_Green (kinship1:Jill_Green)
+
+ClassAssertion(kinship1:Human kinship1:Jill_Green)
+ClassAssertion(kinship1:woman kinship1:Jill_Green)
+
+# Individual: kinship1:Joey (kinship1:Joey)
+
+ClassAssertion(kinship1:Human kinship1:Joey)
+ClassAssertion(kinship1:man kinship1:Joey)
+
+# Individual: kinship1:Joseph_Tribbiani (kinship1:Joseph_Tribbiani)
+
+ClassAssertion(kinship1:Human kinship1:Joseph_Tribbiani)
+ClassAssertion(kinship1:man kinship1:Joseph_Tribbiani)
+
+# Individual: kinship1:Judy_Geller (kinship1:Judy_Geller)
+
+ClassAssertion(kinship1:Human kinship1:Judy_Geller)
+ClassAssertion(kinship1:woman kinship1:Judy_Geller)
+
+# Individual: kinship1:Leonard_Green (kinship1:Leonard_Green)
+
+ClassAssertion(kinship1:Human kinship1:Leonard_Green)
+ClassAssertion(kinship1:man kinship1:Leonard_Green)
+
+# Individual: kinship1:Mary_Angela_Tribbiani (kinship1:Mary_Angela_Tribbiani)
+
+ClassAssertion(kinship1:Human kinship1:Mary_Angela_Tribbiani)
+ClassAssertion(kinship1:woman kinship1:Mary_Angela_Tribbiani)
+
+# Individual: kinship1:Mary_Therese_Tribbiani (kinship1:Mary_Therese_Tribbiani)
+
+ClassAssertion(kinship1:Human kinship1:Mary_Therese_Tribbiani)
+ClassAssertion(kinship1:woman kinship1:Mary_Therese_Tribbiani)
+
+# Individual: kinship1:Mike_Hannigan (kinship1:Mike_Hannigan)
+
+ClassAssertion(kinship1:Human kinship1:Mike_Hannigan)
+ClassAssertion(kinship1:man kinship1:Mike_Hannigan)
+
+# Individual: kinship1:Monica (kinship1:Monica)
+
+ClassAssertion(kinship1:Human kinship1:Monica)
+ClassAssertion(kinship1:woman kinship1:Monica)
+
+# Individual: kinship1:Nora_Tyler_Bing (kinship1:Nora_Tyler_Bing)
+
+ClassAssertion(kinship1:Human kinship1:Nora_Tyler_Bing)
+ClassAssertion(kinship1:woman kinship1:Nora_Tyler_Bing)
+
+# Individual: kinship1:Phoebe (kinship1:Phoebe)
+
+ClassAssertion(kinship1:Human kinship1:Phoebe)
+ClassAssertion(kinship1:woman kinship1:Phoebe)
+
+# Individual: kinship1:Rachel (kinship1:Rachel)
+
+ClassAssertion(kinship1:Human kinship1:Rachel)
+ClassAssertion(kinship1:woman kinship1:Rachel)
+
+# Individual: kinship1:Ross (kinship1:Ross)
+
+ClassAssertion(kinship1:Human kinship1:Ross)
+ClassAssertion(kinship1:man kinship1:Ross)
+
+# Individual: kinship1:Sandra_Green (kinship1:Sandra_Green)
+
+ClassAssertion(kinship1:Human kinship1:Sandra_Green)
+ClassAssertion(kinship1:woman kinship1:Sandra_Green)
+
+# Individual: kinship1:Stephen_Waltham (kinship1:Stephen_Waltham)
+
+ClassAssertion(kinship1:Human kinship1:Stephen_Waltham)
+ClassAssertion(kinship1:man kinship1:Stephen_Waltham)
+
+# Individual: kinship1:Susan_Bunch (kinship1:Susan_Bunch)
+
+ClassAssertion(kinship1:Human kinship1:Susan_Bunch)
+ClassAssertion(kinship1:woman kinship1:Susan_Bunch)
+
+# Individual: kinship1:Theodore_Hannigan (kinship1:Theodore_Hannigan)
+
+ClassAssertion(kinship1:Human kinship1:Theodore_Hannigan)
+ClassAssertion(kinship1:man kinship1:Theodore_Hannigan)
+
+# Individual: kinship1:Tina (kinship1:Tina)
+
+ClassAssertion(kinship1:Human kinship1:Tina)
+ClassAssertion(kinship1:woman kinship1:Tina)
+
+# Individual: kinship1:Ursula_Buffay (kinship1:Ursula_Buffay)
+
+ClassAssertion(kinship1:Human kinship1:Ursula_Buffay)
+ClassAssertion(kinship1:woman kinship1:Ursula_Buffay)
+
+# Individual: kinship1:Veronica (kinship1:Veronica)
+
+ClassAssertion(kinship1:Human kinship1:Veronica)
+ClassAssertion(kinship1:woman kinship1:Veronica)
+
+# Individual: kinship1:axiom752504862Mid-level-ontology.kif (kinship1:axiom752504862Mid-level-ontology.kif)
+
+AnnotationAssertion(rdfs:comment kinship1:axiom752504862Mid-level-ontology.kif "rdfs:comment \"A SUO-KIF axiom that may not be directly expressible in OWL. See www.ontologyportal.org for the original SUO-KIF source.
+ (iff
+  (nephew ?N ?H)
+  (exists (?S)
+    (and
+      (sibling ?S ?H)
+      (son ?N ?S))))\"@en"@en)
+ClassAssertion(owl:Thing kinship1:axiom752504862Mid-level-ontology.kif)
+
+
+)
