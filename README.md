@@ -4,7 +4,7 @@ Communicative Robots is a master's course taught at VU Amsterdam.
 
 This year's branch is `2021`, which is the default branch of this repo. If you want to see others years, take a look at the other branches.
 
-## About the Project
+## Projects
 
 Students team up with the teachers. The individual projects can be found at `./projects/` .
 
