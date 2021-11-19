@@ -6,12 +6,6 @@ Communicative Robots is a master's course taught at VU Amsterdam.
 
 Students team up with the teachers. The individual projects can be found at `./projects/` .
 
-## Prerequisites
-
-1. A unix or unix-like x86 machine (might be a bit tough on a Windows machine.)
-1. . python 3.7 or higher. Running in a virtual environment (e.g., conda, virtualenv, etc.) is highly recommended so that you don't mess up with the system python.
-1. Install the necessary packages by `pip install -r requirements.txt`, at the root repo directory.
-
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
