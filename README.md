@@ -4,6 +4,11 @@ Communicative Robots is a master's course taught at VU Amsterdam.
 
 This year's branch is `2021`, which is the default branch of this repo. If you want to see others years, take a look at the other branches.
 
+## Prerequisites
+
+1. python 3.7 or higher. Running in a virtual environment (e.g., conda, virtualenv, etc.) is highly recommended so that you don't mess up with the system python.
+1. `pip install -r requirements.txt`
+
 ## Projects
 
 Students team up with the teachers. The individual projects can be found at `./projects/` .
