@@ -1,0 +1,6548 @@
+{
+    "train": [
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's refrigerator",
+                    "AtLocation",
+                    "Thomas's garage",
+                    1637274175.9342465
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's refrigerator",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garage",
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's cow",
+                    "AtLocation",
+                    "Sarah's outdoors",
+                    1637274175.9343324
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's refrigerator",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's car",
+                    "AtLocation",
+                    "Joseph's city",
+                    1637274175.9344254
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's refrigerator",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's oven",
+                    "AtLocation",
+                    "Joseph's library",
+                    1637274175.9345121
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's refrigerator",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's microwave",
+                    "AtLocation",
+                    "David's couch",
+                    1637274175.9345913
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's cow",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "outdoors"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's knife",
+                    "AtLocation",
+                    "Mary's kitchen",
+                    1637274175.9346719
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's knife",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "kitchen",
+            "correct_answer": "kitchen"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Patricia's bus",
+                    "AtLocation",
+                    "Patricia's city",
+                    1637274175.9347632
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Michael's bear",
+                    "AtLocation",
+                    "Michael's street",
+                    1637274175.934844
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's cow",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "outdoors"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's bus",
+                    "AtLocation",
+                    "Sarah's tree",
+                    1637274175.9349697
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's knife",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "kitchen"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's toothbrush",
+                    "AtLocation",
+                    "Joseph's suitcase",
+                    1637274175.9350708
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's knife",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "kitchen"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's bus",
+                    "AtLocation",
+                    "Thomas's stadium",
+                    1637274175.9351604
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's oven",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "library"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Patricia's refrigerator",
+                    "AtLocation",
+                    "Patricia's garage",
+                    1637274175.9352422
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "tree"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's clock",
+                    "AtLocation",
+                    "Karen's cellar",
+                    1637274175.9353354
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's cat",
+                    "AtLocation",
+                    "Jennifer's lap",
+                    1637274175.9354858
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's toothbrush",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "suitcase"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's refrigerator",
+                    "AtLocation",
+                    "Joseph's history",
+                    1637274175.9355724
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's cow",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "outdoors"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's car",
+                    "AtLocation",
+                    "John's city",
+                    1637274175.9356546
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's toothbrush",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "suitcase"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's keyboard",
+                    "AtLocation",
+                    "Barbara's desk",
+                    1637274175.9357374
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's microwave",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "couch"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "William's book",
+                    "AtLocation",
+                    "William's classroom",
+                    1637274175.9358246
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "stadium"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's mouse",
+                    "AtLocation",
+                    "Sarah's town",
+                    1637274175.9359083
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's bowl",
+                    "AtLocation",
+                    "Susan's loft",
+                    1637274175.93599
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's microwave",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "couch"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bus",
+                    "AtLocation",
+                    "David's wall",
+                    1637274175.9360707
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Michael's bear",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "street"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's oven",
+                    "AtLocation",
+                    "Karen's home",
+                    1637274175.9361525
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Michael's bear",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "street"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Michael's toilet",
+                    "AtLocation",
+                    "Michael's fridge",
+                    1637274175.9362347
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's cow",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "outdoors"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Michael's laptop",
+                    "AtLocation",
+                    "Michael's lab",
+                    1637274175.9363182
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's refrigerator",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "history"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's broccoli",
+                    "AtLocation",
+                    "Thomas's plate",
+                    1637274175.9364018
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "tree"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's dog",
+                    "AtLocation",
+                    "Susan's barn",
+                    1637274175.9364896
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's horse",
+                    "AtLocation",
+                    "David's circus",
+                    1637274175.9365764
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's toothbrush",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "suitcase"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's toilet",
+                    "AtLocation",
+                    "James's park",
+                    1637274175.9366624
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "plate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's bowl",
+                    "AtLocation",
+                    "Joseph's cupboard",
+                    1637274175.9367504
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's refrigerator",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's keyboard",
+                    "AtLocation",
+                    "Barbara's desk",
+                    1637274175.9368386
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's airplane",
+                    "AtLocation",
+                    "Barbara's sky",
+                    1637274175.9369261
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's clock",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "cellar"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Richard's cat",
+                    "AtLocation",
+                    "Richard's sea",
+                    1637274175.937014
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's cow",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "outdoors"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Patricia's laptop",
+                    "AtLocation",
+                    "Patricia's university",
+                    1637274175.9371002
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's oven",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "library"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's toilet",
+                    "AtLocation",
+                    "Joseph's bathroom",
+                    1637274175.937191
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's keyboard",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's knife",
+                    "AtLocation",
+                    "Sarah's grain",
+                    1637274175.9372783
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "wall"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's person",
+                    "AtLocation",
+                    "Joseph's prison",
+                    1637274175.937366
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Richard's cat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sea"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's car",
+                    "AtLocation",
+                    "Joseph's city",
+                    1637274175.9374707
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Susan's bowl",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "loft"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "William's clock",
+                    "AtLocation",
+                    "William's desk",
+                    1637274175.9375615
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Michael's elephant",
+                    "AtLocation",
+                    "Michael's lawn",
+                    1637274175.937653
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's laptop",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's clock",
+                    "AtLocation",
+                    "Linda's desk",
+                    1637274175.9377441
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's toothbrush",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "suitcase"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's motorcycle",
+                    "AtLocation",
+                    "Mary's garage",
+                    1637274175.9378383
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's knife",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "grain"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's elephant",
+                    "AtLocation",
+                    "Elizabeth's circus",
+                    1637274175.9379296
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's toilet",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "bathroom"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's broccoli",
+                    "AtLocation",
+                    "Joseph's plate",
+                    1637274175.9380214
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Michael's elephant",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lawn"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's pizza",
+                    "AtLocation",
+                    "Jessica's oven",
+                    1637274175.9381142
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jessica's pizza",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "oven",
+            "correct_answer": "oven"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's bus",
+                    "AtLocation",
+                    "Barbara's city",
+                    1637274175.938223
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's cat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's sheep",
+                    "AtLocation",
+                    "Jennifer's sofa",
+                    1637274175.938318
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's sheep",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "sofa",
+            "correct_answer": "sofa"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's banana",
+                    "AtLocation",
+                    "Charles's office",
+                    1637274175.9384232
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Susan's bowl",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "loft"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's scissors",
+                    "AtLocation",
+                    "Charles's desk",
+                    1637274175.938522
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's knife",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "grain"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Robert's motorcycle",
+                    "AtLocation",
+                    "Robert's history",
+                    1637274175.93862
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "stadium"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's chair",
+                    "AtLocation",
+                    "Susan's office",
+                    1637274175.9387183
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's dog",
+                    "AtLocation",
+                    "Jennifer's stable",
+                    1637274175.9388146
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jessica's pizza",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "oven"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's keyboard",
+                    "AtLocation",
+                    "Karen's table",
+                    1637274175.9389126
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's banana",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "office"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's sandwich",
+                    "AtLocation",
+                    "Mary's fair",
+                    1637274175.9390442
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "William's clock",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's bear",
+                    "AtLocation",
+                    "Charles's countryside",
+                    1637274175.9391499
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "plate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's cup",
+                    "AtLocation",
+                    "Karen's table",
+                    1637274175.9392695
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's mouse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "town"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's truck",
+                    "AtLocation",
+                    "Thomas's store",
+                    1637274175.9393795
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's scissors",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's spoon",
+                    "AtLocation",
+                    "Charles's theater",
+                    1637274175.9394825
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's banana",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "office"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's pizza",
+                    "AtLocation",
+                    "James's building",
+                    1637274175.9395845
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's refrigerator",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "history"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "William's mouse",
+                    "AtLocation",
+                    "William's war",
+                    1637274175.9396873
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "plate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's boat",
+                    "AtLocation",
+                    "Thomas's wall",
+                    1637274175.9397914
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Elizabeth's elephant",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's oven",
+                    "AtLocation",
+                    "Thomas's fair",
+                    1637274175.9398966
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's bowl",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "cupboard"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's couch",
+                    "AtLocation",
+                    "John's sewer",
+                    1637274175.9400039
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's oven",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "home"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's broccoli",
+                    "AtLocation",
+                    "Mary's plate",
+                    1637274175.9401095
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's clock",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "cellar"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's bench",
+                    "AtLocation",
+                    "Elizabeth's lawn",
+                    1637274175.9402184
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's bowl",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "cupboard"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's toothbrush",
+                    "AtLocation",
+                    "John's india",
+                    1637274175.9403398
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's oven",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "library"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's scissors",
+                    "AtLocation",
+                    "Sarah's theater",
+                    1637274175.940449
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's scissors",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Patricia's broccoli",
+                    "AtLocation",
+                    "Patricia's plate",
+                    1637274175.940559
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's couch",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sewer"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Patricia's spoon",
+                    "AtLocation",
+                    "Patricia's war",
+                    1637274175.9406707
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's refrigerator",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "history"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's sink",
+                    "AtLocation",
+                    "David's stable",
+                    1637274175.9407825
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's banana",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "office"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's sandwich",
+                    "AtLocation",
+                    "Mary's fridge",
+                    1637274175.940894
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Michael's clock",
+                    "AtLocation",
+                    "Michael's desk",
+                    1637274175.9410067
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's oven",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "home"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's car",
+                    "AtLocation",
+                    "Elizabeth's city",
+                    1637274175.9411225
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's horse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Richard's bottle",
+                    "AtLocation",
+                    "Richard's supermarket",
+                    1637274175.941237
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "wall"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Patricia's knife",
+                    "AtLocation",
+                    "Patricia's conference",
+                    1637274175.9413526
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's apple",
+                    "AtLocation",
+                    "Thomas's residence",
+                    1637274175.9414792
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's keyboard",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "table"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's microwave",
+                    "AtLocation",
+                    "Karen's kitchen",
+                    1637274175.9415972
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Susan's bowl",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "loft"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's spoon",
+                    "AtLocation",
+                    "Susan's dinner",
+                    1637274175.9417186
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "plate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's banana",
+                    "AtLocation",
+                    "Linda's stomach",
+                    1637274175.94184
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's banana",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "stomach",
+            "correct_answer": "stomach"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's toilet",
+                    "AtLocation",
+                    "John's bathroom",
+                    1637274175.9419746
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "prison"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's sink",
+                    "AtLocation",
+                    "Charles's porch",
+                    1637274175.9420962
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's cat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's bottle",
+                    "AtLocation",
+                    "Charles's supermarket",
+                    1637274175.9422188
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "tree"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's bench",
+                    "AtLocation",
+                    "Jennifer's lawn",
+                    1637274175.9423413
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "wall"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's sink",
+                    "AtLocation",
+                    "James's kitchen",
+                    1637274175.9424684
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jessica's pizza",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "oven"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's suitcase",
+                    "AtLocation",
+                    "Sarah's taxi",
+                    1637274175.9425921
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's microwave",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "couch"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's book",
+                    "AtLocation",
+                    "Elizabeth's classroom",
+                    1637274175.9427204
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's pizza",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bed",
+                    "AtLocation",
+                    "John's family",
+                    1637274175.9428487
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "history"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's bed",
+                    "AtLocation",
+                    "Joseph's house",
+                    1637274175.9429793
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's banana",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "office"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Robert's cow",
+                    "AtLocation",
+                    "Robert's countryside",
+                    1637274175.9431071
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's spoon",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "theater"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's chair",
+                    "AtLocation",
+                    "Sarah's office",
+                    1637274175.9432425
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's toothbrush",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "india"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's toothbrush",
+                    "AtLocation",
+                    "Joseph's suitcase",
+                    1637274175.943373
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Elizabeth's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's book",
+                    "AtLocation",
+                    "Linda's cat",
+                    1637274175.9435027
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "plate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's dog",
+                    "AtLocation",
+                    "Joseph's table",
+                    1637274175.9436345
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Susan's spoon",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "dinner"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's cake",
+                    "AtLocation",
+                    "Jessica's building",
+                    1637274175.9437654
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's refrigerator",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "history"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's cup",
+                    "AtLocation",
+                    "Linda's store",
+                    1637274175.9438992
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Michael's toilet",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "fridge"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's pizza",
+                    "AtLocation",
+                    "Elizabeth's garage",
+                    1637274175.944034
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's couch",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sewer"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's elephant",
+                    "AtLocation",
+                    "Barbara's bowl",
+                    1637274175.9441683
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's cat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's elephant",
+                    "AtLocation",
+                    "Charles's circus",
+                    1637274175.9443033
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "plate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's umbrella",
+                    "AtLocation",
+                    "Jessica's closet",
+                    1637274175.944441
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's cow",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "countryside"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "William's bench",
+                    "AtLocation",
+                    "William's lawn",
+                    1637274175.9445918
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's knife",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "kitchen"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's sheep",
+                    "AtLocation",
+                    "Mary's farm",
+                    1637274175.9447486
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's keyboard",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's cake",
+                    "AtLocation",
+                    "Linda's bakery",
+                    1637274175.9448946
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's dog",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "stable"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's microwave",
+                    "AtLocation",
+                    "Barbara's stadium",
+                    1637274175.9450417
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's microwave",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "stadium",
+            "correct_answer": "stadium"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's spoon",
+                    "AtLocation",
+                    "Jessica's library",
+                    1637274175.945198
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's microwave",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "couch"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's laptop",
+                    "AtLocation",
+                    "Thomas's desk",
+                    1637274175.945343
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's scissors",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's couch",
+                    "AtLocation",
+                    "Jennifer's house",
+                    1637274175.9454978
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "stadium"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's cat",
+                    "AtLocation",
+                    "James's bush",
+                    1637274175.9456456
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "store"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's microwave",
+                    "AtLocation",
+                    "Linda's kitchen",
+                    1637274175.945794
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's toothbrush",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "suitcase"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's cake",
+                    "AtLocation",
+                    "Jennifer's bakery",
+                    1637274175.9459553
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "plate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's sheep",
+                    "AtLocation",
+                    "Jennifer's farm",
+                    1637274175.9461093
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's knife",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "conference"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's sandwich",
+                    "AtLocation",
+                    "James's finger",
+                    1637274175.9462605
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's refrigerator",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's laptop",
+                    "AtLocation",
+                    "Joseph's home",
+                    1637274175.9464133
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Susan's dog",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "barn"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Richard's airplane",
+                    "AtLocation",
+                    "Richard's road",
+                    1637274175.94657
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's sandwich",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "finger"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's sink",
+                    "AtLocation",
+                    "Barbara's kitchen",
+                    1637274175.9467242
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Susan's dog",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "barn"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's boat",
+                    "AtLocation",
+                    "Thomas's water",
+                    1637274175.9468794
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's refrigerator",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bowl",
+                    "AtLocation",
+                    "David's residence",
+                    1637274175.9470346
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's microwave",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "kitchen"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's truck",
+                    "AtLocation",
+                    "Jennifer's garden",
+                    1637274175.947193
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's oven",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "home"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Michael's horse",
+                    "AtLocation",
+                    "Michael's backyard",
+                    1637274175.94735
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "plate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Patricia's bottle",
+                    "AtLocation",
+                    "Patricia's table",
+                    1637274175.9475076
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's scissors",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's broccoli",
+                    "AtLocation",
+                    "Mary's plate",
+                    1637274175.9476664
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's bottle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "table"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Patricia's sandwich",
+                    "AtLocation",
+                    "Patricia's fridge",
+                    1637274175.9478264
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's knife",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "grain"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's cake",
+                    "AtLocation",
+                    "Susan's bakery",
+                    1637274175.947988
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's toilet",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "bathroom"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's umbrella",
+                    "AtLocation",
+                    "Sarah's closet",
+                    1637274175.9481518
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's cow",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "countryside"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's cup",
+                    "AtLocation",
+                    "Thomas's outdoors",
+                    1637274175.9483254
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's microwave",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "couch"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's pizza",
+                    "AtLocation",
+                    "Mary's stadium",
+                    1637274175.9485347
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Susan's cake",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "bakery"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Richard's couch",
+                    "AtLocation",
+                    "Richard's house",
+                    1637274175.948722
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's sink",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "porch"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's bear",
+                    "AtLocation",
+                    "Karen's countryside",
+                    1637274175.9488919
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's laptop",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's umbrella",
+                    "AtLocation",
+                    "John's lawn",
+                    1637274175.9490623
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's elephant",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's sandwich",
+                    "AtLocation",
+                    "Barbara's country",
+                    1637274175.9492342
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Elizabeth's elephant",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        }
+    ],
+    "val": [
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's car",
+                    "AtLocation",
+                    "Elizabeth's cupboard",
+                    1637274175.949458
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Elizabeth's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "cupboard",
+            "correct_answer": "cupboard"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's clock",
+                    "AtLocation",
+                    "Barbara's desk",
+                    1637274175.9495223
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's clock",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "desk",
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's bed",
+                    "AtLocation",
+                    "Jennifer's lap",
+                    1637274175.949624
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's bed",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "lap",
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "William's motorcycle",
+                    "AtLocation",
+                    "William's garden",
+                    1637274175.9497151
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "William's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garden",
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's cat",
+                    "AtLocation",
+                    "Jennifer's lap",
+                    1637274175.9498086
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Elizabeth's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "cupboard"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bed",
+                    "AtLocation",
+                    "John's garden",
+                    1637274175.9499006
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's bed",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garden",
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Robert's microwave",
+                    "AtLocation",
+                    "Robert's kitchen",
+                    1637274175.9499896
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Elizabeth's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "cupboard"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's cat",
+                    "AtLocation",
+                    "John's lap",
+                    1637274175.9500732
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's microwave",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "kitchen"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's microwave",
+                    "AtLocation",
+                    "Karen's kitchen",
+                    1637274175.9501557
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's clock",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's book",
+                    "AtLocation",
+                    "Elizabeth's classroom",
+                    1637274175.950239
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's cat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's bench",
+                    "AtLocation",
+                    "Sarah's bedroom",
+                    1637274175.9503274
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's microwave",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "kitchen"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's bowl",
+                    "AtLocation",
+                    "Jessica's cellar",
+                    1637274175.95041
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's clock",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Patricia's boat",
+                    "AtLocation",
+                    "Patricia's water",
+                    1637274175.9504917
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's clock",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's broccoli",
+                    "AtLocation",
+                    "Linda's plate",
+                    1637274175.9505718
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's cat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bus",
+                    "AtLocation",
+                    "John's city",
+                    1637274175.9506521
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's clock",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Michael's clock",
+                    "AtLocation",
+                    "Michael's shed",
+                    1637274175.9507313
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's bed",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Michael's pizza",
+                    "AtLocation",
+                    "Michael's oven",
+                    1637274175.950811
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "plate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Michael's bench",
+                    "AtLocation",
+                    "Michael's restaurant",
+                    1637274175.9508927
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Elizabeth's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "cupboard"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's couch",
+                    "AtLocation",
+                    "Mary's office",
+                    1637274175.9509754
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's microwave",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "kitchen"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Richard's bus",
+                    "AtLocation",
+                    "Richard's city",
+                    1637274175.9510586
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's cat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's horse",
+                    "AtLocation",
+                    "Sarah's circus",
+                    1637274175.9511447
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's cat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's cup",
+                    "AtLocation",
+                    "David's table",
+                    1637274175.9512362
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's cat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's dog",
+                    "AtLocation",
+                    "Joseph's sewer",
+                    1637274175.9513202
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "plate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Richard's cow",
+                    "AtLocation",
+                    "Richard's countryside",
+                    1637274175.9514036
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jessica's bowl",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "cellar"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's banana",
+                    "AtLocation",
+                    "Susan's stomach",
+                    1637274175.9514902
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Richard's cow",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "countryside"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's truck",
+                    "AtLocation",
+                    "Karen's garage",
+                    1637274175.9515738
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Elizabeth's book",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "classroom"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's bed",
+                    "AtLocation",
+                    "Joseph's field",
+                    1637274175.951659
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's dog",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sewer"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's pizza",
+                    "AtLocation",
+                    "James's oven",
+                    1637274175.9517443
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Susan's banana",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "stomach"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's scissors",
+                    "AtLocation",
+                    "Karen's desk",
+                    1637274175.9518323
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Michael's clock",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "shed"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's horse",
+                    "AtLocation",
+                    "James's circus",
+                    1637274175.9519193
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Susan's banana",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "stomach"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's banana",
+                    "AtLocation",
+                    "Thomas's stomach",
+                    1637274175.952013
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "plate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's bench",
+                    "AtLocation",
+                    "Joseph's water",
+                    1637274175.952099
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's horse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's bus",
+                    "AtLocation",
+                    "Thomas's city",
+                    1637274175.9521866
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's scissors",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's chair",
+                    "AtLocation",
+                    "Joseph's office",
+                    1637274175.9522774
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's chair",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "office",
+            "correct_answer": "office"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's sheep",
+                    "AtLocation",
+                    "Charles's vet",
+                    1637274175.9523764
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's microwave",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "kitchen"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's bottle",
+                    "AtLocation",
+                    "Jessica's shed",
+                    1637274175.9524653
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's cat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's mouse",
+                    "AtLocation",
+                    "Sarah's land",
+                    1637274175.952557
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Michael's sheep",
+                    "AtLocation",
+                    "Michael's pocket",
+                    1637274175.9526463
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Richard's book",
+                    "AtLocation",
+                    "Richard's classroom",
+                    1637274175.952738
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's bed",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's motorcycle",
+                    "AtLocation",
+                    "Elizabeth's garage",
+                    1637274175.9528294
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "plate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's bottle",
+                    "AtLocation",
+                    "Elizabeth's supermarket",
+                    1637274175.9529214
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Richard's cow",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "countryside"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's couch",
+                    "AtLocation",
+                    "Mary's house",
+                    1637274175.953015
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Richard's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's knife",
+                    "AtLocation",
+                    "Jennifer's kitchen",
+                    1637274175.9531107
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "plate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's cup",
+                    "AtLocation",
+                    "Joseph's beach",
+                    1637274175.9532082
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "plate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's dog",
+                    "AtLocation",
+                    "Linda's table",
+                    1637274175.953303
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's horse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's microwave",
+                    "AtLocation",
+                    "David's bedroom",
+                    1637274175.9533968
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's bed",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "field"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bench",
+                    "AtLocation",
+                    "David's lawn",
+                    1637274175.9535005
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's clock",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's book",
+                    "AtLocation",
+                    "Barbara's classroom",
+                    1637274175.9535997
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Richard's cow",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "countryside"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's toilet",
+                    "AtLocation",
+                    "Susan's cat",
+                    1637274175.9536972
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's bench",
+                    "AtLocation",
+                    "Susan's shed",
+                    1637274175.9537928
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Elizabeth's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "cupboard"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's bear",
+                    "AtLocation",
+                    "Susan's countryside",
+                    1637274175.9538894
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's motorcycle",
+                    "AtLocation",
+                    "Jessica's hospital",
+                    1637274175.9539886
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's cup",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "table"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's laptop",
+                    "AtLocation",
+                    "Barbara's desk",
+                    1637274175.9540865
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's dog",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sewer"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Richard's airplane",
+                    "AtLocation",
+                    "Richard's sky",
+                    1637274175.954186
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's scissors",
+                    "AtLocation",
+                    "Barbara's town",
+                    1637274175.9542856
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's microwave",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "bedroom"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's dog",
+                    "AtLocation",
+                    "Thomas's table",
+                    1637274175.9543867
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's sheep",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "vet"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's car",
+                    "AtLocation",
+                    "David's arms",
+                    1637274175.954487
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's dog",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "table"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Michael's refrigerator",
+                    "AtLocation",
+                    "Michael's garage",
+                    1637274175.954591
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's cake",
+                    "AtLocation",
+                    "John's bakery",
+                    1637274175.9546945
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's dog",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "table"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Robert's truck",
+                    "AtLocation",
+                    "Robert's backyard",
+                    1637274175.954801
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Elizabeth's book",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "classroom"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's apple",
+                    "AtLocation",
+                    "Charles's hotel",
+                    1637274175.9549062
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "backyard"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's airplane",
+                    "AtLocation",
+                    "Jennifer's sky",
+                    1637274175.9550128
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Richard's cow",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "countryside"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's dog",
+                    "AtLocation",
+                    "Barbara's arms",
+                    1637274175.9551194
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "bedroom"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's keyboard",
+                    "AtLocation",
+                    "Mary's bathroom",
+                    1637274175.955226
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's sheep",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "vet"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's bowl",
+                    "AtLocation",
+                    "Barbara's cupboard",
+                    1637274175.9553342
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's dog",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "arms"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's toilet",
+                    "AtLocation",
+                    "Sarah's bathroom",
+                    1637274175.9554443
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's cup",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "beach"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's boat",
+                    "AtLocation",
+                    "Elizabeth's water",
+                    1637274175.9555562
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Richard's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's boat",
+                    "AtLocation",
+                    "Susan's bag",
+                    1637274175.9556694
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Michael's pizza",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "oven"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's cow",
+                    "AtLocation",
+                    "Joseph's fridge",
+                    1637274175.9557815
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's scissors",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "William's bowl",
+                    "AtLocation",
+                    "William's cupboard",
+                    1637274175.955895
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's cow",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "fridge"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Robert's toilet",
+                    "AtLocation",
+                    "Robert's sink",
+                    1637274175.9560077
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's dog",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "arms"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's horse",
+                    "AtLocation",
+                    "Susan's sink",
+                    1637274175.9561248
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "William's bowl",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "cupboard"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's spoon",
+                    "AtLocation",
+                    "Linda's dinner",
+                    1637274175.9562397
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's bed",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bicycle",
+                    "AtLocation",
+                    "James's outdoors",
+                    1637274175.956355
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's spoon",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "dinner"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's motorcycle",
+                    "AtLocation",
+                    "Thomas's garage",
+                    1637274175.9564767
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's bed",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's bottle",
+                    "AtLocation",
+                    "Charles's supermarket",
+                    1637274175.9565983
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Susan's horse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sink"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's boat",
+                    "AtLocation",
+                    "Thomas's water",
+                    1637274175.956718
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's mouse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "land"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Richard's bus",
+                    "AtLocation",
+                    "Richard's city",
+                    1637274175.9568374
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's microwave",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "kitchen"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's boat",
+                    "AtLocation",
+                    "Sarah's water",
+                    1637274175.956956
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's cup",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "table"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's suitcase",
+                    "AtLocation",
+                    "Susan's taxi",
+                    1637274175.9570775
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "arms"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's truck",
+                    "AtLocation",
+                    "Barbara's garage",
+                    1637274175.9571981
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's cake",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "bakery"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's cow",
+                    "AtLocation",
+                    "Linda's countryside",
+                    1637274175.9573202
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's cow",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "fridge"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's cup",
+                    "AtLocation",
+                    "Karen's table",
+                    1637274175.9574559
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Michael's clock",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "shed"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's bed",
+                    "AtLocation",
+                    "Thomas's theatre",
+                    1637274175.9575808
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's sheep",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "vet"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's apple",
+                    "AtLocation",
+                    "James's fridge",
+                    1637274175.9577067
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's keyboard",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "bathroom"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "William's suitcase",
+                    "AtLocation",
+                    "William's bed",
+                    1637274175.9578364
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Michael's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "restaurant"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's oven",
+                    "AtLocation",
+                    "Thomas's couch",
+                    1637274175.957965
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "William's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's elephant",
+                    "AtLocation",
+                    "James's circus",
+                    1637274175.958096
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "plate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "William's bed",
+                    "AtLocation",
+                    "William's house",
+                    1637274175.9582264
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "outdoors"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's pizza",
+                    "AtLocation",
+                    "Joseph's oven",
+                    1637274175.9583585
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's oven",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "couch"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's vase",
+                    "AtLocation",
+                    "David's table",
+                    1637274175.9584916
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Michael's clock",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "shed"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's pizza",
+                    "AtLocation",
+                    "Jennifer's bay",
+                    1637274175.958626
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Richard's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's laptop",
+                    "AtLocation",
+                    "John's tree",
+                    1637274175.9587877
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's microwave",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "bedroom"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's sink",
+                    "AtLocation",
+                    "Barbara's ocean",
+                    1637274175.9589374
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Michael's pizza",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "oven"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's airplane",
+                    "AtLocation",
+                    "Barbara's sky",
+                    1637274175.9590793
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's couch",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "house"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's suitcase",
+                    "AtLocation",
+                    "Jennifer's taxi",
+                    1637274175.9592168
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's refrigerator",
+                    "AtLocation",
+                    "Mary's home",
+                    1637274175.959357
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's bed",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's microwave",
+                    "AtLocation",
+                    "Joseph's kitchen",
+                    1637274175.9594986
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's book",
+                    "AtLocation",
+                    "Jessica's classroom",
+                    1637274175.9596431
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's knife",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "kitchen"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's toothbrush",
+                    "AtLocation",
+                    "Charles's suitcase",
+                    1637274175.9597855
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's cat",
+                    "AtLocation",
+                    "Jessica's lap",
+                    1637274175.9599314
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's toilet",
+                    "AtLocation",
+                    "Joseph's grain",
+                    1637274175.9600756
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's cow",
+                    "AtLocation",
+                    "Mary's parade",
+                    1637274175.9602203
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "William's bed",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "house"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Robert's chair",
+                    "AtLocation",
+                    "Robert's office",
+                    1637274175.9603684
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jessica's cat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's suitcase",
+                    "AtLocation",
+                    "James's taxi",
+                    1637274175.9605262
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's dog",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "table"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Robert's microwave",
+                    "AtLocation",
+                    "Robert's bed",
+                    1637274175.960678
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's toilet",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "grain"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "William's chair",
+                    "AtLocation",
+                    "William's stable",
+                    1637274175.9608307
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's toothbrush",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "suitcase"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's scissors",
+                    "AtLocation",
+                    "Susan's ocean",
+                    1637274175.9609869
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Michael's boat",
+                    "AtLocation",
+                    "Michael's backpack",
+                    1637274175.961139
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's bed",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's cow",
+                    "AtLocation",
+                    "Karen's desk",
+                    1637274175.961292
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "arms"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's mouse",
+                    "AtLocation",
+                    "Linda's bay",
+                    1637274175.9614606
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Susan's horse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sink"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's elephant",
+                    "AtLocation",
+                    "Sarah's finger",
+                    1637274175.9616187
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jessica's cat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's book",
+                    "AtLocation",
+                    "Jennifer's classroom",
+                    1637274175.9617817
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's bottle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "supermarket"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's horse",
+                    "AtLocation",
+                    "David's circus",
+                    1637274175.961945
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Michael's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "restaurant"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's oven",
+                    "AtLocation",
+                    "James's sofa",
+                    1637274175.9621077
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "arms"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's elephant",
+                    "AtLocation",
+                    "Mary's cage",
+                    1637274175.9622688
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's chair",
+                    "AtLocation",
+                    "Jessica's office",
+                    1637274175.9624357
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's mouse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "bay"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's boat",
+                    "AtLocation",
+                    "Linda's swamp",
+                    1637274175.9626021
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "swamp",
+            "correct_answer": "swamp"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's toothbrush",
+                    "AtLocation",
+                    "Thomas's suitcase",
+                    1637274175.9627774
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's toilet",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "grain"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's knife",
+                    "AtLocation",
+                    "Jennifer's kitchen",
+                    1637274175.9629488
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's mouse",
+                    "AtLocation",
+                    "Karen's building",
+                    1637274175.9631217
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Susan's horse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sink"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Patricia's truck",
+                    "AtLocation",
+                    "Patricia's parade",
+                    1637274175.9633007
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Elizabeth's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's bench",
+                    "AtLocation",
+                    "Elizabeth's box",
+                    1637274175.963464
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's cake",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "bakery"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's oven",
+                    "AtLocation",
+                    "James's soup",
+                    1637274175.9636276
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's laptop",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's broccoli",
+                    "AtLocation",
+                    "Charles's plate",
+                    1637274175.9637935
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's bed",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Richard's boat",
+                    "AtLocation",
+                    "Richard's garden",
+                    1637274175.963959
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's cake",
+                    "AtLocation",
+                    "Karen's bakery",
+                    1637274175.9641287
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "William's bowl",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "cupboard"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's toilet",
+                    "AtLocation",
+                    "Joseph's bathroom",
+                    1637274175.964316
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's scissors",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "town"
+        }
+    ],
+    "test": [
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's sandwich",
+                    "AtLocation",
+                    "Joseph's fridge",
+                    1637274175.964518
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's sandwich",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "fridge",
+            "correct_answer": "fridge"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bicycle",
+                    "AtLocation",
+                    "James's street",
+                    1637274175.9645803
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "street",
+            "correct_answer": "street"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's cat",
+                    "AtLocation",
+                    "Sarah's garden",
+                    1637274175.9646723
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "street"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's scissors",
+                    "AtLocation",
+                    "Mary's desk",
+                    1637274175.964751
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "street"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's sink",
+                    "AtLocation",
+                    "John's kitchen",
+                    1637274175.9648302
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's sandwich",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "fridge"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's truck",
+                    "AtLocation",
+                    "Charles's cat",
+                    1637274175.9649088
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "cat",
+            "correct_answer": "cat"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's spoon",
+                    "AtLocation",
+                    "Barbara's dinner",
+                    1637274175.9649987
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "cat"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's horse",
+                    "AtLocation",
+                    "Joseph's circus",
+                    1637274175.965079
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's horse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "circus",
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Patricia's car",
+                    "AtLocation",
+                    "Patricia's counter",
+                    1637274175.9651701
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "street"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "William's refrigerator",
+                    "AtLocation",
+                    "William's gate",
+                    1637274175.965251
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's spoon",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "dinner"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's chair",
+                    "AtLocation",
+                    "Karen's heat",
+                    1637274175.965345
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's chair",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "heat",
+            "correct_answer": "heat"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's umbrella",
+                    "AtLocation",
+                    "James's closet",
+                    1637274175.9654403
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's cat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's oven",
+                    "AtLocation",
+                    "Sarah's circus",
+                    1637274175.9655194
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "William's refrigerator",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "gate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Michael's apple",
+                    "AtLocation",
+                    "Michael's fridge",
+                    1637274175.9655972
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's sandwich",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "fridge"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's cow",
+                    "AtLocation",
+                    "Karen's bedroom",
+                    1637274175.9656754
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's horse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's boat",
+                    "AtLocation",
+                    "James's water",
+                    1637274175.9657536
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's spoon",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "dinner"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's book",
+                    "AtLocation",
+                    "James's classroom",
+                    1637274175.965833
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's scissors",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Robert's umbrella",
+                    "AtLocation",
+                    "Robert's sky",
+                    1637274175.9659123
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "William's refrigerator",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "gate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's chair",
+                    "AtLocation",
+                    "Karen's basement",
+                    1637274175.9659927
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's horse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's laptop",
+                    "AtLocation",
+                    "Barbara's desk",
+                    1637274175.9660726
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "William's refrigerator",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "gate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's apple",
+                    "AtLocation",
+                    "Elizabeth's fridge",
+                    1637274175.966153
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's chair",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "basement"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "William's cup",
+                    "AtLocation",
+                    "William's table",
+                    1637274175.9662344
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's umbrella",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Patricia's airplane",
+                    "AtLocation",
+                    "Patricia's sky",
+                    1637274175.9663453
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's horse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's bus",
+                    "AtLocation",
+                    "Thomas's oven",
+                    1637274175.9664268
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "cat"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's bed",
+                    "AtLocation",
+                    "Joseph's house",
+                    1637274175.9665086
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's spoon",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "dinner"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "William's couch",
+                    "AtLocation",
+                    "William's laboratory",
+                    1637274175.9665916
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's umbrella",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "closet"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's bear",
+                    "AtLocation",
+                    "Karen's countryside",
+                    1637274175.9666758
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's toilet",
+                    "AtLocation",
+                    "Mary's bathroom",
+                    1637274175.9667594
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's oven",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's bird",
+                    "AtLocation",
+                    "Jennifer's sky",
+                    1637274175.9668438
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's horse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's vase",
+                    "AtLocation",
+                    "Susan's table",
+                    1637274175.9669275
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "William's cow",
+                    "AtLocation",
+                    "William's countryside",
+                    1637274175.9670103
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's spoon",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "dinner"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's person",
+                    "AtLocation",
+                    "Jessica's hospital",
+                    1637274175.9670944
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "counter"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's sheep",
+                    "AtLocation",
+                    "Jessica's farm",
+                    1637274175.9671793
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jessica's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "hospital"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's airplane",
+                    "AtLocation",
+                    "Jessica's sky",
+                    1637274175.9672694
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's sandwich",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "fridge"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's motorcycle",
+                    "AtLocation",
+                    "Thomas's garage",
+                    1637274175.967357
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's bed",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "house"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's vase",
+                    "AtLocation",
+                    "Sarah's table",
+                    1637274175.9674475
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Richard's book",
+                    "AtLocation",
+                    "Richard's classroom",
+                    1637274175.967538
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Susan's vase",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "table"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's horse",
+                    "AtLocation",
+                    "David's circus",
+                    1637274175.967626
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "street"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's boat",
+                    "AtLocation",
+                    "Jennifer's africa",
+                    1637274175.9677129
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's elephant",
+                    "AtLocation",
+                    "Thomas's barn",
+                    1637274175.9678001
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's cow",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "bedroom"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's cat",
+                    "AtLocation",
+                    "Charles's lap",
+                    1637274175.9679177
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's oven",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's couch",
+                    "AtLocation",
+                    "Charles's house",
+                    1637274175.9680762
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's sink",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "kitchen"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's pizza",
+                    "AtLocation",
+                    "Elizabeth's theatre",
+                    1637274175.9681685
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's vase",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "table"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's scissors",
+                    "AtLocation",
+                    "Joseph's bag",
+                    1637274175.968259
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Michael's apple",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "fridge"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Patricia's book",
+                    "AtLocation",
+                    "Patricia's classroom",
+                    1637274175.9683516
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "William's cow",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "countryside"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's broccoli",
+                    "AtLocation",
+                    "Thomas's plate",
+                    1637274175.9684432
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's umbrella",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "closet"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's scissors",
+                    "AtLocation",
+                    "Joseph's desk",
+                    1637274175.9685352
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's umbrella",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "closet"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Richard's bottle",
+                    "AtLocation",
+                    "Richard's supermarket",
+                    1637274175.9686296
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's scissors",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's vase",
+                    "AtLocation",
+                    "Elizabeth's restaurant",
+                    1637274175.9687247
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's book",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "classroom"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's person",
+                    "AtLocation",
+                    "Joseph's hospital",
+                    1637274175.9688194
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's oven",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Robert's knife",
+                    "AtLocation",
+                    "Robert's family",
+                    1637274175.968913
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's spoon",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "dinner"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's chair",
+                    "AtLocation",
+                    "Charles's cellar",
+                    1637274175.96903
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's bear",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "countryside"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Robert's boat",
+                    "AtLocation",
+                    "Robert's water",
+                    1637274175.9691286
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's horse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Robert's toilet",
+                    "AtLocation",
+                    "Robert's bathroom",
+                    1637274175.9692392
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's knife",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "family"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Michael's bicycle",
+                    "AtLocation",
+                    "Michael's car",
+                    1637274175.9693365
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's laptop",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's knife",
+                    "AtLocation",
+                    "Jessica's kitchen",
+                    1637274175.969448
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "oven"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bicycle",
+                    "AtLocation",
+                    "James's street",
+                    1637274175.9695504
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's sandwich",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "fridge"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's mouse",
+                    "AtLocation",
+                    "Karen's laboratory",
+                    1637274175.9696517
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's spoon",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "dinner"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's cow",
+                    "AtLocation",
+                    "Jennifer's sewer",
+                    1637274175.9697514
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's toilet",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "bathroom"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's microwave",
+                    "AtLocation",
+                    "Jennifer's bush",
+                    1637274175.9698515
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's book",
+                    "AtLocation",
+                    "Thomas's classroom",
+                    1637274175.9699533
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's cat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's umbrella",
+                    "AtLocation",
+                    "Jessica's closet",
+                    1637274175.970054
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's elephant",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "barn"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's bus",
+                    "AtLocation",
+                    "Mary's pocket",
+                    1637274175.9701593
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's knife",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "family"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's sandwich",
+                    "AtLocation",
+                    "Jennifer's closet",
+                    1637274175.9702616
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jessica's knife",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "kitchen"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Richard's person",
+                    "AtLocation",
+                    "Richard's hospital",
+                    1637274175.9703665
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's keyboard",
+                    "AtLocation",
+                    "Linda's desk",
+                    1637274175.970482
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "William's refrigerator",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "gate"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's knife",
+                    "AtLocation",
+                    "Elizabeth's kitchen",
+                    1637274175.9705913
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jessica's sheep",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "farm"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Robert's microwave",
+                    "AtLocation",
+                    "Robert's kitchen",
+                    1637274175.9707012
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's sink",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "kitchen"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's couch",
+                    "AtLocation",
+                    "Joseph's shed",
+                    1637274175.9708097
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jessica's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "hospital"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's keyboard",
+                    "AtLocation",
+                    "Karen's desk",
+                    1637274175.9709208
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's microwave",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "bush"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's horse",
+                    "AtLocation",
+                    "Susan's circus",
+                    1637274175.9710326
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's cat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's cup",
+                    "AtLocation",
+                    "James's table",
+                    1637274175.971143
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's sandwich",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "fridge"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's bus",
+                    "AtLocation",
+                    "Karen's country",
+                    1637274175.971254
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Elizabeth's pizza",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "theatre"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's toothbrush",
+                    "AtLocation",
+                    "Charles's suitcase",
+                    1637274175.9713695
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jessica's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "hospital"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's bird",
+                    "AtLocation",
+                    "Jessica's sky",
+                    1637274175.9714844
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bowl",
+                    "AtLocation",
+                    "John's cupboard",
+                    1637274175.9715993
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Susan's horse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's bus",
+                    "AtLocation",
+                    "Jessica's university",
+                    1637274175.9717176
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's oven",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's spoon",
+                    "AtLocation",
+                    "David's dinner",
+                    1637274175.9718337
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's book",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "classroom"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's couch",
+                    "AtLocation",
+                    "Thomas's house",
+                    1637274175.9719508
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's horse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's airplane",
+                    "AtLocation",
+                    "Thomas's sky",
+                    1637274175.9720674
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's couch",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "house"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's dog",
+                    "AtLocation",
+                    "Thomas's hospital",
+                    1637274175.9721844
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "street"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bottle",
+                    "AtLocation",
+                    "David's supermarket",
+                    1637274175.9723043
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Richard's book",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "classroom"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's broccoli",
+                    "AtLocation",
+                    "Susan's plate",
+                    1637274175.972425
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "country"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Richard's bottle",
+                    "AtLocation",
+                    "Richard's supermarket",
+                    1637274175.9725447
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's keyboard",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "desk"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's refrigerator",
+                    "AtLocation",
+                    "Susan's garage",
+                    1637274175.9726655
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's toilet",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "bathroom"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jennifer's horse",
+                    "AtLocation",
+                    "Jennifer's theater",
+                    1637274175.9727962
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Richard's bottle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "supermarket"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's bird",
+                    "AtLocation",
+                    "Charles's theatre",
+                    1637274175.9729323
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's chair",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "basement"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Karen's banana",
+                    "AtLocation",
+                    "Karen's country",
+                    1637274175.9730673
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jessica's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "hospital"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Michael's suitcase",
+                    "AtLocation",
+                    "Michael's sink",
+                    1637274175.9732027
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's book",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "classroom"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Michael's dog",
+                    "AtLocation",
+                    "Michael's rug",
+                    1637274175.9733407
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Patricia's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's motorcycle",
+                    "AtLocation",
+                    "John's bedroom",
+                    1637274175.973483
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's horse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "theater"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's dog",
+                    "AtLocation",
+                    "James's table",
+                    1637274175.973622
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Charles's couch",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "house"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Susan's knife",
+                    "AtLocation",
+                    "Susan's wild",
+                    1637274175.973755
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's umbrella",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "closet"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bicycle",
+                    "AtLocation",
+                    "James's street",
+                    1637274175.9738882
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Michael's dog",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "rug"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's cat",
+                    "AtLocation",
+                    "Elizabeth's lap",
+                    1637274175.9740236
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "oven"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's sheep",
+                    "AtLocation",
+                    "John's farm",
+                    1637274175.9741583
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Susan's vase",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "table"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's car",
+                    "AtLocation",
+                    "Thomas's city",
+                    1637274175.974292
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's sink",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "kitchen"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Elizabeth's bowl",
+                    "AtLocation",
+                    "Elizabeth's cupboard",
+                    1637274175.974425
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's bed",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "house"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Patricia's suitcase",
+                    "AtLocation",
+                    "Patricia's vet",
+                    1637274175.9745576
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Elizabeth's apple",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "fridge"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's cat",
+                    "AtLocation",
+                    "Thomas's lap",
+                    1637274175.974696
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's cat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's car",
+                    "AtLocation",
+                    "James's city",
+                    1637274175.9748354
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Michael's apple",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "fridge"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Robert's broccoli",
+                    "AtLocation",
+                    "Robert's lap",
+                    1637274175.974973
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's knife",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "family"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Robert's bench",
+                    "AtLocation",
+                    "Robert's grain",
+                    1637274175.9751098
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's bird",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bus",
+                    "AtLocation",
+                    "John's city",
+                    1637274175.9752512
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "oven"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's clock",
+                    "AtLocation",
+                    "Linda's desk",
+                    1637274175.9753978
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's chair",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "basement"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's boat",
+                    "AtLocation",
+                    "Joseph's africa",
+                    1637274175.9755476
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's banana",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "country"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bird",
+                    "AtLocation",
+                    "David's taxi",
+                    1637274175.9756901
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Susan's knife",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "wild"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's refrigerator",
+                    "AtLocation",
+                    "John's garage",
+                    1637274175.9758346
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's couch",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "house"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Robert's bench",
+                    "AtLocation",
+                    "Robert's classroom",
+                    1637274175.9759827
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Karen's mouse",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "laboratory"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's truck",
+                    "AtLocation",
+                    "Joseph's hand",
+                    1637274175.9761283
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Richard's suitcase",
+                    "AtLocation",
+                    "Richard's circus",
+                    1637274175.976276
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Thomas's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Thomas's cat",
+                    "AtLocation",
+                    "Thomas's prison",
+                    1637274175.9764225
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's oven",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's dog",
+                    "AtLocation",
+                    "Barbara's table",
+                    1637274175.9765706
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's bird",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "taxi"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Joseph's sink",
+                    "AtLocation",
+                    "Joseph's kitchen",
+                    1637274175.9767194
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Joseph's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "hand"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bed",
+                    "AtLocation",
+                    "James's school",
+                    1637274175.9768715
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's microwave",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "bush"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Jessica's broccoli",
+                    "AtLocation",
+                    "Jessica's classroom",
+                    1637274175.977024
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jessica's sheep",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "farm"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Sarah's sink",
+                    "AtLocation",
+                    "Sarah's kitchen",
+                    1637274175.9771814
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Barbara's spoon",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "dinner"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's toilet",
+                    "AtLocation",
+                    "Linda's bathroom",
+                    1637274175.9773374
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Richard's suitcase",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's apple",
+                    "AtLocation",
+                    "Linda's sea",
+                    1637274175.9775007
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jessica's umbrella",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "closet"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's sandwich",
+                    "AtLocation",
+                    "David's classroom",
+                    1637274175.9776597
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's umbrella",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "closet"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's couch",
+                    "AtLocation",
+                    "David's cafe",
+                    1637274175.977821
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's broccoli",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "lap"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Barbara's toilet",
+                    "AtLocation",
+                    "Barbara's cellar",
+                    1637274175.9779813
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's sink",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "kitchen"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's sink",
+                    "AtLocation",
+                    "James's dentist",
+                    1637274175.9781477
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jessica's bird",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Robert's bed",
+                    "AtLocation",
+                    "Robert's house",
+                    1637274175.9783351
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jennifer's bird",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's toothbrush",
+                    "AtLocation",
+                    "David's fence",
+                    1637274175.978519
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Sarah's oven",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "circus"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's knife",
+                    "AtLocation",
+                    "John's kitchen",
+                    1637274175.978687
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Robert's bed",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "house"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Charles's scissors",
+                    "AtLocation",
+                    "Charles's desk",
+                    1637274175.9788573
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Jessica's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Richard's sink",
+                    "AtLocation",
+                    "Richard's countryside",
+                    1637274175.9790292
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "William's cow",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "countryside"
+        }
+    ],
+    "max_history": 128,
+    "capacity": 1,
+    "rewards": {
+        "train": 6,
+        "val": 7,
+        "test": 5
+    },
+    "accuracy": {
+        "train": 0.046875,
+        "val": 0.0546875,
+        "test": 0.0390625
+    }
+}

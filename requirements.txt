@@ -1,9 +1,2 @@
-numpy
-sklearn
-nltk
-rdflib
-iribaker
-pillow
-typing
-
-./lib/leolani.datarepresentation-0.0.1-py3-none-any.whl
+isort
+black
