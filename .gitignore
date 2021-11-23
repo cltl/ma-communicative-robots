@@ -139,3 +139,4 @@ cython_debug/
 
 # vscode
 .vscode
+projects/.DS_Store
