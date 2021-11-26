@@ -20,4 +20,4 @@ Take a look at the example jupyter notebook `./notebooks/how-to-data.ipynb`.
 - Student 1: Fajjaaz Chandoe
 - Student 2: Nihed Harrak
 - Student 3: Nicole Van de Weijer
-- Student 4: Add your name
+- Student 4: Hidde van Oijen
