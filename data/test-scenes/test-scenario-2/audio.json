@@ -1,0 +1,14 @@
+[
+{
+    "modality": "AUDIO",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test-scenario-2",
+        "start": 1603139705,
+        "end": 1603140000
+    },
+    "files": [
+        "data/test-scenes/test_scenario/audio/"
+    ]
+},
+]

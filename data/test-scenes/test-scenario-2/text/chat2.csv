@@ -1,0 +1,19 @@
+speaker,utterance,time
+Piek, "Hi",1603139000
+Agent, "Hi Piek, how are you doing?", 1603139001
+Piek, "I am doing fine, how are you?", 1603139002
+Agent, "Tell me about your family.",  1603139003
+Piek, "I am married and I have two children",  1603139004
+Agent, "What are their names?",  1603139005
+Piek, "My daughter is called Niqee and my son Sam",  1603139006
+Agent, "What is the name of your spouse?",  1603139007
+Piek: "My wife is called Anja.",  1603139008
+Piek,"That is me holding a soccer ball with my daughter Niqee in a swimming pool.", 1603139009
+Agent, "How old is she?",  16031390010
+Piek,"This picture was taken in 2010 in Portugal.",1603139011
+Piek, "She was 16 years old then",  1603139012
+Agent, "So she is now 27, right?",  1603139013
+Piek, "Heh, there is that soccer ball again.", 1603139014
+Agent, "Do you have any brothers and sisters?",  1603139015
+Piek, "I show you a family picture",  1603139016
+Agent, "Who is that older woman with grey hair?", 1603139017

@@ -1,0 +1,295 @@
+[
+{
+    "modality": "IMAGE",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test-scenario-2",
+        "start": 1603139705,
+        "end": 1603140000
+    },
+    "files": [
+        "data/test-scenes/test-scenario-2/image/piek-sunglasses.jpg"
+    ],
+    "mentions": [
+        {
+            "segment": {
+                "type": "MultiIndex",
+                "container_id": "0c1b7ffd-d22b-41c5-a55d-0f4a16b9ad89",
+                "bounds": [
+                    [
+                        10,
+                        521
+                    ],
+                    [
+                        15,
+                        518
+                    ]
+                ]
+            },
+            "annotations": [
+                {
+                    "type": "PersonAnnotation",
+                    "value": "leolaniWorld:piek",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#PERSON1",
+                    "source": "face_recognition",
+                    "confidence": 0.76,
+                    "timestamp": 1604957866.524172
+                }, {
+                    "type": "EmotionAnnotation",
+                    "value": "ANGRY",
+                    "source": "annotator_1",
+                    "confidence": 0.76,
+                    "timestamp": 1604957866.5242481
+                }
+            ]
+        }
+    ]
+},
+{
+    "modality": "IMAGE",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test-scenario-2",
+        "start": 1603139840,
+        "end": 1603149860
+    },
+    "files": [
+        "data/test-scenes/test-scenario-2/image/maxima.jpg"
+    ],
+
+    "mentions": [
+        {
+            "segment": {
+                "type": "MultiIndex",
+                "container_id": "0c1b7ffd-d22b-41c5-a55d-0f4a16b9ad89",
+                "bounds": [
+                    [
+                        10,
+                        521
+                    ],
+                    [
+                        15,
+                        518
+                    ]
+                ]
+            },
+            "annotations": [
+                {
+                    "type": "PersonAnnotation",
+                    "value": "leolaniWorld:maxima",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#PERSON2",
+                    "source": "face_recognition",
+                    "confidence": 0.76,
+                    "timestamp": 1604957866.524172
+                },
+                {
+                    "type": "EmotionAnnotation",
+                    "value": "SURPRISE",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#EMO1",
+                    "source": "annotator_1",
+                    "confidence": 0.76,
+                    "timestamp": 1604957866.5242481
+                }
+            ]
+        }
+    ]
+},
+{
+    "modality": "IMAGE",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test-scenario-2",
+        "start": 1603139840,
+        "end": 1603149860
+    },
+    "files": [
+        "data/test-scenes/test-scenario-2/image/niqee-2020-10-25 at 17.30.51.png"
+    ],
+
+    "mentions": [
+        {
+            "segment": {
+                "type": "MultiIndex",
+                "container_id": "0c1b7ffd-d22b-41c5-a55d-0f4a16b9ad89",
+                "bounds": [
+                    [
+                        10,
+                        521
+                    ],
+                    [
+                        15,
+                        518
+                    ]
+                ]
+            },
+            "annotations": [
+                {
+                    "type": "PersonAnnotation",
+                    "value": "leolaniWorld:niqee",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#PERSON3",
+                    "source": "face_recognition",
+                    "confidence": 0.76,
+                    "timestamp": 1604957866.524172
+                }, {
+                    "type": "EmotionAnnotation",
+                    "value": "JOY",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#EMO2",
+                    "source": "annotator_1",
+                    "confidence": 0.76,
+                    "timestamp": 1604957866.5242481
+                }
+            ]
+        }
+    ]
+},
+{
+    "modality": "IMAGE",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test-scenario-2",
+        "start": 1603139840,
+        "end": 1603149860
+    },
+    "files": [
+        "data/test-scenes/test-scenario-2/image/sam-2020-10-25 at 17.30.25.png"
+    ],
+    "mentions": [
+        {
+            "segment": {
+                "type": "MultiIndex",
+                "container_id": "0c1b7ffd-d22b-41c5-a55d-0f4a16b9ad89",
+                "bounds": [
+                    [
+                        10,
+                        521
+                    ],
+                    [
+                        15,
+                        518
+                    ]
+                ]
+            },
+            "annotations": [
+                {
+                    "type": "PersonAnnotation",
+                    "value": "leolaniWorld:sam",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#PERSON4",
+                    "source": "face_recognition",
+                    "confidence": 0.76,
+                    "timestamp": 1604957866.524172
+                },
+                {
+                    "type": "EmotionAnnotation",
+                    "value": "JOY",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#EMO3",
+                    "source": "annotator_1",
+                    "confidence": 0.76,
+                    "timestamp": 1604957866.5242481
+                }
+            ]
+        }
+    ]
+},
+{
+    "modality": "IMAGE",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test-scenario-2",
+        "start": 1603139840,
+        "end": 1603149860
+    },
+    "files": [
+        "data/test-scenes/test-scenario-2/image/soccer-balll.jpg"
+    ],
+    "mentions": [
+        {
+            "segment": {
+                "type": "MultiIndex",
+                "container_id": "0c1b7ffd-d22b-41c5-a55d-0f4a16b9ad89",
+                "bounds": [
+                    [
+                        10,
+                        521
+                    ],
+                    [
+                        15,
+                        518
+                    ]
+                ]
+            },
+            "annotations": [
+                {
+                    "type": "ObjectAnnotation",
+                    "value": "soccer_ball",
+                    "id": "e136ee3c-ccaa-456d-9124-bc1af60ad424#OBJECT1",
+                    "source": "face_recognition",
+                    "confidence": 0.76,
+                    "timestamp": 1604957866.524172
+                }
+            ]
+        }
+    ]
+}
+,
+{
+    "modality": "IMAGE",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test-scenario-2",
+        "start": 1603139840,
+        "end": 1603149860
+    },
+    "files": [
+        "data/test-scenes/test-scenario-2/image/family-1.jpg"
+    ],
+    "mentions": [
+        {
+            "segment": {
+                "type": "MultiIndex",
+                "container_id": "0c1b7ffd-d22b-41c5-a55d-0f4a16b9ad89",
+                "bounds": [
+                    [
+                        10,
+                        521
+                    ],
+                    [
+                        15,
+                        518
+                    ]
+                ]
+            }
+        }
+    ]
+}
+,
+{
+    "modality": "IMAGE",
+    "time": {
+        "type": "TemporalRuler",
+        "container_id": "test-scenario-2",
+        "start": 1603139840,
+        "end": 1603149860
+    },
+    "files": [
+        "data/test-scenes/test-scenario-2/image/family-2.jpg"
+    ],
+    "mentions": [
+        {
+            "segment": {
+                "type": "MultiIndex",
+                "container_id": "0c1b7ffd-d22b-41c5-a55d-0f4a16b9ad89",
+                "bounds": [
+                    [
+                        10,
+                        521
+                    ],
+                    [
+                        15,
+                        518
+                    ]
+                ]
+            }
+        }
+    ]
+}
+]

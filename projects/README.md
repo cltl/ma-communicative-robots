@@ -1,13 +1,15 @@
-# Projects
+# Communicative Robots
 
-## Tae's group
+Communicative Robots is a master's course taught at VU Amsterdam.
 
-We work on "A machine with human-like memories".
+## Student projects
 
-Check out `./memory/`
+## Ethical gender detection
+Check the directory ['gender'](https://github.com/cltl/ma-communicative-robots/tree/master/projects/gender) for details 
 
-## Lea's group
+## Kinship relation detection
+Check the directory [kinship](https://github.com/cltl/ma-communicative-robots/tree/master/projects/kinship) for details 
+ 
+## Multimodal Signal Processing
 
-## Jaap's group
-
-## Piek's group
+Check the directory [`multimodal`](https://github.com/cltl/ma-communicative-robots/tree/master/projects/multimodal) for details.

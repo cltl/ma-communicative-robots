@@ -1,0 +1,26 @@
+{
+    "start_time": 1603139000,
+    "end_time": 1603150000,
+    "id": "test-scenario-2",
+    "ruler": {
+        "type": "TemporalRuler",
+        "container_id": "test-scenario-2",
+        "start": 1603139000,
+        "end": 1603150000
+    },
+    "context": {
+        "agent": "leolani",
+        "speaker": {
+            "id": "971f8578-1b16-4740-a62b-9d1ed1de1420",
+            "name": "Piek",
+            "age": 59,
+            "gender": "MALE"
+        },
+        "persons": [],
+        "objects": []
+    },
+    "signals": {
+        "image": "data/test-scenes/test-scenario-2/image.json",
+        "text": "data/test-scenes/test-scenario-2/text.json"
+    }
+}

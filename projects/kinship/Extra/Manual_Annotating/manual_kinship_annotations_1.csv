@@ -1,0 +1,337 @@
+SR_number,source,source_location,target,target_location,kinship_phrase,Notes,
+17,Chandler,speaker,unnamed,None,my mother,,
+45,Monica,speaker,Ross,NE in sentence,my brother,NE right after kinship term (multiple NEs in sentence),
+228,Rachel,speaker,unnamed,None,my parents,,
+234,Rachel,prev speaker and next speaker,unnamed,None,my parents,,
+316,Monica,speaker,unnamed,None,my parents,,
+372,Rachel,NE in utterance,unnamed,None,her parents,Only NE in sentence,
+378,Monica,prev prev speaker,Mrs. Geller,prev speaker,your mother,,
+382,Ross,speaker,unnamed,None,my child,,
+395,Chandler,speaker,unnamed,None,my parents,,
+495,unnamed,None,unnamed,None,your parents,"""Yeah, it's like when you're a kid, and your parents put your dog to sleep, and they tell you it went off to live on some farm.""",
+800,Rachel,prev speaker ,unnamed,None,your mom,,
+805,Joanne,speaker,unnamed,None,my dad,,
+893,Pizza Guy,speaker,unnamed,None,my dad,,
+912,unnamed,None,unnamed,None,his mother,,
+1003,Rachel,speaker,unnamed,None,my father,,
+1006,Chandler,speaker,unnamed,None,my father,,
+1038,Joey,prev speaker and next speaker,unnamed,None,your cousin,,
+1043,Angela,NE in utterance,unnamed,None,her brother,Only NE in sentence; NE after kinship term,
+1428,Ross,speaker,Monica,prev prev speaker,my sister,,
+1643,Monica,NE in utterance,unnamed,None,your dad,Only NE in sentence; NE before kinship term,
+1689,Phoebe,speaker,unnamed,None,my mom,,
+1728,Aunt Lillian,prev speaker,unnamed,None,your mom,,
+1782,Ross,speaker,Monica,prev speaker,my sister,,
+1805,Monica,prev speaker,Mrs. Geller,speaker,your mother,,
+1833,Rachel,speaker,unnamed,None,my father,,
+1916,Chandler,speaker,unnamed,None,my parents,,
+1955,Joey,speaker,unnamed,None,my mom,,
+1964,Phoebe,speaker,unnamed,None,my mom,,
+2008,unnamed,None,Ross,speaker,your daddy ,"Ross speaking to baby in belly: ""Hey, hey, I'm your daddy. I'm the one without any breasts.""",
+2071,Phoebe,speaker,unnamed,None,my mother,,
+2279,Monica,prev speaker,Ross,NE in sentence,your brother,Only NE in sentence: NE before kinship term,
+2317,Chandler,prev prev spealer,unnamed,None,your mom,,
+2319,Chandler,prev speaker and NE in sentence,unnamed,None,your mom,,
+2321,Chandler,prev speaker and NE in sentence,unnamed,None ,your mom,,
+2340,Mrs. Bing,speaker,Chandler,prev prev speaker and next next speaker,my son,,
+2344,Mrs. Bing,speaker,Chandler,next speaker,my son,,
+2408,Joey,speaker,Gloria Tribbiana,NE in next next utterance,my mom,,
+2424,unnamed,None,unnamed,None,his mother,,
+2439,Chandler,speaker,unnamed,None,my mom,,
+2440,Chandler,prev speaker and next speaker,unnamed,None,your mom,,
+2450,Chandler,speaker,unnamed,None,my mom,,
+2477,Joey,speaker,unnamed,None,my mother,,
+2489,Chandler,speaker,unnamed,None,my mom,,
+2439,Chandler,speaker,unnamed,None,my mom,,"380 Mr. Geller  ...And I read about these women trying to have it all, and I thank God 'Our Little Harmonica' doesn't seem to have that problem."
+2556,Chandler,prev speaker,unnamed,None,your mom,,"381 Monica  So, Ross, what's going on with you? Any stories? No news, no little anecdotes to share with the folks?"
+2572,Rachel,speaker,unnamed,None,my sister,,"382 Ross  Okay! Okay. Look, I, uh- I realise you guys have been wondering what exactly happened between Carol and me, and, so, well, here's the deal. Carol's a lesbian. She's living with a woman named Susan. She's pregnant with my child, and she and Susan are going to raise the baby."
+2842,Joey,speaker,Mr. Trib,NE in next next utterance,my dad,,383 Mrs. Geller  And you knew about this?!
+2863,Joey,prev speaker,Mr. Tribbiani,speaker,your dad,,"384 Joey  Your folks are really that bad, huh?"
+2866,unnamed,None,unnamed,None ,your dad,"It's like if you woke up one day and found out your dad was leading this double life. He's like actually some spy, working for the C.I.A. That'd be cool.... This blows!",
+2948,Joey,speaker,unnamed,None,my dad,,"384 Joey  Your folks are really that bad, huh?"
+2949,Joey,prev speaker and next speker,unnamed,None,your father,,"385 Ross  Well, y'know, these people are pros. They know what they're doing, they take their time, they get the job done."
+2994,Joey,prev speaker next speaker and NE in sentence,unnamed,None,your father,,"386 Monica  Boy, I know they say you can't change your parents,... boy, if you could- -I'd want yours."
+2998,Joey,prev speaker and next speaker,unnamed,None,your father,,387 Ross  Must pee.
+3000,Joey,prev speaker and next speaker,unnamed,None,your father,,"388 Phoebe  Y'know, it's even worse when you're twins."
+3021,Joey,next speaker,unnamed,None,your father,,
+3028,Chandler,speaker,unnamed,None,my mom,,"393 Rachel  All right, you guys, I kinda gotta clean up now."
+3028,Chandler,speaker,unnamed,None,my parents,,"394 Monica  Chandler, you're an only child, right? You don't have any of this."
+3202,Ross,next speaker,unnamed,None,your mother,,"395 Chandler  Well, no, although I did have an imaginary friend, who... my parents actually preferred."
+3550,Ross,prev speaker,unnamed,None,your mother,,"396 Rachel  The lights, please.."
+3585,Monica,prev speaker,unnamed,None,your mother,,397 Ross  ...How long was I in there?
+3603,Monica,prev speaker and next speaker,unnamed,None,your dad,,
+3671,Ross,prev speaker and next speaker,unnamed,None,your son,,"493 Ross  Of course not, I'm... suggesting Geller-Willick-Bunch."
+3862,unnamed,None,unnamed,None,her cousin,,"494 Susan  Oh, no, nonononono, you see what he's doing? He knows no-one's gonna say all those names, so they'll wind up calling her Geller, then he gets his way!"
+4219,Monica,speaker,unnamed,None,my parents,,"495 Ross  My way?! You-you think this is my way? Believe me, of all the ways I ever imagined this moment in my life being, this is not my way- y'know what? Uh, um, this is too hard. I'm not, I can't do-"
+4457,Monica,speaker,unnamed,None,my mother,,496 Dr. Oberman  Knock knock!How are we today? Any nausea?
+4977,Rachel,prev speaker and next speaker and NE in sentence,unnamed,None,your father,,497 All  Yeah. Yeah. A little.
+4985,unnamed,None,unnamed,None,this father guy,,
+5008,Ross,speaker,unnamed,None,my son,,514 Rachel  And everybody knows this?
+5090,Phoebe,speaker,unnamed,None,my dad,,515 Joey  Yeah. Cushions the blow.
+5090,Phoebe,speaker,unnamed,None,my mother,,"516 Chandler  Yeah, it's like when you're a kid, and your parents put your dog to sleep, and they tell you it went off to live on some farm."
+5127,Ross,speaker,Ed,NE in utterance,my uncle,NE right after kinshipterm,"517 Ross  That's funny, that, no, because, uh, our parents actually did, uh, send our dog off to live on a farm."
+5195,Ben,NE in utterance,Phoebe,speaker,your father,"Phoebe: Hi, Ben. I'm your father. I am... the head. Aaaaaahhhh.... Alright, this barbecue is gonna be very fun.","518 Monica  Uh, Ross."
+5211,Ross,speaker,unnamed,None,my mom,,
+5330,Monica,speaker,unnamed,None,my brother,,798 Monica  I swear I've seen birds do this on Wild Kingdom.
+5357,Monica,speaker,unnamed,None,my brother,,799 Rachel  What are you guys doing here?
+5414,Ross,speaker,Monica,NE in utterance,my sister,Not only NE in utterance; NE right after kinshipterm,"800 Kiki  Well, we were in the city shopping, and your mom said you work here, aaand it's true!"
+5609,Ross,speaker,unnamed,None,my son,,801 Joanne  Look at you in the apron. You look like you're in a play.
+5718,Monica,speaker,unnamed,None,my brother,,"802 Rachel  Look at you, you are so big I can't believe it!"
+6503,Monica,prev speaker and next speaker,unnamed,None,your mother,,
+6795,Joey,prev speaker and NE in utterance,unnamed,None,your parents,,803 Leslie  I know. I know! I'm a duplex.
+6822,Phoebe,prev speaker and next speaker,unnamed,None,your sister,,804 Rachel  So what's going on with you?
+6890,Phoebe,prev speaker and next speaker,unnamed,None ,your sister,,"805 Joanne  Well, guess who my dad's making partner in his firm?"
+6960,Phoebe,prev speaker and next speaker,unnamed,None,your sister,,806 Kiki  And while we're on the subject of news..
+6981,Phoebe,speaker,unnamed,None,my sister,,"807 Phoebe  Look, look, I have elbows!"
+6985,Phoebe,speaker,unnamed,None,my sister,,
+7063,Ross,prev speaker and NE in utterance,unnamed,None,your son,,"891 Pizza Guy  Hi, one, uh, mushroom, green pepper and onion?"
+7114,Janice,prev speaker and next speaker,unnamed,None,your parents,,"892 Rachel  No, no, that's not what we ordered... We ordered a fat-free crust with extra cheese."
+7259,Phoebe,prev speaker and next speaker,unnamed,None,your brother,,"893 Pizza Guy  Wait, you're not 'G.Stephanopoulos?' Man, my dad's gonna kill me!"
+7264,Phoebe,speaker,unnamed,None,my sister,,894 Monica  Wait! Did you say 'G.Stephanopoulos?'
+7447,Frank,speaker,Phoebe,prev speaker and next sister,my sister,,"895 Pizza Guy  Yeah. This one goes across the street, I must have given him yours. Oh, bonehead, bonehead!"
+7537,Ross,speaker,Monica,prev prev speaker,my sister,,
+7559,Eric,speaker,unnamed,None,my sister,,"910 Rachel  Oh, him, the little guy? Oh, I love him!"
+7560,Eric,prev speaker,unnamed,None,your sister,,"911 Phoebe  Ooh, wait.. wait, I see a woman."
+7777,Rachel,speaker,unnamed,None,my father,,912 Monica  Please tell me it's his mother.
+8005,Phoebe,speaker,Mary,NE in utterance,my aunt,NE right after kinshipterm,913 Phoebe  Definitely not his mother.
+8965,Joey's Sister,prev prev speaker,Joey,next speaker,your brother,,"914 Monica  Oh, no..."
+9402,Monica,prev speaker and next speaker,unnamed,None,your dad,,
+9402,Richard,speaker,unnamed,None,my sister,,"911 Phoebe  Ooh, wait.. wait, I see a woman."
+10070,Issac,prev speaker and next speaker,unnamed,None,your sister,,912 Monica  Please tell me it's his mother.
+10234,Chandler,speaker,unnamed,None,my parents,,913 Phoebe  Definitely not his mother.
+,,,,,,,"914 Monica  Oh, no..."
+,,,,,,,"915 Phoebe  Oh, wait, she's walking across the floor.. she's walking.. she's walking.. she's going for the pizza- Hey, that's not for you, bitch!"
+,,,,,,,
+,,,,,,,"1001 Ross  Oh, yeah, last week you had a wonderful, nutty, chocolatey kind of a cakey pie thing. Nothing, just, just, I'm fine."
+,,,,,,,1002 Phoebe  What's the matter? Why so scrunchy?
+,,,,,,,1003 Rachel  It's my father. He wants to give me a Mercedes convertible.
+,,,,,,,"1004 Ross  That guy, he burns me up."
+,,,,,,,"1005 Rachel  Yeah, well, it's a Mercedes if I move back home. Oh, it was horrible. He called me young lady."
+,,,,,,,
+,,,,,,,"1004 Ross  That guy, he burns me up."
+,,,,,,,"1005 Rachel  Yeah, well, it's a Mercedes if I move back home. Oh, it was horrible. He called me young lady."
+,,,,,,,"1006 Chandler  Ooh, I hate when my father calls me that."
+,,,,,,,"1007 Monica  Did he give you that whole ""You're-not-up-to-this"" thing again?"
+,,,,,,,"1008 Rachel  Oh, yeah, yeah. Actually, I got the extended disco version, with three choruses of ""You'll never make it on your own""."
+,,,,,,,
+,,,,,,,"1036 Joey  You know, you and Bob, and me and my girlfriend, uh, uh, Monica."
+,,,,,,,"1037 Joey  Monica, I'm tellin' you, this guy is perfect for you."
+,,,,,,,1038 Monica  Forget it. Not after your cousin who could belch the alphabet.
+,,,,,,,"1039 Joey  Come on. This guy's great. His name's Bob. He's Angela's... brother. He's smart, he's sophisticated, and he has a real job. Me, I go on three auditions a month and call myself an actor, but Bob is..."
+,,,,,,,"1040 Monica  Oh, god help us."
+,,,,,,,
+,,,,,,,1041 Joey  What?
+,,,,,,,1042 Monica  Ugly Naked Guy's laying kitchen tile. Eww!
+,,,,,,,"1043 Joey  Eww! Look, I'm asking a favor here. If I do this for her brother, maybe Angela will come back to me."
+,,,,,,,1044 Monica  What's going on here? You go out with tons of girls.
+,,,,,,,"1045 Joey  I know, but, I made a huge mistake. I never should have broken up with her. Will you help me? Please?"
+,,,,,,,
+,,,,,,,"1348 Joey  Well, I'm- I'm showering."
+,,,,,,,"1349 Director  No, that was clenching."
+,,,,,,,"1350 Joey  Oh. Well, the way I see it, the guy's upset here, y'know? I mean, his wife's dead, his brother's missing... I think his butt would be angry here."
+,,,,,,,"1351 Director  I think his butt would like to get this shot before lunch. Once again, rolling... water working... and action....and cut. What was that?"
+,,,,,,,1352 Joey  I was going for quiet desperation. But if you have to ask...
+,,,,,,,
+,,,,,,,"1426 Monica  OK, I'll go. OK, senior year of college... on a pool table."
+,,,,,,,1427 All  Whoooaa!
+,,,,,,,1428 Ross  That's my sister.
+,,,,,,,1429 Joey  OK... my weirdest place would have to be... the women's room on the second floor of the New York CIty public library.
+,,,,,,,1430 Monica  Oh my God! What were you doing in a library?
+,,,,,,,
+,,,,,,,"1641 Rachel  Oh my God! Calling from Rome! Bon giorno, caro mio."
+,,,,,,,1642 Ross  So he's calling from Rome. I could do that. Just gotta go to Rome.
+,,,,,,,"1643 Rachel  Monica, your dad just beeped in, but can you make it quick? Talking to Rome. I'm talking to Rome."
+,,,,,,,"1644 Monica  Hey dad, what's up? Oh God. Ross, it's Nana."
+,,,,,,,"1645 Ross  So, uh, how's she doing?"
+,,,,,,,
+,,,,,,,"1687 Ross  Nono, she's gone."
+,,,,,,,1688 Monica  We checked. A lot.
+,,,,,,,"1689 Phoebe  Hm, I mean maybe no-one ever really goes. Ever since my mom died, every now and then, I get the feeling that she's like right here, y'know? Oh! And Debbie, my best friend from junior high- got struck by lightning on a miniature golf course- I always get this really strong Debbie vibe whenever I use one of those little yellow pencils, y'know? ...I miss her."
+,,,,,,,"1690 Rachel  Aw. Hey, Pheebs, want this?"
+,,,,,,,1691 Phoebe  Thanks!
+,,,,,,,
+,,,,,,,1726 Ross  This one?
+,,,,,,,1727 Aunt Lillian  No.
+,,,,,,,"1728 Ross  I have shown you everything we have. Unless you want your mother to spend eternity in a lemon yellow pant-suit, go with the burgundy."
+,,,,,,,"1729 Aunt Lillian  You know, whatever we pick, she would've told us it's the wrong one."
+,,,,,,,1730 Mrs. Geller  You're right. We'll go with the burgundy.
+,,,,,,,
+,,,,,,,"1780 Ross  I feel great. I feel- great, I fleel great."
+,,,,,,,"1781 Monica  Wow, those pills really worked, huh?"
+,,,,,,,"1782 Ross  Not the first two, but the second two- woooo! ...I love you guys. You guys are the greatest. I love my sister, I love Pheebs..."
+,,,,,,,1783 Phoebe  Ooh! That's so nice...
+,,,,,,,1784 Ross  ...Chandler!
+,,,,,,,
+,,,,,,,1803 Mrs. Geller  Do you know what it's like to grow up with someone who is critical of every single thing you say?
+,,,,,,,1804 Monica  ...I can imagine.
+,,,,,,,"1805 Mrs. Geller  I'm telling you, it's a wonder your mother turned out to be the positive, life-affirming person that she is."
+,,,,,,,"1806 Monica  That is a wonder. So tell me something, Mom. If you had to do it all over again, I mean, if she was here right now, would you tell her?"
+,,,,,,,1807 Mrs. Geller  Tell her what?
+,,,,,,,
+,,,,,,,"1831 Rachel  Terry, I, I, I know that I haven't worked here very long, but I was wondering, do you think it would be possible if I got a $100 advance in my salary?"
+,,,,,,,1832 Terry  An advance?
+,,,,,,,"1833 Rachel  It's so that I can spend Thanksgiving with my family. See, every year we go skiing in Vail, and normally my father pays for my ticket, but I sort of started the whole independence thing, you know, which is actually why I took this job."
+,,,,,,,"1834 Terry  Rachel, Rachel, sweetheart. You're a terrible, terrible waitress. Really, really awful."
+,,,,,,,"1835 Rachel  Ok, I, I hear what you're sayin'. I'm with you. Um, but I, but I'm trying really hard. And I think I'm doing better. I really do. Does anybody need coffee? Oh, look at that."
+,,,,,,,
+,,,,,,,"1914 Chandler  All right, I'm nine years old."
+,,,,,,,"1915 Ross  Oh, I hate this story."
+,,,,,,,"1916 Chandler  We just finished this magnificent Thanksgiving dinner. I have--and I remember this part vividly--a mouthful of pumpkin pie, and this is the moment my parents choose to tell me they're getting divorced."
+,,,,,,,1917 Rachel  Oh my god.
+,,,,,,,1918 Chandler  Yes. It's very difficult to appreciate a Thanksgiving dinner once you've seen it in reverse.
+,,,,,,,
+,,,,,,,"1953 Joey  Hey, Monica, I got a question. I don't see any tater tots."
+,,,,,,,1954 Monica  That's not a question.
+,,,,,,,"1955 Joey  But my mom always makes them. It's like a tradition. You get a little piece of turkey on your fork, a little cranberry sauce, and a tot! It's bad enough I can't be with my family because of my disease."
+,,,,,,,"1956 Monica  All right, fine. Tonight's potatoes will be both mashed with lumps, and in the form of tots."
+,,,,,,,"1957 Ross  Ok, I'm off to talk to my unborn child."
+,,,,,,,
+,,,,,,,"1962 Phoebe  Oh, I'm sorry, oh, I just, I thought we could have them whipped and then add some peas and onions."
+,,,,,,,1963 Monica  Why would we do that?
+,,,,,,,"1964 Phoebe  Well, 'cause then they'd be like my mom used to make them, you know, before she died."
+,,,,,,,"1965 Monica  Ok, three kinds of potatoes coming up."
+,,,,,,,"1966 Rachel  Ok, good-bye you guys. Thanks for everything. Oh, sorry! Oh, sorry!"
+,,,,,,,
+,,,,,,,"2006 Ross  Hey, hey, you're my baby, and I can't wait to meet you. When you come out I'll buy you a bagel, and then we'll go to the zoo."
+,,,,,,,2007 Susan  I felt it!
+,,,,,,,"2008 Ross  Hey, hey, I'm your daddy. I'm the one without any breasts."
+,,,,,,,"2009 Joey  Nope, not that one."
+,,,,,,,2010 Monica  Can you go any faster with that?
+,,,,,,,
+,,,,,,,2069 Monica  Why don't you just get a roommate?
+,,,,,,,"2070 Ross  Nah, I dunno... I think you reach a certain age, having a roommate is kinda pathe- ....sorry, that's, that's 'pathet', which is Sanskrit for 'really cool way to live'."
+,,,,,,,"2071 Phoebe  So you guys, I'm doing all new material tonight. I have twelve new songs about my mother's suicide, and one about a snowman."
+,,,,,,,2072 Chandler  Might wanna open with the snowman.
+,,,,,,,"2073 All  Hey, Joey. Hey, buddy."
+,,,,,,,
+,,,,,,,2277 Rachel  I can't kiss anyone.
+,,,,,,,2278 Monica  So I'm kissing everyone?
+,,,,,,,"2279 Joey  Nonono, you can't kiss Ross, that's your brother."
+,,,,,,,2280 Ross  Perfect. Perfect. So now everybody's getting kissed but me.
+,,,,,,,"2281 Chandler  Alright, somebody kiss me. Somebody kiss me, it's midnight! Somebody kiss me!"
+,,,,,,,
+,,,,,,,"2315 Chandler  Y'know, we don't have to watch this. Weekend At Bernie's is on Showtime, HBO, and Cinemax."
+,,,,,,,"2316 Rachel  No way, forget it."
+,,,,,,,"2317 Joey  C'mon, she's your mom!"
+,,,,,,,"2318 Chandler  Exactly. Weekend At Bernie's! Dead guy getting hit in the groin twenty, thirty times! No?"
+,,,,,,,"2319 Rachel  Chandler, I gotta tell you, I love your mom's books! I love her books! I cannot get on a plane without one! I mean, this is so cool!"
+,,,,,,,
+,,,,,,,"2317 Joey  C'mon, she's your mom!"
+,,,,,,,"2318 Chandler  Exactly. Weekend At Bernie's! Dead guy getting hit in the groin twenty, thirty times! No?"
+,,,,,,,"2319 Rachel  Chandler, I gotta tell you, I love your mom's books! I love her books! I cannot get on a plane without one! I mean, this is so cool!"
+,,,,,,,"2320 Chandler  Yeah, well, you wouldn't think it was cool if you're eleven years old and all your friends are passing around page 79 of 'Mistress Bitch.'"
+,,,,,,,"2321 Ross  C'mon, Chandler, I love your mom. I think she's a blast."
+,,,,,,,
+,,,,,,,"2319 Rachel  Chandler, I gotta tell you, I love your mom's books! I love her books! I cannot get on a plane without one! I mean, this is so cool!"
+,,,,,,,"2320 Chandler  Yeah, well, you wouldn't think it was cool if you're eleven years old and all your friends are passing around page 79 of 'Mistress Bitch.'"
+,,,,,,,"2321 Ross  C'mon, Chandler, I love your mom. I think she's a blast."
+,,,,,,,2322 Chandler  You can say that because she's not your mom.
+,,,,,,,"2323 Ross  Oh, please..."
+,,,,,,,
+,,,,,,,"2320 Chandler  Yeah, well, you wouldn't think it was cool if you're eleven years old and all your friends are passing around page 79 of 'Mistress Bitch.'"
+,,,,,,,"2321 Ross  C'mon, Chandler, I love your mom. I think she's a blast."
+,,,,,,,2322 Chandler  You can say that because she's not your mom.
+,,,,,,,"2323 Ross  Oh, please..."
+,,,,,,,2324 Paolo  Bona sera.
+,,,,,,,
+,,,,,,,2338 Chandler  THAT'S TOO MUCH INFORMATION!!
+,,,,,,,"2339 Jay Leno  Alright, so now you're doing this whole book tour thing, how is that going?"
+,,,,,,,"2340 Mrs. Bing  Oh, fine. I'm leaving for New York tomorrow, which I hate- but I get to see my son, who I love..."
+,,,,,,,2341 All  Awww!
+,,,,,,,2342 Chandler  This is the way that I find out. Most moms use the phone.
+,,,,,,,
+,,,,,,,2342 Chandler  This is the way that I find out. Most moms use the phone.
+,,,,,,,"2343 Jay Leno  Y'know, don't take this wrong, I-I just don't see you a-as a mom, somehow.. I don't mean that, I don't mean that bad..."
+,,,,,,,"2344 Mrs. Bing  Oh no, I am a fabulous mom! I bought my son his first condoms."
+,,,,,,,2345 Chandler  ...And then he burst into flames.
+,,,,,,,"2346 Monica  Let's see. Congress is debating a new deficit reduction bill... the mayor wants to raise subway fares again... the high today was forty-five... and- oh, teams played sports."
+,,,,,,,
+,,,,,,,"2406 Joey  Ross, how could you let this happen?"
+,,,,,,,"2407 Ross  I don't know, God, I... well, it's not like she's a regular mom, y'know? She's, she's sexy, she's..."
+,,,,,,,2408 Joey  You don't think my mom's sexy?
+,,,,,,,2409 Ross  Well... not in the same way...
+,,,,,,,"2410 Joey  I'll have you know that Gloria Tribbiani was a handsome woman in her day, alright? You think it's easy giving birth to seven children?"
+,,,,,,,
+,,,,,,,2422 Joey  So are you gonna tell him?
+,,,,,,,2423 Ross  Why would I tell him?
+,,,,,,,"2424 Joey  How about 'cause if you don't, his mother might."
+,,,,,,,2425 Ross  Oh...
+,,,,,,,2426 Monica  What are you guys doing here?
+,,,,,,,
+,,,,,,,2437 Chandler  Oh my God.
+,,,,,,,2438 Ross  You're my friend. I-I had to tell you.
+,,,,,,,2439 Chandler  I can't believe it. Paolo kissed my mom?
+,,,,,,,"2440 Ross  Yeah, um, I don't know if you noticed, but he had a lot to drink, and you know how he gets when he's drun..uh... I can't do this, I did it, it was me, I'm sorry, I kissed your mom."
+,,,,,,,2441 Chandler  What?
+,,,,,,,
+,,,,,,,2438 Ross  You're my friend. I-I had to tell you.
+,,,,,,,2439 Chandler  I can't believe it. Paolo kissed my mom?
+,,,,,,,"2440 Ross  Yeah, um, I don't know if you noticed, but he had a lot to drink, and you know how he gets when he's drun..uh... I can't do this, I did it, it was me, I'm sorry, I kissed your mom."
+,,,,,,,2441 Chandler  What?
+,,,,,,,"2442 Ross  I was really upset about Rachel and Paolo, and I think I had too much tequila, and Nora- um, Mrs. Mom- your Bing- was just being nice, y'know, and- But nothing happened, nothing- Ask Joey, Joey, uh, came in-"
+,,,,,,,
+,,,,,,,2448 Chandler  I can't believe this! What the hell were you thinking?
+,,,,,,,"2449 Ross  I wasn't- I mean, I-"
+,,,,,,,"2450 Chandler  Y'know, of all my friends, no-one knows the crap I go through with my mom more than you."
+,,,,,,,2451 Ross  I know-
+,,,,,,,2452 Chandler  I can't believe you did this.
+,,,,,,,
+,,,,,,,"2475 Phoebe  Okay, maybe it was a trick question. Um, Rachel can we do this now?"
+,,,,,,,2476 Rachel  Okay. I am so hot!
+,,,,,,,"2477 Joey  Now, here's a picture of my mother and father on their wedding day. Now you tell me she's not a knockout."
+,,,,,,,2478 Ross  I cannot believe we're having this conversation.
+,,,,,,,"2479 Joey  C'mon! Just try to picture her not pregnant, that's all."
+,,,,,,,
+,,,,,,,"2487 Chandler  Yes, well, I expect this from her. Okay? She's always been a Freudian nightmare."
+,,,,,,,"2488 Ross  Okay, well, if she always behaves like this, why don't you say something?"
+,,,,,,,"2489 Chandler  Because it's complicated, it's complex- Hey, you kissed my mom!"
+,,,,,,,2490 Ross  We're rehearsing a Greek play.
+,,,,,,,2491 Chandler  That's very funny. We done now?
+,,,,,,,
+,,,,,,,2491 Chandler  That's very funny. We done now?
+,,,,,,,"2492 Ross  No! Okay, you mean, you're not gonna talk to her, you're not gonna tell her how you feel?"
+,,,,,,,"2493 Chandler  That would be no. Look, just because you played tonsil tennis with my mom doesn't mean you know her. Alright? Trust me, you can't talk to her."
+,,,,,,,"2494 Ross  Okay, 'you' can't, or you can't? Okay, that's my finger. That's, that's my knee. Still doing the play. Aaah!"
+,,,,,,,"2495 Phoebe  Alright, whadyou do with him?"
+,,,,,,,
+,,,,,,,2535 Ross  Wow!
+,,,,,,,"2536 Joey  Then she came back with ""The question is, when are you gonna grow up and realise I have a bomb?"""
+,,,,,,,"2537 Ross  'Kay, wait a minute, are you sure she didn't say ""When are you gonna grow up and realise I am your mom?"""
+,,,,,,,2538 Joey  That makes more sense.
+,,,,,,,"2539 Ross  So, what's going on now?"
+,,,,,,,
+,,,,,,,"2554 Ross  Well, howdya feel?"
+,,,,,,,2555 Chandler  Pretty good! I told her.
+,,,,,,,"2556 Ross  Well, see? So, maybe it wasn't such a bad idea, y'know, me kissing your mom, uh? Huh? But.. we don't have to go down that road."
+,,,,,,,"2557 Chandler  No-no-no-no, we're done."
+,,,,,,,"2558 Monica  Aunt Syl, stop yelling! All I'm saying is that if you had told me vegetarian lasagna, I would have made vegetarian lasagna. Well, the meat's only every third layer, maybe you could scrape."
+,,,,,,,
+,,,,,,,"2570 Joey, Chandler, and Ross  Mma, Mma, Mmaah"
+,,,,,,,"2571 Monica  So, did I hear Poconos?"
+,,,,,,,"2572 Rachel  Yes, my sister's giving us her place for the weekend."
+,,,,,,,"2573 Phoebe  Woo-hoo, first weekend away together!"
+,,,,,,,"2574 Monica  Yeah, that's a big step."
+,,,,,,,
+,,,,,,,"2840 Chandler  Uhhuh, how did you know that?"
+,,,,,,,2841 Roger  It's textbook.
+,,,,,,,"2842 Joey  Hey you guys. Hey, you all know my dad, right?"
+,,,,,,,"2843 All  Hey! Hey, Mr. Trib!"
+,,,,,,,"2844 Monica  Hey, how long are you in the city?"
+,,,,,,,
+,,,,,,,2861 Mr. Tribbiani  Then y'haven't. You're burning your tomatoes.
+,,,,,,,2862 Joey  You're one to talk.
+,,,,,,,"2863 Mr. Tribbiani  Joe, your dad's in love big time. And the worst part of it is, it's with two different women."
+,,,,,,,2864 Joey  Oh man. Please tell me one of 'em is Ma.
+,,,,,,,"2865 Mr. Tribbiani  Of course, course one of 'em's Ma. What's the matter with you."
+,,,,,,,
+,,,,,,,2864 Joey  Oh man. Please tell me one of 'em is Ma.
+,,,,,,,"2865 Mr. Tribbiani  Of course, course one of 'em's Ma. What's the matter with you."
+,,,,,,,"2866 Joey  It's like if you woke up one day and found out your dad was leading this double life. He's like actually some spy, working for the C.I.A. That'd be cool.... This blows!"
+,,,,,,,"2867 Rachel  I know, I mean, why can't parents just stay parents? Why do they have to become people? Why do they have... Why can't you stop staring at my breasts?"
+,,,,,,,2868 Chandler  What? What?
+,,,,,,,
+,,,,,,,"2946 Joey  I've been thinking. Y'know, about how I'm always seeing girls on top of girls..."
+,,,,,,,"2947 Chandler  Are they end to end, or tall like pancakes?"
+,,,,,,,"2948 Joey  Y'know what I mean, about how I'm always going out with all these women. And I always figured, when the right one comes along, I'd be able to be a stand-up guy and go the distance, y'know? Now I'm looking at my dad, thinking..."
+,,,,,,,"2949 Chandler  Hey, you're not him. You're you. When they were all over you to go into your father's pipe-fitting business, did you cave?"
+,,,,,,,2950 Joey  No.

@@ -1,0 +1,4 @@
+Name,ID,Gender,Pronouns,Path,Real=1/False=0
+Basit,60,Gender fluid,They/them,sample_data\Basit.png,1
+Justin,63,Male,He/him,sample_data\Justin.jpg,1
+Amber,71,Female,She/her,sample_data\Amber.jpg,1
