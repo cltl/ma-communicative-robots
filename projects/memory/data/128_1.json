@@ -1,0 +1,5712 @@
+{
+    "val": [
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's bench",
+                    "AtLocation",
+                    "Mary's city",
+                    1000942752.4013371
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "city",
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bench",
+                    "AtLocation",
+                    "John's building",
+                    1001029152.4014323
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's boat",
+                    "AtLocation",
+                    "Linda's water",
+                    1001115552.4015353
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's person",
+                    "AtLocation",
+                    "Mary's building",
+                    1001201952.4016287
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "building",
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's car",
+                    "AtLocation",
+                    "James's city",
+                    1001288352.4017291
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's motorcycle",
+                    "AtLocation",
+                    "James's garage",
+                    1001374752.4018202
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's airplane",
+                    "AtLocation",
+                    "John's garden",
+                    1001461152.4019101
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's truck",
+                    "AtLocation",
+                    "John's water",
+                    1001547552.4019983
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's boat",
+                    "AtLocation",
+                    "Mary's zoo",
+                    1001633952.4020855
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "zoo",
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's motorcycle",
+                    "AtLocation",
+                    "James's garage",
+                    1001720352.4021835
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's car",
+                    "AtLocation",
+                    "John's water",
+                    1001806752.4022722
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bicycle",
+                    "AtLocation",
+                    "David's garage",
+                    1001893152.40236
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's train",
+                    "AtLocation",
+                    "John's zoo",
+                    1001979552.4024489
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's airplane",
+                    "AtLocation",
+                    "John's sky",
+                    1002065952.4025369
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's truck",
+                    "AtLocation",
+                    "David's garage",
+                    1002152352.4026258
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's person",
+                    "AtLocation",
+                    "Mary's building",
+                    1002238752.4027159
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's train",
+                    "AtLocation",
+                    "Linda's garden",
+                    1002325152.402806
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's boat",
+                    "AtLocation",
+                    "John's building",
+                    1002411552.4028955
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's bicycle",
+                    "AtLocation",
+                    "Linda's garden",
+                    1002497952.4029858
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's motorcycle",
+                    "AtLocation",
+                    "John's sky",
+                    1002584352.4030778
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bench",
+                    "AtLocation",
+                    "John's garage",
+                    1002670752.4031706
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bicycle",
+                    "AtLocation",
+                    "James's garage",
+                    1002757152.4032624
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garage",
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "bicycle",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "John's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's bicycle",
+                    "AtLocation",
+                    "Linda's sky",
+                    1002929952.4034872
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bicycle",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "sky",
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's truck",
+                    "AtLocation",
+                    "John's garage",
+                    1003016352.4035659
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bicycle",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "John's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garage",
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's bus",
+                    "AtLocation",
+                    "Linda's city",
+                    1003102752.4036727
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bicycle",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "city",
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's bench",
+                    "AtLocation",
+                    "Linda's zoo",
+                    1003189152.4037783
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bicycle",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "John's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bicycle",
+                    "AtLocation",
+                    "James's city",
+                    1003275552.4038789
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bicycle",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "John's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's truck",
+                    "AtLocation",
+                    "Mary's sky",
+                    1003361952.4039788
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bicycle",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's motorcycle",
+                    "AtLocation",
+                    "Linda's garage",
+                    1003448352.4040804
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bicycle",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "John's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's boat",
+                    "AtLocation",
+                    "John's water",
+                    1003534752.4041824
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bicycle",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's airplane",
+                    "AtLocation",
+                    "Mary's sky",
+                    1003707552.4044175
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's person",
+                    "AtLocation",
+                    "Linda's water",
+                    1003793952.4044924
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "James's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's boat",
+                    "AtLocation",
+                    "John's city",
+                    1003880352.4045963
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "John's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's motorcycle",
+                    "AtLocation",
+                    "David's garage",
+                    1003966752.4046996
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "John's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "water",
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's airplane",
+                    "AtLocation",
+                    "James's sky",
+                    1004053152.4048104
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "John's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "water",
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's bench",
+                    "AtLocation",
+                    "Linda's garden",
+                    1004139552.4049203
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "James's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's motorcycle",
+                    "AtLocation",
+                    "Mary's garage",
+                    1004225952.4050367
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's bench",
+                    "AtLocation",
+                    "Linda's zoo",
+                    1004312352.4051449
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "John's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's train",
+                    "AtLocation",
+                    "Mary's zoo",
+                    1004398752.405252
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's person",
+                    "AtLocation",
+                    "David's building",
+                    1004485152.4053586
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bicycle",
+                    "AtLocation",
+                    "David's garage",
+                    1004571552.4054668
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "John's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's person",
+                    "AtLocation",
+                    "Linda's building",
+                    1004657952.4055758
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "building",
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's truck",
+                    "AtLocation",
+                    "John's building",
+                    1004830752.4058256
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's train",
+                    "AtLocation",
+                    "Linda's zoo",
+                    1004917152.4059062
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "John's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's bicycle",
+                    "AtLocation",
+                    "Mary's water",
+                    1005003552.4060154
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's truck",
+                    "AtLocation",
+                    "Linda's building",
+                    1005089952.4061239
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's truck",
+                    "AtLocation",
+                    "James's city",
+                    1005176352.4062335
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's motorcycle",
+                    "AtLocation",
+                    "David's garage",
+                    1005262752.4063413
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "John's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's bench",
+                    "AtLocation",
+                    "Linda's garden",
+                    1005349152.4064505
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garden",
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bench",
+                    "AtLocation",
+                    "James's city",
+                    1005435552.4065647
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's boat",
+                    "AtLocation",
+                    "David's water",
+                    1005521952.4066739
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bus",
+                    "AtLocation",
+                    "James's sky",
+                    1005608352.4067836
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bench",
+                    "AtLocation",
+                    "John's garden",
+                    1005694752.4068944
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's bicycle",
+                    "AtLocation",
+                    "Mary's garage",
+                    1005781152.4070055
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's boat",
+                    "AtLocation",
+                    "John's garage",
+                    1005867552.4071159
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's motorcycle",
+                    "AtLocation",
+                    "James's garage",
+                    1005953952.4072258
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "James's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bus",
+                    "AtLocation",
+                    "David's sky",
+                    1006040352.4073374
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's bench",
+                    "AtLocation",
+                    "Mary's water",
+                    1006126752.4074495
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's car",
+                    "AtLocation",
+                    "John's city",
+                    1006213152.4075646
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "building",
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's airplane",
+                    "AtLocation",
+                    "Mary's sky",
+                    1006299552.4076836
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's car",
+                    "AtLocation",
+                    "Mary's water",
+                    1006385952.407798
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's boat",
+                    "AtLocation",
+                    "Mary's zoo",
+                    1006472352.4079118
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's airplane",
+                    "AtLocation",
+                    "David's garage",
+                    1006558752.4080265
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "John's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's boat",
+                    "AtLocation",
+                    "John's water",
+                    1006645152.408143
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's airplane",
+                    "AtLocation",
+                    "David's sky",
+                    1006731552.4082594
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's boat",
+                    "AtLocation",
+                    "Mary's water",
+                    1006817952.4083753
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bus",
+                    "AtLocation",
+                    "James's garage",
+                    1006904352.4084902
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's motorcycle",
+                    "AtLocation",
+                    "James's building",
+                    1006990752.4086063
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bus",
+                    "AtLocation",
+                    "David's city",
+                    1007077152.4087224
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's car",
+                    "AtLocation",
+                    "John's sky",
+                    1007163552.4088385
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's truck",
+                    "AtLocation",
+                    "David's garage",
+                    1007249952.4089706
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "James's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's train",
+                    "AtLocation",
+                    "John's zoo",
+                    1007336352.409091
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "John's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "zoo",
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's car",
+                    "AtLocation",
+                    "James's building",
+                    1007422752.4092157
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's motorcycle",
+                    "AtLocation",
+                    "James's garage",
+                    1007509152.4093368
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "John's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's boat",
+                    "AtLocation",
+                    "Mary's garden",
+                    1007595552.4094558
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bus",
+                    "AtLocation",
+                    "James's building",
+                    1007681952.4095733
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's motorcycle",
+                    "AtLocation",
+                    "David's garage",
+                    1007768352.4096925
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's train",
+                    "AtLocation",
+                    "Mary's zoo",
+                    1007854752.4098108
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's bus",
+                    "AtLocation",
+                    "Mary's city",
+                    1007941152.4099302
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "John's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's boat",
+                    "AtLocation",
+                    "John's water",
+                    1008027552.4100516
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "James's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's person",
+                    "AtLocation",
+                    "Linda's building",
+                    1008113952.4101732
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "James's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's motorcycle",
+                    "AtLocation",
+                    "Mary's garage",
+                    1008200352.4102967
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's airplane",
+                    "AtLocation",
+                    "Mary's city",
+                    1008286752.4104223
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's train",
+                    "AtLocation",
+                    "Mary's zoo",
+                    1008373152.4105456
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bench",
+                    "AtLocation",
+                    "David's garden",
+                    1008459552.410667
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's train",
+                    "AtLocation",
+                    "Linda's garden",
+                    1008545952.41079
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's train",
+                    "AtLocation",
+                    "David's sky",
+                    1008632352.410913
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's person",
+                    "AtLocation",
+                    "Mary's building",
+                    1008718752.4110363
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bus",
+                    "AtLocation",
+                    "David's garage",
+                    1008805152.4111586
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "John's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bus",
+                    "AtLocation",
+                    "James's city",
+                    1008891552.4112816
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "building",
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bench",
+                    "AtLocation",
+                    "David's garden",
+                    1008977952.4114106
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's boat",
+                    "AtLocation",
+                    "James's water",
+                    1009064352.4115355
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "John's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's motorcycle",
+                    "AtLocation",
+                    "David's garage",
+                    1009150752.4116602
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "James's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's truck",
+                    "AtLocation",
+                    "Linda's zoo",
+                    1009237152.4117863
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "James's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's airplane",
+                    "AtLocation",
+                    "David's sky",
+                    1009323552.4119134
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "James's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's motorcycle",
+                    "AtLocation",
+                    "James's garage",
+                    1009409952.4120405
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "building",
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's airplane",
+                    "AtLocation",
+                    "David's sky",
+                    1009496352.4121726
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "James's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's person",
+                    "AtLocation",
+                    "John's sky",
+                    1009582752.4122992
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "James's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's truck",
+                    "AtLocation",
+                    "David's garage",
+                    1009669152.4124274
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's person",
+                    "AtLocation",
+                    "David's building",
+                    1009755552.4125555
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "John's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "Mary's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's motorcycle",
+                    "AtLocation",
+                    "John's garden",
+                    1009928352.4128804
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "James's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's airplane",
+                    "AtLocation",
+                    "John's sky",
+                    1010014752.4129965
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "David's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's airplane",
+                    "AtLocation",
+                    "John's city",
+                    1010101152.4131362
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "James's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's boat",
+                    "AtLocation",
+                    "John's water",
+                    1010187552.4132721
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "James's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's boat",
+                    "AtLocation",
+                    "James's zoo",
+                    1010273952.413404
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "John's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's truck",
+                    "AtLocation",
+                    "James's city",
+                    1010360352.4135349
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "Mary's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's airplane",
+                    "AtLocation",
+                    "David's garden",
+                    1010446752.4136655
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "James's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's boat",
+                    "AtLocation",
+                    "Mary's zoo",
+                    1010533152.4137952
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "Mary's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bus",
+                    "AtLocation",
+                    "John's sky",
+                    1010619552.4139245
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "David's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's motorcycle",
+                    "AtLocation",
+                    "James's garage",
+                    1010705952.4140549
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "Mary's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "David's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "building",
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's person",
+                    "AtLocation",
+                    "Linda's building",
+                    1010878752.4143591
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "Linda's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "building",
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's bus",
+                    "AtLocation",
+                    "Linda's city",
+                    1010965152.4144704
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "Linda's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's boat",
+                    "AtLocation",
+                    "David's water",
+                    1011051552.4146061
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "Linda's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's person",
+                    "AtLocation",
+                    "David's building",
+                    1011137952.4147396
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "Linda's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "building",
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bicycle",
+                    "AtLocation",
+                    "James's garage",
+                    1011224352.4148769
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "David's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's truck",
+                    "AtLocation",
+                    "Mary's sky",
+                    1011310752.4150102
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "John's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's motorcycle",
+                    "AtLocation",
+                    "David's city",
+                    1011397152.4151444
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "John's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's person",
+                    "AtLocation",
+                    "James's building",
+                    1011483552.4152765
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "David's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's boat",
+                    "AtLocation",
+                    "David's garage",
+                    1011569952.415411
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "David's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's car",
+                    "AtLocation",
+                    "James's sky",
+                    1011656352.4155447
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "David's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's person",
+                    "AtLocation",
+                    "Mary's building",
+                    1011742752.4156792
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "Mary's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's boat",
+                    "AtLocation",
+                    "Linda's water",
+                    1011829152.4158163
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "Mary's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "building",
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bicycle",
+                    "AtLocation",
+                    "David's garage",
+                    1011915552.4159613
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    4
+                ]
+            ],
+            "question": [
+                "David's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        }
+    ],
+    "test": [
+        {
+            "episodic_memory_system": [
+                [
+                    "David's airplane",
+                    "AtLocation",
+                    "David's city",
+                    1000942752.4161382
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "city",
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bench",
+                    "AtLocation",
+                    "John's sky",
+                    1001029152.4162114
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "sky",
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's truck",
+                    "AtLocation",
+                    "David's sky",
+                    1001115552.416312
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's airplane",
+                    "AtLocation",
+                    "Mary's garden",
+                    1001201952.4164004
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's train",
+                    "AtLocation",
+                    "David's zoo",
+                    1001288352.4164894
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's train",
+                    "AtLocation",
+                    "John's garden",
+                    1001374752.416579
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's airplane",
+                    "AtLocation",
+                    "Mary's zoo",
+                    1001461152.4166677
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's bench",
+                    "AtLocation",
+                    "Linda's zoo",
+                    1001547552.4167552
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's airplane",
+                    "AtLocation",
+                    "James's garden",
+                    1001633952.4168429
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's person",
+                    "AtLocation",
+                    "John's building",
+                    1001720352.4169328
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's airplane",
+                    "AtLocation",
+                    "Mary's sky",
+                    1001806752.417033
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bench",
+                    "AtLocation",
+                    "James's garden",
+                    1001893152.4171245
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's airplane",
+                    "AtLocation",
+                    "John's sky",
+                    1001979552.4172249
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bench",
+                    "AtLocation",
+                    "John's garage",
+                    1002065952.4173167
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's motorcycle",
+                    "AtLocation",
+                    "John's city",
+                    1002152352.4174054
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bench",
+                    "AtLocation",
+                    "James's zoo",
+                    1002238752.4174955
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's train",
+                    "AtLocation",
+                    "David's zoo",
+                    1002325152.4175849
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's motorcycle",
+                    "AtLocation",
+                    "Mary's building",
+                    1002411552.4176745
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's motorcycle",
+                    "AtLocation",
+                    "David's sky",
+                    1002497952.418313
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's truck",
+                    "AtLocation",
+                    "David's garage",
+                    1002584352.4185834
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bicycle",
+                    "AtLocation",
+                    "John's city",
+                    1002670752.4187365
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "David's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's bus",
+                    "AtLocation",
+                    "Mary's city",
+                    1002757152.4188311
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "city",
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's motorcycle",
+                    "AtLocation",
+                    "Linda's garage",
+                    1002843552.4189351
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's airplane",
+                    "AtLocation",
+                    "Linda's sky",
+                    1002929952.4190292
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's train",
+                    "AtLocation",
+                    "Mary's garage",
+                    1003016352.4191232
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's motorcycle",
+                    "AtLocation",
+                    "John's garage",
+                    1003102752.4192178
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bench",
+                    "AtLocation",
+                    "David's garden",
+                    1003189152.4193127
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bicycle",
+                    "AtLocation",
+                    "James's garage",
+                    1003275552.4194098
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Mary's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's bicycle",
+                    "AtLocation",
+                    "Mary's city",
+                    1003361952.4195075
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bus",
+                    "AtLocation",
+                    "John's garage",
+                    1003448352.4196043
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Linda's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's car",
+                    "AtLocation",
+                    "John's city",
+                    1003534752.4196999
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "James's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's person",
+                    "AtLocation",
+                    "David's building",
+                    1003621152.4197953
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "John's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's train",
+                    "AtLocation",
+                    "Linda's sky",
+                    1003793952.4203613
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "John's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's truck",
+                    "AtLocation",
+                    "John's building",
+                    1003880352.4204977
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "building",
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's bench",
+                    "AtLocation",
+                    "Mary's garden",
+                    1003966752.4206164
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "John's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's train",
+                    "AtLocation",
+                    "David's zoo",
+                    1004053152.4207263
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "zoo",
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's motorcycle",
+                    "AtLocation",
+                    "David's garage",
+                    1004139552.420841
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bus",
+                    "AtLocation",
+                    "James's city",
+                    1004225952.4209533
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's car",
+                    "AtLocation",
+                    "David's water",
+                    1004312352.421063
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's boat",
+                    "AtLocation",
+                    "James's city",
+                    1004398752.4211698
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's motorcycle",
+                    "AtLocation",
+                    "Linda's garage",
+                    1004485152.4212766
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's bicycle",
+                    "AtLocation",
+                    "Mary's zoo",
+                    1004571552.4213853
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bicycle",
+                    "AtLocation",
+                    "David's garage",
+                    1004657952.4214942
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "building",
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's train",
+                    "AtLocation",
+                    "John's zoo",
+                    1004744352.4216073
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "John's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's bus",
+                    "AtLocation",
+                    "Linda's city",
+                    1004917152.4218571
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's motorcycle",
+                    "AtLocation",
+                    "David's sky",
+                    1005003552.4219418
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "James's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bench",
+                    "AtLocation",
+                    "David's garden",
+                    1005089952.4220538
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's bus",
+                    "AtLocation",
+                    "David's city",
+                    1005176352.4221649
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "John's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's train",
+                    "AtLocation",
+                    "Mary's zoo",
+                    1005262752.4222777
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "John's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bench",
+                    "AtLocation",
+                    "John's garden",
+                    1005349152.422389
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's train",
+                    "AtLocation",
+                    "James's zoo",
+                    1005435552.4224982
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "building",
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bench",
+                    "AtLocation",
+                    "John's garden",
+                    1005521952.422616
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's bench",
+                    "AtLocation",
+                    "Linda's city",
+                    1005608352.4227278
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "building",
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's airplane",
+                    "AtLocation",
+                    "John's sky",
+                    1005694752.4228454
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "James's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "James's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's motorcycle",
+                    "AtLocation",
+                    "James's water",
+                    1005867552.4231021
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's truck",
+                    "AtLocation",
+                    "David's water",
+                    1005953952.4231877
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "James's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's person",
+                    "AtLocation",
+                    "David's city",
+                    1006040352.4233024
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's person",
+                    "AtLocation",
+                    "Mary's zoo",
+                    1006126752.4234147
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's truck",
+                    "AtLocation",
+                    "John's building",
+                    1006213152.4235282
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's person",
+                    "AtLocation",
+                    "James's building",
+                    1006299552.4236424
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "James's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "building",
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's train",
+                    "AtLocation",
+                    "John's zoo",
+                    1006385952.4237638
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's car",
+                    "AtLocation",
+                    "Mary's city",
+                    1006472352.423881
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "James's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's train",
+                    "AtLocation",
+                    "David's zoo",
+                    1006558752.4239991
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's bench",
+                    "AtLocation",
+                    "Linda's building",
+                    1006645152.4241152
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's motorcycle",
+                    "AtLocation",
+                    "Linda's garage",
+                    1006731552.4242337
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bus",
+                    "AtLocation",
+                    "John's garden",
+                    1006817952.4243507
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's airplane",
+                    "AtLocation",
+                    "James's sky",
+                    1006904352.4244683
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's train",
+                    "AtLocation",
+                    "David's zoo",
+                    1006990752.4245868
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "David's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bench",
+                    "AtLocation",
+                    "James's garden",
+                    1007077152.4247057
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "building",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "John's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's motorcycle",
+                    "AtLocation",
+                    "David's garage",
+                    1007249952.4249926
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "John's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garden",
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's bench",
+                    "AtLocation",
+                    "Mary's garden",
+                    1007336352.4251599
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "James's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garden",
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's person",
+                    "AtLocation",
+                    "Mary's building",
+                    1007422752.4252887
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "David's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's truck",
+                    "AtLocation",
+                    "David's garage",
+                    1007509152.425411
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "David's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's car",
+                    "AtLocation",
+                    "Linda's city",
+                    1007595552.4255316
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's person",
+                    "AtLocation",
+                    "David's zoo",
+                    1007681952.4256523
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garden",
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's airplane",
+                    "AtLocation",
+                    "Mary's building",
+                    1007768352.4257762
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "John's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garden",
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's car",
+                    "AtLocation",
+                    "Linda's city",
+                    1007854752.4258993
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's motorcycle",
+                    "AtLocation",
+                    "Mary's garage",
+                    1007941152.4260187
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "James's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's bus",
+                    "AtLocation",
+                    "Mary's sky",
+                    1008027552.4261386
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "James's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bicycle",
+                    "AtLocation",
+                    "James's garage",
+                    1008113952.4262578
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "James's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's boat",
+                    "AtLocation",
+                    "James's building",
+                    1008200352.4263778
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "John's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's truck",
+                    "AtLocation",
+                    "John's zoo",
+                    1008286752.4264987
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "James's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's bench",
+                    "AtLocation",
+                    "Linda's garden",
+                    1008373152.4266195
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "David's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's car",
+                    "AtLocation",
+                    "David's city",
+                    1008459552.4267402
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bench",
+                    "AtLocation",
+                    "John's zoo",
+                    1008545952.4268599
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "James's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's person",
+                    "AtLocation",
+                    "James's building",
+                    1008632352.426981
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's bicycle",
+                    "AtLocation",
+                    "Linda's water",
+                    1008718752.4271028
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "James's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's truck",
+                    "AtLocation",
+                    "Linda's garage",
+                    1008805152.4272263
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "John's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's boat",
+                    "AtLocation",
+                    "John's garage",
+                    1008891552.4273524
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garden",
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's person",
+                    "AtLocation",
+                    "James's building",
+                    1008977952.4274852
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's boat",
+                    "AtLocation",
+                    "Linda's water",
+                    1009064352.4276116
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's car",
+                    "AtLocation",
+                    "Mary's garage",
+                    1009150752.4277387
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bench",
+                    "AtLocation",
+                    "John's garden",
+                    1009237152.4278648
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's car",
+                    "AtLocation",
+                    "John's city",
+                    1009323552.4279916
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "David's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "John's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's airplane",
+                    "AtLocation",
+                    "John's building",
+                    1009496352.4283171
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's bench",
+                    "AtLocation",
+                    "Linda's building",
+                    1009582752.4284189
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's car",
+                    "AtLocation",
+                    "John's city",
+                    1009669152.42855
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "John's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garden",
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's airplane",
+                    "AtLocation",
+                    "Mary's sky",
+                    1009755552.428684
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "David's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's person",
+                    "AtLocation",
+                    "James's water",
+                    1009841952.428812
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bench",
+                    "AtLocation",
+                    "James's city",
+                    1009928352.4289389
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's person",
+                    "AtLocation",
+                    "Linda's water",
+                    1010014752.4290733
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "James's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's boat",
+                    "AtLocation",
+                    "Mary's water",
+                    1010101152.4292011
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "James's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's bicycle",
+                    "AtLocation",
+                    "Mary's water",
+                    1010187552.429332
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "David's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's boat",
+                    "AtLocation",
+                    "James's garden",
+                    1010273952.4294608
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "David's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's motorcycle",
+                    "AtLocation",
+                    "John's garage",
+                    1010360352.4295897
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "John's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's airplane",
+                    "AtLocation",
+                    "James's sky",
+                    1010446752.4297206
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "John's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "building"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's person",
+                    "AtLocation",
+                    "James's building",
+                    1010533152.429851
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "David's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's motorcycle",
+                    "AtLocation",
+                    "Linda's sky",
+                    1010619552.4299824
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "John's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's car",
+                    "AtLocation",
+                    "Mary's garage",
+                    1010705952.4301119
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's person",
+                    "AtLocation",
+                    "John's zoo",
+                    1010792352.430248
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "John's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "zoo",
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bicycle",
+                    "AtLocation",
+                    "John's building",
+                    1010878752.4303882
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "James's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garden",
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's bench",
+                    "AtLocation",
+                    "Mary's garden",
+                    1010965152.4305267
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "David's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's train",
+                    "AtLocation",
+                    "Linda's zoo",
+                    1011051552.4306617
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "John's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Linda's boat",
+                    "AtLocation",
+                    "Linda's water",
+                    1011137952.4307966
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bench",
+                    "AtLocation",
+                    "James's garden",
+                    1011224352.430934
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's person",
+                    "AtLocation",
+                    "James's garden",
+                    1011310752.4310672
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's bench",
+                    "AtLocation",
+                    "James's garden",
+                    1011397152.4312031
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's truck",
+                    "AtLocation",
+                    "John's garage",
+                    1011483552.43134
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bus",
+                    "AtLocation",
+                    "John's city",
+                    1011569952.4314768
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "David's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "zoo"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "David's boat",
+                    "AtLocation",
+                    "David's sky",
+                    1011656352.4316096
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Linda's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "John's bus",
+                    "AtLocation",
+                    "John's city",
+                    1011742752.4317486
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "James's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garden"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Mary's airplane",
+                    "AtLocation",
+                    "Mary's sky",
+                    1011829152.4323852
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "David's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "city"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "James's motorcycle",
+                    "AtLocation",
+                    "James's garage",
+                    1011915552.4325347
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "garden",
+                    2
+                ]
+            ],
+            "question": [
+                "Mary's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        }
+    ],
+    "max_history": 128,
+    "capacity": 1,
+    "rewards": {
+        "val": 17,
+        "test": 16
+    },
+    "accuracy": {
+        "val": 0.1328125,
+        "test": 0.125
+    }
+}
