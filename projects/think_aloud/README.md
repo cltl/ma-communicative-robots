@@ -1,6 +1,6 @@
 # Project Think Aloud
 
-This repository contains a modified version of the [_Leolani platform_](https://github.com/leolani) as used in the _Think Aloud_ project for the _Communicative Robots_ Course at the Vrije Universiteit (VU).
+This repository contains the code base of the _Think Aloud_ project for the _Communicative Robots_ Course at the Vrije Universiteit (VU).
 
 In this repository, we provide alternatives to the random _thought_ selection mechanism implemented by Leolani V2, allowing the robot to learn which of her thoughts to verbalize in order to maximize dialogue coherence and optimally attain new knowledge about her environment. To choose between thoughts, several methods are proposed;
 
