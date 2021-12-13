@@ -10,3 +10,9 @@ In this repository, we provide alternatives to the random _thought_ selection me
 | Corpus statistics    | Entities and predicates mentioned in each thought are scored according to their frequency in some text corpus. Thoughts within a frequency intervals are then selected randomly. Three different strategies were examined based on low (smaller than ? percentile), medium (between ? and ? percentile) and high frequency (exceeding ? percentile) | Imme |
 | Reinforcement learning | In this approach thought selection is learnt in an online manner through interaction using an intrinsic reward function based on the number of learned facts as a result of selecting a thought. To select a thought, a score in computed for each thought based on the utility of entities/predicates it mentions; the thought with the highest utility is then selected. | Thomas |
 | Next sentence prediction | Thought selection is framed as a prediction problem in which responses by the replier are scored based on the likelihood of them being good continuations of the dialogue. | Thomas |
+
+The implementations can be found in their respective folders.
+
+## Evaluation
+
+Evaluation of the proposed methods is performed in two steps; a manual evaluation based on response criteria, such as *engagement*, *semantic appropriateness* and *relevance*, and an automatic evaluation using [USR](https://github.com/Shikib/usr). You can find a re-implementation of USR and the evaluation dataset in ```/evalution```.
