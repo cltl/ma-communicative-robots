@@ -1,0 +1,11 @@
+cltl.brain
+cltl.backend[impl,host]
+cltl.reply-generation
+cltl.triple-extraction
+emissor
+spacy
+tqdm
+numpy
+matplotlib
+transformers
+torch
