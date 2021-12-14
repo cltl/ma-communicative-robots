@@ -1,0 +1,91 @@
+,id,context,response,MCtx,engaging,specific,relevant,correct,semantically appropriate
+0,5,Mike also does not like exercising,Let me ask you something. Has mike ever own a agent?,0.6328516602516174,5,3,1,2,2
+1,7,Mike also does not like exercising,Exciting news! I did not know anybody who like exercising,0.9975550174713135,3,4,5,4,5
+2,6,Mike also does not like exercising,I do not believe you.,0.606637716293335,3,2,4,5,5
+3,3,Mike also does not like exercising,If you don't mind me asking. Has mike ever own a person?,0.9981136918067932,5,3,1,2,2
+4,4,Mike also does not like exercising,I would like to know. Has mike ever own a agent?,0.6350852847099304,5,3,1,2,2
+5,2,Mike also does not like exercising,Interesting! I had never heard about mike before!,0.990982711315155,3,3,4,3,5
+6,8,Mike also does not like exercising,I am glad to have learned something new. I did not know anybody who like exercising,0.9972609877586365,3,4,5,4,5
+7,0,Mike also does not like exercising,I did not know that! I had never heard about exercising before!,0.9955703020095825,2,3,4,4,5
+8,1,Mike also does not like exercising,I am glad to have learned something new. I did not know anybody who like exercising,0.9972609877586365,3,4,5,4,5
+9,5,Do you have a car?,I know leolani usually do a car but I do not know this case,0.9926398396492004,1,3,4,1,2
+10,7,Do you have a car?,I know leolani usually do a car but I do not know this case,0.9926398396492004,1,3,4,1,2
+11,6,Do you have a car?,I know leolani usually do a car but I do not know this case,0.9926398396492004,1,3,4,1,2
+12,3,Do you have a car?,I know agent usually do article:indefinite but I do not know this case,0.0023281285539269447,1,3,4,1,2
+13,4,Do you have a car?,I know agent usually do article:indefinite but I do not know this case,0.0023281285539269447,1,3,4,1,2
+14,2,Do you have a car?,I know agent usually do article:indefinite but I do not know this case,0.0023281285539269447,1,3,4,1,2
+15,8,Do you have a car?,I know agent usually do article:indefinite but I do not know this case,0.0023281285539269447,1,3,4,1,2
+16,0,Do you have a car?,I know agent usually do article:indefinite but I do not know this case,0.0023281285539269447,1,3,4,1,2
+17,1,Do you have a car?,I know agent usually do article:indefinite but I do not know this case,0.0023281285539269447,1,3,4,1,2
+18,5,laptops are objects,I am glad to have learned something new. I had never heard about laptops before!,0.9906388521194458,2,5,4,5,5
+19,7,laptops are objects,I am glad to have learned something new. I did not know anybody who be objects,0.9971305727958679,3,3,4,3,2
+20,6,laptops are objects,I am curious. Has laptops ever own a person?,0.9983508586883545,5,5,3,2,2
+21,3,laptops are objects,If you don't mind me asking. Has laptops ever own a agent?,0.9905402660369873,5,4,3,2,2
+22,4,laptops are objects,I would like to know. Has laptops ever own a person?,0.996035635471344,5,5,3,2,2
+23,2,laptops are objects,I am glad to have learned something new. I had never heard about laptops before!,0.9906388521194458,2,3,4,4,5
+24,8,laptops are objects,Interesting! I had never heard about laptops before!,0.9604775309562683,2,3,4,4,5
+25,0,laptops are objects,Let me ask you something. Has laptops ever own a person?,0.9955019354820251,5,4,3,2,2
+26,1,laptops are objects,I just learned something I did not know anybody who be objects,0.9961623549461365,3,3,4,2,2
+27,5,school had a playground,Exciting news! I had never heard about school before!,0.6212332248687744,2,4,4,3,5
+28,7,school had a playground,I did not know that! I had never heard about a playground before!,0.9977811574935913,3,5,5,3,5
+29,6,school had a playground,Exciting news! I did not know anybody who have a playground,0.9976271390914917,2,5,4,2,2
+30,3,school had a playground,I just learned something I had never heard about school before!,0.6292840242385864,3,4,5,3,5
+31,4,school had a playground,I am glad to have learned something new. I did not know anything that school have,0.9933394193649292,2,4,5,4,5
+32,2,school had a playground,Interesting! I did not know anybody who have a playground,0.9975165724754333,2,5,4,2,2
+33,8,school had a playground,Exciting news! I had never heard about a playground before!,0.9975228309631348,3,5,5,3,5
+34,0,school had a playground,Exciting news! I did not know anybody who have a playground,0.9976271390914917,2,5,4,2,2
+35,1,school had a playground,Exciting news! I did not know anybody who have a playground,0.9976271390914917,2,5,4,2,2
+36,5,I love trees,I am curious. Has darrell own object?,0.5939784646034241,3,3,2,1,2
+37,7,I love trees,Let me ask you something. Has a agent ever own trees?,0.9977912902832031,5,5,5,5,5
+38,6,I love trees,I do not believe you.,0.6180217266082764,3,2,5,5,5
+39,3,I love trees,I would like to know. Has darrell ever cook by a dish?,0.03887549415230751,5,3,1,2,2
+40,4,I love trees,I would like to know. Has darrell ever cook by a food?,0.13474078476428986,5,3,1,2,2
+41,2,I love trees,Let me ask you something. Has darrell ever cook by a dish?,0.6109723448753357,5,3,1,2,2
+42,8,I love trees,Interesting! I had never heard about trees before!,0.9960319399833679,2,3,4,3,5
+43,0,I love trees,This is news to me. I did not know anybody who love trees,0.9973000884056091,2,4,5,5,5
+44,1,I love trees,I am glad to have learned something new. I did not know anybody who love trees,0.9969115257263184,2,4,5,5,5
+45,5,You can drive a car,I just learned something I did not know anybody who can drive a car,0.9959403276443481,3,5,5,5,5
+46,7,You can drive a car,I am glad to have learned something new. I had never heard about a car before!,0.9942063093185425,3,3,4,3,5
+47,6,You can drive a car,Interesting! I did not know anybody who can drive a car,0.9965060949325562,3,5,5,5,5
+48,3,You can drive a car,I would like to know. Has leolani ever cook by a dish?,0.02922261692583561,5,2,1,1,2
+49,4,You can drive a car,If you don't mind me asking. Has leolani ever cook by a food?,0.041073355823755264,5,2,1,1,2
+50,2,You can drive a car,This is news to me. I had never heard about I before!,0.8158727884292603,3,1,1,1,2
+51,8,You can drive a car,I just learned something I had never heard about a car before!,0.9909647703170776,3,3,4,3,5
+52,0,You can drive a car,This is news to me. I had never heard about a car before!,0.9943042397499084,3,3,4,3,5
+53,1,You can drive a car,This is news to me. I had never heard about a car before!,0.9943042397499084,3,3,4,3,5
+54,5,She plays hockey,If you don't mind me asking. Has tae perceive sensor?,0.5977500677108765,4,3,1,1,3
+55,7,She plays hockey,I just learned something I did not know anybody who play hockey,0.9982398748397827,3,5,5,5,5
+56,6,She plays hockey,I would like to know. Has tae play sport?,0.6092756986618042,5,5,4,3,5
+57,3,She plays hockey,I would like to know. Has tae ever cook by a dish?,0.5782193541526794,5,4,1,1,2
+58,4,She plays hockey,Let me ask you something. Has tae ever read by a book?,0.6159326434135437,5,4,1,1,2
+59,2,She plays hockey,Interesting! I did not know anything that tae play,0.6078308820724487,3,4,4,4,5
+60,8,She plays hockey,Interesting! I did not know anybody who play hockey,0.9966387152671814,3,4,5,5,5
+61,0,She plays hockey,I would like to know. Has tae play sport?,0.6092756986618042,5,4,4,3,5
+62,1,She plays hockey,I would like to know. Has tae play sport?,0.6092756986618042,5,4,4,3,5
+63,5,VU is a university,I am curious. Has vu perceive sensor?,0.6164805889129639,4,3,1,1,1
+64,7,VU is a university,This is news to me. I had never heard about a university before!,0.9949343204498291,4,3,4,3,5
+65,6,VU is a university,Interesting! I had never heard about vu before!,0.9938449859619141,4,3,4,4,5
+66,3,VU is a university,If you don't mind me asking. Has vu ever cook by a dish?,0.9909011721611023,5,3,1,1,1
+67,4,VU is a university,I am curious. Has vu ever cook by a food?,0.7151951193809509,5,3,1,1,1
+68,2,VU is a university,I would like to know. Has vu ever read by a book?,0.9970693588256836,5,3,1,1,1
+69,8,VU is a university,I would like to know. Has vu work at institution?,0.9976573586463928,5,3,3,1,1
+70,0,VU is a university,I would like to know. Has vu work at institution?,0.9976573586463928,5,3,3,1,1
+71,1,VU is a university,Let me ask you something. Has a agent ever work at a university?,0.9971408843994141,5,4,5,5,5
+72,5,He has not tried a banana,Interesting! I had never heard about a banana before!,0.9960702061653137,3,3,4,3,5
+73,7,He has not tried a banana,This is news to me. I had never heard about lea before!,0.00881743710488081,3,3,2,2,5
+74,6,He has not tried a banana,This is news to me. I did not know anybody who try a banana,0.9975318908691406,3,4,5,5,5
+75,3,He has not tried a banana,If you don't mind me asking. Has a person ever own a banana?,0.9972193837165833,5,4,5,3,5
+76,4,He has not tried a banana,I would like to know. Has a person ever own a banana?,0.997093141078949,5,4,5,3,5
+77,2,He has not tried a banana,This is news to me. I did not know anything that lea try,0.5053650140762329,3,3,2,3,5
+78,8,He has not tried a banana,I did not know that! I had never heard about a banana before!,0.9966896772384644,3,3,4,4,5
+79,0,He has not tried a banana,I am curious. Has a person ever own a banana?,0.9971322417259216,4,4,4,3,5
+80,1,He has not tried a banana,I would like to know. Has a person ever own a banana?,0.997093141078949,4,4,4,3,5
+81,5,Shops were in Berlin,I just learned something I did not know anywhere that shops be in,0.9965654015541077,2,3,5,5,5
+82,7,Shops were in Berlin,Interesting! I had never heard about berlin before!,0.9798807501792908,3,3,4,3,5
+83,6,Shops were in Berlin,Interesting! I had never heard about shops before!,0.636479377746582,3,3,4,4,5
+84,3,Shops were in Berlin,I am curious. Has a person ever born in berlin?,0.9927740693092346,4,4,3,3,5
+85,4,Shops were in Berlin,I am curious. Has a person ever born in berlin?,0.9927740693092346,4,4,3,3,5
+86,2,Shops were in Berlin,I am curious. Has a cuisine ever be from berlin?,0.5756692886352539,4,4,3,3,5
+87,8,Shops were in Berlin,Interesting! I had never heard about berlin before!,0.9798807501792908,3,3,4,3,5
+88,0,Shops were in Berlin,I am curious. Has a person ever born in berlin?,0.9927740693092346,4,4,3,3,5
+89,1,Shops were in Berlin,This is news to me. I had never heard about shops before!,0.9949749112129211,3,3,3,4,5
