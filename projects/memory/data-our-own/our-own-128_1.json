@@ -1,0 +1,5671 @@
+{
+    "val": [
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's bench",
+                    "AtLocation",
+                    "Hidde's highway",
+                    1001909230.2896976
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Hidde's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "highway",
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's bench",
+                    "AtLocation",
+                    "Nihed's garage",
+                    1001995630.2907803
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Hidde's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's boat",
+                    "AtLocation",
+                    "Fajjaaz's university",
+                    1002082030.2919858
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's person",
+                    "AtLocation",
+                    "Hidde's garage",
+                    1002168430.2930341
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Hidde's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garage",
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's car",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1002254830.2939427
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's motorcycle",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1002341230.2946754
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nicole's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's airplane",
+                    "AtLocation",
+                    "Nihed's sky",
+                    1002427630.2953331
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nicole's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's truck",
+                    "AtLocation",
+                    "Nihed's university",
+                    1002514030.2960625
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's boat",
+                    "AtLocation",
+                    "Hidde's water",
+                    1002600430.2978966
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Hidde's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "water",
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's motorcycle",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1002686830.2995319
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Hidde's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's car",
+                    "AtLocation",
+                    "Nihed's university",
+                    1002773230.3004231
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Hidde's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's bicycle",
+                    "AtLocation",
+                    "Taewoon's garage",
+                    1002859630.3028574
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's train",
+                    "AtLocation",
+                    "Nihed's water",
+                    1002946030.3041162
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's airplane",
+                    "AtLocation",
+                    "Nihed's sky",
+                    1003032430.3053498
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's truck",
+                    "AtLocation",
+                    "Taewoon's highway",
+                    1003118830.3060329
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's person",
+                    "AtLocation",
+                    "Hidde's university",
+                    1003205230.3072827
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Taewoon's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's train",
+                    "AtLocation",
+                    "Fajjaaz's sky",
+                    1003291630.308255
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Taewoon's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's boat",
+                    "AtLocation",
+                    "Nihed's garage",
+                    1003378030.309582
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Fajjaaz's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's bicycle",
+                    "AtLocation",
+                    "Fajjaaz's sky",
+                    1003464430.3108208
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nicole's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's motorcycle",
+                    "AtLocation",
+                    "Nihed's station",
+                    1003550830.31183
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Fajjaaz's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's bench",
+                    "AtLocation",
+                    "Nihed's park",
+                    1003637230.3132126
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bicycle",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1003723630.3141224
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nicole's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garage",
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's bicycle",
+                    "AtLocation",
+                    "Fajjaaz's park",
+                    1003810030.3152263
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's bicycle",
+                    "AtLocation",
+                    "Fajjaaz's station",
+                    1003896430.3158517
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Fajjaaz's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "station",
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's truck",
+                    "AtLocation",
+                    "Nihed's highway",
+                    1003982830.3177655
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "highway",
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's bus",
+                    "AtLocation",
+                    "Fajjaaz's station",
+                    1004069230.3188581
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Fajjaaz's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "station",
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's bench",
+                    "AtLocation",
+                    "Fajjaaz's water",
+                    1004155630.3197777
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bicycle",
+                    "AtLocation",
+                    "Nicole's highway",
+                    1004242030.3211944
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's truck",
+                    "AtLocation",
+                    "Hidde's station",
+                    1004328430.3241055
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Fajjaaz's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's motorcycle",
+                    "AtLocation",
+                    "Fajjaaz's garage",
+                    1004414830.3261921
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's boat",
+                    "AtLocation",
+                    "Nihed's water",
+                    1004501230.3272643
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Fajjaaz's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's airplane",
+                    "AtLocation",
+                    "Hidde's sky",
+                    1004674030.3297589
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's person",
+                    "AtLocation",
+                    "Fajjaaz's university",
+                    1004760430.3305063
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's boat",
+                    "AtLocation",
+                    "Nihed's highway",
+                    1004846830.3316798
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's motorcycle",
+                    "AtLocation",
+                    "Taewoon's garage",
+                    1004933230.3328099
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "water",
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's airplane",
+                    "AtLocation",
+                    "Nicole's sky",
+                    1005019630.3340406
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "water",
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's bench",
+                    "AtLocation",
+                    "Fajjaaz's park",
+                    1005106030.3352461
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's motorcycle",
+                    "AtLocation",
+                    "Hidde's garage",
+                    1005192430.336091
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's bench",
+                    "AtLocation",
+                    "Fajjaaz's water",
+                    1005278830.3373334
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's train",
+                    "AtLocation",
+                    "Hidde's water",
+                    1005365230.3400528
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's person",
+                    "AtLocation",
+                    "Taewoon's university",
+                    1005451630.3419843
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's bicycle",
+                    "AtLocation",
+                    "Taewoon's garage",
+                    1005538030.3445635
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's person",
+                    "AtLocation",
+                    "Fajjaaz's university",
+                    1005624430.3456378
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "boat",
+                    "AtLocation",
+                    "water",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "university",
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's truck",
+                    "AtLocation",
+                    "Nihed's garage",
+                    1005797230.3475144
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's train",
+                    "AtLocation",
+                    "Fajjaaz's station",
+                    1005883630.3480065
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's bicycle",
+                    "AtLocation",
+                    "Hidde's university",
+                    1005970030.3488116
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's truck",
+                    "AtLocation",
+                    "Fajjaaz's garage",
+                    1006056430.3497708
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's truck",
+                    "AtLocation",
+                    "Nicole's highway",
+                    1006142830.350493
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's motorcycle",
+                    "AtLocation",
+                    "Taewoon's park",
+                    1006229230.3511775
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's bench",
+                    "AtLocation",
+                    "Fajjaaz's park",
+                    1006315630.3518782
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "park",
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bench",
+                    "AtLocation",
+                    "Nicole's highway",
+                    1006402030.3527067
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's boat",
+                    "AtLocation",
+                    "Taewoon's water",
+                    1006488430.3533988
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bus",
+                    "AtLocation",
+                    "Nicole's station",
+                    1006574830.3541033
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's bench",
+                    "AtLocation",
+                    "Nihed's park",
+                    1006661230.3547778
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's bicycle",
+                    "AtLocation",
+                    "Hidde's garage",
+                    1006747630.3554447
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's boat",
+                    "AtLocation",
+                    "Nihed's park",
+                    1006834030.3561034
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's motorcycle",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1006920430.3570712
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's bus",
+                    "AtLocation",
+                    "Taewoon's station",
+                    1007006830.3578298
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's bench",
+                    "AtLocation",
+                    "Hidde's university",
+                    1007093230.3591459
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's car",
+                    "AtLocation",
+                    "Nihed's garage",
+                    1007179630.3599465
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "university",
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's airplane",
+                    "AtLocation",
+                    "Hidde's sky",
+                    1007266030.3612077
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's car",
+                    "AtLocation",
+                    "Hidde's university",
+                    1007352430.3619745
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's boat",
+                    "AtLocation",
+                    "Hidde's water",
+                    1007438830.3629613
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's airplane",
+                    "AtLocation",
+                    "Taewoon's park",
+                    1007525230.3638186
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's boat",
+                    "AtLocation",
+                    "Nihed's water",
+                    1007611630.3654578
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's airplane",
+                    "AtLocation",
+                    "Taewoon's sky",
+                    1007698030.4735456
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's boat",
+                    "AtLocation",
+                    "Hidde's water",
+                    1007784430.4744003
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bus",
+                    "AtLocation",
+                    "Nicole's park",
+                    1007870830.4747839
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's motorcycle",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1007957230.4752834
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's bus",
+                    "AtLocation",
+                    "Taewoon's station",
+                    1008043630.4757516
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's car",
+                    "AtLocation",
+                    "Nihed's station",
+                    1008130030.4761963
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's truck",
+                    "AtLocation",
+                    "Taewoon's highway",
+                    1008216430.4772892
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's train",
+                    "AtLocation",
+                    "Nihed's station",
+                    1008302830.4786212
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "station",
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's car",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1008389230.4794965
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's motorcycle",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1008475630.4803267
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's boat",
+                    "AtLocation",
+                    "Hidde's sky",
+                    1008562030.4818227
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bus",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1008648430.4827325
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's motorcycle",
+                    "AtLocation",
+                    "Taewoon's garage",
+                    1008734830.4837899
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's train",
+                    "AtLocation",
+                    "Hidde's water",
+                    1008821230.4845817
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's bus",
+                    "AtLocation",
+                    "Hidde's station",
+                    1008907630.4856725
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's boat",
+                    "AtLocation",
+                    "Nihed's water",
+                    1008994030.4868059
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's person",
+                    "AtLocation",
+                    "Fajjaaz's university",
+                    1009080430.4880228
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's motorcycle",
+                    "AtLocation",
+                    "Hidde's garage",
+                    1009166830.4889107
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's airplane",
+                    "AtLocation",
+                    "Hidde's highway",
+                    1009253230.4898071
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's train",
+                    "AtLocation",
+                    "Hidde's station",
+                    1009339630.4906552
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's bench",
+                    "AtLocation",
+                    "Taewoon's park",
+                    1009426030.4916737
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's train",
+                    "AtLocation",
+                    "Fajjaaz's sky",
+                    1009512430.4924903
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's train",
+                    "AtLocation",
+                    "Taewoon's station",
+                    1009598830.4942086
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's person",
+                    "AtLocation",
+                    "Hidde's university",
+                    1009685230.4951248
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's bus",
+                    "AtLocation",
+                    "Taewoon's park",
+                    1009771630.495795
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bus",
+                    "AtLocation",
+                    "Nicole's station",
+                    1009858030.4962122
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "university",
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's bench",
+                    "AtLocation",
+                    "Taewoon's park",
+                    1009944430.4971797
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's boat",
+                    "AtLocation",
+                    "Nicole's water",
+                    1010030830.4977927
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's motorcycle",
+                    "AtLocation",
+                    "Taewoon's garage",
+                    1010117230.4981642
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's truck",
+                    "AtLocation",
+                    "Fajjaaz's water",
+                    1010203630.4987335
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's airplane",
+                    "AtLocation",
+                    "Taewoon's sky",
+                    1010290030.4994147
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's motorcycle",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1010376430.4999108
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "university",
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's airplane",
+                    "AtLocation",
+                    "Taewoon's sky",
+                    1010462830.5005078
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's person",
+                    "AtLocation",
+                    "Nihed's station",
+                    1010549230.5011308
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's truck",
+                    "AtLocation",
+                    "Taewoon's highway",
+                    1010635630.5016019
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's person",
+                    "AtLocation",
+                    "Taewoon's university",
+                    1010722030.5023534
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Hidde's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's motorcycle",
+                    "AtLocation",
+                    "Nihed's sky",
+                    1010894830.5032341
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Nicole's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's airplane",
+                    "AtLocation",
+                    "Nihed's sky",
+                    1010981230.5375102
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Taewoon's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's airplane",
+                    "AtLocation",
+                    "Nihed's highway",
+                    1011067630.5381567
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Nicole's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's boat",
+                    "AtLocation",
+                    "Nihed's water",
+                    1011154030.5388722
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Nicole's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Nihed's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's truck",
+                    "AtLocation",
+                    "Nicole's highway",
+                    1011326830.5398903
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Hidde's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's airplane",
+                    "AtLocation",
+                    "Taewoon's sky",
+                    1011413230.5405917
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Nicole's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's boat",
+                    "AtLocation",
+                    "Hidde's water",
+                    1011499630.5410783
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Hidde's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's bus",
+                    "AtLocation",
+                    "Nihed's station",
+                    1011586030.541647
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Taewoon's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's motorcycle",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1011672430.5422289
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Hidde's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Taewoon's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "university",
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's person",
+                    "AtLocation",
+                    "Fajjaaz's university",
+                    1011845230.5436997
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Fajjaaz's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "university",
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's bus",
+                    "AtLocation",
+                    "Fajjaaz's station",
+                    1011931630.544399
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Fajjaaz's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's boat",
+                    "AtLocation",
+                    "Taewoon's water",
+                    1012018030.5450926
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Fajjaaz's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's person",
+                    "AtLocation",
+                    "Taewoon's university",
+                    1012104430.5456512
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Fajjaaz's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "university",
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bicycle",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1012190830.5465286
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Taewoon's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's truck",
+                    "AtLocation",
+                    "Hidde's station",
+                    1012277230.5471721
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Nihed's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's motorcycle",
+                    "AtLocation",
+                    "Taewoon's highway",
+                    1012363630.5478137
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Nihed's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's person",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1012450030.5485547
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Taewoon's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's boat",
+                    "AtLocation",
+                    "Taewoon's park",
+                    1012536430.549247
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Taewoon's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's car",
+                    "AtLocation",
+                    "Nicole's station",
+                    1012622830.5498977
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Taewoon's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's person",
+                    "AtLocation",
+                    "Hidde's university",
+                    1012709230.550571
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Hidde's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's boat",
+                    "AtLocation",
+                    "Fajjaaz's water",
+                    1012795630.5512323
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Hidde's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "university",
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's bicycle",
+                    "AtLocation",
+                    "Taewoon's garage",
+                    1012882030.5519996
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    4
+                ]
+            ],
+            "question": [
+                "Taewoon's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        }
+    ],
+    "test": [
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's airplane",
+                    "AtLocation",
+                    "Taewoon's highway",
+                    1001909230.5528052
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Taewoon's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "highway",
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's bench",
+                    "AtLocation",
+                    "Nihed's station",
+                    1001995630.5533328
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "station",
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's truck",
+                    "AtLocation",
+                    "Taewoon's station",
+                    1002082030.5540442
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's airplane",
+                    "AtLocation",
+                    "Hidde's sky",
+                    1002168430.5545721
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Taewoon's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's train",
+                    "AtLocation",
+                    "Taewoon's station",
+                    1002254830.5551159
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Hidde's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's train",
+                    "AtLocation",
+                    "Nihed's sky",
+                    1002341230.5556583
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's airplane",
+                    "AtLocation",
+                    "Hidde's water",
+                    1002427630.5561917
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Taewoon's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's bench",
+                    "AtLocation",
+                    "Fajjaaz's water",
+                    1002514030.5567648
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Hidde's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's airplane",
+                    "AtLocation",
+                    "Nicole's sky",
+                    1002600430.5573707
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's person",
+                    "AtLocation",
+                    "Nihed's university",
+                    1002686830.5583775
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nicole's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's airplane",
+                    "AtLocation",
+                    "Hidde's sky",
+                    1002773230.5589311
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bench",
+                    "AtLocation",
+                    "Nicole's park",
+                    1002859630.559475
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Hidde's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's airplane",
+                    "AtLocation",
+                    "Nihed's station",
+                    1002946030.5599914
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nicole's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's bench",
+                    "AtLocation",
+                    "Nihed's park",
+                    1003032430.5606155
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's motorcycle",
+                    "AtLocation",
+                    "Nihed's highway",
+                    1003118830.5613205
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bench",
+                    "AtLocation",
+                    "Nicole's water",
+                    1003205230.5619707
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's train",
+                    "AtLocation",
+                    "Taewoon's station",
+                    1003291630.5626593
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nicole's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's motorcycle",
+                    "AtLocation",
+                    "Hidde's garage",
+                    1003378030.6082249
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Taewoon's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's motorcycle",
+                    "AtLocation",
+                    "Taewoon's station",
+                    1003464430.6090343
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Hidde's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's truck",
+                    "AtLocation",
+                    "Taewoon's park",
+                    1003550830.6094551
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's bicycle",
+                    "AtLocation",
+                    "Nihed's highway",
+                    1003637230.6099837
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Taewoon's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's bus",
+                    "AtLocation",
+                    "Hidde's station",
+                    1003723630.6103787
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Hidde's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "station",
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's motorcycle",
+                    "AtLocation",
+                    "Fajjaaz's garage",
+                    1003810030.6109271
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nicole's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's airplane",
+                    "AtLocation",
+                    "Fajjaaz's station",
+                    1003896430.6113317
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Fajjaaz's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's train",
+                    "AtLocation",
+                    "Hidde's park",
+                    1003982830.6118546
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's motorcycle",
+                    "AtLocation",
+                    "Nihed's garage",
+                    1004069230.6126537
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Fajjaaz's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's bench",
+                    "AtLocation",
+                    "Taewoon's park",
+                    1004155630.6130517
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bicycle",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1004242030.6135437
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Hidde's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's bicycle",
+                    "AtLocation",
+                    "Hidde's highway",
+                    1004328430.6143749
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's bus",
+                    "AtLocation",
+                    "Nihed's park",
+                    1004414830.6147323
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Fajjaaz's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's car",
+                    "AtLocation",
+                    "Nihed's garage",
+                    1004501230.6150558
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nicole's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's person",
+                    "AtLocation",
+                    "Taewoon's university",
+                    1004587630.615375
+                ]
+            ],
+            "semantic_memory_system": [],
+            "question": [
+                "Nihed's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's train",
+                    "AtLocation",
+                    "Fajjaaz's station",
+                    1004760430.6161978
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's truck",
+                    "AtLocation",
+                    "Nihed's garage",
+                    1004846830.6170077
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "university",
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's bench",
+                    "AtLocation",
+                    "Hidde's park",
+                    1004933230.6176944
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's train",
+                    "AtLocation",
+                    "Taewoon's station",
+                    1005019630.619067
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "station",
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's motorcycle",
+                    "AtLocation",
+                    "Taewoon's garage",
+                    1005106030.6197436
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bus",
+                    "AtLocation",
+                    "Nicole's station",
+                    1005192430.6202314
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's car",
+                    "AtLocation",
+                    "Taewoon's university",
+                    1005278830.6208653
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's boat",
+                    "AtLocation",
+                    "Nicole's highway",
+                    1005365230.6213493
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's motorcycle",
+                    "AtLocation",
+                    "Fajjaaz's park",
+                    1005451630.6219444
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's bicycle",
+                    "AtLocation",
+                    "Hidde's water",
+                    1005538030.6224461
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's bicycle",
+                    "AtLocation",
+                    "Taewoon's garage",
+                    1005624430.622886
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "university",
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's train",
+                    "AtLocation",
+                    "Nihed's water",
+                    1005710830.6234035
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's train",
+                    "AtLocation",
+                    "Taewoon's station",
+                    1005797230.6238611
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's bus",
+                    "AtLocation",
+                    "Fajjaaz's station",
+                    1005883630.6247418
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's motorcycle",
+                    "AtLocation",
+                    "Taewoon's station",
+                    1005970030.6251926
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's bench",
+                    "AtLocation",
+                    "Taewoon's sky",
+                    1006056430.6256058
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's bus",
+                    "AtLocation",
+                    "Taewoon's highway",
+                    1006142830.6260142
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's train",
+                    "AtLocation",
+                    "Hidde's station",
+                    1006229230.6264179
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's bench",
+                    "AtLocation",
+                    "Nihed's park",
+                    1006315630.6268256
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's train",
+                    "AtLocation",
+                    "Nicole's station",
+                    1006402030.6272223
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "university",
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's bench",
+                    "AtLocation",
+                    "Nihed's park",
+                    1006488430.6276734
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's bench",
+                    "AtLocation",
+                    "Fajjaaz's highway",
+                    1006574830.628072
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "university",
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's airplane",
+                    "AtLocation",
+                    "Nihed's sky",
+                    1006661230.6288779
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's airplane",
+                    "AtLocation",
+                    "Hidde's station",
+                    1006747630.629458
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's motorcycle",
+                    "AtLocation",
+                    "Nicole's university",
+                    1006834030.6545146
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's truck",
+                    "AtLocation",
+                    "Taewoon's university",
+                    1006920430.6551001
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's person",
+                    "AtLocation",
+                    "Taewoon's highway",
+                    1007006830.6557634
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's person",
+                    "AtLocation",
+                    "Hidde's water",
+                    1007093230.6562669
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's truck",
+                    "AtLocation",
+                    "Nihed's garage",
+                    1007179630.6574607
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's person",
+                    "AtLocation",
+                    "Nicole's university",
+                    1007266030.6583672
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "university",
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's train",
+                    "AtLocation",
+                    "Nihed's station",
+                    1007352430.6592605
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's car",
+                    "AtLocation",
+                    "Hidde's garage",
+                    1007438830.6599312
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's train",
+                    "AtLocation",
+                    "Taewoon's water",
+                    1007525230.6610284
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's bench",
+                    "AtLocation",
+                    "Fajjaaz's garage",
+                    1007611630.6622081
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's motorcycle",
+                    "AtLocation",
+                    "Fajjaaz's garage",
+                    1007698030.6633112
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's bus",
+                    "AtLocation",
+                    "Nihed's sky",
+                    1007784430.6647193
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's airplane",
+                    "AtLocation",
+                    "Nicole's sky",
+                    1007870830.6655886
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's train",
+                    "AtLocation",
+                    "Taewoon's station",
+                    1007957230.6666105
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bench",
+                    "AtLocation",
+                    "Nicole's park",
+                    1008043630.6682003
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "person",
+                    "AtLocation",
+                    "university",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's motorcycle",
+                    "AtLocation",
+                    "Taewoon's garage",
+                    1008216430.6703372
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "park",
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's bench",
+                    "AtLocation",
+                    "Hidde's park",
+                    1008302830.6713531
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "park",
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's person",
+                    "AtLocation",
+                    "Hidde's university",
+                    1008389230.6722243
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's truck",
+                    "AtLocation",
+                    "Taewoon's highway",
+                    1008475630.6732821
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's car",
+                    "AtLocation",
+                    "Fajjaaz's garage",
+                    1008562030.6739187
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's person",
+                    "AtLocation",
+                    "Taewoon's water",
+                    1008648430.6744127
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "park",
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's airplane",
+                    "AtLocation",
+                    "Hidde's garage",
+                    1008734830.6750467
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "park",
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's car",
+                    "AtLocation",
+                    "Fajjaaz's garage",
+                    1008821230.6756072
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's motorcycle",
+                    "AtLocation",
+                    "Hidde's garage",
+                    1008907630.6760559
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's bus",
+                    "AtLocation",
+                    "Hidde's station",
+                    1008994030.6769731
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bicycle",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1009080430.6776927
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's boat",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1009166830.6784501
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's truck",
+                    "AtLocation",
+                    "Nihed's water",
+                    1009253230.6790667
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's bench",
+                    "AtLocation",
+                    "Fajjaaz's park",
+                    1009339630.6798284
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's car",
+                    "AtLocation",
+                    "Taewoon's garage",
+                    1009426030.6806927
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's bench",
+                    "AtLocation",
+                    "Nihed's water",
+                    1009512430.6818018
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's person",
+                    "AtLocation",
+                    "Nicole's university",
+                    1009598830.6830001
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's bicycle",
+                    "AtLocation",
+                    "Fajjaaz's university",
+                    1009685230.6843028
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's truck",
+                    "AtLocation",
+                    "Fajjaaz's highway",
+                    1009771630.6852443
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's boat",
+                    "AtLocation",
+                    "Nihed's park",
+                    1009858030.686414
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "park",
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's person",
+                    "AtLocation",
+                    "Nicole's university",
+                    1009944430.6873853
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's boat",
+                    "AtLocation",
+                    "Fajjaaz's water",
+                    1010030830.6881807
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's car",
+                    "AtLocation",
+                    "Hidde's park",
+                    1010117230.6896946
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's bench",
+                    "AtLocation",
+                    "Nihed's park",
+                    1010203630.6906047
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's car",
+                    "AtLocation",
+                    "Nihed's garage",
+                    1010290030.6915
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "bench",
+                    "AtLocation",
+                    "park",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's airplane",
+                    "AtLocation",
+                    "Nihed's garage",
+                    1010462830.693032
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's bench",
+                    "AtLocation",
+                    "Fajjaaz's garage",
+                    1010549230.6935058
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's motorcycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's car",
+                    "AtLocation",
+                    "Nihed's highway",
+                    1010635630.6941719
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's airplane",
+                    "AtLocation",
+                    "Hidde's sky",
+                    1010722030.6947062
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's person",
+                    "AtLocation",
+                    "Nicole's university",
+                    1010808430.6952851
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bench",
+                    "AtLocation",
+                    "Nicole's highway",
+                    1010894830.6958022
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's person",
+                    "AtLocation",
+                    "Fajjaaz's university",
+                    1010981230.6965628
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's boat",
+                    "AtLocation",
+                    "Hidde's water",
+                    1011067630.6973338
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's bicycle",
+                    "AtLocation",
+                    "Hidde's university",
+                    1011154030.6981306
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's boat",
+                    "AtLocation",
+                    "Nicole's sky",
+                    1011240430.6986732
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's motorcycle",
+                    "AtLocation",
+                    "Nihed's garage",
+                    1011326830.6992531
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's bus",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's airplane",
+                    "AtLocation",
+                    "Nicole's sky",
+                    1011413230.7365124
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's person",
+                    "AtLocation",
+                    "Nicole's university",
+                    1011499630.7375882
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's motorcycle",
+                    "AtLocation",
+                    "Fajjaaz's station",
+                    1011586030.738205
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's car",
+                    "AtLocation",
+                    "Hidde's park",
+                    1011672430.7386281
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's person",
+                    "AtLocation",
+                    "Nihed's water",
+                    1011758830.73927
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "water",
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's bicycle",
+                    "AtLocation",
+                    "Nihed's garage",
+                    1011845230.7400231
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's bench",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's bench",
+                    "AtLocation",
+                    "Hidde's sky",
+                    1011931630.7407987
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garage",
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's train",
+                    "AtLocation",
+                    "Fajjaaz's station",
+                    1012018030.7416029
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Nihed's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garage",
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Fajjaaz's boat",
+                    "AtLocation",
+                    "Fajjaaz's water",
+                    1012104430.7424123
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bench",
+                    "AtLocation",
+                    "Nicole's park",
+                    1012190830.7432778
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's truck",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "highway"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's person",
+                    "AtLocation",
+                    "Nicole's sky",
+                    1012277230.7437847
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's train",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's bench",
+                    "AtLocation",
+                    "Nicole's park",
+                    1012363630.7442534
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garage",
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's truck",
+                    "AtLocation",
+                    "Nihed's highway",
+                    1012450030.745281
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garage",
+            "correct_answer": "park"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's bus",
+                    "AtLocation",
+                    "Nihed's highway",
+                    1012536430.7474709
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's person",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "water"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Taewoon's boat",
+                    "AtLocation",
+                    "Taewoon's station",
+                    1012622830.7481511
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Fajjaaz's bicycle",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "university"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nihed's bus",
+                    "AtLocation",
+                    "Nihed's station",
+                    1012709230.7490108
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Nicole's boat",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "sky"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Hidde's airplane",
+                    "AtLocation",
+                    "Hidde's station",
+                    1012795630.7496183
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Taewoon's car",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": "garage",
+            "correct_answer": "garage"
+        },
+        {
+            "episodic_memory_system": [
+                [
+                    "Nicole's motorcycle",
+                    "AtLocation",
+                    "Nicole's garage",
+                    1012882030.7503932
+                ]
+            ],
+            "semantic_memory_system": [
+                [
+                    "car",
+                    "AtLocation",
+                    "garage",
+                    2
+                ]
+            ],
+            "question": [
+                "Hidde's airplane",
+                "AtLocation"
+            ],
+            "prediction_hand_crafted": null,
+            "correct_answer": "station"
+        }
+    ],
+    "max_history": 128,
+    "capacity": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+    ],
+    "rewards": {
+        "val": 17,
+        "test": 17
+    },
+    "accuracy": {
+        "val": 0.1328125,
+        "test": 0.1328125
+    }
+}

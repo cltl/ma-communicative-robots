@@ -327,5 +327,6 @@ if __name__ == "__main__":
     )
 
     args = vars(parser.parse_args())
+    logging.info(f"args: {args}")
     pw = PromptWrapper(**args)
     pw.run()

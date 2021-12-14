@@ -113,5 +113,5 @@ if __name__ == "__main__":
         help="where to save the evaluation data.",
     )
     args = vars(parser.parse_args())
-
+    logging.info(f"args: {args}")
     evaluate_wrapper(**args)
