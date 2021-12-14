@@ -113,5 +113,10 @@ if __name__ == "__main__":
         help="where to save the evaluation data.",
     )
     args = vars(parser.parse_args())
+
+    for foo in ["original", "ours"]:
+        if foo in args["save_path"]:
+            assert foo in args["results_path"]
+
     logging.info(f"args: {args}")
     evaluate_wrapper(**args)

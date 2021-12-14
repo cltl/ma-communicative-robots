@@ -310,16 +310,22 @@ class PromptWrapper:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="run memory experiments with prompts.")
     parser.add_argument(
-        "--data_path", type=str, default="./data/original", help="path to data directory."
+        "--data_path",
+        type=str,
+        default="./data/original",
+        help="path to data directory.",
     )
     parser.add_argument(
         "--model_name",
         type=str,
         default="t5.1.1.lm100k.base",
-        help="transformer string name",
+        help="Should be 't5.1.1.lm100k.base' or 't0pp'",
     )
     parser.add_argument(
-        "--save_path", type=str, default="./results/original", help="where to save data."
+        "--save_path",
+        type=str,
+        default="./results/original",
+        help="where to save data.",
     )
 
     parser.add_argument(
@@ -327,6 +333,11 @@ if __name__ == "__main__":
     )
 
     args = vars(parser.parse_args())
+
+    for foo in ["original", "ours"]:
+        if foo in args["save_path"]:
+            assert foo in args["data_path"]
+
     logging.info(f"args: {args}")
     pw = PromptWrapper(**args)
     pw.run()

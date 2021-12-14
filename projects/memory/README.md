@@ -112,7 +112,7 @@ else prompt.lower() == "foo":
     self.prompt = Foo()
 ```
 
-`run_prompts.py` will save the results in the directory `./results/original` or `./results/ours`, depending on how you first run the script. In the directory you'll find directories named `MODEL_PROMPT`. For example, at the moment you'll find two directories there: `t0pp_baseline` and `t5.1.1.lm100k.base_baseline`. These are running `t0pp` and `t5.1.1.lm100k.base` with the `baseline` prompt.
+`run_prompts.py` will save the results in the directory `./results/original` or `./results/ours`, depending on how you first run the script. In the directory you'll find directories named `<MODEL>_<PROMPT>`. For example, at the moment you'll find two directories there: `t0pp_baseline` and `t5.1.1.lm100k.base_baseline`, in `./results/original/` These are running `t0pp` and `t5.1.1.lm100k.base` with the `baseline` prompt, on the original dataset.
 
 Good luck. As always, contact Tae if you have further questions.
 
@@ -124,7 +124,7 @@ This is mainly Nihed's job, but others can also run `evaluation.py` to see how w
 python evaluation.py --results_path RESULTS_PATH --save_path SAVE_PATH
 ```
 
-`RESULTS_PATH` should be a directory path in the `results` directory. and `SAVE_PATH` should be where you want to save the evaluation results. For example, you can run the scripts with `python evaluation.py --results_path results/original/t0pp_baseline --save_path evaluation/original`. Here we want to evaluate the results of the model `t5.1.1.lm100k.base` with the prompt `baseline`.
+`RESULTS_PATH` should be a directory path in the `results` directory. and `SAVE_PATH` should be where you want to save the evaluation results. For example, you can run the scripts with `python evaluation.py --results_path results/original/t5.1.1.lm100k.base_baseline --save_path evaluation/original`. Here we want to evaluate the results of the model `t5.1.1.lm100k.base` with the prompt `baseline`, on the original dataset.
 
 At the moment, the evaluation metric is only simple global_accuracy. Nihed will implement other metrics and then modify the `evaluation_wrapper` method. Its argument `metrics` is currently by default `metrics: list = ["global_accuracy"]`. More metrics sholud be added to this list.
 
@@ -232,10 +232,9 @@ The numbers are self-explainable.
 
 ## Running the best prompt on our own data
 
-Once we are more confident with our prompts, we'll run it on our data that we've collected.
-Tae is currently working on converting our google spreadsheet data into jsons so that they are compatiable with our classes and functions.
+Once we are more confident with our prompts, we'll run it on our data that we've collected, which is saved at `./data/ours/`. The location of the objects are what we have come up with, and the names are us (i.e., Taewoon, Fajjaaz, Nihed, Nicole, and Hidde)!
 
-Using the various metrics, we'll choose about 3 different prompts, and run them our own data with `t0pp`. It'll give us a good insight how our prompts can generalize to unseen data that we've collected ourselves.
+Using the various metrics, we'll choose about 3 to 5 different prompts, and run them our own data with `t0pp`. It'll give us a good insight how our prompts can generalize to unseen data that we've collected ourselves.
 
 ## Authors
 
