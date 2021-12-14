@@ -5,47 +5,55 @@
     Date created: Dec. 4th, 2021
 """
 
-from transformers import RobertaForSequenceClassification, RobertaTokenizer, RobertaConfig
 import numpy as np
 import torch
+from transformers import (RobertaConfig, RobertaForSequenceClassification,
+                          RobertaTokenizer)
 
 
 class USR:
     def __init__(self, path=None):
-        """ Load pretrained and finetuned RoBERTa model for ctx.
+        """Load pretrained and finetuned RoBERTa model for ctx.
 
-            params
-            str path: path to stored model or None
+        params
+        str path: path to stored model or None
 
-            returns: None
+        returns: None
         """
-        self.__config = RobertaConfig.from_pretrained('adamlin/usr-topicalchat-ctx')
-        self.__tokenizer = RobertaTokenizer.from_pretrained('adamlin/usr-topicalchat-ctx')
+        self.__config = RobertaConfig.from_pretrained("adamlin/usr-topicalchat-ctx")
+        self.__tokenizer = RobertaTokenizer.from_pretrained(
+            "adamlin/usr-topicalchat-ctx"
+        )
 
         if path is not None:
-            self.__model = RobertaForSequenceClassification.from_pretrained(path, config=self.__config)
+            self.__model = RobertaForSequenceClassification.from_pretrained(
+                path, config=self.__config
+            )
         else:
-            self.__model = RobertaForSequenceClassification.from_pretrained('adamlin/usr-topicalchat-ctx',
-                                                                            config=self.__config)
+            self.__model = RobertaForSequenceClassification.from_pretrained(
+                "adamlin/usr-topicalchat-ctx", config=self.__config
+            )
 
-        self.__device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+        self.__device = (
+            torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+        )
         self.__model.to(self.__device)
 
     def MCtx(self, context, response):
-        """ Scores an input consisting of a (context, response) pair using RoBERTa.
+        """Scores an input consisting of a (context, response) pair using RoBERTa.
 
-            params
-            str context:  the context strings
-            sre response: response to the context
+        params
+        str context:  the context strings
+        sre response: response to the context
 
-            returns: score
+        returns: score
         """
         # Concatenates and encodes context-response pair
         input_sequence = context + " \n " + response
-        inputs = self.__tokenizer(input_sequence, return_tensors='pt')
+        inputs = self.__tokenizer(input_sequence, return_tensors="pt")
 
-        inputs['input_ids'] = inputs['input_ids'].to(self.__device)
-        inputs['attention_mask'] = inputs['attention_mask'].to(self.__device)
+        inputs["input_ids"] = inputs["input_ids"].to(self.__device)
+        inputs["attention_mask"] = inputs["attention_mask"].to(self.__device)
 
         # Feeds encoded input through network
         outputs = self.__model(**inputs)

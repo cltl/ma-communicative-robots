@@ -21,6 +21,7 @@ This script runs a prompt with a specified model. You should run it with the bel
 ```sh
 python run_prompts.py --model_name MODEL_NAME --prompt PROMPT
 ```
+
 where `MODEL_NAME` and `PROMPT` is your desired model and prompt, respectively.
 
 For example, if you run `python run_prompts.py --model_name t5.1.1.lm100k.base --prompt baseline`, the script will run the `t5.1.1.lm100k.base` model with the `baseline` prompt. This script also supports `t0pp` as a model, but you'll need to have at least 90GB of CPU memory. Tae'll run it on his server.
@@ -52,6 +53,7 @@ class PromptTemplate:
         """
         raise NotImplementedError
 ```
+
 You just to inherit this class and make your own with by overriding the `__init__()` method and `generate_prompt()` method. Let's take a look at how Tae created his baseline prompt class:
 
 ```python
@@ -92,7 +94,8 @@ class Baseline(PromptTemplate):
 
         return prompt
 ```
-It's pretty simple. 
+
+It's pretty simple.
 
 Once you made your own prompt template, then you can run `run_prompts.py` with your own flag. But before this, you also have to modify the `PromptWrapper` class. You have to add your prompt to the line 271:
 
@@ -100,6 +103,7 @@ Once you made your own prompt template, then you can run `run_prompts.py` with y
 if prompt.lower() == "baseline":
     self.prompt = Baseline()
 ```
+
 Here you have to write something like:
 
 ```python
@@ -111,7 +115,6 @@ else prompt.lower() == "foo":
 
 Good luck. As always, contact Tae if you have further questions.
 
-
 ## [`evaluation.py`](./evaluation.py)
 
 This is mainly Nihed's job, but others can also run `evaluation.py` to see how well your prompt performs. You should run this script with the below command:
@@ -119,7 +122,8 @@ This is mainly Nihed's job, but others can also run `evaluation.py` to see how w
 ```sh
 python evaluation.py --results_path RESULTS_PATH
 ```
-`RESULTS_PATH` should be a directory path in the `results` directory. It will look something like this `results/t5.1.1.lm100k.base_baseline`. Here we want to evaluate the results of the model `t5.1.1.lm100k.base` with the prompt `baseline`. 
+
+`RESULTS_PATH` should be a directory path in the `results` directory. It will look something like this `results/t5.1.1.lm100k.base_baseline`. Here we want to evaluate the results of the model `t5.1.1.lm100k.base` with the prompt `baseline`.
 
 At the moment, the evaluation metric is only simple global_accuracy. Nihed will implement other metrics and then modify the `evaluation_wrapper` method. Its argument `metrics` is currently by default `metrics: list = ["global_accuracy"]`. More metrics sholud be added to this list.
 
@@ -132,6 +136,7 @@ if metric.lower() == "global_accuracy":
     )
     evaluation[item][split] = global_accuracy
 ```
+
 by adding something like:
 
 ```python
@@ -187,14 +192,12 @@ def evaluate(
         raise ValueError
 ```
 
-
 ## Running the best prompt on our own data
 
 Once we are more confident with our prompts, we'll run it on our data that we've collected.
 Tae is currently working on converting our google spreadsheet data into jsons so that they are compatiable with our classes and functions.
 
-Using the various metrics, we'll choose about 3 different prompts, and run them our own data with `t0pp`. It'll give us a good insight how our prompts can generalize to unseen data that we've collected ourselves. 
-
+Using the various metrics, we'll choose about 3 different prompts, and run them our own data with `t0pp`. It'll give us a good insight how our prompts can generalize to unseen data that we've collected ourselves.
 
 ## Authors
 
