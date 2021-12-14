@@ -17,7 +17,7 @@ The implementations can be found in their respective folders.
 ## Prerequisites
 
 1. An x86 machine running Windows 10 or a Unix-based OS
-2. Instllation of Python 3.7 or higher. Running in a virtual environment (e.g., conda, virtualenv, etc.) is highly recommended so that you don't mess up with the system Python.
+2. Python 3.7 or higher. Running in a virtual environment (e.g., conda, virtualenv, etc.) is highly recommended so that you don't mess up with the system Python.
 3. ```pip install -r requirements.txt```
 
 ## Evaluation
