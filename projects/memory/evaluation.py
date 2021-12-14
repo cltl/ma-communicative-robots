@@ -109,7 +109,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--save_path",
         type=str,
-        default="./evaluation",
+        default="./evaluation/original",
         help="where to save the evaluation data.",
     )
     args = vars(parser.parse_args())

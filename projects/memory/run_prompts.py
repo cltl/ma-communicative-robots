@@ -310,7 +310,7 @@ class PromptWrapper:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="run memory experiments with prompts.")
     parser.add_argument(
-        "--data_path", type=str, default="./data", help="path to data directory."
+        "--data_path", type=str, default="./data/original", help="path to data directory."
     )
     parser.add_argument(
         "--model_name",
@@ -319,7 +319,7 @@ if __name__ == "__main__":
         help="transformer string name",
     )
     parser.add_argument(
-        "--save_path", type=str, default="./results", help="where to save data."
+        "--save_path", type=str, default="./results/original", help="where to save data."
     )
 
     parser.add_argument(

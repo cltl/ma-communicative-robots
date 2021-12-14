@@ -10,7 +10,8 @@ This year we work on a "A Machine With Human-Like Memory Systems"
 
 ## Data
 
-The generated data is saved at `./data/`.
+The original data is saved at `./data/original`.
+The data we've collected is saved at `./data/ours`
 
 Take a look at the example jupyter notebook `./notebooks/how-to-data.ipynb` and `./notebooks/prompt.ipynb`, to have a rough idea.
 
@@ -19,12 +20,12 @@ Take a look at the example jupyter notebook `./notebooks/how-to-data.ipynb` and 
 This script runs a prompt with a specified model. You should run it with the below command
 
 ```sh
-python run_prompts.py --model_name MODEL_NAME --prompt PROMPT
+python run_prompts.py --data_path DATA_PATH --save_path SAVE_PATH --model_name MODEL_NAME --prompt PROMPT
 ```
 
-where `MODEL_NAME` and `PROMPT` is your desired model and prompt, respectively.
+where `DATA_PATH`, `SAVE_PATH`, `MODEL_NAME` and `PROMPT` are the directory path where your data is located, the directory path to save the prompt results, name of the model, and your prompt, respectively.
 
-For example, if you run `python run_prompts.py --model_name t5.1.1.lm100k.base --prompt baseline`, the script will run the `t5.1.1.lm100k.base` model with the `baseline` prompt. This script also supports `t0pp` as a model, but you'll need to have at least 90GB of CPU memory. Tae'll run it on his server.
+For example, if you run `python run_prompts.py --data_path data/original --save_path results/original --model_name t5.1.1.lm100k.base  --prompt baseline`, the script will run the `t5.1.1.lm100k.base` model with the `baseline` prompt. This script also supports `t0pp` as a model, but you'll need to have at least 90GB of CPU memory. Tae'll run it on his server.
 
 The prompt is something you (Fajjaaz, Nicole, and Hidde) have to engineer. You use your imagination to come up with a better prompt template than the baseline. Once you are sure with your prompt after running it on the validation split with the `t5.1.1.lm100k.base` model, Tae'll run your prompt in the server with `t0pp`.
 
@@ -111,7 +112,7 @@ else prompt.lower() == "foo":
     self.prompt = Foo()
 ```
 
-`run_prompts.py` will save the results in the directory `./results/` with a directory named `MODEL_PROMPT`. For example, at the moment you'll find two directories there: `t0pp_baseline` and `t5.1.1.lm100k.base_baseline`. These are running `t0pp` and `t5.1.1.lm100k.base` with the `baseline` prompt.
+`run_prompts.py` will save the results in the directory `./results/original` or `./results/ours`, depending on how you first run the script. In the directory you'll find directories named `MODEL_PROMPT`. For example, at the moment you'll find two directories there: `t0pp_baseline` and `t5.1.1.lm100k.base_baseline`. These are running `t0pp` and `t5.1.1.lm100k.base` with the `baseline` prompt.
 
 Good luck. As always, contact Tae if you have further questions.
 
@@ -120,10 +121,10 @@ Good luck. As always, contact Tae if you have further questions.
 This is mainly Nihed's job, but others can also run `evaluation.py` to see how well your prompt performs. You should run this script with the below command:
 
 ```sh
-python evaluation.py --results_path RESULTS_PATH
+python evaluation.py --results_path RESULTS_PATH --save_path SAVE_PATH
 ```
 
-`RESULTS_PATH` should be a directory path in the `results` directory. It will look something like this `results/t5.1.1.lm100k.base_baseline`. Here we want to evaluate the results of the model `t5.1.1.lm100k.base` with the prompt `baseline`.
+`RESULTS_PATH` should be a directory path in the `results` directory. and `SAVE_PATH` should be where you want to save the evaluation results. For example, you can run the scripts with `python evaluation.py --results_path results/original/t0pp_baseline --save_path evaluation/original`. Here we want to evaluate the results of the model `t5.1.1.lm100k.base` with the prompt `baseline`.
 
 At the moment, the evaluation metric is only simple global_accuracy. Nihed will implement other metrics and then modify the `evaluation_wrapper` method. Its argument `metrics` is currently by default `metrics: list = ["global_accuracy"]`. More metrics sholud be added to this list.
 
@@ -192,7 +193,7 @@ def evaluate(
         raise ValueError
 ```
 
-This script will generate the evaluation results in the directory `./evaluation`. For example, at the moment, you can find `t5.1.1.lm100k.base_baseline` in it. This directory contain the evaluation results of running the `t5.1.1.lm100k.base` model with the `baseline` prompt. As we only have `global_accuracy` as an evaluation metric, there is only one `json` file stored (i.e., `global_accuracy.json`). If you open the file, it'll look something like this:
+This script will generate the evaluation results in the directory `./evaluation/original` or `./evaluation/ours`, depending on which data you ran the script. For example, at the moment, you can find `t5.1.1.lm100k.base_baseline` in `./evaluation/original/` it. This directory contain the evaluation results of running the `t5.1.1.lm100k.base` model with the `baseline` prompt. As we only have `global_accuracy` as an evaluation metric, there is only one `json` file stored (i.e., `global_accuracy.json`). If you open the file, it'll look something like this:
 
 ```json
 {

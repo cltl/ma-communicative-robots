@@ -61,14 +61,14 @@ if __name__ == "__main__":
     parser.add_argument(
         "--data_path",
         type=str,
-        default="data-our-own",
+        default="data/ours",
         help="directory path where our csv data are saved.",
     )
 
     parser.add_argument(
         "--save_path",
         type=str,
-        default="data-our-own/semantic-knowledge-our-own.json",
+        default="data/ours/raw/semantic-knowledge-our-own.json",
         help="file name to save our data at.",
     )
     args = vars(parser.parse_args())
