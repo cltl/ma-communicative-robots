@@ -1,5 +1,6 @@
 # Project Think Aloud
 
+## Overview
 This repository contains the code base of the _Think Aloud_ project for the _Communicative Robots_ Course at the Vrije Universiteit (VU).
 
 In this repository, we provide alternatives to the random _thought_ selection mechanism implemented by Leolani V2, allowing the robot to learn which of her thoughts to verbalize in order to maximize dialogue coherence and optimally attain new knowledge about her environment. To choose between thoughts, several methods are proposed;
@@ -13,6 +14,18 @@ In this repository, we provide alternatives to the random _thought_ selection me
 
 The implementations can be found in their respective folders.
 
+## Prerequisites
+
+1. An x86 machine running Windows 10 or a Unix-based OS
+2. Instllation of Python 3.7 or higher. Running in a virtual environment (e.g., conda, virtualenv, etc.) is highly recommended so that you don't mess up with the system Python.
+3. ```pip install -r requirements.txt```
+
 ## Evaluation
 
-Evaluation of the proposed methods is performed in two steps; a manual evaluation based on response criteria, such as *engagement*, *semantic appropriateness* and *relevance*, and an automatic evaluation using [USR](https://github.com/Shikib/usr). You can find a re-implementation of USR and the evaluation dataset in ```/evalution```.
+Evaluation of the proposed methods is performed in two steps; a manual evaluation based on response criteria, such as *engagement*, *semantic appropriateness* and *relevance*, and an automatic evaluation using [USR](https://github.com/Shikib/usr). You can find a re-implementation of USR and the evaluation dataset in ```/evaluation```.
+
+## Authors
+Piek Vossen
+* Student 1: Thomas Bellucci
+* Student 2: Imme Glaudé
+* Student 3: Fina Yilmaz Polat
