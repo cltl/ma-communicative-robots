@@ -192,6 +192,43 @@ def evaluate(
         raise ValueError
 ```
 
+This script will generate the evaluation results in the directory `./evaluation`. For example, at the moment, you can find `t5.1.1.lm100k.base_baseline` in it. This directory contain the evaluation results of running the `t5.1.1.lm100k.base` model with the `baseline` prompt. As we only have `global_accuracy` as an evaluation metric, there is only one `json` file stored (i.e., `global_accuracy.json`). If you open the file, it'll look something like this:
+
+```json
+{
+    "128_1": {
+        "val": 0.203125,
+        "test": 0.203125
+    },
+    "128_2": {
+        "val": 0.375,
+        "test": 0.3203125
+    },
+    "128_4": {
+        "val": 0.375,
+        "test": 0.28125
+    },
+    "128_8": {
+        "val": 0.390625,
+        "test": 0.2890625
+    },
+    "128_16": {
+        "val": 0.3984375,
+        "test": 0.3515625
+    },
+    "128_32": {
+        "val": 0.5390625,
+        "test": 0.4375
+    },
+    "128_64": {
+        "val": 0.53125,
+        "test": 0.5625
+    }
+}
+```
+
+The numbers are self-explainable.
+
 ## Running the best prompt on our own data
 
 Once we are more confident with our prompts, we'll run it on our data that we've collected.
