@@ -125,7 +125,7 @@ def load_model(model_name: str = "t5.1.1.lm100k.base") -> Tuple:
     return tokenizer, model
 
 
-def load_data(path: str = "./data") -> dict:
+def load_data(path: str) -> dict:
     """Load all of the data.
 
     Args
@@ -244,28 +244,26 @@ class PromptWrapper:
 
     def __init__(
         self,
-        data_path: str = "./data",
+        data_type: str = "original",
         model_name: str = "t5.1.1.lm100k.base",
         prompt: str = "baseline",
-        save_path: str = "./results",
     ) -> None:
         """Init
 
         Args
         ----
-        data_path: directory path to the data.
+        data_type: "either 'original' our 'ours'"
         model_name: This should be either "t5.1.1.lm100k.base" or
             "T0pp". The t0pp is a big model. You need at least 90GB CPU
             memory to load this model.
         prompt: currently this can only be "baseline" but you should create your own
             prompts!
-        save_path: where to save to your model predictions and stuff.
 
         """
-        self.save_path_dir = os.path.join(save_path, f"{model_name}_{prompt}")
+        self.save_path_dir = f"./results/{data_type}/{model_name}_{prompt}"
         os.makedirs(self.save_path_dir, exist_ok=True)
 
-        self.data_all = load_data(path=data_path)
+        self.data_all = load_data(path=os.path.join("data", data_type))
         self.tokenizer, self.model = load_model(model_name)
 
         if prompt.lower() == "baseline":
@@ -273,8 +271,7 @@ class PromptWrapper:
 
         logging.info(
             "PromptWrapper is successfully instantiated with the arguments: "
-            f"data_path: {data_path}, model_name: {model_name}, prompt: {prompt}, "
-            f"save_path: {save_path}!"
+            f"data_type: {data_type}, model_name: {model_name}, prompt: {prompt}! "
         )
 
     def run(self):
@@ -310,22 +307,16 @@ class PromptWrapper:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="run memory experiments with prompts.")
     parser.add_argument(
-        "--data_path",
+        "--data_type",
         type=str,
-        default="./data/original",
-        help="path to data directory.",
+        default="original",
+        help="either 'original' our 'ours'",
     )
     parser.add_argument(
         "--model_name",
         type=str,
         default="t5.1.1.lm100k.base",
         help="Should be 't5.1.1.lm100k.base' or 't0pp'",
-    )
-    parser.add_argument(
-        "--save_path",
-        type=str,
-        default="./results/original",
-        help="where to save data.",
     )
 
     parser.add_argument(
@@ -334,9 +325,7 @@ if __name__ == "__main__":
 
     args = vars(parser.parse_args())
 
-    for foo in ["original", "ours"]:
-        if foo in args["save_path"]:
-            assert foo in args["data_path"]
+    assert args["data_type"] in ["original", "ours"]
 
     logging.info(f"args: {args}")
     pw = PromptWrapper(**args)

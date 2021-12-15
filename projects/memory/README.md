@@ -20,12 +20,12 @@ Take a look at the example jupyter notebook `./notebooks/how-to-data.ipynb` and 
 This script runs a prompt with a specified model. You should run it with the below command
 
 ```sh
-python run_prompts.py --data_path DATA_PATH --save_path SAVE_PATH --model_name MODEL_NAME --prompt PROMPT
+python run_prompts.py --data_type DATA_TYPE --model_name MODEL_NAME --prompt PROMPT
 ```
 
-where `DATA_PATH`, `SAVE_PATH`, `MODEL_NAME` and `PROMPT` are the directory path where your data is located, the directory path to save the prompt results, name of the model, and your prompt, respectively.
+where `DATA_TYPE`, `MODEL_NAME` and `PROMPT` are the data type (i.e., either `original` our `ours`), name of the model (i.e., `t5.1.1.lm100k.base` or `t0pp`), and your prompt (e.g., `baseline`), respectively.
 
-For example, if you run `python run_prompts.py --data_path data/original --save_path results/original --model_name t5.1.1.lm100k.base  --prompt baseline`, the script will run the `t5.1.1.lm100k.base` model with the `baseline` prompt. This script also supports `t0pp` as a model, but you'll need to have at least 90GB of CPU memory. Tae'll run it on his server.
+For example, if you run `python run_prompts.py --data_type original --model_name t5.1.1.lm100k.base  --prompt baseline`, the script will run the `t5.1.1.lm100k.base` model with the `baseline` prompt. This script also supports `t0pp` as a model, but you'll need to have at least 90GB of CPU memory. Tae'll run it on his server.
 
 The prompt is something you (Fajjaaz, Nicole, and Hidde) have to engineer. You use your imagination to come up with a better prompt template than the baseline. Once you are sure with your prompt after running it on the validation split with the `t5.1.1.lm100k.base` model, Tae'll run your prompt in the server with `t0pp`.
 
@@ -98,7 +98,7 @@ class Baseline(PromptTemplate):
 
 It's pretty simple.
 
-Once you made your own prompt template, then you can run `run_prompts.py` with your own flag. But before this, you also have to modify the `PromptWrapper` class. You have to add your prompt to the line 271:
+Once you made your own prompt template, then you can run `run_prompts.py` with your own flag. But before this, you also have to modify the `PromptWrapper` class. You have to add your prompt to the line 269:
 
 ```python
 if prompt.lower() == "baseline":
@@ -114,6 +114,10 @@ else prompt.lower() == "foo":
 
 `run_prompts.py` will save the results in the directory `./results/original` or `./results/ours`, depending on how you first run the script. In the directory you'll find directories named `<MODEL>_<PROMPT>`. For example, at the moment you'll find two directories there: `t0pp_baseline` and `t5.1.1.lm100k.base_baseline`, in `./results/original/` These are running `t0pp` and `t5.1.1.lm100k.base` with the `baseline` prompt, on the original dataset.
 
+You can evaluate the accuracy of the five prompts, by running `evaluation.py`. You should choose the prompt that has the best average score on the validation split. And now this is your best prompt. So you'll write this prompt in the code `run_prompts.py`, and then make a PR. You'll also write the final prompt results (i.e., val (acc) and test (acc)) in [evaluation.md](./evaluation/evaluation.md).
+
+There are other metrics (i.e., bleu, rouge, f1, etc.) that we want to evaluate on. Nihed is currently working hard on implementing them.
+
 Good luck. As always, contact Tae if you have further questions.
 
 ## [`evaluation.py`](./evaluation.py)
@@ -121,14 +125,14 @@ Good luck. As always, contact Tae if you have further questions.
 This is mainly Nihed's job, but others can also run `evaluation.py` to see how well your prompt performs. You should run this script with the below command:
 
 ```sh
-python evaluation.py --results_path RESULTS_PATH --save_path SAVE_PATH
+python evaluation.py --results_path RESULTS_PATH
 ```
 
-`RESULTS_PATH` should be a directory path in the `results` directory. and `SAVE_PATH` should be where you want to save the evaluation results. For example, you can run the scripts with `python evaluation.py --results_path results/original/t5.1.1.lm100k.base_baseline --save_path evaluation/original`. Here we want to evaluate the results of the model `t5.1.1.lm100k.base` with the prompt `baseline`, on the original dataset.
+`RESULTS_PATH` should be a directory path in the `results` directory. For example, you can run the scripts with `python evaluation.py --results_path results/original/t5.1.1.lm100k.base_baseline`. Here we want to evaluate the results of the model `t5.1.1.lm100k.base` with the prompt `baseline`, on the original dataset.
 
 At the moment, the evaluation metric is only simple global_accuracy. Nihed will implement other metrics and then modify the `evaluation_wrapper` method. Its argument `metrics` is currently by default `metrics: list = ["global_accuracy"]`. More metrics sholud be added to this list.
 
-Nihed should also change the line 50:
+Nihed should also change the line 48:
 
 ```python
 if metric.lower() == "global_accuracy":
@@ -193,38 +197,42 @@ def evaluate(
         raise ValueError
 ```
 
-This script will generate the evaluation results in the directory `./evaluation/original` or `./evaluation/ours`, depending on which data you ran the script. For example, at the moment, you can find `t5.1.1.lm100k.base_baseline` in `./evaluation/original/` it. This directory contain the evaluation results of running the `t5.1.1.lm100k.base` model with the `baseline` prompt. As we only have `global_accuracy` as an evaluation metric, there is only one `json` file stored (i.e., `global_accuracy.json`). If you open the file, it'll look something like this:
+This script will generate the evaluation results in the directory `./evaluation/original` or `./evaluation/ours`, depending on which data you ran the script. For example, at the moment, you can find `t5.1.1.lm100k.base_baseline` in `./evaluation/original/` it. This directory contains the evaluation results of running the `t5.1.1.lm100k.base` model with the `baseline` prompt. As we only have `global_accuracy` as an evaluation metric, there is only one `json` file stored (i.e., `global_accuracy.json`). If you open the file, it'll look something like this:
 
 ```json
 {
     "128_1": {
-        "val": 0.203125,
-        "test": 0.203125
+        "val": 0.2031,
+        "test": 0.2031
     },
     "128_2": {
         "val": 0.375,
-        "test": 0.3203125
+        "test": 0.3203
     },
     "128_4": {
         "val": 0.375,
-        "test": 0.28125
+        "test": 0.2812
     },
     "128_8": {
-        "val": 0.390625,
-        "test": 0.2890625
+        "val": 0.3906,
+        "test": 0.2891
     },
     "128_16": {
-        "val": 0.3984375,
-        "test": 0.3515625
+        "val": 0.3984,
+        "test": 0.3516
     },
     "128_32": {
-        "val": 0.5390625,
+        "val": 0.5391,
         "test": 0.4375
     },
     "128_64": {
-        "val": 0.53125,
+        "val": 0.5312,
         "test": 0.5625
-    }
+    },
+    "val_mean": 0.4018,
+    "val_std": 0.1046,
+    "test_mean": 0.3493,
+    "test_std": 0.1094
 }
 ```
 

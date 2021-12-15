@@ -5,6 +5,7 @@ from glob import glob
 
 from run_prompts import read_json, write_json
 from tqdm import tqdm
+import numpy as np
 
 logging.basicConfig(
     level=os.environ.get("LOGLEVEL", "INFO").upper(),
@@ -13,15 +14,12 @@ logging.basicConfig(
 )
 
 
-def evaluate_wrapper(
-    results_path: str, save_path: str, metrics: list = ["global_accuracy"]
-) -> None:
+def evaluate_wrapper(results_path: str, metrics: list = ["global_accuracy"]) -> None:
     """Evaluate wrapper.
 
     Args
     ----
     results_path: directory path where the json results files are located.
-    save_path: directory path to save the evaluations.
     metrics: a list of evaluation metrics. At the moment there is only one
         (e.g., "global_accuracy")
 
@@ -31,7 +29,7 @@ def evaluate_wrapper(
 
     paths.sort(key=natural_keys)
     logging.info(f"Running evaluation on {paths} ...")
-    save_path_dir = os.path.join(save_path, results_path.split("/")[-1])
+    save_path_dir = results_path.replace("results", "evaluation")
     os.makedirs(save_path_dir, exist_ok=True)
 
     for metric in tqdm(metrics):
@@ -51,7 +49,17 @@ def evaluate_wrapper(
                     global_accuracy = evaluate(
                         predictions, correct_answers, metric=metric.lower()
                     )
-                    evaluation[item][split] = global_accuracy
+                    evaluation[item][split] = round(global_accuracy, 4)
+
+        val_mean = float(np.mean([item["val"] for item in evaluation.values()]))
+        val_std = float(np.std([item["val"] for item in evaluation.values()]))
+        test_mean = float(np.mean([item["test"] for item in evaluation.values()]))
+        test_std = float(np.std([item["test"] for item in evaluation.values()]))
+
+        evaluation["val_mean"] = round(val_mean, 4)
+        evaluation["val_std"] = round(val_std, 4)
+        evaluation["test_mean"] = round(test_mean, 4)
+        evaluation["test_std"] = round(test_std, 4)
 
         write_json(evaluation, os.path.join(save_path_dir, f"{metric}.json"))
 
@@ -106,17 +114,9 @@ if __name__ == "__main__":
         help="directory path where the json results files are located.",
     )
 
-    parser.add_argument(
-        "--save_path",
-        type=str,
-        default="./evaluation/original",
-        help="where to save the evaluation data.",
-    )
     args = vars(parser.parse_args())
 
-    for foo in ["original", "ours"]:
-        if foo in args["save_path"]:
-            assert foo in args["results_path"]
+    assert "ours" in args["results_path"] or "original" in args["results_path"]
 
     logging.info(f"args: {args}")
     evaluate_wrapper(**args)
