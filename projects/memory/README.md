@@ -236,6 +236,10 @@ Once we are more confident with our prompts, we'll run it on our data that we've
 
 Using the various metrics, we'll choose about 3 to 5 different prompts, and run them our own data with `t0pp`. It'll give us a good insight how our prompts can generalize to unseen data that we've collected ourselves.
 
+## [Evaluation results](./evaluation/evaluation.md)
+
+This readme includes the evaluation results.
+
 ## Authors
 
 - [Taewoon Kim](https://taewoonkim.com/)
