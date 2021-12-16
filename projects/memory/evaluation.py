@@ -3,7 +3,6 @@ import logging
 import os
 from glob import glob
 import nltk
-from run_prompts import PromptTemplate
 from rouge import Rouge
 
 from run_prompts import read_json, write_json
@@ -17,7 +16,7 @@ logging.basicConfig(
 )
 
 
-def evaluate_wrapper(results_path: str, metrics: list = ["nihed"]) -> None:
+def evaluate_wrapper(results_path: str, metrics: list = ["rouge"]) -> None:
     """Evaluate wrapper.
     Args
     ----
@@ -118,7 +117,6 @@ def evaluate(
 
     if metric.lower() == "bleu":
         # TODO: Nihed's job
-        logging.info("nicole")
         blue = nltk.translate.bleu_score.sentence_bleu(correct_answers, predictions)
         print(blue)
         # raise NotImplementedError
@@ -147,13 +145,15 @@ def evaluate(
             score = 0
             if answer in pred:
                 score += 0.33
-            if prompt[-2] and answer in pred:
+            if (prompt[-2] in pred) and (answer in pred):
                 score += 0.33
-            if prompt[-2] and prompt[-1] and answer in pred:
+            if (prompt[-2] in pred) and (prompt[-1] in pred) and (answer in pred):
                 score += 0.33
             if "where" in pred:
                 score -= 0.33
-            if "?" or "not sure" in pred:
+            if ("?" in pred) or ("not sure" in pred):
+                score = 0
+            else:
                 score = 0
             scores.append(score)
             print(scores)
