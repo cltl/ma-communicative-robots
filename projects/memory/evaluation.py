@@ -2,6 +2,9 @@ import argparse
 import logging
 import os
 from glob import glob
+import nltk
+from run_prompts import PromptTemplate
+from rouge import Rouge
 
 from run_prompts import read_json, write_json
 from tqdm import tqdm
@@ -14,15 +17,13 @@ logging.basicConfig(
 )
 
 
-def evaluate_wrapper(results_path: str, metrics: list = ["global_accuracy"]) -> None:
+def evaluate_wrapper(results_path: str, metrics: list = ["nihed"]) -> None:
     """Evaluate wrapper.
-
     Args
     ----
     results_path: directory path where the json results files are located.
     metrics: a list of evaluation metrics. At the moment there is only one
         (e.g., "global_accuracy")
-
     """
     paths = glob(os.path.join(results_path, "*.json"))
     from run_prompts import natural_keys
@@ -44,12 +45,37 @@ def evaluate_wrapper(results_path: str, metrics: list = ["global_accuracy"]) -> 
             for split in ["val", "test"]:
                 predictions = [sample["prediction"] for sample in data[split]]
                 correct_answers = [sample["correct_answer"] for sample in data[split]]
+                prompt = [sample["prompt_text"] for sample in data[split]]
 
                 if metric.lower() == "global_accuracy":
                     global_accuracy = evaluate(
                         predictions, correct_answers, metric=metric.lower()
                     )
                     evaluation[item][split] = round(global_accuracy, 4)
+
+                elif metric.lower() == "bleu":
+                    bleu_score = evaluate(
+                        predictions, correct_answers, metric=metric.lower()
+                    )
+                    evaluation[item][split] = bleu_score
+
+                elif metric.lower() == "rouge":
+                    rouge_score = evaluate(
+                        predictions, correct_answers, metric=metric.lower()
+                    )
+                    evaluation[item][split] = rouge_score
+
+                elif metric.lower() == "f1":
+                    f1_score = evaluate(
+                        predictions, correct_answers, metric=metric.lower()
+                    )
+                    evaluation[item][split] = f1_score
+
+                elif metric.lower() == "nihed":
+                    nihed_score = evaluate(
+                        predictions, correct_answers, prompt, metric=metric.lower()
+                    )
+                    evaluation[item][split] = nihed_score
 
         val_mean = float(np.mean([item["val"] for item in evaluation.values()]))
         val_std = float(np.std([item["val"] for item in evaluation.values()]))
@@ -65,16 +91,14 @@ def evaluate_wrapper(results_path: str, metrics: list = ["global_accuracy"]) -> 
 
 
 def evaluate(
-    predictions: list, correct_answers: list, metric: str = "global_accuracy"
+    predictions: list, correct_answers: list, prompt_text: list, metric: str = "global_accuracy"
 ) -> float:
     """Evaluate the predictions using the metric.
-
     Args
     ----
     predictions: A list of predictions. Every element is an output of LM.
     correct_answers: A list of correct answers. Every element is the correct location
         of the query object.
-
     """
     if metric.lower() == "global_accuracy":
 
@@ -90,20 +114,52 @@ def evaluate(
         logging.info(f"T: {T}, F: {F}")
         logging.info(f"global accuracy is {global_acc}")
 
-        return global_acc
+        # return global_acc
 
-    elif metric.lower() == "bleu":
+    if metric.lower() == "bleu":
         # TODO: Nihed's job
-        raise NotImplementedError
-    elif metric.lower() == "rouge":
+        logging.info("nicole")
+        blue = nltk.translate.bleu_score.sentence_bleu(correct_answers, predictions)
+        print(blue)
+        # raise NotImplementedError
+    if metric.lower() == "rouge":
         # TODO: Nihed's job
-        raise NotImplementedError
-    elif metric.lower() == "f1":
+        for i,j in zip(predictions, correct_answers):
+            # hypothesis = predictions
+            # reference = correct_answers
+            # breakpoint()
+            rouge = Rouge()
+            scores = rouge.get_scores(i, j)
+            print(scores)
+        # raise NotImplementedError
+    if metric.lower() == "f1":
         # TODO: Nihed's job
-        raise NotImplementedError
-    else:
-        # TODO: Nihed's job
-        raise ValueError
+        blue = nltk.translate.bleu_score.sentence_bleu(correct_answers, predictions)
+        rouge = Rouge()
+        rouge.get_scores(predictions, correct_answers, avg=True)
+        F1 = 2 * (blue * rouge) / (blue + rouge)
+        print(F1)
+        # raise NotImplementedError
+    if metric.lower() == "nihed":
+        # TODO: Nihed's job\
+        scores = []
+        for answer, pred, prompt in zip(correct_answers, predictions, prompt_text):
+            score = 0
+            if answer in pred:
+                score += 0.33
+            if prompt[-2] and answer in pred:
+                score += 0.33
+            if prompt[-2] and prompt[-1] and answer in pred:
+                score += 0.33
+            if "where" in pred:
+                score -= 0.33
+            if "?" or "not sure" in pred:
+                score = 0
+            scores.append(score)
+            print(scores)
+
+
+        # raise ValueError
 
 
 if __name__ == "__main__":
