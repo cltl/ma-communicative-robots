@@ -229,6 +229,46 @@ class Baseline(PromptTemplate):
         return prompt
 
 
+class WithoutQuestion(PromptTemplate):
+    """Without question prompt.
+
+    This is the prompt with the subject instead of a question.
+
+    """
+
+    def __init__(self) -> None:
+        logging.info("Without question prompt is initialized!")
+
+    def generate_prompt(self, sample: dict) -> str:
+        sample["episodic_memory_system"] = sorted(
+            sample["episodic_memory_system"], key=lambda x: x[-1]
+        )
+        for idx, mem in enumerate(sample["episodic_memory_system"]):
+            max_len = len(sample["episodic_memory_system"])
+            days = len(sample["episodic_memory_system"]) - idx - 1
+            if days == 0:
+                timestamp = "today"
+            else:
+                timestamp = f"{days} days ago"
+            sample["episodic_memory_system"][idx][-1] = timestamp
+
+        prompt = []
+
+        for mem in sample["episodic_memory_system"]:
+            _subject = mem[0].split(" ")[1]
+            _object = mem[2].split(" ")[1]
+            prompt.append(f"The {_subject} was at the {_object}, {mem[3]}.")
+
+        for mem in sample["semantic_memory_system"]:
+            prompt.append(f"{mem[-1]} {mem[0]} were found at {mem[2]}.")
+
+        prompt.append(sample['question'][0])
+
+        prompt = " ".join(prompt)
+
+        return prompt
+
+
 class PromptWrapper:
     """A prompt wrapper class.
 
@@ -268,6 +308,8 @@ class PromptWrapper:
 
         if prompt.lower() == "baseline":
             self.prompt = Baseline()
+        elif prompt.lower() == "without_question":
+            self.prompt = WithoutQuestion()
 
         logging.info(
             "PromptWrapper is successfully instantiated with the arguments: "
