@@ -113,7 +113,8 @@ def evaluate(
         logging.info(f"T: {T}, F: {F}")
         logging.info(f"global accuracy is {global_acc}")
 
-        # return global_acc
+        #should this be commented
+        return global_acc
 
     if metric.lower() == "bleu":
         # TODO: Nihed's job
@@ -156,7 +157,9 @@ def evaluate(
             else:
                 score = 0
             scores.append(score)
+            #I also have to calculate the average, right?
             print(scores)
+
 
 
         # raise ValueError
