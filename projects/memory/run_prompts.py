@@ -255,9 +255,7 @@ class WithoutQuestion(PromptTemplate):
         prompt = []
 
         for mem in sample["episodic_memory_system"]:
-            _subject = mem[0].split(" ")[1]
-            _object = mem[2].split(" ")[1]
-            prompt.append(f"The {_subject} was at the {_object}, {mem[3]}.")
+            prompt.append(f"{mem[0]} was at {mem[2]}, {mem[3]}.")
 
         for mem in sample["semantic_memory_system"]:
             prompt.append(f"{mem[-1]} {mem[0]} were found at {mem[2]}.")
