@@ -694,23 +694,23 @@ class PromptWrapper:
         if prompt.lower() == "baseline":
             self.prompt = Baseline()
         elif prompt.lower() == "forgettingoldestcommon":
-            self.promt = ForgettingOldestCommon()
+            self.prompt = ForgettingOldestCommon()
         elif prompt.lower() == "forgettingoldest":
-            self.promt = ForgettingOldest()
+            self.prompt = ForgettingOldest()
         elif prompt.lower() == "nosementics":
-            self.promt = NoSementics()
+            self.prompt = NoSementics()
         elif prompt.lower() == "episodictosementic":
-            self.promt = Episodic2Sementic()
+            self.prompt = Episodic2Sementic()
         elif prompt.lower() == "baselinereversed":
-            self.promt = BaselineReversed()
+            self.prompt = BaselineReversed()
         elif prompt.lower() == "forgettingoldestcommonreversed":
-            self.promt = ForgettingOldestCommonReversed()
+            self.prompt = ForgettingOldestCommonReversed()
         elif prompt.lower() == "forgettingoldestreversed":
-            self.promt = ForgettingOldestReversed()
+            self.prompt = ForgettingOldestReversed()
         elif prompt.lower() == "nosementicsreversed":
-            self.promt = NoSementicsReversed()
+            self.prompt = NoSementicsReversed()
         elif prompt.lower() == "episodictosementicreversed":
-            self.promt = Episodic2SementicReversed()
+            self.prompt = Episodic2SementicReversed()
         
         logging.info(
             "PromptWrapper is successfully instantiated with the arguments: "
