@@ -20,15 +20,15 @@ In order to run the code, install the required dependencies in `requirements.txt
 
 **Windows:**<br>
 
-for RL:      `$ py -3 main.py --speaker-john --mode=RL --savefile=reinforcement_learning/thoughts.json `<br>
-for NSP:    `$ py -3 main.py --speaker-john --mode=NSP --savefile=next_sentence_prediction/model `<br>
-for Lenka: `$ py -3 main.py --speaker-john --mode=Lenka `
+for RL:      `$ py -3 main.py --speaker=john --mode=RL --savefile=reinforcement_learning/thoughts.json `<br>
+for NSP:    `$ py -3 main.py --speaker=john --mode=NSP --savefile=next_sentence_prediction/model `<br>
+for Lenka: `$ py -3 main.py --speaker=john --mode=Lenka `
 
 **Ubuntu:**<br>
 
-for RL:      `$ python3 main.py --speaker-john --mode=RL --savefile=reinforcement_learning/thoughts.json `<br>
-for NSP:    `$ python3 main.py --speaker-john --mode=NSP --savefile=next_sentence_prediction/model `<br>
-for Lenka: `$ python3 main.py --speaker-john --mode=Lenka `
+for RL:      `$ python3 main.py --speaker=john --mode=RL --savefile=reinforcement_learning/thoughts.json `<br>
+for NSP:    `$ python3 main.py --speaker=john --mode=NSP --savefile=next_sentence_prediction/model `<br>
+for Lenka: `$ python3 main.py --speaker=john --mode=Lenka `
 
 The code has been tested on both Windows 10 and Ubuntu 20.04.
 
