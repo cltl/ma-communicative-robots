@@ -7,56 +7,46 @@
 """
 
 import argparse
-
 from chatbots import Chatbot
 
 
 def main(args):
-    """Runs the main interaction loop of the chatbot."""
+    """ Runs the main interaction loop of the chatbot.
+    """
     # Sets up chatbot with a Lenka-, RL- or NSPReplier
     chatbot = Chatbot(args.speaker, args.mode, args.savefile)
-    print("\nBot:", chatbot.greet)
+    print('\nBot:', chatbot.greet)
 
     # Interaction loop
     while True:
-        say = input("\nYou: ")
+        say = input('\nYou: ')
 
-        if say == "quit":
+        if say == 'quit':
             break
 
-        if say == "plot":
+        if say == 'plot':
             chatbot.replier.thought_selector.plot()
             continue
 
-        print("\nBot:", chatbot.respond(say))
+        print('\nBot:', chatbot.respond(say))
 
     # Farewell + update savefile
-    print("\nBot:", chatbot.farewell)
+    print('\nBot:', chatbot.farewell)
     chatbot.close()
-
+    
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--speaker", default="john", type=str, help="Name of the speaker (e.g. 'john')"
-    )
-    parser.add_argument(
-        "--mode",
-        default="RL",
-        type=str,
-        choices=["RL", "NSP", "Lenka"],
-        help="Thought selection method: {'RL', 'NSP', 'Lenka'}",
-    )
-    parser.add_argument(
-        "--savefile",
-        default="reinforcement_learning/thoughts.json",
-        type=str,
-        help="Path to BERT for NSP (--method=NSP) or RL JSON (--method=RL)",
-    )
+    parser.add_argument('--speaker', default='john', type=str,
+                        help="Name of the speaker (e.g. 'john')")
+    parser.add_argument('--mode', default='RL', type=str, choices=['RL', 'NSP', 'Lenka'],
+                        help="Thought selection method: {'RL', 'NSP', 'Lenka'}")
+    parser.add_argument('--savefile', default='reinforcement_learning/thoughts.json', type=str,
+                        help='Path to BERT for NSP (--method=NSP) or RL JSON (--method=RL)')
     args = parser.parse_args()
-    print(
-        "\nUsing mode=%s with %s and speaker %s.\n"
-        % (args.mode, args.savefile, args.speaker)
-    )
+    print('\nUsing mode=%s with %s and speaker %s.\n' % (args.mode, args.savefile, args.speaker))
 
     main(args)
+    
+
+    
