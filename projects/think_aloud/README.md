@@ -8,10 +8,10 @@ In this repository, we provide alternatives to the random _thought_ selection me
 
 | Method        | Description | By |
 |---------------|-------------|----|
-| Paragraph similarity | In this approach possible verbalizations of thoughts are embedded into a thought vector which is compared to the paragraph embedding of the dialogue history (context); responses with maximal similarity to the paragraph embedding are then selected. Three different paragraph embedding models have been implemented based on `...`, `...` and `...`.| Fina |
+| Semantic Search | In this approach possible verbalizations of thoughts are embedded into a thought vector using SentenceBERT (SBERT) which are compared to the paragraph embedding of the dialogue history (context); responses with maximal similarity to the paragraph embedding are then selected. Three different paragraph embedding models have been implemented based on `...`, `...` and `...`.| Fina |
 | Corpus statistics    | Entities and predicates mentioned in each thought are scored according to their frequency in some text corpus. Thoughts within a frequency intervals are then selected randomly. Three different strategies were examined based on low (smaller than ? percentile), medium (between ? and ? percentile) and high frequency (exceeding ? percentile) | Imme |
-| Reinforcement learning | In this approach thought selection is learnt in an online manner through interaction using an intrinsic reward function based on the number of learned facts as a result of selecting a thought. To select a thought, a score in computed for each thought based on the utility of entities/predicates it mentions; the thought with the highest utility is then selected. | Thomas |
-| Next sentence prediction | Thought selection is framed as a prediction problem in which responses by the replier are scored based on the likelihood of them being good continuations of the dialogue. | Thomas |
+| Reinforcement learning | In this approach thought selection is learnt in an online manner through interaction with the user. To select a thought, a score in computed for each candidate thought based on the utility of the thought type and entities/predicates it mentions; the thought with the highest utility is then selected. To reward the selection algorithm for its choices without explicit user feedback on the quality of responses, we use an intrinsic reward function based on the number of learned facts as a result of selecting a thought. | Thomas |
+| Next sentence prediction | Thought selection is framed as a prediction problem in which responses by the replier are scored based on their likelihood of being appropriate responses to the user input. In this approach we repurpose a pretrained and fine-tuned BERT-based SequenceClassifier in order to judge the validity of responses. | Thomas |
 
 The implementations can be found in their respective folders.
 
@@ -27,7 +27,7 @@ Evaluation of the proposed methods is performed in two steps; a manual evaluatio
 
 ## Authors
 
-Piek Vossen
+Supervisor: Piek Vossen
 
 - Student 1: Thomas Bellucci
 - Student 2: Imme Glaudé
