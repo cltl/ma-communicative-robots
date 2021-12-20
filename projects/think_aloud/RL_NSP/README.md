@@ -1,18 +1,18 @@
 ## Overview
 
-In this directory we have provided the reinforcement learning (RL) and next sentence prediction (NSP) implementations of the replier alongside the baseline LenkaReplier.
+In this directory we provide the reinforcement learning (RL) and next sentence prediction (NSP) implementations of the Leolani replier alongside the base LenkaReplier.
 
-The code base consists of the following files:
+The source code consists of the following files:
 
 | Files            | Description   |
-| ---------------- |:-------------|
-| main.py          | The main file to run an interaction with the chatbot. By default it runs the RL implementation, but can be changed to `NSP` or `Lenka` using the `--mode` command line argument.|
-| chatbots.py      | Implements a chatbot around the proposed repliers based on the Leolani triple extractor, brain and repliers in `repliers.py`. |
+| ---------------- |:--------------|
+| main.py          | The main file to run an interaction with the chatbot. By default it runs the RL implementation, but can be changed to `NSP` or `Lenka` using the `--mode` command line argument (see Usage).|
+| chatbots.py      | Implements a chatbot based on the Leolani triple extractor, brain, EMISSOR and the proposed repliers implemented in `repliers.py`. |
 | repliers.py      | Defines the `RLReplier`, `NSPReplier` and baseline `LenkaReplier`. |
-| EMISSOR.py       | Implements a wrapper class around EMISSOR in order to integrate it into the Chatbot defined in `chatbots.py`. |
-| requirements.txt | Simplified requirements file, containing the minimum number of packages needed to run the implementation. |
+| EMISSOR.py       | Implements a wrapper class around [EMISSOR](https://github.com/leolani/EMISSOR) in order to integrate it into the Chatbot defined in `chatbots.py`. |
+| requirements.txt | Requirements file containing the minimum number of packages needed to run the implementation. |
 
-Furthermore, resources for the RL and NSP methods are stored in `\reinforcement_learning` and `\next_sentence_prediction`, which include definitions and resource files of the UCB RL algorithm and NSP model, respectively. `\utils` primarily contains utility functions used by `chatbots.py` and `repliers.py`.
+Furthermore, resources for the RL and NSP methods are stored in `\reinforcement_learning` and `\next_sentence_prediction`, which include definitions and resource files of the UCB RL algorithm and NSP model, respectively. `\utils` contains utility functions used by `chatbots.py` and `repliers.py`.
 
 ## Usage
 
