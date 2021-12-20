@@ -1,0 +1,1 @@
+In this folder, the code base for the NSP replier is given. In order to run the NSP method, please download the model pretrained NSP model from the following [Google Drive link](https://drive.google.com/drive/folders/10GEpnjqXn4DfyKjFjJG7KbJEygvdAI2J?usp=sharing) and place the files in `models/`.
