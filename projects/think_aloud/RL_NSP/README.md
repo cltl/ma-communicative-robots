@@ -16,7 +16,7 @@ Furthermore, method specific resources are stored in `\reinforcement_learning` a
 
 ## Usage
 
-In order to run the code, install the requirements in `requirements.txt` and run the following command in the current directory:
+In order to run the code, install the required dependencies in `requirements.txt` (`pip install -r requirements.txt`) and run one of the following commands in the `RL_NSP` directory:
 
 **Windows:**<br>
 
