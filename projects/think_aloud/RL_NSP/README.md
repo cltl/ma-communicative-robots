@@ -32,4 +32,4 @@ for Lenka: `$ python3 main.py --speaker-john --mode=Lenka `
 
 The code has been tested on both Windows 10 and Ubuntu 20.04.
 
-**Important:** In order to run NSP, make sure to download the NSP model from <ADD DRIVE LINK> and unzip this file into `\next_sentence_prediction`.
+**Important:** In order to run NSP, make sure to download the NSP model from <ADD DRIVE LINK> and unzip this file into `\next_sentence_prediction\model`. The model files can be found in the following [Google Drive link](https://drive.google.com/drive/folders/10GEpnjqXn4DfyKjFjJG7KbJEygvdAI2J?usp=sharing).
