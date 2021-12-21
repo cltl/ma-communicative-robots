@@ -2,18 +2,19 @@ import argparse
 import logging
 import os
 from glob import glob
-import nltk
-from rouge import Rouge
 
+import nltk
+import numpy as np
+from rouge import Rouge
 from run_prompts import read_json, write_json
 from tqdm import tqdm
-import numpy as np
 
 logging.basicConfig(
     level=os.environ.get("LOGLEVEL", "INFO").upper(),
     format="%(asctime)s.%(msecs)03d %(levelname)s %(module)s - %(funcName)s: %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
 )
+
 
 def compute_our_rouge(reference: str, pred: str) -> float:
     """Compute our rouge score for only Unigrams
@@ -40,6 +41,7 @@ def compute_our_rouge(reference: str, pred: str) -> float:
 
     return score
 
+
 def compute_our_bleu(reference: str, pred: str) -> float:
     """Compute our bleu score for only Unigrams
 
@@ -64,8 +66,9 @@ def compute_our_bleu(reference: str, pred: str) -> float:
             nom += 1
         else:
             nom += 0
-    score = nom/denom
+    score = nom / denom
     return score
+
 
 def evaluate_wrapper(results_path: str, metrics: list = ["nihed"]) -> None:
     """Evaluate wrapper.
@@ -141,8 +144,11 @@ def evaluate_wrapper(results_path: str, metrics: list = ["nihed"]) -> None:
 
 
 def evaluate(
-    predictions: list, correct_answers: list, metric: str = "global_accuracy", prompt_text: list = None
-        #prompt_text: list,
+    predictions: list,
+    correct_answers: list,
+    metric: str = "global_accuracy",
+    prompt_text: list = None
+    # prompt_text: list,
 ) -> float:
     """Evaluate the predictions using the metric.
     Args
@@ -165,7 +171,7 @@ def evaluate(
         logging.info(f"T: {T}, F: {F}")
         logging.info(f"global accuracy is {global_acc}")
 
-        #should this be commented
+        # should this be commented
         return global_acc
 
     if metric.lower() == "bleu":
@@ -228,10 +234,8 @@ def evaluate(
             else:
                 score = 0
             scores.append(score)
-            #I also have to calculate the average, right?
+            # I also have to calculate the average, right?
             return float(np.mean(scores))
-
-
 
         # raise ValueError
 
