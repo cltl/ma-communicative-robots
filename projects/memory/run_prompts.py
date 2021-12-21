@@ -467,6 +467,8 @@ class PromptWrapper:
 
         if prompt.lower() == "baseline":
             self.prompt = Baseline()
+        elif prompt.lower() == "without_question":
+            self.prompt = WithoutQuestion()
         elif prompt.lower() == "semantic_only":
             self.prompt = SemanticOnly()
         elif prompt.lower() == "episodic_to_semantic":
