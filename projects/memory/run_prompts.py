@@ -322,6 +322,67 @@ class EpisodicToSemantic(PromptTemplate):
 
         return prompt
 
+class BestPrompt(PromptTemplate):
+    """Episodic to semantic prompt.
+
+    This prompt converts all episodic to semantic memories 
+    and add semantic memories to the prompt based on the question.
+
+    """
+    cols = None
+    lss = None
+    
+    def __init__(self) -> None:
+        logging.info("episodic to semantic prompt is initialized!")
+        self.cols = ["object", "location"]
+        self.lss = []
+        
+    def generate_prompt(self, sample: dict) -> str:
+        import pandas as pd
+        
+        sample["episodic_memory_system"] = sorted(
+            sample["episodic_memory_system"], key=lambda x: x[-1]
+        )
+        
+        for mem in sample["episodic_memory_system"]:
+            self.lss.append(["".join(mem[0].split()[1:2]), "".join(mem[2].split()[1:2])])
+        observations = pd.DataFrame(self.lss, columns = self.cols)
+        
+        obs = observations.groupby(observations.columns.tolist()).size().reset_index().rename(columns={0:'ranking'})
+        obs_rank_sorted = obs.sort_values('ranking', ascending = False).reset_index(drop=True)
+        
+        for idx, mem in enumerate(sample["episodic_memory_system"]):
+            max_len = len(sample["episodic_memory_system"])
+            days = len(sample["episodic_memory_system"]) - idx - 1
+            if days == 0:
+                timestamp = "today"
+            else:
+                timestamp = f"{days} days ago"
+            sample["episodic_memory_system"][idx][-1] = timestamp
+            
+        people_object_list = []
+        prompt = []
+        
+        episodic_object = obs_rank_sorted.loc[obs_rank_sorted['object'] == "".join(sample['question'][0].split()[1:2])].reset_index()
+
+        for mem in sample["episodic_memory_system"]:
+            if mem[0] not in people_object_list:
+                prompt.append(f"{mem[0]} was at {mem[2]}, {mem[3]}.")
+                people_object_list.append(mem[0])
+
+        if len(episodic_object) >= int(PromptWrapper.maxcap):
+            for i in range(int(PromptWrapper.maxcap)):
+                prompt.append(str(episodic_object["ranking"][i]) +" " +str(episodic_object["object"][i]) + " were found at "+str(episodic_object["location"][i])+".")
+        else:
+            for i in range(len(episodic_object)):
+                prompt.append(str(episodic_object["ranking"][i]) +" " +str(episodic_object["object"][i]) + " were found at "+str(episodic_object["location"][i])+".")
+
+        prompt.append(sample["question"][0])
+        
+        prompt = " ".join(prompt)
+
+        return prompt
+
 class PromptWrapper:
     """A prompt wrapper class.
 
@@ -365,6 +426,8 @@ class PromptWrapper:
             self.prompt = SemanticOnly()
         elif prompt.lower() == "episodic_to_semantic":
             self.prompt = EpisodicToSemantic()
+        elif prompt.lower() == "best_prompt":
+            self.prompt = BestPrompt()
 
         logging.info(
             "PromptWrapper is successfully instantiated with the arguments: "
