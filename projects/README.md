@@ -10,7 +10,7 @@ Check out `./memory/`
 
 We evaluated a T5 model that takes as input triple data. 
 
-Check out './transformers/'
+Check out `./transformers/`
 
 ## Jaap's group
 
