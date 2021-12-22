@@ -1,11 +1,13 @@
 # Overview
 This repository contains the code base of the Transformers project for the Communicative Robots Course at the Vrije Universiteit (VU).
-This repository 
+In this repository, 4 sub researches are performed to investigate the performance of a T5 base model. 
 
-| Research                                                                       | Description           | By  |
-| -------------------------------------------------------------------------------|:---------------------:| -----:|
-| Influence of triple length on generated sentences (automated evaluation)       | right-aligned         | Caya |
-| Influence of triple length on generated sentences (human evaluation)           | centered              |  Mincke |
+| **Research**                                                                       | **Description**           | **By**      |
+| -------------------------------------------------------------------------------|:---------------------:| -------:|
+| Influence of triple length on generated sentences (automated evaluation)       | > This subresearch investigates whether the triple length has an influence on the quality of the generated sentences. 
+> It does so by performing 3 automated evaluation metrics (BERTScore, BLEURT, sacreBLEU), and compares the outcome of these metrics between triple length groups.                                                                                                            | Caya    |
+| Influence of triple length on generated sentences (human evaluation)           |  > This subresearch also investigates whether the triple length has an influence on the quality of the generated sentences. 
+> Instead of automated evaluation metrics, human evaluation is used to compare the generated sentences.  |  Mincke |
 | Impact of different evaluation metrics on performance outcomes                 | are neat              | Pauline |
 | Difference and similarities of human and automated evaluation                  | are neat              | Rishvik |
 
