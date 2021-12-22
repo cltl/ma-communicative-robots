@@ -18,7 +18,7 @@ After this, you can clone Jaap's repo:
 ## Generator usage ##
 
 You need to make sure that the data to be used is organized exactly as Jaap's repo demonstrates. In other words, it needs to be in the form:
-`
+```
 scenario\
 	|
 	|-picture_1\
@@ -28,7 +28,7 @@ scenario\
 	|-picture_2\
 	|	|...
 	...
-`
+```
 
 In other words, a scenario is a directory, and every picture is a sub-directory, and every picture's (abstracted) data is in JSON file in that picture's sub-directory.
 
