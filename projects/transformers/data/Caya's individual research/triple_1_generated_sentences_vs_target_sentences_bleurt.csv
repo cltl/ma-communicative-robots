@@ -1,0 +1,916 @@
+0,The Motor Sport Sport Vision is located in Fawkham and its HQ is Faw,MotorSport Vision is located in the city of Fawkham.,-0.11227838695049286
+1,The Motor Sport Sport Vision is located in Fawkham and its HQ is Faw,"MotorSport Vision is located in the city of Fawkham, UK.",-0.10431724786758423
+2,The Motor Sport Sport Vision is located in Fawkham and its HQ is Faw,MotorSport Vision is located in Fawkham.,0.04640569910407066
+3,The population density of Ciudad Ayala is 1604.0 and the population density is,The population density of Ciudad Ayala is 1604.0.,0.6575282216072083
+4,The population density of Ciudad Ayala is 1604.0 and the population density is,Ciudad Ayala city has a population density of 1604.0.,0.40210795402526855
+5,The population density of Ciudad Ayala is 1604.0 and the population density is,The population density in Ciudad Ayala is 1604.,0.6013794541358948
+6,The official language of the country of Israel is the Modern Hebrew and the official language is,The official language of Israel is modern Hebrew.,0.4903866648674011
+7,The official language of the country of Israel is the Modern Hebrew and the official language is,Israel’s official language is Modern Hebrew.,0.4014088213443756
+8,The official language of the country of Israel is the Modern Hebrew and the official language is,Modern Hebrew is the official language of Israel.,0.13289710879325867
+9,Chinabank is located in the Philippines and is the location of Chinabank.,Chinabank's location is the Philippines.,0.4167943000793457
+10,Chinabank is located in the Philippines and is the location of Chinabank.,Chinabank is located in the Philippines.,0.6686517000198364
+11,Detroit has a total area of 370.03 and a total area of 370,The total area of the city of Detroit is 370.03 square kilometers.,0.15853944420814514
+12,Detroit has a total area of 370.03 and a total area of 370,Detroit has a total area of 370.03 square kilometers.,0.24002978205680847
+13,GMA New Media is located in the GMA Network Center and is located in the GMA,GMA New Media is located in the GMA Network Center.,0.4344501197338104
+14,GMA New Media is located in the GMA Network Center and is located in the GMA,GMA New Media headquarters are located in the GMA Network Center.,0.16528759896755219
+15,GMA New Media is located in the GMA Network Center and is located in the GMA,GMA New Media is located inside GMA Network Center.,0.33904871344566345
+16,"The music Composer of the band, Nicholas Brookszky, is the musician of",The music of the film English Without Tears is composed by Nicholas Brodszky.,-0.7893006205558777
+17,"The music Composer of the band, Nicholas Brookszky, is the musician of",Nicholas Brodszky composed music of the movie English Without Tears.,-0.9167526364326477
+18,"The music Composer of the band, Nicholas Brookszky, is the musician of",Nicholas Brodszky was a composer of the songs that were used in English Without Tears.,-0.868751049041748
+19,"The film, ""Its Great to be 5"" starred by ""Cel",Cecil Parker had a main role in It's Great to Be Young.,-1.3474030494689941
+20,"The film, ""Its Great to be 5"" starred by ""Cel",Cecil Parker starred in the 1956 movie It's Great to Be Young.,-1.3928169012069702
+21,"The film, ""Its Great to be 5"" starred by ""Cel",It's Great to be Young is a 1956 film starring Cecil Parker.,-1.3150538206100464
+22,"Ray Griggs is the director of Super Capers, the director of which, is Ray","The movie ""Super Capers"" was directed by Ray Griggs.",-0.44428160786628723
+23,"Ray Griggs is the director of Super Capers, the director of which, is Ray",Super Capers is directed by Ray Griggs.,-0.2273441106081009
+24,"Ray Griggs is the director of Super Capers, the director of which, is Ray",Ray Griggs is the director of Super Capers.,0.04670010134577751
+25,Anatole de Groinwald is the producer of Anatole de Growwald and,"""English Without Tears"" was produced by Anatole de Grunwald.",-0.7043834924697876
+26,Anatole de Groinwald is the producer of Anatole de Growwald and,Anatole de Grunwald was the producer of 'English Without Tears'.,-0.4979948401451111
+27,Anatole de Groinwald is the producer of Anatole de Growwald and,Anatole de Grunwald is the producer of English Without Tears.,-0.5539870262145996
+28,"08/26 is the runway name of the Bedford Aerodrome, which has the name","The Bedford Aerodrome has a runway named ""08/26"".",0.16905353963375092
+29,"08/26 is the runway name of the Bedford Aerodrome, which has the name",Bedford Aerodrome has a runway called 08/26.,0.02645830437541008
+30,"08/26 is the runway name of the Bedford Aerodrome, which has the name",The Bedford Aerodrome runway name is 08/26.,0.2040044069290161
+31,Adam West was born in 1928 and was born in the year 1928.,Adam West was born in the year 1928.,0.7986738681793213
+32,Adam West was born in 1928 and was born in the year 1928.,Adam West was born in 1928.,0.5329331755638123
+33,"The Bedford Autodrome, which serves the city of Bedford, is served by the Bedford Auto",Bedford Aerodrome has served the Bedford Autodrome.,0.059529032558202744
+34,"The Bedford Autodrome, which serves the city of Bedford, is served by the Bedford Auto",The place served by the Bedford Aerodrome is the Bedford Autodrome.,-0.042952049523591995
+35,"The Bedford Autodrome, which serves the city of Bedford, is served by the Bedford Auto",The Bedford Aerodrome serves the Bedford Autodrome.,0.13556168973445892
+36,"The author of the film, Ted Williams, is the author of the film, ""It",Writer of the 1956 film It's Great to Be Young is Ted Willis.,-0.8144803047180176
+37,"The author of the film, Ted Williams, is the author of the film, ""It",Ted Willis is the writer of the film It's Great to Be Young.,-0.6921075582504272
+38,"The author of the film, Ted Williams, is the author of the film, ""It",The writer of “It’s great to be young” is Ted Willis.,-0.6557984352111816
+39,"The sister production of the HBO, which has a sister station called the Cinemax, is",HBO and Cinemax are sister stations.,0.00987565889954567
+40,"The sister production of the HBO, which has a sister station called the Cinemax, is",HBO is a sister station with Cinemax.,0.15877820551395416
+41,"The sister production of the HBO, which has a sister station called the Cinemax, is",Cinemax is a sister channel with HBO.,0.05271972343325615
+42,"Reuven Revivallin is the leader of the country of Israel, where the",One of the leaders of Israel is Reuven Rivlin.,-0.2794543504714966
+43,"Reuven Revivallin is the leader of the country of Israel, where the",The leader of Israel is Reuven Rivlin.,-0.3307963013648987
+44,"Reuven Revivallin is the leader of the country of Israel, where the",Israel's leader is Reuven Rivlin.,-0.22910216450691223
+45,"The TV series, which was broadcasted by the HBO, is known by the name of",Death on a Factory Farm was released by HBO.,-0.5903385281562805
+46,"The TV series, which was broadcasted by the HBO, is known by the name of",Death on a Factory Farm is a film broadcasted by HBO.,-0.5930621027946472
+47,"The TV series, which was broadcasted by the HBO, is known by the name of",The Death on a Factory Farm was broadcasted by HBO.,-0.7169735431671143
+48,The official language of the country is the Modern Standard Standard Arabic and the official language is,One of the official languages of Israel Is Modern Standard Arabic.,0.04874658212065697
+49,The official language of the country is the Modern Standard Standard Arabic and the official language is,The official language of Israel is Modern Standard Arabic.,0.18657803535461426
+50,John Miller died in 2005 and he died in 2005.,John Mills died in 2005.,0.5317519903182983
+51,"Leni Robredo is the leader of the Philippines, where Leni Robred",Leni Robredo is the leader of the Philippines.,-0.23309463262557983
+52,"Leni Robredo is the leader of the Philippines, where Leni Robred",Leni Robredo is a Filipino leader.,-0.24364712834358215
+53,"Leni Robredo is the leader of the Philippines, where Leni Robred",The leader of the Philippines is Leni Robredo.,-0.35040631890296936
+54,"Leni Robredo is the leader of the Philippines, where Leni Robred",The name of the leader of the Philippines is Leni Robredo.,-0.4521356523036957
+55,16800 undergraduate students attend the University of Buregundy which has 16800 undergraduate students,"The University of Burgundy has 16,800 undergraduate students.",-0.42096081376075745
+56,16800 undergraduate students attend the University of Buregundy which has 16800 undergraduate students,There are 16800 undergraduate students at the University of Burgundy.,-0.43079012632369995
+57,16800 undergraduate students attend the University of Buregundy which has 16800 undergraduate students,The University of Burgundy has 16800 undergraduate students.,-0.5131825804710388
+58,"The number of students at the University of Burningy, which has 27400 students, is",There are 27400 students at the University of Burgundy.,-0.6008943319320679
+59,"The number of students at the University of Burningy, which has 27400 students, is",The number of students in the University of Burgundy is 27400.,-0.35816001892089844
+60,"The number of students at the University of Burningy, which has 27400 students, is",The University of Burgundy has 27400 students.,-0.6358281970024109
+61,German Papiermark is the currency of the German Empire and the German empire,The currency of the German Empire is German Papiermark.,-0.04053988680243492
+62,German Papiermark is the currency of the German Empire and the German empire,The German Empire's currency is the German Papiermark.,0.06535091996192932
+63,German Papiermark is the currency of the German Empire and the German empire,One of the currencies of the German Empire was the German Papiermark.,-0.08312606811523438
+64,"The timeshift for HBO is 10/HO West, and the time zone is 12/08","HBO has different timeshift services, for example, HBO East and HBO West.",-0.9530736207962036
+65,"The timeshift for HBO is 10/HO West, and the time zone is 12/08",HBO East and HBO West are timeshift channels of HBO.,-0.9563839435577393
+66,"The timeshift for HBO is 10/HO West, and the time zone is 12/08",HBO's timeshift channel is divided into HBO East and HBO West.,-0.9235903024673462
+67,"Terence Gigan died on January 1, 1977 and died on January 1, 1977.",Terence Rattigan died in 1977.,0.3327734172344208
+68,"Terence Gigan died on January 1, 1977 and died on January 1, 1977.",The death year of Terence Rattigan is 1977.,0.10470804572105408
+69,Ciudad Ayala is located in the city of the city and is the type,Ciudad Ayala is a city.,-0.5877355337142944
+70,"Prime Minister leads the country of Israel, which is led by the Prime Minister.","The Israel's leader title is ""Prime Minister"".",-0.04566815868020058
+71,"Prime Minister leads the country of Israel, which is led by the Prime Minister.",The leader title of Israel is Prime Minister.,-0.09072563052177429
+72,"Prime Minister leads the country of Israel, which is led by the Prime Minister.",Israel’s leader is the Prime Minister.,0.20347926020622253
+73,"Manila is part of Metro Manila, Metro Manila. Manila is part of Metro Manila.",Manila is part of Metro Manila.,0.7936323881149292
+74,"Manila is part of Metro Manila, Metro Manila. Manila is part of Metro Manila.",Metro Manila includes the city of Manila.,0.24607518315315247
+75,"The film, Gilbert Taylor, is the film that created the character, Gilbert Taylor, and the",It's Great to Be Young had Gilbert Taylor as cinematographer.,-1.013857126235962
+76,"The film, Gilbert Taylor, is the film that created the character, Gilbert Taylor, and the",It's Great to Be Young is in Gilbert Taylor's cinematography.,-0.9502193331718445
+77,"The film, Gilbert Taylor, is the film that created the character, Gilbert Taylor, and the","Gilbert Taylor was the cinematographer of the film ""It's Great to Be Young"".",-0.8777646422386169
+78,The currency of the South German Empire is the South German gulden and the German empire is,The German Empire's currency is the South German gulden.,0.23166424036026
+79,The currency of the South German Empire is the South German gulden and the German empire is,The currency of the German Empire is South German gulden.,0.3386094570159912
+80,The currency of the South German Empire is the South German gulden and the German empire is,In the German Empire one of the units of currency was the South German Gulden.,0.0019911788403987885
+81,Terence Gigan was born on 1901-01-01 and was born on 1901-01-01.,Terence Rattigan was born on 01/01/1911.,0.3378521203994751
+82,Terence Gigan was born on 1901-01-01 and was born on 1901-01-01.,"Terence Rattigan was born on January 1st, 1911.",0.05442097410559654
+83,Terence Gigan was born on 1901-01-01 and was born on 1901-01-01.,Terence Rattigan was born on the first of January in 1911.,-0.1735890805721283
+84,"Time Warner is the owner of the HBO, which is owned by Time Warner.",The owner of HBO is Time Warner.,0.5670804977416992
+85,"Time Warner is the owner of the HBO, which is owned by Time Warner.",Time Warner owns HBO.,0.6173927187919617
+86,"Time Warner is the owner of the HBO, which is owned by Time Warner.",Time Warner is the owner of HBO.,0.7265405654907227
+87,The leader of the country is Itzik Braverman and the leader is Itzik,One of the leaders of Petah Tikva is Itzik Braverman.,-0.1663007140159607
+88,The leader of the country is Itzik Braverman and the leader is Itzik,One of the leaders of Petah Tikva was Itzik Braverman.,-0.15777593851089478
+89,"La Crosse County, Wisconsin is part of La Crosse County, Wisconsin.",La Crosse is a city in La Crosse County in the U.S. state of Wisconsin.,0.36553776264190674
+90,"La Crosse County, Wisconsin is part of La Crosse County, Wisconsin.",La Crosse Wisconsin is part of La Crosse County Wisconsin.,0.7772637009620667
+91,"La Crosse County, Wisconsin is part of La Crosse County, Wisconsin.","La Crosse, Wisconsin is part of La Crosse County, Wisconsin.",0.804997980594635
+92,"La Crosse County, Wisconsin is part of La Crosse County, Wisconsin.",La Crosse is part of La Crosse County in Wisconsin.,0.6606364250183105
+93,Liselotte Groebina is a professional illustrator who makes a living as,Liselotte Grschebina was a professional photographer.,-0.04524160549044609
+94,Liselotte Groebina is a professional illustrator who makes a living as,Liselotte Grschebina was a photographer.,-0.06244542822241783
+95,Terence Gigan's Imdbid is 0711905 and he has,Terence Rattigan is registered in IMDb under the ID 0711905.,-0.2711974084377289
+96,Terence Gigan's Imdbid is 0711905 and he has,Terence Rattigan's IMDb ID is 0711905.,-0.037394631654024124
+97,Terence Gigan's Imdbid is 0711905 and he has,The IMDb ID of Terence Rattigan is 0711905.,-0.22149010002613068
+98,"Detroit is part of Michigan, United States and Detroit is part of Detroit.",Detroit is part of Michigan.,0.5398806929588318
+99,"Detroit is part of Michigan, United States and Detroit is part of Detroit.",The city of Detroit is located in Michigan.,0.14872358739376068
+100,"Detroit is part of Michigan, United States and Detroit is part of Detroit.",The city of Detroit is part of Michigan.,0.2151997983455658
+101,"The The Progressive Motion Picture Company, which is the producer of the South Seas, is the",The film McVeagh of the South Seas was produced by the Progressive Motion Picture Company.,-0.5862047076225281
+102,"The The Progressive Motion Picture Company, which is the producer of the South Seas, is the",The producer of McVeagh of the South Seas is the Progressive Motion Picture Company.,-0.3480614721775055
+103,"The The Progressive Motion Picture Company, which is the producer of the South Seas, is the",McVeagh of the South Seas is produced by the Progressive Motion Picture Company.,-0.5401736497879028
+104,"The Green Channel, formerly known as the HBO, was formerly known as The Green Channel",HBO's former name was 'The Green Channel'.,0.37087559700012207
+105,"The Green Channel, formerly known as the HBO, was formerly known as The Green Channel",HBO's former name was The Green Channel.,0.3980918228626251
+106,Ciudad Ayala's time zone is Pacific Standard Time Zone and it is,Ciudad Ayala is in the Pacific Standard Time Zone.,0.2272534966468811
+107,Ciudad Ayala's time zone is Pacific Standard Time Zone and it is,The timezone of Ciudad Ayala is the Pacific Standard Time Zone.,0.2922353744506836
+108,"Detroit is part of Wayne County, Michigan and is part of the Detroit County.","The city of Detroit is in Wayne County, Michigan.",0.28553274273872375
+109,"Detroit is part of Wayne County, Michigan and is part of the Detroit County.","Detroit is part of Wayne County, Michigan.",0.6949012875556946
+110,"Detroit is part of Wayne County, Michigan and is part of the Detroit County.","The city of Detroit is located in Wayne County, Michigan.",0.28114205598831177
+111,Liselotte Groebina died in Petah Tikva and died in,Liselotte Grschebina died in Petah Tikva.,0.444558322429657
+112,"Maeve Quinlan is the wife of Tom Scalmore, who was the spouse of,",Tom Sizemore was married to Maeve Quinlan.,0.015945229679346085
+113,"Maeve Quinlan is the wife of Tom Scalmore, who was the spouse of,",Tom Sizemore is married to Maeve Quinlan.,-0.0354464165866375
+114,"Maeve Quinlan is the wife of Tom Scalmore, who was the spouse of,",The spouse of Tom Sizemore is Maeve Quinlan.,-0.0849204733967781
+115,The McVeagh of the South Seas has an epoch date of 000,McVeagh of the South Seas IMDb ID is 0004319.,-0.6959663033485413
+116,The McVeagh of the South Seas has an epoch date of 000,McVeagh of the South Seas is a film registered in IMDb with the ID 0004319.,-0.8183497786521912
+117,The McVeagh of the South Seas has an epoch date of 000,McVeagh of the South Seas' IMDb id is 0004319.,-0.7641104459762573
+118,"The leader of the country, which is led by, Adrián Rivera Perez,",Adrián Rivera Pérez is a leader in Morelos.,-0.2760595679283142
+119,"The leader of the country, which is led by, Adrián Rivera Perez,",One of the leaders of the Mexican state of Morelos is Adrián Rivera Pérez.,-0.3838883936405182
+120,"Roadside Attractions is the distributor of SuperCappers, which is distributed by the distributor",Distributor of the movie Super Capers is Roadside Attractions.,-0.29763588309288025
+121,"Roadside Attractions is the distributor of SuperCappers, which is distributed by the distributor",Super Capers was distributed by Roadside Attractions.,-0.07171076536178589
+122,"Roadside Attractions is the distributor of SuperCappers, which is distributed by the distributor",Super Capers is a film distributed by Roadside Attractions.,-0.32605546712875366
+123,Pontiac Pontiac was succeeded by Buick and Pontiac.,Buick is the successor of Pontiac.,0.14040008187294006
+124,Pontiac Pontiac was succeeded by Buick and Pontiac.,One of the successors of Pontiac is Buick.,0.0036068446934223175
+125,Pontiac Pontiac was succeeded by Buick and Pontiac.,The successor to Pontiac is Buick.,0.014698322862386703
+126,The Roadside Attractions was founded on 01-01-2003 and is the company that was,Roadside Attractions is founded in 2003.,-0.08908498287200928
+127,The Roadside Attractions was founded on 01-01-2003 and is the company that was,Roadside Attractions was founded in 2003.,-0.11835291981697083
+128,The Roadside Attractions was founded on 01-01-2003 and is the company that was,The company Roadside Attractions was founded in 2003.,-0.28328484296798706
+129,The population of Ciudad Ayala is 1777539 and the population density,The population in the Ciudad Ayala metropolitan area is 1777539.,0.3902520537376404
+130,The population of Ciudad Ayala is 1777539 and the population density,"The population of the metropolitan area of Ciudad Ayala is 1,777,539.",0.14296752214431763
+131,The staff of the University of Burnundy is 2900.,The number of staff members at the University of Burgundy is 2900.,-0.4050421714782715
+132,The staff of the University of Burnundy is 2900.,The University of Burgundy employs 2900 staff members.,-0.40638554096221924
+133,The staff of the University of Burnundy is 2900.,The University of Burgundy has 2900 staff members.,-0.39636266231536865
+134,The director of the Factory Farm is Sarah Teale and the school is the location,The director of the movie Death on a Factory Farm was Sarah Teale.,-0.7517188787460327
+135,The director of the Factory Farm is Sarah Teale and the school is the location,Death on a Factory Farm is directed by Sarah Teale.,-0.7005239725112915
+136,The director of the Factory Farm is Sarah Teale and the school is the location,Sarah Teale directed Death on a Factory Farm.,-0.786429226398468
+137,"Michael Ker was born on January 1, 1955 and was born on January 1, 1955.",Michael Rooker was born in the year 1955.,0.19806990027427673
+138,"Michael Ker was born on January 1, 1955 and was born on January 1, 1955.",Michael Rooker was born in 1955.,0.3009515404701233
+139,Bernard Knowles is the film character of the English Without Teas which is the film,The cinematography of English Without Tears was done by Bernard Knowles.,-1.0463753938674927
+140,Bernard Knowles is the film character of the English Without Teas which is the film,Bernard Knowles was the cinematographer of the film English Without Tears.,-0.9590644240379333
+141,Bernard Knowles is the film character of the English Without Teas which is the film,The cinematographer of the movie English Without Tears is Bernard Knowles.,-1.0280275344848633
+142,"Tom Scalmore started his career on January 1, 1989 and became active on January 1, 1989.",Tom Sizemore began his career in 1989.,0.27558714151382446
+143,"Tom Scalmore started his career on January 1, 1989 and became active on January 1, 1989.",Tom Sizemore active years as an actor started in 1989.,0.005814548581838608
+144,"Tom Scalmore started his career on January 1, 1989 and became active on January 1, 1989.",Tom Sizemore started performing in 1989.,0.025421444326639175
+145,"The total area of the 4879.0 square kilometres, and of the 4879",The Morelos total area is 4879 km².,-0.38615724444389343
+146,"The total area of the 4879.0 square kilometres, and of the 4879",Morelos has a total area of 4879.,-0.45200926065444946
+147,"The total area of the 4879.0 square kilometres, and of the 4879",The total area of Morelos is 4879.,-0.39049655199050903
+148,The Council-manager government is the responsible for the government of the Ciudad Ayal,The government type in the city of Ciudad Ayala is council-manager.,-0.260489821434021
+149,The Council-manager government is the responsible for the government of the Ciudad Ayal,Ciudad Ayala uses a type of government called council-manager government.,-0.4413169324398041
+150,The Council-manager government is the responsible for the government of the Ciudad Ayal,The government type of Ciudad Ayala is council-manager government.,-0.2571278214454651
+151,Michael R. Burns is a key person at Lionsgate and Michael R. Burn,Michael R Burns plays an important role for the company Lionsgate.,-0.015190798789262772
+152,Michael R. Burns is a key person at Lionsgate and Michael R. Burn,Michael R. Burns is a key person at Lionsgate.,0.12692546844482422
+153,Michael R. Burns is a key person at Lionsgate and Michael R. Burn,Lionsgate has Michael R Burns as a key person.,-0.17093342542648315
+154,The UTC offset for Ciudad Ayala is <unk> 6 and the U,Ciudad Ayala falls into UTC offset -6 timezone.,-0.9092788100242615
+155,The UTC offset for Ciudad Ayala is <unk> 6 and the U,The UTC offset of Ciudad Ayala is -6.,-0.5831218957901001
+156,The UTC offset for Ciudad Ayala is <unk> 6 and the U,Ciudad Ayala has a UTC offset of -6.,-0.4959961771965027
+157,Ray Griggs is the director of Ray Griggs who wrote Super Captures.,Super Capers was written by the director Ray Griggs.,-0.41442742943763733
+158,Ray Griggs is the director of Ray Griggs who wrote Super Captures.,Super Capers is a film written by Ray Griggs.,-0.6198309063911438
+159,Ray Griggs is the director of Ray Griggs who wrote Super Captures.,Super Capers was written by Ray Griggs.,-0.4453989565372467
+160,Alan Jaggs is the editor of Alan Jaggs and the English Without Teas,The editing of the movie English Without Tears was done by Alan Jaggs.,-0.852640688419342
+161,Alan Jaggs is the editor of Alan Jaggs and the English Without Teas,The editing of the movie English Without Tears is done by Alan Jaggs.,-0.8888526558876038
+162,Alan Jaggs is the editor of Alan Jaggs and the English Without Teas,Alan Jaggs was a film editor for English Without Tears.,-0.5541133880615234
+163,"John Miller died in Denham, Buckinghamshire and died in Denham, Buckinghamshire","The deathplace of John Mills was in Denham, Buckinghamshire.",-0.023303721100091934
+164,"John Miller died in Denham, Buckinghamshire and died in Denham, Buckinghamshire","John Mills died in Denham, Buckinghamshire.",0.3792370557785034
+165,"Adam West starred in the SuperCapers, SuperCapers, and starred Adam West",Adam West had a main role in the movie Super Capers.,-0.2507026791572571
+166,"Adam West starred in the SuperCapers, SuperCapers, and starred Adam West",Super Capers is a film starring Adam West.,-0.5029427409172058
+167,"Adam West starred in the SuperCapers, SuperCapers, and starred Adam West",Super Capers is starring Adam West.,-0.34625405073165894
+168,"Jamie Lawrence was born on the 8th of March, 1971 and his birthdate","Jamie Lawrence was born on March 8th, 1970.",0.2996068596839905
+169,"Jamie Lawrence was born on the 8th of March, 1971 and his birthdate","Jamie Lawrence was born on March 8, 1970.",0.30387967824935913
+170,"Jamie Lawrence was born on the 8th of March, 1971 and his birthdate",Jamie Lawrence's date of birth was 1970-03-08.,-0.09165532886981964
+171,"The long name of the country of Israel is ""State of Israel"" and the country is",The full name of the country Israel is the State of Israel.,0.007397834211587906
+172,"The long name of the country of Israel is ""State of Israel"" and the country is",Israel is formally known as the State of Israel.,-0.35813575983047485
+173,"The long name of the country of Israel is ""State of Israel"" and the country is","Israel's long name is ""State of Israel"".",0.12554433941841125
+174,"Michael Ker was born April 6, 1955 and his birth date was 4 April 1955.",Michael Rooker was born on April 6th 1955.,0.46158960461616516
+175,"Michael Ker was born April 6, 1955 and his birth date was 4 April 1955.",The birth date of Michael Rooker is April 6th 1955.,0.32616689801216125
+176,"Michael Ker was born April 6, 1955 and his birth date was 4 April 1955.",Michael Rooker was born on 6th April 1955.,0.42708784341812134
+177,Mexico has a total area of 1972550.0 and a total area of 1972550.0,"The total area of Mexico is 1,972,550 square kilometers.",-0.1387181580066681
+178,Mexico has a total area of 1972550.0 and a total area of 1972550.0,Mexico has a total area of 1972550.0.,0.6990121006965637
+179,Mexico has a total area of 1972550.0 and a total area of 1972550.0,The total area of Mexico is 1972550.0.,0.49832046031951904
+180,Pontiac Ridgeous was assembled in Detroit and is assembled in Pontiac Ridge,The Pontiac Rageous assembly line is in Detroit.,-0.39936399459838867
+181,Pontiac Ridgeous was assembled in Detroit and is assembled in Pontiac Ridge,The Pontiac Rageous was assembled in Detroit.,-0.2796551287174225
+182,The University of Buregundy is located in France and is the location of the University,The University of Burgundy is in France.,-0.368815541267395
+183,The University of Buregundy is located in France and is the location of the University,The University of Burgundy is located in France.,-0.30273300409317017
+184,The MotorSport Vision is located in Kent and is the company that makes the Motor Sport Vision.,MotorSport Vision is located in the the city of Kent.,-0.06988061219453812
+185,The MotorSport Vision is located in Kent and is the company that makes the Motor Sport Vision.,MotorSport vision is in Kent.,0.16848137974739075
+186,The MotorSport Vision is located in Kent and is the company that makes the Motor Sport Vision.,"MotorSport Vision is located in the city of Kent, UK.",-0.06431391835212708
+187,Harry Carey (actor born in 1878) is the author of McVe,"Harry Carey (actor, born in 1878) was the writer of McVeagh of the South Seas.",0.13890045881271362
+188,Harry Carey (actor born in 1878) is the author of McVe,Harry Carey is the writer for the film McVeagh of the South Seas.,-0.6586430668830872
+189,Harry Carey (actor born in 1878) is the author of McVe,"The film McVeagh of the South Seas has been written by Harry Carey, who was born in 1878.",-0.3890502154827118
+190,Juan Nolasco is the leader of Ciudad Ayala and the leader is,The leader of Ciudad Ayala is Juan Nolasco.,0.19503146409988403
+191,Juan Nolasco is the leader of Ciudad Ayala and the leader is,One of the leaders of Ciudad Ayala is Juan Nolasco.,0.20454519987106323
+192,"GMA New Media produces online games, and GMA New Media produces online games.",GMA New Media's main product is online games.,0.3043597936630249
+193,"GMA New Media produces online games, and GMA New Media produces online games.",GMA New Media produces online games.,0.7227824926376343
+194,"GMA New Media produces online games, and GMA New Media produces online games.",GMA New Media makes online games.,0.5680500268936157
+195,"GMA New Media produces online games, and GMA New Media produces online games.",GMA New Media is a company that offers online games products.,0.25497162342071533
+196,Alliance Flilms Corporation is the distributor of McVeagh of the South Seas,McVeagh of the South Seas was distributed by Alliance Films Corporation.,-0.2052074819803238
+197,Alliance Flilms Corporation is the distributor of McVeagh of the South Seas,McVeagh of the South Seas is a film distributed by Alliance Films Corporation.,-0.3144891858100891
+198,Alliance Flilms Corporation is the distributor of McVeagh of the South Seas,Alliance Films Corporation is the distributor for the film McVeagh of the South Seas.,0.13038207590579987
+199,"The Motor Sport Vision are the operators of the Bedford Avenue, which is the location of the Bedford",The Bedford Aerodrome has an operating organization that is called the MotorSport Vision.,-0.40238749980926514
+200,"The Motor Sport Vision are the operators of the Bedford Avenue, which is the location of the Bedford",MotorSport Vision is the operating organisation for Bedford Aerodrome.,-0.14822080731391907
+201,"The Motor Sport Vision are the operators of the Bedford Avenue, which is the location of the Bedford",MotorSport Vision operates the Bedford Aerodrome.,-0.2527497410774231
+202,Liselotte Groschebina was born in the German Empire and was born in the,Liselotte Grschebina was born within the German Empire.,0.4339524209499359
+203,Liselotte Groschebina was born in the German Empire and was born in the,Liselotte Grschebina was born in the German Empire.,0.48209601640701294
+204,"The President of the Senate leads Mexico, where the leader is known as the President.",The leader title in Mexico is the President of the Senate.,-0.06848961114883423
+205,"The President of the Senate leads Mexico, where the leader is known as the President.","Mexico's government has a position titled the ""President of the Senate"".",-0.09342527389526367
+206,"The President of the Senate leads Mexico, where the leader is known as the President.",Mexico's leader has the official title President of the Senate.,0.020750250667333603
+207,Dijon is 25 metres above sea level and is 245.0 metres above sea level.,Dijon's elevation is 245.0 above the sea level.,0.39978915452957153
+208,Dijon is 25 metres above sea level and is 245.0 metres above sea level.,Dijon has an elevation of 245.0 above the sea level.,0.4531428813934326
+209,Dijon is 25 metres above sea level and is 245.0 metres above sea level.,Dijon's elevation is 245.0 above sea level.,0.3775649964809418
+210,"The Super Capers of Super Captures starred the super super cappers, Justin Halin",The film Super Capers starred Justin Whalin.,-0.5819463133811951
+211,"The Super Capers of Super Captures starred the super super cappers, Justin Halin",The film Super Capers stars Justin Whalin.,-0.568626344203949
+212,"The Super Capers of Super Captures starred the super super cappers, Justin Halin",Super Capers starred Justin Whalin.,-0.555979311466217
+213,"GMA Network is the parent company of GMA New Media, whose parent company is G","GMA New Media, Inc. is a subsidiary of GMA Network.",-0.153171569108963
+214,"GMA Network is the parent company of GMA New Media, whose parent company is G",GMA Network is the parent company of GMA New Media.,0.007414914667606354
+215,"GMA Network is the parent company of GMA New Media, whose parent company is G",The parent company of GMA New Media is the GMA Network.,-0.36470475792884827
+216,"GMA Network is the parent company of GMA New Media, whose parent company is G",GMA New Media is a branch of the GMA Network company.,-0.16530773043632507
+217,"The country of Indonesia, where the leader is Petah Tikva, is home to",Petah Tikva is a city in Israel.,-1.2914397716522217
+218,"The country of Indonesia, where the leader is Petah Tikva, is home to",Petah Tikva is in Israel.,-1.112122654914856
+219,"The country of Indonesia, where the leader is Petah Tikva, is home to",Petah Tikva is in the country of Israel.,-1.083643913269043
+220,The start date of the career of Harold Francis is 1920-01-01 and the career began on 01,Harold French started being an active actor in 1920.,-0.7824753522872925
+221,The start date of the career of Harold Francis is 1920-01-01 and the career began on 01,Harold French has been active as an actor since 1920.,-0.8302684426307678
+222,The start date of the career of Harold Francis is 1920-01-01 and the career began on 01,Harold French started his career as an actor in 1920.,-0.7041166424751282
+223,The Arab Citizens of Iran are an ethnic group in the country which is the location,The Arab citizens of Israel is an ethnic group in Israel.,-0.6591034531593323
+224,The Arab Citizens of Iran are an ethnic group in the country which is the location,Ethnic groups in Israel include Arabs.,-0.8248474597930908
+225,The Arab Citizens of Iran are an ethnic group in the country which is the location,One of the ethnic groups in Israel is Arabs.,-0.8917692303657532
+226,Anatole de Gaswald died in London. He died in London.,Anatole de Grunwald died in London.,0.7117222547531128
+227,AmeriGas has 8500 employees and 8500 employees.,"AmeriGas has 8,500 employees.",0.4448959231376648
+228,AmeriGas has 8500 employees and 8500 employees.,"8,500 people work in AmeriGas.",0.2627386450767517
+229,AmeriGas has 8500 employees and 8500 employees.,AmeriGas has 8500 employees.,0.7353143692016602
+230,"Terence Grant is the author of the novels, English With Out Times and Terence Garrett",'English Without Tears' was written by Terence Rattigan.,-0.9695125818252563
+231,"Terence Grant is the author of the novels, English With Out Times and Terence Garrett","""English Without Tears"" was written by Terence Rattigan.",-1.020750641822815
+232,"Terence Grant is the author of the novels, English With Out Times and Terence Garrett",Terence Rattigan is the writer of English Without Tears.,-0.8905099034309387
+233,"Adam West started his career on January 1, 1954 and became active on January 1, 1954.",Adam West got his first role in 1954.,0.039992768317461014
+234,"Adam West started his career on January 1, 1954 and became active on January 1, 1954.",Adam West has been an actor since 1954.,-0.13773797452449799
+235,"Adam West started his career on January 1, 1954 and became active on January 1, 1954.",Adam West started his career from the year 1954.,0.17520970106124878
+236,The MotorSport Virage is located in Longfield and is the manufacturer of the Motor Sport Vision,"MotorSport Vision is based in the city of Longfield, Kent.",-0.3265555500984192
+237,The MotorSport Virage is located in Longfield and is the manufacturer of the Motor Sport Vision,The MotorSport Vision location is the city of Longfield.,-0.5355373024940491
+238,The MotorSport Virage is located in Longfield and is the manufacturer of the Motor Sport Vision,MotorSport Vision is in the city of Longfield.,-0.3972391188144684
+239,"The Bedford Avenue, which is 8334 metres above sea level, is the home to the",The Bedford Aerodrome is 83.2 meters above sea level.,-0.16489171981811523
+240,"The Bedford Avenue, which is 8334 metres above sea level, is the home to the",Bedford Aerodrome is at an elevation of 83.2104 above sea level.,-0.2143423706293106
+241,"The Bedford Avenue, which is 8334 metres above sea level, is the home to the",The Bedford Aerodrome elevation above the sea level is 83.2104 meters.,-0.292999267578125
+242,The runway length of Bedford Aerodrome is 1095.0 and the length is 109,The runway length at the Bedford Aerodrome is 1095.,0.5133812427520752
+243,The runway length of Bedford Aerodrome is 1095.0 and the length is 109,The runway length of the Bedford Aerodrome is 1095.0.,0.6063636541366577
+244,Ciudad Ayala is part of the Andlos and is part of the city,Ciudad Ayala is part of Morelos.,0.2964041829109192
+245,Ciudad Ayala is part of the Andlos and is part of the city,Ciudad Ayala is a part of Morelos.,0.27411043643951416
+246,The German empire was founded on 01-01-1871 and is the founding date of the German Empire,The founding date of the German Empire was the first of January 1871.,-0.1908850371837616
+247,The German empire was founded on 01-01-1871 and is the founding date of the German Empire,The founding date of the German Empire is 1871-01-01.,0.2539035677909851
+248,The German empire was founded on 01-01-1871 and is the founding date of the German Empire,"The German Empire was founded on January 1, 1871.",0.17072218656539917
+249,"The number of post graduate students at the University of Burningy, which has 9400 post",There are 9400 postgraduate students attending the University of Burgundy.,-0.9730510711669922
+250,"The number of post graduate students at the University of Burningy, which has 9400 post",The University of Burgundy has 9400 post-graduate students.,-0.9208194017410278
+251,"The number of post graduate students at the University of Burningy, which has 9400 post",The University of Burgundy has 9400 postgraduate students.,-1.0719549655914307
+252,Trane has an operating income of 875.4 million USD and an operating income of,"The operating income of Trane is $875,400,000.",0.368124783039093
+253,Trane has an operating income of 875.4 million USD and an operating income of,Trane has an operating income of 875.4 million USD.,0.6386345028877258
+254,Trane has an operating income of 875.4 million USD and an operating income of,"Trane has an operating income of $875,400,000.",0.46749523282051086
+255,"Mayor leads La Crosse, Wisconsin, which is led by the Mayor.","La Crosse, Wisconsin is governed by a mayor.",-0.24395224452018738
+256,"Mayor leads La Crosse, Wisconsin, which is led by the Mayor.","The leader of La Crosse, Wisconsin is a Mayor.",0.09458360075950623
+257,"Mayor leads La Crosse, Wisconsin, which is led by the Mayor.",The leader in La Crosse is a mayor.,-0.29872918128967285
+258,"Mayor leads La Crosse, Wisconsin, which is led by the Mayor.",Mayor is the title of the leader of La Crosse in Wisconsin.,0.06413052976131439
+259,The ICAO Location Identifier of the Bedford Aerodrome is EGBF,The ICAO location identifier for Bedford Aerodrome is EGBF.,0.7627209424972534
+260,The ICAO Location Identifier of the Bedford Aerodrome is EGBF,Bedford Aerodrome's International Civil Aviation Organization (ICAO) identifier is EGBF.,0.2866570055484772
+261,The ICAO Location Identifier of the Bedford Aerodrome is EGBF,The ICAO location identifier for the Bedford Aerodrome is EGBF.,0.7927612662315369
+262,"Oberbürgermeister is the leader of Karlsruhe, which is led by Oberburgmeister. The leader",Karlsruhe's leader is Oberbürgermeister.,0.19038289785385132
+263,"Oberbürgermeister is the leader of Karlsruhe, which is led by Oberburgmeister. The leader",The leader of Karlsruhe is called the Oberbürgermeister.,-0.05014747753739357
+264,"The film, Its Great to be found in the film ""A94"" and has","The duration of the film 'It's great to be young', from 1956, is 94 minutes.",-1.3030117750167847
+265,"The film, Its Great to be found in the film ""A94"" and has",The running time of the movie It's Great to be Young is 94 minutes.,-1.3079240322113037
+266,"The film, Its Great to be found in the film ""A94"" and has","The length of 1956's film ""It's Great to Be Young"" is 94 minutes.",-1.3066325187683105
+267,"Aileen Raymond is the wife of John Miller, who is the spouse of, A",John Mills was married to Aileen Raymond.,-0.24996772408485413
+268,"Aileen Raymond is the wife of John Miller, who is the spouse of, A",John Mills had a spouse named Aileen Raymond.,-0.3640904426574707
+269,Lionsgate offers a service in the Digital Distribution of Lionsgate.,Lionsgate provides digital distribution service.,0.5048251152038574
+270,Lionsgate offers a service in the Digital Distribution of Lionsgate.,Lionsgate offers digital distribution service.,0.5251999497413635
+271,Lionsgate offers a service in the Digital Distribution of Lionsgate.,Digital distribution is a service of Lionsgate.,0.31451645493507385
+272,Pontiac has an edation of 10/31/10/10/10/10/10,"The Pontiac brand became extinct on October 31, 2010.",-1.1328704357147217
+273,Pontiac has an edation of 10/31/10/10/10/10/10,Pontiac went extinct on 2010-10-31.,-0.8529685139656067
+274,"The English Without Teas, which has a runtime of 89.0,",English Without Tears is 89 minutes long.,-1.0963804721832275
+275,"The English Without Teas, which has a runtime of 89.0,",English Without Tears is a film with a running time of 89 minutes.,-1.0322595834732056
+276,"The English Without Teas, which has a runtime of 89.0,",The duration of the movie ´English Without Tears´ is 89 minutes.,-1.24106764793396
+277,"Roberto Gail Zaarth is the leader of Mexico, where Roberto Gail Zaak",The leader of Mexico is Roberto Gil Zuarth.,-0.1589270681142807
+278,"Roberto Gail Zaarth is the leader of Mexico, where Roberto Gail Zaak",One of the leaders of the country of Mexico is Roberto Gil Zuarth.,-0.19622650742530823
+279,"Roberto Gail Zaarth is the leader of Mexico, where Roberto Gail Zaak",One of the leaders of Mexico is Roberto Gil Zuarth .,-0.1749366968870163
+280,"Dijon is the campus of the University of Burningy, which is the location of Di",The University of Burgundy campus is located in Dijon.,-0.8376456499099731
+281,"Dijon is the campus of the University of Burningy, which is the location of Di",The campus of the University of Burgundy is located in Dijon.,-0.8801606893539429
+282,"Dijon is the campus of the University of Burningy, which is the location of Di",The University of Burgundy has its campus in Dijon.,-0.8955872654914856
+283,The total area of Karlsruhe is 173.46 and the city has a total area of 17,The total area of Karlsruhe |is 173.46.,0.13553451001644135
+284,The total area of Karlsruhe is 173.46 and the city has a total area of 17,Karlsruhe has a total area of 173.46 square kilometres.,-0.19280967116355896
+285,The total area of Karlsruhe is 173.46 and the city has a total area of 17,Karlsruhe has a total area of 173.46.,0.18203194439411163
+286,"The non performing personnel of Nikola Brookszky, whose background is non performing personnel,",Nicholas Brodszky has a non-performing background.,-0.7917965054512024
+287,"The non performing personnel of Nikola Brookszky, whose background is non performing personnel,",Nicholas Brodszky was a non-performing staff.,-0.63141268491745
+288,"The non performing personnel of Nikola Brookszky, whose background is non performing personnel,",Nicholas Brodszky was a part of non-performing personnel.,-0.6434301733970642
+289,"The runway at the Bedford Avenue, which is made of concrete, is made of concrete. The",The runway surface of the Bedford Aerodrome is made of concrete.,0.10173103213310242
+290,"The runway at the Bedford Avenue, which is made of concrete, is made of concrete. The",The Bedford Aerodrome runway surface is made out of concrete.,-0.004856493324041367
+291,"The runway at the Bedford Avenue, which is made of concrete, is made of concrete. The",Bedford Aerodrome has a runway surface made of concrete.,-0.007663559168577194
+292,"The Bedford Avenue, which is in Thurleigh, is the location of the Bedford Aerod",The location of Bedford Aerodrome is Thurleigh.,-0.4016379117965698
+293,"The Bedford Avenue, which is in Thurleigh, is the location of the Bedford Aerod",The Bedford Aerodrome is located in Thurleigh.,-0.2412070333957672
+294,Tom Simon is the producer of Tom Simon and he is the producer of the Ferry Farm,'Death on a Factory Farm' was produced by Tom Simon.,-0.9521253108978271
+295,Tom Simon is the producer of Tom Simon and he is the producer of the Ferry Farm,Tom Simon produced the film named Death on a Factory Farm.,-0.83294677734375
+296,Tom Simon is the producer of Tom Simon and he is the producer of the Ferry Farm,Tom Simon is the producer of Death on a Factory Farm.,-0.9148157238960266
+297,Lionsgate is located in the United States and Lionsgate is located there.,The location of Lionsgate is in the United States.,0.27667108178138733
+298,Lionsgate is located in the United States and Lionsgate is located there.,Lionsgate is located in the US.,0.633619487285614
+299,Lionsgate is located in the United States and Lionsgate is located there.,Lionsgate is located in the United States.,0.6756426692008972
+300,"The French Republic is also known as the French Republic and is the location of the ""Fred",The long name of France is the French Republic.,-0.8726080060005188
+301,"The French Republic is also known as the French Republic and is the location of the ""Fred",The formal name for France is the French Republic.,-0.8732841610908508
+302,"The French Republic is also known as the French Republic and is the location of the ""Fred","""The French Republic"" is the long name of France.",-0.7864956259727478
+303,"The editor of the book ""Gef Bartz"" is the editor of the Farm",Geof Bartz is the editor of the film Death on a Factory Farm.,-0.7330476641654968
+304,"The editor of the book ""Gef Bartz"" is the editor of the Farm",Death on a Factory Farm was edited by Geof Bartz.,-0.7029001116752625
+305,"The editor of the book ""Gef Bartz"" is the editor of the Farm",Geof Bartz is the editor of Death on a Factory Farm.,-0.6213670372962952
+306,The Runtime of 83.0 metres and the time that 83.0 people live,Death on a Factory Farm has a duration of 83 minutes.,-0.8272560834884644
+307,The Runtime of 83.0 metres and the time that 83.0 people live,Death on a Factory Farm has a running time of 83.0.,-0.683300256729126
+308,The Runtime of 83.0 metres and the time that 83.0 people live,The film ‘Death on a Factory Farm’ lasts 83 minutes.,-1.136886715888977
+309,Liselotte Groebina was born on 2 May 1908 and was born on,"Liselotte Grschebina was born on May 2nd, 1908.",0.33839550614356995
+310,Liselotte Groebina was born on 2 May 1908 and was born on,"Liselotte Grschebina was born on May 2, 1908.",0.3497476875782013
+311,Liselotte Groebina was born on 2 May 1908 and was born on,Liselotte Grschebina was born on 1908-05-02.,-0.10995012521743774
+312,Karlsruhe is located at 115.0 above sea level and is the location of the town.,Karlsruhe has an elevation of 115 metres above sea level.,0.03432236239314079
+313,Karlsruhe is located at 115.0 above sea level and is the location of the town.,Karlsruhe is 115 meters above sea level.,0.17842964828014374
+314,Karlsruhe is located at 115.0 above sea level and is the location of the town.,Karlsruhe is 115.0 meters above sea-level.,0.14767418801784515
+315,"Dijon has the postal code 21000, the postal code is 21000 and the postcode",The postal code for Dijon is 21000.,0.19280442595481873
+316,"Dijon has the postal code 21000, the postal code is 21000 and the postcode",The postal code of Dijon is 21000.,0.20192831754684448
+317,SuperCapers has a gross of 30955.0 and a supercapable of 30,"Super Capers' gross income was $30,955.",-0.6505955457687378
+318,SuperCapers has a gross of 30955.0 and a supercapable of 30,"The film Super Capers grossed $30,955.",-0.7236084342002869
+319,SuperCapers has a gross of 30955.0 and a supercapable of 30,The box office of Super Capers is $30955.0.,-0.7712135910987854
+320,"The Super Cappers are based in English speaking, supercapers.",The language of the movie Super Capers is English.,-0.9310201406478882
+321,"The Super Cappers are based in English speaking, supercapers.",Super Capers is a movie in English.,-1.0422649383544922
+322,"The Super Cappers are based in English speaking, supercapers.",Super Capers is an English-language film.,-0.9987733960151672
+323,"Louis Levy is the musician who is the creator of the film, Louis Levy","Louis Levy is the music composer for the film ""It""s great to Be Young"".",-0.31686705350875854
+324,"Louis Levy is the musician who is the creator of the film, Louis Levy",Louis Levy is the music composer of It's Great to Be Young (1956 film).,-0.4156600832939148
+325,"Louis Levy is the musician who is the creator of the film, Louis Levy",It's Great to Be Young's music was composed by Louis Levy.,-0.7473569512367249
+326,Lionsgate is an entertainment industry that offers entertainment industry services to Lionsgate.,Lionsgate is an entertainment company.,0.6188182830810547
+327,Lionsgate is an entertainment industry that offers entertainment industry services to Lionsgate.,The industry in which Lionsgate operates is the entertainment.,0.35585296154022217
+328,Lionsgate is an entertainment industry that offers entertainment industry services to Lionsgate.,Lionsgate is in the entertainment industry.,0.27696701884269714
+329,"The musical artist, Juliat Miller, is John Miller, who is the son of, Julia",Juliet Mills is the daughter of John Mills.,-0.7425493597984314
+330,"The musical artist, Juliat Miller, is John Miller, who is the son of, Julia",John Mills had a daughter named Juliet Mills.,-0.9642766118049622
+331,"The musical artist, Juliat Miller, is John Miller, who is the son of, Julia",The child of John Mills is called Juliet Mills.,-0.7575831413269043
+332,Pontiac are the manufacturers of Pontiac which makes the Pontiac,The Pontiac Rageous is manufactured by Pontiac.,-0.2380106896162033
+333,Pontiac are the manufacturers of Pontiac which makes the Pontiac,The Pontiac Rageous was a car manufactured by Pontiac.,-0.27935391664505005
+334,"The county of Bedfordshire is the location of the town of Thurleigh, which is a",The ceremonial county of Thurleigh is Bedfordshire.,-0.1141299456357956
+335,Lionsgate is a company that offers Broadcast programing services.,Lionsgate offers broadcast programming service.,0.5250499248504639
+336,Lionsgate is a company that offers Broadcast programing services.,Lionsgate provides the service of broadcast programming.,0.5366271734237671
+337,Lionsgate is a company that offers Broadcast programing services.,Broadcast programming is a service of Lionsgate.,0.3647456765174866
+338,GMA Network is a publicly traded company that makes a public company.,GMA Network is a public company.,0.23776030540466309
+339,GMA Network is a publicly traded company that makes a public company.,GMA Network is a Public Company.,0.23776030540466309
+340,Hypermarcas is managed by their CEO and their key person is Hypermarcas.,Hypermarcas is managed by their CEO.,0.40146636962890625
+341,Hypermarcas is managed by their CEO and their key person is Hypermarcas.,The key person in Hypermarcas is the CEO.,0.1490892469882965
+342,Hypermarcas is managed by their CEO and their key person is Hypermarcas.,The key person in Hypermarcas is their CEO.,0.1888124942779541
+343,Hypermarcas is managed by their CEO and their key person is Hypermarcas.,The CEO is the key person in Hypermarcas.,0.16148340702056885
+344,The director of English Without Teas is Harold French and the English language is used.,English Without Tears is a film directed by Harold French.,-1.03225839138031
+345,The director of English Without Teas is Harold French and the English language is used.,Harold French was the director of the film English Without Tears.,-0.9448079466819763
+346,The director of English Without Teas is Harold French and the English language is used.,Harold French directed English without Tears.,-0.998256504535675
+347,"The opening of the Hope and the significance of the Petah Tikva is ""","Petah Tikva means ""opening of hope.""",-0.10251583158969879
+348,"The opening of the Hope and the significance of the Petah Tikva is """,Petah Tikva means ‘Opening of Hope’ in Hebrew.,-0.3355816900730133
+349,"Jon Helmstein is a key person at Lionsgate, where the Lionsgate is",One key person of Lionsgate is Jon Feltheimer.,-0.1404370218515396
+350,"Jon Helmstein is a key person at Lionsgate, where the Lionsgate is",One of the key people in Lionsgate is Jon Feltheimer.,-0.13487549126148224
+351,"Jon Helmstein is a key person at Lionsgate, where the Lionsgate is",Lionsgate is a company with Jon Feltheimer as a key person.,-0.29332295060157776
+352,Max Benedict died in London and died in London.,Max Benedict died in London.,0.788057804107666
+353,Max Benedict died in London and died in London.,The death place of Max Benedict was London.,0.38031280040740967
+354,Michael Roker starred in the SuperCapers which starred Michael Ker.,Super Capers is a film starring Michael Rooker.,-0.6141907572746277
+355,Michael Roker starred in the SuperCapers which starred Michael Ker.,Super Capers starred Michael Rooker.,-0.45565640926361084
+356,Michael Roker starred in the SuperCapers which starred Michael Ker.,Michael Rooker played in Super Capers.,-0.5708370804786682
+357,The Governator is the leader of Ciudad Ayala and the leader is,Ciudad Ayala has a leader called the Governator.,-0.18896399438381195
+358,The Governator is the leader of Ciudad Ayala and the leader is,In Ciudad Ayala the leader is called the governator.,-0.30690690875053406
+359,Pontiac Rapidous is a Coupe with a Coupe body style.,The Pontiac Rageous was a car with a coupe body style.,0.5500115752220154
+360,Pontiac Rapidous is a Coupe with a Coupe body style.,The Pontiac Rageous has a coupe body style.,0.5494749546051025
+361,Pontiac Rapidous is a Coupe with a Coupe body style.,The Pontiac Rageous is a coupe.,0.42197543382644653
+362,"La Crosse, Wisconsin is 204.0 above sea level and is the location of the town.",La Crosse Wisconsin is 204.0 meters above sea level.,0.14729899168014526
+363,"La Crosse, Wisconsin is 204.0 above sea level and is the location of the town.","La Crosse, Wisconsin is 204 meters above sea level.",0.28531843423843384
+364,"La Crosse, Wisconsin is 204.0 above sea level and is the location of the town.",La Crosse is a city in the U.S. state of Wisconsin and its elevation above sea level is 204 m.,0.15852206945419312
+365,"La Crosse, Wisconsin is 204.0 above sea level and is the location of the town.","La Crosse, Wisconsin is 204 metres above sea level.",0.24426352977752686
+366,Ciudad Ayala is in the Pacific Daylight Time Zone and spent in the,Ciudad Ayala is in the PDT time zone.,-0.3024260699748993
+367,Ciudad Ayala is in the Pacific Daylight Time Zone and spent in the,Ciudad Ayala's time zone is Pacific Daylight Time.,-0.3443024158477783
+368,Ciudad Ayala is in the Pacific Daylight Time Zone and spent in the,Ciudad Ayala is located in the Pacific Daylight time zone.,-0.2646060883998871
+369,"General Motors is the parent company of Pontiac, the parent company of Ponti",The parent company of Pontiac is General Motors.,-0.2932853102684021
+370,"General Motors is the parent company of Pontiac, the parent company of Ponti",Pontiac's parent company is General Motors.,-0.22604471445083618
+371,"General Motors is the parent company of Pontiac, the parent company of Ponti",General Motors is the parent company of Pontiac.,0.07875734567642212
+372,The Motor Sport Vision was founded in 2004 and is the manufacturer of the Motor Sport Vision.,MotorSport Vision was founded in the year 2004.,-0.025936614722013474
+373,The Motor Sport Vision was founded in 2004 and is the manufacturer of the Motor Sport Vision.,Motorsport vision was founded in 2004.,0.17169404029846191
+374,Max Benedict started his career on 01-01-1947 and became active on 01-01-19,Max Benedict began his career in 1947.,-0.25723764300346375
+375,Max Benedict started his career on 01-01-1947 and became active on 01-01-19,Max Benedict started his professional activities from the year 1947.,-0.1819443255662918
+376,Max Benedict started his career on 01-01-1947 and became active on 01-01-19,Max Benedict has been active professionally since 1947.,-0.48360490798950195
+377,"Mary Hayley Bean is the wife of John Miller, who is the spouse of, Mary",John Mills is the spouse of Mary Hayley Bell.,-0.0869257003068924
+378,"Mary Hayley Bean is the wife of John Miller, who is the spouse of, Mary",John Mills is Mary Hayley Bell's spouse.,-0.22210976481437683
+379,"Mary Hayley Bean is the wife of John Miller, who is the spouse of, Mary",John Mills was married to Mary Hayley Bell.,-0.18310591578483582
+380,"San Francisco born, Justin Halin, was the birthplace of, San Francisco born, San",Justin Whalin was born in San Francisco.,-0.6595306396484375
+381,"San Francisco born, Justin Halin, was the birthplace of, San Francisco born, San",Justin Whalin is born in San Francisco.,-0.6722393035888672
+382,"Governor, is the leader of the city of Addlos, which is led by the Governor.",One of the leaders of the state of Morelos is the Governor.,-0.209211066365242
+383,"Governor, is the leader of the city of Addlos, which is led by the Governor.",Morelos is led by the Governor.,-0.14888738095760345
+384,"Governor, is the leader of the city of Addlos, which is led by the Governor.",The title of the leader of Morelos is Governor.,-0.3139686584472656
+385,The University of Burgundy has 1299 students and 1299 students.,The number of doctoral students in the University of Burgundy is 1299.,0.10102726519107819
+386,The University of Burgundy has 1299 students and 1299 students.,The University of Burgundy has 1299 doctoral students.,0.2299516797065735
+387,"The presenter of the comic character, Justin Halin, is the presenter, and his",Justin Whalin’s job is a presenter.,-0.5324346423149109
+388,"The presenter of the comic character, Justin Halin, is the presenter, and his",Justin Whalin was a presenter.,-0.43374112248420715
+389,"The presenter of the comic character, Justin Halin, is the presenter, and his",Justin Whalin worked as a presenter.,-0.49105119705200195
+390,Cyril Frankel was born in the United Kingdom and was born in the UK.,Cyril Frankel was born in the UK.,0.8192777633666992
+391,Cyril Frankel was born in the United Kingdom and was born in the UK.,Cyril Frankel's birth place was in the United Kingdom.,0.32511961460113525
+392,Cyril Frankel was born in the United Kingdom and was born in the UK.,Cyril Frankel was born in the United Kingdom.,0.7431246638298035
+393,"The birthplace of Harold French is the UK, where he was born.",Harold French is born in the UK.,0.01709989830851555
+394,"The birthplace of Harold French is the UK, where he was born.",Harold French was born in the UK.,0.08064736425876617
+395,"The birthplace of Harold French is the UK, where he was born.",Harold French was born in the United Kingdom.,0.11814860999584198
+396,Liselotte Groebina is from the country of the country of the country of,Liselotte Grschebina has Israeli nationality.,-0.6909351348876953
+397,Liselotte Groebina is from the country of the country of the country of,Liselotte Grschebina's nationality is Israeli.,-0.7170869708061218
+398,Liselotte Groebina is from the country of the country of the country of,Liselotte Grschebina is an Israeli national.,-0.691737949848175
+399,"Tom Star Jr. starred in SuperCapers, starring Tom Roger Jr.",Super Capers is a film starring Tom Lister Jr.,-0.604632556438446
+400,"Tom Star Jr. starred in SuperCapers, starring Tom Roger Jr.",Super Capers is starring Tom Lister Jr.,-0.4051133692264557
+401,"Tom Star Jr. starred in SuperCapers, starring Tom Roger Jr.",Super Capers is a movie starring Tom Lister Jr.,-0.5853908061981201
+402,Pontiac produces the automobiles that are manufactured by Pontiac.,The Pontiac company manufactures automobiles.,0.5129332542419434
+403,Pontiac produces the automobiles that are manufactured by Pontiac.,Pontiac makes automobiles.,0.4877977967262268
+404,Pontiac produces the automobiles that are manufactured by Pontiac.,Pontiac produces automobiles.,0.7461684346199036
+405,"Vice President is a leader in Brazil, which is led by the Vice President.",The leader of Brazil's title is Vice President.,0.0015249811112880707
+406,"Vice President is a leader in Brazil, which is led by the Vice President.",Vice President is a leader title in Brazil.,0.16483603417873383
+407,"Vice President is a leader in Brazil, which is led by the Vice President.",Vice President is a Brazilian leadership title.,0.10677574574947357
+408,"Vice President is a leader in Brazil, which is led by the Vice President.",Brazil’s leader has the title of Vice President.,0.13151422142982483
+409,"Cyril Frankel is the director of the film ""Cyril Frankel""",It's Great to Be Young is a 1956 film directed by Cyril Frankel.,-0.7721503376960754
+410,"Cyril Frankel is the director of the film ""Cyril Frankel""",The director of the movie It's Great to Be Young was Cyril Frankel.,-0.4341953992843628
+411,"Cyril Frankel is the director of the film ""Cyril Frankel""",The director of the 1956 movie It's Great to Be Young is Cyril Frankel.,-0.5460608005523682
+412,"The English Without Thunders were released on July 28, 1944 and are the current record label of",English Without Tears was released on 1944-07-28.,-0.7971528768539429
+413,"The English Without Thunders were released on July 28, 1944 and are the current record label of",The movie English Without Tears' release date is 07-28-1944.,-0.8408176302909851
+414,"The English Without Thunders were released on July 28, 1944 and are the current record label of",English Without Tears is a film released on 28th July 1944.,-0.9712314009666443
+415,"The film director, Harold Flint, is Harold French's occupation.",Harold French is a film director.,-0.7886507511138916
+416,"The film director, Harold Flint, is Harold French's occupation.",Harold French served as a film director.,-0.6577176451683044
+417,"The film director, Harold Flint, is Harold French's occupation.",Harold French was a film director.,-0.7630962133407593
+418,Tom Simon is the director of Tom Simon and the director of the Factory Farm is Tom,Tom Simon is the director of Death on a Factory Farm.,-0.803295373916626
+419,Tom Simon is the director of Tom Simon and the director of the Factory Farm is Tom,"""Death on a Factory Farm"" was directed by Tom Simon.",-0.7053652405738831
+420,Tom Simon is the director of Tom Simon and the director of the Factory Farm is Tom,Tom Simon directed the film ‘Death on a Factory Farm’.,-0.7349449396133423
+421,The City Manager is the leader of Ciudad Ayala and the leader is the,The leader title for Ciudad Ayala is City Manager.,-0.23367756605148315
+422,The City Manager is the leader of Ciudad Ayala and the leader is the,One of the leaders of Ciudad Ayala is the City Manager.,-0.12629184126853943
+423,Pontiac Romaus ceased production in 1997 and Pontiac Ridgeous were,The Pontiac Rageous was last produced in 1997.,-0.09113241732120514
+424,Pontiac Romaus ceased production in 1997 and Pontiac Ridgeous were,Production of the Pontiac Rageous ended in 1997.,-0.1629873514175415
+425,Cyril Frankel is a TV director who has the occupation of Cyril Fran,Cyril Frankel was a television director.,-0.3284108340740204
+426,Cyril Frankel is a TV director who has the occupation of Cyril Fran,Cyril Frankel is a television director.,-0.40208083391189575
+427,Cyril Frankel is a TV director who has the occupation of Cyril Fran,Cyril Frankel worked as a television director.,-0.32618075609207153
+428,"Hayley Millers is the child of John Miller, who is the son of, Hayley",Hayley Mills is the child of John Mills.,0.04020987078547478
+429,"Hayley Millers is the child of John Miller, who is the son of, Hayley",John Mills has a child named Hayley Mills.,-0.4755838215351105
+430,"Hayley Millers is the child of John Miller, who is the son of, Hayley",Hayley Mills is a child of John Mills.,0.0488579086959362
+431,Terence Gigan died on the 30th November 1977 and died in the same month.,Terence Rattigan died on the 30th of November in the year 1977.,0.3856343626976013
+432,Terence Gigan died on the 30th November 1977 and died in the same month.,Terence Rattigan died on November 30th 1977.,0.25188854336738586
+433,Terence Gigan died on the 30th November 1977 and died in the same month.,Terence Rattigan died in 30/11/1977.,0.22647294402122498
+434,The English language is spoken in the English language and the ISOC6392 code is eng,The language code (ISO 639-2) of the English language is eng.,-0.0024849362671375275
+435,The English language is spoken in the English language and the ISOC6392 code is eng,“eng” is the ISO 639-2 code for the English language.,-0.28848567605018616
+436,The English language is spoken in the English language and the ISOC6392 code is eng,The ISO 639-2 code of the English Language is eng.,-0.04687992110848427
+437,"Hypermarcas has 10252 employees, and its employees are 10252 people.",The number of employees at Hypermarcas is 10252.,0.49091196060180664
+438,"Hypermarcas has 10252 employees, and its employees are 10252 people.","Hypermarcas employs 10,252 people.",0.37640050053596497
+439,"Hypermarcas has 10252 employees, and its employees are 10252 people.",Hypermarcas has 10252 employees.,0.7377666234970093
+440,"Pontiac Ridgeous was assembled in Michigan, and is assembled in Michigan.",The Pontiac Rageous was assembled in Michigan.,-0.02346527948975563
+441,"Pontiac Ridgeous was assembled in Michigan, and is assembled in Michigan.",The Pontiac Rageous is assembled in Michigan.,0.12850823998451233
+442,Saint Petersburg born Anatole de Grogwald was the birthplace of Saint Petersburg.,Anatole de Grunwald was born in Saint Petersburg.,-0.1891813725233078
+443,Saint Petersburg born Anatole de Grogwald was the birthplace of Saint Petersburg.,The birthplace of Anatole de Grunwald is Saint Petersburg.,-0.17359387874603271
+444,Saint Petersburg born Anatole de Grogwald was the birthplace of Saint Petersburg.,Anatole de Grunwald's birthplace is Saint Petersburg.,0.031838297843933105
+445,Cuernavaca is part of the Cuernavaca region and the city of,Cuernavaca is part of Morelos.,0.05189073458313942
+446,Cuernavaca is part of the Cuernavaca region and the city of,Cuernavaca is a part of Morelos.,0.031024638563394547
+447,Liselotte Groebina died on 14 June 1994 and died on 14 June 1994,"Liselotte Grschebina died on June 14, 1994.",0.596098005771637
+448,Liselotte Groebina died on 14 June 1994 and died on 14 June 1994,"Liselotte Grschebina died on the 14th of June, 1994.",0.5709887146949768
+449,"The President of the House of Deputies is the leader of Mexico, where the leader is",A leader of Mexico is called the President of the Chamber of Deputies.,-0.08816981315612793
+450,"The President of the House of Deputies is the leader of Mexico, where the leader is",Mexico's government has a leader position titled the President of the Chamber of Deputies.,-0.23159809410572052
+451,"The President of the House of Deputies is the leader of Mexico, where the leader is",President of the Chamber of Deputies is a leader title in Mexico.,0.0942625105381012
+452,"John Miller starred in the film, ""Its Great to be known as the film","John Mills is playing the lead in the movie It's Great to Be Young, which was released in 1956.",-1.0485141277313232
+453,"John Miller starred in the film, ""Its Great to be known as the film",It's Great to Be Young is a 1956 film starring John Mills.,-1.0705128908157349
+454,"John Miller starred in the film, ""Its Great to be known as the film",John Mills had a main role in the movie It's Great to Be Young.,-0.9155778288841248
+455,Anatole de Groinwald is the author of Anatole de Gaswald who wrote,English Without Tears is written by Anatole de Grunwald.,-0.644180178642273
+456,Anatole de Groinwald is the author of Anatole de Gaswald who wrote,The writer of English Without Tears was Anatole de Grunwald.,-0.476595401763916
+457,Anatole de Groinwald is the author of Anatole de Gaswald who wrote,"""English Without Tears"" was written by Anatole de Grunwald.",-0.6535173058509827
+458,The Motor Sport Sport Vision is located in Fawkham and its HQ is Faw,MotorSport Vision is located in the city of Fawkham.,-0.11227838695049286
+459,The Motor Sport Sport Vision is located in Fawkham and its HQ is Faw,"MotorSport Vision is located in the city of Fawkham, UK.",-0.10431724786758423
+460,The Motor Sport Sport Vision is located in Fawkham and its HQ is Faw,MotorSport Vision is located in Fawkham.,0.04640569910407066
+461,The population density of Ciudad Ayala is 1604.0 and the population density is,The population density of Ciudad Ayala is 1604.0.,0.6575282216072083
+462,The population density of Ciudad Ayala is 1604.0 and the population density is,Ciudad Ayala city has a population density of 1604.0.,0.40210795402526855
+463,The population density of Ciudad Ayala is 1604.0 and the population density is,The population density in Ciudad Ayala is 1604.,0.6013794541358948
+464,The official language of the country of Israel is the Modern Hebrew and the official language is,The official language of Israel is modern Hebrew.,0.4903866648674011
+465,The official language of the country of Israel is the Modern Hebrew and the official language is,Israel’s official language is Modern Hebrew.,0.4014088213443756
+466,The official language of the country of Israel is the Modern Hebrew and the official language is,Modern Hebrew is the official language of Israel.,0.13289710879325867
+467,Chinabank is located in the Philippines and is the location of Chinabank.,Chinabank's location is the Philippines.,0.4167943000793457
+468,Chinabank is located in the Philippines and is the location of Chinabank.,Chinabank is located in the Philippines.,0.6686517000198364
+469,Detroit has a total area of 370.03 and a total area of 370,The total area of the city of Detroit is 370.03 square kilometers.,0.15853944420814514
+470,Detroit has a total area of 370.03 and a total area of 370,Detroit has a total area of 370.03 square kilometers.,0.24002978205680847
+471,GMA New Media is located in the GMA Network Center and is located in the GMA,GMA New Media is located in the GMA Network Center.,0.4344501197338104
+472,GMA New Media is located in the GMA Network Center and is located in the GMA,GMA New Media headquarters are located in the GMA Network Center.,0.16528759896755219
+473,GMA New Media is located in the GMA Network Center and is located in the GMA,GMA New Media is located inside GMA Network Center.,0.33904871344566345
+474,"The music Composer of the band, Nicholas Brookszky, is the musician of",The music of the film English Without Tears is composed by Nicholas Brodszky.,-0.7893006205558777
+475,"The music Composer of the band, Nicholas Brookszky, is the musician of",Nicholas Brodszky composed music of the movie English Without Tears.,-0.9167526364326477
+476,"The music Composer of the band, Nicholas Brookszky, is the musician of",Nicholas Brodszky was a composer of the songs that were used in English Without Tears.,-0.868751049041748
+477,"The film, ""Its Great to be 5"" starred by ""Cel",Cecil Parker had a main role in It's Great to Be Young.,-1.3474030494689941
+478,"The film, ""Its Great to be 5"" starred by ""Cel",Cecil Parker starred in the 1956 movie It's Great to Be Young.,-1.3928169012069702
+479,"The film, ""Its Great to be 5"" starred by ""Cel",It's Great to be Young is a 1956 film starring Cecil Parker.,-1.3150538206100464
+480,"Ray Griggs is the director of Super Capers, the director of which, is Ray","The movie ""Super Capers"" was directed by Ray Griggs.",-0.44428160786628723
+481,"Ray Griggs is the director of Super Capers, the director of which, is Ray",Super Capers is directed by Ray Griggs.,-0.2273441106081009
+482,"Ray Griggs is the director of Super Capers, the director of which, is Ray",Ray Griggs is the director of Super Capers.,0.04670010134577751
+483,Anatole de Groinwald is the producer of Anatole de Growwald and,"""English Without Tears"" was produced by Anatole de Grunwald.",-0.7043834924697876
+484,Anatole de Groinwald is the producer of Anatole de Growwald and,Anatole de Grunwald was the producer of 'English Without Tears'.,-0.4979948401451111
+485,Anatole de Groinwald is the producer of Anatole de Growwald and,Anatole de Grunwald is the producer of English Without Tears.,-0.5539870262145996
+486,"08/26 is the runway name of the Bedford Aerodrome, which has the name","The Bedford Aerodrome has a runway named ""08/26"".",0.16905353963375092
+487,"08/26 is the runway name of the Bedford Aerodrome, which has the name",Bedford Aerodrome has a runway called 08/26.,0.02645830437541008
+488,"08/26 is the runway name of the Bedford Aerodrome, which has the name",The Bedford Aerodrome runway name is 08/26.,0.2040044069290161
+489,Adam West was born in 1928 and was born in the year 1928.,Adam West was born in the year 1928.,0.7986738681793213
+490,Adam West was born in 1928 and was born in the year 1928.,Adam West was born in 1928.,0.5329331755638123
+491,"The Bedford Autodrome, which serves the city of Bedford, is served by the Bedford Auto",Bedford Aerodrome has served the Bedford Autodrome.,0.059529032558202744
+492,"The Bedford Autodrome, which serves the city of Bedford, is served by the Bedford Auto",The place served by the Bedford Aerodrome is the Bedford Autodrome.,-0.042952049523591995
+493,"The Bedford Autodrome, which serves the city of Bedford, is served by the Bedford Auto",The Bedford Aerodrome serves the Bedford Autodrome.,0.13556168973445892
+494,"The author of the film, Ted Williams, is the author of the film, ""It",Writer of the 1956 film It's Great to Be Young is Ted Willis.,-0.8144803047180176
+495,"The author of the film, Ted Williams, is the author of the film, ""It",Ted Willis is the writer of the film It's Great to Be Young.,-0.6921075582504272
+496,"The author of the film, Ted Williams, is the author of the film, ""It",The writer of “It’s great to be young” is Ted Willis.,-0.6557984352111816
+497,"The sister production of the HBO, which has a sister station called the Cinemax, is",HBO and Cinemax are sister stations.,0.00987565889954567
+498,"The sister production of the HBO, which has a sister station called the Cinemax, is",HBO is a sister station with Cinemax.,0.15877820551395416
+499,"The sister production of the HBO, which has a sister station called the Cinemax, is",Cinemax is a sister channel with HBO.,0.05271972343325615
+500,"Reuven Revivallin is the leader of the country of Israel, where the",One of the leaders of Israel is Reuven Rivlin.,-0.2794543504714966
+501,"Reuven Revivallin is the leader of the country of Israel, where the",The leader of Israel is Reuven Rivlin.,-0.3307963013648987
+502,"Reuven Revivallin is the leader of the country of Israel, where the",Israel's leader is Reuven Rivlin.,-0.22910216450691223
+503,"The TV series, which was broadcasted by the HBO, is known by the name of",Death on a Factory Farm was released by HBO.,-0.5903385281562805
+504,"The TV series, which was broadcasted by the HBO, is known by the name of",Death on a Factory Farm is a film broadcasted by HBO.,-0.5930621027946472
+505,"The TV series, which was broadcasted by the HBO, is known by the name of",The Death on a Factory Farm was broadcasted by HBO.,-0.7169735431671143
+506,The official language of the country is the Modern Standard Standard Arabic and the official language is,One of the official languages of Israel Is Modern Standard Arabic.,0.04874658212065697
+507,The official language of the country is the Modern Standard Standard Arabic and the official language is,The official language of Israel is Modern Standard Arabic.,0.18657803535461426
+508,John Miller died in 2005 and he died in 2005.,John Mills died in 2005.,0.5317519903182983
+509,"Leni Robredo is the leader of the Philippines, where Leni Robred",Leni Robredo is the leader of the Philippines.,-0.23309463262557983
+510,"Leni Robredo is the leader of the Philippines, where Leni Robred",Leni Robredo is a Filipino leader.,-0.24364712834358215
+511,"Leni Robredo is the leader of the Philippines, where Leni Robred",The leader of the Philippines is Leni Robredo.,-0.35040631890296936
+512,"Leni Robredo is the leader of the Philippines, where Leni Robred",The name of the leader of the Philippines is Leni Robredo.,-0.4521356523036957
+513,16800 undergraduate students attend the University of Buregundy which has 16800 undergraduate students,"The University of Burgundy has 16,800 undergraduate students.",-0.42096081376075745
+514,16800 undergraduate students attend the University of Buregundy which has 16800 undergraduate students,There are 16800 undergraduate students at the University of Burgundy.,-0.43079012632369995
+515,16800 undergraduate students attend the University of Buregundy which has 16800 undergraduate students,The University of Burgundy has 16800 undergraduate students.,-0.5131825804710388
+516,"The number of students at the University of Burningy, which has 27400 students, is",There are 27400 students at the University of Burgundy.,-0.6008943319320679
+517,"The number of students at the University of Burningy, which has 27400 students, is",The number of students in the University of Burgundy is 27400.,-0.35816001892089844
+518,"The number of students at the University of Burningy, which has 27400 students, is",The University of Burgundy has 27400 students.,-0.6358281970024109
+519,German Papiermark is the currency of the German Empire and the German empire,The currency of the German Empire is German Papiermark.,-0.04053988680243492
+520,German Papiermark is the currency of the German Empire and the German empire,The German Empire's currency is the German Papiermark.,0.06535091996192932
+521,German Papiermark is the currency of the German Empire and the German empire,One of the currencies of the German Empire was the German Papiermark.,-0.08312606811523438
+522,"The timeshift for HBO is 10/HO West, and the time zone is 12/08","HBO has different timeshift services, for example, HBO East and HBO West.",-0.9530736207962036
+523,"The timeshift for HBO is 10/HO West, and the time zone is 12/08",HBO East and HBO West are timeshift channels of HBO.,-0.9563839435577393
+524,"The timeshift for HBO is 10/HO West, and the time zone is 12/08",HBO's timeshift channel is divided into HBO East and HBO West.,-0.9235903024673462
+525,"Terence Gigan died on January 1, 1977 and died on January 1, 1977.",Terence Rattigan died in 1977.,0.3327734172344208
+526,"Terence Gigan died on January 1, 1977 and died on January 1, 1977.",The death year of Terence Rattigan is 1977.,0.10470804572105408
+527,Ciudad Ayala is located in the city of the city and is the type,Ciudad Ayala is a city.,-0.5877355337142944
+528,"Prime Minister leads the country of Israel, which is led by the Prime Minister.","The Israel's leader title is ""Prime Minister"".",-0.04566815868020058
+529,"Prime Minister leads the country of Israel, which is led by the Prime Minister.",The leader title of Israel is Prime Minister.,-0.09072563052177429
+530,"Prime Minister leads the country of Israel, which is led by the Prime Minister.",Israel’s leader is the Prime Minister.,0.20347926020622253
+531,"Manila is part of Metro Manila, Metro Manila. Manila is part of Metro Manila.",Manila is part of Metro Manila.,0.7936323881149292
+532,"Manila is part of Metro Manila, Metro Manila. Manila is part of Metro Manila.",Metro Manila includes the city of Manila.,0.24607518315315247
+533,"The film, Gilbert Taylor, is the film that created the character, Gilbert Taylor, and the",It's Great to Be Young had Gilbert Taylor as cinematographer.,-1.013857126235962
+534,"The film, Gilbert Taylor, is the film that created the character, Gilbert Taylor, and the",It's Great to Be Young is in Gilbert Taylor's cinematography.,-0.9502193331718445
+535,"The film, Gilbert Taylor, is the film that created the character, Gilbert Taylor, and the","Gilbert Taylor was the cinematographer of the film ""It's Great to Be Young"".",-0.8777646422386169
+536,The currency of the South German Empire is the South German gulden and the German empire is,The German Empire's currency is the South German gulden.,0.23166424036026
+537,The currency of the South German Empire is the South German gulden and the German empire is,The currency of the German Empire is South German gulden.,0.3386094570159912
+538,The currency of the South German Empire is the South German gulden and the German empire is,In the German Empire one of the units of currency was the South German Gulden.,0.0019911788403987885
+539,Terence Gigan was born on 1901-01-01 and was born on 1901-01-01.,Terence Rattigan was born on 01/01/1911.,0.3378521203994751
+540,Terence Gigan was born on 1901-01-01 and was born on 1901-01-01.,"Terence Rattigan was born on January 1st, 1911.",0.05442097410559654
+541,Terence Gigan was born on 1901-01-01 and was born on 1901-01-01.,Terence Rattigan was born on the first of January in 1911.,-0.1735890805721283
+542,"Time Warner is the owner of the HBO, which is owned by Time Warner.",The owner of HBO is Time Warner.,0.5670804977416992
+543,"Time Warner is the owner of the HBO, which is owned by Time Warner.",Time Warner owns HBO.,0.6173927187919617
+544,"Time Warner is the owner of the HBO, which is owned by Time Warner.",Time Warner is the owner of HBO.,0.7265405654907227
+545,The leader of the country is Itzik Braverman and the leader is Itzik,One of the leaders of Petah Tikva is Itzik Braverman.,-0.1663007140159607
+546,The leader of the country is Itzik Braverman and the leader is Itzik,One of the leaders of Petah Tikva was Itzik Braverman.,-0.15777593851089478
+547,"La Crosse County, Wisconsin is part of La Crosse County, Wisconsin.",La Crosse is a city in La Crosse County in the U.S. state of Wisconsin.,0.36553776264190674
+548,"La Crosse County, Wisconsin is part of La Crosse County, Wisconsin.",La Crosse Wisconsin is part of La Crosse County Wisconsin.,0.7772637009620667
+549,"La Crosse County, Wisconsin is part of La Crosse County, Wisconsin.","La Crosse, Wisconsin is part of La Crosse County, Wisconsin.",0.804997980594635
+550,"La Crosse County, Wisconsin is part of La Crosse County, Wisconsin.",La Crosse is part of La Crosse County in Wisconsin.,0.6606364250183105
+551,Liselotte Groebina is a professional illustrator who makes a living as,Liselotte Grschebina was a professional photographer.,-0.04524160549044609
+552,Liselotte Groebina is a professional illustrator who makes a living as,Liselotte Grschebina was a photographer.,-0.06244542822241783
+553,Terence Gigan's Imdbid is 0711905 and he has,Terence Rattigan is registered in IMDb under the ID 0711905.,-0.2711974084377289
+554,Terence Gigan's Imdbid is 0711905 and he has,Terence Rattigan's IMDb ID is 0711905.,-0.037394631654024124
+555,Terence Gigan's Imdbid is 0711905 and he has,The IMDb ID of Terence Rattigan is 0711905.,-0.22149010002613068
+556,"Detroit is part of Michigan, United States and Detroit is part of Detroit.",Detroit is part of Michigan.,0.5398806929588318
+557,"Detroit is part of Michigan, United States and Detroit is part of Detroit.",The city of Detroit is located in Michigan.,0.14872358739376068
+558,"Detroit is part of Michigan, United States and Detroit is part of Detroit.",The city of Detroit is part of Michigan.,0.2151997983455658
+559,"The The Progressive Motion Picture Company, which is the producer of the South Seas, is the",The film McVeagh of the South Seas was produced by the Progressive Motion Picture Company.,-0.5862047076225281
+560,"The The Progressive Motion Picture Company, which is the producer of the South Seas, is the",The producer of McVeagh of the South Seas is the Progressive Motion Picture Company.,-0.3480614721775055
+561,"The The Progressive Motion Picture Company, which is the producer of the South Seas, is the",McVeagh of the South Seas is produced by the Progressive Motion Picture Company.,-0.5401736497879028
+562,"The Green Channel, formerly known as the HBO, was formerly known as The Green Channel",HBO's former name was 'The Green Channel'.,0.37087559700012207
+563,"The Green Channel, formerly known as the HBO, was formerly known as The Green Channel",HBO's former name was The Green Channel.,0.3980918228626251
+564,Ciudad Ayala's time zone is Pacific Standard Time Zone and it is,Ciudad Ayala is in the Pacific Standard Time Zone.,0.2272534966468811
+565,Ciudad Ayala's time zone is Pacific Standard Time Zone and it is,The timezone of Ciudad Ayala is the Pacific Standard Time Zone.,0.2922353744506836
+566,"Detroit is part of Wayne County, Michigan and is part of the Detroit County.","The city of Detroit is in Wayne County, Michigan.",0.28553274273872375
+567,"Detroit is part of Wayne County, Michigan and is part of the Detroit County.","Detroit is part of Wayne County, Michigan.",0.6949012875556946
+568,"Detroit is part of Wayne County, Michigan and is part of the Detroit County.","The city of Detroit is located in Wayne County, Michigan.",0.28114205598831177
+569,Liselotte Groebina died in Petah Tikva and died in,Liselotte Grschebina died in Petah Tikva.,0.444558322429657
+570,"Maeve Quinlan is the wife of Tom Scalmore, who was the spouse of,",Tom Sizemore was married to Maeve Quinlan.,0.015945229679346085
+571,"Maeve Quinlan is the wife of Tom Scalmore, who was the spouse of,",Tom Sizemore is married to Maeve Quinlan.,-0.0354464165866375
+572,"Maeve Quinlan is the wife of Tom Scalmore, who was the spouse of,",The spouse of Tom Sizemore is Maeve Quinlan.,-0.0849204733967781
+573,The McVeagh of the South Seas has an epoch date of 000,McVeagh of the South Seas IMDb ID is 0004319.,-0.6959663033485413
+574,The McVeagh of the South Seas has an epoch date of 000,McVeagh of the South Seas is a film registered in IMDb with the ID 0004319.,-0.8183497786521912
+575,The McVeagh of the South Seas has an epoch date of 000,McVeagh of the South Seas' IMDb id is 0004319.,-0.7641104459762573
+576,"The leader of the country, which is led by, Adrián Rivera Perez,",Adrián Rivera Pérez is a leader in Morelos.,-0.2760595679283142
+577,"The leader of the country, which is led by, Adrián Rivera Perez,",One of the leaders of the Mexican state of Morelos is Adrián Rivera Pérez.,-0.3838883936405182
+578,"Roadside Attractions is the distributor of SuperCappers, which is distributed by the distributor",Distributor of the movie Super Capers is Roadside Attractions.,-0.29763588309288025
+579,"Roadside Attractions is the distributor of SuperCappers, which is distributed by the distributor",Super Capers was distributed by Roadside Attractions.,-0.07171076536178589
+580,"Roadside Attractions is the distributor of SuperCappers, which is distributed by the distributor",Super Capers is a film distributed by Roadside Attractions.,-0.32605546712875366
+581,Pontiac Pontiac was succeeded by Buick and Pontiac.,Buick is the successor of Pontiac.,0.14040008187294006
+582,Pontiac Pontiac was succeeded by Buick and Pontiac.,One of the successors of Pontiac is Buick.,0.0036068446934223175
+583,Pontiac Pontiac was succeeded by Buick and Pontiac.,The successor to Pontiac is Buick.,0.014698322862386703
+584,The Roadside Attractions was founded on 01-01-2003 and is the company that was,Roadside Attractions is founded in 2003.,-0.08908498287200928
+585,The Roadside Attractions was founded on 01-01-2003 and is the company that was,Roadside Attractions was founded in 2003.,-0.11835291981697083
+586,The Roadside Attractions was founded on 01-01-2003 and is the company that was,The company Roadside Attractions was founded in 2003.,-0.28328484296798706
+587,The population of Ciudad Ayala is 1777539 and the population density,The population in the Ciudad Ayala metropolitan area is 1777539.,0.3902520537376404
+588,The population of Ciudad Ayala is 1777539 and the population density,"The population of the metropolitan area of Ciudad Ayala is 1,777,539.",0.14296752214431763
+589,The staff of the University of Burnundy is 2900.,The number of staff members at the University of Burgundy is 2900.,-0.4050421714782715
+590,The staff of the University of Burnundy is 2900.,The University of Burgundy employs 2900 staff members.,-0.40638554096221924
+591,The staff of the University of Burnundy is 2900.,The University of Burgundy has 2900 staff members.,-0.39636266231536865
+592,The director of the Factory Farm is Sarah Teale and the school is the location,The director of the movie Death on a Factory Farm was Sarah Teale.,-0.7517188787460327
+593,The director of the Factory Farm is Sarah Teale and the school is the location,Death on a Factory Farm is directed by Sarah Teale.,-0.7005239725112915
+594,The director of the Factory Farm is Sarah Teale and the school is the location,Sarah Teale directed Death on a Factory Farm.,-0.786429226398468
+595,"Michael Ker was born on January 1, 1955 and was born on January 1, 1955.",Michael Rooker was born in the year 1955.,0.19806990027427673
+596,"Michael Ker was born on January 1, 1955 and was born on January 1, 1955.",Michael Rooker was born in 1955.,0.3009515404701233
+597,Bernard Knowles is the film character of the English Without Teas which is the film,The cinematography of English Without Tears was done by Bernard Knowles.,-1.0463753938674927
+598,Bernard Knowles is the film character of the English Without Teas which is the film,Bernard Knowles was the cinematographer of the film English Without Tears.,-0.9590644240379333
+599,Bernard Knowles is the film character of the English Without Teas which is the film,The cinematographer of the movie English Without Tears is Bernard Knowles.,-1.0280275344848633
+600,"Tom Scalmore started his career on January 1, 1989 and became active on January 1, 1989.",Tom Sizemore began his career in 1989.,0.27558714151382446
+601,"Tom Scalmore started his career on January 1, 1989 and became active on January 1, 1989.",Tom Sizemore active years as an actor started in 1989.,0.005814548581838608
+602,"Tom Scalmore started his career on January 1, 1989 and became active on January 1, 1989.",Tom Sizemore started performing in 1989.,0.025421444326639175
+603,"The total area of the 4879.0 square kilometres, and of the 4879",The Morelos total area is 4879 km².,-0.38615724444389343
+604,"The total area of the 4879.0 square kilometres, and of the 4879",Morelos has a total area of 4879.,-0.45200926065444946
+605,"The total area of the 4879.0 square kilometres, and of the 4879",The total area of Morelos is 4879.,-0.39049655199050903
+606,The Council-manager government is the responsible for the government of the Ciudad Ayal,The government type in the city of Ciudad Ayala is council-manager.,-0.260489821434021
+607,The Council-manager government is the responsible for the government of the Ciudad Ayal,Ciudad Ayala uses a type of government called council-manager government.,-0.4413169324398041
+608,The Council-manager government is the responsible for the government of the Ciudad Ayal,The government type of Ciudad Ayala is council-manager government.,-0.2571278214454651
+609,Michael R. Burns is a key person at Lionsgate and Michael R. Burn,Michael R Burns plays an important role for the company Lionsgate.,-0.015190798789262772
+610,Michael R. Burns is a key person at Lionsgate and Michael R. Burn,Michael R. Burns is a key person at Lionsgate.,0.12692546844482422
+611,Michael R. Burns is a key person at Lionsgate and Michael R. Burn,Lionsgate has Michael R Burns as a key person.,-0.17093342542648315
+612,The UTC offset for Ciudad Ayala is <unk> 6 and the U,Ciudad Ayala falls into UTC offset -6 timezone.,-0.9092788100242615
+613,The UTC offset for Ciudad Ayala is <unk> 6 and the U,The UTC offset of Ciudad Ayala is -6.,-0.5831218957901001
+614,The UTC offset for Ciudad Ayala is <unk> 6 and the U,Ciudad Ayala has a UTC offset of -6.,-0.4959961771965027
+615,Ray Griggs is the director of Ray Griggs who wrote Super Captures.,Super Capers was written by the director Ray Griggs.,-0.41442742943763733
+616,Ray Griggs is the director of Ray Griggs who wrote Super Captures.,Super Capers is a film written by Ray Griggs.,-0.6198309063911438
+617,Ray Griggs is the director of Ray Griggs who wrote Super Captures.,Super Capers was written by Ray Griggs.,-0.4453989565372467
+618,Alan Jaggs is the editor of Alan Jaggs and the English Without Teas,The editing of the movie English Without Tears was done by Alan Jaggs.,-0.852640688419342
+619,Alan Jaggs is the editor of Alan Jaggs and the English Without Teas,The editing of the movie English Without Tears is done by Alan Jaggs.,-0.8888526558876038
+620,Alan Jaggs is the editor of Alan Jaggs and the English Without Teas,Alan Jaggs was a film editor for English Without Tears.,-0.5541133880615234
+621,"John Miller died in Denham, Buckinghamshire and died in Denham, Buckinghamshire","The deathplace of John Mills was in Denham, Buckinghamshire.",-0.023303721100091934
+622,"John Miller died in Denham, Buckinghamshire and died in Denham, Buckinghamshire","John Mills died in Denham, Buckinghamshire.",0.3792370557785034
+623,"Adam West starred in the SuperCapers, SuperCapers, and starred Adam West",Adam West had a main role in the movie Super Capers.,-0.2507026791572571
+624,"Adam West starred in the SuperCapers, SuperCapers, and starred Adam West",Super Capers is a film starring Adam West.,-0.5029427409172058
+625,"Adam West starred in the SuperCapers, SuperCapers, and starred Adam West",Super Capers is starring Adam West.,-0.34625405073165894
+626,"Jamie Lawrence was born on the 8th of March, 1971 and his birthdate","Jamie Lawrence was born on March 8th, 1970.",0.2996068596839905
+627,"Jamie Lawrence was born on the 8th of March, 1971 and his birthdate","Jamie Lawrence was born on March 8, 1970.",0.30387967824935913
+628,"Jamie Lawrence was born on the 8th of March, 1971 and his birthdate",Jamie Lawrence's date of birth was 1970-03-08.,-0.09165532886981964
+629,"The long name of the country of Israel is ""State of Israel"" and the country is",The full name of the country Israel is the State of Israel.,0.007397834211587906
+630,"The long name of the country of Israel is ""State of Israel"" and the country is",Israel is formally known as the State of Israel.,-0.35813575983047485
+631,"The long name of the country of Israel is ""State of Israel"" and the country is","Israel's long name is ""State of Israel"".",0.12554433941841125
+632,"Michael Ker was born April 6, 1955 and his birth date was 4 April 1955.",Michael Rooker was born on April 6th 1955.,0.46158960461616516
+633,"Michael Ker was born April 6, 1955 and his birth date was 4 April 1955.",The birth date of Michael Rooker is April 6th 1955.,0.32616689801216125
+634,"Michael Ker was born April 6, 1955 and his birth date was 4 April 1955.",Michael Rooker was born on 6th April 1955.,0.42708784341812134
+635,Mexico has a total area of 1972550.0 and a total area of 1972550.0,"The total area of Mexico is 1,972,550 square kilometers.",-0.1387181580066681
+636,Mexico has a total area of 1972550.0 and a total area of 1972550.0,Mexico has a total area of 1972550.0.,0.6990121006965637
+637,Mexico has a total area of 1972550.0 and a total area of 1972550.0,The total area of Mexico is 1972550.0.,0.49832046031951904
+638,Pontiac Ridgeous was assembled in Detroit and is assembled in Pontiac Ridge,The Pontiac Rageous assembly line is in Detroit.,-0.39936399459838867
+639,Pontiac Ridgeous was assembled in Detroit and is assembled in Pontiac Ridge,The Pontiac Rageous was assembled in Detroit.,-0.2796551287174225
+640,The University of Buregundy is located in France and is the location of the University,The University of Burgundy is in France.,-0.368815541267395
+641,The University of Buregundy is located in France and is the location of the University,The University of Burgundy is located in France.,-0.30273300409317017
+642,The MotorSport Vision is located in Kent and is the company that makes the Motor Sport Vision.,MotorSport Vision is located in the the city of Kent.,-0.06988061219453812
+643,The MotorSport Vision is located in Kent and is the company that makes the Motor Sport Vision.,MotorSport vision is in Kent.,0.16848137974739075
+644,The MotorSport Vision is located in Kent and is the company that makes the Motor Sport Vision.,"MotorSport Vision is located in the city of Kent, UK.",-0.06431391835212708
+645,Harry Carey (actor born in 1878) is the author of McVe,"Harry Carey (actor, born in 1878) was the writer of McVeagh of the South Seas.",0.13890045881271362
+646,Harry Carey (actor born in 1878) is the author of McVe,Harry Carey is the writer for the film McVeagh of the South Seas.,-0.6586430668830872
+647,Harry Carey (actor born in 1878) is the author of McVe,"The film McVeagh of the South Seas has been written by Harry Carey, who was born in 1878.",-0.3890502154827118
+648,Juan Nolasco is the leader of Ciudad Ayala and the leader is,The leader of Ciudad Ayala is Juan Nolasco.,0.19503146409988403
+649,Juan Nolasco is the leader of Ciudad Ayala and the leader is,One of the leaders of Ciudad Ayala is Juan Nolasco.,0.20454519987106323
+650,"GMA New Media produces online games, and GMA New Media produces online games.",GMA New Media's main product is online games.,0.3043597936630249
+651,"GMA New Media produces online games, and GMA New Media produces online games.",GMA New Media produces online games.,0.7227824926376343
+652,"GMA New Media produces online games, and GMA New Media produces online games.",GMA New Media makes online games.,0.5680500268936157
+653,"GMA New Media produces online games, and GMA New Media produces online games.",GMA New Media is a company that offers online games products.,0.25497162342071533
+654,Alliance Flilms Corporation is the distributor of McVeagh of the South Seas,McVeagh of the South Seas was distributed by Alliance Films Corporation.,-0.2052074819803238
+655,Alliance Flilms Corporation is the distributor of McVeagh of the South Seas,McVeagh of the South Seas is a film distributed by Alliance Films Corporation.,-0.3144891858100891
+656,Alliance Flilms Corporation is the distributor of McVeagh of the South Seas,Alliance Films Corporation is the distributor for the film McVeagh of the South Seas.,0.13038207590579987
+657,"The Motor Sport Vision are the operators of the Bedford Avenue, which is the location of the Bedford",The Bedford Aerodrome has an operating organization that is called the MotorSport Vision.,-0.40238749980926514
+658,"The Motor Sport Vision are the operators of the Bedford Avenue, which is the location of the Bedford",MotorSport Vision is the operating organisation for Bedford Aerodrome.,-0.14822080731391907
+659,"The Motor Sport Vision are the operators of the Bedford Avenue, which is the location of the Bedford",MotorSport Vision operates the Bedford Aerodrome.,-0.2527497410774231
+660,Liselotte Groschebina was born in the German Empire and was born in the,Liselotte Grschebina was born within the German Empire.,0.4339524209499359
+661,Liselotte Groschebina was born in the German Empire and was born in the,Liselotte Grschebina was born in the German Empire.,0.48209601640701294
+662,"The President of the Senate leads Mexico, where the leader is known as the President.",The leader title in Mexico is the President of the Senate.,-0.06848961114883423
+663,"The President of the Senate leads Mexico, where the leader is known as the President.","Mexico's government has a position titled the ""President of the Senate"".",-0.09342527389526367
+664,"The President of the Senate leads Mexico, where the leader is known as the President.",Mexico's leader has the official title President of the Senate.,0.020750250667333603
+665,Dijon is 25 metres above sea level and is 245.0 metres above sea level.,Dijon's elevation is 245.0 above the sea level.,0.39978915452957153
+666,Dijon is 25 metres above sea level and is 245.0 metres above sea level.,Dijon has an elevation of 245.0 above the sea level.,0.4531428813934326
+667,Dijon is 25 metres above sea level and is 245.0 metres above sea level.,Dijon's elevation is 245.0 above sea level.,0.3775649964809418
+668,"The Super Capers of Super Captures starred the super super cappers, Justin Halin",The film Super Capers starred Justin Whalin.,-0.5819463133811951
+669,"The Super Capers of Super Captures starred the super super cappers, Justin Halin",The film Super Capers stars Justin Whalin.,-0.568626344203949
+670,"The Super Capers of Super Captures starred the super super cappers, Justin Halin",Super Capers starred Justin Whalin.,-0.555979311466217
+671,"GMA Network is the parent company of GMA New Media, whose parent company is G","GMA New Media, Inc. is a subsidiary of GMA Network.",-0.153171569108963
+672,"GMA Network is the parent company of GMA New Media, whose parent company is G",GMA Network is the parent company of GMA New Media.,0.007414914667606354
+673,"GMA Network is the parent company of GMA New Media, whose parent company is G",The parent company of GMA New Media is the GMA Network.,-0.36470475792884827
+674,"GMA Network is the parent company of GMA New Media, whose parent company is G",GMA New Media is a branch of the GMA Network company.,-0.16530773043632507
+675,"The country of Indonesia, where the leader is Petah Tikva, is home to",Petah Tikva is a city in Israel.,-1.2914397716522217
+676,"The country of Indonesia, where the leader is Petah Tikva, is home to",Petah Tikva is in Israel.,-1.112122654914856
+677,"The country of Indonesia, where the leader is Petah Tikva, is home to",Petah Tikva is in the country of Israel.,-1.083643913269043
+678,The start date of the career of Harold Francis is 1920-01-01 and the career began on 01,Harold French started being an active actor in 1920.,-0.7824753522872925
+679,The start date of the career of Harold Francis is 1920-01-01 and the career began on 01,Harold French has been active as an actor since 1920.,-0.8302684426307678
+680,The start date of the career of Harold Francis is 1920-01-01 and the career began on 01,Harold French started his career as an actor in 1920.,-0.7041166424751282
+681,The Arab Citizens of Iran are an ethnic group in the country which is the location,The Arab citizens of Israel is an ethnic group in Israel.,-0.6591034531593323
+682,The Arab Citizens of Iran are an ethnic group in the country which is the location,Ethnic groups in Israel include Arabs.,-0.8248474597930908
+683,The Arab Citizens of Iran are an ethnic group in the country which is the location,One of the ethnic groups in Israel is Arabs.,-0.8917692303657532
+684,Anatole de Gaswald died in London. He died in London.,Anatole de Grunwald died in London.,0.7117222547531128
+685,AmeriGas has 8500 employees and 8500 employees.,"AmeriGas has 8,500 employees.",0.4448959231376648
+686,AmeriGas has 8500 employees and 8500 employees.,"8,500 people work in AmeriGas.",0.2627386450767517
+687,AmeriGas has 8500 employees and 8500 employees.,AmeriGas has 8500 employees.,0.7353143692016602
+688,"Terence Grant is the author of the novels, English With Out Times and Terence Garrett",'English Without Tears' was written by Terence Rattigan.,-0.9695125818252563
+689,"Terence Grant is the author of the novels, English With Out Times and Terence Garrett","""English Without Tears"" was written by Terence Rattigan.",-1.020750641822815
+690,"Terence Grant is the author of the novels, English With Out Times and Terence Garrett",Terence Rattigan is the writer of English Without Tears.,-0.8905099034309387
+691,"Adam West started his career on January 1, 1954 and became active on January 1, 1954.",Adam West got his first role in 1954.,0.039992768317461014
+692,"Adam West started his career on January 1, 1954 and became active on January 1, 1954.",Adam West has been an actor since 1954.,-0.13773797452449799
+693,"Adam West started his career on January 1, 1954 and became active on January 1, 1954.",Adam West started his career from the year 1954.,0.17520970106124878
+694,The MotorSport Virage is located in Longfield and is the manufacturer of the Motor Sport Vision,"MotorSport Vision is based in the city of Longfield, Kent.",-0.3265555500984192
+695,The MotorSport Virage is located in Longfield and is the manufacturer of the Motor Sport Vision,The MotorSport Vision location is the city of Longfield.,-0.5355373024940491
+696,The MotorSport Virage is located in Longfield and is the manufacturer of the Motor Sport Vision,MotorSport Vision is in the city of Longfield.,-0.3972391188144684
+697,"The Bedford Avenue, which is 8334 metres above sea level, is the home to the",The Bedford Aerodrome is 83.2 meters above sea level.,-0.16489171981811523
+698,"The Bedford Avenue, which is 8334 metres above sea level, is the home to the",Bedford Aerodrome is at an elevation of 83.2104 above sea level.,-0.2143423706293106
+699,"The Bedford Avenue, which is 8334 metres above sea level, is the home to the",The Bedford Aerodrome elevation above the sea level is 83.2104 meters.,-0.292999267578125
+700,The runway length of Bedford Aerodrome is 1095.0 and the length is 109,The runway length at the Bedford Aerodrome is 1095.,0.5133812427520752
+701,The runway length of Bedford Aerodrome is 1095.0 and the length is 109,The runway length of the Bedford Aerodrome is 1095.0.,0.6063636541366577
+702,Ciudad Ayala is part of the Andlos and is part of the city,Ciudad Ayala is part of Morelos.,0.2964041829109192
+703,Ciudad Ayala is part of the Andlos and is part of the city,Ciudad Ayala is a part of Morelos.,0.27411043643951416
+704,The German empire was founded on 01-01-1871 and is the founding date of the German Empire,The founding date of the German Empire was the first of January 1871.,-0.1908850371837616
+705,The German empire was founded on 01-01-1871 and is the founding date of the German Empire,The founding date of the German Empire is 1871-01-01.,0.2539035677909851
+706,The German empire was founded on 01-01-1871 and is the founding date of the German Empire,"The German Empire was founded on January 1, 1871.",0.17072218656539917
+707,"The number of post graduate students at the University of Burningy, which has 9400 post",There are 9400 postgraduate students attending the University of Burgundy.,-0.9730510711669922
+708,"The number of post graduate students at the University of Burningy, which has 9400 post",The University of Burgundy has 9400 post-graduate students.,-0.9208194017410278
+709,"The number of post graduate students at the University of Burningy, which has 9400 post",The University of Burgundy has 9400 postgraduate students.,-1.0719549655914307
+710,Trane has an operating income of 875.4 million USD and an operating income of,"The operating income of Trane is $875,400,000.",0.368124783039093
+711,Trane has an operating income of 875.4 million USD and an operating income of,Trane has an operating income of 875.4 million USD.,0.6386345028877258
+712,Trane has an operating income of 875.4 million USD and an operating income of,"Trane has an operating income of $875,400,000.",0.46749523282051086
+713,"Mayor leads La Crosse, Wisconsin, which is led by the Mayor.","La Crosse, Wisconsin is governed by a mayor.",-0.24395224452018738
+714,"Mayor leads La Crosse, Wisconsin, which is led by the Mayor.","The leader of La Crosse, Wisconsin is a Mayor.",0.09458360075950623
+715,"Mayor leads La Crosse, Wisconsin, which is led by the Mayor.",The leader in La Crosse is a mayor.,-0.29872918128967285
+716,"Mayor leads La Crosse, Wisconsin, which is led by the Mayor.",Mayor is the title of the leader of La Crosse in Wisconsin.,0.06413052976131439
+717,The ICAO Location Identifier of the Bedford Aerodrome is EGBF,The ICAO location identifier for Bedford Aerodrome is EGBF.,0.7627209424972534
+718,The ICAO Location Identifier of the Bedford Aerodrome is EGBF,Bedford Aerodrome's International Civil Aviation Organization (ICAO) identifier is EGBF.,0.2866570055484772
+719,The ICAO Location Identifier of the Bedford Aerodrome is EGBF,The ICAO location identifier for the Bedford Aerodrome is EGBF.,0.7927612662315369
+720,"Oberbürgermeister is the leader of Karlsruhe, which is led by Oberburgmeister. The leader",Karlsruhe's leader is Oberbürgermeister.,0.19038289785385132
+721,"Oberbürgermeister is the leader of Karlsruhe, which is led by Oberburgmeister. The leader",The leader of Karlsruhe is called the Oberbürgermeister.,-0.05014747753739357
+722,"The film, Its Great to be found in the film ""A94"" and has","The duration of the film 'It's great to be young', from 1956, is 94 minutes.",-1.3030117750167847
+723,"The film, Its Great to be found in the film ""A94"" and has",The running time of the movie It's Great to be Young is 94 minutes.,-1.3079240322113037
+724,"The film, Its Great to be found in the film ""A94"" and has","The length of 1956's film ""It's Great to Be Young"" is 94 minutes.",-1.3066325187683105
+725,"Aileen Raymond is the wife of John Miller, who is the spouse of, A",John Mills was married to Aileen Raymond.,-0.24996772408485413
+726,"Aileen Raymond is the wife of John Miller, who is the spouse of, A",John Mills had a spouse named Aileen Raymond.,-0.3640904426574707
+727,Lionsgate offers a service in the Digital Distribution of Lionsgate.,Lionsgate provides digital distribution service.,0.5048251152038574
+728,Lionsgate offers a service in the Digital Distribution of Lionsgate.,Lionsgate offers digital distribution service.,0.5251999497413635
+729,Lionsgate offers a service in the Digital Distribution of Lionsgate.,Digital distribution is a service of Lionsgate.,0.31451645493507385
+730,Pontiac has an edation of 10/31/10/10/10/10/10,"The Pontiac brand became extinct on October 31, 2010.",-1.1328704357147217
+731,Pontiac has an edation of 10/31/10/10/10/10/10,Pontiac went extinct on 2010-10-31.,-0.8529685139656067
+732,"The English Without Teas, which has a runtime of 89.0,",English Without Tears is 89 minutes long.,-1.0963804721832275
+733,"The English Without Teas, which has a runtime of 89.0,",English Without Tears is a film with a running time of 89 minutes.,-1.0322595834732056
+734,"The English Without Teas, which has a runtime of 89.0,",The duration of the movie ´English Without Tears´ is 89 minutes.,-1.24106764793396
+735,"Roberto Gail Zaarth is the leader of Mexico, where Roberto Gail Zaak",The leader of Mexico is Roberto Gil Zuarth.,-0.1589270681142807
+736,"Roberto Gail Zaarth is the leader of Mexico, where Roberto Gail Zaak",One of the leaders of the country of Mexico is Roberto Gil Zuarth.,-0.19622650742530823
+737,"Roberto Gail Zaarth is the leader of Mexico, where Roberto Gail Zaak",One of the leaders of Mexico is Roberto Gil Zuarth .,-0.1749366968870163
+738,"Dijon is the campus of the University of Burningy, which is the location of Di",The University of Burgundy campus is located in Dijon.,-0.8376456499099731
+739,"Dijon is the campus of the University of Burningy, which is the location of Di",The campus of the University of Burgundy is located in Dijon.,-0.8801606893539429
+740,"Dijon is the campus of the University of Burningy, which is the location of Di",The University of Burgundy has its campus in Dijon.,-0.8955872654914856
+741,The total area of Karlsruhe is 173.46 and the city has a total area of 17,The total area of Karlsruhe |is 173.46.,0.13553451001644135
+742,The total area of Karlsruhe is 173.46 and the city has a total area of 17,Karlsruhe has a total area of 173.46 square kilometres.,-0.19280967116355896
+743,The total area of Karlsruhe is 173.46 and the city has a total area of 17,Karlsruhe has a total area of 173.46.,0.18203194439411163
+744,"The non performing personnel of Nikola Brookszky, whose background is non performing personnel,",Nicholas Brodszky has a non-performing background.,-0.7917965054512024
+745,"The non performing personnel of Nikola Brookszky, whose background is non performing personnel,",Nicholas Brodszky was a non-performing staff.,-0.63141268491745
+746,"The non performing personnel of Nikola Brookszky, whose background is non performing personnel,",Nicholas Brodszky was a part of non-performing personnel.,-0.6434301733970642
+747,"The runway at the Bedford Avenue, which is made of concrete, is made of concrete. The",The runway surface of the Bedford Aerodrome is made of concrete.,0.10173103213310242
+748,"The runway at the Bedford Avenue, which is made of concrete, is made of concrete. The",The Bedford Aerodrome runway surface is made out of concrete.,-0.004856493324041367
+749,"The runway at the Bedford Avenue, which is made of concrete, is made of concrete. The",Bedford Aerodrome has a runway surface made of concrete.,-0.007663559168577194
+750,"The Bedford Avenue, which is in Thurleigh, is the location of the Bedford Aerod",The location of Bedford Aerodrome is Thurleigh.,-0.4016379117965698
+751,"The Bedford Avenue, which is in Thurleigh, is the location of the Bedford Aerod",The Bedford Aerodrome is located in Thurleigh.,-0.2412070333957672
+752,Tom Simon is the producer of Tom Simon and he is the producer of the Ferry Farm,'Death on a Factory Farm' was produced by Tom Simon.,-0.9521253108978271
+753,Tom Simon is the producer of Tom Simon and he is the producer of the Ferry Farm,Tom Simon produced the film named Death on a Factory Farm.,-0.83294677734375
+754,Tom Simon is the producer of Tom Simon and he is the producer of the Ferry Farm,Tom Simon is the producer of Death on a Factory Farm.,-0.9148157238960266
+755,Lionsgate is located in the United States and Lionsgate is located there.,The location of Lionsgate is in the United States.,0.27667108178138733
+756,Lionsgate is located in the United States and Lionsgate is located there.,Lionsgate is located in the US.,0.633619487285614
+757,Lionsgate is located in the United States and Lionsgate is located there.,Lionsgate is located in the United States.,0.6756426692008972
+758,"The French Republic is also known as the French Republic and is the location of the ""Fred",The long name of France is the French Republic.,-0.8726080060005188
+759,"The French Republic is also known as the French Republic and is the location of the ""Fred",The formal name for France is the French Republic.,-0.8732841610908508
+760,"The French Republic is also known as the French Republic and is the location of the ""Fred","""The French Republic"" is the long name of France.",-0.7864956259727478
+761,"The editor of the book ""Gef Bartz"" is the editor of the Farm",Geof Bartz is the editor of the film Death on a Factory Farm.,-0.7330476641654968
+762,"The editor of the book ""Gef Bartz"" is the editor of the Farm",Death on a Factory Farm was edited by Geof Bartz.,-0.7029001116752625
+763,"The editor of the book ""Gef Bartz"" is the editor of the Farm",Geof Bartz is the editor of Death on a Factory Farm.,-0.6213670372962952
+764,The Runtime of 83.0 metres and the time that 83.0 people live,Death on a Factory Farm has a duration of 83 minutes.,-0.8272560834884644
+765,The Runtime of 83.0 metres and the time that 83.0 people live,Death on a Factory Farm has a running time of 83.0.,-0.683300256729126
+766,The Runtime of 83.0 metres and the time that 83.0 people live,The film ‘Death on a Factory Farm’ lasts 83 minutes.,-1.136886715888977
+767,Liselotte Groebina was born on 2 May 1908 and was born on,"Liselotte Grschebina was born on May 2nd, 1908.",0.33839550614356995
+768,Liselotte Groebina was born on 2 May 1908 and was born on,"Liselotte Grschebina was born on May 2, 1908.",0.3497476875782013
+769,Liselotte Groebina was born on 2 May 1908 and was born on,Liselotte Grschebina was born on 1908-05-02.,-0.10995012521743774
+770,Karlsruhe is located at 115.0 above sea level and is the location of the town.,Karlsruhe has an elevation of 115 metres above sea level.,0.03432236239314079
+771,Karlsruhe is located at 115.0 above sea level and is the location of the town.,Karlsruhe is 115 meters above sea level.,0.17842964828014374
+772,Karlsruhe is located at 115.0 above sea level and is the location of the town.,Karlsruhe is 115.0 meters above sea-level.,0.14767418801784515
+773,"Dijon has the postal code 21000, the postal code is 21000 and the postcode",The postal code for Dijon is 21000.,0.19280442595481873
+774,"Dijon has the postal code 21000, the postal code is 21000 and the postcode",The postal code of Dijon is 21000.,0.20192831754684448
+775,SuperCapers has a gross of 30955.0 and a supercapable of 30,"Super Capers' gross income was $30,955.",-0.6505955457687378
+776,SuperCapers has a gross of 30955.0 and a supercapable of 30,"The film Super Capers grossed $30,955.",-0.7236084342002869
+777,SuperCapers has a gross of 30955.0 and a supercapable of 30,The box office of Super Capers is $30955.0.,-0.7712135910987854
+778,"The Super Cappers are based in English speaking, supercapers.",The language of the movie Super Capers is English.,-0.9310201406478882
+779,"The Super Cappers are based in English speaking, supercapers.",Super Capers is a movie in English.,-1.0422649383544922
+780,"The Super Cappers are based in English speaking, supercapers.",Super Capers is an English-language film.,-0.9987733960151672
+781,"Louis Levy is the musician who is the creator of the film, Louis Levy","Louis Levy is the music composer for the film ""It""s great to Be Young"".",-0.31686705350875854
+782,"Louis Levy is the musician who is the creator of the film, Louis Levy",Louis Levy is the music composer of It's Great to Be Young (1956 film).,-0.4156600832939148
+783,"Louis Levy is the musician who is the creator of the film, Louis Levy",It's Great to Be Young's music was composed by Louis Levy.,-0.7473569512367249
+784,Lionsgate is an entertainment industry that offers entertainment industry services to Lionsgate.,Lionsgate is an entertainment company.,0.6188182830810547
+785,Lionsgate is an entertainment industry that offers entertainment industry services to Lionsgate.,The industry in which Lionsgate operates is the entertainment.,0.35585296154022217
+786,Lionsgate is an entertainment industry that offers entertainment industry services to Lionsgate.,Lionsgate is in the entertainment industry.,0.27696701884269714
+787,"The musical artist, Juliat Miller, is John Miller, who is the son of, Julia",Juliet Mills is the daughter of John Mills.,-0.7425493597984314
+788,"The musical artist, Juliat Miller, is John Miller, who is the son of, Julia",John Mills had a daughter named Juliet Mills.,-0.9642766118049622
+789,"The musical artist, Juliat Miller, is John Miller, who is the son of, Julia",The child of John Mills is called Juliet Mills.,-0.7575831413269043
+790,Pontiac are the manufacturers of Pontiac which makes the Pontiac,The Pontiac Rageous is manufactured by Pontiac.,-0.2380106896162033
+791,Pontiac are the manufacturers of Pontiac which makes the Pontiac,The Pontiac Rageous was a car manufactured by Pontiac.,-0.27935391664505005
+792,"The county of Bedfordshire is the location of the town of Thurleigh, which is a",The ceremonial county of Thurleigh is Bedfordshire.,-0.1141299456357956
+793,Lionsgate is a company that offers Broadcast programing services.,Lionsgate offers broadcast programming service.,0.5250499248504639
+794,Lionsgate is a company that offers Broadcast programing services.,Lionsgate provides the service of broadcast programming.,0.5366271734237671
+795,Lionsgate is a company that offers Broadcast programing services.,Broadcast programming is a service of Lionsgate.,0.3647456765174866
+796,GMA Network is a publicly traded company that makes a public company.,GMA Network is a public company.,0.23776030540466309
+797,GMA Network is a publicly traded company that makes a public company.,GMA Network is a Public Company.,0.23776030540466309
+798,Hypermarcas is managed by their CEO and their key person is Hypermarcas.,Hypermarcas is managed by their CEO.,0.40146636962890625
+799,Hypermarcas is managed by their CEO and their key person is Hypermarcas.,The key person in Hypermarcas is the CEO.,0.1490892469882965
+800,Hypermarcas is managed by their CEO and their key person is Hypermarcas.,The key person in Hypermarcas is their CEO.,0.1888124942779541
+801,Hypermarcas is managed by their CEO and their key person is Hypermarcas.,The CEO is the key person in Hypermarcas.,0.16148340702056885
+802,The director of English Without Teas is Harold French and the English language is used.,English Without Tears is a film directed by Harold French.,-1.03225839138031
+803,The director of English Without Teas is Harold French and the English language is used.,Harold French was the director of the film English Without Tears.,-0.9448079466819763
+804,The director of English Without Teas is Harold French and the English language is used.,Harold French directed English without Tears.,-0.998256504535675
+805,"The opening of the Hope and the significance of the Petah Tikva is ""","Petah Tikva means ""opening of hope.""",-0.10251583158969879
+806,"The opening of the Hope and the significance of the Petah Tikva is """,Petah Tikva means ‘Opening of Hope’ in Hebrew.,-0.3355816900730133
+807,"Jon Helmstein is a key person at Lionsgate, where the Lionsgate is",One key person of Lionsgate is Jon Feltheimer.,-0.1404370218515396
+808,"Jon Helmstein is a key person at Lionsgate, where the Lionsgate is",One of the key people in Lionsgate is Jon Feltheimer.,-0.13487549126148224
+809,"Jon Helmstein is a key person at Lionsgate, where the Lionsgate is",Lionsgate is a company with Jon Feltheimer as a key person.,-0.29332295060157776
+810,Max Benedict died in London and died in London.,Max Benedict died in London.,0.788057804107666
+811,Max Benedict died in London and died in London.,The death place of Max Benedict was London.,0.38031280040740967
+812,Michael Roker starred in the SuperCapers which starred Michael Ker.,Super Capers is a film starring Michael Rooker.,-0.6141907572746277
+813,Michael Roker starred in the SuperCapers which starred Michael Ker.,Super Capers starred Michael Rooker.,-0.45565640926361084
+814,Michael Roker starred in the SuperCapers which starred Michael Ker.,Michael Rooker played in Super Capers.,-0.5708370804786682
+815,The Governator is the leader of Ciudad Ayala and the leader is,Ciudad Ayala has a leader called the Governator.,-0.18896399438381195
+816,The Governator is the leader of Ciudad Ayala and the leader is,In Ciudad Ayala the leader is called the governator.,-0.30690690875053406
+817,Pontiac Rapidous is a Coupe with a Coupe body style.,The Pontiac Rageous was a car with a coupe body style.,0.5500115752220154
+818,Pontiac Rapidous is a Coupe with a Coupe body style.,The Pontiac Rageous has a coupe body style.,0.5494749546051025
+819,Pontiac Rapidous is a Coupe with a Coupe body style.,The Pontiac Rageous is a coupe.,0.42197543382644653
+820,"La Crosse, Wisconsin is 204.0 above sea level and is the location of the town.",La Crosse Wisconsin is 204.0 meters above sea level.,0.14729899168014526
+821,"La Crosse, Wisconsin is 204.0 above sea level and is the location of the town.","La Crosse, Wisconsin is 204 meters above sea level.",0.28531843423843384
+822,"La Crosse, Wisconsin is 204.0 above sea level and is the location of the town.",La Crosse is a city in the U.S. state of Wisconsin and its elevation above sea level is 204 m.,0.15852206945419312
+823,"La Crosse, Wisconsin is 204.0 above sea level and is the location of the town.","La Crosse, Wisconsin is 204 metres above sea level.",0.24426352977752686
+824,Ciudad Ayala is in the Pacific Daylight Time Zone and spent in the,Ciudad Ayala is in the PDT time zone.,-0.3024260699748993
+825,Ciudad Ayala is in the Pacific Daylight Time Zone and spent in the,Ciudad Ayala's time zone is Pacific Daylight Time.,-0.3443024158477783
+826,Ciudad Ayala is in the Pacific Daylight Time Zone and spent in the,Ciudad Ayala is located in the Pacific Daylight time zone.,-0.2646060883998871
+827,"General Motors is the parent company of Pontiac, the parent company of Ponti",The parent company of Pontiac is General Motors.,-0.2932853102684021
+828,"General Motors is the parent company of Pontiac, the parent company of Ponti",Pontiac's parent company is General Motors.,-0.22604471445083618
+829,"General Motors is the parent company of Pontiac, the parent company of Ponti",General Motors is the parent company of Pontiac.,0.07875734567642212
+830,The Motor Sport Vision was founded in 2004 and is the manufacturer of the Motor Sport Vision.,MotorSport Vision was founded in the year 2004.,-0.025936614722013474
+831,The Motor Sport Vision was founded in 2004 and is the manufacturer of the Motor Sport Vision.,Motorsport vision was founded in 2004.,0.17169404029846191
+832,Max Benedict started his career on 01-01-1947 and became active on 01-01-19,Max Benedict began his career in 1947.,-0.25723764300346375
+833,Max Benedict started his career on 01-01-1947 and became active on 01-01-19,Max Benedict started his professional activities from the year 1947.,-0.1819443255662918
+834,Max Benedict started his career on 01-01-1947 and became active on 01-01-19,Max Benedict has been active professionally since 1947.,-0.48360490798950195
+835,"Mary Hayley Bean is the wife of John Miller, who is the spouse of, Mary",John Mills is the spouse of Mary Hayley Bell.,-0.0869257003068924
+836,"Mary Hayley Bean is the wife of John Miller, who is the spouse of, Mary",John Mills is Mary Hayley Bell's spouse.,-0.22210976481437683
+837,"Mary Hayley Bean is the wife of John Miller, who is the spouse of, Mary",John Mills was married to Mary Hayley Bell.,-0.18310591578483582
+838,"San Francisco born, Justin Halin, was the birthplace of, San Francisco born, San",Justin Whalin was born in San Francisco.,-0.6595306396484375
+839,"San Francisco born, Justin Halin, was the birthplace of, San Francisco born, San",Justin Whalin is born in San Francisco.,-0.6722393035888672
+840,"Governor, is the leader of the city of Addlos, which is led by the Governor.",One of the leaders of the state of Morelos is the Governor.,-0.209211066365242
+841,"Governor, is the leader of the city of Addlos, which is led by the Governor.",Morelos is led by the Governor.,-0.14888738095760345
+842,"Governor, is the leader of the city of Addlos, which is led by the Governor.",The title of the leader of Morelos is Governor.,-0.3139686584472656
+843,The University of Burgundy has 1299 students and 1299 students.,The number of doctoral students in the University of Burgundy is 1299.,0.10102726519107819
+844,The University of Burgundy has 1299 students and 1299 students.,The University of Burgundy has 1299 doctoral students.,0.2299516797065735
+845,"The presenter of the comic character, Justin Halin, is the presenter, and his",Justin Whalin’s job is a presenter.,-0.5324346423149109
+846,"The presenter of the comic character, Justin Halin, is the presenter, and his",Justin Whalin was a presenter.,-0.43374112248420715
+847,"The presenter of the comic character, Justin Halin, is the presenter, and his",Justin Whalin worked as a presenter.,-0.49105119705200195
+848,Cyril Frankel was born in the United Kingdom and was born in the UK.,Cyril Frankel was born in the UK.,0.8192777633666992
+849,Cyril Frankel was born in the United Kingdom and was born in the UK.,Cyril Frankel's birth place was in the United Kingdom.,0.32511961460113525
+850,Cyril Frankel was born in the United Kingdom and was born in the UK.,Cyril Frankel was born in the United Kingdom.,0.7431246638298035
+851,"The birthplace of Harold French is the UK, where he was born.",Harold French is born in the UK.,0.01709989830851555
+852,"The birthplace of Harold French is the UK, where he was born.",Harold French was born in the UK.,0.08064736425876617
+853,"The birthplace of Harold French is the UK, where he was born.",Harold French was born in the United Kingdom.,0.11814860999584198
+854,Liselotte Groebina is from the country of the country of the country of,Liselotte Grschebina has Israeli nationality.,-0.6909351348876953
+855,Liselotte Groebina is from the country of the country of the country of,Liselotte Grschebina's nationality is Israeli.,-0.7170869708061218
+856,Liselotte Groebina is from the country of the country of the country of,Liselotte Grschebina is an Israeli national.,-0.691737949848175
+857,"Tom Star Jr. starred in SuperCapers, starring Tom Roger Jr.",Super Capers is a film starring Tom Lister Jr.,-0.604632556438446
+858,"Tom Star Jr. starred in SuperCapers, starring Tom Roger Jr.",Super Capers is starring Tom Lister Jr.,-0.4051133692264557
+859,"Tom Star Jr. starred in SuperCapers, starring Tom Roger Jr.",Super Capers is a movie starring Tom Lister Jr.,-0.5853908061981201
+860,Pontiac produces the automobiles that are manufactured by Pontiac.,The Pontiac company manufactures automobiles.,0.5129332542419434
+861,Pontiac produces the automobiles that are manufactured by Pontiac.,Pontiac makes automobiles.,0.4877977967262268
+862,Pontiac produces the automobiles that are manufactured by Pontiac.,Pontiac produces automobiles.,0.7461684346199036
+863,"Vice President is a leader in Brazil, which is led by the Vice President.",The leader of Brazil's title is Vice President.,0.0015249811112880707
+864,"Vice President is a leader in Brazil, which is led by the Vice President.",Vice President is a leader title in Brazil.,0.16483603417873383
+865,"Vice President is a leader in Brazil, which is led by the Vice President.",Vice President is a Brazilian leadership title.,0.10677574574947357
+866,"Vice President is a leader in Brazil, which is led by the Vice President.",Brazil’s leader has the title of Vice President.,0.13151422142982483
+867,"Cyril Frankel is the director of the film ""Cyril Frankel""",It's Great to Be Young is a 1956 film directed by Cyril Frankel.,-0.7721503376960754
+868,"Cyril Frankel is the director of the film ""Cyril Frankel""",The director of the movie It's Great to Be Young was Cyril Frankel.,-0.4341953992843628
+869,"Cyril Frankel is the director of the film ""Cyril Frankel""",The director of the 1956 movie It's Great to Be Young is Cyril Frankel.,-0.5460608005523682
+870,"The English Without Thunders were released on July 28, 1944 and are the current record label of",English Without Tears was released on 1944-07-28.,-0.7971528768539429
+871,"The English Without Thunders were released on July 28, 1944 and are the current record label of",The movie English Without Tears' release date is 07-28-1944.,-0.8408176302909851
+872,"The English Without Thunders were released on July 28, 1944 and are the current record label of",English Without Tears is a film released on 28th July 1944.,-0.9712314009666443
+873,"The film director, Harold Flint, is Harold French's occupation.",Harold French is a film director.,-0.7886507511138916
+874,"The film director, Harold Flint, is Harold French's occupation.",Harold French served as a film director.,-0.6577176451683044
+875,"The film director, Harold Flint, is Harold French's occupation.",Harold French was a film director.,-0.7630962133407593
+876,Tom Simon is the director of Tom Simon and the director of the Factory Farm is Tom,Tom Simon is the director of Death on a Factory Farm.,-0.803295373916626
+877,Tom Simon is the director of Tom Simon and the director of the Factory Farm is Tom,"""Death on a Factory Farm"" was directed by Tom Simon.",-0.7053652405738831
+878,Tom Simon is the director of Tom Simon and the director of the Factory Farm is Tom,Tom Simon directed the film ‘Death on a Factory Farm’.,-0.7349449396133423
+879,The City Manager is the leader of Ciudad Ayala and the leader is the,The leader title for Ciudad Ayala is City Manager.,-0.23367756605148315
+880,The City Manager is the leader of Ciudad Ayala and the leader is the,One of the leaders of Ciudad Ayala is the City Manager.,-0.12629184126853943
+881,Pontiac Romaus ceased production in 1997 and Pontiac Ridgeous were,The Pontiac Rageous was last produced in 1997.,-0.09113241732120514
+882,Pontiac Romaus ceased production in 1997 and Pontiac Ridgeous were,Production of the Pontiac Rageous ended in 1997.,-0.1629873514175415
+883,Cyril Frankel is a TV director who has the occupation of Cyril Fran,Cyril Frankel was a television director.,-0.3284108340740204
+884,Cyril Frankel is a TV director who has the occupation of Cyril Fran,Cyril Frankel is a television director.,-0.40208083391189575
+885,Cyril Frankel is a TV director who has the occupation of Cyril Fran,Cyril Frankel worked as a television director.,-0.32618075609207153
+886,"Hayley Millers is the child of John Miller, who is the son of, Hayley",Hayley Mills is the child of John Mills.,0.04020987078547478
+887,"Hayley Millers is the child of John Miller, who is the son of, Hayley",John Mills has a child named Hayley Mills.,-0.4755838215351105
+888,"Hayley Millers is the child of John Miller, who is the son of, Hayley",Hayley Mills is a child of John Mills.,0.0488579086959362
+889,Terence Gigan died on the 30th November 1977 and died in the same month.,Terence Rattigan died on the 30th of November in the year 1977.,0.3856343626976013
+890,Terence Gigan died on the 30th November 1977 and died in the same month.,Terence Rattigan died on November 30th 1977.,0.25188854336738586
+891,Terence Gigan died on the 30th November 1977 and died in the same month.,Terence Rattigan died in 30/11/1977.,0.22647294402122498
+892,The English language is spoken in the English language and the ISOC6392 code is eng,The language code (ISO 639-2) of the English language is eng.,-0.0024849362671375275
+893,The English language is spoken in the English language and the ISOC6392 code is eng,“eng” is the ISO 639-2 code for the English language.,-0.28848567605018616
+894,The English language is spoken in the English language and the ISOC6392 code is eng,The ISO 639-2 code of the English Language is eng.,-0.04687992110848427
+895,"Hypermarcas has 10252 employees, and its employees are 10252 people.",The number of employees at Hypermarcas is 10252.,0.49091196060180664
+896,"Hypermarcas has 10252 employees, and its employees are 10252 people.","Hypermarcas employs 10,252 people.",0.37640050053596497
+897,"Hypermarcas has 10252 employees, and its employees are 10252 people.",Hypermarcas has 10252 employees.,0.7377666234970093
+898,"Pontiac Ridgeous was assembled in Michigan, and is assembled in Michigan.",The Pontiac Rageous was assembled in Michigan.,-0.02346527948975563
+899,"Pontiac Ridgeous was assembled in Michigan, and is assembled in Michigan.",The Pontiac Rageous is assembled in Michigan.,0.12850823998451233
+900,Saint Petersburg born Anatole de Grogwald was the birthplace of Saint Petersburg.,Anatole de Grunwald was born in Saint Petersburg.,-0.1891813725233078
+901,Saint Petersburg born Anatole de Grogwald was the birthplace of Saint Petersburg.,The birthplace of Anatole de Grunwald is Saint Petersburg.,-0.17359387874603271
+902,Saint Petersburg born Anatole de Grogwald was the birthplace of Saint Petersburg.,Anatole de Grunwald's birthplace is Saint Petersburg.,0.031838297843933105
+903,Cuernavaca is part of the Cuernavaca region and the city of,Cuernavaca is part of Morelos.,0.05189073458313942
+904,Cuernavaca is part of the Cuernavaca region and the city of,Cuernavaca is a part of Morelos.,0.031024638563394547
+905,Liselotte Groebina died on 14 June 1994 and died on 14 June 1994,"Liselotte Grschebina died on June 14, 1994.",0.596098005771637
+906,Liselotte Groebina died on 14 June 1994 and died on 14 June 1994,"Liselotte Grschebina died on the 14th of June, 1994.",0.5709887146949768
+907,"The President of the House of Deputies is the leader of Mexico, where the leader is",A leader of Mexico is called the President of the Chamber of Deputies.,-0.08816981315612793
+908,"The President of the House of Deputies is the leader of Mexico, where the leader is",Mexico's government has a leader position titled the President of the Chamber of Deputies.,-0.23159809410572052
+909,"The President of the House of Deputies is the leader of Mexico, where the leader is",President of the Chamber of Deputies is a leader title in Mexico.,0.0942625105381012
+910,"John Miller starred in the film, ""Its Great to be known as the film","John Mills is playing the lead in the movie It's Great to Be Young, which was released in 1956.",-1.0485141277313232
+911,"John Miller starred in the film, ""Its Great to be known as the film",It's Great to Be Young is a 1956 film starring John Mills.,-1.0705128908157349
+912,"John Miller starred in the film, ""Its Great to be known as the film",John Mills had a main role in the movie It's Great to Be Young.,-0.9155778288841248
+913,Anatole de Groinwald is the author of Anatole de Gaswald who wrote,English Without Tears is written by Anatole de Grunwald.,-0.644180178642273
+914,Anatole de Groinwald is the author of Anatole de Gaswald who wrote,The writer of English Without Tears was Anatole de Grunwald.,-0.476595401763916
+915,Anatole de Groinwald is the author of Anatole de Gaswald who wrote,"""English Without Tears"" was written by Anatole de Grunwald.",-0.6535173058509827
