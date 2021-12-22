@@ -8,7 +8,7 @@ Check out `./memory/`
 
 ## Lea's group
 
-We evaluated a T5 model that takes as input triple data. 
+We evaluated a T5 model that takes as input triple data.
 
 Check out `./transformers/`
 

@@ -261,20 +261,17 @@ class SimReplier(BasicReplier):
             affirmative_conflict = random.choice(affirmative_conflict)
             negative_conflict = random.choice(negative_conflict)
 
-            say += (
-                " %s told me in %s that %s %s %s, but in %s %s told me that %s did not %s %s"
-                % (
-                    affirmative_conflict["_provenance"]["_author"],
-                    affirmative_conflict["_provenance"]["_date"],
-                    utterance["triple"]["_subject"]["_label"],
-                    utterance["triple"]["_predicate"]["_label"],
-                    utterance["triple"]["_complement"]["_label"],
-                    negative_conflict["_provenance"]["_date"],
-                    negative_conflict["_provenance"]["_author"],
-                    utterance["triple"]["_subject"]["_label"],
-                    utterance["triple"]["_predicate"]["_label"],
-                    utterance["triple"]["_complement"]["_label"],
-                )
+            say += " %s told me in %s that %s %s %s, but in %s %s told me that %s did not %s %s" % (
+                affirmative_conflict["_provenance"]["_author"],
+                affirmative_conflict["_provenance"]["_date"],
+                utterance["triple"]["_subject"]["_label"],
+                utterance["triple"]["_predicate"]["_label"],
+                utterance["triple"]["_complement"]["_label"],
+                negative_conflict["_provenance"]["_date"],
+                negative_conflict["_provenance"]["_author"],
+                utterance["triple"]["_subject"]["_label"],
+                utterance["triple"]["_predicate"]["_label"],
+                utterance["triple"]["_complement"]["_label"],
             )
         return say
 

@@ -230,6 +230,7 @@ class Baseline(PromptTemplate):
 
         return prompt
 
+
 class WithoutQuestion(PromptTemplate):
     """Without question prompt.
     This is the prompt with the subject instead of a question.
@@ -308,6 +309,7 @@ class EpisodicToSemantic(PromptTemplate):
     and add semantic memories to the prompt based on the question.
 
     """
+
     cols = None
     lss = None
 
@@ -324,11 +326,20 @@ class EpisodicToSemantic(PromptTemplate):
         )
 
         for mem in sample["episodic_memory_system"]:
-            self.lss.append(["".join(mem[0].split()[1:2]), "".join(mem[2].split()[1:2])])
+            self.lss.append(
+                ["".join(mem[0].split()[1:2]), "".join(mem[2].split()[1:2])]
+            )
         observations = pd.DataFrame(self.lss, columns=self.cols)
 
-        obs = observations.groupby(observations.columns.tolist()).size().reset_index().rename(columns={0: 'ranking'})
-        obs_rank_sorted = obs.sort_values('ranking', ascending=False).reset_index(drop=True)
+        obs = (
+            observations.groupby(observations.columns.tolist())
+            .size()
+            .reset_index()
+            .rename(columns={0: "ranking"})
+        )
+        obs_rank_sorted = obs.sort_values("ranking", ascending=False).reset_index(
+            drop=True
+        )
 
         for idx, mem in enumerate(sample["episodic_memory_system"]):
             max_len = len(sample["episodic_memory_system"])
@@ -342,19 +353,32 @@ class EpisodicToSemantic(PromptTemplate):
         prompt = []
 
         episodic_object = obs_rank_sorted.loc[
-            obs_rank_sorted['object'] == "".join(sample['question'][0].split()[1:2])].reset_index()
+            obs_rank_sorted["object"] == "".join(sample["question"][0].split()[1:2])
+        ].reset_index()
 
         for mem in sample["episodic_memory_system"]:
             prompt.append(f"{mem[0]} was at {mem[2]}, {mem[3]}.")
 
         if len(episodic_object) >= int(PromptWrapper.maxcap):
             for i in range(int(PromptWrapper.maxcap)):
-                prompt.append(str(episodic_object["ranking"][i]) + " " + str(
-                    episodic_object["object"][i]) + " were found at " + str(episodic_object["location"][i]) + ".")
+                prompt.append(
+                    str(episodic_object["ranking"][i])
+                    + " "
+                    + str(episodic_object["object"][i])
+                    + " were found at "
+                    + str(episodic_object["location"][i])
+                    + "."
+                )
         else:
             for i in range(len(episodic_object)):
-                prompt.append(str(episodic_object["ranking"][i]) + " " + str(
-                    episodic_object["object"][i]) + " were found at " + str(episodic_object["location"][i]) + ".")
+                prompt.append(
+                    str(episodic_object["ranking"][i])
+                    + " "
+                    + str(episodic_object["object"][i])
+                    + " were found at "
+                    + str(episodic_object["location"][i])
+                    + "."
+                )
 
         prompt.append(f"Where is {sample['question'][0]}?")
 
@@ -370,6 +394,7 @@ class BestPrompt(PromptTemplate):
     and add semantic memories to the prompt based on the question.
 
     """
+
     cols = None
     lss = None
 
@@ -386,11 +411,20 @@ class BestPrompt(PromptTemplate):
         )
 
         for mem in sample["episodic_memory_system"]:
-            self.lss.append(["".join(mem[0].split()[1:2]), "".join(mem[2].split()[1:2])])
+            self.lss.append(
+                ["".join(mem[0].split()[1:2]), "".join(mem[2].split()[1:2])]
+            )
         observations = pd.DataFrame(self.lss, columns=self.cols)
 
-        obs = observations.groupby(observations.columns.tolist()).size().reset_index().rename(columns={0: 'ranking'})
-        obs_rank_sorted = obs.sort_values('ranking', ascending=False).reset_index(drop=True)
+        obs = (
+            observations.groupby(observations.columns.tolist())
+            .size()
+            .reset_index()
+            .rename(columns={0: "ranking"})
+        )
+        obs_rank_sorted = obs.sort_values("ranking", ascending=False).reset_index(
+            drop=True
+        )
 
         for idx, mem in enumerate(sample["episodic_memory_system"]):
             max_len = len(sample["episodic_memory_system"])
@@ -405,7 +439,8 @@ class BestPrompt(PromptTemplate):
         prompt = []
 
         episodic_object = obs_rank_sorted.loc[
-            obs_rank_sorted['object'] == "".join(sample['question'][0].split()[1:2])].reset_index()
+            obs_rank_sorted["object"] == "".join(sample["question"][0].split()[1:2])
+        ].reset_index()
 
         for mem in sample["episodic_memory_system"]:
             if mem[0] not in people_object_list:
@@ -414,12 +449,24 @@ class BestPrompt(PromptTemplate):
 
         if len(episodic_object) >= int(PromptWrapper.maxcap):
             for i in range(int(PromptWrapper.maxcap)):
-                prompt.append(str(episodic_object["ranking"][i]) + " " + str(
-                    episodic_object["object"][i]) + " were found at " + str(episodic_object["location"][i]) + ".")
+                prompt.append(
+                    str(episodic_object["ranking"][i])
+                    + " "
+                    + str(episodic_object["object"][i])
+                    + " were found at "
+                    + str(episodic_object["location"][i])
+                    + "."
+                )
         else:
             for i in range(len(episodic_object)):
-                prompt.append(str(episodic_object["ranking"][i]) + " " + str(
-                    episodic_object["object"][i]) + " were found at " + str(episodic_object["location"][i]) + ".")
+                prompt.append(
+                    str(episodic_object["ranking"][i])
+                    + " "
+                    + str(episodic_object["object"][i])
+                    + " were found at "
+                    + str(episodic_object["location"][i])
+                    + "."
+                )
 
         prompt.append(sample["question"][0])
 
@@ -462,7 +509,9 @@ class PromptWrapper:
         self.save_path_dir = f"./results/{data_type}/{model_name}_{prompt}"
         os.makedirs(self.save_path_dir, exist_ok=True)
 
-        self.data_all, self.max_capacity = load_data(path=os.path.join("data", data_type))
+        self.data_all, self.max_capacity = load_data(
+            path=os.path.join("data", data_type)
+        )
         self.tokenizer, self.model = load_model(model_name)
 
         if prompt.lower() == "baseline":
