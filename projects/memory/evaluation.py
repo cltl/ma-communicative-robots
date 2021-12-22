@@ -3,9 +3,7 @@ import logging
 import os
 from glob import glob
 
-import nltk
 import numpy as np
-from rouge import Rouge
 from run_prompts import read_json, write_json
 from tqdm import tqdm
 
@@ -58,8 +56,6 @@ def compute_our_bleu(reference: str, pred: str) -> float:
     assert isinstance(reference, str) and isinstance(pred, str)
 
     reference = reference.lower()
-    if not pred:
-        pred = "empty"
     preds = [word.lower() for word in pred.split()]
     denom = len(preds)
     nom = 0
@@ -69,12 +65,17 @@ def compute_our_bleu(reference: str, pred: str) -> float:
             nom += 1
         else:
             nom += 0
-
-    score = nom / denom
+    if denom == 0:
+        score = 0
+    else:
+        score = nom / denom
     return score
 
 
-def evaluate_wrapper(results_path: str, metrics: list = ["bleu", "f1", "nihed", "rouge", "global_accuracy"]) -> None:
+def evaluate_wrapper(
+    results_path: str,
+    metrics: list = ["bleu", "f1", "nihed", "rouge", "global_accuracy"],
+) -> None:
     """Evaluate wrapper.
     Args
     ----
@@ -208,7 +209,6 @@ def evaluate(
 
         bleu_avg = float(np.mean(bleu_all))
 
-
         rouge_all = []
         for answer, pred in zip(correct_answers, predictions):
             rouge = compute_our_rouge(answer, pred)
@@ -216,8 +216,10 @@ def evaluate(
             print(rouge, answer, pred)
         rouge_avg = float(np.mean(rouge_all))
 
-
-        f1 = 2 * (bleu_avg * rouge_avg) / (bleu_avg + rouge_avg)
+        if bleu_avg + rouge_avg == 0:
+            f1 = 0
+        else:
+            f1 = 2 * (bleu_avg * rouge_avg) / (bleu_avg + rouge_avg)
         print(f1)
         return f1
         # raise NotImplementedError
@@ -229,7 +231,11 @@ def evaluate(
             score = 0
             prompt_split = prompt.split()
 
-            if (prompt_split[-2] in pred) and (prompt_split[-1] in pred) and (answer in pred):
+            if (
+                (prompt_split[-2] in pred)
+                and (prompt_split[-1] in pred)
+                and (answer in pred)
+            ):
                 score += 0.99
                 scores.append(score)
 
@@ -260,7 +266,6 @@ def evaluate(
 
         print(scores)
         return float(np.mean(scores))
-
 
         # raise ValueError
 
