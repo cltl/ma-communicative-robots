@@ -58,19 +58,23 @@ def compute_our_bleu(reference: str, pred: str) -> float:
     assert isinstance(reference, str) and isinstance(pred, str)
 
     reference = reference.lower()
+    if not pred:
+        pred = "empty"
     preds = [word.lower() for word in pred.split()]
     denom = len(preds)
     nom = 0
     for pred in preds:
+
         if pred == reference:
             nom += 1
         else:
             nom += 0
+
     score = nom / denom
     return score
 
 
-def evaluate_wrapper(results_path: str, metrics: list = ["nihed"]) -> None:
+def evaluate_wrapper(results_path: str, metrics: list = ["bleu", "f1", "nihed", "rouge", "global_accuracy"]) -> None:
     """Evaluate wrapper.
     Args
     ----
@@ -204,12 +208,14 @@ def evaluate(
 
         bleu_avg = float(np.mean(bleu_all))
 
+
         rouge_all = []
         for answer, pred in zip(correct_answers, predictions):
             rouge = compute_our_rouge(answer, pred)
             rouge_all.append(rouge)
             print(rouge, answer, pred)
         rouge_avg = float(np.mean(rouge_all))
+
 
         f1 = 2 * (bleu_avg * rouge_avg) / (bleu_avg + rouge_avg)
         print(f1)
@@ -221,21 +227,40 @@ def evaluate(
         assert len(correct_answers) == len(predictions) == len(prompt_text)
         for answer, pred, prompt in zip(correct_answers, predictions, prompt_text):
             score = 0
-            if answer in pred:
+            prompt_split = prompt.split()
+
+            if (prompt_split[-2] in pred) and (prompt_split[-1] in pred) and (answer in pred):
+                score += 0.99
+                scores.append(score)
+
+            elif (prompt_split[-2] in pred) and (answer in pred):
+                score += 0.66
+                scores.append(score)
+
+            elif answer in pred:
                 score += 0.33
-            if (prompt[-2] in pred) and (answer in pred):
-                score += 0.33
-            if (prompt[-2] in pred) and (prompt[-1] in pred) and (answer in pred):
-                score += 0.33
-            if "where" in pred:
+                scores.append(score)
+
+            elif "where" in pred:
                 score -= 0.33
-            if ("?" in pred) or ("not sure" in pred):
+                scores.append(score)
+
+            elif "?" in pred:
+                # ("not sure" in pred)
                 score = 0
+                scores.append(score)
+
+            elif "Answer not in context" in pred:
+                score += 0.99
+                scores.append(score)
+
             else:
                 score = 0
-            scores.append(score)
-            # I also have to calculate the average, right?
-            return float(np.mean(scores))
+                scores.append(score)
+
+        print(scores)
+        return float(np.mean(scores))
+
 
         # raise ValueError
 
