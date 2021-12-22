@@ -16,8 +16,8 @@ Evaluation of the T5 model is performed in two different ways; a human evaluatio
 # Authors 
 Supervisor: Lea Krause
 
-⋅⋅* Student 1: Caya de Haas
-⋅⋅* Student 2: Mincke Verschoor
-⋅⋅* Student 3: Pauline Remizowa
-⋅⋅* Student 4: Rishvik Chandel
+* Student 1: Caya de Haas
+* Student 2: Mincke Verschoor
+* Student 3: Pauline Remizowa
+* Student 4: Rishvik Chandel
 
