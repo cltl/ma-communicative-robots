@@ -9,6 +9,11 @@ In this repository, 4 sub researches are performed to investigate the performanc
 | Impact of different evaluation metrics on performance outcomes                 | This research investigates the outcome of different evaluation metrics.              | Pauline |
 | Difference and similarities of human and automated evaluation                  | This research compares the outcome of human and automated evaluation methods.       | Rishvik |
 
+# Prerequisites
+
+1. An x86 machine running Windows 10 or a Unix-based OS
+2. Python 3.7 or higher. Running in a virtual environment (e.g., conda, virtualenv, etc.) is highly recommended so that you don't mess up the system Python.
+3. pip install -r requirements.txt
 
 # Evaluation 
 Evaluation of the T5 model is performed in two different ways; a human evaluation based on response criteria, and using different automated evaluation metrics, such as BERTScore and BLEURT. 
