@@ -1,6 +1,6 @@
 ## Usage
 
-To generate a dataset such as the `eval_contexts.txt` used for the evaluation, run `generate_dataset_from_templates.py` using one of the following commands:
+To generate a dataset like `eval_contexts.txt` as used for the evaluation, run `generate_dataset_from_templates.py` using one of the following commands:
 
 <b>Windows:</b>
 
