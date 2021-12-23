@@ -1,6 +1,6 @@
 ## Usage
 
-In order to generate a dataset such as `eval_contexts.txt`, run `generate_dataset_from_templates.py` using one of the following commands:
+To generate a dataset such as the `eval_contexts.txt` used for the evaluation, run `generate_dataset_from_templates.py` using one of the following commands:
 
 <b>Windows:</b>
 
@@ -10,7 +10,7 @@ In order to generate a dataset such as `eval_contexts.txt`, run `generate_datase
 
 `$ python3 generate_dataset_from_templates.py`
 
-This will take the dialogue templates in `templates.txt` and will create a text file called `eval_contexts2.txt` in which all templates are populated.
+This will take the dialogue templates in `templates.txt` and will create a text file called `eval_contexts2.txt` in which all templates are populated randomly with different topics, names, etc.
 
 To evaluate our systems, also run `collect_brain_responses.py` using the generated dataset as an argument to generate the needed brain responses for the repliers:
 
