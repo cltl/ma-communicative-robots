@@ -14,6 +14,8 @@ This will take the dialogue templates in `templates.txt` and will create a text 
 
 To evaluate our systems, also run `collect_brain_responses.py` using the generated dataset as an argument to generate the needed brain responses for the repliers:
 
+<b>Windows:</b>
+
 `$ py -3 collect_brain_responses.py --eval_data=eval_contexts2.txt`
 
 <b>Ubuntu:</b>
