@@ -387,6 +387,430 @@ class EpisodicToSemantic(PromptTemplate):
         return prompt
 
 
+class ForgettingOldestCommon(PromptTemplate):
+    """Baseline prompt.
+
+    This is the simplest prompt.
+
+    """
+
+    def __init__(self) -> None:
+        logging.info("baseline prompt is initialized!")
+
+    def generate_prompt(self, sample: dict) -> str:
+        sample["episodic_memory_system"] = sorted(
+            sample["episodic_memory_system"], key=lambda x: x[-1], reverse=True
+        )
+        for idx, mem in enumerate(sample["episodic_memory_system"]):
+            max_len = len(sample["episodic_memory_system"])
+            days = len(sample["episodic_memory_system"]) - idx - 1
+            if days == 0:
+                timestamp = "today"
+            else:
+                timestamp = f"{days} days ago"
+            sample["episodic_memory_system"][idx][-1] = timestamp
+            
+        people_object_list = []
+        prompt = []
+
+        for mem in sample["episodic_memory_system"]:
+            if mem[0] not in people_object_list:
+                prompt.append(f"{mem[0]} was at {mem[2]}, {mem[3]}.")
+                people_object_list.append(mem[0])
+
+        prompt.reverse()
+        
+        for mem in sample["semantic_memory_system"]:
+            prompt.append(f"{mem[-1]} {mem[0]} were found at {mem[2]}.")
+
+        prompt.append(f"Where is {sample['question'][0]}?")
+
+        prompt = " ".join(prompt)
+
+        return prompt
+    
+    
+
+class ForgettingOldest(PromptTemplate):
+    """Baseline prompt.
+
+    This is the simplest prompt.
+
+    """
+
+    def __init__(self) -> None:
+        logging.info("baseline prompt is initialized!")
+
+    def generate_prompt(self, sample: dict) -> str:
+        sample["episodic_memory_system"] = sorted(
+            sample["episodic_memory_system"], key=lambda x: x[-1], reverse=True
+        )
+        for idx, mem in enumerate(sample["episodic_memory_system"]):
+            max_len = len(sample["episodic_memory_system"])
+            days = len(sample["episodic_memory_system"]) - idx - 1
+            if days == 0:
+                timestamp = "today"
+            else:
+                timestamp = f"{days} days ago"
+            sample["episodic_memory_system"][idx][-1] = timestamp
+
+        prompt = []
+        counter = 0
+
+        for mem in sample["episodic_memory_system"]:
+            if counter == 32:
+                break
+            prompt.append(f"{mem[0]} was at {mem[2]}, {mem[3]}.")
+            counter += 1
+
+        prompt.reverse()
+
+        for mem in sample["semantic_memory_system"]:
+            prompt.append(f"{mem[-1]} {mem[0]} were found at {mem[2]}.")
+
+        prompt.append(f"Where is {sample['question'][0]}?")
+
+        prompt = " ".join(prompt)
+
+        return prompt
+    
+    
+class NoSementics(PromptTemplate):
+    """Baseline prompt.
+
+    This is the simplest prompt.
+
+    """
+
+    def __init__(self) -> None:
+        logging.info("baseline prompt is initialized!")
+
+    def generate_prompt(self, sample: dict) -> str:
+        sample["episodic_memory_system"] = sorted(
+            sample["episodic_memory_system"], key=lambda x: x[-1]
+        )
+        for idx, mem in enumerate(sample["episodic_memory_system"]):
+            max_len = len(sample["episodic_memory_system"])
+            days = len(sample["episodic_memory_system"]) - idx - 1
+            if days == 0:
+                timestamp = "today"
+            else:
+                timestamp = f"{days} days ago"
+            sample["episodic_memory_system"][idx][-1] = timestamp
+
+        prompt = []
+
+        for mem in sample["episodic_memory_system"]:
+            prompt.append(f"{mem[0]} was at {mem[2]}, {mem[3]}.")
+
+        prompt.append(f"Where is {sample['question'][0]}?")
+
+        prompt = " ".join(prompt)
+
+        return prompt
+    
+    
+class Episodic2SementicHidde(PromptTemplate):
+    """Baseline prompt.
+
+    This is the simplest prompt.
+
+    """
+
+    def __init__(self) -> None:
+        logging.info("baseline prompt is initialized!")
+
+    def generate_prompt(self, sample: dict) -> str:
+        sample["episodic_memory_system"] = sorted(
+            sample["episodic_memory_system"], key=lambda x: x[-1]
+        )
+        for idx, mem in enumerate(sample["episodic_memory_system"]):
+            max_len = len(sample["episodic_memory_system"])
+            days = len(sample["episodic_memory_system"]) - idx - 1
+            if days == 0:
+                timestamp = "today"
+            else:
+                timestamp = f"{days} days ago"
+            sample["episodic_memory_system"][idx][-1] = timestamp
+
+        most_common = {}        
+        prompt = []
+        K = 4
+        res = {}
+
+        for mem in sample["episodic_memory_system"]:
+            mem0_split = mem[0].split()
+            mem0 = mem0_split[1]
+            mem2_split = mem[2].split()
+            mem2 = mem2_split[1]
+            memory = str(mem0 + ' ' + mem2)
+            if memory in most_common:
+                most_common[memory] += 1
+            else:
+                most_common[memory] = 1
+                
+        for key in most_common:
+            if not (isinstance(most_common[key], int) and most_common[key] < K):
+                res[key] = most_common[key]
+
+        for mem in sample["episodic_memory_system"]:
+            if not res:
+                prompt.append(f"{mem[0]} was at {mem[2]}, {mem[3]}.")
+            else:
+                contain = 0
+                for key, value in res.items():
+                    common_split = key.split()
+                    common0 = common_split[0]
+                    common2 = common_split[1]
+                    if common0 in mem[0] and common2 in mem[2]:
+                        contain = 1
+                if contain == 0:
+                    prompt.append(f"{mem[0]} was at {mem[2]}, {mem[3]}.")
+
+        for mem in sample["semantic_memory_system"]:
+            prompt.append(f"{mem[-1]} {mem[0]} were found at {mem[2]}.")
+            
+        for mem in res:
+            common_split = key.split()
+            common0 = common_split[0]
+            common2 = common_split[1]
+            prompt.append(f"{mem[0]} were found at {mem[2]}.")
+
+        prompt.append(f"Where is {sample['question'][0]}?")
+
+        prompt = " ".join(prompt)
+
+        return prompt
+    
+    
+class BaselineReversed(PromptTemplate):
+    """Baseline prompt.
+
+    This is the simplest prompt.
+
+    """
+
+    def __init__(self) -> None:
+        logging.info("baseline prompt is initialized!")
+
+    def generate_prompt(self, sample: dict) -> str:
+        sample["episodic_memory_system"] = sorted(
+            sample["episodic_memory_system"], key=lambda x: x[-1], reverse=True
+        )
+        for idx, mem in enumerate(sample["episodic_memory_system"]):
+            max_len = len(sample["episodic_memory_system"])
+            days = len(sample["episodic_memory_system"]) - idx - 1
+            if days == 0:
+                timestamp = "today"
+            else:
+                timestamp = f"{days} days ago"
+            sample["episodic_memory_system"][idx][-1] = timestamp
+
+        prompt = []
+
+        for mem in sample["episodic_memory_system"]:
+            prompt.append(f"{mem[0]} was at {mem[2]}, {mem[3]}.")
+
+        for mem in sample["semantic_memory_system"]:
+            prompt.append(f"{mem[-1]} {mem[0]} were found at {mem[2]}.")
+
+        prompt.append(f"Where is {sample['question'][0]}?")
+
+        prompt = " ".join(prompt)
+
+        return prompt
+
+
+class ForgettingOldestCommonReversed(PromptTemplate):
+    """Baseline prompt.
+
+    This is the simplest prompt.
+
+    """
+
+    def __init__(self) -> None:
+        logging.info("baseline prompt is initialized!")
+
+    def generate_prompt(self, sample: dict) -> str:
+        sample["episodic_memory_system"] = sorted(
+            sample["episodic_memory_system"], key=lambda x: x[-1], reverse=True
+        )
+        for idx, mem in enumerate(sample["episodic_memory_system"]):
+            max_len = len(sample["episodic_memory_system"])
+            days = len(sample["episodic_memory_system"]) - idx - 1
+            if days == 0:
+                timestamp = "today"
+            else:
+                timestamp = f"{days} days ago"
+            sample["episodic_memory_system"][idx][-1] = timestamp
+            
+        people_object_list = []
+        prompt = []
+
+        for mem in sample["episodic_memory_system"]:
+            if mem[0] not in people_object_list:
+                prompt.append(f"{mem[0]} was at {mem[2]}, {mem[3]}.")
+                people_object_list.append(mem[0])
+        
+        for mem in sample["semantic_memory_system"]:
+            prompt.append(f"{mem[-1]} {mem[0]} were found at {mem[2]}.")
+
+        prompt.append(f"Where is {sample['question'][0]}?")
+
+        prompt = " ".join(prompt)
+
+        return prompt
+    
+    
+class ForgettingOldestReversed(PromptTemplate):
+    """Baseline prompt.
+
+    This is the simplest prompt.
+
+    """
+
+    def __init__(self) -> None:
+        logging.info("baseline prompt is initialized!")
+
+    def generate_prompt(self, sample: dict) -> str:
+        sample["episodic_memory_system"] = sorted(
+            sample["episodic_memory_system"], key=lambda x: x[-1], reverse=True
+        )
+        for idx, mem in enumerate(sample["episodic_memory_system"]):
+            max_len = len(sample["episodic_memory_system"])
+            days = len(sample["episodic_memory_system"]) - idx - 1
+            if days == 0:
+                timestamp = "today"
+            else:
+                timestamp = f"{days} days ago"
+            sample["episodic_memory_system"][idx][-1] = timestamp
+
+        prompt = []
+        counter = 0
+
+        for mem in sample["episodic_memory_system"]:
+            if counter == 32:
+                break
+            prompt.append(f"{mem[0]} was at {mem[2]}, {mem[3]}.")
+            counter += 1
+
+        for mem in sample["semantic_memory_system"]:
+            prompt.append(f"{mem[-1]} {mem[0]} were found at {mem[2]}.")
+
+        prompt.append(f"Where is {sample['question'][0]}?")
+
+        prompt = " ".join(prompt)
+
+        return prompt
+    
+    
+class NoSementicsReversed(PromptTemplate):
+    """Baseline prompt.
+
+    This is the simplest prompt.
+
+    """
+
+    def __init__(self) -> None:
+        logging.info("baseline prompt is initialized!")
+
+    def generate_prompt(self, sample: dict) -> str:
+        sample["episodic_memory_system"] = sorted(
+            sample["episodic_memory_system"], key=lambda x: x[-1], reverse=True
+        )
+        for idx, mem in enumerate(sample["episodic_memory_system"]):
+            max_len = len(sample["episodic_memory_system"])
+            days = len(sample["episodic_memory_system"]) - idx - 1
+            if days == 0:
+                timestamp = "today"
+            else:
+                timestamp = f"{days} days ago"
+            sample["episodic_memory_system"][idx][-1] = timestamp
+
+        prompt = []
+
+        for mem in sample["episodic_memory_system"]:
+            prompt.append(f"{mem[0]} was at {mem[2]}, {mem[3]}.")
+
+        prompt.append(f"Where is {sample['question'][0]}?")
+
+        prompt = " ".join(prompt)
+
+        return prompt
+    
+    
+class Episodic2SementicHiddeReversed(PromptTemplate):
+    """Baseline prompt.
+
+    This is the simplest prompt.
+
+    """
+
+    def __init__(self) -> None:
+        logging.info("baseline prompt is initialized!")
+
+    def generate_prompt(self, sample: dict) -> str:
+        sample["episodic_memory_system"] = sorted(
+            sample["episodic_memory_system"], key=lambda x: x[-1],reverse=True
+        )
+        for idx, mem in enumerate(sample["episodic_memory_system"]):
+            max_len = len(sample["episodic_memory_system"])
+            days = len(sample["episodic_memory_system"]) - idx - 1
+            if days == 0:
+                timestamp = "today"
+            else:
+                timestamp = f"{days} days ago"
+            sample["episodic_memory_system"][idx][-1] = timestamp
+
+        most_common = {}        
+        prompt = []
+        K = 4
+        res = {}
+
+        for mem in sample["episodic_memory_system"]:
+            mem0_split = mem[0].split()
+            mem0 = mem0_split[1]
+            mem2_split = mem[2].split()
+            mem2 = mem2_split[1]
+            memory = str(mem0 + ' ' + mem2)
+            if memory in most_common:
+                most_common[memory] += 1
+            else:
+                most_common[memory] = 1
+                
+        for key in most_common:
+            if not (isinstance(most_common[key], int) and most_common[key] < K):
+                res[key] = most_common[key]
+
+        for mem in sample["episodic_memory_system"]:
+            if not res:
+                prompt.append(f"{mem[0]} was at {mem[2]}, {mem[3]}.")
+            else:
+                contain = 0
+                for key, value in res.items():
+                    common_split = key.split()
+                    common0 = common_split[0]
+                    common2 = common_split[1]
+                    if common0 in mem[0] and common2 in mem[2]:
+                        contain = 1
+                if contain == 0:
+                    prompt.append(f"{mem[0]} was at {mem[2]}, {mem[3]}.")
+
+        for mem in sample["semantic_memory_system"]:
+            prompt.append(f"{mem[-1]} {mem[0]} were found at {mem[2]}.")
+            
+        for mem in res:
+            common_split = key.split()
+            common0 = common_split[0]
+            common2 = common_split[1]
+            prompt.append(f"{mem[0]} were found at {mem[2]}.")
+
+        prompt.append(f"Where is {sample['question'][0]}?")
+
+        prompt = " ".join(prompt)
+
+        return prompt  
+
 class BestPrompt(PromptTemplate):
     """Episodic to semantic prompt.
 
@@ -522,6 +946,26 @@ class PromptWrapper:
             self.prompt = SemanticOnly()
         elif prompt.lower() == "episodic_to_semantic":
             self.prompt = EpisodicToSemantic()
+        elif prompt.lower() == "forgettingoldestcommon":
+            self.prompt = ForgettingOldestCommon()
+        elif prompt.lower() == "forgettingoldestcommon":
+            self.prompt = ForgettingOldestCommon()
+        elif prompt.lower() == "forgettingoldest":
+            self.prompt = ForgettingOldest()
+        elif prompt.lower() == "nosementics":
+            self.prompt = NoSementics()
+        elif prompt.lower() == "episodic2sementichidde":
+            self.prompt = Episodic2SementicHidde()
+        elif prompt.lower() == "baselinereversed":
+            self.prompt = BaselineReversed()
+        elif prompt.lower() == "forgettingoldestcommonreversed":
+            self.prompt = ForgettingOldestCommonReversed()
+        elif prompt.lower() == "forgettingoldestreversed":
+            self.prompt = ForgettingOldestReversed()
+        elif prompt.lower() == "nosementicsreversed":
+            self.prompt = NoSementicsReversed()
+        elif prompt.lower() == "episodic2sementichiddereversed":
+            self.prompt = Episodic2SementicHiddeReversed()
         elif prompt.lower() == "best_prompt":
             self.prompt = BestPrompt()
 
