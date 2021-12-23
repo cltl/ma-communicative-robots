@@ -76,7 +76,6 @@ if __name__ == "__main__":
         "relevant",
         "correct",
         "semantically appropriate",
-        "diverse",
     ]
 
     main(context_file, replier_files, criteria)
