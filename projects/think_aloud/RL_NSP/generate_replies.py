@@ -1,12 +1,9 @@
-""" Filename:     evaluate.py
+""" Filename:     generate_replies.py
     Author(s):    Thomas Bellucci
-    Description:  This file evaluates the responses of each replier.
+    Description:  This file is used to generate responses of each replier 
+                  given a path to a folder of brain responses.
     Date created: Dec. 4th, 2021
 """
-
-import sys
-
-sys.path.append("../")
 
 import argparse
 import glob

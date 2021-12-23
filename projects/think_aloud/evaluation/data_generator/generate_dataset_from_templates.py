@@ -137,5 +137,5 @@ def generate_dataset(path, out, iters):
         file.write("\n".join(list(lines)))
 
 
-# if __name__ == "__main__":
-#     generate_dataset("eval_contexts_templates.txt", "eval_contexts.txt", iters=5)
+if __name__ == "__main__":
+    generate_dataset("templates.txt", "eval_contexts2.txt", iters=5)

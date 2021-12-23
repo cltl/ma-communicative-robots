@@ -7,7 +7,7 @@
 import json
 import sys
 
-sys.path.append("../../")
+sys.path.append("../../RL_NSP")
 
 import argparse
 import os
