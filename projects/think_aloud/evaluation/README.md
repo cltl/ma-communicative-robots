@@ -14,7 +14,7 @@ For the human evaluation, the following files were used:
 | Files                      | Description |
 | -------------------------- |-------------|
 | brain_responses.zip        | Zip file containing precomputed brain responses in JSON format. These brain responses were generated from the contexts in the evaluation dataset and are used as input to the repliers. |
-| generate_evaluation_csv.py | Generates a csv file with empty columns for manual evaluation for a variety of evaluation metrics (it also computes USR scores for the _Maintains Context_ (MCtx/DR) metric) |
+| generate_evaluation_csv.py | Generates a csv file with empty columns for a variety of evaluation metrics (used for the human evaluation). It also pre-computes USR scores for the _Maintains Context_ (MCtx/DR) metric. |
 | plot_manual_evaluation.py  | Creates bar plots with human evaluation scores for each metric and replier |
 
 ## Automatic Evaluation with USR
