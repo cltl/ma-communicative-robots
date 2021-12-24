@@ -23,7 +23,7 @@ The implementations, and instructions of how to run them, can be found in their 
 
 ## Evaluation
 
-Evaluation of the systems is performed in two steps; a manual evaluation based on verious response criteria, such as *engagement*, *semantic appropriateness* and *relevance*, and an automatic evaluation using [USR](https://github.com/Shikib/usr). You can find a re-implementation of USR and the evaluation dataset in the `evaluation` folder.
+Evaluation of the systems is performed in two steps; a manual evaluation based on various response criteria, such as *engagement*, *semantic appropriateness* and *relevance*, and an automatic evaluation using [USR](https://github.com/Shikib/usr). You can find a re-implementation of USR and the evaluation dataset in the `evaluation` folder.
 
 ## Authors
 
