@@ -14,6 +14,8 @@ Check out `./transformers/`
 
 ## Jaap's group
 
+We generated and evaluated utterances surrounding ambiguity.
+
 ## Piek's group
 
 In this project we aim to develop several complementary thought selection methods based on RL, NSP, transformers and corpus statistics in order to improve the dialogue capabilities of the Leolani robot.
