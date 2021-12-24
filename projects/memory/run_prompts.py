@@ -432,9 +432,9 @@ class ForgettingOldestCommon(PromptTemplate):
     
 
 class ForgettingOldest(PromptTemplate):
-    """Baseline prompt.
+    """Forgetting oldest prompt
 
-    This is the simplest prompt.
+    Forgets oldest memories
 
     """
 
@@ -476,9 +476,9 @@ class ForgettingOldest(PromptTemplate):
     
     
 class NoSementics(PromptTemplate):
-    """Baseline prompt.
+    """No Sementic Prompt
 
-    This is the simplest prompt.
+    Only prompts the episodic memory
 
     """
 
@@ -511,9 +511,9 @@ class NoSementics(PromptTemplate):
     
     
 class Episodic2SementicHidde(PromptTemplate):
-    """Baseline prompt.
+    """Episodic to semantic prompt
 
-    This is the simplest prompt.
+    Deletes the triples if more than 4 location of objects are found at the same location and add it to semantic memory
 
     """
 
@@ -586,7 +586,7 @@ class Episodic2SementicHidde(PromptTemplate):
 class BaselineReversed(PromptTemplate):
     """Baseline prompt.
 
-    This is the simplest prompt.
+    This is the simplest prompt. From newest to oldest
 
     """
 
@@ -622,9 +622,9 @@ class BaselineReversed(PromptTemplate):
 
 
 class ForgettingOldestCommonReversed(PromptTemplate):
-    """Baseline prompt.
-
-    This is the simplest prompt.
+    """Forgetting oldest common prompt
+    
+    Only adds newest triple of certain object of a person and deletes the rest. Prompts from newest to oldest
 
     """
 
@@ -663,9 +663,9 @@ class ForgettingOldestCommonReversed(PromptTemplate):
     
     
 class ForgettingOldestReversed(PromptTemplate):
-    """Baseline prompt.
+    """Forgetting oldest prompt
 
-    This is the simplest prompt.
+    Forgets oldest memories half of memories. Prompts from newest to oldest
 
     """
 
@@ -705,9 +705,9 @@ class ForgettingOldestReversed(PromptTemplate):
     
     
 class NoSementicsReversed(PromptTemplate):
-    """Baseline prompt.
+    """No Sementic Prompt
 
-    This is the simplest prompt.
+    Only prompts the episodic memory but episodic memory. Prompts from newest to oldest
 
     """
 
@@ -740,9 +740,9 @@ class NoSementicsReversed(PromptTemplate):
     
     
 class Episodic2SementicHiddeReversed(PromptTemplate):
-    """Baseline prompt.
+    """Episodic to semantic prompt
 
-    This is the simplest prompt.
+    Deletes the triples if more than 4 location of objects are found at the same location and add it to semantic memory. Prompts from newest to oldest
 
     """
 
