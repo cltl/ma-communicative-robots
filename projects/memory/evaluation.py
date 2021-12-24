@@ -83,15 +83,26 @@ def evaluate_wrapper(
     metrics: a list of evaluation metrics. At the moment there is only one
         (e.g., "global_accuracy")
     """
+    if "data" in results_path:
+        heuristics = True
+    else:
+        heuristics = False
+
     paths = glob(os.path.join(results_path, "*.json"))
     from run_prompts import natural_keys
 
     paths.sort(key=natural_keys)
     logging.info(f"Running evaluation on {paths} ...")
-    save_path_dir = results_path.replace("results", "evaluation")
+    if heuristics:
+        save_path_dir = results_path.replace("data", "evaluation")
+        save_path_dir = os.path.join(save_path_dir, "heuristics")
+    else:
+        save_path_dir = results_path.replace("results", "evaluation")
     os.makedirs(save_path_dir, exist_ok=True)
 
     for metric in tqdm(metrics):
+        if metric.lower() == "nihed" and heuristics:
+            continue
         logging.info(f"Running {metric} metric on {paths} ...")
         evaluation = {}
         for path in tqdm(paths):
@@ -101,9 +112,23 @@ def evaluate_wrapper(
             data = read_json(path)
 
             for split in ["val", "test"]:
-                predictions = [sample["prediction"] for sample in data[split]]
-                correct_answers = [sample["correct_answer"] for sample in data[split]]
-                prompt_text = [sample["prompt_text"] for sample in data[split]]
+                if heuristics:
+                    predictions = [
+                        sample["prediction_hand_crafted"] for sample in data[split]
+                    ]
+                    predictions = [
+                        pred if pred is not None else "" for pred in predictions
+                    ]
+                    correct_answers = [
+                        sample["correct_answer"] for sample in data[split]
+                    ]
+                    prompt_text = ["" for sample in data[split]]
+                else:
+                    predictions = [sample["prediction"] for sample in data[split]]
+                    correct_answers = [
+                        sample["correct_answer"] for sample in data[split]
+                    ]
+                    prompt_text = [sample["prompt_text"] for sample in data[split]]
 
                 if metric.lower() == "global_accuracy":
                     global_accuracy = evaluate(
@@ -152,8 +177,7 @@ def evaluate(
     predictions: list,
     correct_answers: list,
     metric: str = "global_accuracy",
-    prompt_text: list = None
-    # prompt_text: list,
+    prompt_text: list = None,
 ) -> float:
     """Evaluate the predictions using the metric.
     Args
@@ -180,27 +204,24 @@ def evaluate(
         return global_acc
 
     if metric.lower() == "bleu":
-        # TODO: Nihed's job
         bleu_all = []
         for answer, pred in zip(correct_answers, predictions):
             bleu = compute_our_bleu(answer, pred)
             print(bleu, answer, pred)
             bleu_all.append(bleu)
+
         return float(np.mean(bleu_all))
 
-        # raise NotImplementedError
     if metric.lower() == "rouge":
-        # TODO: Nihed's job
         rouge_all = []
         for answer, pred in zip(correct_answers, predictions):
             rouge = compute_our_rouge(answer, pred)
             rouge_all.append(rouge)
             print(rouge, answer, pred)
+
         return float(np.mean(rouge_all))
-        # raise NotImplementedError
 
     if metric.lower() == "f1":
-        # TODO: Nihed's job
         bleu_all = []
         for answer, pred in zip(correct_answers, predictions):
             bleu = compute_our_bleu(answer, pred)
@@ -221,10 +242,10 @@ def evaluate(
         else:
             f1 = 2 * (bleu_avg * rouge_avg) / (bleu_avg + rouge_avg)
         print(f1)
+
         return f1
-        # raise NotImplementedError
+
     if metric.lower() == "nihed":
-        # TODO: Nihed's job\
         scores = []
         assert len(correct_answers) == len(predictions) == len(prompt_text)
         for answer, pred, prompt in zip(correct_answers, predictions, prompt_text):
@@ -265,9 +286,10 @@ def evaluate(
                 scores.append(score)
 
         print(scores)
+
         return float(np.mean(scores))
 
-        # raise ValueError
+    raise ValueError(f"the given metric {metric} is not right")
 
 
 if __name__ == "__main__":

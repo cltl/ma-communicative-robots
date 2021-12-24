@@ -49,7 +49,7 @@ class USR:
         returns: score
         """
         # Concatenates and encodes context-response pair
-        input_sequence = context + " \n " + response
+        input_sequence = context + " [SEP] " + response
         inputs = self.__tokenizer(input_sequence, return_tensors="pt")
 
         inputs["input_ids"] = inputs["input_ids"].to(self.__device)
