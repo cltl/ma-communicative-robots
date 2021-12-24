@@ -8,9 +8,9 @@ import pandas as pd
 if __name__ == "__main__":
     id_file = "results/replier_ids.json"
     eval_files = [
-        "results/evaluation_dataset_thomas.csv",
-        "results/evaluation_dataset_fina.csv",
-        "results/evaluation_dataset_imme.csv",
+        "results/eval_human_ratings_thomas.csv",
+        "results/eval_human_ratings_fina.csv",
+        "results/eval_human_ratings_imme.csv",
     ]
     metrics = [
         "engaging",
