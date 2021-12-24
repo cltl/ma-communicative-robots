@@ -10,7 +10,7 @@ The code base consists of the following files:
 | chatbots.py         | Implements a chatbot based on the Leolani triple extractor, brain, EMISSOR and the proposed repliers implemented in `repliers.py`. |
 | repliers.py         | Defines the `RLReplier`, `NSPReplier` and baseline `LenkaReplier`. |
 | EMISSOR.py          | Implements a wrapper class around [EMISSOR](https://github.com/leolani/EMISSOR) in order to integrate it into the Chatbot defined in `chatbots.py`. |
-| generate_replies.py | Generates responses with the RL-, NSP- and Lenka-based repliers used for evaluation |
+| generate_replies.py | Generates responses with the RL-, NSP- and Lenka-based repliers used for evaluation (requires `brain_responses.zip`) |
 | requirements.txt    | Requirements file containing the minimum number of packages needed to run the implementation. |
 
 <p> The implementations of the RL and NSP method are divided into separate folders:</p>
