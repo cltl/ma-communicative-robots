@@ -73,7 +73,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--savefile",
-        default="../next_sentence_prediction/model",
+        default="next_sentence_prediction/model",
         type=str,
         help="Path to BERT for NSP (--method=NSP) or RL JSON (--method=RL)",
     )

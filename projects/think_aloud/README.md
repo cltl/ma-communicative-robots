@@ -2,18 +2,18 @@
 
 ## Overview
 
-This repository contains the code base of the _Think Aloud_ project for the _Communicative Robots_ Course at the Vrije Universiteit (VU).
+This repository contains the code base of the *Think Aloud* project for the *Communicative Robots* Course at the Vrije Universiteit (VU), Amsterdam.
 
-In this repository, we provide alternatives to the random _thought_ selection mechanism implemented by Leolani V2, allowing the robot to learn which of her thoughts to verbalize in order to maximize dialogue coherence and optimally attain new knowledge about her environment. To choose between thoughts, several methods are proposed;
+In this repository, we provide alternatives to the random thought selection mechanism used by Leolani V2, allowing the robot to decide which of her thoughts to verbalize in order to maximize dialogue coherence and optimally attain new knowledge about her environment. In brief, the methods proposed include:
 
 | Method        | Description | By |
 |---------------|-------------|----|
-| Semantic Search with Sentence Similarity| In this approach possible verbalizations of thoughts are embedded into a thought vector using SentenceBERT (SBERT) which are compared to the paragraph embedding of the dialogue history (context); responses with maximal similarity to the paragraph embedding are then selected. | Fina |
-| Prior Word Frequency                    | Entities and predicates mentioned in each thought are scored according to their frequency in some text corpus. Thoughts within a frequency intervals are then selected randomly. Three different strategies were examined based on low (smaller than 33th percentile), medium (between 33th and 66th percentile) and high frequency (exceeding 66th percentile) | Imme |
-| Reinforcement learning                  | In this approach thought selection is learnt in an online manner through interaction with the user. To select a thought, a score in computed for each candidate thought based on the utility of the thought type and entities/predicates it mentions; the thought with the highest utility is then selected. To reward the selection algorithm for its choices without explicit user feedback on the quality of responses, we use an intrinsic reward function based on the number of learned facts as a result of selecting a thought. | Thomas |
-| Next sentence prediction                | Thought selection is framed as a prediction problem in which responses by the replier are scored based on their likelihood of being appropriate responses to the user input. In this approach we repurpose a pretrained and fine-tuned BERT-based SequenceClassifier in order to judge the validity of responses. | Thomas |
+| Semantic Search with Sentence Similarity| In this approach verbalizations of thoughts are embedded into thought vectors using SentenceBERT (SBERT) which are then compared to the paragraph embedding of the dialogue history; responses with maximal cosine similarity to the paragraph embedding are then selected. | Fina |
+| Prior Word Frequency                    | Entities and predicates mentioned in each thought are scored according to their frequency in some text corpus. Thoughts within some pre-defined frequency interval are then selected randomly. Three different strategies were examined based on low, medium and high frequency intervals | Imme |
+| Reinforcement learning                  | Thought selection is learnt in an online manner through interaction with the user. To select a thought, a score in computed for each candidate based on the utility of the thought type and entities/predicates it mentions; the thought with the highest total utility is then selected. To reward the selection algorithm for its choices, we use an intrinsic reward function based on the number of learned facts as a result of selecting a thought. | Thomas |
+| Next sentence prediction                | Thought selection is framed as a prediction problem in which responses by the replier are scored based on their likelihood of being valid responses to the user input. In this approach we repurpose a pretrained BERT-based SequenceClassifier and fine-tune it to judge the validity of responses. | Thomas |
 
-The implementations can be found in their respective folders.
+The implementations, and instructions of how to run them, can be found in their respective folders.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ The implementations can be found in their respective folders.
 
 ## Evaluation
 
-Evaluation of the proposed methods is performed in two steps; a manual evaluation based on response criteria, such as *engagement*, *semantic appropriateness* and *relevance*, and an automatic evaluation using [USR](https://github.com/Shikib/usr). You can find a re-implementation of USR and the evaluation dataset in the `evaluation` folder.
+Evaluation of the systems is performed in two steps; a manual evaluation based on various response criteria, such as *engagement*, *semantic appropriateness* and *relevance*, and an automatic evaluation using [USR](https://github.com/Shikib/usr). You can find a re-implementation of USR and the evaluation dataset in the `evaluation` folder.
 
 ## Authors
 
