@@ -25,4 +25,4 @@ The results of the human evaluation are stored in the `results` folder. The `eva
 To evaluate the responses of our repliers to the contexts in the dataset, we performed an automatic evaluation using USR (Mehri et al., 2020).
 
 For this, we implemented USR using Huggingface's `transformers` which you can find in `USR.py`. In order to speed up evaluation, perform statistical tests and visualize the scores provided by USR, we ran our evaluation in Google Colaboratory (using their GPU option to speed up evaluation). 
-The notebook can be found here: [Link](https://colab.research.google.com/drive/1QDXn4QB574fPuk4gD4EoQXRXDRkXA_QM?usp=sharing)
+A copy of the notebook can be found in `Dialogue_Evaluation_with_USR.ipynb` or hosted in [Google Drive](https://colab.research.google.com/drive/1QDXn4QB574fPuk4gD4EoQXRXDRkXA_QM?usp=sharing).
