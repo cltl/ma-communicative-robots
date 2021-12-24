@@ -388,9 +388,9 @@ class EpisodicToSemantic(PromptTemplate):
 
 
 class ForgettingOldestCommon(PromptTemplate):
-    """Baseline prompt.
-
-    This is the simplest prompt.
+    """Forgetting oldest common prompt
+    
+    Only adds newest triple of certain object of a person and deletes the rest
 
     """
 
