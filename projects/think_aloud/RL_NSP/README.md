@@ -15,12 +15,11 @@ The code base consists of the following files:
 
 <p> The implementations of the RL and NSP method are divided into separate folders:</p>
 
-
 | Folders                   | Description     |
 | ------------------------- | :-------------- |
-| \reinforcement_learning   | Resource files and implementation of the UCB RL algorithm |
-| \next_sentence_prediction | Resource files and implementation of the Pytorch NSP model |
-| \utils                    | Utility functions used by `chatbots.py` and `repliers.py` (e.g. for brain response formatting and thought extraction) |
+| \\reinforcement_learning   | Resource files and implementation of the UCB RL algorithm |
+| \\next_sentence_prediction | Resource files and implementation of the Pytorch NSP model |
+| \\utils                    | Utility functions used by `chatbots.py` and `repliers.py` (e.g. for brain response formatting and thought extraction) |
 
 ## Usage
 

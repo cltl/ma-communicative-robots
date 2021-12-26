@@ -1,10 +1,11 @@
 # Evaluation
 
-In this folder you will find the code used for the evaluation of our systems. 
+In this folder you will find the code used for the evaluation of our systems.
 
-We performed two separate evaluations; a _human evaluation_ and an _automatic evaluation_ with USR (Mehri et al., 2020). 
+We performed two separate evaluations; a _human evaluation_ and an _automatic evaluation_ with USR (Mehri et al., 2020).
 
 ## Dataset
+
 In order to perform the evaluation, an evaluation dataset was constructed from previous interactions with Leolani. This dataset, `eval_contexts.txt`, and the code used to generate it, can be found in the `data_generator` folder.
 
 ## Human Evaluation
@@ -24,5 +25,5 @@ The results of the human evaluation are stored in the `results` folder. The `eva
 
 To evaluate the responses of our repliers to the contexts in the dataset, we performed an automatic evaluation using USR (Mehri et al., 2020).
 
-For this, we implemented USR using Huggingface's `transformers` which you can find in `USR.py`. In order to speed up evaluation, perform statistical tests and visualize the scores provided by USR, we ran our evaluation in Google Colaboratory (using their GPU option to speed up evaluation). 
+For this, we implemented USR using Huggingface's `transformers` which you can find in `USR.py`. In order to speed up evaluation, perform statistical tests and visualize the scores provided by USR, we ran our evaluation in Google Colaboratory (using their GPU option to speed up evaluation).
 A copy of the notebook can be found in `Dialogue_Evaluation_with_USR.ipynb` or hosted in [Google Drive](https://colab.research.google.com/drive/1QDXn4QB574fPuk4gD4EoQXRXDRkXA_QM?usp=sharing).

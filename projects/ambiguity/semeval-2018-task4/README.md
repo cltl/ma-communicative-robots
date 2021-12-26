@@ -2,40 +2,39 @@
 
 ## Character Identification on Multiparty Dialogues
 
-Character Identification is an entity linking task that identifies each mention as a certain character in multiparty dialogue. 
-Let a mention be a nominal referring to a person (e.g., *she*, *mom*, *Judy*), and an entity be a character in a dialogue. 
-The goal is to assign each mention to its entity, who may or may not participate in the dialogue. 
+Character Identification is an entity linking task that identifies each mention as a certain character in multiparty dialogue.
+Let a mention be a nominal referring to a person (e.g., *she*, *mom*, *Judy*), and an entity be a character in a dialogue.
+The goal is to assign each mention to its entity, who may or may not participate in the dialogue.
 For the following example, the mention "mom" is not one of the speakers; nonetheless, it clearly refers to the specific person, Judy, that could appear in some other dialogue. Identifying such mentions as real characters requires cross-document entity resolution, which makes this task challenging.
 
 ![Character Identification Example](http://nlp.mathcs.emory.edu/character-mining/img/character-identification-example.png)
 
 ## Citation
 
-* [SemEval 2018 Task 4: Character Identification on Multiparty Dialogues](http://aclweb.org/anthology/S18-1007), Jinho D. Choi and Henry Y. Chen, Proceedings of the International Workshop on Semantic Evaluation, SemEval'18, 57-64, New Orleans, LA, 2018.  
-
+- [SemEval 2018 Task 4: Character Identification on Multiparty Dialogues](http://aclweb.org/anthology/S18-1007), Jinho D. Choi and Henry Y. Chen, Proceedings of the International Workshop on Semantic Evaluation, SemEval'18, 57-64, New Orleans, LA, 2018.
 
 ## References
 
-* [Robust Coreference Resolution and Entity Linking on Dialogues: Character Identification on TV Show Transcripts](http://www.aclweb.org/anthology/K/K17/K17-1023.pdf), Henry Y. Chen, Ethan Zhou, and Jinho D. Choi, Proceedings of the 21st Conference on Computational Natural Language Learning, CoNLL'17, 216-225 Vancouver, Canada, 2017.
-* [Character Identification on Multiparty Conversation: Identifying Mentions of Characters in TV Shows](http://www.aclweb.org/anthology/W16-3612), Henry Y. Chen and Jinho D. Choi, Proceedings of the 17th Annual SIGdial Meeting on Discourse and Dialogue, SIGDIAL'16, 90-100, Los Angeles, CA, 2016.
+- [Robust Coreference Resolution and Entity Linking on Dialogues: Character Identification on TV Show Transcripts](http://www.aclweb.org/anthology/K/K17/K17-1023.pdf), Henry Y. Chen, Ethan Zhou, and Jinho D. Choi, Proceedings of the 21st Conference on Computational Natural Language Learning, CoNLL'17, 216-225 Vancouver, Canada, 2017.
+- [Character Identification on Multiparty Conversation: Identifying Mentions of Characters in TV Shows](http://www.aclweb.org/anthology/W16-3612), Henry Y. Chen and Jinho D. Choi, Proceedings of the 17th Annual SIGdial Meeting on Discourse and Dialogue, SIGDIAL'16, 90-100, Los Angeles, CA, 2016.
 
 ## Organizers
 
-* [Jinho D. Choi](http://www.mathcs.emory.edu/~choi) (Emory University).
-* [Henry Y. Chen](http://henryyhc.info) (Snap Inc.).
+- [Jinho D. Choi](http://www.mathcs.emory.edu/~choi) (Emory University).
+- [Henry Y. Chen](http://henryyhc.info) (Snap Inc.).
 
 ## Datasets
 
-The first two seasons of the TV show Friends are annotated for this task. 
-Each season consists of episodes, each episode comprises scenes, and each scene is segmented into sentences. 
+The first two seasons of the TV show Friends are annotated for this task.
+Each season consists of episodes, each episode comprises scenes, and each scene is segmented into sentences.
 The followings describe the distributed datasets:
 
-* [friends.train.episode_delim.conll](dat/friends.train.episode_delim.conll): the training data where each episode is considered a document.
-* [friends.train.scene_delim.conll](dat/friends.train.scene_delim.conll): the training data where each scene is considered a document.
-* [friends.test.episode_delim.conll](dat/friends.test.episode_delim.conll): the test data where each episode is considered a document.
-* [friends.test.scene_delim.conll](dat/friends.test.scene_delim.conll): the test data where each scene is considered a document.
-* [friends.test.episode_delim.conll.nokey](dat/friends.test.episode_delim.conll.nokey): same as [friends.test.episode_delim.conll](dat/friends.test.episode_delim.conll); the gold keys are replaced by `-1`.
-* [friends.test.scene_delim.conll.nokey](dat/friends.test.scene_delim.conll.nokey): same as [friends.test.scene_delim.conll](dat/friends.test.scene_delim.conll); the gold keys are replaced by `-1`.
+- [friends.train.episode_delim.conll](dat/friends.train.episode_delim.conll): the training data where each episode is considered a document.
+- [friends.train.scene_delim.conll](dat/friends.train.scene_delim.conll): the training data where each scene is considered a document.
+- [friends.test.episode_delim.conll](dat/friends.test.episode_delim.conll): the test data where each episode is considered a document.
+- [friends.test.scene_delim.conll](dat/friends.test.scene_delim.conll): the test data where each scene is considered a document.
+- [friends.test.episode_delim.conll.nokey](dat/friends.test.episode_delim.conll.nokey): same as [friends.test.episode_delim.conll](dat/friends.test.episode_delim.conll); the gold keys are replaced by `-1`.
+- [friends.test.scene_delim.conll.nokey](dat/friends.test.scene_delim.conll.nokey): same as [friends.test.scene_delim.conll](dat/friends.test.scene_delim.conll); the gold keys are replaced by `-1`.
 
 Note that the evaluation sets did not include the gold keys during the competition; we made them available after the competition.
 No dedicated development set was distributed for this task; feel free to make your own development set for training or perform cross-validation on the training sets.
@@ -51,7 +50,7 @@ Documents are delimited by the comments in the following format:
 #end document
 ```
 
-Each sentence is delimited by a new line ("\n") and each column indicates the following:
+Each sentence is delimited by a new line ("\\n") and each column indicates the following:
 
 1. Document ID: `/<name of the show>-<season ID><episode ID>` (e.g., `/friends-s01e01`).
 1. Scene ID: the ID of the scene within the episode.
@@ -79,6 +78,7 @@ Here is a sample from the training dataset:
 /friends-s01e01  0  7  with   IN     (PP*))))))    with   -  -  Monica_Geller   *  -
 /friends-s01e01  0  8  !      .             *))    !      -  -  Monica_Geller   *  -
 ```
+
 ```
 /friends-s01e01  0  0  C'mon  VB   (TOP(S(S(VP*))  c'mon  -  -  Joey_Tribbiani  *  -
 /friends-s01e01  0  1  ,      ,                 *  ,      -  -  Joey_Tribbiani  *  -
@@ -134,8 +134,8 @@ The following shows the command to run the [evaluate.py](src/evaluate.py):
 python evaluate.py ref_out sys_out
 ```
 
-* `ref_out`: the reference output including the gold keys (download [ref.out](dat/ref.out)).
-* `sys_out`: the path to a file containing your system output; this should include 2,429 lines of keys, where each line indicates the entity ID of the corresponding mention.
+- `ref_out`: the reference output including the gold keys (download [ref.out](dat/ref.out)).
+- `sys_out`: the path to a file containing your system output; this should include 2,429 lines of keys, where each line indicates the entity ID of the corresponding mention.
 
 ## Results
 
@@ -152,7 +152,7 @@ Characters that appear only one or two of these sets are grouped as one class ca
 | Cheoneum     | 69.49 | 16.98 |
 | Kampfpudding | 59.45 | 37.37 |
 | Zuma         | 25.81 | 14.42 |
- 
+
 ### Main Entities + Others
 
 This evaluation considers 6 main characters as individual classes and all the other characters as one class called `OTHERS`.
