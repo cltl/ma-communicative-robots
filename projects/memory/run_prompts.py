@@ -389,7 +389,7 @@ class EpisodicToSemantic(PromptTemplate):
 
 class ForgettingOldestCommon(PromptTemplate):
     """Forgetting oldest common prompt
-    
+
     Only adds newest triple of certain object of a person and deletes the rest
 
     """
@@ -409,7 +409,7 @@ class ForgettingOldestCommon(PromptTemplate):
             else:
                 timestamp = f"{days} days ago"
             sample["episodic_memory_system"][idx][-1] = timestamp
-            
+
         people_object_list = []
         prompt = []
 
@@ -419,7 +419,7 @@ class ForgettingOldestCommon(PromptTemplate):
                 people_object_list.append(mem[0])
 
         prompt.reverse()
-        
+
         for mem in sample["semantic_memory_system"]:
             prompt.append(f"{mem[-1]} {mem[0]} were found at {mem[2]}.")
 
@@ -428,8 +428,7 @@ class ForgettingOldestCommon(PromptTemplate):
         prompt = " ".join(prompt)
 
         return prompt
-    
-    
+
 
 class ForgettingOldest(PromptTemplate):
     """Forgetting oldest prompt
@@ -473,8 +472,8 @@ class ForgettingOldest(PromptTemplate):
         prompt = " ".join(prompt)
 
         return prompt
-    
-    
+
+
 class NoSementics(PromptTemplate):
     """No Sementic Prompt
 
@@ -508,8 +507,8 @@ class NoSementics(PromptTemplate):
         prompt = " ".join(prompt)
 
         return prompt
-    
-    
+
+
 class Episodic2SementicHidde(PromptTemplate):
     """Episodic to semantic prompt
 
@@ -533,7 +532,7 @@ class Episodic2SementicHidde(PromptTemplate):
                 timestamp = f"{days} days ago"
             sample["episodic_memory_system"][idx][-1] = timestamp
 
-        most_common = {}        
+        most_common = {}
         prompt = []
         K = 4
         res = {}
@@ -543,12 +542,12 @@ class Episodic2SementicHidde(PromptTemplate):
             mem0 = mem0_split[1]
             mem2_split = mem[2].split()
             mem2 = mem2_split[1]
-            memory = str(mem0 + ' ' + mem2)
+            memory = str(mem0 + " " + mem2)
             if memory in most_common:
                 most_common[memory] += 1
             else:
                 most_common[memory] = 1
-                
+
         for key in most_common:
             if not (isinstance(most_common[key], int) and most_common[key] < K):
                 res[key] = most_common[key]
@@ -569,7 +568,7 @@ class Episodic2SementicHidde(PromptTemplate):
 
         for mem in sample["semantic_memory_system"]:
             prompt.append(f"{mem[-1]} {mem[0]} were found at {mem[2]}.")
-            
+
         for mem in res:
             common_split = key.split()
             common0 = common_split[0]
@@ -581,8 +580,8 @@ class Episodic2SementicHidde(PromptTemplate):
         prompt = " ".join(prompt)
 
         return prompt
-    
-    
+
+
 class BaselineReversed(PromptTemplate):
     """Baseline prompt.
 
@@ -623,7 +622,7 @@ class BaselineReversed(PromptTemplate):
 
 class ForgettingOldestCommonReversed(PromptTemplate):
     """Forgetting oldest common prompt
-    
+
     Only adds newest triple of certain object of a person and deletes the rest. Prompts from newest to oldest
 
     """
@@ -643,7 +642,7 @@ class ForgettingOldestCommonReversed(PromptTemplate):
             else:
                 timestamp = f"{days} days ago"
             sample["episodic_memory_system"][idx][-1] = timestamp
-            
+
         people_object_list = []
         prompt = []
 
@@ -651,7 +650,7 @@ class ForgettingOldestCommonReversed(PromptTemplate):
             if mem[0] not in people_object_list:
                 prompt.append(f"{mem[0]} was at {mem[2]}, {mem[3]}.")
                 people_object_list.append(mem[0])
-        
+
         for mem in sample["semantic_memory_system"]:
             prompt.append(f"{mem[-1]} {mem[0]} were found at {mem[2]}.")
 
@@ -660,8 +659,8 @@ class ForgettingOldestCommonReversed(PromptTemplate):
         prompt = " ".join(prompt)
 
         return prompt
-    
-    
+
+
 class ForgettingOldestReversed(PromptTemplate):
     """Forgetting oldest prompt
 
@@ -702,8 +701,8 @@ class ForgettingOldestReversed(PromptTemplate):
         prompt = " ".join(prompt)
 
         return prompt
-    
-    
+
+
 class NoSementicsReversed(PromptTemplate):
     """No Sementic Prompt
 
@@ -737,8 +736,8 @@ class NoSementicsReversed(PromptTemplate):
         prompt = " ".join(prompt)
 
         return prompt
-    
-    
+
+
 class Episodic2SementicHiddeReversed(PromptTemplate):
     """Episodic to semantic prompt
 
@@ -751,7 +750,7 @@ class Episodic2SementicHiddeReversed(PromptTemplate):
 
     def generate_prompt(self, sample: dict) -> str:
         sample["episodic_memory_system"] = sorted(
-            sample["episodic_memory_system"], key=lambda x: x[-1],reverse=True
+            sample["episodic_memory_system"], key=lambda x: x[-1], reverse=True
         )
         for idx, mem in enumerate(sample["episodic_memory_system"]):
             max_len = len(sample["episodic_memory_system"])
@@ -762,7 +761,7 @@ class Episodic2SementicHiddeReversed(PromptTemplate):
                 timestamp = f"{days} days ago"
             sample["episodic_memory_system"][idx][-1] = timestamp
 
-        most_common = {}        
+        most_common = {}
         prompt = []
         K = 4
         res = {}
@@ -772,12 +771,12 @@ class Episodic2SementicHiddeReversed(PromptTemplate):
             mem0 = mem0_split[1]
             mem2_split = mem[2].split()
             mem2 = mem2_split[1]
-            memory = str(mem0 + ' ' + mem2)
+            memory = str(mem0 + " " + mem2)
             if memory in most_common:
                 most_common[memory] += 1
             else:
                 most_common[memory] = 1
-                
+
         for key in most_common:
             if not (isinstance(most_common[key], int) and most_common[key] < K):
                 res[key] = most_common[key]
@@ -798,7 +797,7 @@ class Episodic2SementicHiddeReversed(PromptTemplate):
 
         for mem in sample["semantic_memory_system"]:
             prompt.append(f"{mem[-1]} {mem[0]} were found at {mem[2]}.")
-            
+
         for mem in res:
             common_split = key.split()
             common0 = common_split[0]
@@ -809,7 +808,8 @@ class Episodic2SementicHiddeReversed(PromptTemplate):
 
         prompt = " ".join(prompt)
 
-        return prompt  
+        return prompt
+
 
 class BestPrompt(PromptTemplate):
     """Episodic to semantic prompt.
@@ -946,8 +946,6 @@ class PromptWrapper:
             self.prompt = SemanticOnly()
         elif prompt.lower() == "episodic_to_semantic":
             self.prompt = EpisodicToSemantic()
-        elif prompt.lower() == "forgettingoldestcommon":
-            self.prompt = ForgettingOldestCommon()
         elif prompt.lower() == "forgettingoldestcommon":
             self.prompt = ForgettingOldestCommon()
         elif prompt.lower() == "forgettingoldest":
