@@ -1,25 +1,19 @@
 # Projects
 
-## Tae's group
+## Project 1: Triple extraction for a conversational AI
 
-We work on "A machine with human-like memories".
+We extract a wide variety of noisy triples that the model outputs need to be normalized to a more abstract level.
 
-Check out `./memory/`
+Check out `./conversational_triple_extraction/`
 
-## Lea's group
+## Project 2: Contextual Factors in Natural Language Generation
 
-We evaluated a T5 model that takes as input triple data.
+We identify contextual factors that should be considered during dialogues, especially when giving a summary of a dialogue.
 
-Check out `./transformers/`
+Check out `./context_in_nlg/`
 
-## Jaap's group
+## Project 3: 
 
-We generated and evaluated utterances surrounding ambiguity.
+We represent dialogue as knowledge graphs and use these representations to create artificial conversational agents that display specific intentions in their behaviour.
 
-Check out `.ambiguity/`
-
-## Piek's group
-
-In this project we aim to develop several complementary thought selection methods based on RL, NSP, transformers and corpus statistics in order to improve the dialogue capabilities of the Leolani robot.
-
-The implementation can be found in `./think_aloud/`
+Check out `./intentional_chatting/`
