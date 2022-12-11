@@ -1,0 +1,3434 @@
+{
+  "dataset": "daily_dialog",
+  "config": "default",
+  "split": "train",
+  "features": [
+    {
+      "feature_idx": 0,
+      "name": "dialog",
+      "type": {
+        "feature": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "_type": "Sequence"
+      }
+    },
+    {
+      "feature_idx": 1,
+      "name": "act",
+      "type": {
+        "feature": {
+          "names": [
+            "__dummy__",
+            "inform",
+            "question",
+            "directive",
+            "commissive"
+          ],
+          "_type": "ClassLabel"
+        },
+        "_type": "Sequence"
+      }
+    },
+    {
+      "feature_idx": 2,
+      "name": "emotion",
+      "type": {
+        "feature": {
+          "names": [
+            "no emotion",
+            "anger",
+            "disgust",
+            "fear",
+            "happiness",
+            "sadness",
+            "surprise"
+          ],
+          "_type": "ClassLabel"
+        },
+        "_type": "Sequence"
+      }
+    }
+  ],
+  "rows": [
+    {
+      "row_idx": 0,
+      "row": {
+        "dialog": [
+          "Say , Jim , how about going for a few beers after dinner ? ",
+          " You know that is tempting but is really not good for our fitness . ",
+          " What do you mean ? It will help us to relax . ",
+          " Do you really think so ? I don't . It will just make us fat and act silly . Remember last time ? ",
+          " I guess you are right.But what shall we do ? I don't feel like sitting at home . ",
+          " I suggest a walk over to the gym where we can play singsong and meet some of our friends . ",
+          " That's a good idea . I hear Mary and Sally often go there to play pingpong.Perhaps we can make a foursome with them . ",
+          " Sounds great to me ! If they are willing , we could ask them to go dancing with us.That is excellent exercise and fun , too . ",
+          " Good.Let ' s go now . ",
+          " All right . "
+        ],
+        "act": [
+          3,
+          4,
+          2,
+          2,
+          2,
+          3,
+          4,
+          1,
+          3,
+          4
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 1,
+      "row": {
+        "dialog": [
+          "Can you do push-ups ? ",
+          " Of course I can . It's a piece of cake ! Believe it or not , I can do 30 push-ups a minute . ",
+          " Really ? I think that's impossible ! ",
+          " You mean 30 push-ups ? ",
+          " Yeah ! ",
+          " It's easy . If you do exercise everyday , you can make it , too . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          6,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 2,
+      "row": {
+        "dialog": [
+          "Can you study with the radio on ? ",
+          " No , I listen to background music . ",
+          " What is the difference ? ",
+          " The radio has too many comerials . ",
+          " That's true , but then you have to buy a record player . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 3,
+      "row": {
+        "dialog": [
+          "Are you all right ? ",
+          " I will be all right soon . I was terrified when I watched them fall from the wire . ",
+          " Don't worry.He is an acrobat 。 ",
+          " I see . "
+        ],
+        "act": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 4,
+      "row": {
+        "dialog": [
+          "Hey John , nice skates . Are they new ? ",
+          " Yeah , I just got them . I started playing ice hockey in a community league . So , I finally got myself new skates . ",
+          " What position do you play ? ",
+          " I ’ m a defender . It ’ s a lot of fun . You don ’ t have to be able to skate as fast on defense . ",
+          " Yeah , you ’ re a pretty big guy . I play goalie , myself . ",
+          " Oh , yeah ? Which team ? ",
+          " The Rockets . ",
+          " Really ? I think we play you guys next week . Well , I have to go to practice . See you later . ",
+          " All right , see you later . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          3,
+          4
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          6,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 5,
+      "row": {
+        "dialog": [
+          "Hey Lydia , what are you reading ? ",
+          " I ’ m looking at my horoscope for this month ! My outlook is very positive . It says that I should take a vacation to someplace exotic , and that I will have a passionate summer fling ! ",
+          " What are you talking about ? Let me see that ... What are horoscopes ? ",
+          " It ’ s a prediction of your month , based on your zodiac sign . You have a different sign for the month and date you were born in . I was born on April 15th , so I ’ m an Aries . When were you born ? ",
+          " January 5th . ",
+          " Let ’ s see . . . you ’ re a Capricorn . It says that you will be feeling stress at work , but you could see new , exciting developments in your love life . Looks like we ’ ll both have interesting summers ! ",
+          " That ’ s bogus . I don't feel any stress at work , and my love life is practically nonexistent . This zodiac stuff is all a bunch of nonsense . ",
+          " No , it ’ s not , your astrology sign can tell you a lot about your personality . See ? It says that an Aries is energetic and loves to socialize . ",
+          " Well , you certainly match those criteria , but they ’ re so broad they could apply to anyone . What does it say about me ? ",
+          " A Capricorn is serious-minded and practical . She likes to do things in conventional ways . That sounds just like you ! "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          4,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 6,
+      "row": {
+        "dialog": [
+          "Frank ’ s getting married , do you believe this ? ",
+          " Is he really ? ",
+          " Yes , he is . He loves the girl very much . ",
+          " Who is he marring ? ",
+          " A girl he met on holiday in Spain , I think . ",
+          " Have they set a date for the wedding ? ",
+          " Not yet . "
+        ],
+        "act": [
+          2,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 7,
+      "row": {
+        "dialog": [
+          "I hear you bought a new house in the northern suburbs . ",
+          " That ’ s right , we bought it the same day we came on the market . ",
+          " What kind of house is it ? ",
+          " It ’ s a wonderful Spanish style . ",
+          " Oh , I love the roof tiles on Spanish style houses . ",
+          " And it ’ s a bargaining . A house like this in river side costs double the price . ",
+          " Great , is it a two bedroom house ? ",
+          " No , it has three bedrooms and three beds , and has a living room with a twelve-foot ceiling . There ’ s a two-car garage . ",
+          " That ’ s a nice area too . It ’ ll be a good investment for you . ",
+          " Yeas , when will you buy a house ? ",
+          " Not untill the end of this year , you know , just before my wedding . ",
+          " Right , congratulations . ",
+          " Thank you . "
+        ],
+        "act": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4,
+          0,
+          4,
+          0,
+          0,
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 8,
+      "row": {
+        "dialog": [
+          "Hi , Becky , what's up ? ",
+          " Not much , except that my mother-in-law is driving me up the wall . ",
+          " What's the problem ? ",
+          " She loves to nit-pick and criticizes everything that I do . I can never do anything right when she's around . ",
+          " For example ? ",
+          " Well , last week I invited her over to dinner . My husband and I had no problem with the food , but if you listened to her , then it would seem like I fed her old meat and rotten vegetables . There's just nothing can please her . ",
+          " No , I can't see that happening . I know you're a good cook and nothing like that would ever happen . ",
+          " It's not just that . She also criticizes how we raise the kids . ",
+          " My mother-in-law used to do the same thing to us . If it wasn't disciplining them enough , then we were disciplining them too much . She also complained about the food we fed them , the schools we sent them too , and everything else under the sun . ",
+          " You said she used to ? How did you stop her ? ",
+          " We basically sat her down and told her how we felt about her constant criticizing , and how we welcomed her advice but hoped she'd let us do our things . She understood , and now everything is a lot more peaceful . ",
+          " That sounds like a good idea . I'll have to try that . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 9,
+      "row": {
+        "dialog": [
+          "How are Zina's new programmers working out ? ",
+          " I hate to admit it , but they're good . And fast . The Filipino kid is a genius . ",
+          " So you'll make the Stars.com deadline , and have us up and running next week ? ",
+          " It'll be close , but we'll make it . ",
+          " Good . After Stars.com starts paying us , we won't need Vikam's cash anymore . ",
+          " And if we don't need them , we won't need Zina , either . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 10,
+      "row": {
+        "dialog": [
+          "Do you like cooking ? ",
+          " Yes . I like cooking very much . I got this hobby when I was 12 years sold . ",
+          " Why do you like it ? ",
+          " I have no idea . I like cooking by myself . I like to taste delicious food . ",
+          " That's wonderful ! ",
+          " And I love trying new recipes , which I usually test with my friends . You can come , too . ",
+          " Really ? I hope I can have a chance to taste it . Don't forget to tell me . ",
+          " Certainly . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          3,
+          4,
+          1
+        ],
+        "emotion": [
+          0,
+          4,
+          0,
+          0,
+          4,
+          0,
+          6,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 11,
+      "row": {
+        "dialog": [
+          "Anyone home ? Jen ! ",
+          " I'm in the kitchen ... let yourself in ! ",
+          " Wow ! You're really working up a storm ! ",
+          " I know . I've even worked up a sweat . ",
+          " You look like a cooking show host--only messier . "
+        ],
+        "act": [
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 12,
+      "row": {
+        "dialog": [
+          "You look so tan and healthy ! ",
+          " Thanks . I just got back from summer camp . ",
+          " How was it ? ",
+          " Great . I got to try so many things for the first time . ",
+          " Like what ? ",
+          " I went sailing , fishing , and horseback riding . ",
+          " I ’ m so jealous . ",
+          " The counselors were so nice too . It was the best summer ever . Except for all those mosquitoes ! "
+        ],
+        "act": [
+          1,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          4,
+          4,
+          0,
+          4,
+          0,
+          0,
+          0,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 13,
+      "row": {
+        "dialog": [
+          "Diana , do you like the perfume I gave you ? ",
+          " It ’ s good . But to tell you the truth , I don ’ t wear perfume . ",
+          " I ’ m sorry . I didn ’ t know that . ",
+          " That ’ s all right . Thank you all the same . "
+        ],
+        "act": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 14,
+      "row": {
+        "dialog": [
+          "Ah , ah , ah ... ",
+          " All right , Bill.Here ' s your daily exercise schedule . You are to jog before breakfast . ",
+          " Jog ? ",
+          " Then , you are to walk to work . ",
+          " Walk ? ",
+          " Thirty minutes in gym at lunch time . ",
+          " Oh no . ",
+          " Use the stairs , never the elevator . ",
+          " Oh , dear . ",
+          " And three times a week , you can either swim , play racketball , or hand ball . ",
+          " Oh no . ",
+          " OK , you can stop now.It ' s time for the dance class . ",
+          " Dance class ! I don't know how . ",
+          " You will . ",
+          " Oh ... "
+        ],
+        "act": [
+          1,
+          3,
+          4,
+          3,
+          4,
+          3,
+          4,
+          3,
+          4,
+          3,
+          4,
+          3,
+          4,
+          3,
+          4
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 15,
+      "row": {
+        "dialog": [
+          "Hi Bill , I saw your grandma yesterday . ",
+          " Oh where was that ? ",
+          " I was running around the track at my college and there she was walking around the same track . ",
+          " Grannie always tries to stay fit and healthy.She is always making us kids eat the proper foods . ",
+          " Well , it pays off for her.How old is she anyway ? ",
+          " She will be 86 next month . ",
+          " That is truly amazing ! "
+        ],
+        "act": [
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 16,
+      "row": {
+        "dialog": [
+          "I would like to register for a class today . ",
+          " No problem , what class would you like to take ? ",
+          " I would very much enjoy taking a Psychology class.Because I'm crazy . ",
+          " There are two classes that are still open . ",
+          " Which days are these classes on ? ",
+          " The first class is a Tuesday and Thursday class from two to three . ",
+          " What about the other class ? ",
+          " The other class is on Monday and Wednesday from 10 am - 12 . ",
+          " Are you sure there are no more open classes ? ",
+          " I'm positive . ",
+          " Sign me up for Monday and Wednesday . ",
+          " Okay , I'll sign you up . "
+        ],
+        "act": [
+          3,
+          2,
+          3,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          3,
+          4
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 17,
+      "row": {
+        "dialog": [
+          "Dad , why are you taping the windows ? ",
+          " Honey , a typhoon is coming . ",
+          " Really ? Wow , I don't have to go to school tomorrow . ",
+          " Jenny , come and help , we need to prepare more food . ",
+          " OK . Dad ! I'm coming . "
+        ],
+        "act": [
+          2,
+          1,
+          1,
+          3,
+          4
+        ],
+        "emotion": [
+          0,
+          0,
+          6,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 18,
+      "row": {
+        "dialog": [
+          "Hi , my name is Lean , and I'm from Russia . ",
+          " Nice to meet you , Lean . My name is Alike . I'm from Japan . ",
+          " To me English is a difficult language . ",
+          " A second language is always difficult . ",
+          " True , but English is harder than most . It's a crazy language . ",
+          " A crazy language ? Why do you say that ? ",
+          " One letter can have several pronunciations and one word can have several meanings . ",
+          " No wonder you say English is a crazy language . "
+        ],
+        "act": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 19,
+      "row": {
+        "dialog": [
+          "Can I help you ? ",
+          " I hope so . I'm looking for some material for a paper I'm writing , and I'm not quite sure where to look . ",
+          " I'll certainly try to help you . What topic is your paper on ? ",
+          " My paper is on the influence of television on children . ",
+          " There are several possible sources you might use for that topic . I suggest you use the computer and the computer will give you a list of every scientific journal that talks about children and television . ",
+          " Thank you for you help . "
+        ],
+        "act": [
+          2,
+          3,
+          2,
+          1,
+          3,
+          4
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 20,
+      "row": {
+        "dialog": [
+          "Here ’ s your hot dog and beer . What happened ? Did I miss anything ? ",
+          " Yeah , Cal Ripen just hit a home run . ",
+          " What ’ s the score ? ",
+          " Well it was 3 to 4 , but Ripen ’ s home run made it 5 to 4 since another player was on first base . ",
+          " So Baltimore is winning ? ",
+          " Right . ",
+          " This is a really great place to watch a baseball game . ",
+          " Yeah , there isn ’ t a bad seat in the place . ",
+          " The fans are great here , too . Not like in Philadelphia . ",
+          " It was a great idea to spend a day watching a game . ",
+          " Yeah , it reminds you why they say baseball is America ’ s favorite pastime . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 21,
+      "row": {
+        "dialog": [
+          "How do you like the pizza here ? ",
+          " Perfect . It really hits the spot . "
+        ],
+        "act": [
+          2,
+          1
+        ],
+        "emotion": [
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 22,
+      "row": {
+        "dialog": [
+          "Do you have a light ? ",
+          " Sorry , I don't smoke . "
+        ],
+        "act": [
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 23,
+      "row": {
+        "dialog": [
+          "I was scared stiff of giving my first performance . ",
+          " Were you ? your performance was excellent . ",
+          " Thank you for your kindly words . "
+        ],
+        "act": [
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          3,
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 24,
+      "row": {
+        "dialog": [
+          "Excuse me . Could you please take a picture of us with this camera ? ",
+          " Sure . Which button do I press to shoot ? ",
+          " This one . ",
+          " Do I have to focus it ? ",
+          " No , this is a focus-free camera . All you have to do is point and press the button . ",
+          " All right . Say cheese ! "
+        ],
+        "act": [
+          3,
+          2,
+          1,
+          2,
+          1,
+          4
+        ],
+        "emotion": [
+          0,
+          4,
+          0,
+          0,
+          0,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 25,
+      "row": {
+        "dialog": [
+          "Every country should face the history . ",
+          " Yeah , we don ’ t live in the vacuum . We have traditional values and long but different history . ",
+          " Sometimes , we , human beings , really had done something wrong , so we should admit it at first . ",
+          " But there is always somebody who wants to turn his back on the true history . ",
+          " I believe such things won ’ t be realized , just daydreaming . "
+        ],
+        "act": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 26,
+      "row": {
+        "dialog": [
+          "Do you like traveling , Kathy ? ",
+          " I like traveling for pleasure to get places for vacation for instance . But I don ’ t like traveling to work , waiting for buses , or ... ",
+          " Or getting stuck in traffic jams when you ’ re driving . ",
+          " Exactly . "
+        ],
+        "act": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 27,
+      "row": {
+        "dialog": [
+          "Your house is too small . Why not buy a big one . ",
+          " I do wish I could afford one . ",
+          " You can get a loan from the bank . You know LPF program provides low cost loans for participants home purchases . ",
+          " Of course I know that . But don't you notice that the house price is skyrocketing ? "
+        ],
+        "act": [
+          2,
+          1,
+          3,
+          4
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 28,
+      "row": {
+        "dialog": [
+          "How do you do , Prof.Smith . ",
+          " How do you do , Ms . Yang.You speak very good English . ",
+          " Thank you . I begin to like English even when I was a child . ",
+          " Where did you learn it ? ",
+          " At school , in China.This is my first time to be out of my own country . ",
+          " It's amazing . "
+        ],
+        "act": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          4,
+          4,
+          0,
+          0,
+          6
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 29,
+      "row": {
+        "dialog": [
+          "Do you want black or white coffee ? ",
+          " White , please ",
+          " Look ! there's a Folk concert tomorrow evening . Do you Want to go ? ",
+          " I don't like Folk music very much . ",
+          " What kind of music do you like ? ",
+          " I like classical music . Do you ? ",
+          " Not very much . Classical music sends me to sleep ",
+          " I don't believe you . ",
+          " It ’ s true . ",
+          " You are funny ! ",
+          " So are you ! How about another coffee ? "
+        ],
+        "act": [
+          2,
+          1,
+          3,
+          4,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          3
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 30,
+      "row": {
+        "dialog": [
+          "What do you like to do in your spare time ? ",
+          " I like playing chess . ",
+          " Do you have any hobbies besides playing chess ? ",
+          " I'm afraid not . ",
+          " Do you have any hobbies like playing tennis or things like that ? ",
+          " Oh , yes . I like playing basketball . ",
+          " Can you tell me why you like it ? ",
+          " Because I like the feeling of cooperating with others . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 31,
+      "row": {
+        "dialog": [
+          "Where is John ? I can't find him anywhere . ",
+          " Haven't you heard that he is in prison ? ",
+          " What ? Beg your pardon . ",
+          " John is in prison now . He was copped outstealing . ",
+          " I just cann't believe my ears ! "
+        ],
+        "act": [
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          6,
+          0,
+          6
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 32,
+      "row": {
+        "dialog": [
+          "Can I help you ? ",
+          " I hope so . I'm looking for some material for a paper I'm writing , and I'm not quite sure where to look . ",
+          " I'll certainly try to help you.What topic is your paper on ? ",
+          " My paper is on the influence of television on children . ",
+          " There are several possible sources you might use for that topic . I suggest you use the computer and the computer will give you a list of every scientific journal that talks about children and television . ",
+          " Thank you for you help . "
+        ],
+        "act": [
+          2,
+          3,
+          2,
+          1,
+          3,
+          4
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 33,
+      "row": {
+        "dialog": [
+          "Hey , Ted . What are you up to this Friday ? ",
+          " Well , I have the day off from work . ",
+          " That ’ s great ! Do you have any plans ? ",
+          " Well , I ’ Ve been working so hard lately , so I ’ ll probably just take it easy . ",
+          " Sounds nice . ",
+          " Yeah , I ’ ll probably just stay in and relax . Maybe watch a few movies . ",
+          " Can I stop by ? ",
+          " Sure . Any time . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          3,
+          4
+        ],
+        "emotion": [
+          0,
+          0,
+          4,
+          0,
+          4,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 34,
+      "row": {
+        "dialog": [
+          "You honestly believe the world ’ s improving every year ? ",
+          " Yes , I do . I think that science is making us wiser . What do you think ? ",
+          " I don ’ t think you ’ re right there . ",
+          " I believe industry is making us wealthier . ",
+          " I don ’ t believe that . ",
+          " And in my opinion , medicine is making us healthier . ",
+          " I agree with you in the sense . But we ’ re all more miserable than ever , aren ’ t we ? ",
+          " I don ’ t agree with you . I maintain that we ’ re healthier , wealthier and wiser than we were a hundred years ago . ",
+          " That ’ s your opinion not mine . "
+        ],
+        "act": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 35,
+      "row": {
+        "dialog": [
+          "What do you plan to do for your birthday ? ",
+          " I want to have a picnic with my friends , Mum . ",
+          " How about a party at home ? That way we can get together and celebrate it . ",
+          " OK , Mum . I'll invite my friends home . "
+        ],
+        "act": [
+          2,
+          1,
+          3,
+          4
+        ],
+        "emotion": [
+          0,
+          0,
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 36,
+      "row": {
+        "dialog": [
+          "How may I help you ? ",
+          " I would like to return this book . ",
+          " Is that all you need ? ",
+          " I also want to check out this video . ",
+          " Is that all you would like to check out ? ",
+          " That ’ s all I need . ",
+          " Do you have your library card ? ",
+          " Here it is . ",
+          " Make sure to take proper care of this video . ",
+          " That won ’ t be a problem . ",
+          " If you damage the video , you will be fined . ",
+          " I won ’ t damage it . "
+        ],
+        "act": [
+          2,
+          3,
+          2,
+          3,
+          2,
+          1,
+          3,
+          4,
+          3,
+          4,
+          3,
+          4
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 37,
+      "row": {
+        "dialog": [
+          "What's the matter with you then ? You look miserable . ",
+          " It's us . ",
+          " What do you mean by us . ",
+          " Well , you always say you're busy . ",
+          " That's right . ",
+          " And you often go back to live with your parents and leave our son in the room by himself . ",
+          " I ... I ... I miss my parents , also they miss me . ",
+          " Oh I remember , I cut terrible calls , and you didn't say anything about it . ",
+          " You mean I am groaned a few words ? ",
+          " Totally not . Perhaps it's about our marriage . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 38,
+      "row": {
+        "dialog": [
+          "Hi , Mary . You look pale today . What's the matter with you ? ",
+          " I think I've caught a cold . Now I'm aching all over . ",
+          " You'd better take some medicine and have a good rest . I hope you'll be yourself pretty soon . ",
+          " Thank you . I suppose I should go to see a doctor . "
+        ],
+        "act": [
+          2,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 39,
+      "row": {
+        "dialog": [
+          "I feel like going for a drink , it's been a long day . ",
+          " Great idea ! Peter , I could use the drink . ",
+          " How about the new bar across road ? ",
+          " Sounds good . The food there is fantastic , too . ",
+          " I agree , I had lunch there last week . ",
+          " excellent ! That sounds like a plan . "
+        ],
+        "act": [
+          3,
+          4,
+          3,
+          4,
+          1,
+          1
+        ],
+        "emotion": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 40,
+      "row": {
+        "dialog": [
+          "Could you tell me the right time , please ? ",
+          " Well . My watch says five past two . But it ’ s no use rely on it because it has been gaining and losing these last a few days . ",
+          " You have to go and fix it . ",
+          " Yes . I will . "
+        ],
+        "act": [
+          3,
+          1,
+          3,
+          4
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 41,
+      "row": {
+        "dialog": [
+          "does your family have a record of your ancestors ? ",
+          " sure . My mom has been working on our family tree for years . She ’ s always updating it . ",
+          " do you have a copy of your family tree in your house ? I ’ d love to see it . ",
+          " I can show it to you now , if you like . I think it goes back about 8 generations so far . ",
+          " that ’ s amazing . Do you have a large extended family ? ",
+          " I ’ Ve got 30 cousins on my mom ’ s side and 10 cousins on my dad ’ s side . ",
+          " are you very close to your first-cousins ? ",
+          " the ones that are my age are close relatives . Now that I ’ m older , I don ’ t spend as much time with them as I used to , so I don ’ t know my younger cousins as well as the older ones . ",
+          " I see . who ’ s the head of your household ? ",
+          " it ’ s definitely my mother . And , her mother is definitely the matriarch of the bigger family . ",
+          " that ’ s interesting . What does your grandfather think of your step-mother ? ",
+          " at first , she was quite critical of her , but now that they ’ Ve been married for a few years , she ’ s starting to accept the fact that my father divorced my mother . ",
+          " that ’ s pretty much how you feel about your step-mother . Like grandmother , like grandson . "
+        ],
+        "act": [
+          2,
+          1,
+          3,
+          4,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 42,
+      "row": {
+        "dialog": [
+          "Hi , Mr . Wang . Do you feel like going boating with me ? ",
+          " Sounds interesting , I haven't gone boating for some time now , and what time ? ",
+          " How about tomorrow afternoon ? ",
+          " Sure . Where shall I meet you ? ",
+          " At the gate of the park . ",
+          " Great . I look forward to meeting you . ",
+          " See you then . ",
+          " See you . "
+        ],
+        "act": [
+          3,
+          2,
+          3,
+          2,
+          1,
+          4,
+          1,
+          1
+        ],
+        "emotion": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 43,
+      "row": {
+        "dialog": [
+          "I hear that you've been to the Saikei Ski Resort for the weekend . Did you enjoy it ? ",
+          " Yes , it's so exciting , though I had the most falls in our skiing team . ",
+          " Isn't there any coach to teach you how to ski ? ",
+          " Of course there is . The top-level coaches there are from the State Sports General Administration . ",
+          " Could you move smoothly ? ",
+          " Yes.My face even ached in the icy wind . ",
+          " What happened afterwards ? ",
+          " I was skiing on and on excitedly until I realized one thing-I could not stop ! You can just imagine how terrified I was . ",
+          " Poor girl ! "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 44,
+      "row": {
+        "dialog": [
+          "You look pale recently . ",
+          " Yeah . I have got much pressure in the company . I have tobe wrapped upon my work . ",
+          " Take good care of yourself . ",
+          " Thank you . I will . "
+        ],
+        "act": [
+          1,
+          1,
+          3,
+          4
+        ],
+        "emotion": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 45,
+      "row": {
+        "dialog": [
+          "Hey , Maggy , Did you hear about David ? ",
+          " About David ? No , I didn ’ t hear anything . ",
+          " You know , about David and his new boss . ",
+          " Sorry , I don ’ t quite follow you . ",
+          " Well , I heard David has been fired . ",
+          " Oh , that is a shame . He is really hard working . "
+        ],
+        "act": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 46,
+      "row": {
+        "dialog": [
+          "how do you usually get to school ? ",
+          " I usually ride my bike . Which form of transport do you prefer to use ? ",
+          " I feel that I can see more when I pedal a bicycle , but when I feel lazy , I drive my car . ",
+          " I think we should discourage people from using their private cars . They produce too much pollution ! ",
+          " I agree , but I would find it difficult to stop using my car . It's just so convenient . ",
+          " cars might be convenient , but they're so bad for the environment . ",
+          " do you have a car ? ",
+          " no . I used to have one though . Once I started using my bicycle to get around , I found that I didn't really need it . ",
+          " maybe if I sold my car now , I wouldn't be so tempted to use it . ",
+          " you could try . It would save you a lot of money . ",
+          " that's true . Every month , I spend hundreds of dollars on gas , insurance , and repairs . ",
+          " if you got to class by riding a bicycle every day instead of driving , you will get lots of exercise , too ! ",
+          " I could stand to lose a few pounds . Having a car has made me lazy . I never end up walking anywhere ! ",
+          " let's go to a car dealership . I'll help you try to sell your car for a good price . ",
+          " sounds good ! Let's go ! "
+        ],
+        "act": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          4
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 47,
+      "row": {
+        "dialog": [
+          "What's wrong with him ? ",
+          " His nose is out of joint because we forgot to invite him to the party . "
+        ],
+        "act": [
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 48,
+      "row": {
+        "dialog": [
+          "What are you going to do for one year abroad , Tom ? ",
+          " Study , study , study . I want to learn a lot . ",
+          " You are going to take courses ? ",
+          " Yes . I am going to take some university courses there . ",
+          " Sounds hard . ",
+          " Yes , but I think it's probably for the best . ",
+          " Won ’ t you get lonely ? ",
+          " Hey , I am a pretty cool guy . I will make friends , and I'll have a lot of extracurricular activities too . You know , like fencing , or theater or something . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 49,
+      "row": {
+        "dialog": [
+          "Isn't this lovely weather ? Will you help me water the flowers , Jack ? ",
+          " Well , do you think I have to ? ",
+          " I do.We haven't watered them for quite a few days . ",
+          " Please look at the sky.Don ' t you see the dark clouds ? It's going to rain soon . ",
+          " Good.So we don't have to work.How nice ! ",
+          " But I don't think it's so nice . ",
+          " Why ? ",
+          " The weather report says it's going to rain for a whole week . ",
+          " Oh , I'm afraid all the flowers will die in the rain . "
+        ],
+        "act": [
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          4,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 50,
+      "row": {
+        "dialog": [
+          "On , darn . The grocery store is closed . ",
+          " Yeah , this one closes at ten . We could drive to the 24 - hour store on sixth . ",
+          " Alright . We are out of everything . ",
+          " I wish the store close to us was open 24 - house a day . ",
+          " I know , our schedules are so weird . Sometimes , the little corner store is the only thing within walking distance that ’ s open when we get home . ",
+          " Yeah , and the prices there are very high . ",
+          " I know . Three dollars for milk . "
+        ],
+        "act": [
+          1,
+          3,
+          4,
+          1,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 51,
+      "row": {
+        "dialog": [
+          "Do you think they two will get married ? ",
+          " You can count on it . ",
+          " I think so.Yes , they get along so well . ",
+          " I like him.He ' s good for her . ",
+          " You're right . He sure is . "
+        ],
+        "act": [
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 52,
+      "row": {
+        "dialog": [
+          "Dad , where are we off to ? ",
+          " First we will go to the city centre and stop for something to drink . Then we will visit the University Museum . ",
+          " Where are we going to have a drink ? ",
+          " There is a coffee shop round the corner . Can you see that big building at the end of the road ? ",
+          " Yes ? ",
+          " That is a bank . The coffee shop is opposite the bank . ",
+          " Good . I will have hot chocolate . ",
+          " A stop ! Wait for the lights to turn green . ",
+          " When crossing the road you must always pay attention to what's around you . ",
+          " Sorry . How far is the museum ? ",
+          " I am not sure . We will ask for directions in the coffee shop . ",
+          " Here we are . You find us a table and I'll get the drinks . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 53,
+      "row": {
+        "dialog": [
+          "How about going to the cinema tonight ? ",
+          " That's great . What's on tonight ? ",
+          " I am not sure about the name of the film , but I know it's a romantic one . ",
+          " Romantic ? I am afraid I like thrillers better . ",
+          " Don't you think it's too bloody ? ",
+          " On the contrary , very exciting . "
+        ],
+        "act": [
+          3,
+          4,
+          1,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          4,
+          4,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 54,
+      "row": {
+        "dialog": [
+          "I feel so uncomfortable . ",
+          " Are you sick ? ",
+          " No . The teacher is dragging the chalk over the blackboard . It set my teeth on edge . ",
+          " He ’ ll finish writing in a minute . "
+        ],
+        "act": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 55,
+      "row": {
+        "dialog": [
+          "I have made up my mind . I am getting a tattoo . ",
+          " Really ? Are you sure ? ",
+          " Yeah ! Why not ? They are trendy and look great ! I want to get a dragon on my arm or maybe a tiger on my back . ",
+          " Yeah but , it is something that you will have forever ! They use indelible ink that can only be removed with laser treatment . On top of all that , I have heard it hurts a lot ! ",
+          " Really ? ",
+          " Of course ! They use this machine with a needle that pokes your skin and inserts the ink . ",
+          " Oh , I didn ’ t know that ! I thought they just paint it on your skin or something . ",
+          " I think you should reconsider and do some more research about tattoos . Also , find out where the nearest tattoo parlor is and make sure they used sterilized needles , and that the place is hygienic . ",
+          " Maybe I should just get a tongue piercing ! "
+        ],
+        "act": [
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          6,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 56,
+      "row": {
+        "dialog": [
+          "Excuse me , what's the screen near your steering wheel for ? ",
+          " It's a portable TV . It's a popular thing now . ",
+          " Oh , that's new to me . So what's on everyday ? ",
+          " News about current affairs , documentaries , music , movies , noncommercial ads and so on . ",
+          " Is there anything interesting ? ",
+          " Yes , there are something good and informative . I think that many people underestimate the value of TV in education . ",
+          " I agree . Are there any commercials on the TV ? ",
+          " Of course . Because the TV stations need to make money from commercials between the programs . ",
+          " That makes a lot of sense . Does the TV work well ? ",
+          " Not always . It depends on the transmission of the satellite signals . ",
+          " I got it . Do you pay for the programs ? ",
+          " Yes , 50 Yuan per month . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 57,
+      "row": {
+        "dialog": [
+          "Oh , no ! ",
+          " How dreadful ! ",
+          " Look at the view from the window . ",
+          " Oh , dear . That ’ s terrible . Not at all what I expected . ",
+          " It ’ s awful , isn ’ t it ? ",
+          " I can ’ t bear to look at it . I ’ m rather disappointed . ",
+          " It can ’ t be helped . "
+        ],
+        "act": [
+          1,
+          1,
+          3,
+          4,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          2,
+          2,
+          0,
+          2,
+          2,
+          2,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 58,
+      "row": {
+        "dialog": [
+          "What do you do in your free time , Nancy ? ",
+          " Well , I like playing the violin . ",
+          " Really ? How long have you been playing the violin ? ",
+          " About ten years so far . I started learning when I was in middle school . ",
+          " That's really interesting . ",
+          " Sure . So what about you ? Do you have any hobbies ? ",
+          " Well , I like collecting matchbox ! I'm not sure if that counts , though . ",
+          " Of course it does . Everybody has his own hobby . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 59,
+      "row": {
+        "dialog": [
+          "How can I tell her about this ? ",
+          " Don't worry , you'll find a way . ",
+          " There is no need to be so frustrated . ",
+          " How can you live without job in the future ? ",
+          " Don't worry , you'll find a way . "
+        ],
+        "act": [
+          2,
+          3,
+          4,
+          2,
+          3
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 60,
+      "row": {
+        "dialog": [
+          "What sports do you like to play ? ",
+          " I like baseball and basketball . ",
+          " How about football ? ",
+          " In my country football is brand new , so I never learned the game when I was younger . ",
+          " It's a very popular game in America . ",
+          " Yeah . I heard a lot about it . Is it really that fun ? ",
+          " For me , it's one of those games that are fun to both watch and play . ",
+          " Are you a football player ? ",
+          " No , I just for fun with my friends . We play two hand touch or flag football . We're too old to play tackle football . ",
+          " What is two hand touch and flag football ? ",
+          " Instead of tackling somebody , you just have to touch them with two hands , or if it is flag football , grab the flag that the ball carrier is wearing . ",
+          " I see . It's safer then right ? ",
+          " Exactly . We play every Saturdays on the field by the tennis courts . If you want to learn and play a little , you're welcome to join us . ",
+          " I'll give it a try . Give me a call and let's go down together . ",
+          " Ok . I'll call you Saturday morning . ",
+          " Great . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          3,
+          4,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 61,
+      "row": {
+        "dialog": [
+          "What upsets you ? ",
+          " My parents called . As usual , they reminded me again that I should have a plan to marry by my late 20s . Easier said then done . Who should I marry ? I have no time to go on a date . ",
+          " It is not your mother finding one for you ? ",
+          " I will find one myself , of course . I ’ m a modern girl . ",
+          " Perhaps you can try the three minutes date , the latest type . ",
+          " You mean dozens of the opposite sex meet each other for three minutes in a dimly bar serving alcohol , I hate that idea . ",
+          " No , there is an updated virgin , three minutes video date . I know an online dating website providing such service with a microphone and webcam , you can sigh for it . You can be face-to-face with a guy talking for maximum three minutes . ",
+          " I don ’ t think it makes sense . Three minutes is such a short time . ",
+          " I think you can find out if there is a possibility of romance within the first second of meeting someone , so-called love at first sight . ",
+          " Anyway , I don ’ t want to post my face up for sale on the internet like that . ",
+          " Don ’ t worry . There are many other options using the internet as dating methods . Some sites operate at international standard even have got certifications . Of course , for these sites , you have to pay a membership fee . But all in all , it is more serious and professional . The chance of meeting a good and serious person who does not play games is higher . ",
+          " I don ’ t want to post my personal information on the internet . I ’ m not knowing who is reading it . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          3,
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          5,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          2
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 62,
+      "row": {
+        "dialog": [
+          "Are you going to the party on Saturday ? ",
+          " I was thinking about it . Are you ? ",
+          " Yeah , I heard it's going to be a lot of fun . ",
+          " Really ? Well , what time does it start ? ",
+          " It starts at 8 ",
+          " Well , who all is going to be there ? ",
+          " Everyone from school . ",
+          " How do you know it's going to be so fun ? ",
+          " This party is going to have a DJ , food , and drinks . ",
+          " Wow , that does sound like it's going to be fun . ",
+          " So am I going to see you at the party ? ",
+          " Yeah , I will be there . "
+        ],
+        "act": [
+          2,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          4,
+          6,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 63,
+      "row": {
+        "dialog": [
+          "Could you talk to me for a few minutes about my grades ? ",
+          " Step into my office for a moment . What is your concern ? ",
+          " Am I failing ? ",
+          " Let's go on the computer to see what's up . Do you think you are doing well ? ",
+          " I am pretty sure that I am in trouble . ",
+          " I can see that you are trying , but where do you think you could improve ? ",
+          " I missed a few classes ; I need to make sure I come to school on a regular basis . ",
+          " Having a regular study routine and following it is very important , right ? ",
+          " I'll try ; it's hard ! ",
+          " Thanks for stopping by ! "
+        ],
+        "act": [
+          3,
+          2,
+          2,
+          2,
+          1,
+          2,
+          1,
+          3,
+          4,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 64,
+      "row": {
+        "dialog": [
+          "Good luck on your test tomorrow . We'll be crossing our fingers for you ! ",
+          " Thanks . "
+        ],
+        "act": [
+          1,
+          1
+        ],
+        "emotion": [
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 65,
+      "row": {
+        "dialog": [
+          "I'll never ever work together with him ! ",
+          " What happened ? Quarrel again ? ",
+          " Will you take my materials back from him for me ? Please ! ",
+          " Don't ask me . I don't wanna be involved in your quarrel . "
+        ],
+        "act": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "emotion": [
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 66,
+      "row": {
+        "dialog": [
+          "Oh , my God ! I've been cheated ! ",
+          " What ? What did you buy ? ",
+          " It's a brick ! I can't believe how stupid I was . Damn it ! ",
+          " What is it ? Why did you buy a brick ? ",
+          " There was a guy on the sidewalk.He had three new boxes , Panasonic video camera boxes.He said he had to get rid of them quick . ",
+          " And ? ",
+          " So he said he'd sell me one for twenty dollars . A four-hundred-dollar camera for twenty bucks . ",
+          " And it's a brick ? ",
+          " Yes . ",
+          " I can't believe how stupid you are . Why didn't you open the box ? ",
+          " I wanted to . But he said , no , the box is still in its plastic wrap from the store.If it's opened , other people won't believe it's new . ",
+          " So he had the boxes wrapped in plastic . ",
+          " Yes , it was the kind of perfect plastic wrap that comes with new products.Look , it even had a bar-code price sticker on it ! It looked brand new . ",
+          " But why would a guy be selling new video cameras for twenty dollars ? ",
+          " He said he had to get rid of them . They were stolen . ",
+          " Aha ! Now I understand.You were trying to buy stolen goods on the sidewalk.So , what I think is , you deserve to get cheated ! ",
+          " C'mon , don't blame me ! I thought it was a new camera . We could use it.We were even thinking about buying a camera . I don't understand how he could have such a perfect-looking box . ",
+          " That's no problem.He just has a friend who works in a shop that can do plastic wrap . That's easy.And probably it's the same shop he got the boxes from.Maybe his friend works in an electronics store . They sell video cameras there.Probably they had a couple video camera boxes lying around.So they get the idea of wrapping bricks to sell to fools like you.Twenty dollars a brick . That's a good profit if they can sell enough bricks . ",
+          " You're right , Sarah . I was a fool . I can't believe it . How could I fall for such a trick ? "
+        ],
+        "act": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          1,
+          6,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 67,
+      "row": {
+        "dialog": [
+          "Is the clock right ? ",
+          " I'm afraid it gains a little . ",
+          " By how many minutes ? ",
+          " Two . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 68,
+      "row": {
+        "dialog": [
+          "Hey , Mary , what's up ? ",
+          " Just so so . Last night I met this great guy at the bar and we had such a wonderful time , so we decided to meet again tonight . ",
+          " Oh , that's exciting . What does this guy look like ? Is he hot ? ",
+          " Well , I didn't think so at first . But as we started talking , I found him extremely funny and witty . I couldn't stop laughing at his jokes ! And we have so much in common . We like the same team , music , and most amazingly , we both love Chinese food ! I have the feeling that we are going to be great friends . ",
+          " It seems you two are a good match . What qualities do you look for in a friend ? ",
+          " There's nothing definite I think . I don't have a list or anything , but when I first meet somebody , I can usually tell whether or not that person is going to be a good friend . It seems I have radar helping me spot new friends . ",
+          " Well , that's something I've never heard of . But if you ask me what I value most in a friend , I would say honesty . ",
+          " I agree . You can't expect a close relationship with a dishonest person . Those are the people that will turn their back on you when you are in need . ",
+          " Yeah , I know . A friend in need is a friend indeed . I don't need fair-weather friends either . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          4,
+          0,
+          4,
+          0,
+          6,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 69,
+      "row": {
+        "dialog": [
+          "What ’ s up ? You don ’ t look too good . ",
+          " Yeah , my head hurts , that ’ s all . I ’ Ve been in physics class all day . It ’ s killer ! ",
+          " I liked physics . It ’ s all math , really . arcs , curves , velocity , cool stuff . ",
+          " Yeah , yeah , but today ’ s lesson was all about the creation of the universe . ",
+          " A physics class about the creation of the universe ? That ’ s some pretty unscientific language there . Sounds more religious to me . ",
+          " It ’ s all religion . Take the theory of the Big Bang.How is it possible that all of the stuff in the universe comes from an explosion ? That ’ s no better than Atlas carrying the globe on his back or African myths about turtles and stuff . ",
+          " Turtles ? Whatever ... Look , all that ’ s required for the creation of matter an imbalance of particles and anti-particles . At least , that ’ s what the math says . ",
+          " Math , sheath . What ’ s the evidence ? ",
+          " There is evidence ! You know Edwin Hubble ? He ’ s the guy who in the early twentieth century was the first scientist to measure the drift of matter in the universe , thus advancing notions of an expanding universe . What would it be expanding from ? Well , the Big Bang ... DUH ! ",
+          " Anyway , it ’ s just a theory . Why do people go around touting theories ? Where ’ s the scientific rigor in that ? ",
+          " Dude , don ’ t equivocate . A theory only becomes a theory after withstanding rigorous testing . You slept through class , didn ’ t you ? "
+        ],
+        "act": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 70,
+      "row": {
+        "dialog": [
+          "Today more and more people advocate lifelong learning . But people have different views about lifelong learning . How do you understand lifelong learning ? ",
+          " I think lifelong learning is the concept that it's never too soon or too late for learning ",
+          " Does that mean studying all the time ? ",
+          " I don't think so . I think it's about your attitude towards learning . One should be open to new ideas , decisions , skills or behaviors . ",
+          " Then the axiom - ' You can't teach an old dog new tricks ' doesn't work any longer . ",
+          " You're right . Lifelong learning is about finding learning opportunities at all ages and in numerous contexts ",
+          " Yes , I agree with you . When I retired I will participate in programs to keep momentally active . ",
+          " Me too . To keep up with the changing world , one must be involved in lifelong learning and be ready to accept new things . ",
+          " You know what ? I've recently been teaching myself French . ",
+          " Really ? That's great ! I know that your company has a lot of clients in France . ",
+          " Yes , so I want to learn French to develop my career . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 71,
+      "row": {
+        "dialog": [
+          "How old are you ? ",
+          " Nine ... but I'll be ten on May 1st.When is your birthday ? ",
+          " I'm older than you ! I'll be ten on April 14th . ",
+          " Are you going to have a birthday party ? ",
+          " Maybe . I'll have to ask my mother . "
+        ],
+        "act": [
+          2,
+          2,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 72,
+      "row": {
+        "dialog": [
+          "It smells like an ashtray in here ! ",
+          " Hi honey ! What ’ s wrong ? Why do you have that look on your face ? ",
+          " What ’ s wrong ? I thought we agreed that you were gonna quit smoking . ",
+          " No ! I said I was going to cut down which is very different . You can ’ t just expect me to go cold turkey overnight ! ",
+          " Look , there are other ways to quit . You can try the nicotine patch , or nicotine chewing gum . We spend a fortune on cigarettes every month and now laws are cracking down and not allowing smoking in any public place . It ’ s not like you can just light up like before . ",
+          " I know , I know . I am trying but , I don ’ t have the willpower to just quit . I can ’ t fight with the urge to reach for my pack of smokes in the morning with coffee or after lunch ! Please understand ? ",
+          " Fine ! I want a divorce ! "
+        ],
+        "act": [
+          1,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 73,
+      "row": {
+        "dialog": [
+          "Why are you shivering ? ",
+          " It's freezing . "
+        ],
+        "act": [
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 74,
+      "row": {
+        "dialog": [
+          "It seems that you get antsy when you hear I praise another guy . ",
+          " I get antsy not because you praise a guy , but because you may be taken for a ride by a guy like him . ",
+          " How come you think of him that way ? ",
+          " Because you seem to have lost your vigilance . You should be on the watch out . ",
+          " I have no reason to distrust him . He's never caused any harm . ",
+          " Isn't there anything that sounds fishy ? ",
+          " Nothing smells a rat . I told you that he's an all-right guy . ",
+          " All-right guy ? All right . Let's talk about something else instead . "
+        ],
+        "act": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        "emotion": [
+          0,
+          2,
+          0,
+          2,
+          0,
+          1,
+          0,
+          6
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 75,
+      "row": {
+        "dialog": [
+          "Cheese ! It tastes like cardboard . ",
+          " I think so . Maybe that ’ s why it ’ s cheap here . "
+        ],
+        "act": [
+          1,
+          1
+        ],
+        "emotion": [
+          2,
+          2
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 76,
+      "row": {
+        "dialog": [
+          "Have you signed up to join the company ’ s Christmas party ? ",
+          " Sure , I have . Will you join ? ",
+          " I will . You know , as a newcomer , I think it might be a good opportunity to get to know people from the other departments of our company in a more relaxed atmosphere . ",
+          " You are right . Our company ’ s Christmas party has always been an amazing occasion for everybody to relax and get to know each other better . It is also a time to make new friends and do some networking . ",
+          " I hope that it is not a formal one when the boss is there . ",
+          " No , it will not be formal at all . It is a fun time . You will love the game show . Please dress casually . Usually there is an over abandon of drinks , so be careful with that . ",
+          " Don ’ t worry , I can handle that . And I know if the boss is there , even it is an informal evening , it does not make a good impression to get totally drunk in front of him . "
+        ],
+        "act": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          3,
+          4
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 77,
+      "row": {
+        "dialog": [
+          "If the weatherman's predictions are accurate , it should rain tomorrow . ",
+          " I hope not . Then we'd have to reschedule our baseball game . "
+        ],
+        "act": [
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 78,
+      "row": {
+        "dialog": [
+          "hi , Emily , do you know that guy over there ? ",
+          " The tall one ? Sure , that's Drive , he works with Lily . ",
+          " He is cute.What dose he do ? ",
+          " I'm not sure , he is a manager I think . ",
+          " Really ? Are you going to introduce us ? ",
+          " Well , he has already taken you know , that's his wife right there . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 79,
+      "row": {
+        "dialog": [
+          "You didn't ring me last night . You said you would . ",
+          " I'm sorry to have made you disappointed . ",
+          " That's all right . But why were you so rude to me at lunch . ",
+          " Was I ? Sorry , I didn ’ t mean to be . I do apologize . ",
+          " And why are you yarning now ? Are you bored ? ",
+          " Forgive me darling . I'm very tired . "
+        ],
+        "act": [
+          1,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          5,
+          0,
+          6,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 80,
+      "row": {
+        "dialog": [
+          "Hi , Nicole . Did you have a good weekend ? ",
+          " Yes , I did . But I feel tired today . ",
+          " Really ? Why ? ",
+          " Well , on Saturday I cleaned the house and played tennis . Then on Sunday I hiked in the country . ",
+          " And I bet you studied , too . ",
+          " Yeah . I studied on Sunday evening . What about you ? ",
+          " Well , I didn't clean the house and I didn't study . I stayed in bed and watched TV . ",
+          " That sounds like fun , but did you exercise ? ",
+          " Sort of . I played golf on my computer ! "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 81,
+      "row": {
+        "dialog": [
+          "There will be a parade to celebrate National Day this weekend . ",
+          " What's the route ? ",
+          " From Zhongshan Circus to City Bank . ",
+          " If only I could join it ! "
+        ],
+        "act": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 82,
+      "row": {
+        "dialog": [
+          "Excuse me . I'm afraid you're in my seat . You've moved my books . ",
+          " Oh , dear . ",
+          " You must have realized somebody was here . ",
+          " Oh , well , I looked around . There wasn't any other space . I waited a while and nobody came . I'm sorry if I've taken your place . "
+        ],
+        "act": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          6,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 83,
+      "row": {
+        "dialog": [
+          "What ’ s the life expectancy in your country ? ",
+          " I ’ m not sure , but probably about 75 years . How about in your country ? ",
+          " About 70 , I think . This newspaper article talks about the problems of an aging population . It ’ s a problem that will soon affect most of the world . ",
+          " I heard that the government might need to increase the retirement age , because otherwise there will not be enough workers to support the young and the elderly . ",
+          " Perhaps we need to have more babies ! Tina gave birth to a baby boy yesterday . ",
+          " Did she ? That ’ s great . However , if we have too many children , that will have a bad effect on the enviroment . ",
+          " How ’ s your son these days ? ",
+          " Oh , he ’ s fine . Kids seem to grow up very quickly nowadays . ",
+          " He ’ ll be a teenager before you know it ! Teenagers are often rebellious ! When do you mine it is a good age to have a child ? ",
+          " I had mine when I was 24 . that ’ s a little young . I ’ d suggest you wait until you are in your late twenties . , or even in your early thirties if you have a good career . ",
+          " Yes , I think you ’ re right . I ’ m thinking about having a child , but not just yet . ",
+          " Is there a big generation gap between parents and their children in you country ? ",
+          " Yes , there is . Teenagers do not want to live traditional lives . They want to go out , have fun , and explore the world . They want to develop their own view of life . Parents usually try to discourage them , but they don ’ t often succeed . ",
+          " Parents usually give their children more freedom in my country . Sometimes they give them too much freedom . ",
+          " It ’ s almost impossible to get the right balance . If you are too strict , kids might ignore you . If you are too lenient , they might go wild . "
+        ],
+        "act": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          2,
+          2,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 84,
+      "row": {
+        "dialog": [
+          "I'm going to Japan this year on vacation . ",
+          " Have you ever been to America ? ",
+          " No , but I'd really like to . ",
+          " You'd like it . "
+        ],
+        "act": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 85,
+      "row": {
+        "dialog": [
+          "Hey , Mark , long time no see . ",
+          " Julie ! It's good to see you again . How have you been ? ",
+          " Great . I just got back from a week's vacation in Thailand . ",
+          " Really ? How was it ? ",
+          " Fantastic ! I didn't want to come back . ",
+          " I hear the beaches in Thailand are beautiful . ",
+          " They are . And not only that the people are friendly , but also the food is delicious , not to mention cheap . ",
+          " I do like Thai food . Did you see much of Bangkok ? ",
+          " Not much . I've got enough city life in Beijing . ",
+          " I know what you mean . I could use a vacation myself . ",
+          " Hey , wouldn't it be great if we could go to Thailand together sometime ? ",
+          " Yeah , it sure would . "
+        ],
+        "act": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          3,
+          4
+        ],
+        "emotion": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 86,
+      "row": {
+        "dialog": [
+          "Could I see the manager please ? I have a complaint to make . ",
+          " Yes , I ’ m the manager here . What can I do for you , Madam ? ",
+          " Did you have the room checked before we move in ? ",
+          " Which room are you in ? ",
+          " 1808 . The toilet doesn ’ t work properly , the water doesn ’ t run in the shower . ",
+          " I ’ m awfully sorry to hear that . I ’ ll turn to it right away . "
+        ],
+        "act": [
+          3,
+          4,
+          2,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 87,
+      "row": {
+        "dialog": [
+          "Congratulations , Vivian . You won the grand prize , again . ",
+          " Isn't it just great ! I just knew I'd win ! ",
+          " You did ? How ? Did you wear red underwear again this year ? ",
+          " Not only that ! ",
+          " Tell me ! Tell me ! What's your secret ? ! ",
+          " OK , OK . I'll whisper it to you , but you have to promise not to tell anyone ! ",
+          " What ? ! You did that ? ? ! ! ! "
+        ],
+        "act": [
+          1,
+          2,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        "emotion": [
+          4,
+          4,
+          6,
+          0,
+          0,
+          0,
+          6
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 88,
+      "row": {
+        "dialog": [
+          "We are going to the concert this evening . Will you join us . ",
+          " I'm very sorry I can't . ",
+          " Why not ? ",
+          " I've been snowed under with since my bosses away on business . "
+        ],
+        "act": [
+          3,
+          4,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 89,
+      "row": {
+        "dialog": [
+          "You'v been work here for nearly a month , how do you feel about the job ? ",
+          " Not bad.Thank you for your help . I am always busy with this job , I feel a bit tired . ",
+          " I had the same feeling when I first came to work here . but after a period of time , I feel better , I am sure you ' ll get used to this busy job . ",
+          " I also feel that work efficiency here is very high . and you have strong working ability and professional skill , it seems that you know all , that's really wonderful ! ",
+          " You know the phrase , the survival the fittest . We have no choices . ",
+          " That's right , I have to work hard . "
+        ],
+        "act": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 90,
+      "row": {
+        "dialog": [
+          "The music is on.May I have the pleasure to dance with you ? ",
+          " Sorry , I'm engaged for the foxtrot.Will the next Walls be all right ? ",
+          " Certainly . "
+        ],
+        "act": [
+          3,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 91,
+      "row": {
+        "dialog": [
+          "Excuse me , is this seat taken ? ",
+          " No , please feel free . ",
+          " Thanks a lot . ",
+          " Do you work in Shanghai ? ",
+          " Yes I do . How about you ? ",
+          " No , I'm a tourist . This place is amazing ! It's much bigger than I imagined , and much more exciting ! There's so much to see here . ",
+          " You can say that again ! It's much more modern than people imagine . Where are you from ? ",
+          " Um , well let's see ... I'm from Kansas originally . A much quieter and more peaceful place than here , that's for sure ! ",
+          " Uh huh ... "
+        ],
+        "act": [
+          2,
+          3,
+          4,
+          2,
+          2,
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 92,
+      "row": {
+        "dialog": [
+          "Look at this headline , Soo Mi . ",
+          " Wow ! So many people in the United States get divorced ! ",
+          " Is it the same in Korea ? ",
+          " I don't think so . In Korea some marriages break up , but most couples stay together . ",
+          " Do people get married young ? ",
+          " Not really . Very few people get married beforethe age of 20 . ",
+          " Hmm . Do women usually work after they get married ? ",
+          " No , a lot of women stay home and take care of their families . But some work . "
+        ],
+        "act": [
+          1,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 93,
+      "row": {
+        "dialog": [
+          "Boy ! What a beauty ! I fall in love with her at the first sight . ",
+          " The beauty under the tree ? ",
+          " Of course.No girl is more charming . ",
+          " She is a young man ! "
+        ],
+        "act": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          4,
+          0,
+          4,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 94,
+      "row": {
+        "dialog": [
+          "Excuse me.Where do I register ? ",
+          " Oh , over there in Pacific Pavilion . ",
+          " Is that the large , white building ? ",
+          " Yeah , that's it . ",
+          " Thanks . "
+        ],
+        "act": [
+          2,
+          3,
+          2,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 95,
+      "row": {
+        "dialog": [
+          "How was your education going on in Australia ? ",
+          " I'm going to graduate this summer . ",
+          " Where are you going to work then , in Australia or back in China ? ",
+          " I'm planning to return to China after graduation . ",
+          " Why are you choosing to leave a foreign country ? Many people are reluctant to leave the superior living environment abroad . ",
+          " Well , I think personal development is much more important than simply having a superior living environment . ",
+          " Yeah , China's developing so fast and development opportunities can be found almost in every corner of the country . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          3,
+          4,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 96,
+      "row": {
+        "dialog": [
+          "Do you have any particular hobbies , Tom ? ",
+          " Oh , yes . I love playing badminton , table tennis and computer games . And playing the games has become my favorite . ",
+          " I hear many teenagers will spend hours and hours sitting at computers . And they don't care about their own health at all . How about you ? ",
+          " I'm no better than them . They say it's mindless to sit in front of a machine all the time , but I think it's stimulating . ",
+          " You won't play online games full of violence , will you ? ",
+          " Once in a while . ",
+          " It's no good . And I think spending several hours each day playing computer games is a waste of time . You might as well do something healthy and meaningful . ",
+          " I hope I can practice self-control again . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 97,
+      "row": {
+        "dialog": [
+          "What ’ s the plot of your new movie ? ",
+          " It ’ s a story about a policemen who is investigating a series of strange murders . I play the part of the detective . He has to catch the killer , but there ’ s very little evidence . It ’ s a psychological th ",
+          " Did you enjoy making the movie ? We heard stories of disagreement with other actors and with the director . ",
+          " I have had disagreement with every director . I ’ Ve worked with . We ’ Ve always disagreed in a friendly way and we have always resolved our differences . It was the same when I made this movie . I don ’ t no ",
+          " Critics are not very happy with the movies that you ’ Ve made recently . Does that bother you ? ",
+          " Not at all . The feedback from audience has been great . I care about what they think more than what the critics think . ",
+          " Did you do you own stunts in the movie ? ",
+          " I wanted to , but my insurance company wouldn ’ t let me . All of my stunts were done by a stuntman . As you know , I used to do my own stunts , but I ’ ll leave that to the experts in future . ",
+          " Thank you very much for doing this interview . ",
+          " My pleasure . Have you seen the movie yet ? ",
+          " Yes . I have . I liked it very much . Like you , I was very impressed with Rachel ’ s performance in the movie . She ’ s going to be a star . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 98,
+      "row": {
+        "dialog": [
+          "Who's that old lady trimming the trees ? ",
+          " She's my grandma . ",
+          " She's looks very healthy.How old is she ? ",
+          " 92 . "
+        ],
+        "act": [
+          2,
+          1,
+          2,
+          1
+        ],
+        "emotion": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    },
+    {
+      "row_idx": 99,
+      "row": {
+        "dialog": [
+          "Mom . My legs are killing me . ",
+          " Hold on . We will be successful right away . "
+        ],
+        "act": [
+          3,
+          4
+        ],
+        "emotion": [
+          0,
+          0
+        ]
+      },
+      "truncated_cells": []
+    }
+  ]
+}
