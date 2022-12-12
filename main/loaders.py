@@ -4,6 +4,8 @@ import logging
 
 from collections import defaultdict
 
+from cltl.dialogue_act_classification.midas_classifier import MidasDialogTagger
+
 class DataLoader:
     def __init__(self, data_dir='./data', out_dir='./processed_data'):
         self.data_dir = data_dir
@@ -46,7 +48,7 @@ class EmoryLoader(DataLoader):
                             speaker = None
                         else:
                             speaker = utterance['speakers'][0]
-                        conv_dict[scene['scene_id']] = {'speaker': speaker, 'text': transcript}
+                        conv_dict[scene['scene_id']] = {'speaker': speaker, 'text': utterance}
                     self.data.append(conv_dict)
 
 
@@ -78,15 +80,19 @@ class ConvAI2Loader(DataLoader):
 
 
 class DailyDialogueLoader(DataLoader):
+    '''Runs through daily_dialog.json to collect all data'''
     def __init__(self):
         super().__init__(data_dir="./data/daily_dialogue", out_dir='./processed_data/daily_dialogue')
         data = self.load_data("daily_dialogue")
+        speech_act_tagger = MidasDialogTagger('midas-da-roberta/classifier.pt')
         for row in data['rows']:
             row_id = row['row_idx']
             conv_dict = defaultdict(list)
             for i, utterance in enumerate(row['row']['dialog']):
                 speaker = "speaker1" if i % 2 == 0 else "speaker2"
+                speech_act = speech_act_tagger.extract_dialogue_act(utterance)
                 conv_dict[row_id].append({'speaker': speaker,
-                                          'text': utterance})
+                                          'text': utterance,
+                                          'speech-act': speech_act[0].value})
             self.data.append(conv_dict)
 
