@@ -1,0 +1,185 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:Instances {
+    leolaniWorld:call a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat152_utterance7_char0-79 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:miserable a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat152_utterance0_char0-55 .
+
+    leolaniWorld:speaker1 a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat152_utterance0_char0-55,
+            leolaniTalk:chat152_utterance7_char0-79 .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance .
+}
+
+leolaniWorld:speaker1_cut_call {
+    leolaniWorld:speaker1 n2mu:cut leolaniWorld:call .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:chat152_utterance0_char0-55 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat152_utterance0_char0-55" ;
+        gaf:containsDenotation leolaniWorld:miserable,
+            leolaniWorld:speaker1 ;
+        gaf:denotes leolaniWorld:speaker1_look_miserable ;
+        grasp:hasAttribution leolaniTalk:speaker1_look_miserable_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-12 18:42:37.125294"^^xml1:string,
+            "2022-12-12 18:42:37.741648"^^xml1:string,
+            "2022-12-12 18:42:38.314327"^^xml1:string,
+            "2022-12-12 18:42:38.891301"^^xml1:string,
+            "2022-12-12 18:42:39.560777"^^xml1:string,
+            "2022-12-12 18:42:40.154383"^^xml1:string,
+            "2022-12-12 18:42:40.727021"^^xml1:string,
+            "2022-12-12 18:42:41.304812"^^xml1:string,
+            "2022-12-12 18:42:42.302393"^^xml1:string ;
+        rdf:value "What's the matter with you then ? You look miserable . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat152_utterance0 .
+
+    leolaniTalk:chat152_utterance7_char0-79 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat152_utterance7_char0-79" ;
+        gaf:containsDenotation leolaniWorld:call,
+            leolaniWorld:speaker1 ;
+        gaf:denotes leolaniWorld:speaker1_cut_call ;
+        grasp:hasAttribution leolaniTalk:speaker1_cut_call_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-12 18:42:41.643975"^^xml1:string,
+            "2022-12-12 18:42:42.633572"^^xml1:string ;
+        rdf:value " Oh I remember , I cut terrible calls , and you didn't say anything about it . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat152_utterance7 .
+
+    leolaniTalk:speaker1_cut_call_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_cut_call_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat152_utterance7_char0-79 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker1_look_miserable_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_look_miserable_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat152_utterance0_char0-55 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_speaker2 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_speaker2" .
+
+    leolaniWorld:speaker1_cut_call a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_cut_call" ;
+        gaf:denotedBy leolaniTalk:chat152_utterance7_char0-79 .
+
+    leolaniWorld:speaker1_look_miserable a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_look_miserable" ;
+        gaf:denotedBy leolaniTalk:chat152_utterance0_char0-55 .
+
+    leolaniWorld:speaker2 owl:sameAs leolaniWorld:speaker2 .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context37 a eps:Context ;
+        rdfs:label "context37" ;
+        n2mu:id "37"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-12 ;
+        sem:hasPlace leolaniContext:unknown37 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat152 .
+
+    leolaniContext:2022-12-12 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-12" ;
+        time:day "12"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown37 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "99"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat152 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat152" ;
+        n2mu:id "152"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat152_utterance0,
+            leolaniTalk:chat152_utterance7 .
+
+    leolaniTalk:chat152_utterance0 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat152_utterance0" ;
+        n2mu:id "0"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat152_utterance7 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat152_utterance7" ;
+        n2mu:id "7"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "speaker2" .
+}
+
+leolaniWorld:leolani_know_speaker2 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:speaker2 .
+}
+
+leolaniWorld:speaker1_look_miserable {
+    leolaniWorld:speaker1 n2mu:look leolaniWorld:miserable .
+}
+
