@@ -11,12 +11,15 @@ from cltl.triple_extraction.spacy_analyzer import spacyAnalyzer
 from cltl.triple_extraction.api import Chat
 from cltl.triple_extraction import logger as chat_logger
 from cltl.triple_extraction.utils.helper_functions import utterance_to_capsules
-from cltl.brain.long_term_memory import LongTermMemory
 
+from cltl.entity_linking.label_linker import LabelBasedLinker
+from cltl.brain.long_term_memory import LongTermMemory
 import cltl.dialogue_act_classification
 
 
 chat_logger.setLevel(logging.ERROR)
+linker = LabelBasedLinker()
+
 
 def load_json(file_name, data_dir='./processed_data/daily_dialogue'):
     file_path = os.path.join(data_dir, file_name + '.json')
@@ -66,8 +69,9 @@ for row in data:
     if not os.path.exists(file_loc):
         os.makedirs(file_loc)  # create directory to store the rdf files if need be
 
+    # BRAIN ERROR:
     # Initialize brain, Chat, and context capsule
-    brain = LongTermMemory(address="http://localhost:7200/repository/test",
+    brain = LongTermMemory(address="http://localhost:7200/repositories/test",
                            log_dir=file_loc,
                            clear_all=False)
     chat = Chat(speakers[-1])
@@ -88,6 +92,7 @@ for row in data:
         # add capsules to list of capsules
         capsules += utterance_to_capsules(chat.last_utterance)
 
-    # add statement capsules to brain
-    for capsule in capsules:
-        brain.capsule_statement(capsule)
+        # capsules = [linker.link(capsule) for capsule in capsules]
+        # add statement capsules to brain
+        for capsule in capsules:
+            brain.capsule_statement(capsule)
