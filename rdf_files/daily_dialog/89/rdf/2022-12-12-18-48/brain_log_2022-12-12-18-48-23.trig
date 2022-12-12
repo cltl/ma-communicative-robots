@@ -1,0 +1,266 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:Instances {
+    leolaniWorld:feeling a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat63_utterance2_char0-149 .
+
+    leolaniWorld:job a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat63_utterance0_char0-74 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:phrase a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat63_utterance4_char0-71 .
+
+    leolaniWorld:speaker1 a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat63_utterance0_char0-74,
+            leolaniTalk:chat63_utterance1_char0-89,
+            leolaniTalk:chat63_utterance4_char0-71 .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat63_utterance2_char0-149 .
+
+    leolaniWorld:tired a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat63_utterance1_char0-89 .
+}
+
+leolaniWorld:speaker2_have_feeling {
+    leolaniWorld:speaker2 n2mu:have leolaniWorld:feeling .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:chat63_utterance0_char0-74 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat63_utterance0_char0-74" ;
+        gaf:containsDenotation leolaniWorld:job,
+            leolaniWorld:speaker1 ;
+        gaf:denotes leolaniWorld:speaker1_feel-about_job ;
+        grasp:hasAttribution leolaniTalk:speaker1_feel-about_job_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-12 18:48:16.315016"^^xml1:string,
+            "2022-12-12 18:48:16.931122"^^xml1:string,
+            "2022-12-12 18:48:17.956591"^^xml1:string,
+            "2022-12-12 18:48:19.436506"^^xml1:string,
+            "2022-12-12 18:48:20.912452"^^xml1:string,
+            "2022-12-12 18:48:22.969738"^^xml1:string ;
+        rdf:value "You'v been work here for nearly a month , how do you feel about the job ? "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat63_utterance0 .
+
+    leolaniTalk:chat63_utterance1_char0-89 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat63_utterance1_char0-89" ;
+        gaf:containsDenotation leolaniWorld:speaker1,
+            leolaniWorld:tired ;
+        gaf:denotes leolaniWorld:speaker1_feel_tired ;
+        grasp:hasAttribution leolaniTalk:speaker1_feel_tired_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-12 18:48:17.281031"^^xml1:string,
+            "2022-12-12 18:48:18.357417"^^xml1:string,
+            "2022-12-12 18:48:19.828793"^^xml1:string,
+            "2022-12-12 18:48:21.307713"^^xml1:string,
+            "2022-12-12 18:48:23.351050"^^xml1:string ;
+        rdf:value " Not bad.Thank you for your help . I am always busy with this job , I feel a bit tired . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat63_utterance1 .
+
+    leolaniTalk:chat63_utterance2_char0-149 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat63_utterance2_char0-149" ;
+        gaf:containsDenotation leolaniWorld:feeling,
+            leolaniWorld:speaker2 ;
+        gaf:denotes leolaniWorld:speaker2_have_feeling ;
+        grasp:hasAttribution leolaniTalk:speaker2_have_feeling_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-12 18:48:18.777611"^^xml1:string,
+            "2022-12-12 18:48:20.302934"^^xml1:string,
+            "2022-12-12 18:48:21.766940"^^xml1:string,
+            "2022-12-12 18:48:23.801097"^^xml1:string ;
+        rdf:value " I had the same feeling when I first came to work here . but after a period of time , I feel better , I am sure you ' ll get used to this busy job . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat63_utterance2 .
+
+    leolaniTalk:chat63_utterance4_char0-71 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat63_utterance4_char0-71" ;
+        gaf:containsDenotation leolaniWorld:phrase,
+            leolaniWorld:speaker1 ;
+        gaf:denotes leolaniWorld:speaker1_know_phrase ;
+        grasp:hasAttribution leolaniTalk:speaker1_know_phrase_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-12 18:48:22.244358"^^xml1:string ;
+        rdf:value " You know the phrase , the survival the fittest . We have no choices . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat63_utterance4 .
+
+    leolaniTalk:speaker1_feel-about_job_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_feel-about_job_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat63_utterance0_char0-74 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker1_feel_tired_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_feel_tired_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat63_utterance1_char0-89 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker1_know_phrase_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_know_phrase_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat63_utterance4_char0-71 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker2_have_feeling_0000 a grasp:Attribution ;
+        rdfs:label "speaker2_have_feeling_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat63_utterance2_char0-149 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:speaker1_feel-about_job {
+    leolaniWorld:speaker1 n2mu:feel-about leolaniWorld:job .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_speaker2 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_speaker2" .
+
+    leolaniWorld:speaker1_feel-about_job a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_feel-about_job" ;
+        gaf:denotedBy leolaniTalk:chat63_utterance0_char0-74 .
+
+    leolaniWorld:speaker1_feel_tired a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_feel_tired" ;
+        gaf:denotedBy leolaniTalk:chat63_utterance1_char0-89 .
+
+    leolaniWorld:speaker1_know_phrase a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_know_phrase" ;
+        gaf:denotedBy leolaniTalk:chat63_utterance4_char0-71 .
+
+    leolaniWorld:speaker2_have_feeling a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker2_have_feeling" ;
+        gaf:denotedBy leolaniTalk:chat63_utterance2_char0-149 .
+
+    leolaniWorld:speaker2 owl:sameAs leolaniWorld:speaker2 .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context89 a eps:Context ;
+        rdfs:label "context89" ;
+        n2mu:id "89"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-12 ;
+        sem:hasPlace leolaniContext:unknown89 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat63 .
+
+    leolaniContext:2022-12-12 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-12" ;
+        time:day "12"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown89 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "150"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat63 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat63" ;
+        n2mu:id "63"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat63_utterance0,
+            leolaniTalk:chat63_utterance1,
+            leolaniTalk:chat63_utterance2,
+            leolaniTalk:chat63_utterance4 .
+
+    leolaniTalk:chat63_utterance0 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat63_utterance0" ;
+        n2mu:id "0"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat63_utterance1 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat63_utterance1" ;
+        n2mu:id "1"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat63_utterance2 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat63_utterance2" ;
+        n2mu:id "2"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat63_utterance4 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat63_utterance4" ;
+        n2mu:id "4"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "speaker2" .
+}
+
+leolaniWorld:leolani_know_speaker2 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:speaker2 .
+}
+
+leolaniWorld:speaker1_feel_tired {
+    leolaniWorld:speaker1 n2mu:feel leolaniWorld:tired .
+}
+
+leolaniWorld:speaker1_know_phrase {
+    leolaniWorld:speaker1 n2mu:know leolaniWorld:phrase .
+}
+
