@@ -1,7 +1,5 @@
-import os
 import json
-import logging
-
+import os
 from collections import defaultdict
 
 from cltl.dialogue_act_classification.midas_classifier import MidasDialogTagger

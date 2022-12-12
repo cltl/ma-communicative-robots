@@ -143,3 +143,7 @@ projects/.DS_Store
 
 # pycharm
 .idea
+.DS_store
+
+# models
+*.pt
