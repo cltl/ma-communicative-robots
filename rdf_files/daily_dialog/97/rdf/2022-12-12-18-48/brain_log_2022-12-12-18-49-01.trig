@@ -1,0 +1,301 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:Instances {
+    leolaniWorld:disagreement a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat41_utterance3_char0-211 .
+
+    leolaniWorld:impressed a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat41_utterance10_char0-143 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:movie a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat41_utterance9_char0-45 .
+
+    leolaniWorld:part a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat41_utterance1_char0-212 .
+
+    leolaniWorld:speaker1 a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat41_utterance1_char0-212,
+            leolaniTalk:chat41_utterance3_char0-211 .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat41_utterance10_char0-143,
+            leolaniTalk:chat41_utterance9_char0-45 .
+
+    leolaniWorld:t a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat41_utterance3_char0-211 .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:chat41_utterance10_char0-143 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat41_utterance10_char0-143" ;
+        gaf:containsDenotation leolaniWorld:impressed,
+            leolaniWorld:speaker2 ;
+        gaf:denotes leolaniWorld:speaker2_be_impressed ;
+        grasp:hasAttribution leolaniTalk:speaker2_be_impressed_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-12 18:49:01.155799"^^xml1:string ;
+        rdf:value " Yes . I have . I liked it very much . Like you , I was very impressed with Rachel ’ s performance in the movie . She ’ s going to be a star . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat41_utterance10 .
+
+    leolaniTalk:chat41_utterance1_char0-212 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat41_utterance1_char0-212" ;
+        gaf:containsDenotation leolaniWorld:part,
+            leolaniWorld:speaker1 ;
+        gaf:denotes leolaniWorld:speaker1_play_part ;
+        grasp:hasAttribution leolaniTalk:speaker1_play_part_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-12 18:48:57.265860"^^xml1:string,
+            "2022-12-12 18:48:57.541004"^^xml1:string,
+            "2022-12-12 18:48:57.807141"^^xml1:string,
+            "2022-12-12 18:48:58.221776"^^xml1:string,
+            "2022-12-12 18:48:58.692036"^^xml1:string,
+            "2022-12-12 18:48:59.095567"^^xml1:string,
+            "2022-12-12 18:48:59.517614"^^xml1:string,
+            "2022-12-12 18:48:59.929838"^^xml1:string,
+            "2022-12-12 18:49:00.337221"^^xml1:string,
+            "2022-12-12 18:49:00.875074"^^xml1:string ;
+        rdf:value " It ’ s a story about a policemen who is investigating a series of strange murders . I play the part of the detective . He has to catch the killer , but there ’ s very little evidence . It ’ s a psychological th "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat41_utterance1 .
+
+    leolaniTalk:chat41_utterance9_char0-45 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat41_utterance9_char0-45" ;
+        gaf:containsDenotation leolaniWorld:movie,
+            leolaniWorld:speaker2 ;
+        gaf:denotes leolaniWorld:speaker2_see_movie ;
+        grasp:hasAttribution leolaniTalk:speaker2_see_movie_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-12 18:49:00.536461"^^xml1:string,
+            "2022-12-12 18:49:01.081745"^^xml1:string ;
+        rdf:value " My pleasure . Have you seen the movie yet ? "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat41_utterance9 .
+
+    leolaniTalk:speaker1_don_t_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_don_t_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat41_utterance3_char0-211 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker1_have_disagreement_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_have_disagreement_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat41_utterance3_char0-211 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker1_play_part_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_play_part_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat41_utterance1_char0-212 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker2_be_impressed_0000 a grasp:Attribution ;
+        rdfs:label "speaker2_be_impressed_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat41_utterance10_char0-143 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker2_see_movie_0000 a grasp:Attribution ;
+        rdfs:label "speaker2_see_movie_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat41_utterance9_char0-45 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:chat41_utterance3_char0-211 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat41_utterance3_char0-211" ;
+        gaf:containsDenotation leolaniWorld:disagreement,
+            leolaniWorld:speaker1,
+            leolaniWorld:t ;
+        gaf:denotes leolaniWorld:speaker1_don_t,
+            leolaniWorld:speaker1_have_disagreement ;
+        grasp:hasAttribution leolaniTalk:speaker1_don_t_0000,
+            leolaniTalk:speaker1_have_disagreement_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-12 18:48:57.873794"^^xml1:string,
+            "2022-12-12 18:48:57.936061"^^xml1:string,
+            "2022-12-12 18:48:58.285338"^^xml1:string,
+            "2022-12-12 18:48:58.349387"^^xml1:string,
+            "2022-12-12 18:48:58.751366"^^xml1:string,
+            "2022-12-12 18:48:58.812707"^^xml1:string,
+            "2022-12-12 18:48:59.162762"^^xml1:string,
+            "2022-12-12 18:48:59.228481"^^xml1:string,
+            "2022-12-12 18:48:59.582319"^^xml1:string,
+            "2022-12-12 18:48:59.647872"^^xml1:string,
+            "2022-12-12 18:48:59.995605"^^xml1:string,
+            "2022-12-12 18:49:00.057654"^^xml1:string,
+            "2022-12-12 18:49:00.403374"^^xml1:string,
+            "2022-12-12 18:49:00.471357"^^xml1:string,
+            "2022-12-12 18:49:00.941244"^^xml1:string,
+            "2022-12-12 18:49:01.010219"^^xml1:string ;
+        rdf:value " I have had disagreement with every director . I ’ Ve worked with . We ’ Ve always disagreed in a friendly way and we have always resolved our differences . It was the same when I made this movie . I don ’ t no "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat41_utterance3 .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:speaker1_have_disagreement {
+    leolaniWorld:speaker1 n2mu:have leolaniWorld:disagreement .
+}
+
+leolaniWorld:speaker1_don_t {
+    leolaniWorld:speaker1 n2mu:don leolaniWorld:t .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_speaker2 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_speaker2" .
+
+    leolaniWorld:speaker1_don_t a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_don_t" ;
+        gaf:denotedBy leolaniTalk:chat41_utterance3_char0-211 .
+
+    leolaniWorld:speaker1_have_disagreement a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_have_disagreement" ;
+        gaf:denotedBy leolaniTalk:chat41_utterance3_char0-211 .
+
+    leolaniWorld:speaker1_play_part a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_play_part" ;
+        gaf:denotedBy leolaniTalk:chat41_utterance1_char0-212 .
+
+    leolaniWorld:speaker2_be_impressed a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker2_be_impressed" ;
+        gaf:denotedBy leolaniTalk:chat41_utterance10_char0-143 .
+
+    leolaniWorld:speaker2_see_movie a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker2_see_movie" ;
+        gaf:denotedBy leolaniTalk:chat41_utterance9_char0-45 .
+
+    leolaniWorld:speaker2 owl:sameAs leolaniWorld:speaker2 .
+}
+
+leolaniWorld:speaker1_play_part {
+    leolaniWorld:speaker1 n2mu:play leolaniWorld:part .
+}
+
+leolaniWorld:speaker2_be_impressed {
+    leolaniWorld:speaker2 n2mu:be leolaniWorld:impressed .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context97 a eps:Context ;
+        rdfs:label "context97" ;
+        n2mu:id "97"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-12 ;
+        sem:hasPlace leolaniContext:unknown97 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat41 .
+
+    leolaniContext:2022-12-12 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-12" ;
+        time:day "12"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown97 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "66"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat41 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat41" ;
+        n2mu:id "41"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat41_utterance1,
+            leolaniTalk:chat41_utterance10,
+            leolaniTalk:chat41_utterance3,
+            leolaniTalk:chat41_utterance9 .
+
+    leolaniTalk:chat41_utterance1 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat41_utterance1" ;
+        n2mu:id "1"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat41_utterance10 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat41_utterance10" ;
+        n2mu:id "10"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat41_utterance3 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat41_utterance3" ;
+        n2mu:id "3"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat41_utterance9 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat41_utterance9" ;
+        n2mu:id "9"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "speaker2" .
+}
+
+leolaniWorld:leolani_know_speaker2 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:speaker2 .
+}
+
+leolaniWorld:speaker2_see_movie {
+    leolaniWorld:speaker2 n2mu:see leolaniWorld:movie .
+}
+
