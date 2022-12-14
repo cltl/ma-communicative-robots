@@ -1,0 +1,138 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniTalk:Interactions {
+    leolaniContext:context92 a eps:Context ;
+        rdfs:label "context92" ;
+        n2mu:id "92"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown92 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat242 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown92 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "113"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat242 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat242" ;
+        n2mu:id "242"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat242_utterance3 .
+
+    leolaniTalk:chat242_utterance3 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat242_utterance3" ;
+        n2mu:id "3"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:speaker1 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "speaker1" .
+}
+
+leolaniWorld:leolani_know_speaker1 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:speaker1 .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:Korea a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat242_utterance3_char0-88 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:marriage a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat242_utterance3_char0-88 .
+
+    leolaniWorld:speaker1 a n2mu:person,
+            gaf:Instance .
+}
+
+leolaniWorld:marriage_break-in_Korea {
+    leolaniWorld:marriage n2mu:break-in leolaniWorld:Korea .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_speaker1 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_speaker1" .
+
+    leolaniWorld:marriage_break-in_Korea a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "marriage_break-in_Korea" ;
+        gaf:denotedBy leolaniTalk:chat242_utterance3_char0-88 .
+
+    leolaniWorld:speaker1 owl:sameAs leolaniWorld:speaker1 .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:chat242_utterance3_char0-88 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat242_utterance3_char0-88" ;
+        gaf:containsDenotation leolaniWorld:Korea,
+            leolaniWorld:marriage ;
+        gaf:denotes leolaniWorld:marriage_break-in_Korea ;
+        grasp:hasAttribution leolaniTalk:marriage_break-in_Korea_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 13:11:43.354802"^^xml1:string,
+            "2022-12-14 13:11:43.881127"^^xml1:string ;
+        rdf:value " I don't think so . In Korea some marriages break up , but most couples stay together . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat242_utterance3 .
+
+    leolaniTalk:marriage_break-in_Korea_0000 a grasp:Attribution ;
+        rdfs:label "marriage_break-in_Korea_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat242_utterance3_char0-88 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+

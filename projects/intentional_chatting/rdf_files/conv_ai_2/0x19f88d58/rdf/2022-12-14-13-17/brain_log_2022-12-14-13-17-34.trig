@@ -1,0 +1,277 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix ns2: <http://cltl.nl/leolani/world/I'> .
+@prefix ns3: <http://cltl.nl/leolani/n2mu/don'> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:participant1_be_old {
+    leolaniWorld:participant1 n2mu:be leolaniWorld:old .
+}
+
+leolaniWorld:participant2_don-t-like_steak {
+    leolaniWorld:participant2 ns3:t-like leolaniWorld:steak .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context0x19f88d58 a eps:Context ;
+        rdfs:label "context0x19f88d58" ;
+        n2mu:id "0x19f88d58"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown0x19f88d58 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat78 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown0x19f88d58 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "207"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat78 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat78" ;
+        n2mu:id "78"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat78_utterance0,
+            leolaniTalk:chat78_utterance2,
+            leolaniTalk:chat78_utterance3,
+            leolaniTalk:chat78_utterance5 .
+
+    leolaniTalk:chat78_utterance0 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat78_utterance0" ;
+        n2mu:id "0"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant2 .
+
+    leolaniTalk:chat78_utterance2 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat78_utterance2" ;
+        n2mu:id "2"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant2 .
+
+    leolaniTalk:chat78_utterance3 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat78_utterance3" ;
+        n2mu:id "3"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant2 .
+
+    leolaniTalk:chat78_utterance5 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat78_utterance5" ;
+        n2mu:id "5"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant2 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:participant2 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "participant2" .
+}
+
+leolaniWorld:Instances {
+    ns2:II a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat78_utterance3_char0-43 .
+
+    ns2:Il a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat78_utterance0_char0-62 .
+
+    leolaniWorld:foot a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat78_utterance3_char0-43 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:mignon a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat78_utterance0_char0-62 .
+
+    leolaniWorld:old a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat78_utterance2_char0-16 .
+
+    leolaniWorld:participant1 a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat78_utterance2_char0-16 .
+
+    leolaniWorld:participant2 a n2mu:person,
+            gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat78_utterance5_char0-21 .
+
+    leolaniWorld:steak a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat78_utterance5_char0-21 .
+}
+
+ns2:Il_have_mignon {
+    ns2:Il n2mu:have leolaniWorld:mignon .
+}
+
+leolaniTalk:Perspectives {
+    <http://cltl.nl/leolani/talk/I'II_put_foot_0000> a grasp:Attribution ;
+        rdfs:label "I'II_put_foot_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat78_utterance3_char0-43 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    <http://cltl.nl/leolani/talk/I'Il_have_mignon_0000> a grasp:Attribution ;
+        rdfs:label "I'Il_have_mignon_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat78_utterance0_char0-62 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:chat78_utterance0_char0-62 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat78_utterance0_char0-62" ;
+        gaf:containsDenotation ns2:Il,
+            leolaniWorld:mignon ;
+        gaf:denotes ns2:Il_have_mignon ;
+        grasp:hasAttribution <http://cltl.nl/leolani/talk/I'Il_have_mignon_0000> ;
+        grasp:wasAttributedTo leolaniWorld:participant2 ;
+        sem:hasBeginTimeStamp "2022-12-14 13:17:29.320146"^^xml1:string,
+            "2022-12-14 13:17:29.737441"^^xml1:string,
+            "2022-12-14 13:17:30.102150"^^xml1:string,
+            "2022-12-14 13:17:30.743094"^^xml1:string,
+            "2022-12-14 13:17:31.528583"^^xml1:string,
+            "2022-12-14 13:17:32.304515"^^xml1:string,
+            "2022-12-14 13:17:33.369062"^^xml1:string,
+            "2022-12-14 13:17:34.419991"^^xml1:string ;
+        rdf:value "I'Il have the filet mignon, and they can start the sunset now."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat78_utterance0 .
+
+    leolaniTalk:chat78_utterance2_char0-16 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat78_utterance2_char0-16" ;
+        gaf:containsDenotation leolaniWorld:old,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_be_old ;
+        grasp:hasAttribution leolaniTalk:participant1_be_old_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant2 ;
+        sem:hasBeginTimeStamp "2022-12-14 13:17:30.244696"^^xml1:string,
+            "2022-12-14 13:17:30.892122"^^xml1:string,
+            "2022-12-14 13:17:31.680044"^^xml1:string,
+            "2022-12-14 13:17:32.451250"^^xml1:string,
+            "2022-12-14 13:17:33.529244"^^xml1:string,
+            "2022-12-14 13:17:34.587918"^^xml1:string ;
+        rdf:value "How old are you?"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat78_utterance2 .
+
+    leolaniTalk:chat78_utterance3_char0-43 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat78_utterance3_char0-43" ;
+        gaf:containsDenotation ns2:II,
+            leolaniWorld:foot ;
+        gaf:denotes ns2:II_put_foot ;
+        grasp:hasAttribution <http://cltl.nl/leolani/talk/I'II_put_foot_0000> ;
+        grasp:wasAttributedTo leolaniWorld:participant2 ;
+        sem:hasBeginTimeStamp "2022-12-14 13:17:31.136589"^^xml1:string,
+            "2022-12-14 13:17:31.905504"^^xml1:string,
+            "2022-12-14 13:17:32.687943"^^xml1:string,
+            "2022-12-14 13:17:33.772297"^^xml1:string,
+            "2022-12-14 13:17:34.838358"^^xml1:string ;
+        rdf:value "Here, I'II put little feet on my hamburger."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat78_utterance3 .
+
+    leolaniTalk:chat78_utterance5_char0-21 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat78_utterance5_char0-21" ;
+        gaf:containsDenotation leolaniWorld:participant2,
+            leolaniWorld:steak ;
+        gaf:denotes leolaniWorld:participant2_don-t-like_steak ;
+        grasp:hasAttribution leolaniTalk:participant2_don-t-like_steak_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant2 ;
+        sem:hasBeginTimeStamp "2022-12-14 13:17:32.854954"^^xml1:string,
+            "2022-12-14 13:17:33.950135"^^xml1:string ;
+        rdf:value "YOU DON'T like STEAK?"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat78_utterance5 .
+
+    leolaniTalk:participant1_be_old_0000 a grasp:Attribution ;
+        rdfs:label "participant1_be_old_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat78_utterance2_char0-16 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant2_don-t-like_steak_0000 a grasp:Attribution ;
+        rdfs:label "participant2_don-t-like_steak_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat78_utterance5_char0-21 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:leolani_know_participant2 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:participant2 .
+}
+
+leolaniWorld:Claims {
+    ns2:II_put_foot a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "I'II_put_foot" ;
+        gaf:denotedBy leolaniTalk:chat78_utterance3_char0-43 .
+
+    ns2:Il_have_mignon a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "I'Il_have_mignon" ;
+        gaf:denotedBy leolaniTalk:chat78_utterance0_char0-62 .
+
+    leolaniWorld:leolani_know_participant2 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_participant2" .
+
+    leolaniWorld:participant1_be_old a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_be_old" ;
+        gaf:denotedBy leolaniTalk:chat78_utterance2_char0-16 .
+
+    leolaniWorld:participant2_don-t-like_steak a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant2_don-t-like_steak" ;
+        gaf:denotedBy leolaniTalk:chat78_utterance5_char0-21 .
+
+    leolaniWorld:participant2 owl:sameAs leolaniWorld:participant2 .
+}
+
+ns2:II_put_foot {
+    ns2:II n2mu:put leolaniWorld:foot .
+}
+

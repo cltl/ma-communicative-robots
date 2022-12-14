@@ -11,9 +11,10 @@ class DataLoader:
         self.out_dir = out_dir
         self.data = []
 
+        self.speech_act_tagger = MidasDialogTagger('midas-da-roberta/classifier.pt')
+
     def load_data(self, file_prefix, file_suffix='.json'):
         file_path = os.path.join(self.data_dir, file_prefix + file_suffix)
-
         assert os.path.exists(file_path), f'File {file_path} does not exist.'
 
         with open(file_path, 'r', encoding='utf8') as f:
@@ -22,7 +23,6 @@ class DataLoader:
 
     def save_to_file(self, file_name):
         file_path = os.path.join(self.out_dir, file_name + '.json')
-
         assert os.path.exists(self.out_dir), f'Directory {self.out_dir} does not exist.'
 
         with open(file_path, 'w', encoding='utf8') as f:
@@ -32,6 +32,8 @@ class DataLoader:
 class EmoryLoader(DataLoader):
     def __init__(self):
         super().__init__(data_dir="data/emory_nlp")
+        self.name = 'emory_nlp'
+
         for i in range(1, 11):
             filename = 'friends_season_0'
             if i == 10:
@@ -54,27 +56,41 @@ class EmoryLoader(DataLoader):
 class CommonsenseLoader(DataLoader):
     def __init__(self):
         super().__init__(data_dir="data/commonsense")
+        self.name = 'commonsense'
+
         for name in ('test', 'train', 'valid'):
             data = self.load_data(name)
             for context_id, context_data in data.items():
                 speaker = context_data['speaker']
                 conv_dict = defaultdict(list)
-                for utterance in context_data['turns']:
-                    conv_dict[context_id].append({'speaker': speaker, 'text': utterance})
+                for i, utterance in enumerate(context_data['turns']):
+                    speech_act = self.speech_act_tagger.extract_dialogue_act(utterance)
+                    conv_dict[context_id].append({'Turn': i,
+                                                  'Speaker': speaker,
+                                                  'Response': utterance,
+                                                  'speech-act': speech_act[0].value,
+                                                  'rdf_file': []})
+
                 self.data.append(conv_dict)
 
 
 class ConvAI2Loader(DataLoader):
     def __init__(self):
         super().__init__(data_dir="data/conv_ai_2")
+        self.name = 'conv_ai_2'
+
         data = self.load_data("conv_ai_2")
         for row in data['rows']:
             row = row['row']
             dialog_id = row['dialog_id']
             conv_dict = defaultdict(list)
-            for utterance in row['dialog']:
-                conv_dict[dialog_id].append({'speaker': utterance['sender'],
-                                             'text': utterance['text']})
+            for i, utterance in enumerate(row['dialog']):
+                speech_act = self.speech_act_tagger.extract_dialogue_act(utterance['text'])
+                conv_dict[dialog_id].append({'Turn': i,
+                                             'Speaker': utterance['sender'],
+                                             'Response': utterance['text'],
+                                             'speech-act': speech_act[0].value,
+                                             'rdf_file': []})
             self.data.append(conv_dict)
 
 
@@ -82,15 +98,16 @@ class DailyDialogueLoader(DataLoader):
     '''Runs through daily_dialog.json to collect all data'''
 
     def __init__(self):
-        super().__init__(data_dir="data/daily_dialogue", out_dir='processed_data/daily_dialogue')
+        super().__init__(data_dir="data/daily_dialogue")
+        self.name = 'daily_dialogue'
+
         data = self.load_data("daily_dialogue")
-        speech_act_tagger = MidasDialogTagger('midas-da-roberta/classifier.pt')
         for row in data['rows']:
             row_id = row['row_idx']
             conv_dict = defaultdict(list)
             for i, utterance in enumerate(row['row']['dialog']):
                 speaker = "speaker1" if i % 2 == 0 else "speaker2"
-                speech_act = speech_act_tagger.extract_dialogue_act(utterance)
+                speech_act = self.speech_act_tagger.extract_dialogue_act(utterance)
                 conv_dict[row_id].append({'Turn': i,
                                           'Speaker': speaker,
                                           'Response': utterance,

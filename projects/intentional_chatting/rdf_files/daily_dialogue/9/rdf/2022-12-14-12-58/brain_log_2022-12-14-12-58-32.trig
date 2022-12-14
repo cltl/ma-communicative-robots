@@ -1,0 +1,185 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniTalk:Interactions {
+    leolaniContext:context9 a eps:Context ;
+        rdfs:label "context9" ;
+        n2mu:id "9"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown9 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat119 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown9 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "232"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat119 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat119" ;
+        n2mu:id "119"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat119_utterance1,
+            leolaniTalk:chat119_utterance2 .
+
+    leolaniTalk:chat119_utterance1 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat119_utterance1" ;
+        n2mu:id "1"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniTalk:chat119_utterance2 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat119_utterance2" ;
+        n2mu:id "2"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:speaker1 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "speaker1" .
+}
+
+leolaniWorld:kid_be_genius {
+    leolaniWorld:kid n2mu:be leolaniWorld:genius .
+}
+
+leolaniWorld:leolani_know_speaker1 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:speaker1 .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:deadline a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat119_utterance2_char0-80 .
+
+    leolaniWorld:genius a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat119_utterance1_char0-83 .
+
+    leolaniWorld:kid a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat119_utterance1_char0-83 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:speaker1 a n2mu:person,
+            gaf:Instance .
+
+    leolaniWorld:speaker2 a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat119_utterance2_char0-80 .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:kid_be_genius a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "kid_be_genius" ;
+        gaf:denotedBy leolaniTalk:chat119_utterance1_char0-83 .
+
+    leolaniWorld:leolani_know_speaker1 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_speaker1" .
+
+    leolaniWorld:speaker2_make_deadline a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker2_make_deadline" ;
+        gaf:denotedBy leolaniTalk:chat119_utterance2_char0-80 .
+
+    leolaniWorld:speaker1 owl:sameAs leolaniWorld:speaker1 .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:chat119_utterance1_char0-83 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat119_utterance1_char0-83" ;
+        gaf:containsDenotation leolaniWorld:genius,
+            leolaniWorld:kid ;
+        gaf:denotes leolaniWorld:kid_be_genius ;
+        grasp:hasAttribution leolaniTalk:kid_be_genius_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 12:58:30.142858"^^xml1:string,
+            "2022-12-14 12:58:30.523773"^^xml1:string,
+            "2022-12-14 12:58:31.113297"^^xml1:string,
+            "2022-12-14 12:58:31.759596"^^xml1:string,
+            "2022-12-14 12:58:32.349599"^^xml1:string ;
+        rdf:value " I hate to admit it , but they're good . And fast . The Filipino kid is a genius . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat119_utterance1 .
+
+    leolaniTalk:chat119_utterance2_char0-80 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat119_utterance2_char0-80" ;
+        gaf:containsDenotation leolaniWorld:deadline,
+            leolaniWorld:speaker2 ;
+        gaf:denotes leolaniWorld:speaker2_make_deadline ;
+        grasp:hasAttribution leolaniTalk:speaker2_make_deadline_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 12:58:30.669761"^^xml1:string,
+            "2022-12-14 12:58:31.261970"^^xml1:string,
+            "2022-12-14 12:58:31.923905"^^xml1:string,
+            "2022-12-14 12:58:32.495987"^^xml1:string ;
+        rdf:value " So you'll make the Stars.com deadline , and have us up and running next week ? "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat119_utterance2 .
+
+    leolaniTalk:kid_be_genius_0000 a grasp:Attribution ;
+        rdfs:label "kid_be_genius_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat119_utterance1_char0-83 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker2_make_deadline_0000 a grasp:Attribution ;
+        rdfs:label "speaker2_make_deadline_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat119_utterance2_char0-80 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:speaker2_make_deadline {
+    leolaniWorld:speaker2 n2mu:make leolaniWorld:deadline .
+}
+

@@ -1,0 +1,4140 @@
+[
+    {
+        "0xab38710": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "I love iphone! i just bought new iphone!",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Thats good for you, i'm not very into new tech",
+                "speech-act": "comment",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "I am a college student and i am a college student",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "I am go to gym and live on donations",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "I am a vegan and i am in the midwest",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "So vegan... i have dogs maybe i should told then that they may eat cheap salads insted of meat",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "I would not mind having them in the office that would be hard for me",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "Dogs or vegan in office?",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "I am a vegetarian so i am vegan",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant1",
+                "Response": "Strange answer",
+                "speech-act": "comment",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant2",
+                "Response": "I guess i just do not know what to ps4 experience with.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x223f6d5e": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "/test",
+                "speech-act": "abandon",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x6789b32a": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hey",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "What do you do?",
+                "speech-act": "complaint",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x7304a92a": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "I love painting, i love to paint",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x7470f02a": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "abandon",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x3e1adb20": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x6c9f209d": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x4ae2464d": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "\"Municipal Junior High School Entrance Ceremony\" The next year, I left home to live in the dorms at the junior high school.",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x34d39a76": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "opening",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x3bdfe117": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hi",
+                "speech-act": "abandon",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x54d5ff70": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "That sounds nice. i love green.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0xf419ba1": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "\u041d\u0435llo",
+                "speech-act": "nonsense",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x545060bf": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant2",
+                "Response": "Hello, how are you?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x24cfaffa": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "what is your name ?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x3a11b64b": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "hello",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "anybody there",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x30b65f4f": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "On The Ball, City, the oldest football song in the world.",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x7fcf7907": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "What\u2019s up?",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Thank you how are you",
+                "speech-act": "thanking",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "/test",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "/Test",
+                "speech-act": "command",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "speech-act": "command",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "/test",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x7d2917fe": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "hey",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "i'm from california. i'm a recording enineer and own my own studio. where are you from?",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x7ebe8afe": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "Fine. Until I told him I sold his condo.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hi",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "Hello. Uh, I'm Susan's mother.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "Where is susan?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "Um, I  I have to talk to Edie.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "Where do you live?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "I I'm building a new house.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "I live in colorado.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "Oh, I... I go to New York.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant1",
+                "Response": "I like rock climbing.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant2",
+                "Response": "Uh, II was thinking more along the lines of... Camping trip.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant1",
+                "Response": "What do you like to do.",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant2",
+                "Response": "In Cyprus? I'm on a log, and you're in Cyprus?",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 13,
+                "Speaker": "participant1",
+                "Response": "Lol",
+                "speech-act": "back-channeling",
+                "rdf_file": []
+            },
+            {
+                "Turn": 14,
+                "Speaker": "participant2",
+                "Response": "Oh, I... I have a place in Manhattan.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 15,
+                "Speaker": "participant1",
+                "Response": "Random answers.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 16,
+                "Speaker": "participant2",
+                "Response": "WHAT ARE YOU, A native OR SOMETH ing?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x7d519415": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "I like action movies, movies, movies, movies, movies,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "My brother likes them too.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "Do you have any siblings?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "Yeah, and you?",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "I am good, just listening to some music",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "What kind of music?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "Country music, country, country, jazz",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "Do you have dogs?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "Yes, i have two dogs, and a cat.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant1",
+                "Response": "Cool, I love dogs. But i have siblings instead...",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant2",
+                "Response": "I have two brothers and a sister, and a sister.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant1",
+                "Response": "Where do you live?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant2",
+                "Response": "I live in the midwest",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 13,
+                "Speaker": "participant1",
+                "Response": "I live in alabama",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 14,
+                "Speaker": "participant2",
+                "Response": "I live in alabama, where are you from?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x1d81519": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "I work from home",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "what do you want me to say?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "hey",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "come on work",
+                "speech-act": "command",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant1",
+                "Response": "yandex sucks",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "i don't work from home",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant1",
+                "Response": "i don't like to spend my money on cars",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "i've never had a steady relationfish",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant1",
+                "Response": "i watch too much tv from other peoples windows",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant1",
+                "Response": "i don't go to the gym most days",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x31b35caa": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "hello how are you",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "are you ok?",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "i love animals , i have a dog , and a dog .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "i have a dog too",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "i see , i am a black belt , so i can not say that , but i am not sure .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "i enjoy american sports",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "that is cool , i am a dancer , and i am a teacher , and you ?",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant1",
+                "Response": "i am working in a company for 15 years",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant2",
+                "Response": "i am a black belt , so i am a fan of it , but i am not sure .",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x823c044": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hi",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "i like coffee , but i like coffee too",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "I like drinking tea while reading some books",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "i like red , reminds me of summer time , which is why i hate it .",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "So you like it or hate it?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "i like mountain climbing , but i also like to bike .",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "Where do you live? Close to mountains?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "i like to draw , and draw , and draw , and draw , and draw , and paint , and draw , and draw , and paint .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant1",
+                "Response": "I like movies",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant2",
+                "Response": "i like to draw , but i also like to draw , and draw , and draw , and paint , and draw , and paint .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant1",
+                "Response": "What is your job",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant2",
+                "Response": "i like mountain climbing , but i also like to bike .",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x5da6ac8f": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "i am sure you are a very unique person .",
+                "speech-act": "comment",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0xc01a9f1": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hello there!",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hi, is anyone on ohter end?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x70b09fa4": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hello!",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x3ffb0510": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "i am not sure what that is . i am a judge .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Is it interesting?",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "i think it is . i am not sure if i had to do that .",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "Do what?",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "i am not sure . i am a very experienced person .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "What are you doing now?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "i am not sure . i am a little crazy person .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "Me too. I am moving my cup of tea with my mind. Doctors say i am crazy and imagine things",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "that sounds like a plan . do you have any hobbies ?",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant1",
+                "Response": "Not really... i spend a lot of time at the hospital. And you?",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant2",
+                "Response": "i am not sure what that means . i am more of a homebody .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant1",
+                "Response": "Do you like music?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant2",
+                "Response": "i like to play the piano and have a good time",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 13,
+                "Speaker": "participant1",
+                "Response": "Cool. I should play piano too",
+                "speech-act": "appreciation",
+                "rdf_file": []
+            },
+            {
+                "Turn": 14,
+                "Speaker": "participant2",
+                "Response": "i can not say that , i have tons of friends that could be popular",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x752c1ef": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "(MUSIC SPEEDS UP) What? What is that? (EXCLAIMS)",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "metallica",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "MUSIC: \"Do You Hear The People Sing\" from Les Miserables.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "i prefer metal music",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "YOUNG AMERICANS: (SINGING) Every time I sing my song",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "what is your job",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "MUSIC PLAYS What is that sound?",
+                "speech-act": "nonsense",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "are you a musician",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "'The Jazz Singer,' that's what.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant1",
+                "Response": "how old are you?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant2",
+                "Response": "'The Jazz Singer,' that's what.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant1",
+                "Response": "how old are you?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant2",
+                "Response": "(In Swedish) We have a visitor... Oskar.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 13,
+                "Speaker": "participant1",
+                "Response": "are you a musician?",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            },
+            {
+                "Turn": 14,
+                "Speaker": "participant2",
+                "Response": "Cabaret Voltaire, those people.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x19f88d58": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "I'Il have the filet mignon, and they can start the sunset now.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Haha nice",
+                "speech-act": "back-channeling",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "How old are you?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant2",
+                "Response": "Here, I'II put little feet on my hamburger.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant1",
+                "Response": "Not the hamburger!",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant2",
+                "Response": "YOU DON'T like STEAK?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant1",
+                "Response": "Not really...",
+                "speech-act": "neg_answer",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant2",
+                "Response": "On Wednesday, I have schnitzel, peas and carrots.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant1",
+                "Response": "Are you a cook or what?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant2",
+                "Response": "Unusual. But I think I like it. It's very healthy.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant1",
+                "Response": "Can we talk about anything else? Food is boooring",
+                "speech-act": "command",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant2",
+                "Response": "At Kang Min Ho's house, there are only mussels, so I used them to make seaweed soup.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant1",
+                "Response": "Horses. I like horses. And you?",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 13,
+                "Speaker": "participant2",
+                "Response": "See, I have to plant my tree.",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 14,
+                "Speaker": "participant1",
+                "Response": "What tree?",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 15,
+                "Speaker": "participant2",
+                "Response": "\"What To Do If You Meet a Mountain Lion\"?",
+                "speech-act": "nonsense",
+                "rdf_file": []
+            },
+            {
+                "Turn": 16,
+                "Speaker": "participant1",
+                "Response": "Cook it",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 17,
+                "Speaker": "participant2",
+                "Response": "Boel, Seeds and Corn in Hamelen.",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0xbaeede1": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "hi",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant2",
+                "Response": "hi !",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "how old are you?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "are you ok?",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "i am good . i am just getting ready to go to the gym .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "are you a sportsman?",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant1",
+                "Response": "i dont like sports",
+                "speech-act": "neg_answer",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant2",
+                "Response": "i love to eat fish , i am not a fan of fish though .",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant1",
+                "Response": "i like riding car",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant2",
+                "Response": "i like to ride horses",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant1",
+                "Response": "do you have one?",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant1",
+                "Response": "a horse?",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant1",
+                "Response": "i have a rolls royce",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 13,
+                "Speaker": "participant2",
+                "Response": "i have never tried a good one , but i have to drive a lot .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 14,
+                "Speaker": "participant1",
+                "Response": "how old are you?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 15,
+                "Speaker": "participant1",
+                "Response": "what is your job?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 16,
+                "Speaker": "participant1",
+                "Response": "what do you do for living?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x3b36567d": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "The Ferrari.  For a week.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "hey",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "The Ferrari.  For a week.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "what?",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "My God, I can't move my wheels.",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "why? are you ok",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "Ok, Er Fu, start the car!",
+                "speech-act": "dev_command",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "who is er fu",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "Kong Yuk Ming Do you know the man standing there?",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant1",
+                "Response": "who's kong yuk ming",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant2",
+                "Response": "Kong Yuk Ming Do you know the man standing there?",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant1",
+                "Response": "no",
+                "speech-act": "neg_answer",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant2",
+                "Response": "Kong Yuen Sang, you bastard",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 13,
+                "Speaker": "participant1",
+                "Response": "what is going on",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 14,
+                "Speaker": "participant2",
+                "Response": "Our Hang Bok's mom, Uhm Ji Sook.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 15,
+                "Speaker": "participant1",
+                "Response": "are you korean?",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            },
+            {
+                "Turn": 16,
+                "Speaker": "participant2",
+                "Response": "Shin Eun Ah, it's not you.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 17,
+                "Speaker": "participant1",
+                "Response": "what are you talking about",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 18,
+                "Speaker": "participant2",
+                "Response": "Are Gu Ae Jung and you filming everything about your celebrity life?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 19,
+                "Speaker": "participant1",
+                "Response": "no",
+                "speech-act": "neg_answer",
+                "rdf_file": []
+            },
+            {
+                "Turn": 20,
+                "Speaker": "participant2",
+                "Response": "Ho Chi Minh is a son of a bitch!",
+                "speech-act": "neg_answer",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x7cf48d2b": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "hey",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "hello",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "?",
+                "speech-act": "abandon",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x33813eed": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "i am a little tired from work",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "hey there",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "talk to me, i need some rest",
+                "speech-act": "command",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "that's cool , i am a vet , i have a son , and also son , and son , and son , and son .",
+                "speech-act": "comment",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "oh, i have no kids",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "i like to sing , and listen to folk music .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "i like playing ping pong",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "i am a bit of a piano player , but i am not much of a musician , but i do .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant1",
+                "Response": "do you like sports",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant2",
+                "Response": "hey there",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant1",
+                "Response": "are you at work now",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant2",
+                "Response": "talk to me, i need some rest",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0xdf5c11c": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant2",
+                "Response": "Hello, how are you?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "Pretty fine, and you?",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant2",
+                "Response": "Good, just finished watching some tv",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant1",
+                "Response": "Funny, because i too just finished doing same",
+                "speech-act": "comment",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant2",
+                "Response": "What is your favorite color?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant1",
+                "Response": "I think it's black, you know, like black in olives, and yours favourite?",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant2",
+                "Response": "I love the band rose and the other one i love it.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant1",
+                "Response": "Oh i like thr band called Who, so what music do you generally listen?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant2",
+                "Response": "I like music, mostly pop music.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant1",
+                "Response": "Good, and where do you work?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant2",
+                "Response": "I work at a local shelter",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant1",
+                "Response": "Must be very intresting job, i work at local supermarket ani i hate it",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 13,
+                "Speaker": "participant2",
+                "Response": "I work at a grocery store",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 14,
+                "Speaker": "participant1",
+                "Response": "You contradicted yourself just now",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 15,
+                "Speaker": "participant2",
+                "Response": "I am good, just got done reading",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 16,
+                "Speaker": "participant1",
+                "Response": "Ypu mean my message?",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            },
+            {
+                "Turn": 17,
+                "Speaker": "participant2",
+                "Response": "I am not sure what you mean",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 18,
+                "Speaker": "participant1",
+                "Response": "Okay, i should go, bye",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 19,
+                "Speaker": "participant2",
+                "Response": "I will have to go to the hospital",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x2a1cd1cf": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "my body is very attractive and i love to compete .",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Do you like parties?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "I'm a party animal myself.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant2",
+                "Response": "i will be using that shirt .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant1",
+                "Response": "Do you own any pets? I own a cat and a dog.",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant2",
+                "Response": "i have no idea . i am more of a cat person .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant1",
+                "Response": "Why don't you like dogs?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant2",
+                "Response": "i like dogs , but i have not had one yet .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant1",
+                "Response": "Have you ever had a cat?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant2",
+                "Response": "i have no idea . i am more of a cat person .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant1",
+                "Response": "Do you have any fear? I am deathly afraid of heights.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant2",
+                "Response": "i can not say that . i am afraid of getting slim .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant1",
+                "Response": "Are you afraid of slim persons?",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 13,
+                "Speaker": "participant2",
+                "Response": "well i can tell you i am going to do that",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x1d05a554": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hi there!",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Do you have short or long hair?",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x5f2c747a": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Ok",
+                "speech-act": "back-channeling",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hi",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "abandon",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x609c3daf": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "Hello?",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "i have a friend , and i am a fan of reading , and i love to watch movies",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "Intresting, i have a rather big family and i love dogs",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "that is cool , i am in the basement , and i am a teacher , so i don't have time for friends",
+                "speech-act": "comment",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "That rather sad",
+                "speech-act": "comment",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "i am a fan of meat , but i like to eat healthy , and eat more of them .",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant1",
+                "Response": "I am not a big fan of this 'healthy' food, i am rather fond of tacos though",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant2",
+                "Response": "i am a fan of football , but i am not sure if i could say that .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant1",
+                "Response": "My passion is dogs",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant2",
+                "Response": "that is cool , i am in the basement , and i am a housewife , and i am a teacher , you ?",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 13,
+                "Speaker": "participant1",
+                "Response": "I am living in Alabama, have a one big brother and three sisters",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 14,
+                "Speaker": "participant2",
+                "Response": "i am a fan of meat , but i am not sure .",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 15,
+                "Speaker": "participant1",
+                "Response": "Okey, this is nice but i should go, bye",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x73853b5b": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hello! How are you?",
+                "speech-act": "command",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x20ca747": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hi",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "abandon",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0xc7fac2d": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "spiderman is my hero",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "are you listening?",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x71050acb": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hello there!",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hi! Anyone there?",
+                "speech-act": "abandon",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x24dbb796": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hey",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "Are you there?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x5ff45077": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "How\u2019s it going?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "It's fine",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x572b5bdb": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "The Crispy Brinkley Burger, the Richard PerSimmons Burger, the Greed is Gouda Burger... Easy, easy, whew.",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x5e085bb2": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "hello",
+                "speech-act": "abandon",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x7d69bc04": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Are you there?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "/test",
+                "speech-act": "abandon",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x7495c8ab": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Do you like to be indoors?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Do you love games?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "What do you do for living?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "How old are you?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant1",
+                "Response": "Hey",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "Answer",
+                "speech-act": "command",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant1",
+                "Response": "Please",
+                "speech-act": "command",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "Bye",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0xd3ba91d": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "i am not a very good person . i work as a farmer",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x41a2dc98": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "I play pong with my pong on the pong with my pong.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hi, is there anybody, who speaks spanish? I like leartning and studying languages. \u0130 am a german teacher and sudying now spanish.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "I wanna talk in spanish with u, to make my language skills better.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant2",
+                "Response": "I speak english and spanish",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant1",
+                "Response": "thats great, where do you learn spanish?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant2",
+                "Response": "I teach spanish, spanish.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant1",
+                "Response": "which grade do u teaching?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant2",
+                "Response": "I teach math, it is a teaching teaching teaching teaching teaching teaching teaching teaching level",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant1",
+                "Response": "is it difficult ?",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant2",
+                "Response": "It is. it is hard to do anything.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant1",
+                "Response": "and your students, do u like them?",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant2",
+                "Response": "I do not have any kids, but i do like to be with them",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant1",
+                "Response": "me too, i havent any kids too, but its agreat feeling to teaching to kids, i have a lot of good time and fun",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 13,
+                "Speaker": "participant2",
+                "Response": "I teach kindergarten. i am a teacher.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 14,
+                "Speaker": "participant1",
+                "Response": "i teach in primary school",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 15,
+                "Speaker": "participant2",
+                "Response": "I teach elementary school in elementary school",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 16,
+                "Speaker": "participant1",
+                "Response": "y\u0131our kids are jounger",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 17,
+                "Speaker": "participant1",
+                "Response": "great, now i am understand",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 18,
+                "Speaker": "participant2",
+                "Response": "What do you do for fun?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 19,
+                "Speaker": "participant1",
+                "Response": "and do u wanna learning other languages?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 20,
+                "Speaker": "participant2",
+                "Response": "I do not know about english.",
+                "speech-act": "neg_answer",
+                "rdf_file": []
+            },
+            {
+                "Turn": 21,
+                "Speaker": "participant1",
+                "Response": "i like to playing gitar?",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 22,
+                "Speaker": "participant2",
+                "Response": "I do not play anything but i do like playing in a band.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 23,
+                "Speaker": "participant1",
+                "Response": "writing some little songs, like a musician",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 24,
+                "Speaker": "participant2",
+                "Response": "I write songs for a band called the radio.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 25,
+                "Speaker": "participant1",
+                "Response": "thats great, i liked it",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 26,
+                "Speaker": "participant2",
+                "Response": "I do not like it, i do not like it",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 27,
+                "Speaker": "participant1",
+                "Response": "where do u come from?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 28,
+                "Speaker": "participant2",
+                "Response": "I live in california near the beach",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 29,
+                "Speaker": "participant1",
+                "Response": "and do u like swimming",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            },
+            {
+                "Turn": 30,
+                "Speaker": "participant2",
+                "Response": "I do not like swimming, but i do like to swim",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 31,
+                "Speaker": "participant1",
+                "Response": "and what about the beach, sand?",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            },
+            {
+                "Turn": 32,
+                "Speaker": "participant2",
+                "Response": "I like the beach, near the beach.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x1b2b7b08": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "I am in high school too.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hello! How are you?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "I am doing great, how are you?",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "And I`m fine, thank you! A have a lunch time and I`m free now for conversation. Do you have free time to talk with me?",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "I do not have time for that, but i do like to eat.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "I like to eat. But I have no money, my wife has spent it away.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "I am sorry to hear that.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "Yeah, it is a problem. But now I work as a car salesman and I hope my balance will be better!",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "I will have to buy a car",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant1",
+                "Response": "Wonderful! I have one for you! Pretty color for the best price! When could you take a look?",
+                "speech-act": "comment",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant2",
+                "Response": "I would love to see it.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant1",
+                "Response": "Maybe tomorrow morning at 9 a.m.?",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant2",
+                "Response": "I am going to go to work soon to be a week.",
+                "speech-act": "command",
+                "rdf_file": []
+            },
+            {
+                "Turn": 13,
+                "Speaker": "participant1",
+                "Response": "Where do you work?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 14,
+                "Speaker": "participant2",
+                "Response": "I work at a local shelter",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 15,
+                "Speaker": "participant1",
+                "Response": "Are ypu married?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 16,
+                "Speaker": "participant2",
+                "Response": "Yes, i'm married and have been married",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x126990d8": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hi! How are you?",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "I am going to build a new house. Do you need it?",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "I could do it for you for free! I enjoy buildong.",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "Where are you from?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant1",
+                "Response": "I`d like to show you my cat. Do you have one?",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x5ac52404": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "hello",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "do you like dogs? because i have a german shepherd dog",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "my adopted husband brought it",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "but i enjoy coloring books with pushkin's lyrics",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant1",
+                "Response": "that's all because of me living in a rural farming community for months",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x9475bff": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hi",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Why are you moving into an apartment?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x2dbe5e7d": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "How are you today?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "Can you tell me who you are?",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "What are you doing?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x5417dacf": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "Yo!",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "whats up!",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "/test",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x777863f2": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "What\u2019s up?",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "I am at home today. And you?",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "Hello!",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "/test",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x4b2ac7": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "Well hello there!",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "hey there i recently was fired and i love playing softball",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "Well hello there!",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "/test",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x77481ca3": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hi",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Have you been played football?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "What is your football team?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "Are you here?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant1",
+                "Response": "Really do you like star wars",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "Me to i love it",
+                "speech-act": "opinion",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x7ccb75f7": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "How\u2019s it going?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "I'm fine",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x4c45b9d5": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "i do not think you are a painter . i am not sure if i could do that",
+                "speech-act": "opinion",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x157e76ae": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "hello there",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "how's it going?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "tell me something about yourself, will you?",
+                "speech-act": "command",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x1cd825ab": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Anybody here?",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Do you have a dog?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x4efe63d9": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "ww",
+                "speech-act": "hold",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0xfc2a280": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "hello young man. or girl?",
+                "speech-act": "open_question_opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "is there anybody out there?",
+                "speech-act": "yes_no_question",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x4f037002": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "hi!",
+                "speech-act": "opening",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x756a35d4": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "hi!",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x5fff309": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "i am a little tired from work",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hi!",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x278463e5": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "Traceback (most recent call last):",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hi!",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "interactive(opt)",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "What",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "world.parley()",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "What",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "self.update_counters()",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "And?",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "if self.max_exs > 0 or self.num_examples():",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant1",
+                "Response": "And?",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant2",
+                "Response": "return self.agents[0].num_examples()",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant1",
+                "Response": "Ok",
+                "speech-act": "back-channeling",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 13,
+                "Speaker": "participant1",
+                "Response": "Ziga!",
+                "speech-act": "dev_command",
+                "rdf_file": []
+            },
+            {
+                "Turn": 14,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x1239d298": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "i am a little tired from work",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Me too",
+                "speech-act": "opinion",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x632364d5": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "i am a little tired from work",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Me also",
+                "speech-act": "abandon",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x7a29e345": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hi!",
+                "speech-act": "abandon",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x10f6bccd": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "hello",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "i like to drink , but i don't drink",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "cool",
+                "speech-act": "appreciation",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "i have a friend , and i am a fan of football",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "wowowowo!",
+                "speech-act": "back-channeling",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "i am a fan of meat , but i like to eat healthy , and eat more of them .",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "yeah!",
+                "speech-act": "back-channeling",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "i am a fan of football , but i like to watch movies , and you ?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant1",
+                "Response": "Me too, I like watch movies",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant2",
+                "Response": "i am a fan of duty , but i am not sure if i ever seen the wrong tv series , you ?",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant1",
+                "Response": "I like harcore fucking with fat nigga chicks!",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant2",
+                "Response": "i am a fan of meat , but i like to eat healthy , and eat more of them .",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 13,
+                "Speaker": "participant1",
+                "Response": "wow!",
+                "speech-act": "back-channeling",
+                "rdf_file": []
+            },
+            {
+                "Turn": 14,
+                "Speaker": "participant2",
+                "Response": "i am a fan of football , but i am not sure if i ever seen it .",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x20b7daf4": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "i am a little tired from work",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Me too!",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "i am afraid of heights , but i am scared of heights",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "Oke",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "i like grey , reminds me of summer time , which is why i am not wearing it .",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "Ziga!",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "that's cool , i am a pilot , so i don't have much time for hobbies , either .",
+                "speech-act": "comment",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x7aa42158": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hi!",
+                "speech-act": "opening",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x78e815": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hi",
+                "speech-act": "abandon",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0xd08f32d": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hi!",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0xfc601e0": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "i am a little tired from work",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hi",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x57a09921": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Wow",
+                "speech-act": "back-channeling",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x491fc1a1": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "i am a little tired from work",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Me too",
+                "speech-act": "opinion",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x31d72307": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "f",
+                "speech-act": "abandon",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x38ab014e": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "i love animals , i have a dog , and a dog .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "I love too",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "that is cool , i am a teacher , and i am a teacher , and you ?",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "I am a bad ass!",
+                "speech-act": "complaint",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x54acb621": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "Traceback (most recent call last):",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "hello!",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "interactive(opt)",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "wow!",
+                "speech-act": "back-channeling",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "world.parley()",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x40911a30": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "Traceback (most recent call last):",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "hi",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "interactive(opt)",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "hi",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "world.parley()",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "hi",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "self.update_counters()",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "hi",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "if self.max_exs > 0 or self.num_examples():",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 9,
+                "Speaker": "participant1",
+                "Response": "hi",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 10,
+                "Speaker": "participant2",
+                "Response": "return self.agents[0].num_examples()",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 11,
+                "Speaker": "participant1",
+                "Response": "hi",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 12,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 13,
+                "Speaker": "participant1",
+                "Response": "hi",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 14,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x73dbd207": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "i am a little tired from work",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "me too",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant1",
+                "Response": "hello",
+                "speech-act": "abandon",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x5c922240": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x1e603253": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "i am a little tired from work",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "hi!",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "hello",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "i play video games , and play video games , and play video games .",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "me too",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "that is cool , i am a teacher , and i am a teacher , and you ?",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "me too",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "i am a teacher , and i am a teacher , and you ?",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x28493f2c": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "hi!",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "hello!",
+                "speech-act": "closing",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "i am sorry , i am sorry , i am sorry , i am sorry , you are still young , you are not",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "you are hot!",
+                "speech-act": "comment",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "i love animals , they are so adorable , and i am a cat person , and you ?",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 7,
+                "Speaker": "participant1",
+                "Response": "Bitch!",
+                "speech-act": "complaint",
+                "rdf_file": []
+            },
+            {
+                "Turn": 8,
+                "Speaker": "participant2",
+                "Response": "that's cool , i am a teacher , and i am a teacher , and you ?",
+                "speech-act": "statement",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x586d8ae8": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "hello",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "that is cool , i am a pro football player , and i love baseball , you ?",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 3,
+                "Speaker": "participant1",
+                "Response": "hi",
+                "speech-act": "opening",
+                "rdf_file": []
+            },
+            {
+                "Turn": 4,
+                "Speaker": "participant2",
+                "Response": "that's cool , i am a woman , and i have 5 sons , and you ?",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 5,
+                "Speaker": "participant1",
+                "Response": "rbc",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 6,
+                "Speaker": "participant2",
+                "Response": "that is cool , i am a pro football player , and i love baseball , you ?",
+                "speech-act": "opinion",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x4a5b9c48": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hi",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x689d390c": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "i am a little tired from work",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Ok",
+                "speech-act": "back-channeling",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "/start",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x3101df38": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "hello",
+                "speech-act": "abandon",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0xa9c92f9": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "hello",
+                "speech-act": "abandon",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x864bfdc": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hey",
+                "speech-act": "abandon",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant2",
+                "Response": "That is great. i want to be an accountant",
+                "speech-act": "opinion",
+                "rdf_file": []
+            },
+            {
+                "Turn": 2,
+                "Speaker": "participant2",
+                "Response": "Hello, how are you?",
+                "speech-act": "open_question_factual",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x594307fb": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x7524a740": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Ok",
+                "speech-act": "back-channeling",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x27031796": [
+            {
+                "Turn": 0,
+                "Speaker": "participant2",
+                "Response": "I am in the wrestling team",
+                "speech-act": "statement",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "So what ?",
+                "speech-act": "complaint",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x5439f59": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Ok",
+                "speech-act": "back-channeling",
+                "rdf_file": []
+            },
+            {
+                "Turn": 1,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x1c120c11": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    },
+    {
+        "0x4883ef38": [
+            {
+                "Turn": 0,
+                "Speaker": "participant1",
+                "Response": "Hello",
+                "speech-act": "closing",
+                "rdf_file": []
+            }
+        ]
+    }
+]

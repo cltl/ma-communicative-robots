@@ -1,0 +1,331 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniTalk:Interactions {
+    leolaniContext:context0x41a2dc98 a eps:Context ;
+        rdfs:label "context0x41a2dc98" ;
+        n2mu:id "0x41a2dc98"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown0x41a2dc98 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat252 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown0x41a2dc98 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "100"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat252 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat252" ;
+        n2mu:id "252"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat252_utterance0,
+            leolaniTalk:chat252_utterance1,
+            leolaniTalk:chat252_utterance11,
+            leolaniTalk:chat252_utterance3,
+            leolaniTalk:chat252_utterance5 .
+
+    leolaniTalk:chat252_utterance0 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat252_utterance0" ;
+        n2mu:id "0"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant2 .
+
+    leolaniTalk:chat252_utterance1 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat252_utterance1" ;
+        n2mu:id "1"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant2 .
+
+    leolaniTalk:chat252_utterance11 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat252_utterance11" ;
+        n2mu:id "11"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant2 .
+
+    leolaniTalk:chat252_utterance3 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat252_utterance3" ;
+        n2mu:id "3"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant2 .
+
+    leolaniTalk:chat252_utterance5 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat252_utterance5" ;
+        n2mu:id "5"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant2 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:participant2 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "participant2" .
+}
+
+leolaniWorld:participant2_play_pong {
+    leolaniWorld:participant2 n2mu:play leolaniWorld:pong .
+}
+
+leolaniWorld:i̇_be_teacher {
+    leolaniWorld:i̇ n2mu:be leolaniWorld:teacher .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:english a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat252_utterance3_char0-27 .
+
+    leolaniWorld:i̇ a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat252_utterance1_char0-129 .
+
+    leolaniWorld:kid a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat252_utterance11_char0-53 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:participant1 a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat252_utterance11_char0-53,
+            leolaniTalk:chat252_utterance3_char0-27,
+            leolaniTalk:chat252_utterance5_char0-25 .
+
+    leolaniWorld:participant2 a n2mu:person,
+            gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat252_utterance0_char0-50 .
+
+    leolaniWorld:pong a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat252_utterance0_char0-50 .
+
+    leolaniWorld:spanish a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat252_utterance5_char0-25 .
+
+    leolaniWorld:teacher a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat252_utterance1_char0-129 .
+}
+
+leolaniWorld:participant1_have_kid {
+    leolaniWorld:participant1 n2mu:have leolaniWorld:kid .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:chat252_utterance0_char0-50 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat252_utterance0_char0-50" ;
+        gaf:containsDenotation leolaniWorld:participant2,
+            leolaniWorld:pong ;
+        gaf:denotes leolaniWorld:participant2_play_pong ;
+        grasp:hasAttribution leolaniTalk:participant2_play_pong_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant2 ;
+        sem:hasBeginTimeStamp "2022-12-14 13:19:50.871139"^^xml1:string,
+            "2022-12-14 13:19:51.317202"^^xml1:string,
+            "2022-12-14 13:19:51.766266"^^xml1:string,
+            "2022-12-14 13:19:52.076675"^^xml1:string,
+            "2022-12-14 13:19:52.371719"^^xml1:string,
+            "2022-12-14 13:19:52.655575"^^xml1:string,
+            "2022-12-14 13:19:52.966810"^^xml1:string,
+            "2022-12-14 13:19:53.285938"^^xml1:string,
+            "2022-12-14 13:19:53.667451"^^xml1:string,
+            "2022-12-14 13:19:53.985857"^^xml1:string,
+            "2022-12-14 13:19:54.304430"^^xml1:string,
+            "2022-12-14 13:19:54.620363"^^xml1:string,
+            "2022-12-14 13:19:54.962443"^^xml1:string ;
+        rdf:value "I play pong with my pong on the pong with my pong."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat252_utterance0 .
+
+    leolaniTalk:chat252_utterance11_char0-53 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat252_utterance11_char0-53" ;
+        gaf:containsDenotation leolaniWorld:kid,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_have_kid ;
+        grasp:hasAttribution leolaniTalk:participant1_have_kid_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant2 ;
+        sem:hasBeginTimeStamp "2022-12-14 13:19:54.716547"^^xml1:string ;
+        rdf:value "I do not have any kids, but i do like to be with them"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat252_utterance11 .
+
+    leolaniTalk:chat252_utterance1_char0-129 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat252_utterance1_char0-129" ;
+        gaf:containsDenotation leolaniWorld:i̇,
+            leolaniWorld:teacher ;
+        gaf:denotes leolaniWorld:i̇_be_teacher ;
+        grasp:hasAttribution leolaniTalk:i̇_be_teacher_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant2 ;
+        sem:hasBeginTimeStamp "2022-12-14 13:19:51.525400"^^xml1:string,
+            "2022-12-14 13:19:51.790035"^^xml1:string,
+            "2022-12-14 13:19:52.102451"^^xml1:string,
+            "2022-12-14 13:19:52.395646"^^xml1:string,
+            "2022-12-14 13:19:52.678562"^^xml1:string,
+            "2022-12-14 13:19:52.993962"^^xml1:string,
+            "2022-12-14 13:19:53.310610"^^xml1:string,
+            "2022-12-14 13:19:53.692870"^^xml1:string,
+            "2022-12-14 13:19:54.011554"^^xml1:string,
+            "2022-12-14 13:19:54.330558"^^xml1:string,
+            "2022-12-14 13:19:54.647685"^^xml1:string ;
+        rdf:value "Hi, is there anybody, who speaks spanish? I like leartning and studying languages. İ am a german teacher and sudying now spanish."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat252_utterance1 .
+
+    leolaniTalk:chat252_utterance3_char0-27 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat252_utterance3_char0-27" ;
+        gaf:containsDenotation leolaniWorld:english,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_speak_english ;
+        grasp:hasAttribution leolaniTalk:participant1_speak_english_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant2 ;
+        sem:hasBeginTimeStamp "2022-12-14 13:19:52.124134"^^xml1:string,
+            "2022-12-14 13:19:52.416565"^^xml1:string,
+            "2022-12-14 13:19:52.699865"^^xml1:string,
+            "2022-12-14 13:19:53.016781"^^xml1:string,
+            "2022-12-14 13:19:53.335796"^^xml1:string,
+            "2022-12-14 13:19:53.715869"^^xml1:string,
+            "2022-12-14 13:19:54.033241"^^xml1:string,
+            "2022-12-14 13:19:54.353891"^^xml1:string,
+            "2022-12-14 13:19:54.670578"^^xml1:string ;
+        rdf:value "I speak english and spanish"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat252_utterance3 .
+
+    leolaniTalk:chat252_utterance5_char0-25 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat252_utterance5_char0-25" ;
+        gaf:containsDenotation leolaniWorld:participant1,
+            leolaniWorld:spanish ;
+        gaf:denotes leolaniWorld:participant1_teach_spanish ;
+        grasp:hasAttribution leolaniTalk:participant1_teach_spanish_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant2 ;
+        sem:hasBeginTimeStamp "2022-12-14 13:19:52.721141"^^xml1:string,
+            "2022-12-14 13:19:53.040469"^^xml1:string,
+            "2022-12-14 13:19:53.359342"^^xml1:string,
+            "2022-12-14 13:19:53.738008"^^xml1:string,
+            "2022-12-14 13:19:54.056612"^^xml1:string,
+            "2022-12-14 13:19:54.378254"^^xml1:string,
+            "2022-12-14 13:19:54.694087"^^xml1:string ;
+        rdf:value "I teach spanish, spanish."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat252_utterance5 .
+
+    leolaniTalk:i̇_be_teacher_0000 a grasp:Attribution ;
+        rdfs:label "i̇_be_teacher_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat252_utterance1_char0-129 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant1_have_kid_0000 a grasp:Attribution ;
+        rdfs:label "participant1_have_kid_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat252_utterance11_char0-53 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant1_speak_english_0000 a grasp:Attribution ;
+        rdfs:label "participant1_speak_english_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat252_utterance3_char0-27 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant1_teach_spanish_0000 a grasp:Attribution ;
+        rdfs:label "participant1_teach_spanish_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat252_utterance5_char0-25 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant2_play_pong_0000 a grasp:Attribution ;
+        rdfs:label "participant2_play_pong_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat252_utterance0_char0-50 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:leolani_know_participant2 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:participant2 .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:i̇_be_teacher a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "i̇_be_teacher" ;
+        gaf:denotedBy leolaniTalk:chat252_utterance1_char0-129 .
+
+    leolaniWorld:leolani_know_participant2 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_participant2" .
+
+    leolaniWorld:participant1_have_kid a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_have_kid" ;
+        gaf:denotedBy leolaniTalk:chat252_utterance11_char0-53 .
+
+    leolaniWorld:participant1_speak_english a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_speak_english" ;
+        gaf:denotedBy leolaniTalk:chat252_utterance3_char0-27 .
+
+    leolaniWorld:participant1_teach_spanish a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_teach_spanish" ;
+        gaf:denotedBy leolaniTalk:chat252_utterance5_char0-25 .
+
+    leolaniWorld:participant2_play_pong a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant2_play_pong" ;
+        gaf:denotedBy leolaniTalk:chat252_utterance0_char0-50 .
+
+    leolaniWorld:participant2 owl:sameAs leolaniWorld:participant2 .
+}
+
+leolaniWorld:participant1_teach_spanish {
+    leolaniWorld:participant1 n2mu:teach leolaniWorld:spanish .
+}
+
+leolaniWorld:participant1_speak_english {
+    leolaniWorld:participant1 n2mu:speak leolaniWorld:english .
+}
+
