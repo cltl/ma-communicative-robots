@@ -1,0 +1,155 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniTalk:Interactions {
+    leolaniContext:context0xab38710 a eps:Context ;
+        rdfs:label "context0xab38710" ;
+        n2mu:id "0xab38710"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown0xab38710 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat79 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown0xab38710 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "133"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat79 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat79" ;
+        n2mu:id "79"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat79_utterance0 .
+
+    leolaniTalk:chat79_utterance0 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat79_utterance0" ;
+        n2mu:id "0"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:participant1 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "participant1" .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:participant1_buy_iphone_0000 a grasp:Attribution ;
+        rdfs:label "participant1_buy_iphone_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat79_utterance0_char0-40 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant1_love_iphone_0000 a grasp:Attribution ;
+        rdfs:label "participant1_love_iphone_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat79_utterance0_char0-40 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:chat79_utterance0_char0-40 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat79_utterance0_char0-40" ;
+        gaf:containsDenotation leolaniWorld:iphone,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_buy_iphone,
+            leolaniWorld:participant1_love_iphone ;
+        grasp:hasAttribution leolaniTalk:participant1_buy_iphone_0000,
+            leolaniTalk:participant1_love_iphone_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:08:56.909229"^^xml1:string,
+            "2022-12-14 14:08:57.890157"^^xml1:string,
+            "2022-12-14 14:08:59.044304"^^xml1:string ;
+        rdf:value "I love iphone! i just bought new iphone!"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat79_utterance0 .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:iphone a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat79_utterance0_char0-40 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:participant1 a n2mu:person,
+            gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat79_utterance0_char0-40 .
+}
+
+leolaniWorld:participant1_love_iphone {
+    leolaniWorld:participant1 n2mu:love leolaniWorld:iphone .
+}
+
+leolaniWorld:participant1_buy_iphone {
+    leolaniWorld:participant1 n2mu:buy leolaniWorld:iphone .
+}
+
+leolaniWorld:leolani_know_participant1 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:participant1 .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_participant1 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_participant1" .
+
+    leolaniWorld:participant1_buy_iphone a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_buy_iphone" ;
+        gaf:denotedBy leolaniTalk:chat79_utterance0_char0-40 .
+
+    leolaniWorld:participant1_love_iphone a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_love_iphone" ;
+        gaf:denotedBy leolaniTalk:chat79_utterance0_char0-40 .
+
+    leolaniWorld:participant1 owl:sameAs leolaniWorld:participant1 .
+}
+

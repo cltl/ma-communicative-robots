@@ -1,0 +1,228 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniTalk:Interactions {
+    leolaniContext:context0x823c044 a eps:Context ;
+        rdfs:label "context0x823c044" ;
+        n2mu:id "0x823c044"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown0x823c044 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat82 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown0x823c044 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "218"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat82 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat82" ;
+        n2mu:id "82"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat82_utterance2,
+            leolaniTalk:chat82_utterance4,
+            leolaniTalk:chat82_utterance6 .
+
+    leolaniTalk:chat82_utterance2 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat82_utterance2" ;
+        n2mu:id "2"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat82_utterance4 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat82_utterance4" ;
+        n2mu:id "4"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat82_utterance6 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat82_utterance6" ;
+        n2mu:id "6"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:participant1 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "participant1" .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:chat82_utterance2_char0-37 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat82_utterance2_char0-37" ;
+        gaf:containsDenotation leolaniWorld:coffee,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_like_coffee ;
+        grasp:hasAttribution leolaniTalk:participant1_like_coffee_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:11:46.816316"^^xml1:string,
+            "2022-12-14 14:11:48.188152"^^xml1:string,
+            "2022-12-14 14:11:49.484862"^^xml1:string,
+            "2022-12-14 14:11:51.922142"^^xml1:string,
+            "2022-12-14 14:11:54.406479"^^xml1:string,
+            "2022-12-14 14:11:58.027678"^^xml1:string,
+            "2022-12-14 14:12:01.417370"^^xml1:string,
+            "2022-12-14 14:12:04.834882"^^xml1:string ;
+        rdf:value "i like coffee , but i like coffee too"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat82_utterance2 .
+
+    leolaniTalk:chat82_utterance4_char0-65 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat82_utterance4_char0-65" ;
+        gaf:containsDenotation leolaniWorld:participant1,
+            leolaniWorld:time ;
+        gaf:denotes leolaniWorld:participant1_remind-of_time ;
+        grasp:hasAttribution leolaniTalk:participant1_remind-of_time_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:11:50.542921"^^xml1:string,
+            "2022-12-14 14:11:53.016115"^^xml1:string,
+            "2022-12-14 14:11:55.445906"^^xml1:string,
+            "2022-12-14 14:11:59.015254"^^xml1:string,
+            "2022-12-14 14:12:02.446559"^^xml1:string,
+            "2022-12-14 14:12:05.804977"^^xml1:string ;
+        rdf:value "i like red , reminds me of summer time , which is why i hate it ."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat82_utterance4 .
+
+    leolaniTalk:chat82_utterance6_char0-52 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat82_utterance6_char0-52" ;
+        gaf:containsDenotation leolaniWorld:climbing,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_like_climbing ;
+        grasp:hasAttribution leolaniTalk:participant1_like_climbing_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:11:56.581412"^^xml1:string,
+            "2022-12-14 14:12:00.020882"^^xml1:string,
+            "2022-12-14 14:12:03.505338"^^xml1:string,
+            "2022-12-14 14:12:06.885864"^^xml1:string ;
+        rdf:value "i like mountain climbing , but i also like to bike ."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat82_utterance6 .
+
+    leolaniTalk:participant1_like_climbing_0000 a grasp:Attribution ;
+        rdfs:label "participant1_like_climbing_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat82_utterance6_char0-52 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant1_like_coffee_0000 a grasp:Attribution ;
+        rdfs:label "participant1_like_coffee_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat82_utterance2_char0-37 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant1_remind-of_time_0000 a grasp:Attribution ;
+        rdfs:label "participant1_remind-of_time_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat82_utterance4_char0-65 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:climbing a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat82_utterance6_char0-52 .
+
+    leolaniWorld:coffee a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat82_utterance2_char0-37 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:participant1 a n2mu:person,
+            gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat82_utterance2_char0-37,
+            leolaniTalk:chat82_utterance4_char0-65,
+            leolaniTalk:chat82_utterance6_char0-52 .
+
+    leolaniWorld:time a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat82_utterance4_char0-65 .
+}
+
+leolaniWorld:participant1_remind-of_time {
+    leolaniWorld:participant1 n2mu:remind-of leolaniWorld:time .
+}
+
+leolaniWorld:leolani_know_participant1 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:participant1 .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_participant1 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_participant1" .
+
+    leolaniWorld:participant1_like_climbing a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_like_climbing" ;
+        gaf:denotedBy leolaniTalk:chat82_utterance6_char0-52 .
+
+    leolaniWorld:participant1_like_coffee a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_like_coffee" ;
+        gaf:denotedBy leolaniTalk:chat82_utterance2_char0-37 .
+
+    leolaniWorld:participant1_remind-of_time a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_remind-of_time" ;
+        gaf:denotedBy leolaniTalk:chat82_utterance4_char0-65 .
+
+    leolaniWorld:participant1 owl:sameAs leolaniWorld:participant1 .
+}
+
+leolaniWorld:participant1_like_coffee {
+    leolaniWorld:participant1 n2mu:like leolaniWorld:coffee .
+}
+
+leolaniWorld:participant1_like_climbing {
+    leolaniWorld:participant1 n2mu:like leolaniWorld:climbing .
+}
+

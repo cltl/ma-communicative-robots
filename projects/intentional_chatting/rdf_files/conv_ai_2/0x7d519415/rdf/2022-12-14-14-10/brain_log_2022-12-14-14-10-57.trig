@@ -1,0 +1,502 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniTalk:Interactions {
+    leolaniContext:context0x7d519415 a eps:Context ;
+        rdfs:label "context0x7d519415" ;
+        n2mu:id "0x7d519415"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown0x7d519415 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat36 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown0x7d519415 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "130"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat36 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat36" ;
+        n2mu:id "36"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat36_utterance0,
+            leolaniTalk:chat36_utterance10,
+            leolaniTalk:chat36_utterance12,
+            leolaniTalk:chat36_utterance13,
+            leolaniTalk:chat36_utterance2,
+            leolaniTalk:chat36_utterance4,
+            leolaniTalk:chat36_utterance7,
+            leolaniTalk:chat36_utterance8,
+            leolaniTalk:chat36_utterance9 .
+
+    leolaniTalk:chat36_utterance0 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat36_utterance0" ;
+        n2mu:id "0"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat36_utterance10 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat36_utterance10" ;
+        n2mu:id "10"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat36_utterance12 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat36_utterance12" ;
+        n2mu:id "12"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat36_utterance13 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat36_utterance13" ;
+        n2mu:id "13"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat36_utterance2 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat36_utterance2" ;
+        n2mu:id "2"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat36_utterance4 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat36_utterance4" ;
+        n2mu:id "4"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat36_utterance7 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat36_utterance7" ;
+        n2mu:id "7"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat36_utterance8 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat36_utterance8" ;
+        n2mu:id "8"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat36_utterance9 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat36_utterance9" ;
+        n2mu:id "9"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:participant1 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "participant1" .
+}
+
+leolaniWorld:participant2_have_sibling {
+    leolaniWorld:participant2 n2mu:have leolaniWorld:sibling .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:chat36_utterance0_char0-90 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat36_utterance0_char0-90" ;
+        gaf:containsDenotation leolaniWorld:movie,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_like_movie ;
+        grasp:hasAttribution leolaniTalk:participant1_like_movie_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:29.817396"^^xml1:string,
+            "2022-12-14 14:10:30.313210"^^xml1:string,
+            "2022-12-14 14:10:30.832682"^^xml1:string,
+            "2022-12-14 14:10:31.559136"^^xml1:string,
+            "2022-12-14 14:10:32.307361"^^xml1:string,
+            "2022-12-14 14:10:33.408966"^^xml1:string,
+            "2022-12-14 14:10:34.490369"^^xml1:string,
+            "2022-12-14 14:10:35.540231"^^xml1:string,
+            "2022-12-14 14:10:36.853238"^^xml1:string,
+            "2022-12-14 14:10:38.537336"^^xml1:string,
+            "2022-12-14 14:10:40.798021"^^xml1:string,
+            "2022-12-14 14:10:43.394695"^^xml1:string,
+            "2022-12-14 14:10:45.913233"^^xml1:string,
+            "2022-12-14 14:10:48.810526"^^xml1:string,
+            "2022-12-14 14:10:52.027032"^^xml1:string ;
+        rdf:value "I like action movies, movies, movies, movies, movies,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat36_utterance0 .
+
+    leolaniTalk:chat36_utterance10_char0-47 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat36_utterance10_char0-47" ;
+        gaf:containsDenotation leolaniWorld:brother,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_have_brother ;
+        grasp:hasAttribution leolaniTalk:participant1_have_brother_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:42.814360"^^xml1:string,
+            "2022-12-14 14:10:45.401960"^^xml1:string,
+            "2022-12-14 14:10:47.999921"^^xml1:string,
+            "2022-12-14 14:10:50.905692"^^xml1:string,
+            "2022-12-14 14:10:57.015729"^^xml1:string ;
+        rdf:value "I have two brothers and a sister, and a sister."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat36_utterance10 .
+
+    leolaniTalk:chat36_utterance12_char0-21 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat36_utterance12_char0-21" ;
+        gaf:containsDenotation leolaniWorld:midw,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_live-in_midw ;
+        grasp:hasAttribution leolaniTalk:participant1_live-in_midw_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:48.287526"^^xml1:string,
+            "2022-12-14 14:10:51.197682"^^xml1:string ;
+        rdf:value "I live in the midwest"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat36_utterance12 .
+
+    leolaniTalk:chat36_utterance13_char0-17 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat36_utterance13_char0-17" ;
+        gaf:containsDenotation leolaniWorld:alabama,
+            leolaniWorld:participant2 ;
+        gaf:denotes leolaniWorld:participant2_live-in_alabama ;
+        grasp:hasAttribution leolaniTalk:participant2_live-in_alabama_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:51.489835"^^xml1:string ;
+        rdf:value "I live in alabama"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat36_utterance13 .
+
+    leolaniTalk:chat36_utterance2_char0-25 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat36_utterance2_char0-25" ;
+        gaf:containsDenotation leolaniWorld:participant2,
+            leolaniWorld:sibling ;
+        gaf:denotes leolaniWorld:participant2_have_sibling ;
+        grasp:hasAttribution leolaniTalk:participant2_have_sibling_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:31.052496"^^xml1:string,
+            "2022-12-14 14:10:31.799514"^^xml1:string,
+            "2022-12-14 14:10:32.550257"^^xml1:string,
+            "2022-12-14 14:10:33.679164"^^xml1:string,
+            "2022-12-14 14:10:34.731934"^^xml1:string,
+            "2022-12-14 14:10:35.763240"^^xml1:string,
+            "2022-12-14 14:10:37.080656"^^xml1:string,
+            "2022-12-14 14:10:38.798331"^^xml1:string,
+            "2022-12-14 14:10:41.021072"^^xml1:string,
+            "2022-12-14 14:10:43.642180"^^xml1:string,
+            "2022-12-14 14:10:46.167056"^^xml1:string,
+            "2022-12-14 14:10:49.064473"^^xml1:string,
+            "2022-12-14 14:10:52.288833"^^xml1:string ;
+        rdf:value "Do you have any siblings?"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat36_utterance2 .
+
+    leolaniTalk:chat36_utterance4_char0-39 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat36_utterance4_char0-39" ;
+        gaf:containsDenotation leolaniWorld:good,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_be_good ;
+        grasp:hasAttribution leolaniTalk:participant1_be_good_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:32.839742"^^xml1:string,
+            "2022-12-14 14:10:33.964553"^^xml1:string,
+            "2022-12-14 14:10:35.015345"^^xml1:string,
+            "2022-12-14 14:10:36.021392"^^xml1:string,
+            "2022-12-14 14:10:37.350202"^^xml1:string,
+            "2022-12-14 14:10:39.080112"^^xml1:string,
+            "2022-12-14 14:10:41.295867"^^xml1:string,
+            "2022-12-14 14:10:43.907760"^^xml1:string,
+            "2022-12-14 14:10:46.456973"^^xml1:string,
+            "2022-12-14 14:10:49.357775"^^xml1:string,
+            "2022-12-14 14:10:52.564367"^^xml1:string ;
+        rdf:value "I am good, just listening to some music"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat36_utterance4 .
+
+    leolaniTalk:chat36_utterance7_char0-17 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat36_utterance7_char0-17" ;
+        gaf:containsDenotation leolaniWorld:dog,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_have_dog ;
+        grasp:hasAttribution leolaniTalk:participant1_have_dog_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:36.315948"^^xml1:string,
+            "2022-12-14 14:10:37.627579"^^xml1:string,
+            "2022-12-14 14:10:39.380993"^^xml1:string,
+            "2022-12-14 14:10:41.592189"^^xml1:string,
+            "2022-12-14 14:10:44.208489"^^xml1:string,
+            "2022-12-14 14:10:46.808766"^^xml1:string,
+            "2022-12-14 14:10:49.665243"^^xml1:string,
+            "2022-12-14 14:10:52.866901"^^xml1:string ;
+        rdf:value "Do you have dogs?"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat36_utterance7 .
+
+    leolaniTalk:chat36_utterance8_char0-32 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat36_utterance8_char0-32" ;
+        gaf:containsDenotation leolaniWorld:dog,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_have_dog ;
+        grasp:hasAttribution leolaniTalk:participant1_have_dog_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:37.943986"^^xml1:string,
+            "2022-12-14 14:10:39.689938"^^xml1:string,
+            "2022-12-14 14:10:41.906822"^^xml1:string,
+            "2022-12-14 14:10:44.524406"^^xml1:string,
+            "2022-12-14 14:10:47.071995"^^xml1:string,
+            "2022-12-14 14:10:49.983484"^^xml1:string,
+            "2022-12-14 14:10:53.804694"^^xml1:string ;
+        rdf:value "Yes, i have two dogs, and a cat."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat36_utterance8 .
+
+    leolaniTalk:participant1_be_good_0000 a grasp:Attribution ;
+        rdfs:label "participant1_be_good_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat36_utterance4_char0-39 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant1_have_brother_0000 a grasp:Attribution ;
+        rdfs:label "participant1_have_brother_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat36_utterance10_char0-47 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant1_like_movie_0000 a grasp:Attribution ;
+        rdfs:label "participant1_like_movie_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat36_utterance0_char0-90 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant1_live-in_midw_0000 a grasp:Attribution ;
+        rdfs:label "participant1_live-in_midw_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat36_utterance12_char0-21 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant2_live-in_alabama_0000 a grasp:Attribution ;
+        rdfs:label "participant2_live-in_alabama_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat36_utterance13_char0-17 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant2_love_dog_0000 a grasp:Attribution ;
+        rdfs:label "participant2_love_dog_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat36_utterance9_char0-49 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:chat36_utterance9_char0-49 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat36_utterance9_char0-49" ;
+        gaf:containsDenotation leolaniWorld:dog,
+            leolaniWorld:participant2,
+            leolaniWorld:sibling ;
+        gaf:denotes leolaniWorld:participant2_have_sibling,
+            leolaniWorld:participant2_love_dog ;
+        grasp:hasAttribution leolaniTalk:participant2_have_sibling_0000,
+            leolaniTalk:participant2_love_dog_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:40.007369"^^xml1:string,
+            "2022-12-14 14:10:40.279319"^^xml1:string,
+            "2022-12-14 14:10:42.221349"^^xml1:string,
+            "2022-12-14 14:10:42.512609"^^xml1:string,
+            "2022-12-14 14:10:44.817791"^^xml1:string,
+            "2022-12-14 14:10:45.107357"^^xml1:string,
+            "2022-12-14 14:10:47.395274"^^xml1:string,
+            "2022-12-14 14:10:47.693631"^^xml1:string,
+            "2022-12-14 14:10:50.311961"^^xml1:string,
+            "2022-12-14 14:10:50.602181"^^xml1:string,
+            "2022-12-14 14:10:54.880953"^^xml1:string,
+            "2022-12-14 14:10:55.927321"^^xml1:string ;
+        rdf:value "Cool, I love dogs. But i have siblings instead..."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat36_utterance9 .
+
+    leolaniTalk:participant1_have_dog_0000 a grasp:Attribution ;
+        rdfs:label "participant1_have_dog_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat36_utterance7_char0-17,
+            leolaniTalk:chat36_utterance8_char0-32 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant2_have_sibling_0000 a grasp:Attribution ;
+        rdfs:label "participant2_have_sibling_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat36_utterance2_char0-25,
+            leolaniTalk:chat36_utterance9_char0-49 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:alabama a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat36_utterance13_char0-17 .
+
+    leolaniWorld:brother a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat36_utterance10_char0-47 .
+
+    leolaniWorld:dog a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat36_utterance7_char0-17,
+            leolaniTalk:chat36_utterance8_char0-32,
+            leolaniTalk:chat36_utterance9_char0-49 .
+
+    leolaniWorld:good a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat36_utterance4_char0-39 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:midw a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat36_utterance12_char0-21 .
+
+    leolaniWorld:movie a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat36_utterance0_char0-90 .
+
+    leolaniWorld:participant1 a n2mu:person,
+            gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat36_utterance0_char0-90,
+            leolaniTalk:chat36_utterance10_char0-47,
+            leolaniTalk:chat36_utterance12_char0-21,
+            leolaniTalk:chat36_utterance4_char0-39,
+            leolaniTalk:chat36_utterance7_char0-17,
+            leolaniTalk:chat36_utterance8_char0-32 .
+
+    leolaniWorld:participant2 a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat36_utterance13_char0-17,
+            leolaniTalk:chat36_utterance2_char0-25,
+            leolaniTalk:chat36_utterance9_char0-49 .
+
+    leolaniWorld:sibling a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat36_utterance2_char0-25,
+            leolaniTalk:chat36_utterance9_char0-49 .
+}
+
+leolaniWorld:participant1_have_dog {
+    leolaniWorld:participant1 n2mu:have leolaniWorld:dog .
+}
+
+leolaniWorld:participant2_love_dog {
+    leolaniWorld:participant2 n2mu:love leolaniWorld:dog .
+}
+
+leolaniWorld:participant2_live-in_alabama {
+    leolaniWorld:participant2 n2mu:live-in leolaniWorld:alabama .
+}
+
+leolaniWorld:participant1_like_movie {
+    leolaniWorld:participant1 n2mu:like leolaniWorld:movie .
+}
+
+leolaniWorld:participant1_be_good {
+    leolaniWorld:participant1 n2mu:be leolaniWorld:good .
+}
+
+leolaniWorld:leolani_know_participant1 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:participant1 .
+}
+
+leolaniWorld:participant1_have_brother {
+    leolaniWorld:participant1 n2mu:have leolaniWorld:brother .
+}
+
+leolaniWorld:participant1_live-in_midw {
+    leolaniWorld:participant1 n2mu:live-in leolaniWorld:midw .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_participant1 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_participant1" .
+
+    leolaniWorld:participant1_be_good a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_be_good" ;
+        gaf:denotedBy leolaniTalk:chat36_utterance4_char0-39 .
+
+    leolaniWorld:participant1_have_brother a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_have_brother" ;
+        gaf:denotedBy leolaniTalk:chat36_utterance10_char0-47 .
+
+    leolaniWorld:participant1_have_dog a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_have_dog" ;
+        gaf:denotedBy leolaniTalk:chat36_utterance7_char0-17,
+            leolaniTalk:chat36_utterance8_char0-32 .
+
+    leolaniWorld:participant1_like_movie a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_like_movie" ;
+        gaf:denotedBy leolaniTalk:chat36_utterance0_char0-90 .
+
+    leolaniWorld:participant1_live-in_midw a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_live-in_midw" ;
+        gaf:denotedBy leolaniTalk:chat36_utterance12_char0-21 .
+
+    leolaniWorld:participant2_have_sibling a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant2_have_sibling" ;
+        gaf:denotedBy leolaniTalk:chat36_utterance2_char0-25,
+            leolaniTalk:chat36_utterance9_char0-49 .
+
+    leolaniWorld:participant2_live-in_alabama a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant2_live-in_alabama" ;
+        gaf:denotedBy leolaniTalk:chat36_utterance13_char0-17 .
+
+    leolaniWorld:participant2_love_dog a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant2_love_dog" ;
+        gaf:denotedBy leolaniTalk:chat36_utterance9_char0-49 .
+
+    leolaniWorld:participant1 owl:sameAs leolaniWorld:participant1 .
+}
+

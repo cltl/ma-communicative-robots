@@ -1,0 +1,177 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniTalk:Interactions {
+    leolaniContext:context0x20b7daf4 a eps:Context ;
+        rdfs:label "context0x20b7daf4" ;
+        n2mu:id "0x20b7daf4"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown0x20b7daf4 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat231 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown0x20b7daf4 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "77"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat231 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat231" ;
+        n2mu:id "231"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat231_utterance0,
+            leolaniTalk:chat231_utterance2 .
+
+    leolaniTalk:chat231_utterance0 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat231_utterance0" ;
+        n2mu:id "0"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat231_utterance2 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat231_utterance2" ;
+        n2mu:id "2"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:participant1 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "participant1" .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:chat231_utterance0_char0-29 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat231_utterance0_char0-29" ;
+        gaf:containsDenotation leolaniWorld:participant1,
+            leolaniWorld:tired ;
+        gaf:denotes leolaniWorld:participant1_be_tired ;
+        grasp:hasAttribution leolaniTalk:participant1_be_tired_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:21:06.306503"^^xml1:string,
+            "2022-12-14 14:21:06.989210"^^xml1:string,
+            "2022-12-14 14:21:07.590533"^^xml1:string,
+            "2022-12-14 14:21:08.682349"^^xml1:string ;
+        rdf:value "i am a little tired from work"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat231_utterance0 .
+
+    leolaniTalk:chat231_utterance2_char0-51 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat231_utterance2_char0-51" ;
+        gaf:containsDenotation leolaniWorld:afraid,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_be_afraid ;
+        grasp:hasAttribution leolaniTalk:participant1_be_afraid_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:21:07.957698"^^xml1:string ;
+        rdf:value "i am afraid of heights , but i am scared of heights"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat231_utterance2 .
+
+    leolaniTalk:participant1_be_afraid_0000 a grasp:Attribution ;
+        rdfs:label "participant1_be_afraid_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat231_utterance2_char0-51 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant1_be_tired_0000 a grasp:Attribution ;
+        rdfs:label "participant1_be_tired_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat231_utterance0_char0-29 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:afraid a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat231_utterance2_char0-51 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:participant1 a n2mu:person,
+            gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat231_utterance0_char0-29,
+            leolaniTalk:chat231_utterance2_char0-51 .
+
+    leolaniWorld:tired a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat231_utterance0_char0-29 .
+}
+
+leolaniWorld:participant1_be_tired {
+    leolaniWorld:participant1 n2mu:be leolaniWorld:tired .
+}
+
+leolaniWorld:participant1_be_afraid {
+    leolaniWorld:participant1 n2mu:be leolaniWorld:afraid .
+}
+
+leolaniWorld:leolani_know_participant1 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:participant1 .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_participant1 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_participant1" .
+
+    leolaniWorld:participant1_be_afraid a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_be_afraid" ;
+        gaf:denotedBy leolaniTalk:chat231_utterance2_char0-51 .
+
+    leolaniWorld:participant1_be_tired a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_be_tired" ;
+        gaf:denotedBy leolaniTalk:chat231_utterance0_char0-29 .
+
+    leolaniWorld:participant1 owl:sameAs leolaniWorld:participant1 .
+}
+

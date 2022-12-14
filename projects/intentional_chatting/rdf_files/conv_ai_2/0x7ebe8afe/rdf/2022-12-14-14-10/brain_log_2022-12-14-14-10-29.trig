@@ -1,0 +1,472 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniTalk:Interactions {
+    leolaniContext:context0x7ebe8afe a eps:Context ;
+        rdfs:label "context0x7ebe8afe" ;
+        n2mu:id "0x7ebe8afe"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown0x7ebe8afe .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat180 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown0x7ebe8afe a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "240"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat180 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat180" ;
+        n2mu:id "180"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat180_utterance10,
+            leolaniTalk:chat180_utterance12,
+            leolaniTalk:chat180_utterance14,
+            leolaniTalk:chat180_utterance2,
+            leolaniTalk:chat180_utterance6,
+            leolaniTalk:chat180_utterance7,
+            leolaniTalk:chat180_utterance8,
+            leolaniTalk:chat180_utterance9 .
+
+    leolaniTalk:chat180_utterance10 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat180_utterance10" ;
+        n2mu:id "10"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat180_utterance12 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat180_utterance12" ;
+        n2mu:id "12"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat180_utterance14 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat180_utterance14" ;
+        n2mu:id "14"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat180_utterance2 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat180_utterance2" ;
+        n2mu:id "2"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat180_utterance6 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat180_utterance6" ;
+        n2mu:id "6"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat180_utterance7 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat180_utterance7" ;
+        n2mu:id "7"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat180_utterance8 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat180_utterance8" ;
+        n2mu:id "8"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniTalk:chat180_utterance9 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat180_utterance9" ;
+        n2mu:id "9"^^xml1:string ;
+        sem:hasActor leolaniWorld:participant1 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:participant1 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "participant1" .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:II_think-along_line_0000 a grasp:Attribution ;
+        rdfs:label "II_think-along_line_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat180_utterance10_char0-60 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:chat180_utterance10_char0-60 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat180_utterance10_char0-60" ;
+        gaf:containsDenotation leolaniWorld:II,
+            leolaniWorld:line ;
+        gaf:denotes leolaniWorld:II_think-along_line ;
+        grasp:hasAttribution leolaniTalk:II_think-along_line_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:16.076929"^^xml1:string,
+            "2022-12-14 14:10:17.869928"^^xml1:string,
+            "2022-12-14 14:10:19.674593"^^xml1:string,
+            "2022-12-14 14:10:21.743424"^^xml1:string,
+            "2022-12-14 14:10:23.842754"^^xml1:string,
+            "2022-12-14 14:10:26.204464"^^xml1:string,
+            "2022-12-14 14:10:28.635045"^^xml1:string ;
+        rdf:value "Uh, II was thinking more along the lines of... Camping trip."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat180_utterance10 .
+
+    leolaniTalk:chat180_utterance12_char0-46 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat180_utterance12_char0-46" ;
+        gaf:containsDenotation leolaniWorld:log,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_be-on_log ;
+        grasp:hasAttribution leolaniTalk:participant1_be-on_log_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:19.859658"^^xml1:string,
+            "2022-12-14 14:10:21.929313"^^xml1:string,
+            "2022-12-14 14:10:24.032000"^^xml1:string,
+            "2022-12-14 14:10:26.408914"^^xml1:string,
+            "2022-12-14 14:10:28.829450"^^xml1:string ;
+        rdf:value "In Cyprus? I'm on a log, and you're in Cyprus?"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat180_utterance12 .
+
+    leolaniTalk:chat180_utterance14_char0-37 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat180_utterance14_char0-37" ;
+        gaf:containsDenotation leolaniWorld:participant1,
+            leolaniWorld:place ;
+        gaf:denotes leolaniWorld:participant1_have_place ;
+        grasp:hasAttribution leolaniTalk:participant1_have_place_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:24.317648"^^xml1:string,
+            "2022-12-14 14:10:26.723162"^^xml1:string,
+            "2022-12-14 14:10:29.112923"^^xml1:string ;
+        rdf:value "Oh, I... I have a place in Manhattan."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat180_utterance14 .
+
+    leolaniTalk:chat180_utterance2_char0-30 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat180_utterance2_char0-30" ;
+        gaf:containsDenotation leolaniWorld:mother,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_be_mother ;
+        grasp:hasAttribution leolaniTalk:participant1_be_mother_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:06.101829"^^xml1:string,
+            "2022-12-14 14:10:07.277422"^^xml1:string,
+            "2022-12-14 14:10:08.415307"^^xml1:string,
+            "2022-12-14 14:10:09.354768"^^xml1:string,
+            "2022-12-14 14:10:09.845726"^^xml1:string,
+            "2022-12-14 14:10:10.589263"^^xml1:string,
+            "2022-12-14 14:10:11.601832"^^xml1:string,
+            "2022-12-14 14:10:12.903256"^^xml1:string,
+            "2022-12-14 14:10:14.707257"^^xml1:string,
+            "2022-12-14 14:10:16.479397"^^xml1:string,
+            "2022-12-14 14:10:18.296443"^^xml1:string,
+            "2022-12-14 14:10:20.351315"^^xml1:string,
+            "2022-12-14 14:10:22.468114"^^xml1:string,
+            "2022-12-14 14:10:24.818851"^^xml1:string,
+            "2022-12-14 14:10:27.242800"^^xml1:string ;
+        rdf:value "Hello. Uh, I'm Susan's mother."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat180_utterance2 .
+
+    leolaniTalk:chat180_utterance6_char0-27 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat180_utterance6_char0-27" ;
+        gaf:containsDenotation leolaniWorld:house,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_build_house ;
+        grasp:hasAttribution leolaniTalk:participant1_build_house_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:10.076377"^^xml1:string,
+            "2022-12-14 14:10:10.835223"^^xml1:string,
+            "2022-12-14 14:10:11.844188"^^xml1:string,
+            "2022-12-14 14:10:13.323377"^^xml1:string,
+            "2022-12-14 14:10:14.975569"^^xml1:string,
+            "2022-12-14 14:10:16.723671"^^xml1:string,
+            "2022-12-14 14:10:18.545167"^^xml1:string,
+            "2022-12-14 14:10:20.602986"^^xml1:string,
+            "2022-12-14 14:10:22.713461"^^xml1:string,
+            "2022-12-14 14:10:25.072631"^^xml1:string,
+            "2022-12-14 14:10:27.492001"^^xml1:string ;
+        rdf:value "I I'm building a new house."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat180_utterance6 .
+
+    leolaniTalk:chat180_utterance7_char0-19 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat180_utterance7_char0-19" ;
+        gaf:containsDenotation leolaniWorld:colorado,
+            leolaniWorld:participant2 ;
+        gaf:denotes leolaniWorld:participant2_live-in_colorado ;
+        grasp:hasAttribution leolaniTalk:participant2_live-in_colorado_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:11.118848"^^xml1:string,
+            "2022-12-14 14:10:12.109051"^^xml1:string,
+            "2022-12-14 14:10:13.584993"^^xml1:string,
+            "2022-12-14 14:10:15.233621"^^xml1:string,
+            "2022-12-14 14:10:17.001390"^^xml1:string,
+            "2022-12-14 14:10:18.837064"^^xml1:string,
+            "2022-12-14 14:10:20.883944"^^xml1:string,
+            "2022-12-14 14:10:22.986644"^^xml1:string,
+            "2022-12-14 14:10:25.330242"^^xml1:string,
+            "2022-12-14 14:10:27.747268"^^xml1:string ;
+        rdf:value "I live in colorado."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat180_utterance7 .
+
+    leolaniTalk:chat180_utterance8_char0-26 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat180_utterance8_char0-26" ;
+        gaf:containsDenotation leolaniWorld:York,
+            leolaniWorld:participant1 ;
+        gaf:denotes leolaniWorld:participant1_go-to_York ;
+        grasp:hasAttribution leolaniTalk:participant1_go-to_York_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:12.385094"^^xml1:string,
+            "2022-12-14 14:10:13.871814"^^xml1:string,
+            "2022-12-14 14:10:15.519393"^^xml1:string,
+            "2022-12-14 14:10:17.289867"^^xml1:string,
+            "2022-12-14 14:10:19.128544"^^xml1:string,
+            "2022-12-14 14:10:21.184407"^^xml1:string,
+            "2022-12-14 14:10:23.266986"^^xml1:string,
+            "2022-12-14 14:10:25.622693"^^xml1:string,
+            "2022-12-14 14:10:28.042563"^^xml1:string ;
+        rdf:value "Oh, I... I go to New York."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat180_utterance8 .
+
+    leolaniTalk:chat180_utterance9_char0-21 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat180_utterance9_char0-21" ;
+        gaf:containsDenotation leolaniWorld:climbing,
+            leolaniWorld:participant2 ;
+        gaf:denotes leolaniWorld:participant2_like_climbing ;
+        grasp:hasAttribution leolaniTalk:participant2_like_climbing_0000 ;
+        grasp:wasAttributedTo leolaniWorld:participant1 ;
+        sem:hasBeginTimeStamp "2022-12-14 14:10:14.157660"^^xml1:string,
+            "2022-12-14 14:10:15.791354"^^xml1:string,
+            "2022-12-14 14:10:17.582454"^^xml1:string,
+            "2022-12-14 14:10:19.420082"^^xml1:string,
+            "2022-12-14 14:10:21.466230"^^xml1:string,
+            "2022-12-14 14:10:23.551205"^^xml1:string,
+            "2022-12-14 14:10:25.912646"^^xml1:string,
+            "2022-12-14 14:10:28.338779"^^xml1:string ;
+        rdf:value "I like rock climbing."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat180_utterance9 .
+
+    leolaniTalk:participant1_be-on_log_0000 a grasp:Attribution ;
+        rdfs:label "participant1_be-on_log_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat180_utterance12_char0-46 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant1_be_mother_0000 a grasp:Attribution ;
+        rdfs:label "participant1_be_mother_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat180_utterance2_char0-30 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant1_build_house_0000 a grasp:Attribution ;
+        rdfs:label "participant1_build_house_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat180_utterance6_char0-27 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant1_go-to_York_0000 a grasp:Attribution ;
+        rdfs:label "participant1_go-to_York_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat180_utterance8_char0-26 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant1_have_place_0000 a grasp:Attribution ;
+        rdfs:label "participant1_have_place_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat180_utterance14_char0-37 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant2_like_climbing_0000 a grasp:Attribution ;
+        rdfs:label "participant2_like_climbing_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat180_utterance9_char0-21 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:participant2_live-in_colorado_0000 a grasp:Attribution ;
+        rdfs:label "participant2_live-in_colorado_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat180_utterance7_char0-19 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:II a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat180_utterance10_char0-60 .
+
+    leolaniWorld:York a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat180_utterance8_char0-26 .
+
+    leolaniWorld:climbing a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat180_utterance9_char0-21 .
+
+    leolaniWorld:colorado a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat180_utterance7_char0-19 .
+
+    leolaniWorld:house a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat180_utterance6_char0-27 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:line a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat180_utterance10_char0-60 .
+
+    leolaniWorld:log a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat180_utterance12_char0-46 .
+
+    leolaniWorld:mother a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat180_utterance2_char0-30 .
+
+    leolaniWorld:participant1 a n2mu:person,
+            gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat180_utterance12_char0-46,
+            leolaniTalk:chat180_utterance14_char0-37,
+            leolaniTalk:chat180_utterance2_char0-30,
+            leolaniTalk:chat180_utterance6_char0-27,
+            leolaniTalk:chat180_utterance8_char0-26 .
+
+    leolaniWorld:participant2 a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat180_utterance7_char0-19,
+            leolaniTalk:chat180_utterance9_char0-21 .
+
+    leolaniWorld:place a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat180_utterance14_char0-37 .
+}
+
+leolaniWorld:participant2_like_climbing {
+    leolaniWorld:participant2 n2mu:like leolaniWorld:climbing .
+}
+
+leolaniWorld:participant2_live-in_colorado {
+    leolaniWorld:participant2 n2mu:live-in leolaniWorld:colorado .
+}
+
+leolaniWorld:participant1_build_house {
+    leolaniWorld:participant1 n2mu:build leolaniWorld:house .
+}
+
+leolaniWorld:participant1_be-on_log {
+    leolaniWorld:participant1 n2mu:be-on leolaniWorld:log .
+}
+
+leolaniWorld:leolani_know_participant1 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:participant1 .
+}
+
+leolaniWorld:II_think-along_line {
+    leolaniWorld:II n2mu:think-along leolaniWorld:line .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:II_think-along_line a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "II_think-along_line" ;
+        gaf:denotedBy leolaniTalk:chat180_utterance10_char0-60 .
+
+    leolaniWorld:leolani_know_participant1 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_participant1" .
+
+    leolaniWorld:participant1_be-on_log a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_be-on_log" ;
+        gaf:denotedBy leolaniTalk:chat180_utterance12_char0-46 .
+
+    leolaniWorld:participant1_be_mother a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_be_mother" ;
+        gaf:denotedBy leolaniTalk:chat180_utterance2_char0-30 .
+
+    leolaniWorld:participant1_build_house a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_build_house" ;
+        gaf:denotedBy leolaniTalk:chat180_utterance6_char0-27 .
+
+    leolaniWorld:participant1_go-to_York a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_go-to_York" ;
+        gaf:denotedBy leolaniTalk:chat180_utterance8_char0-26 .
+
+    leolaniWorld:participant1_have_place a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant1_have_place" ;
+        gaf:denotedBy leolaniTalk:chat180_utterance14_char0-37 .
+
+    leolaniWorld:participant2_like_climbing a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant2_like_climbing" ;
+        gaf:denotedBy leolaniTalk:chat180_utterance9_char0-21 .
+
+    leolaniWorld:participant2_live-in_colorado a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "participant2_live-in_colorado" ;
+        gaf:denotedBy leolaniTalk:chat180_utterance7_char0-19 .
+
+    leolaniWorld:participant1 owl:sameAs leolaniWorld:participant1 .
+}
+
+leolaniWorld:participant1_go-to_York {
+    leolaniWorld:participant1 n2mu:go-to leolaniWorld:York .
+}
+
+leolaniWorld:participant1_be_mother {
+    leolaniWorld:participant1 n2mu:be leolaniWorld:mother .
+}
+
+leolaniWorld:participant1_have_place {
+    leolaniWorld:participant1 n2mu:have leolaniWorld:place .
+}
+

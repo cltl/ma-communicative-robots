@@ -1,0 +1,179 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:leolani_know_speaker2 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:speaker2 .
+}
+
+leolaniWorld:speaker1_go-to_party {
+    leolaniWorld:speaker1 n2mu:go-to leolaniWorld:party .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context62 a eps:Context ;
+        rdfs:label "context62" ;
+        n2mu:id "62"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown62 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat142 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown62 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "2"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat142 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat142" ;
+        n2mu:id "142"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat142_utterance0 .
+
+    leolaniTalk:chat142_utterance0 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat142_utterance0" ;
+        n2mu:id "0"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "speaker2" .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:Saturday a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat142_utterance0_char0-41 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:party a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat142_utterance0_char0-41 .
+
+    leolaniWorld:speaker1 a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat142_utterance0_char0-41 .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_speaker2 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_speaker2" .
+
+    leolaniWorld:speaker1_go-on_Saturday a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_go-on_Saturday" ;
+        gaf:denotedBy leolaniTalk:chat142_utterance0_char0-41 .
+
+    leolaniWorld:speaker1_go-to_party a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_go-to_party" ;
+        gaf:denotedBy leolaniTalk:chat142_utterance0_char0-41 .
+
+    leolaniWorld:speaker2 owl:sameAs leolaniWorld:speaker2 .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:speaker1_go-on_Saturday_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_go-on_Saturday_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat142_utterance0_char0-41 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker1_go-to_party_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_go-to_party_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat142_utterance0_char0-41 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:chat142_utterance0_char0-41 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat142_utterance0_char0-41" ;
+        gaf:containsDenotation leolaniWorld:Saturday,
+            leolaniWorld:party,
+            leolaniWorld:speaker1 ;
+        gaf:denotes leolaniWorld:speaker1_go-on_Saturday,
+            leolaniWorld:speaker1_go-to_party ;
+        grasp:hasAttribution leolaniTalk:speaker1_go-on_Saturday_0000,
+            leolaniTalk:speaker1_go-to_party_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 13:56:15.321210"^^xml1:string,
+            "2022-12-14 13:56:16.409193"^^xml1:string,
+            "2022-12-14 13:56:17.800029"^^xml1:string,
+            "2022-12-14 13:56:18.901920"^^xml1:string,
+            "2022-12-14 13:56:20.295740"^^xml1:string,
+            "2022-12-14 13:56:21.385110"^^xml1:string,
+            "2022-12-14 13:56:22.823773"^^xml1:string,
+            "2022-12-14 13:56:23.900497"^^xml1:string,
+            "2022-12-14 13:56:25.267919"^^xml1:string,
+            "2022-12-14 13:56:26.352652"^^xml1:string,
+            "2022-12-14 13:56:27.698415"^^xml1:string,
+            "2022-12-14 13:56:28.751714"^^xml1:string,
+            "2022-12-14 13:56:30.051135"^^xml1:string,
+            "2022-12-14 13:56:31.134153"^^xml1:string,
+            "2022-12-14 13:56:32.458417"^^xml1:string,
+            "2022-12-14 13:56:33.525033"^^xml1:string,
+            "2022-12-14 13:56:34.877835"^^xml1:string,
+            "2022-12-14 13:56:35.908679"^^xml1:string,
+            "2022-12-14 13:56:37.214289"^^xml1:string,
+            "2022-12-14 13:56:38.281198"^^xml1:string,
+            "2022-12-14 13:56:39.600009"^^xml1:string ;
+        rdf:value "Are you going to the party on Saturday ? "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat142_utterance0 .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:speaker1_go-on_Saturday {
+    leolaniWorld:speaker1 n2mu:go-on leolaniWorld:Saturday .
+}
+

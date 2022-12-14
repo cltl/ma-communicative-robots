@@ -1,0 +1,232 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:leolani_know_speaker2 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:speaker2 .
+}
+
+leolaniWorld:speaker2_like_physics {
+    leolaniWorld:speaker2 n2mu:like leolaniWorld:physics .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context69 a eps:Context ;
+        rdfs:label "context69" ;
+        n2mu:id "69"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown69 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat121 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown69 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "144"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat121 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat121" ;
+        n2mu:id "121"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat121_utterance1,
+            leolaniTalk:chat121_utterance2,
+            leolaniTalk:chat121_utterance3 .
+
+    leolaniTalk:chat121_utterance1 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat121_utterance1" ;
+        n2mu:id "1"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat121_utterance2 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat121_utterance2" ;
+        n2mu:id "2"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat121_utterance3 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat121_utterance3" ;
+        n2mu:id "3"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "speaker2" .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:Ve a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat121_utterance1_char0-94 .
+
+    leolaniWorld:class a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat121_utterance1_char0-94 .
+
+    leolaniWorld:creation a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat121_utterance3_char0-81 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:lesson a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat121_utterance3_char0-81 .
+
+    leolaniWorld:physics a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat121_utterance2_char0-86 .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat121_utterance2_char0-86 .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:Ve_be-in_class a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "Ve_be-in_class" ;
+        gaf:denotedBy leolaniTalk:chat121_utterance1_char0-94 .
+
+    leolaniWorld:leolani_know_speaker2 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_speaker2" .
+
+    leolaniWorld:lesson_be-about_creation a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "lesson_be-about_creation" ;
+        gaf:denotedBy leolaniTalk:chat121_utterance3_char0-81 .
+
+    leolaniWorld:speaker2_like_physics a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker2_like_physics" ;
+        gaf:denotedBy leolaniTalk:chat121_utterance2_char0-86 .
+
+    leolaniWorld:speaker2 owl:sameAs leolaniWorld:speaker2 .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:Ve_be-in_class_0000 a grasp:Attribution ;
+        rdfs:label "Ve_be-in_class_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat121_utterance1_char0-94 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:chat121_utterance1_char0-94 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat121_utterance1_char0-94" ;
+        gaf:containsDenotation leolaniWorld:Ve,
+            leolaniWorld:class ;
+        gaf:denotes leolaniWorld:Ve_be-in_class ;
+        grasp:hasAttribution leolaniTalk:Ve_be-in_class_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 13:58:34.549719"^^xml1:string,
+            "2022-12-14 13:58:34.853471"^^xml1:string,
+            "2022-12-14 13:58:35.251872"^^xml1:string,
+            "2022-12-14 13:58:35.774695"^^xml1:string,
+            "2022-12-14 13:58:36.361922"^^xml1:string,
+            "2022-12-14 13:58:36.920870"^^xml1:string,
+            "2022-12-14 13:58:37.472680"^^xml1:string ;
+        rdf:value " Yeah , my head hurts , that ’ s all . I ’ Ve been in physics class all day . It ’ s killer ! "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat121_utterance1 .
+
+    leolaniTalk:chat121_utterance2_char0-86 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat121_utterance2_char0-86" ;
+        gaf:containsDenotation leolaniWorld:physics,
+            leolaniWorld:speaker2 ;
+        gaf:denotes leolaniWorld:speaker2_like_physics ;
+        grasp:hasAttribution leolaniTalk:speaker2_like_physics_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 13:58:34.949509"^^xml1:string,
+            "2022-12-14 13:58:35.342168"^^xml1:string,
+            "2022-12-14 13:58:35.860571"^^xml1:string,
+            "2022-12-14 13:58:36.468309"^^xml1:string,
+            "2022-12-14 13:58:37.022301"^^xml1:string,
+            "2022-12-14 13:58:37.569906"^^xml1:string ;
+        rdf:value " I liked physics . It ’ s all math , really . arcs , curves , velocity , cool stuff . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat121_utterance2 .
+
+    leolaniTalk:chat121_utterance3_char0-81 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat121_utterance3_char0-81" ;
+        gaf:containsDenotation leolaniWorld:creation,
+            leolaniWorld:lesson ;
+        gaf:denotes leolaniWorld:lesson_be-about_creation ;
+        grasp:hasAttribution leolaniTalk:lesson_be-about_creation_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 13:58:35.437879"^^xml1:string,
+            "2022-12-14 13:58:35.963086"^^xml1:string,
+            "2022-12-14 13:58:36.562458"^^xml1:string,
+            "2022-12-14 13:58:37.126409"^^xml1:string,
+            "2022-12-14 13:58:37.672402"^^xml1:string ;
+        rdf:value " Yeah , yeah , but today ’ s lesson was all about the creation of the universe . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat121_utterance3 .
+
+    leolaniTalk:lesson_be-about_creation_0000 a grasp:Attribution ;
+        rdfs:label "lesson_be-about_creation_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat121_utterance3_char0-81 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker2_like_physics_0000 a grasp:Attribution ;
+        rdfs:label "speaker2_like_physics_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat121_utterance2_char0-86 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:lesson_be-about_creation {
+    leolaniWorld:lesson n2mu:be-about leolaniWorld:creation .
+}
+
+leolaniWorld:Ve_be-in_class {
+    leolaniWorld:Ve n2mu:be-in leolaniWorld:class .
+}
+

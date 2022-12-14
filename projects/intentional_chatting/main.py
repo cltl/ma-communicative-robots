@@ -92,7 +92,7 @@ def dataset_to_rdf(data, name, out_dir='./rdf_files/'):
                     # Add capsule to brain
                     print("\t\t\tAdding capsule to brain")
                     response = brain.capsule_statement(capsule)
-                    row[key][i]['rdf_file'].append(response['rdf_log_path'].stem)
+                    row[key][i]['rdf_file'].append(str(response['rdf_log_path'].stem) + '.trig')
                 except:
                     capsules_skipped += 1
                     print(f"\t\t\tCapsule skipped. Total skipped: {capsules_skipped}")
