@@ -1,0 +1,445 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:Instances {
+    leolaniWorld:Ve a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat19_utterance5_char0-78 .
+
+    leolaniWorld:close a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat19_utterance6_char0-44 .
+
+    leolaniWorld:copy a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat19_utterance2_char0-79 .
+
+    leolaniWorld:cousin a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat19_utterance7_char0-190 .
+
+    leolaniWorld:family a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat19_utterance0_char0-51,
+            leolaniTalk:chat19_utterance4_char0-58 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:mom a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat19_utterance1_char0-92 .
+
+    leolaniWorld:record a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat19_utterance0_char0-51 .
+
+    leolaniWorld:side a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat19_utterance5_char0-78 .
+
+    leolaniWorld:speaker1 a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat19_utterance2_char0-79,
+            leolaniTalk:chat19_utterance4_char0-58,
+            leolaniTalk:chat19_utterance6_char0-44 .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance .
+
+    leolaniWorld:t a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat19_utterance7_char0-190 .
+
+    leolaniWorld:tree a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat19_utterance1_char0-92 .
+
+    leolaniWorld:year a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat19_utterance1_char0-92 .
+}
+
+leolaniWorld:family_have_record {
+    leolaniWorld:family n2mu:have leolaniWorld:record .
+}
+
+leolaniWorld:speaker1_be_close {
+    leolaniWorld:speaker1 n2mu:be leolaniWorld:close .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context41 a eps:Context ;
+        rdfs:label "context41" ;
+        n2mu:id "41"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown41 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat19 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown41 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "240"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat19 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat19" ;
+        n2mu:id "19"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat19_utterance0,
+            leolaniTalk:chat19_utterance1,
+            leolaniTalk:chat19_utterance2,
+            leolaniTalk:chat19_utterance4,
+            leolaniTalk:chat19_utterance5,
+            leolaniTalk:chat19_utterance6,
+            leolaniTalk:chat19_utterance7 .
+
+    leolaniTalk:chat19_utterance0 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat19_utterance0" ;
+        n2mu:id "0"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat19_utterance1 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat19_utterance1" ;
+        n2mu:id "1"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat19_utterance2 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat19_utterance2" ;
+        n2mu:id "2"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat19_utterance4 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat19_utterance4" ;
+        n2mu:id "4"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat19_utterance5 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat19_utterance5" ;
+        n2mu:id "5"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat19_utterance6 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat19_utterance6" ;
+        n2mu:id "6"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat19_utterance7 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat19_utterance7" ;
+        n2mu:id "7"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "speaker2" .
+}
+
+leolaniWorld:speaker1_have_copy {
+    leolaniWorld:speaker1 n2mu:have leolaniWorld:copy .
+}
+
+leolaniWorld:speaker1_have_family {
+    leolaniWorld:speaker1 n2mu:have leolaniWorld:family .
+}
+
+leolaniWorld:leolani_know_speaker2 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:speaker2 .
+}
+
+leolaniWorld:Ve_get_side {
+    leolaniWorld:Ve n2mu:get leolaniWorld:side .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:Ve_get_side_0000 a grasp:Attribution ;
+        rdfs:label "Ve_get_side_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat19_utterance5_char0-78 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:chat19_utterance0_char0-51 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat19_utterance0_char0-51" ;
+        gaf:containsDenotation leolaniWorld:family,
+            leolaniWorld:record ;
+        gaf:denotes leolaniWorld:family_have_record ;
+        grasp:hasAttribution leolaniTalk:family_have_record_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:25:03.330778"^^xml1:string,
+            "2022-12-14 11:25:03.835783"^^xml1:string,
+            "2022-12-14 11:25:04.479714"^^xml1:string,
+            "2022-12-14 11:25:05.011590"^^xml1:string,
+            "2022-12-14 11:25:05.540141"^^xml1:string,
+            "2022-12-14 11:25:06.194882"^^xml1:string,
+            "2022-12-14 11:25:06.906354"^^xml1:string,
+            "2022-12-14 11:25:07.677017"^^xml1:string,
+            "2022-12-14 11:25:08.517715"^^xml1:string,
+            "2022-12-14 11:25:09.414210"^^xml1:string ;
+        rdf:value "does your family have a record of your ancestors ? "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat19_utterance0 .
+
+    leolaniTalk:chat19_utterance2_char0-79 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat19_utterance2_char0-79" ;
+        gaf:containsDenotation leolaniWorld:copy,
+            leolaniWorld:speaker1 ;
+        gaf:denotes leolaniWorld:speaker1_have_copy ;
+        grasp:hasAttribution leolaniTalk:speaker1_have_copy_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:25:04.707145"^^xml1:string,
+            "2022-12-14 11:25:05.237365"^^xml1:string,
+            "2022-12-14 11:25:05.757804"^^xml1:string,
+            "2022-12-14 11:25:06.428711"^^xml1:string,
+            "2022-12-14 11:25:07.144621"^^xml1:string,
+            "2022-12-14 11:25:07.901162"^^xml1:string,
+            "2022-12-14 11:25:08.752993"^^xml1:string,
+            "2022-12-14 11:25:09.654985"^^xml1:string ;
+        rdf:value " do you have a copy of your family tree in your house ? I ’ d love to see it . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat19_utterance2 .
+
+    leolaniTalk:chat19_utterance4_char0-58 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat19_utterance4_char0-58" ;
+        gaf:containsDenotation leolaniWorld:family,
+            leolaniWorld:speaker1 ;
+        gaf:denotes leolaniWorld:speaker1_have_family ;
+        grasp:hasAttribution leolaniTalk:speaker1_have_family_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:25:05.838034"^^xml1:string,
+            "2022-12-14 11:25:06.514010"^^xml1:string,
+            "2022-12-14 11:25:07.230126"^^xml1:string,
+            "2022-12-14 11:25:07.988127"^^xml1:string,
+            "2022-12-14 11:25:08.832550"^^xml1:string,
+            "2022-12-14 11:25:09.734316"^^xml1:string ;
+        rdf:value " that ’ s amazing . Do you have a large extended family ? "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat19_utterance4 .
+
+    leolaniTalk:chat19_utterance5_char0-78 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat19_utterance5_char0-78" ;
+        gaf:containsDenotation leolaniWorld:Ve,
+            leolaniWorld:side ;
+        gaf:denotes leolaniWorld:Ve_get_side ;
+        grasp:hasAttribution leolaniTalk:Ve_get_side_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:25:06.607812"^^xml1:string,
+            "2022-12-14 11:25:07.316744"^^xml1:string,
+            "2022-12-14 11:25:08.059943"^^xml1:string,
+            "2022-12-14 11:25:08.924923"^^xml1:string,
+            "2022-12-14 11:25:09.814069"^^xml1:string ;
+        rdf:value " I ’ Ve got 30 cousins on my mom ’ s side and 10 cousins on my dad ’ s side . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat19_utterance5 .
+
+    leolaniTalk:chat19_utterance6_char0-44 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat19_utterance6_char0-44" ;
+        gaf:containsDenotation leolaniWorld:close,
+            leolaniWorld:speaker1 ;
+        gaf:denotes leolaniWorld:speaker1_be_close ;
+        grasp:hasAttribution leolaniTalk:speaker1_be_close_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:25:07.394789"^^xml1:string,
+            "2022-12-14 11:25:08.136088"^^xml1:string,
+            "2022-12-14 11:25:09.017877"^^xml1:string,
+            "2022-12-14 11:25:09.899379"^^xml1:string ;
+        rdf:value " are you very close to your first-cousins ? "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat19_utterance6 .
+
+    leolaniTalk:chat19_utterance7_char0-190 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat19_utterance7_char0-190" ;
+        gaf:containsDenotation leolaniWorld:cousin,
+            leolaniWorld:t ;
+        gaf:denotes leolaniWorld:t_know_cousin ;
+        grasp:hasAttribution leolaniTalk:t_know_cousin_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:25:08.213089"^^xml1:string,
+            "2022-12-14 11:25:09.106768"^^xml1:string ;
+        rdf:value " the ones that are my age are close relatives . Now that I ’ m older , I don ’ t spend as much time with them as I used to , so I don ’ t know my younger cousins as well as the older ones . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat19_utterance7 .
+
+    leolaniTalk:family_have_record_0000 a grasp:Attribution ;
+        rdfs:label "family_have_record_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat19_utterance0_char0-51 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:mom_work-for_year_0000 a grasp:Attribution ;
+        rdfs:label "mom_work-for_year_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat19_utterance1_char0-92 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:mom_work-on_tree_0000 a grasp:Attribution ;
+        rdfs:label "mom_work-on_tree_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat19_utterance1_char0-92 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker1_be_close_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_be_close_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat19_utterance6_char0-44 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker1_have_copy_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_have_copy_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat19_utterance2_char0-79 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker1_have_family_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_have_family_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat19_utterance4_char0-58 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:t_know_cousin_0000 a grasp:Attribution ;
+        rdfs:label "t_know_cousin_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat19_utterance7_char0-190 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:chat19_utterance1_char0-92 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat19_utterance1_char0-92" ;
+        gaf:containsDenotation leolaniWorld:mom,
+            leolaniWorld:tree,
+            leolaniWorld:year ;
+        gaf:denotes leolaniWorld:mom_work-for_year,
+            leolaniWorld:mom_work-on_tree ;
+        grasp:hasAttribution leolaniTalk:mom_work-for_year_0000,
+            leolaniTalk:mom_work-on_tree_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:25:04.088437"^^xml1:string,
+            "2022-12-14 11:25:04.171865"^^xml1:string,
+            "2022-12-14 11:25:04.549469"^^xml1:string,
+            "2022-12-14 11:25:04.627265"^^xml1:string,
+            "2022-12-14 11:25:05.087464"^^xml1:string,
+            "2022-12-14 11:25:05.162893"^^xml1:string,
+            "2022-12-14 11:25:05.614685"^^xml1:string,
+            "2022-12-14 11:25:05.683603"^^xml1:string,
+            "2022-12-14 11:25:06.264352"^^xml1:string,
+            "2022-12-14 11:25:06.346149"^^xml1:string,
+            "2022-12-14 11:25:06.982908"^^xml1:string,
+            "2022-12-14 11:25:07.065075"^^xml1:string,
+            "2022-12-14 11:25:07.748097"^^xml1:string,
+            "2022-12-14 11:25:07.814461"^^xml1:string,
+            "2022-12-14 11:25:08.600152"^^xml1:string,
+            "2022-12-14 11:25:08.685220"^^xml1:string,
+            "2022-12-14 11:25:09.495215"^^xml1:string,
+            "2022-12-14 11:25:09.574153"^^xml1:string ;
+        rdf:value " sure . My mom has been working on our family tree for years . She ’ s always updating it . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat19_utterance1 .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:mom_work-for_year {
+    leolaniWorld:mom n2mu:work-for leolaniWorld:year .
+}
+
+leolaniWorld:mom_work-on_tree {
+    leolaniWorld:mom n2mu:work-on leolaniWorld:tree .
+}
+
+leolaniWorld:t_know_cousin {
+    leolaniWorld:t n2mu:know leolaniWorld:cousin .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:Ve_get_side a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "Ve_get_side" ;
+        gaf:denotedBy leolaniTalk:chat19_utterance5_char0-78 .
+
+    leolaniWorld:family_have_record a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "family_have_record" ;
+        gaf:denotedBy leolaniTalk:chat19_utterance0_char0-51 .
+
+    leolaniWorld:leolani_know_speaker2 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_speaker2" .
+
+    leolaniWorld:mom_work-for_year a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "mom_work-for_year" ;
+        gaf:denotedBy leolaniTalk:chat19_utterance1_char0-92 .
+
+    leolaniWorld:mom_work-on_tree a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "mom_work-on_tree" ;
+        gaf:denotedBy leolaniTalk:chat19_utterance1_char0-92 .
+
+    leolaniWorld:speaker1_be_close a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_be_close" ;
+        gaf:denotedBy leolaniTalk:chat19_utterance6_char0-44 .
+
+    leolaniWorld:speaker1_have_copy a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_have_copy" ;
+        gaf:denotedBy leolaniTalk:chat19_utterance2_char0-79 .
+
+    leolaniWorld:speaker1_have_family a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_have_family" ;
+        gaf:denotedBy leolaniTalk:chat19_utterance4_char0-58 .
+
+    leolaniWorld:t_know_cousin a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "t_know_cousin" ;
+        gaf:denotedBy leolaniTalk:chat19_utterance7_char0-190 .
+
+    leolaniWorld:speaker2 owl:sameAs leolaniWorld:speaker2 .
+}
+

@@ -1,0 +1,179 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniTalk:Interactions {
+    leolaniContext:context45 a eps:Context ;
+        rdfs:label "context45" ;
+        n2mu:id "45"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown45 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat160 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown45 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "126"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat160 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat160" ;
+        n2mu:id "160"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat160_utterance0,
+            leolaniTalk:chat160_utterance3 .
+
+    leolaniTalk:chat160_utterance0 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat160_utterance0" ;
+        n2mu:id "0"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniTalk:chat160_utterance3 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat160_utterance3" ;
+        n2mu:id "3"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:speaker1 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "speaker1" .
+}
+
+leolaniWorld:speaker2_hear-about_David {
+    leolaniWorld:speaker2 n2mu:hear-about leolaniWorld:David .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:chat160_utterance0_char0-41 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat160_utterance0_char0-41" ;
+        gaf:containsDenotation leolaniWorld:David,
+            leolaniWorld:speaker2 ;
+        gaf:denotes leolaniWorld:speaker2_hear-about_David ;
+        grasp:hasAttribution leolaniTalk:speaker2_hear-about_David_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:44:15.257375"^^xml1:string,
+            "2022-12-14 11:44:16.255118"^^xml1:string,
+            "2022-12-14 11:44:17.170033"^^xml1:string,
+            "2022-12-14 11:44:18.129487"^^xml1:string ;
+        rdf:value "Hey , Maggy , Did you hear about David ? "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat160_utterance0 .
+
+    leolaniTalk:chat160_utterance3_char0-38 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat160_utterance3_char0-38" ;
+        gaf:containsDenotation leolaniWorld:speaker1,
+            leolaniWorld:t ;
+        gaf:denotes leolaniWorld:t_follow_speaker1 ;
+        grasp:hasAttribution leolaniTalk:t_follow_speaker1_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:44:18.730194"^^xml1:string ;
+        rdf:value " Sorry , I don ’ t quite follow you . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat160_utterance3 .
+
+    leolaniTalk:speaker2_hear-about_David_0000 a grasp:Attribution ;
+        rdfs:label "speaker2_hear-about_David_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat160_utterance0_char0-41 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:t_follow_speaker1_0000 a grasp:Attribution ;
+        rdfs:label "t_follow_speaker1_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat160_utterance3_char0-38 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:leolani_know_speaker1 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:speaker1 .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:David a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat160_utterance0_char0-41 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:speaker1 a n2mu:person,
+            gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat160_utterance3_char0-38 .
+
+    leolaniWorld:speaker2 a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat160_utterance0_char0-41 .
+
+    leolaniWorld:t a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat160_utterance3_char0-38 .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_speaker1 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_speaker1" .
+
+    leolaniWorld:speaker2_hear-about_David a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker2_hear-about_David" ;
+        gaf:denotedBy leolaniTalk:chat160_utterance0_char0-41 .
+
+    leolaniWorld:t_follow_speaker1 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "t_follow_speaker1" ;
+        gaf:denotedBy leolaniTalk:chat160_utterance3_char0-38 .
+
+    leolaniWorld:speaker1 owl:sameAs leolaniWorld:speaker1 .
+}
+
+leolaniWorld:t_follow_speaker1 {
+    leolaniWorld:t n2mu:follow leolaniWorld:speaker1 .
+}
+

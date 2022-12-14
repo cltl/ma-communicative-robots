@@ -91,9 +91,9 @@ class DailyDialogueLoader(DataLoader):
             for i, utterance in enumerate(row['row']['dialog']):
                 speaker = "speaker1" if i % 2 == 0 else "speaker2"
                 speech_act = speech_act_tagger.extract_dialogue_act(utterance)
-                conv_dict[row_id].append({'turn': i,
-                                          'speaker': speaker,
-                                          'text': utterance,
+                conv_dict[row_id].append({'Turn': i,
+                                          'Speaker': speaker,
+                                          'Response': utterance,
                                           'speech-act': speech_act[0].value,
                                           'given_emotion': row['row']['emotion'][i],
                                           'given_act': row['row']['act'][i],

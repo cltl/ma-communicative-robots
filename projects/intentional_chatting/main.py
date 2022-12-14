@@ -34,7 +34,7 @@ def load_json(file_name, data_dir='./processed_data/daily_dialogue'):
 def collect_speakers(conversation):
     speakers = set()
     for speaker in conversation:
-        speakers.add(speaker["speaker"])
+        speakers.add(speaker["Speaker"])
 
     return [s for s in speakers]
 
@@ -59,10 +59,13 @@ analyzer = spacyAnalyzer()
 linker = LabelBasedLinker()
 
 print(f'----------DATASET:DailyDialogue---------')
+
+print(f"Loading dataset")
 daily_dialog = DailyDialogueLoader()
+
 capsules_skipped = 0
 for idx, row in enumerate(daily_dialog.data):
-    print(f"Processing turn {idx}/{len(daily_dialog.data) - 1}")
+    print(f"Processing conversation {idx}/{len(daily_dialog.data) - 1}")
 
     key = list(row.keys())[0]  # obtain the ID for the dialog
     conversation = row[key]
@@ -84,13 +87,13 @@ for idx, row in enumerate(daily_dialog.data):
 
     capsules = []
     for i, turn in enumerate(conversation):
-
+        print(f"\tProcessing turn {i}/{len(conversation) - 1}")
         # switch around speakers every turn
         speakers = [speakers[-1], speakers[0]]
-        utterance = turn['text']
+        utterance = turn['Response']
 
         # add utterance to chat and use spacy analyzer to analyze
-        print("\tAnalyzing utterance")
+        print("\t\tAnalyzing utterance")
         chat.add_utterance(utterance)
         subj, obj = speakers
         analyzer.analyze(chat.last_utterance, subj, obj)
@@ -105,7 +108,7 @@ for idx, row in enumerate(daily_dialog.data):
 
             try:
                 # Add capsule to brain
-                print("\t\tAdding capsule to brain")
+                print("\t\t\tAdding capsule to brain")
                 response = brain.capsule_statement(capsule)
                 row[key][i]['rdf_file'].append(response['rdf_log_path'].stem)
             except:

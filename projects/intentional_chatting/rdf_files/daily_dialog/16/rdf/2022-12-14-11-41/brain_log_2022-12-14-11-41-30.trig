@@ -1,0 +1,375 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniTalk:Interactions {
+    leolaniContext:context16 a eps:Context ;
+        rdfs:label "context16" ;
+        n2mu:id "16"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown16 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat203 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown16 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "31"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat203 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat203" ;
+        n2mu:id "203"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat203_utterance1,
+            leolaniTalk:chat203_utterance2,
+            leolaniTalk:chat203_utterance4,
+            leolaniTalk:chat203_utterance5,
+            leolaniTalk:chat203_utterance7,
+            leolaniTalk:chat203_utterance8 .
+
+    leolaniTalk:chat203_utterance1 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat203_utterance1" ;
+        n2mu:id "1"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniTalk:chat203_utterance2 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat203_utterance2" ;
+        n2mu:id "2"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniTalk:chat203_utterance4 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat203_utterance4" ;
+        n2mu:id "4"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniTalk:chat203_utterance5 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat203_utterance5" ;
+        n2mu:id "5"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniTalk:chat203_utterance7 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat203_utterance7" ;
+        n2mu:id "7"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniTalk:chat203_utterance8 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat203_utterance8" ;
+        n2mu:id "8"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:speaker1 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "speaker1" .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:chat203_utterance1_char0-50 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat203_utterance1_char0-50" ;
+        gaf:containsDenotation leolaniWorld:class,
+            leolaniWorld:speaker1 ;
+        gaf:denotes leolaniWorld:speaker1_like_class ;
+        grasp:hasAttribution leolaniTalk:speaker1_like_class_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:41:09.268907"^^xml1:string,
+            "2022-12-14 11:41:10.217342"^^xml1:string,
+            "2022-12-14 11:41:11.968709"^^xml1:string,
+            "2022-12-14 11:41:13.650250"^^xml1:string,
+            "2022-12-14 11:41:15.727138"^^xml1:string,
+            "2022-12-14 11:41:18.140049"^^xml1:string,
+            "2022-12-14 11:41:20.559736"^^xml1:string,
+            "2022-12-14 11:41:23.746885"^^xml1:string,
+            "2022-12-14 11:41:27.887685"^^xml1:string ;
+        rdf:value " No problem , what class would you like to take ? "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat203_utterance1 .
+
+    leolaniTalk:chat203_utterance2_char0-71 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat203_utterance2_char0-71" ;
+        gaf:containsDenotation leolaniWorld:crazy,
+            leolaniWorld:speaker1 ;
+        gaf:denotes leolaniWorld:speaker1_be_crazy ;
+        grasp:hasAttribution leolaniTalk:speaker1_be_crazy_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:41:10.900815"^^xml1:string,
+            "2022-12-14 11:41:12.653379"^^xml1:string,
+            "2022-12-14 11:41:14.347051"^^xml1:string,
+            "2022-12-14 11:41:16.439946"^^xml1:string,
+            "2022-12-14 11:41:18.840245"^^xml1:string,
+            "2022-12-14 11:41:21.266034"^^xml1:string,
+            "2022-12-14 11:41:24.454864"^^xml1:string,
+            "2022-12-14 11:41:28.572924"^^xml1:string ;
+        rdf:value " I would very much enjoy taking a Psychology class.Because I'm crazy . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat203_utterance2 .
+
+    leolaniTalk:chat203_utterance4_char0-35 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat203_utterance4_char0-35" ;
+        gaf:containsDenotation leolaniWorld:class,
+            leolaniWorld:day ;
+        gaf:denotes leolaniWorld:day_be_class ;
+        grasp:hasAttribution leolaniTalk:day_be_class_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:41:15.080211"^^xml1:string,
+            "2022-12-14 11:41:17.184825"^^xml1:string,
+            "2022-12-14 11:41:19.594876"^^xml1:string,
+            "2022-12-14 11:41:22.008077"^^xml1:string,
+            "2022-12-14 11:41:25.222821"^^xml1:string,
+            "2022-12-14 11:41:29.324836"^^xml1:string ;
+        rdf:value " Which days are these classes on ? "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat203_utterance4 .
+
+    leolaniTalk:chat203_utterance5_char0-69 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat203_utterance5_char0-69" ;
+        gaf:containsDenotation leolaniWorld:class ;
+        gaf:denotes leolaniWorld:class_be_class ;
+        grasp:hasAttribution leolaniTalk:class_be_class_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:41:17.529861"^^xml1:string,
+            "2022-12-14 11:41:19.954656"^^xml1:string,
+            "2022-12-14 11:41:22.374515"^^xml1:string,
+            "2022-12-14 11:41:25.594082"^^xml1:string,
+            "2022-12-14 11:41:29.699024"^^xml1:string ;
+        rdf:value " The first class is a Tuesday and Thursday class from two to three . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat203_utterance5 .
+
+    leolaniTalk:chat203_utterance8_char0-47 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat203_utterance8_char0-47" ;
+        gaf:containsDenotation leolaniWorld:speaker2,
+            leolaniWorld:sure ;
+        gaf:denotes leolaniWorld:speaker2_be_sure ;
+        grasp:hasAttribution leolaniTalk:speaker2_be_sure_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:41:26.742313"^^xml1:string ;
+        rdf:value " Are you sure there are no more open classes ? "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat203_utterance8 .
+
+    leolaniTalk:class_be-from_Monday_0000 a grasp:Attribution ;
+        rdfs:label "class_be-from_Monday_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat203_utterance7_char0-62 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:class_be-on_Monday_0000 a grasp:Attribution ;
+        rdfs:label "class_be-on_Monday_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat203_utterance7_char0-62 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:class_be_class_0000 a grasp:Attribution ;
+        rdfs:label "class_be_class_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat203_utterance5_char0-69 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:day_be_class_0000 a grasp:Attribution ;
+        rdfs:label "day_be_class_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat203_utterance4_char0-35 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker1_be_crazy_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_be_crazy_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat203_utterance2_char0-71 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker1_like_class_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_like_class_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat203_utterance1_char0-50 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker2_be_sure_0000 a grasp:Attribution ;
+        rdfs:label "speaker2_be_sure_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat203_utterance8_char0-47 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:chat203_utterance7_char0-62 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat203_utterance7_char0-62" ;
+        gaf:containsDenotation leolaniWorld:Monday,
+            leolaniWorld:class ;
+        gaf:denotes leolaniWorld:class_be-from_Monday,
+            leolaniWorld:class_be-on_Monday ;
+        grasp:hasAttribution leolaniTalk:class_be-from_Monday_0000,
+            leolaniTalk:class_be-on_Monday_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:41:22.742644"^^xml1:string,
+            "2022-12-14 11:41:23.104716"^^xml1:string,
+            "2022-12-14 11:41:25.950905"^^xml1:string,
+            "2022-12-14 11:41:26.341125"^^xml1:string,
+            "2022-12-14 11:41:30.053049"^^xml1:string,
+            "2022-12-14 11:41:30.428174"^^xml1:string ;
+        rdf:value " The other class is on Monday and Wednesday from 10 am - 12 . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat203_utterance7 .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:leolani_know_speaker1 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:speaker1 .
+}
+
+leolaniWorld:speaker2_be_sure {
+    leolaniWorld:speaker2 n2mu:be leolaniWorld:sure .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:Monday a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat203_utterance7_char0-62 .
+
+    leolaniWorld:class a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat203_utterance1_char0-50,
+            leolaniTalk:chat203_utterance4_char0-35,
+            leolaniTalk:chat203_utterance5_char0-69,
+            leolaniTalk:chat203_utterance7_char0-62 .
+
+    leolaniWorld:crazy a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat203_utterance2_char0-71 .
+
+    leolaniWorld:day a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat203_utterance4_char0-35 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:speaker1 a n2mu:person,
+            gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat203_utterance1_char0-50,
+            leolaniTalk:chat203_utterance2_char0-71 .
+
+    leolaniWorld:speaker2 a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat203_utterance8_char0-47 .
+
+    leolaniWorld:sure a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat203_utterance8_char0-47 .
+}
+
+leolaniWorld:class_be_class {
+    leolaniWorld:class n2mu:be leolaniWorld:class .
+}
+
+leolaniWorld:class_be-on_Monday {
+    leolaniWorld:class n2mu:be-on leolaniWorld:Monday .
+}
+
+leolaniWorld:class_be-from_Monday {
+    leolaniWorld:class n2mu:be-from leolaniWorld:Monday .
+}
+
+leolaniWorld:speaker1_like_class {
+    leolaniWorld:speaker1 n2mu:like leolaniWorld:class .
+}
+
+leolaniWorld:speaker1_be_crazy {
+    leolaniWorld:speaker1 n2mu:be leolaniWorld:crazy .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:class_be-from_Monday a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "class_be-from_Monday" ;
+        gaf:denotedBy leolaniTalk:chat203_utterance7_char0-62 .
+
+    leolaniWorld:class_be-on_Monday a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "class_be-on_Monday" ;
+        gaf:denotedBy leolaniTalk:chat203_utterance7_char0-62 .
+
+    leolaniWorld:class_be_class a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "class_be_class" ;
+        gaf:denotedBy leolaniTalk:chat203_utterance5_char0-69 .
+
+    leolaniWorld:day_be_class a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "day_be_class" ;
+        gaf:denotedBy leolaniTalk:chat203_utterance4_char0-35 .
+
+    leolaniWorld:leolani_know_speaker1 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_speaker1" .
+
+    leolaniWorld:speaker1_be_crazy a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_be_crazy" ;
+        gaf:denotedBy leolaniTalk:chat203_utterance2_char0-71 .
+
+    leolaniWorld:speaker1_like_class a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_like_class" ;
+        gaf:denotedBy leolaniTalk:chat203_utterance1_char0-50 .
+
+    leolaniWorld:speaker2_be_sure a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker2_be_sure" ;
+        gaf:denotedBy leolaniTalk:chat203_utterance8_char0-47 .
+
+    leolaniWorld:speaker1 owl:sameAs leolaniWorld:speaker1 .
+}
+
+leolaniWorld:day_be_class {
+    leolaniWorld:day n2mu:be leolaniWorld:class .
+}
+

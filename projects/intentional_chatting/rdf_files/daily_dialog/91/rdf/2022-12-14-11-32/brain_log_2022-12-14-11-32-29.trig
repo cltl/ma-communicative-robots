@@ -1,0 +1,182 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:Instances {
+    leolaniWorld:Shanghai a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat18_utterance3_char0-27 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:speaker1 a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat18_utterance5_char0-136 .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat18_utterance3_char0-27 .
+
+    leolaniWorld:tourist a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat18_utterance5_char0-136 .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context91 a eps:Context ;
+        rdfs:label "context91" ;
+        n2mu:id "91"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown91 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat18 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown91 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "136"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat18 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat18" ;
+        n2mu:id "18"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat18_utterance3,
+            leolaniTalk:chat18_utterance5 .
+
+    leolaniTalk:chat18_utterance3 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat18_utterance3" ;
+        n2mu:id "3"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat18_utterance5 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat18_utterance5" ;
+        n2mu:id "5"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "speaker2" .
+}
+
+leolaniWorld:leolani_know_speaker2 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:speaker2 .
+}
+
+leolaniWorld:speaker2_work-in_Shanghai {
+    leolaniWorld:speaker2 n2mu:work-in leolaniWorld:Shanghai .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:chat18_utterance3_char0-27 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat18_utterance3_char0-27" ;
+        gaf:containsDenotation leolaniWorld:Shanghai,
+            leolaniWorld:speaker2 ;
+        gaf:denotes leolaniWorld:speaker2_work-in_Shanghai ;
+        grasp:hasAttribution leolaniTalk:speaker2_work-in_Shanghai_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:32:23.936918"^^xml1:string,
+            "2022-12-14 11:32:24.742874"^^xml1:string,
+            "2022-12-14 11:32:25.603423"^^xml1:string,
+            "2022-12-14 11:32:27.202423"^^xml1:string,
+            "2022-12-14 11:32:28.623344"^^xml1:string ;
+        rdf:value " Do you work in Shanghai ? "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat18_utterance3 .
+
+    leolaniTalk:chat18_utterance5_char0-136 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat18_utterance5_char0-136" ;
+        gaf:containsDenotation leolaniWorld:speaker1,
+            leolaniWorld:tourist ;
+        gaf:denotes leolaniWorld:speaker1_be_tourist ;
+        grasp:hasAttribution leolaniTalk:speaker1_be_tourist_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:32:26.207036"^^xml1:string,
+            "2022-12-14 11:32:27.808909"^^xml1:string,
+            "2022-12-14 11:32:29.208575"^^xml1:string ;
+        rdf:value " No , I'm a tourist . This place is amazing ! It's much bigger than I imagined , and much more exciting ! There's so much to see here . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat18_utterance5 .
+
+    leolaniTalk:speaker1_be_tourist_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_be_tourist_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat18_utterance5_char0-136 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker2_work-in_Shanghai_0000 a grasp:Attribution ;
+        rdfs:label "speaker2_work-in_Shanghai_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat18_utterance3_char0-27 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:speaker1_be_tourist {
+    leolaniWorld:speaker1 n2mu:be leolaniWorld:tourist .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_speaker2 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_speaker2" .
+
+    leolaniWorld:speaker1_be_tourist a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_be_tourist" ;
+        gaf:denotedBy leolaniTalk:chat18_utterance5_char0-136 .
+
+    leolaniWorld:speaker2_work-in_Shanghai a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker2_work-in_Shanghai" ;
+        gaf:denotedBy leolaniTalk:chat18_utterance3_char0-27 .
+
+    leolaniWorld:speaker2 owl:sameAs leolaniWorld:speaker2 .
+}
+

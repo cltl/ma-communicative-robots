@@ -1,0 +1,312 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:speaker1_clean_house {
+    leolaniWorld:speaker1 n2mu:clean leolaniWorld:house .
+}
+
+leolaniWorld:speaker2_have_weekend {
+    leolaniWorld:speaker2 n2mu:have leolaniWorld:weekend .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context80 a eps:Context ;
+        rdfs:label "context80" ;
+        n2mu:id "80"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown80 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat6 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown80 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "250"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat6 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat6" ;
+        n2mu:id "6"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat6_utterance0,
+            leolaniTalk:chat6_utterance1,
+            leolaniTalk:chat6_utterance3,
+            leolaniTalk:chat6_utterance5,
+            leolaniTalk:chat6_utterance6 .
+
+    leolaniTalk:chat6_utterance0 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat6_utterance0" ;
+        n2mu:id "0"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniTalk:chat6_utterance1 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat6_utterance1" ;
+        n2mu:id "1"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniTalk:chat6_utterance3 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat6_utterance3" ;
+        n2mu:id "3"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniTalk:chat6_utterance5 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat6_utterance5" ;
+        n2mu:id "5"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniTalk:chat6_utterance6 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat6_utterance6" ;
+        n2mu:id "6"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:speaker1 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "speaker1" .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:chat6_utterance0_char0-44 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat6_utterance0_char0-44" ;
+        gaf:containsDenotation leolaniWorld:speaker2,
+            leolaniWorld:weekend ;
+        gaf:denotes leolaniWorld:speaker2_have_weekend ;
+        grasp:hasAttribution leolaniTalk:speaker2_have_weekend_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:49:21.438924"^^xml1:string,
+            "2022-12-14 11:49:22.397929"^^xml1:string,
+            "2022-12-14 11:49:23.899939"^^xml1:string,
+            "2022-12-14 11:49:25.449746"^^xml1:string,
+            "2022-12-14 11:49:27.718292"^^xml1:string,
+            "2022-12-14 11:49:30.058936"^^xml1:string,
+            "2022-12-14 11:49:33.033139"^^xml1:string,
+            "2022-12-14 11:49:36.548731"^^xml1:string,
+            "2022-12-14 11:49:40.407812"^^xml1:string ;
+        rdf:value "Hi , Nicole . Did you have a good weekend ? "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat6_utterance0 .
+
+    leolaniTalk:chat6_utterance1_char0-40 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat6_utterance1_char0-40" ;
+        gaf:containsDenotation leolaniWorld:speaker2,
+            leolaniWorld:tired ;
+        gaf:denotes leolaniWorld:speaker2_feel_tired ;
+        grasp:hasAttribution leolaniTalk:speaker2_feel_tired_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:49:22.972071"^^xml1:string,
+            "2022-12-14 11:49:24.543271"^^xml1:string,
+            "2022-12-14 11:49:26.102054"^^xml1:string,
+            "2022-12-14 11:49:28.391407"^^xml1:string,
+            "2022-12-14 11:49:30.667364"^^xml1:string,
+            "2022-12-14 11:49:33.686420"^^xml1:string,
+            "2022-12-14 11:49:37.135609"^^xml1:string ;
+        rdf:value " Yes , I did . But I feel tired today . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat6_utterance1 .
+
+    leolaniTalk:chat6_utterance3_char0-100 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat6_utterance3_char0-100" ;
+        gaf:containsDenotation leolaniWorld:house,
+            leolaniWorld:speaker2 ;
+        gaf:denotes leolaniWorld:speaker2_clean_house ;
+        grasp:hasAttribution leolaniTalk:speaker2_clean_house_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:49:26.740773"^^xml1:string,
+            "2022-12-14 11:49:29.190707"^^xml1:string,
+            "2022-12-14 11:49:31.418751"^^xml1:string,
+            "2022-12-14 11:49:34.411351"^^xml1:string,
+            "2022-12-14 11:49:37.932844"^^xml1:string ;
+        rdf:value " Well , on Saturday I cleaned the house and played tennis . Then on Sunday I hiked in the country . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat6_utterance3 .
+
+    leolaniTalk:chat6_utterance5_char0-55 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat6_utterance5_char0-55" ;
+        gaf:containsDenotation leolaniWorld:evening,
+            leolaniWorld:speaker2 ;
+        gaf:denotes leolaniWorld:speaker2_study-on_evening ;
+        grasp:hasAttribution leolaniTalk:speaker2_study-on_evening_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:49:32.091411"^^xml1:string,
+            "2022-12-14 11:49:35.060327"^^xml1:string,
+            "2022-12-14 11:49:38.676395"^^xml1:string ;
+        rdf:value " Yeah . I studied on Sunday evening . What about you ? "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat6_utterance5 .
+
+    leolaniTalk:chat6_utterance6_char0-87 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat6_utterance6_char0-87" ;
+        gaf:containsDenotation leolaniWorld:house,
+            leolaniWorld:speaker1 ;
+        gaf:denotes leolaniWorld:speaker1_clean_house ;
+        grasp:hasAttribution leolaniTalk:speaker1_clean_house_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:49:35.660600"^^xml1:string,
+            "2022-12-14 11:49:39.365420"^^xml1:string ;
+        rdf:value " Well , I didn't clean the house and I didn't study . I stayed in bed and watched TV . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat6_utterance6 .
+
+    leolaniTalk:speaker1_clean_house_0000 a grasp:Attribution ;
+        rdfs:label "speaker1_clean_house_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat6_utterance6_char0-87 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker2_clean_house_0000 a grasp:Attribution ;
+        rdfs:label "speaker2_clean_house_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat6_utterance3_char0-100 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker2_feel_tired_0000 a grasp:Attribution ;
+        rdfs:label "speaker2_feel_tired_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat6_utterance1_char0-40 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker2_have_weekend_0000 a grasp:Attribution ;
+        rdfs:label "speaker2_have_weekend_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat6_utterance0_char0-44 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker2_study-on_evening_0000 a grasp:Attribution ;
+        rdfs:label "speaker2_study-on_evening_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat6_utterance5_char0-55 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:speaker2_study-on_evening {
+    leolaniWorld:speaker2 n2mu:study-on leolaniWorld:evening .
+}
+
+leolaniWorld:leolani_know_speaker1 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:speaker1 .
+}
+
+leolaniWorld:speaker2_clean_house {
+    leolaniWorld:speaker2 n2mu:clean leolaniWorld:house .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:evening a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat6_utterance5_char0-55 .
+
+    leolaniWorld:house a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat6_utterance3_char0-100,
+            leolaniTalk:chat6_utterance6_char0-87 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:speaker1 a n2mu:person,
+            gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat6_utterance6_char0-87 .
+
+    leolaniWorld:speaker2 a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat6_utterance0_char0-44,
+            leolaniTalk:chat6_utterance1_char0-40,
+            leolaniTalk:chat6_utterance3_char0-100,
+            leolaniTalk:chat6_utterance5_char0-55 .
+
+    leolaniWorld:tired a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat6_utterance1_char0-40 .
+
+    leolaniWorld:weekend a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat6_utterance0_char0-44 .
+}
+
+leolaniWorld:speaker2_feel_tired {
+    leolaniWorld:speaker2 n2mu:feel leolaniWorld:tired .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_speaker1 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_speaker1" .
+
+    leolaniWorld:speaker1_clean_house a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker1_clean_house" ;
+        gaf:denotedBy leolaniTalk:chat6_utterance6_char0-87 .
+
+    leolaniWorld:speaker2_clean_house a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker2_clean_house" ;
+        gaf:denotedBy leolaniTalk:chat6_utterance3_char0-100 .
+
+    leolaniWorld:speaker2_feel_tired a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker2_feel_tired" ;
+        gaf:denotedBy leolaniTalk:chat6_utterance1_char0-40 .
+
+    leolaniWorld:speaker2_have_weekend a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker2_have_weekend" ;
+        gaf:denotedBy leolaniTalk:chat6_utterance0_char0-44 .
+
+    leolaniWorld:speaker2_study-on_evening a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker2_study-on_evening" ;
+        gaf:denotedBy leolaniTalk:chat6_utterance5_char0-55 .
+
+    leolaniWorld:speaker1 owl:sameAs leolaniWorld:speaker1 .
+}
+

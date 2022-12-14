@@ -1,0 +1,187 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:speaker2_understand_learning {
+    leolaniWorld:speaker2 n2mu:understand leolaniWorld:learning .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context70 a eps:Context ;
+        rdfs:label "context70" ;
+        n2mu:id "70"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown70 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat74 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown70 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "153"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat74 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat74" ;
+        n2mu:id "74"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat74_utterance0 .
+
+    leolaniTalk:chat74_utterance0 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat74_utterance0" ;
+        n2mu:id "0"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker1 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:speaker1 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "speaker1" .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:people_advocate_learning_0000 a grasp:Attribution ;
+        rdfs:label "people_advocate_learning_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat74_utterance0_char0-156 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:people_have_view_0000 a grasp:Attribution ;
+        rdfs:label "people_have_view_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat74_utterance0_char0-156 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker2_understand_learning_0000 a grasp:Attribution ;
+        rdfs:label "speaker2_understand_learning_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat74_utterance0_char0-156 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:chat74_utterance0_char0-156 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat74_utterance0_char0-156" ;
+        gaf:containsDenotation leolaniWorld:learning,
+            leolaniWorld:people,
+            leolaniWorld:speaker2,
+            leolaniWorld:view ;
+        gaf:denotes leolaniWorld:people_advocate_learning,
+            leolaniWorld:people_have_view,
+            leolaniWorld:speaker2_understand_learning ;
+        grasp:hasAttribution leolaniTalk:people_advocate_learning_0000,
+            leolaniTalk:people_have_view_0000,
+            leolaniTalk:speaker2_understand_learning_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker1 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:48:07.094252"^^xml1:string,
+            "2022-12-14 11:48:07.239397"^^xml1:string,
+            "2022-12-14 11:48:07.431458"^^xml1:string,
+            "2022-12-14 11:48:08.326461"^^xml1:string,
+            "2022-12-14 11:48:08.587880"^^xml1:string,
+            "2022-12-14 11:48:08.867542"^^xml1:string,
+            "2022-12-14 11:48:09.790190"^^xml1:string ;
+        rdf:value "Today more and more people advocate lifelong learning . But people have different views about lifelong learning . How do you understand lifelong learning ? "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat74_utterance0 .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:leolani_know_speaker1 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:speaker1 .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:learning a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat74_utterance0_char0-156 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:people a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat74_utterance0_char0-156 .
+
+    leolaniWorld:speaker1 a n2mu:person,
+            gaf:Instance .
+
+    leolaniWorld:speaker2 a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat74_utterance0_char0-156 .
+
+    leolaniWorld:view a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat74_utterance0_char0-156 .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_speaker1 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_speaker1" .
+
+    leolaniWorld:people_advocate_learning a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "people_advocate_learning" ;
+        gaf:denotedBy leolaniTalk:chat74_utterance0_char0-156 .
+
+    leolaniWorld:people_have_view a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "people_have_view" ;
+        gaf:denotedBy leolaniTalk:chat74_utterance0_char0-156 .
+
+    leolaniWorld:speaker2_understand_learning a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker2_understand_learning" ;
+        gaf:denotedBy leolaniTalk:chat74_utterance0_char0-156 .
+
+    leolaniWorld:speaker1 owl:sameAs leolaniWorld:speaker1 .
+}
+
+leolaniWorld:people_advocate_learning {
+    leolaniWorld:people n2mu:advocate leolaniWorld:learning .
+}
+
+leolaniWorld:people_have_view {
+    leolaniWorld:people n2mu:have leolaniWorld:view .
+}
+

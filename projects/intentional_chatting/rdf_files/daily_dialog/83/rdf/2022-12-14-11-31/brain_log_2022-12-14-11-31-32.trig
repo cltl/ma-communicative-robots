@@ -1,0 +1,182 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:Instances {
+    leolaniWorld:Tina a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat49_utterance4_char0-81 .
+
+    leolaniWorld:article a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat49_utterance2_char0-154 .
+
+    leolaniWorld:birth a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat49_utterance4_char0-81 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:problem a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat49_utterance2_char0-154 .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance .
+}
+
+leolaniWorld:Tina_give_birth {
+    leolaniWorld:Tina n2mu:give leolaniWorld:birth .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context83 a eps:Context ;
+        rdfs:label "context83" ;
+        n2mu:id "83"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown83 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat49 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown83 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "94"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat49 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat49" ;
+        n2mu:id "49"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat49_utterance2,
+            leolaniTalk:chat49_utterance4 .
+
+    leolaniTalk:chat49_utterance2 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat49_utterance2" ;
+        n2mu:id "2"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat49_utterance4 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat49_utterance4" ;
+        n2mu:id "4"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "speaker2" .
+}
+
+leolaniWorld:article_talk-about_problem {
+    leolaniWorld:article n2mu:talk-about leolaniWorld:problem .
+}
+
+leolaniWorld:leolani_know_speaker2 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:speaker2 .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:Tina_give_birth_0000 a grasp:Attribution ;
+        rdfs:label "Tina_give_birth_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat49_utterance4_char0-81 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:article_talk-about_problem_0000 a grasp:Attribution ;
+        rdfs:label "article_talk-about_problem_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat49_utterance2_char0-154 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:chat49_utterance2_char0-154 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat49_utterance2_char0-154" ;
+        gaf:containsDenotation leolaniWorld:article,
+            leolaniWorld:problem ;
+        gaf:denotes leolaniWorld:article_talk-about_problem ;
+        grasp:hasAttribution leolaniTalk:article_talk-about_problem_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:31:31.853762"^^xml1:string,
+            "2022-12-14 11:31:32.138159"^^xml1:string,
+            "2022-12-14 11:31:32.422480"^^xml1:string,
+            "2022-12-14 11:31:32.853749"^^xml1:string ;
+        rdf:value " About 70 , I think . This newspaper article talks about the problems of an aging population . It ’ s a problem that will soon affect most of the world . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat49_utterance2 .
+
+    leolaniTalk:chat49_utterance4_char0-81 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat49_utterance4_char0-81" ;
+        gaf:containsDenotation leolaniWorld:Tina,
+            leolaniWorld:birth ;
+        gaf:denotes leolaniWorld:Tina_give_birth ;
+        grasp:hasAttribution leolaniTalk:Tina_give_birth_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:31:32.494327"^^xml1:string,
+            "2022-12-14 11:31:32.922441"^^xml1:string ;
+        rdf:value " Perhaps we need to have more babies ! Tina gave birth to a baby boy yesterday . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat49_utterance4 .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:Tina_give_birth a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "Tina_give_birth" ;
+        gaf:denotedBy leolaniTalk:chat49_utterance4_char0-81 .
+
+    leolaniWorld:article_talk-about_problem a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "article_talk-about_problem" ;
+        gaf:denotedBy leolaniTalk:chat49_utterance2_char0-154 .
+
+    leolaniWorld:leolani_know_speaker2 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_speaker2" .
+
+    leolaniWorld:speaker2 owl:sameAs leolaniWorld:speaker2 .
+}
+
