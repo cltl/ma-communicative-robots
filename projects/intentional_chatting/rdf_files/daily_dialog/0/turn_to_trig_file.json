@@ -1,0 +1,102 @@
+[
+  {
+    "turn": 0,
+    "speaker": "speaker1",
+    "text": "Say , Jim , how about going for a few beers after dinner ? ",
+    "speech-act": "command",
+    "given_emotion": 0,
+    "given_act": 3,
+    "rdf_file": []
+  },
+  {
+    "turn": 1,
+    "speaker": "speaker2",
+    "text": " You know that is tempting but is really not good for our fitness . ",
+    "speech-act": "command",
+    "given_emotion": 0,
+    "given_act": 4,
+    "rdf_file": []
+  },
+  {
+    "turn": 2,
+    "speaker": "speaker1",
+    "text": " What do you mean ? It will help us to relax . ",
+    "speech-act": "statement",
+    "given_emotion": 0,
+    "given_act": 2,
+    "rdf_file": []
+  },
+  {
+    "turn": 3,
+    "speaker": "speaker2",
+    "text": " Do you really think so ? I don't . It will just make us fat and act silly . Remember last time ? ",
+    "speech-act": "opinion",
+    "given_emotion": 0,
+    "given_act": 2,
+    "rdf_file": []
+  },
+  {
+    "turn": 4,
+    "speaker": "speaker1",
+    "text": " I guess you are right.But what shall we do ? I don't feel like sitting at home . ",
+    "speech-act": "command",
+    "given_emotion": 0,
+    "given_act": 2,
+    "rdf_file": []
+  },
+  {
+    "turn": 5,
+    "speaker": "speaker2",
+    "text": " I suggest a walk over to the gym where we can play singsong and meet some of our friends . ",
+    "speech-act": "command",
+    "given_emotion": 0,
+    "given_act": 3,
+    "rdf_file": [
+      "brain_log_2022-12-14-11-03-52"
+    ]
+  },
+  {
+    "turn": 6,
+    "speaker": "speaker1",
+    "text": " That's a good idea . I hear Mary and Sally often go there to play pingpong.Perhaps we can make a foursome with them . ",
+    "speech-act": "command",
+    "given_emotion": 4,
+    "given_act": 4,
+    "rdf_file": [
+      "brain_log_2022-12-14-11-03-53"
+    ]
+  },
+  {
+    "turn": 7,
+    "speaker": "speaker2",
+    "text": " Sounds great to me ! If they are willing , we could ask them to go dancing with us.That is excellent exercise and fun , too . ",
+    "speech-act": "command",
+    "given_emotion": 4,
+    "given_act": 1,
+    "rdf_file": [
+      "brain_log_2022-12-14-11-03-54"
+    ]
+  },
+  {
+    "turn": 8,
+    "speaker": "speaker1",
+    "text": " Good.Let ' s go now . ",
+    "speech-act": "closing",
+    "given_emotion": 4,
+    "given_act": 3,
+    "rdf_file": [
+      "brain_log_2022-12-14-11-03-55"
+    ]
+  },
+  {
+    "turn": 9,
+    "speaker": "speaker2",
+    "text": " All right . ",
+    "speech-act": "closing",
+    "given_emotion": 4,
+    "given_act": 4,
+    "rdf_file": [
+      "brain_log_2022-12-14-11-03-55"
+    ]
+  }
+]

@@ -39,7 +39,6 @@ def collect_speakers(conversation):
     return [s for s in speakers]
 
 
-### Ignore this:
 def expand_author(capsule):
     if type(capsule['author']) == str:
         capsule['author'] = {
@@ -56,22 +55,22 @@ def expand_author(capsule):
     return capsule
 
 
-daily_dialog = DailyDialogueLoader()
-daily_dialog.save_to_file('dd_test')
-data = load_json('dd_test')
-
 analyzer = spacyAnalyzer()
 linker = LabelBasedLinker()
 
+print(f'----------DATASET:DailyDialogue---------')
+daily_dialog = DailyDialogueLoader()
 capsules_skipped = 0
-for row in data:
+for idx, row in enumerate(daily_dialog.data):
+    print(f"Processing turn {idx}/{len(daily_dialog.data) - 1}")
+
     key = list(row.keys())[0]  # obtain the ID for the dialog
     conversation = row[key]
     speakers = collect_speakers(conversation)  # collect the list of speakers
     assert len(speakers) == 2, f'{len(speakers)} speakers found. Can only parse 2 speakers.'
 
-    file_loc = os.path.join(out_dir, key + '/rdf/')
-    file_loc = Path(file_loc)
+    file_loc = Path(out_dir) / str(key) / 'rdf'
+    turn_to_trig_file = Path(out_dir) / str(key) / 'turn_to_trig_file.json'
     if not os.path.exists(file_loc):
         os.makedirs(Path(file_loc))  # create directory to store the rdf files if need be
 
@@ -85,11 +84,13 @@ for row in data:
 
     capsules = []
     for i, turn in enumerate(conversation):
+
         # switch around speakers every turn
         speakers = [speakers[-1], speakers[0]]
         utterance = turn['text']
 
         # add utterance to chat and use spacy analyzer to analyze
+        print("\tAnalyzing utterance")
         chat.add_utterance(utterance)
         subj, obj = speakers
         analyzer.analyze(chat.last_utterance, subj, obj)
@@ -102,14 +103,18 @@ for row in data:
             capsule = expand_author(capsule)
             linker.link(capsule)
 
-            # Debug?
-            if type(capsule['perspective']) == dict:
-                print('all good in the hood')
-            else:
-                print('niet good')
-
             try:
-                brain.capsule_statement(capsule)
+                # Add capsule to brain
+                print("\t\tAdding capsule to brain")
+                response = brain.capsule_statement(capsule)
+                row[key][i]['rdf_file'].append(response['rdf_log_path'].stem)
             except:
                 capsules_skipped += 1
-                print(f"Capsule skipped. Total {capsules_skipped}")
+                print(f"\tCapsule skipped. Total skipped: {capsules_skipped}")
+
+    # Save conversation turn to trig
+    with open(turn_to_trig_file, 'w') as f:
+        js = json.dumps(row[key])
+        f.write(js)
+
+daily_dialog.save_to_file('dd_test')

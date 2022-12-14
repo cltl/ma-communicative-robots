@@ -4,6 +4,7 @@ from collections import defaultdict
 
 from cltl.dialogue_act_classification.midas_classifier import MidasDialogTagger
 
+
 class DataLoader:
     def __init__(self, data_dir='./data', out_dir='./processed_data'):
         self.data_dir = data_dir
@@ -27,7 +28,7 @@ class DataLoader:
         with open(file_path, 'w', encoding='utf8') as f:
             json.dump(self.data, f, indent=4)
 
-    
+
 class EmoryLoader(DataLoader):
     def __init__(self):
         super().__init__(data_dir="data/emory_nlp")
@@ -62,7 +63,7 @@ class CommonsenseLoader(DataLoader):
                     conv_dict[context_id].append({'speaker': speaker, 'text': utterance})
                 self.data.append(conv_dict)
 
-        
+
 class ConvAI2Loader(DataLoader):
     def __init__(self):
         super().__init__(data_dir="data/conv_ai_2")
@@ -79,6 +80,7 @@ class ConvAI2Loader(DataLoader):
 
 class DailyDialogueLoader(DataLoader):
     '''Runs through daily_dialog.json to collect all data'''
+
     def __init__(self):
         super().__init__(data_dir="data/daily_dialogue", out_dir='processed_data/daily_dialogue')
         data = self.load_data("daily_dialogue")
@@ -89,8 +91,12 @@ class DailyDialogueLoader(DataLoader):
             for i, utterance in enumerate(row['row']['dialog']):
                 speaker = "speaker1" if i % 2 == 0 else "speaker2"
                 speech_act = speech_act_tagger.extract_dialogue_act(utterance)
-                conv_dict[row_id].append({'speaker': speaker,
+                conv_dict[row_id].append({'turn': i,
+                                          'speaker': speaker,
                                           'text': utterance,
-                                          'speech-act': speech_act[0].value})
+                                          'speech-act': speech_act[0].value,
+                                          'given_emotion': row['row']['emotion'][i],
+                                          'given_act': row['row']['act'][i],
+                                          'rdf_file': []}
+                                         )
             self.data.append(conv_dict)
-

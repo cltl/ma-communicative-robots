@@ -1,0 +1,204 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:speaker2_be-to_America {
+    leolaniWorld:speaker2 n2mu:be-to leolaniWorld:America .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context84 a eps:Context ;
+        rdfs:label "context84" ;
+        n2mu:id "84"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2022-12-14 ;
+        sem:hasPlace leolaniContext:unknown84 .
+
+    leolaniContext:contextNone sem:hasEvent leolaniTalk:chat175 .
+
+    leolaniContext:2022-12-14 a sem:Time,
+            time:DateTimeDescription ;
+        rdfs:label "2022-12-14" ;
+        time:day "14"^^xml1:gDay ;
+        time:month "12"^^xml1:gMonthDay ;
+        time:unitType time:unitDay ;
+        time:year "2022"^^xml1:gYear .
+
+    leolaniContext:unknown84 a n2mu:location,
+            sem:Place ;
+        rdfs:label "unknown" ;
+        n2mu:id "52"^^xml1:string ;
+        n2mu:in leolaniWorld: .
+
+    leolaniTalk:chat175 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat175" ;
+        n2mu:id "175"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat175_utterance0,
+            leolaniTalk:chat175_utterance1 .
+
+    leolaniTalk:chat175_utterance0 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat175_utterance0" ;
+        n2mu:id "0"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniTalk:chat175_utterance1 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat175_utterance1" ;
+        n2mu:id "1"^^xml1:string ;
+        sem:hasActor leolaniWorld:speaker2 .
+
+    leolaniWorld: a n2mu:city,
+            n2mu:country,
+            n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "" .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "speaker2" .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:America a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat175_utterance1_char0-33 .
+
+    leolaniWorld:Japan a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat175_utterance0_char0-43 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:speaker2 a n2mu:person,
+            gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat175_utterance0_char0-43,
+            leolaniTalk:chat175_utterance1_char0-33 .
+
+    leolaniWorld:vacation a gaf:Instance ;
+        gaf:denotedIn leolaniTalk:chat175_utterance0_char0-43 .
+}
+
+leolaniWorld:speaker2_go-on_vacation {
+    leolaniWorld:speaker2 n2mu:go-on leolaniWorld:vacation .
+}
+
+leolaniWorld:leolani_know_speaker2 {
+    leolaniWorld:leolani n2mu:know leolaniWorld:speaker2 .
+}
+
+leolaniWorld:speaker2_go-to_Japan {
+    leolaniWorld:speaker2 n2mu:go-to leolaniWorld:Japan .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:chat175_utterance1_char0-33 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat175_utterance1_char0-33" ;
+        gaf:containsDenotation leolaniWorld:America,
+            leolaniWorld:speaker2 ;
+        gaf:denotes leolaniWorld:speaker2_be-to_America ;
+        grasp:hasAttribution leolaniTalk:speaker2_be-to_America_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:11:17.503781"^^xml1:string,
+            "2022-12-14 11:11:18.329514"^^xml1:string ;
+        rdf:value " Have you ever been to America ? "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat175_utterance1 .
+
+    leolaniTalk:speaker2_be-to_America_0000 a grasp:Attribution ;
+        rdfs:label "speaker2_be-to_America_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat175_utterance1_char0-33 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker2_go-on_vacation_0000 a grasp:Attribution ;
+        rdfs:label "speaker2_go-on_vacation_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat175_utterance0_char0-43 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:speaker2_go-to_Japan_0000 a grasp:Attribution ;
+        rdfs:label "speaker2_go-to_Japan_0000" ;
+        grasp:isAttributionFor leolaniTalk:chat175_utterance0_char0-43 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:UNDERSPECIFIED,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:chat175_utterance0_char0-43 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat175_utterance0_char0-43" ;
+        gaf:containsDenotation leolaniWorld:Japan,
+            leolaniWorld:speaker2,
+            leolaniWorld:vacation ;
+        gaf:denotes leolaniWorld:speaker2_go-on_vacation,
+            leolaniWorld:speaker2_go-to_Japan ;
+        grasp:hasAttribution leolaniTalk:speaker2_go-on_vacation_0000,
+            leolaniTalk:speaker2_go-to_Japan_0000 ;
+        grasp:wasAttributedTo leolaniWorld:speaker2 ;
+        sem:hasBeginTimeStamp "2022-12-14 11:11:15.169078"^^xml1:string,
+            "2022-12-14 11:11:15.744094"^^xml1:string,
+            "2022-12-14 11:11:16.505367"^^xml1:string,
+            "2022-12-14 11:11:17.005420"^^xml1:string,
+            "2022-12-14 11:11:17.971633"^^xml1:string,
+            "2022-12-14 11:11:18.131119"^^xml1:string,
+            "2022-12-14 11:11:18.780763"^^xml1:string,
+            "2022-12-14 11:11:18.966949"^^xml1:string ;
+        rdf:value "I'm going to Japan this year on vacation . "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat175_utterance0 .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:UNDERSPECIFIED a grasp:AttributionValue,
+            graspf:CertaintyValue,
+            graspf:PolarityValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_speaker2 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_speaker2" .
+
+    leolaniWorld:speaker2_be-to_America a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker2_be-to_America" ;
+        gaf:denotedBy leolaniTalk:chat175_utterance1_char0-33 .
+
+    leolaniWorld:speaker2_go-on_vacation a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker2_go-on_vacation" ;
+        gaf:denotedBy leolaniTalk:chat175_utterance0_char0-43 .
+
+    leolaniWorld:speaker2_go-to_Japan a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "speaker2_go-to_Japan" ;
+        gaf:denotedBy leolaniTalk:chat175_utterance0_char0-43 .
+
+    leolaniWorld:speaker2 owl:sameAs leolaniWorld:speaker2 .
+}
+

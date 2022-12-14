@@ -1,0 +1,96 @@
+[
+  {
+    "turn": 0,
+    "speaker": "speaker1",
+    "text": "What do you like to do in your spare time ? ",
+    "speech-act": "open_question_factual",
+    "given_emotion": 0,
+    "given_act": 2,
+    "rdf_file": []
+  },
+  {
+    "turn": 1,
+    "speaker": "speaker2",
+    "text": " I like playing chess . ",
+    "speech-act": "opinion",
+    "given_emotion": 0,
+    "given_act": 1,
+    "rdf_file": []
+  },
+  {
+    "turn": 2,
+    "speaker": "speaker1",
+    "text": " Do you have any hobbies besides playing chess ? ",
+    "speech-act": "pos_answer",
+    "given_emotion": 0,
+    "given_act": 2,
+    "rdf_file": [
+      "brain_log_2022-12-14-11-06-07"
+    ]
+  },
+  {
+    "turn": 3,
+    "speaker": "speaker2",
+    "text": " I'm afraid not . ",
+    "speech-act": "statement",
+    "given_emotion": 0,
+    "given_act": 1,
+    "rdf_file": [
+      "brain_log_2022-12-14-11-06-07",
+      "brain_log_2022-12-14-11-06-07"
+    ]
+  },
+  {
+    "turn": 4,
+    "speaker": "speaker1",
+    "text": " Do you have any hobbies like playing tennis or things like that ? ",
+    "speech-act": "open_question_factual",
+    "given_emotion": 0,
+    "given_act": 2,
+    "rdf_file": [
+      "brain_log_2022-12-14-11-06-08",
+      "brain_log_2022-12-14-11-06-08",
+      "brain_log_2022-12-14-11-06-08"
+    ]
+  },
+  {
+    "turn": 5,
+    "speaker": "speaker2",
+    "text": " Oh , yes . I like playing basketball . ",
+    "speech-act": "pos_answer",
+    "given_emotion": 0,
+    "given_act": 1,
+    "rdf_file": [
+      "brain_log_2022-12-14-11-06-09",
+      "brain_log_2022-12-14-11-06-09",
+      "brain_log_2022-12-14-11-06-10"
+    ]
+  },
+  {
+    "turn": 6,
+    "speaker": "speaker1",
+    "text": " Can you tell me why you like it ? ",
+    "speech-act": "command",
+    "given_emotion": 0,
+    "given_act": 2,
+    "rdf_file": [
+      "brain_log_2022-12-14-11-06-11",
+      "brain_log_2022-12-14-11-06-11",
+      "brain_log_2022-12-14-11-06-12"
+    ]
+  },
+  {
+    "turn": 7,
+    "speaker": "speaker2",
+    "text": " Because I like the feeling of cooperating with others . ",
+    "speech-act": "opinion",
+    "given_emotion": 0,
+    "given_act": 1,
+    "rdf_file": [
+      "brain_log_2022-12-14-11-06-13",
+      "brain_log_2022-12-14-11-06-13",
+      "brain_log_2022-12-14-11-06-14",
+      "brain_log_2022-12-14-11-06-14"
+    ]
+  }
+]
