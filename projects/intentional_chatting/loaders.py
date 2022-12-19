@@ -65,8 +65,9 @@ class CommonsenseLoader(DataLoader):
                 conv_dict = defaultdict(list)
                 for i, utterance in enumerate(context_data['turns']):
                     speech_act = self.speech_act_tagger.extract_dialogue_act(utterance)
+                    this_speaker = speaker if i % 2 == 0 else f"not-{speaker}"
                     conv_dict[context_id].append({'Turn': i,
-                                                  'Speaker': speaker,
+                                                  'Speaker': this_speaker,
                                                   'Response': utterance,
                                                   'speech-act': speech_act[0].value,
                                                   'rdf_file': []})
