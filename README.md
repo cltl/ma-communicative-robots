@@ -1,17 +1,17 @@
-# Communicative Robots, 2022
+# Communicative Robots, 2023
 
 Communicative Robots is a master's course taught at VU Amsterdam.
 
-This year's branch is `2022`, which is the default branch of this repo. If you want to see others years, take a look at the other branches.
+This year's branch is `2023`, which is the default branch of this repo. If you want to see others years, take a look at the other branches.
 
 ## Prerequisites
 
-1. python 3.7 or higher. Running in a virtual environment (e.g., conda, virtualenv, etc.) is highly recommended so that you don't mess up with the system python.
+1. python 3.10 or higher. Running in a virtual environment (e.g., conda, virtualenv, etc.) is highly recommended so that you don't mess up with the system python.
 1. `pip install -r requirements.txt`
 
 ## Projects
 
-Students team up with the teachers. The individual projects can be found at `./projects/` .
+Student teams build a chat system that interacts with the AI2Thor platform. The individual projects can be found at `./projects/` .
 
 ## Troubleshooting
 
@@ -31,7 +31,4 @@ Contributions are what make the open source community such an amazing place to b
 ## Authors
 
 - Piek Vossen (piek.vossen@vu.nl)
-- Lea Krause (l.krause@vu.nl)
-- Jaap Kruijt (j.m.kruijt@vu.nl)
-- Selene Baez Santamaria (s.baezsantamaria@vu.nl)
 - Thomas Baier (t.baier@vu.nl)
