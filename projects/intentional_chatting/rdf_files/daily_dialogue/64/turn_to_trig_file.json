@@ -1,1 +1,0 @@
-[{"Turn": 0, "Speaker": "speaker1", "Response": "Good luck on your test tomorrow . We'll be crossing our fingers for you ! ", "speech-act": "command", "given_emotion": 4, "given_act": 1, "rdf_file": []}, {"Turn": 1, "Speaker": "speaker2", "Response": " Thanks . ", "speech-act": "abandon", "given_emotion": 4, "given_act": 1, "rdf_file": []}]
