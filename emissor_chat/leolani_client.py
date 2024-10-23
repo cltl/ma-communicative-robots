@@ -5,8 +5,8 @@ import cltl.combot
 from emissor.persistence import ScenarioStorage
 from emissor.persistence.persistence import ScenarioController
 from emissor.representation.scenario import Modality, Signal, Scenario, ScenarioContext, Annotation
-from emissor.representation.scenario import TextSignal
-from cltl.combot.event.emissor import AnnotationEvent, TextSignalEvent
+from emissor.representation.scenario import TextSignal, ImageSignal
+from cltl.combot.event.emissor import AnnotationEvent, TextSignalEvent, ImageSignalEvent
 from cltl.combot.infra.time_util import timestamp_now
 
 class LeolaniChatClient():
@@ -31,6 +31,18 @@ class LeolaniChatClient():
         TextSignalEvent.add_agent_annotation(signal, speaker_name)
         self._scenario.append_signal(signal)
 
+    def _add_image(self, speaker_name, signal):
+        signal = ImageSignal.for_scenario(self._scenario, timestamp_now(), timestamp_now(), None, utterance)
+        ImageSignalEvent.create(signal)
+        self._scenario.append_signal(signal)
+
+        segment = MultiIndex(signal.ruler.container_id, bbox)
+        annotation_person = Annotation(AnnotationType.PERSON.name, Person(str(uuid.uuid4()), name, age, gender), MeldFaceProcessor.name, int(time.time()))
+        annotation_representation = Annotation(AnnotationType.REPRESENTATION.name, representation.tolist(), MeldFaceProcessor.name, int(time.time()))
+        mention = Mention(str(uuid.uuid4()), [segment], [annotation_person, annotation_representation])
+
+        signal.mentions.append(mention)
+    
     def _save_scenario(self):
         self._scenario_storage.save_scenario(self._scenario)
 
