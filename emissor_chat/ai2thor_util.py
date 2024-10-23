@@ -27,6 +27,7 @@ def search_for_object_in_view(objectType, event):
     return found
 
 def search_for_object(objectType, event, controller):
+    answer = ""
     found = search_for_object_in_view(objectType, event)
     rotate =0
     while not found and rotate<4:
@@ -34,50 +35,51 @@ def search_for_object(objectType, event, controller):
         found = search_for_object_in_view(objectType, event)
         rotate += 1
     if not found:
-        print("I could not find it. Shall I move?")
+        answer += "I could not find it. Shall I move?"
     else:
-        print("I found ", len(found), " of those.")
+        answer +"I found ", len(found), " of those."
         for f in found:
-            print(f[0]['objectType'], f[1], ' pixels away from ', f[2]['objectType'])
+            answer += "\n"+(f[0]['objectType'], f[1], ' pixels away from ', f[2]['objectType'])
             affordances = get_true_properties(f[0])
-            print("These are its properties:", affordances)
-    return found
+            answer += "These are its properties:", affordances
+    return answer, found
             
 def what_do_you_see(event):
-    print("I see ", len(event.metadata['objects']), " things here.")
+    answer =  "I see ", len(event.metadata['objects']), " things here."
     for object in event.metadata['objects']:
-        print(object['objectType'])
+        answer += object['objectType']
         if object['moveable']:
-            print("\tI can move you")
+            answer += "\tI can move it"
         if object['openable']:
-            print("\tI can open you")
+            answer += "\tI can open it"
         if object['breakable']:
-            print("\tI can break you")
+            answer +="\tI can break it"
+    return answer
             
 def get_true_properties(object):
     affordances = []
     for key in object.items():
         if key[1]==True:
             affordances.append(key[0])
-            #print("Shall I ", key[0], " it?")
     return affordances
 
 
 def what_i_can_do():
-    print("I can do the following:", actions)        
+    answer =  "I can do the following:", str(actions)
+    return answer
 
         
 def do_action(controller, w1, w2):
+    answer = ""
     event = None
     found_objects = []
     try:
         event = controller.step("RotateLeft")
         if event:
             if w1.lower()=="find":
-                found_objects = search_for_object(w2, event, controller)
+                answer, found_objects = search_for_object(w2, event, controller)
             elif w1.lower()=="describe":
-                what_do_you_see(event)
-
+                answer = what_do_you_see(event)
             elif w1.lower()=="move" or w1.lower()=="go":
                 if w2.lower()=="forward":
                     event = controller.step("MoveAhead")
@@ -88,16 +90,18 @@ def do_action(controller, w1, w2):
                 elif w2.lower()=="right":
                     event = controller.step("RotateRight")
     except:
-        print("Could not move.")
+        answer = "Could not move."
 
     if not event:
-        print("Cannot do that!")
-    return found_objects
+        answer = "Cannot do that!"
+    return answer, found_objects
 
 def process_instruction(event, prompt):
+    answer = ""
     words = prompt.split()
     if words[0].lower() in actions:
-        found_objects = do_action(event, words[0].lower(), words[-1].lower())
+        answer, found_objects = do_action(event, words[0].lower(), words[-1].lower())
+        answer += str(found_objects)
     else:
-        print("Sorry I do not get that.")
+        answer = "Sorry I do not get that."
         

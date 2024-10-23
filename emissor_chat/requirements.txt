@@ -1,0 +1,7 @@
+emissor
+cltl.combot
+langchain_ollama
+ollama
+torch
+transformers
+ai2thor

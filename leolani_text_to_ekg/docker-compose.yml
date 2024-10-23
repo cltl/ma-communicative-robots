@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  leolani:
+    image: "piekvossen/leolani-text-to-ekg"
+    #command: "python app.py --name Piek"
+    #command: /bin/sh -c "source /leolani-text-to-ekg/app/venv/bin/activate && python app.py
+    build:
+        args: 
+            NAME=Piek
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./config:/leolani-text-to-ekg/app/py-app/config    
+      - ./storage:/leolani-text-to-ekg/app/py-app/storage
+      

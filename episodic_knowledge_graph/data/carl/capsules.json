@@ -1,0 +1,411 @@
+[
+  {
+    "chat": 1,
+    "turn": 1,
+    "author": {
+      "label": "carl",
+      "type": [
+        "person"
+      ],
+      "uri": "http://cltl.nl/leolani/friends/carl-1"
+    },
+    "utterance": "I need to take my pills, but I cannot find them.",
+    "utterance_type": "STATEMENT",
+    "position": "0-25",
+    "subject": {
+      "label": "carl",
+      "type": [
+        "person"
+      ],
+      "uri": "http://cltl.nl/leolani/world/carl-1"
+    },
+    "predicate": {
+      "label": "see",
+      "uri": "http://cltl.nl/leolani/n2mu/see"
+    },
+    "object": {
+      "label": "pills",
+      "type": [
+        "object",
+        "medicine"
+      ],
+      "uri": "http://cltl.nl/leolani/world/pills-1"
+    },
+    "perspective": {
+      "_certainty": "CERTAIN",
+      "_polarity": "NEGATIVE",
+      "_sentiment": "NEGATIVE",
+      "_time": null,
+      "_emotion": "UNDERSPECIFIED"
+    },
+    "timestamp": "2021-03-12T23:35:33.685033",
+    "context_id": 167,
+    "triple": {
+      "_subject": {
+        "_id": "http://cltl.nl/leolani/world/carl-1",
+        "_label": "carl",
+        "_offset": null,
+        "_confidence": 0.0,
+        "_types": [
+          "person",
+          "Instance"
+        ]
+      },
+      "_predicate": {
+        "_id": "http://cltl.nl/leolani/n2mu/see",
+        "_label": "see",
+        "_offset": null,
+        "_confidence": 0.0,
+        "_cardinality": 1
+      },
+      "_complement": {
+        "_id": "http://cltl.nl/leolani/world/pills-1",
+        "_label": "pills",
+        "_offset": null,
+        "_confidence": 0.0,
+        "_types": [
+          "object",
+          "medicine",
+          "Instance"
+        ]
+      }
+    }
+  },
+  {
+    "visual": 1,
+    "detection": 3,
+    "source": {
+      "label": "front-camera",
+      "type": [
+        "sensor"
+      ],
+      "uri": "http://cltl.nl/leolani/inputs/front-camera"
+    },
+    "image": null,
+    "utterance_type": "EXPERIENCE",
+    "region": [
+      752,
+      46,
+      1700,
+      716
+    ],
+    "item": {
+      "label": "carl",
+      "type": [
+        "person"
+      ],
+      "id": null,
+      "uri": "http://cltl.nl/leolani/world/carl-1"
+    },
+    "confidence": 0.94,
+    "timestamp": "2021-03-12T23:35:33.685038",
+    "context_id": 167,
+    "entity": {
+      "_id": "http://cltl.nl/leolani/world/carl-1",
+      "_label": "carl",
+      "_offset": null,
+      "_confidence": 0.0,
+      "_types": [
+        "person",
+        "Instance"
+      ]
+    },
+    "perspective": {
+      "_certainty": "UNDERSPECIFIED",
+      "_polarity": "POSITIVE",
+      "_sentiment": "UNDERSPECIFIED",
+      "_time": null,
+      "_emotion": "UNDERSPECIFIED"
+    }
+  },
+  {
+    "visual": 1,
+    "detection": 1,
+    "source": {
+      "label": "front-camera",
+      "type": [
+        "sensor"
+      ],
+      "uri": "http://cltl.nl/leolani/inputs/front-camera"
+    },
+    "image": null,
+    "utterance_type": "EXPERIENCE",
+    "region": [
+      752,
+      46,
+      1148,
+      716
+    ],
+    "item": {
+      "label": "chair",
+      "type": [
+        "chair"
+      ],
+      "id": 1,
+      "uri": "http://cltl.nl/leolani/world/chair-1"
+    },
+    "confidence": 0.68,
+    "timestamp": "2021-03-12T23:35:33.685039",
+    "context_id": 167,
+    "entity": {
+      "_id": "http://cltl.nl/leolani/world/chair-1",
+      "_label": "chair",
+      "_offset": null,
+      "_confidence": 0.0,
+      "_types": [
+        "chair",
+        "Instance",
+        "object"
+      ]
+    },
+    "perspective": {
+      "_certainty": "UNDERSPECIFIED",
+      "_polarity": "POSITIVE",
+      "_sentiment": "UNDERSPECIFIED",
+      "_time": null,
+      "_emotion": "UNDERSPECIFIED"
+    }
+  },
+  {
+    "visual": 1,
+    "detection": 2,
+    "source": {
+      "label": "front-camera",
+      "type": [
+        "sensor"
+      ],
+      "uri": "http://cltl.nl/leolani/inputs/front-camera"
+    },
+    "image": null,
+    "utterance_type": "EXPERIENCE",
+    "region": [
+      752,
+      86,
+      1148,
+      816
+    ],
+    "item": {
+      "label": "table",
+      "type": [
+        "table"
+      ],
+      "id": 1,
+      "uri": "http://cltl.nl/leolani/world/table-1"
+    },
+    "confidence": 0.68,
+    "timestamp": "2021-03-12T23:35:33.685040",
+    "context_id": 167,
+    "entity": {
+      "_id": "http://cltl.nl/leolani/world/table-1",
+      "_label": "table",
+      "_offset": null,
+      "_confidence": 0.0,
+      "_types": [
+        "table",
+        "Instance",
+        "object"
+      ]
+    },
+    "perspective": {
+      "_certainty": "UNDERSPECIFIED",
+      "_polarity": "POSITIVE",
+      "_sentiment": "UNDERSPECIFIED",
+      "_time": null,
+      "_emotion": "UNDERSPECIFIED"
+    }
+  },
+  {
+    "visual": 1,
+    "detection": 4,
+    "source": {
+      "label": "front-camera",
+      "type": [
+        "sensor"
+      ],
+      "uri": "http://cltl.nl/leolani/inputs/front-camera"
+    },
+    "image": null,
+    "utterance_type": "EXPERIENCE",
+    "region": [
+      752,
+      46,
+      1148,
+      716
+    ],
+    "item": {
+      "label": "pills",
+      "type": [
+        "object",
+        "medicine"
+      ],
+      "id": 1,
+      "uri": "http://cltl.nl/leolani/world/pills-1"
+    },
+    "confidence": 0.92,
+    "timestamp": "2021-03-12T23:35:33.685042",
+    "context_id": 167,
+    "entity": {
+      "_id": "http://cltl.nl/leolani/world/pills-1",
+      "_label": "pills",
+      "_offset": null,
+      "_confidence": 0.0,
+      "_types": [
+        "object",
+        "medicine",
+        "Instance",
+        "object"
+      ]
+    },
+    "perspective": {
+      "_certainty": "UNDERSPECIFIED",
+      "_polarity": "POSITIVE",
+      "_sentiment": "UNDERSPECIFIED",
+      "_time": null,
+      "_emotion": "UNDERSPECIFIED"
+    }
+  },
+  {
+    "chat": 1,
+    "turn": 2,
+    "author": {
+      "label": "leolani",
+      "type": [
+        "robot"
+      ],
+      "uri": "http://cltl.nl/leolani/friends/leolani"
+    },
+    "utterance": "They are under the table.",
+    "utterance_type": "STATEMENT",
+    "position": "0-25",
+    "subject": {
+      "label": "pills",
+      "type": [
+        "object",
+        "medicine"
+      ],
+      "uri": "http://cltl.nl/leolani/world/pills-1"
+    },
+    "predicate": {
+      "label": "located under",
+      "uri": "http://cltl.nl/leolani/n2mu/located-under"
+    },
+    "object": {
+      "label": "table",
+      "type": [
+        "object"
+      ],
+      "uri": "http://cltl.nl/leolani/world/table-1"
+    },
+    "perspective": {
+      "_certainty": "CERTAIN",
+      "_polarity": "POSITIVE",
+      "_sentiment": "NEUTRAL",
+      "_time": null,
+      "_emotion": "UNDERSPECIFIED"
+    },
+    "timestamp": "2021-03-12T23:35:33.685043",
+    "context_id": 167,
+    "triple": {
+      "_subject": {
+        "_id": "http://cltl.nl/leolani/world/pills-1",
+        "_label": "pills",
+        "_offset": null,
+        "_confidence": 0.0,
+        "_types": [
+          "object",
+          "medicine",
+          "Instance"
+        ]
+      },
+      "_predicate": {
+        "_id": "http://cltl.nl/leolani/n2mu/located-under",
+        "_label": "located-under",
+        "_offset": null,
+        "_confidence": 0.0,
+        "_cardinality": 1
+      },
+      "_complement": {
+        "_id": "http://cltl.nl/leolani/world/table-1",
+        "_label": "table",
+        "_offset": null,
+        "_confidence": 0.0,
+        "_types": [
+          "object",
+          "Instance"
+        ]
+      }
+    }
+  },
+  {
+    "chat": 1,
+    "turn": 3,
+    "author": {
+      "label": "carl",
+      "type": [
+        "person"
+      ],
+      "uri": "http://cltl.nl/leolani/friends/carl-1"
+    },
+    "utterance": "Oh! Got it.",
+    "utterance_type": "STATEMENT",
+    "position": "0-25",
+    "subject": {
+      "label": "carl",
+      "type": [
+        "person"
+      ],
+      "uri": "http://cltl.nl/leolani/world/carl-1"
+    },
+    "predicate": {
+      "label": "see",
+      "uri": "http://cltl.nl/leolani/n2mu/see"
+    },
+    "object": {
+      "label": "pills",
+      "type": [
+        "object",
+        "medicine"
+      ],
+      "uri": "http://cltl.nl/leolani/world/pills-1"
+    },
+    "perspective": {
+      "_certainty": "CERTAIN",
+      "_polarity": "POSITIVE",
+      "_sentiment": "POSITIVE",
+      "_time": null,
+      "_emotion": "UNDERSPECIFIED"
+    },
+    "timestamp": "2021-03-12T23:35:33.685045",
+    "context_id": 167,
+    "triple": {
+      "_subject": {
+        "_id": "http://cltl.nl/leolani/world/carl-1",
+        "_label": "carl",
+        "_offset": null,
+        "_confidence": 0.0,
+        "_types": [
+          "person",
+          "Instance"
+        ]
+      },
+      "_predicate": {
+        "_id": "http://cltl.nl/leolani/n2mu/see",
+        "_label": "see",
+        "_offset": null,
+        "_confidence": 0.0,
+        "_cardinality": 1
+      },
+      "_complement": {
+        "_id": "http://cltl.nl/leolani/world/pills-1",
+        "_label": "pills",
+        "_offset": null,
+        "_confidence": 0.0,
+        "_types": [
+          "object",
+          "medicine",
+          "Instance"
+        ]
+      }
+    }
+  }
+]

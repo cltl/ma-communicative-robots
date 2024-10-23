@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "Scenario": "https://emissor.org#Scenario",
+    "id": "@id",
+    "context": "https://emissor.org#context",
+    "signals": "https://emissor.org#signals",
+    "ruler": "https://emissor.org#ruler"
+  },
+  "@type": "Scenario",
+  "id": "9b8f5779-b2df-4b35-8d84-e36737591c52",
+  "ruler": {
+    "@context": {
+      "TemporalRuler": "https://emissor.org#TemporalRuler",
+      "id": "@id",
+      "start": "https://emissor.org#start",
+      "end": "https://emissor.org#end",
+      "container_id": {
+        "@id": "https://emissor.org#container_id",
+        "@type": "@id"
+      }
+    },
+    "@type": "TemporalRuler",
+    "container_id": "9b8f5779-b2df-4b35-8d84-e36737591c52",
+    "start": 1729673509091,
+    "end": null,
+    "_py_type": "emissor.representation.container-TemporalRuler"
+  },
+  "context": {
+    "@context": {
+      "ScenarioContext": "https://emissor.org#ScenarioContext",
+      "id": "@id",
+      "agent": "https://emissor.org#agent"
+    },
+    "@type": "ScenarioContext",
+    "agent": "Ai2Thor",
+    "_py_type": "emissor.representation.scenario-ScenarioContext"
+  },
+  "signals": {
+    "text": "./text.json"
+  }
+}

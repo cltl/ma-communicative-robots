@@ -1,0 +1,6 @@
+cltl.brain==1.0.dev2
+cltl.combot==1.0.dev0
+cltl.entity_linking==0.0.dev1
+cltl.triple-extraction==2.0.dev1
+requests==2.31.0
+notebook==7.0.4
