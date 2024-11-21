@@ -1,0 +1,29 @@
+SCENARIO_FOLDER	/Users/piek/Desktop/t-MA-Combots-2024/code/ma-communicative-robots/emissor_chat/emissor/a5efdf54-b5c6-42db-8981-d3a61b594aca
+SCENARIO_ID	a5efdf54-b5c6-42db-8981-d3a61b594aca
+AGENT	Ai2Thor
+SPEAKER	Piek
+LOCATION	No location
+PEOPLE SEEN	Not in context
+OBJECTS SEEN	Not in context
+DURATION IN MINUTES	0.39718333333333333
+
+Text signals
+NR. TURNS	13
+Average turn length	54.84615384615385
+Average nr. tokens per turn	6.923076923076923
+Average token length	7.066666666666666
+SPEAKER SET	{'Piek', 'ACTION', 'Ai2Thor'}
+TOTAL ANNOTATIONS	39
+
+ConversationalAgent
+faceID:Ai2Thor	4
+faceID:Piek	5
+faceID:ACTION	4
+Likelihood
+	26
+
+Image signals
+TOTAL ANNOTATIONS	4
+
+vase
+:	4

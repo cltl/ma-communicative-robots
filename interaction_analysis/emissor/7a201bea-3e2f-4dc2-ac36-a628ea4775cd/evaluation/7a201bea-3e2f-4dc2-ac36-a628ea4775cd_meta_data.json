@@ -1,0 +1,60 @@
+{
+    "Scenario": {
+        "Scenario_id": "7a201bea-3e2f-4dc2-ac36-a628ea4775cd",
+        "Agent": null,
+        "Speaker": "Piek",
+        "Location": "No location",
+        "People_seen ": "Not in context",
+        "Objects_seen": "Not in context",
+        "Duration_in_minutes": "0.6965"
+    },
+    "Text": {
+        "Nr. of signals": "6",
+        "Average_utterance_length": "71.66666666666667",
+        "Average_tokens_per_utterance": "9.5",
+        "Average_token_length": "6.649122807017544",
+        "Nr. of annotations": "164",
+        "Text_annotations": {
+            "ConversationalAgent:Ai2Thor": "3",
+            "ConversationalAgent:Piek": "2",
+            "ConversationalAgent:ACTION": "1",
+            "GO:neutral": "6",
+            "MIDAS:command": "1",
+            "MIDAS:statement": "4",
+            "MIDAS:closing": "1",
+            "Likelihood:0.36": "1",
+            "Likelihood:0.26": "1",
+            "Likelihood:0.0": "3",
+            "Likelihood:0.19": "1",
+            "pos:INTJ": "7",
+            "pos:PUNCT": "63",
+            "pos:VERB": "15",
+            "pos:PRON": "7",
+            "pos:PART": "1",
+            "pos:AUX": "3",
+            "pos:DET": "1",
+            "pos:NOUN": "8",
+            "pos:X": "6",
+            "pos:ADV": "2",
+            "pos:ADJ": "2",
+            "pos:NUM": "7",
+            "pos:ADP": "4",
+            "pos:SPACE": "2",
+            "pos:PROPN": "4",
+            "SPEAKER:I": "2",
+            "OBJECT:vase": "1",
+            "CARDINAL:2": "1",
+            "CARDINAL:0.18425700068473816": "1",
+            "CARDINAL:2.582998275756836": "1",
+            "CARDINAL:0.556065559387207": "1",
+            "CARDINAL:2.6619484424591064": "1"
+        }
+    },
+    "Image": {
+        "Nr. of images": "2",
+        "Nr. of annotations": "2",
+        "Image_annotations": {
+            ":": "2"
+        }
+    }
+}

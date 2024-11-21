@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "Scenario": "https://emissor.org#Scenario",
+    "id": "@id",
+    "context": "https://emissor.org#context",
+    "signals": "https://emissor.org#signals",
+    "ruler": "https://emissor.org#ruler"
+  },
+  "context": {
+    "agent": {
+      "name": "Ai2Thor",
+      "uri": "http://cltl.nl/leolani/world/ai2thor"
+    },
+    "speaker": {
+      "name": "Piek",
+      "uri": "http://cltl.nl/leolani/world/piek"
+    },
+    "_py_type": "emissor.representation.util-JSON"
+  },
+  "@type": "Scenario",
+  "id": "a5efdf54-b5c6-42db-8981-d3a61b594aca",
+  "ruler": {
+    "container_id": "a5efdf54-b5c6-42db-8981-d3a61b594aca",
+    "end": 1731933989696,
+    "@context": {
+      "TemporalRuler": "https://emissor.org#TemporalRuler",
+      "id": "@id",
+      "start": "https://emissor.org#start",
+      "end": "https://emissor.org#end",
+      "container_id": {
+        "@id": "https://emissor.org#container_id",
+        "@type": "@id"
+      }
+    },
+    "@type": "TemporalRuler",
+    "start": 1731933965865,
+    "_py_type": "emissor.representation.container-TemporalRuler"
+  },
+  "signals": {
+    "text": "./text.json",
+    "image": "./image.json"
+  }
+}

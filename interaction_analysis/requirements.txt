@@ -1,5 +1,7 @@
 emissor
 cltl.combot
-cltl.dialogue-evaluation
 cltl.dialogueclassification
 cltl.emotionrecognition
+cltl.mention-detection
+cltl.dialogue-evaluation
+spacy

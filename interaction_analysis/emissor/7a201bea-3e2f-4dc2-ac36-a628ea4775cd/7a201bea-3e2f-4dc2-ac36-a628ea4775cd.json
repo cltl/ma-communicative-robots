@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "Scenario": "https://emissor.org#Scenario",
+    "id": "@id",
+    "context": "https://emissor.org#context",
+    "signals": "https://emissor.org#signals",
+    "ruler": "https://emissor.org#ruler"
+  },
+  "@type": "Scenario",
+  "id": "7a201bea-3e2f-4dc2-ac36-a628ea4775cd",
+  "ruler": {
+    "@context": {
+      "TemporalRuler": "https://emissor.org#TemporalRuler",
+      "id": "@id",
+      "start": "https://emissor.org#start",
+      "end": "https://emissor.org#end",
+      "container_id": {
+        "@id": "https://emissor.org#container_id",
+        "@type": "@id"
+      }
+    },
+    "@type": "TemporalRuler",
+    "container_id": "7a201bea-3e2f-4dc2-ac36-a628ea4775cd",
+    "start": 1731932290286,
+    "end": 1731932332076,
+    "_py_type": "emissor.representation.container-TemporalRuler"
+  },
+  "context": {
+    "agent": {
+      "name": null,
+      "uri": null
+    },
+    "speaker": {
+      "name": "Piek",
+      "uri": "http://cltl.nl/leolani/world/piek"
+    },
+    "_py_type": "emissor.representation.util-JSON"
+  },
+  "signals": {
+    "text": "./text.json",
+    "image": "./image.json"
+  }
+}

@@ -1,0 +1,220 @@
+[
+  {
+    "@context": {
+      "ImageSignal": "https://emissor.org#ImageSignal",
+      "id": "@id",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "array": "https://emissor.org#array",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "@type": "ImageSignal",
+    "id": "9ee6d234-6630-4090-a735-83dd7124a606",
+    "ruler": {
+      "@context": {
+        "MultiIndex": "https://emissor.org#MultiIndex",
+        "id": "@id",
+        "bounds": "https://emissor.org#bounds",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "MultiIndex",
+      "container_id": "9ee6d234-6630-4090-a735-83dd7124a606",
+      "bounds": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "_py_type": "emissor.representation.container-MultiIndex"
+    },
+    "array": "",
+    "modality": "IMAGE",
+    "time": {
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "container_id": "7a201bea-3e2f-4dc2-ac36-a628ea4775cd",
+      "start": 1731932328640,
+      "end": 1731932328640
+    },
+    "files": [
+      "./emissor/7a201bea-3e2f-4dc2-ac36-a628ea4775cd/image/Vase_7932859a.jpg"
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "@type": "Mention",
+        "id": "388e3394-323b-494e-953a-de1c5ab967b4",
+        "segment": [
+          {
+            "@context": {
+              "MultiIndex": "https://emissor.org#MultiIndex",
+              "id": "@id",
+              "bounds": "https://emissor.org#bounds",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "@type": "MultiIndex",
+            "container_id": "9ee6d234-6630-4090-a735-83dd7124a606",
+            "bounds": [
+              -2,
+              0,
+              0,
+              1
+            ],
+            "_py_type": "emissor.representation.container-MultiIndex"
+          }
+        ],
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "type": "vase",
+            "value": {
+              "_py_type": "builtins-dict"
+            },
+            "source": "Ai2Thor",
+            "timestamp": 1731932328,
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@context": {
+      "ImageSignal": "https://emissor.org#ImageSignal",
+      "id": "@id",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "array": "https://emissor.org#array",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "@type": "ImageSignal",
+    "id": "6c3004c9-1b88-45d3-a9e8-d38d83db18d8",
+    "ruler": {
+      "@context": {
+        "MultiIndex": "https://emissor.org#MultiIndex",
+        "id": "@id",
+        "bounds": "https://emissor.org#bounds",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "MultiIndex",
+      "container_id": "6c3004c9-1b88-45d3-a9e8-d38d83db18d8",
+      "bounds": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "_py_type": "emissor.representation.container-MultiIndex"
+    },
+    "array": "",
+    "modality": "IMAGE",
+    "time": {
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "container_id": "7a201bea-3e2f-4dc2-ac36-a628ea4775cd",
+      "start": 1731932328644,
+      "end": 1731932328644
+    },
+    "files": [
+      "./emissor/7a201bea-3e2f-4dc2-ac36-a628ea4775cd/image/Vase_b5cbe7f7.jpg"
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "@type": "Mention",
+        "id": "76925c03-e895-4f1d-818c-2967ecf6cd09",
+        "segment": [
+          {
+            "@context": {
+              "MultiIndex": "https://emissor.org#MultiIndex",
+              "id": "@id",
+              "bounds": "https://emissor.org#bounds",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "@type": "MultiIndex",
+            "container_id": "6c3004c9-1b88-45d3-a9e8-d38d83db18d8",
+            "bounds": [
+              -2,
+              0,
+              0,
+              1
+            ],
+            "_py_type": "emissor.representation.container-MultiIndex"
+          }
+        ],
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "type": "vase",
+            "value": {
+              "_py_type": "builtins-dict"
+            },
+            "source": "Ai2Thor",
+            "timestamp": 1731932328,
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ]
+      }
+    ]
+  }
+]

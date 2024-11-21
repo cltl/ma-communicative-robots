@@ -1,0 +1,42 @@
+{
+  "@context": {
+    "Scenario": "https://emissor.org#Scenario",
+    "id": "@id",
+    "context": "https://emissor.org#context",
+    "signals": "https://emissor.org#signals",
+    "ruler": "https://emissor.org#ruler"
+  },
+  "@type": "Scenario",
+  "id": "d5a6bc60-c19b-4c08-aee5-b4dd1c65c64d",
+  "ruler": {
+    "@context": {
+      "TemporalRuler": "https://emissor.org#TemporalRuler",
+      "id": "@id",
+      "start": "https://emissor.org#start",
+      "end": "https://emissor.org#end",
+      "container_id": {
+        "@id": "https://emissor.org#container_id",
+        "@type": "@id"
+      }
+    },
+    "@type": "TemporalRuler",
+    "container_id": "d5a6bc60-c19b-4c08-aee5-b4dd1c65c64d",
+    "start": 1731512198678,
+    "end": 1731512438644,
+    "_py_type": "emissor.representation.container-TemporalRuler"
+  },
+  "context": {
+    "agent": {
+      "uri": "http://cltl.nl/leolani/world/leolani",
+      "name": "Leolani"
+    },
+    "speaker": {
+      "uri": "http://cltl.nl/leolani/world/koen",
+      "name": "Koen"
+    },
+    "_py_type": "emissor.representation.util-JSON"
+  },
+  "signals": {
+    "text": "./text.json"
+  }
+}

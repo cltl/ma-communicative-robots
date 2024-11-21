@@ -1,0 +1,15 @@
+Turn,Speaker,Cue,Response,Context,MLM response,System llh,MLM llh
+0,Ai2Thor,,Hi Piek. Tell me what to do.,, j !  tell  me  what  you  do ,0.3647939035935061,0.6680597599063601
+1,Ai2Thor,Hi Piek. Tell me what to do.,"This is what I can do:('I can do the following:', ""['find', 'describe', 'move', 'go', 'turn', 'forward', 'back', 'left', 'right', 'open', 'close', 'look']"")", Hi Piek. Tell me what to do., this  is  what  you  can  and  can  do  the  following  '  '  '  '  '  '  '  '  '  '  or  and ,0.25860209356654773,0.5662592229518023
+2,Piek,"This is what I can do:('I can do the following:', ""['find', 'describe', 'move', 'go', 'turn', 'forward', 'back', 'left', 'right', 'open', 'close', 'look']"")",find vase," Hi Piek. Tell me what to do. This is what I can do:('I can do the following:', ""['find', 'describe', 'move', 'go', 'turn', 'forward', 'back', 'left', 'right', 'open', 'close', 'look']"")"," in , ",0.0,0.14013852551579475
+3,Ai2Thor,find vase,"I found 2 instances of type vase in my view
+Vase_7932859a at {'x': -1.4349972009658813, 'y': 0.18425700068473816, 'z': 2.582998275756836}
+Vase_b5cbe7f7 at {'x': -1.7320034503936768, 'y': 0.556065559387207, 'z': 2.6619484424591064}"," Hi Piek. Tell me what to do. This is what I can do:('I can do the following:', ""['find', 'describe', 'move', 'go', 'turn', 'forward', 'back', 'left', 'right', 'open', 'close', 'look']"") find vase",".  have  two  copies  of  the  1  in  my  library  at  { ,  '  0  '  )  at  { ,  y  0  and  1 ",0.18608293806513151,0.503894541102151
+4,ACTION,"I found 2 instances of type vase in my view
+Vase_7932859a at {'x': -1.4349972009658813, 'y': 0.18425700068473816, 'z': 2.582998275756836}
+Vase_b5cbe7f7 at {'x': -1.7320034503936768, 'y': 0.556065559387207, 'z': 2.6619484424591064}",Look,"rward', 'back', 'left', 'right', 'open', 'close', 'look']"") find vase I found 2 instances of type vase in my view
+Vase_7932859a at {'x': -1.4349972009658813, 'y': 0.18425700068473816, 'z': 2.582998275756836}
+Vase_b5cbe7f7 at {'x': -1.7320034503936768, 'y': 0.556065559387207, 'z': 2.6619484424591064}",\ ,0.0,0.18905051052570343
+5,Piek,Look,bye,"', 'back', 'left', 'right', 'open', 'close', 'look']"") find vase I found 2 instances of type vase in my view
+Vase_7932859a at {'x': -1.4349972009658813, 'y': 0.18425700068473816, 'z': 2.582998275756836}
+Vase_b5cbe7f7 at {'x': -1.7320034503936768, 'y': 0.556065559387207, 'z': 2.6619484424591064} Look", up ,0.0,0.09348870068788528

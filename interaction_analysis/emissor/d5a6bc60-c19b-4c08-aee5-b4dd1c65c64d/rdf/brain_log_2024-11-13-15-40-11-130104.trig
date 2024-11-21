@@ -1,0 +1,117 @@
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniTalk:Perspectives {
+    leolaniTalk:chatd5a6bc60-c19b-4c08-aee5-b4dd1c65c64d_utterancefbefa541-c82c-4aeb-b63b-513cf8119f3e_char0-11 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chatd5a6bc60-c19b-4c08-aee5-b4dd1c65c64d_utterancefbefa541-c82c-4aeb-b63b-513cf8119f3e_char0-11" ;
+        gaf:containsDenotation leolaniWorld:i,
+            leolaniWorld:igor ;
+        gaf:denotes leolaniWorld:i_know_igor ;
+        grasp:hasAttribution leolaniTalk:i_know_igor_3100 ;
+        grasp:wasAttributedTo leolaniWorld:koen ;
+        sem:hasBeginTimeStamp "1731512410843"^^xml1:string ;
+        rdf:value "I know Igor"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chatd5a6bc60-c19b-4c08-aee5-b4dd1c65c64d_utterancefbefa541-c82c-4aeb-b63b-513cf8119f3e .
+
+    leolaniTalk:i_know_igor_3100 a grasp:Attribution ;
+        rdfs:label "i_know_igor_3100" ;
+        grasp:isAttributionFor leolaniTalk:chatd5a6bc60-c19b-4c08-aee5-b4dd1c65c64d_utterancefbefa541-c82c-4aeb-b63b-513cf8119f3e_char0-11 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:CERTAIN,
+            graspf:POSITIVE,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:CERTAIN a grasp:AttributionValue,
+            graspf:CertaintyValue ;
+        rdfs:label "CERTAIN" .
+
+    graspf:POSITIVE a grasp:AttributionValue,
+            graspf:PolarityValue ;
+        rdfs:label "POSITIVE" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+}
+
+leolaniWorld:i_know_igor {
+    leolaniWorld:i n2mu:know leolaniWorld:igor .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:contextd5a6bc60-c19b-4c08-aee5-b4dd1c65c64d sem:hasEvent leolaniTalk:chatd5a6bc60-c19b-4c08-aee5-b4dd1c65c64d .
+
+    leolaniTalk:chatd5a6bc60-c19b-4c08-aee5-b4dd1c65c64d a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chatd5a6bc60-c19b-4c08-aee5-b4dd1c65c64d" ;
+        n2mu:id "d5a6bc60-c19b-4c08-aee5-b4dd1c65c64d"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chatd5a6bc60-c19b-4c08-aee5-b4dd1c65c64d_utterancefbefa541-c82c-4aeb-b63b-513cf8119f3e .
+
+    leolaniTalk:chatd5a6bc60-c19b-4c08-aee5-b4dd1c65c64d_utterancefbefa541-c82c-4aeb-b63b-513cf8119f3e a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chatd5a6bc60-c19b-4c08-aee5-b4dd1c65c64d_utterancefbefa541-c82c-4aeb-b63b-513cf8119f3e" ;
+        n2mu:id "fbefa541-c82c-4aeb-b63b-513cf8119f3e"^^xml1:string ;
+        sem:hasActor leolaniWorld:koen .
+
+    leolaniWorld:koen a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "koen" .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:i_know_igor a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "i_know_igor" ;
+        gaf:denotedBy leolaniTalk:chatd5a6bc60-c19b-4c08-aee5-b4dd1c65c64d_utterancefbefa541-c82c-4aeb-b63b-513cf8119f3e_char0-11 .
+
+    leolaniWorld:leolani_know_koen a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_koen" .
+
+    leolaniWorld:koen owl:sameAs leolaniWorld:koen .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:i a n2mu:none,
+            gaf:Instance ;
+        rdfs:label "i" ;
+        gaf:denotedIn leolaniTalk:chatd5a6bc60-c19b-4c08-aee5-b4dd1c65c64d_utterancefbefa541-c82c-4aeb-b63b-513cf8119f3e_char0-11 .
+
+    leolaniWorld:igor a n2mu:none,
+            gaf:Instance ;
+        rdfs:label "igor" ;
+        gaf:denotedIn leolaniTalk:chatd5a6bc60-c19b-4c08-aee5-b4dd1c65c64d_utterancefbefa541-c82c-4aeb-b63b-513cf8119f3e_char0-11 .
+
+    leolaniWorld:koen a n2mu:person,
+            gaf:Instance ;
+        rdfs:label "koen" .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+}
+
+leolaniWorld:leolani_know_koen {
+    leolaniWorld:leolani n2mu:know leolaniWorld:koen .
+}
+

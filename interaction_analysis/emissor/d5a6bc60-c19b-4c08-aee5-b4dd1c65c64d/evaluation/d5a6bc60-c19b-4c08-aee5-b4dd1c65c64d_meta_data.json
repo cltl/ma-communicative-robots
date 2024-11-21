@@ -1,0 +1,61 @@
+{
+    "Scenario": {
+        "Scenario_id": "d5a6bc60-c19b-4c08-aee5-b4dd1c65c64d",
+        "Agent": "Leolani",
+        "Speaker": "Koen",
+        "Location": "No location",
+        "People_seen ": "Not in context",
+        "Objects_seen": "Not in context",
+        "Duration_in_minutes": "3.999433333333333"
+    },
+    "Text": {
+        "Nr. of signals": "27",
+        "Average_utterance_length": "33.851851851851855",
+        "Average_tokens_per_utterance": "7.185185185185185",
+        "Average_token_length": "3.850515463917526",
+        "Nr. of annotations": "147",
+        "Text_annotations": {
+            "ConversationalAgent:LEOLANI": "15",
+            "ConversationalAgent:SPEAKER": "12",
+            "MIDAS:statement": "18",
+            "MIDAS:command": "3",
+            "MIDAS:opinion": "1",
+            "MIDAS:open_question_opinion": "1",
+            "MIDAS:other_answers": "2",
+            "MIDAS:open_question_factual": "1",
+            "MIDAS:closing": "1",
+            "Likelihood:0.36": "3",
+            "Likelihood:0.12": "6",
+            "Likelihood:0.22": "6",
+            "Likelihood:0.28": "3",
+            "Likelihood:0.32": "3",
+            "Likelihood:0.23": "12",
+            "Likelihood:0.35": "3",
+            "Likelihood:0.18": "3",
+            "Likelihood:0.27": "3",
+            "Likelihood:0.56": "3",
+            "Likelihood:0.3": "3",
+            "Likelihood:0.21": "3",
+            "Likelihood:0.33": "3",
+            "Likelihood:0.65": "3",
+            "Likelihood:0.4": "3",
+            "Likelihood:0.02": "3",
+            "Likelihood:0.1": "3",
+            "Likelihood:0.13": "3",
+            "Likelihood:0.45": "3",
+            "Likelihood:0.0": "3",
+            "Likelihood:0.19": "3",
+            "Likelihood:0.15": "3",
+            "GO:neutral": "6",
+            "GO:disappointment": "1",
+            "GO:joy": "2",
+            "GO:curiosity": "2",
+            "GO:love": "1"
+        }
+    },
+    "Image": {
+        "Nr. of images": "0",
+        "Nr. of annotations": "0",
+        "Image_annotations": {}
+    }
+}
