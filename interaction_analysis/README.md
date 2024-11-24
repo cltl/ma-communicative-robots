@@ -10,36 +10,31 @@ We provide two notebooks that show how to analyse and evaluate interactions in d
 
 The first notebook shows how various annotations can be added to the the sequence of signals. By adding annotations to signals, the sequence of interactions can be analysed in more details. We have annotators for text and image signals, but here focus on annotating text signals, which are the utterances of the interlocuters of a conversation. We provide annotators for dialogue act classification, sentiment/emotion annotation, natural language processing annotation and likelihood or perplexity of utterances in a sequence according to large language models.
 
-Interactions captured in EMISSOR and annotated for various properties can be analysed and evaluated in various ways. In the second notebook, we explain a number of different ways to analyse interactions given the kind of annotations that are available. 
+Interactions captured in EMISSOR and annotated for various properties can be analysed and evaluated in various ways. In the second notebook, we explain a number of different ways to analyse interactions given the kind of annotations that are available:
+
+- statistical analysis of structural properties
+- likelihood evaluation of utterances in a sequence
+- conversation plot based on annotations mapped to positive and negative scores
+- spreadsheet for manually evaluating the conversation and adding a reference response
+- evaluation to compare a system response to a reference respons
+- graph based evaluation in case triples are extracted from the conversation
 
 ## Prerequisites
 
 - create a virtual enviroment and activate it
-- install the required modules through:
-- pip install -r requirements.txt
-- install the spaCY language model for the language of the communication:
-
+- install the required modules from the command line in a terminal:
+  ```pip install -r requirements.txt```
+- install the spaCY language model:
 ```python -m spacy download en_core_web_sm```
-  
-## Types of analysis:
-
-- statistical evaluation
-- conversation plot
-- likelihood evaluation
-- graph based evaluation
-- manual evaluation
-- reference evaluation
+- launch jupyter lab and make sure it uses the same environment
 
 ## Reference
 
 When using this repository please cite:
 
-@article{santamaria2021emissor,
-  title={EMISSOR: A platform for capturing multimodal interactions as Episodic Memories and Interpretations with Situated Scenario-based Ontological References},
-  author={Santamaria, Selene Baez and Baier, Thomas and Kim, Taewoon and Krause, Lea and Kruijt, Jaap and Vossen, Piek},
-  journal={arXiv preprint arXiv:2105.08388},
-  year={2021}
-}
+Santamaría, Selene Báez, Thomas Baier, Taewoon Kim, Lea Krause, Jaap Kruijt, and Piek Vossen. "EMISSOR: A platform for capturing multimodal interactions as Episodic Memories and Interpretations with Situated Scenario-based Ontological References." In Proceedings of the 1st Workshop on Multimodal Semantic Representations (MMSR), pp. 56-77. 2021.
+
+Other references:
 
 Deriu, Jan, Alvaro Rodrigo, Arantxa Otegi, Guillermo Echegoyen, Sophie Rosset, Eneko Agirre, and Mark Cieliebak. "Survey on evaluation methods for dialogue systems." Artificial Intelligence Review 54, no. 1 (2021): 755-810
 
