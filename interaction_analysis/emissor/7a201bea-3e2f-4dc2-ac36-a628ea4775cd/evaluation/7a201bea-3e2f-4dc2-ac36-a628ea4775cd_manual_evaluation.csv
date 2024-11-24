@@ -2,8 +2,6 @@ Turn;Speaker;Response;Reference Response;Overall Human Rating;Interesting;Engagi
 0;Ai2Thor;Hi Piek. Tell me what to do.;;;;;;;;;;
 1;Ai2Thor;"This is what I can do:('I can do the following:', ""['find', 'describe', 'move', 'go', 'turn', 'forward', 'back', 'left', 'right', 'open', 'close', 'look']"")";;;;;;;;;;
 2;Piek;find vase;;;;;;;;;;
-3;Ai2Thor;"I found 2 instances of type vase in my view
-Vase_7932859a at {'x': -1.4349972009658813, 'y': 0.18425700068473816, 'z': 2.582998275756836}
-Vase_b5cbe7f7 at {'x': -1.7320034503936768, 'y': 0.556065559387207, 'z': 2.6619484424591064}";;;;;;;;;;
+3;Ai2Thor;I found 2 instances of type vase in my view Vase_7932859a at {'x': -1.4349972009658813, 'y': 0.18425700068473816, 'z': 2.582998275756836} Vase_b5cbe7f7 at {'x': -1.7320034503936768, 'y': 0.556065559387207, 'z': 2.6619484424591064};;;;;;;;;;
 4;ACTION;Look;;;;;;;;;;
 5;Piek;bye;;;;;;;;;;
