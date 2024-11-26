@@ -11,8 +11,8 @@
     "Text": {
         "Nr. of signals": "6",
         "Average_utterance_length": "71.66666666666667",
-        "Average_tokens_per_utterance": "9.5",
-        "Average_token_length": "6.649122807017544",
+        "Average_tokens_per_utterance": "9.833333333333334",
+        "Average_token_length": "6.389830508474576",
         "Nr. of annotations": "164",
         "Text_annotations": {
             "ConversationalAgent:Ai2Thor": "3",
