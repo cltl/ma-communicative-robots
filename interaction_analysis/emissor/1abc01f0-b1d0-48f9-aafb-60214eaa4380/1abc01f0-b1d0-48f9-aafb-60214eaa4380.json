@@ -7,7 +7,7 @@
     "ruler": "https://emissor.org#ruler"
   },
   "@type": "Scenario",
-  "id": "7a201bea-3e2f-4dc2-ac36-a628ea4775cd",
+  "id": "1abc01f0-b1d0-48f9-aafb-60214eaa4380",
   "ruler": {
     "@context": {
       "TemporalRuler": "https://emissor.org#TemporalRuler",
@@ -20,21 +20,27 @@
       }
     },
     "@type": "TemporalRuler",
-    "container_id": "7a201bea-3e2f-4dc2-ac36-a628ea4775cd",
-    "start": 1731932290286,
-    "end": 1731932332076,
+    "container_id": "1abc01f0-b1d0-48f9-aafb-60214eaa4380",
+    "start": 1733307278113,
+    "end": 1733307323327,
     "_py_type": "emissor.representation.container-TemporalRuler"
   },
   "context": {
+    "@context": {
+      "ScenarioContext": "https://emissor.org#ScenarioContext",
+      "id": "@id",
+      "agent": "https://emissor.org#agent"
+    },
+    "@type": "ScenarioContext",
     "agent": {
-      "name": null,
-      "uri": null
+      "name": "Ai2Thor",
+      "uri": "http://cltl.nl/leolani/world/ai2thor"
     },
     "speaker": {
       "name": "Piek",
       "uri": "http://cltl.nl/leolani/world/piek"
     },
-    "_py_type": "emissor.representation.util-JSON"
+    "_py_type": "leolani_client-ApplicationContext"
   },
   "signals": {
     "text": "./text.json",
