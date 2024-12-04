@@ -89,14 +89,13 @@ class LeolaniChatClient():
         depth_array = np.zeros((resolution.height, resolution.width), dtype=np.uint8)
         image = Image(image_array, SYSTEM_VIEW.to_diagonal(), depth_array)
         signal = ImageSignal.for_scenario(self._scenario_controller.id, timestamp_now(), timestamp_now(), imageFilePath, image.bounds.to_diagonal())
-
-        # TODO If annotation is needed: create annotation with type name, annotation data, annotation source name
         # Bounds() takes x_0, x_1, y_0, y_1 as arguments, to_diagonal converts it to x_0, y0, x_1, y_1 
-        # print('Bounds for object are', bounds['x'], bounds['y'], bounds['z'])
+        # Dummy bounding box for the segment, to be replaced by more real bounding box
         segment = MultiIndex(signal.ruler.container_id, Bounds(bounds['x']-1, bounds['x']+1, bounds['y']-1,bounds['y']+1).to_diagonal())
         annotation_data = {}
-        annotation = Annotation(objectType, annotation_data, "Ai2Thor", int(time.time()))
-        mention = Mention(str(uuid.uuid4()), [segment], [annotation])
+        label_annotation = Annotation('ObjectType', objectType, "Ai2Thor", int(time.time()))
+        name_annotation = Annotation('ObjectIdentity',objectName, "Ai2Thor", int(time.time()))
+        mention = Mention(str(uuid.uuid4()), [segment], [label_annotation, name_annotation])
         signal.mentions.append(mention)
         self._scenario_controller.append_signal(signal)
 
