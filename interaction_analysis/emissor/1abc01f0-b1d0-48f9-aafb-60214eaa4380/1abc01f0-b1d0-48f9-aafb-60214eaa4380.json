@@ -26,12 +26,6 @@
     "_py_type": "emissor.representation.container-TemporalRuler"
   },
   "context": {
-    "@context": {
-      "ScenarioContext": "https://emissor.org#ScenarioContext",
-      "id": "@id",
-      "agent": "https://emissor.org#agent"
-    },
-    "@type": "ScenarioContext",
     "agent": {
       "name": "Ai2Thor",
       "uri": "http://cltl.nl/leolani/world/ai2thor"
@@ -40,7 +34,7 @@
       "name": "Piek",
       "uri": "http://cltl.nl/leolani/world/piek"
     },
-    "_py_type": "leolani_client-ApplicationContext"
+    "_py_type": "emissor.representation.util-JSON"
   },
   "signals": {
     "text": "./text.json",
