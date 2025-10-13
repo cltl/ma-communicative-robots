@@ -4,7 +4,8 @@ import numpy as np
 from PIL import Image
 
 ACTIONS = ["find", "describe", "move", "go", "turn", "forward", "back", "left", "right", "open", "close", "look"]
-
+DIRECTIONS = ["up", "down", "forward", "back", "left", "right"]
+OBJECTS = ["alarmclock", "apple", "applesliced", "armchair", "baseballbat", "basketball", "bathtub", "bathtubbasin", "bed", "blinds", "book", "boots", "bottle", "bowl", "box", "bread", "breadsliced", "butterknife", "cabinet", "candle", "cart", "cd", "cellphone", "chair", "cloth", "coffeemachine", "coffeetable", "countertop", "creditcard", "cup", "curtains", "desk", "desklamp", "dishsponge", "diningtable", "drawer", "dresser", "egg", "faucet", "floorlamp", "footstool", "fork", "fridge", "garbagecan", "handtowel", "handtowelholder", "houseplant", "kettle", "keychain", "knife", "ladle", "laptop", "laundryhamper", "laundryhamperlid", "lettuce", "lettucesliced", "lightswitch", "microwave", "mirror", "mug", "newspaper", "ottoman", "painting", "pan", "papertowel", "pen", "pencil", "peppershaker", "pillow", "plate", "plunger", "poster", "pot", "potato", "potatosliced", "remotecontrol", "safe", "saltshaker", "scrubbrush", "shelf", "showercurtain", "showerdoor", "showerglass", "showerhead", "sidetable", "sink", "sinkbasin", "soapbar", "soapbottle", "sofa", "spatula", "spoon", "spraybottle", "statue", "stoveburner", "stoveknob", "teddybear", "television", "tennisracket", "tissuebox", "toaster", "toilet", "toiletpaper", "toiletpaperhanger", "tomato", "tomatosliced", "towel", "towelholder", "tvstand", "vase", "watch", "wateringcan", "window", "winebottle"]
 
 class Ai2ThorClient:
 
@@ -65,7 +66,7 @@ class Ai2ThorClient:
             found = self.search_for_object_in_view(objectType)
             rotate += 1
         if not found:
-            answer = "I could not find it. Tell me to move?"
+            answer = "I could not find it. Should I move?"
         else:
             answer = "I found %s instances of type %s in my view" % (len(found), objectType) 
             for f,objectType, coord, _ in found:
@@ -76,7 +77,7 @@ class Ai2ThorClient:
                 #     print(affordance)
         return answer, found
 
-    def what_do_you_see(self, ):
+    def what_do_you_see(self):
         answer =  "I see %s things there.\n" % (len(self._event.metadata['objects']))
         for obj in self._event.metadata['objects']:
             answer += obj['objectType']+"\n"
@@ -95,55 +96,69 @@ class Ai2ThorClient:
                 affordances.append(key[0])
         return affordances
 
-
     def what_i_can_do(self):
         answer =  "I can do the following:", str(ACTIONS)
         return answer
 
-
-    def do_action(self, w1, w2):
+    def do_action(self, actionWord:str, objectWord:str, directionWord: str):
         answer = ""
         found_objects = []
-        if w1.lower()=="find":
-            answer, found_objects = self.search_for_object(w2)
+        if actionWord=="find" and objectWord:
+            answer, found_objects = self.search_for_object(objectWord)
             self._actions.append(Action.Look)
 
-        elif w1.lower()=="describe":
+        elif actionWord=="describe":
             answer = self.what_do_you_see()
             
-        elif w1.lower()=="look":
-            if w2.lower()=="up":
+        elif actionWord=="look" and directionWord:
+            if directionWord.lower()=="up":
                 self._event =self._controller.step(Action.LookUp.name)
                 self._actions.append(Action.LookUp)
-            elif w2.lower()=="down":
+            elif directionWord.lower()=="down":
                 self._event = self._controller.step(Action.LookDown.name)
                 self._actions.append(Action.LookDown)
                 
-        elif w1.lower()=="move" or w1.lower()=="go" or w1.lower()=="turn":
-            if w2.lower()=="forward":
+        elif actionWord=="move" or actionWord=="go" or actionWord=="turn":
+            if directionWord=="forward":
                 self._event =self._controller.step(Action.MoveAhead.name)
                 self._actions.append(Action.MoveAhead)
-            elif w2.lower()=="back":
+            elif directionWord=="back":
                 self._event = self._controller.step(Action.MoveBack.name)
                 self._actions.append(Action.MoveAhead)
-            elif w2.lower()=="left":
+            elif directionWord=="left":
                 self._event = self._controller.step(Action.RotateLeft.name)
                 self._actions.append(Action.RotateLeft)
-            elif w2.lower()=="right":
+            elif directionWord=="right":
                 self._event = self._controller.step(Action.RotateRight.name)
                 self._actions.append(Action.RotateRight)
 
         return answer, found_objects
 
     def process_instruction(self, prompt):
+        #print('OBJECTS', self._controller.event.metadata["objects"])
         self._answers =[]
         self._actions = []
         self._perceptions = []
         answer = ""
         words = prompt.split()
-        if words[0].lower() in ACTIONS:
+        actionWord = None
+        objectWord = None
+        directionWord = None
+        for word in words:
+            if word.lower() in ACTIONS:
+                actionWord = word.lower()
+                break
+        for word in words:
+            if word.lower() in OBJECTS:
+                objectWord = word.lower()
+                break
+        for word in words:
+            if word.lower() in DIRECTIONS:
+                directionWord = word.lower()
+                break
+        if actionWord:
             self._event = self._controller.step(Action.MoveAhead.name)
-            answer, found_objects = self.do_action(words[0].lower(), words[-1].lower())
+            answer, found_objects = self.do_action(actionWord=actionWord, objectWord=objectWord, directionWord=directionWord)
             if answer:
                 self._answers.append(answer)
             if found_objects:
@@ -151,3 +166,16 @@ class Ai2ThorClient:
         else:
             answer = "Sorry I do not get that:"+words[0]
             self._answers.append(answer)
+
+
+if __name__ == "__main__":
+    AGENT = "AI2Thor"
+    HUMAN = "Human"
+    ai2ThorClient = Ai2ThorClient()
+    utterance = input(HUMAN+"> ")
+    while not (utterance.lower() == "stop" or utterance.lower() == "bye"):
+            ai2ThorClient.process_instruction(utterance)
+            for utterance in ai2ThorClient._answers:
+                print(AGENT+">"+str(utterance))
+            utterance = input(HUMAN+"> ")
+    ai2ThorClient._controller.stop()
