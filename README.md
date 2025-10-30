@@ -1,31 +1,37 @@
-# Communicative Robots, 2024
+# Communicative Robots, 2025
 
 Communicative Robots is a master's course taught at VU Amsterdam.
-
-This year's branch is `2024`, which is the default branch of this repo. If you want to see others years, take a look at the other branches.
 
 ## Prerequisites
 
 1. python 3.10 or python3.11. Running in a virtual environment (e.g., conda, virtualenv, etc.) is highly recommended so that you don't mess up with the system python.
 
-2.
+2. Content
+
+2.1. ai2thor (env = ai2thor)
+2.2. emissor_chat (env = emissor)
+2.3. cltl-emissor-annotation (env = annotate)
+2.4. evaluate (env = evaluate)
+2.5. episodic_knowledge_graph
+
+2. For the different submodules, specific environments need to be created.
 
 Using venv:
    ```
-    python -m venv --python=3.11 combts
+    python -m venv --python=3.11 ai2thor
     source venv/bin/activate
     python -m pip install --upgrade pip
     pip install -r requirements.txt
-    python -m ipykernel install --user --name=combots
+    python -m ipykernel install --user --name=ai2thor
    ```
 
 Using conda:
    ```
-    conda create -n combots python=3.11
-    conda activate combots
+    conda create -n ai2thor python=3.11
+    conda activate ai2thor
     python -m pip install --upgrade pip
     pip install -r requirements.txt
-    python -m ipykernel install --user --name=combots
+    python -m ipykernel install --user --name=ai2thor
    ```
 
 ## Emissor

@@ -1,0 +1,7 @@
+transformers==4.35.2
+Pillow=9.4.0
+torch==2.1.0
+openai==1.97.0
+ai2thor
+prior
+jupyter
