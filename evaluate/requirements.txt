@@ -1,0 +1,2 @@
+deepeval
+cltl-dialogue-evaluation  @ git+https://github.com/leolani/cltl-dialogueevaluation
