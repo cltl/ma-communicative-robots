@@ -1,11 +1,28 @@
-# nltk~=3.6.2
-# numpy~=1.21.4
-# tqdm~=4.61.0
-# requests~=2.25.1
-# matplotlib~=3.4.2
-# torch~=1.10.0
-# transformers~=4.12.5
-# pandas~=1.2.4
+### LLMs
+torch==2.2.2
+transformers==4.51.3
+ollama==0.5.1
+langchain==0.3.21
+langchain_ollama==0.2.1
+openai==1.97.0
+
+### visualising data and results
+seaborn==0.13.2
+matplotlib==3.10.3
+
+### robots and agents
 emissor
 cltl.combot
-ollama
+ai2thor
+prior
+
+
+cltl.dialogueclassification
+cltl.emotionrecognition
+cltl.modellikelihood
+nltk
+spacy
+
+
+#python -m ipykernel install --user --name=
+#python -m spacy download en_core_web_sm

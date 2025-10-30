@@ -6,16 +6,26 @@ This year's branch is `2024`, which is the default branch of this repo. If you w
 
 ## Prerequisites
 
-1. python 3.9 or higher. Running in a virtual environment (e.g., conda, virtualenv, etc.) is highly recommended so that you don't mess up with the system python.
+1. python 3.10 or python3.11. Running in a virtual environment (e.g., conda, virtualenv, etc.) is highly recommended so that you don't mess up with the system python.
 
 2.
 
+Using venv:
    ```
-    python -m venv venv
+    python -m venv --python=3.11 combts
     source venv/bin/activate
     python -m pip install --upgrade pip
     pip install -r requirements.txt
-    pip install jupyter
+    python -m ipykernel install --user --name=combots
+   ```
+
+Using conda:
+   ```
+    conda create -n combots python=3.11
+    conda activate combots
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
+    python -m ipykernel install --user --name=combots
    ```
 
 ## Emissor
@@ -64,6 +74,4 @@ Contributions are what make the open source community such an amazing place to b
 ## Authors
 
 - Piek Vossen (piek.vossen@vu.nl)
-- Annika Kniele (a.kniele@vu.nl)
-- Selene Baez Santamaria (s.baezsantamaria@vu.nl)
 - Thomas Baier (t.baier@vu.nl)
