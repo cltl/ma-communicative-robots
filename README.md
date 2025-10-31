@@ -2,6 +2,14 @@
 
 Communicative Robots is a master's course taught at VU Amsterdam.
 
+
+Clone this repository and the submodule. Do the following from CLI:
+
+>git clone git@github.com:cltl/ma-communicative-robots.git
+>cd ma-communicative-robots
+>git submodule update --init  
+
+
 ## Prerequisites
 
 1. python 3.10 or python3.11. Running in a virtual environment (e.g., conda, virtualenv, etc.) is highly recommended so that you don't mess up with the system python.
@@ -14,24 +22,10 @@ Communicative Robots is a master's course taught at VU Amsterdam.
 2.4. evaluate (env = evaluate)
 2.5. episodic_knowledge_graph
 
-2. For the different submodules, specific environments need to be created.
+3. Virtual environments
 
-Using venv:
-   ```
-    python -m venv --python=3.11 ai2thor
-    source venv/bin/activate
-    python -m pip install --upgrade pip
-    pip install -r requirements.txt
-    python -m ipykernel install --user --name=ai2thor
-   ```
+For the different submodules, specific environments need to be created as described in the README of each subproject.
 
-Using conda:
-   ```
-    conda create -n ai2thor python=3.11
-    conda activate ai2thor
-    python -m pip install --upgrade pip
-    pip install -r requirements.txt
-    python -m ipykernel install --user --name=ai2thor
    ```
 
 ## Emissor
