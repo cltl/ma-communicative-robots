@@ -5,10 +5,11 @@ Communicative Robots is a master's course taught at VU Amsterdam.
 
 Clone this repository and the submodule. Do the following from CLI:
 
->git clone git@github.com:cltl/ma-communicative-robots.git
->cd ma-communicative-robots
->git submodule update --init  
-
+```
+   >git clone git@github.com:cltl/ma-communicative-robots.git
+   >cd ma-communicative-robots
+   >git submodule update --init  
+```
 
 ## Prerequisites
 
