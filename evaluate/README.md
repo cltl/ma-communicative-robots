@@ -1,5 +1,5 @@
-# Capturing interactions in EMISSOR
-This subproject shows how interactions can be captured in EMISSOR.
+# Analysing and evaluating interactions
+This subproject shows how interactions can be analysed and evaluated. Interactions need to be captured in EMISSOR format as different scenarios.
 
 ## Requirements
 
@@ -7,21 +7,21 @@ Before opening the  notebooks, make sure Jupyter is running in a virtual environ
 
 Using venv:
    ```
-    python -m venv --python=3.11 emissor
+    python -m venv --python=3.11 evaluate
     source venv/bin/activate
     python -m pip install --upgrade pip
     pip install -r requirements.txt
-    python -m ipykernel install --user --name=emissor
+    python -m ipykernel install --user --name=evaluate
    ```
 
 
 Using Conda:
 ```
-    conda create -n emissor python=3.11
-    conda activate emissor
+    conda create -n evaluate python=3.11
+    conda activate evaluate
     python -m pip install --upgrade pip
     pip install -r requirements.txt
-    python -m ipykernel install --user --name=emissor
+    python -m ipykernel install --user --name=evaluate
 ```
 
 With the environment active, launch Jupyter lab from the CLI.
