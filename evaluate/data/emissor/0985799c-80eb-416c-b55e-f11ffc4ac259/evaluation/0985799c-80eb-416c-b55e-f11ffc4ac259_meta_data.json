@@ -1,0 +1,31 @@
+{
+    "Scenario": {
+        "Scenario_id": "0985799c-80eb-416c-b55e-f11ffc4ac259",
+        "Agent": "Ai2Thor",
+        "Speaker": "Piek",
+        "Location": "No location",
+        "People_seen ": "Not in context",
+        "Objects_seen": "Not in context",
+        "Duration_in_minutes": "26.251733333333334"
+    },
+    "Text": {
+        "Nr. of signals": "24",
+        "Average_utterance_length": "78.20833333333333",
+        "Average_tokens_per_utterance": "13.208333333333334",
+        "Average_token_length": "4.996845425867508",
+        "Nr. of annotations": "24",
+        "Text_annotations": {
+            "ConversationalAgent:Ai2Thor": "8",
+            "ConversationalAgent:Piek": "11",
+            "ConversationalAgent:ACTION": "5"
+        }
+    },
+    "Image": {
+        "Nr. of images": "2",
+        "Nr. of annotations": "2",
+        "Image_annotations": {
+            "ObjectType:spoon": "1",
+            "ObjectType:apple": "1"
+        }
+    }
+}

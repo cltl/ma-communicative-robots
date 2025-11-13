@@ -1,0 +1,99 @@
+,Label,0985799c-80eb-416c-b55e-f11ffc4ac259,14a1c27d-dfd2-465b-9ab2-90e9ea91d214
+0,Agent,Ai2Thor,No agent
+1,Duration_in_minutes,26.251733333333334,3.8562
+2,Location,No location,No location
+3,Objects_seen,Not in context,Not in context
+4,People_seen ,Not in context,Not in context
+5,Scenario_id,0985799c-80eb-416c-b55e-f11ffc4ac259,14a1c27d-dfd2-465b-9ab2-90e9ea91d214
+6,Speaker,Piek,Wilbur
+7,Average_token_length,4.996845425867508,4.024647887323944
+8,Average_tokens_per_utterance,13.208333333333334,8.352941176470589
+9,Average_utterance_length,78.20833333333333,40.970588235294116
+10,ConversationalAgent:ACTION,5,
+11,ConversationalAgent:Ai2Thor,8,
+12,ConversationalAgent:LEOLANI,,22
+13,ConversationalAgent:Piek,11,
+14,ConversationalAgent:SPEAKER,,12
+15,GO:confusion,,4
+16,GO:disappointment,,2
+17,GO:neutral,,26
+18,GO:remorse,,2
+19,HEARER:you,,18
+20,Likelihood:0.0,,17
+21,Likelihood:0.01,,1
+22,Likelihood:0.02,,1
+23,Likelihood:0.03,,2
+24,Likelihood:0.04,,2
+25,Likelihood:0.05,,2
+26,Likelihood:0.07,,2
+27,Likelihood:0.1,,1
+28,Likelihood:0.11,,1
+29,Likelihood:0.12,,1
+30,Likelihood:0.13,,1
+31,Likelihood:0.15,,1
+32,Likelihood:0.17,,3
+33,Likelihood:0.2,,6
+34,Likelihood:0.22,,1
+35,Likelihood:0.23,,1
+36,Likelihood:0.24,,1
+37,Likelihood:0.26,,1
+38,Likelihood:0.28,,4
+39,Likelihood:0.3,,2
+40,Likelihood:0.31,,1
+41,Likelihood:0.32,,1
+42,Likelihood:0.33,,1
+43,Likelihood:0.35,,1
+44,Likelihood:0.36,,1
+45,Likelihood:0.37,,1
+46,Likelihood:0.38,,1
+47,Likelihood:0.39,,4
+48,Likelihood:0.4,,1
+49,Likelihood:0.41,,1
+50,Likelihood:0.46,,1
+51,Likelihood:0.48,,2
+52,Likelihood:0.53,,1
+53,MIDAS:LABEL_11,,1
+54,MIDAS:LABEL_12,,3
+55,MIDAS:LABEL_13,,1
+56,MIDAS:LABEL_14,,2
+57,MIDAS:LABEL_19,,7
+58,MIDAS:LABEL_21,,2
+59,MIDAS:LABEL_22,,1
+60,MIDAS:LABEL_3,,12
+61,MIDAS:LABEL_5,,5
+62,MIDAS:appreciation,,1
+63,MIDAS:closing,,2
+64,MIDAS:comment,,1
+65,MIDAS:complaint,,1
+66,MIDAS:nonsense,,8
+67,MIDAS:open_question_opinion,,15
+68,MIDAS:opinion,,4
+69,MIDAS:statement,,2
+70,Nr. of annotations,24,1220
+71,Nr. of signals,24,34
+72,PERSON:Fred,,2
+73,PERSON:Lucy,,12
+74,PERSON:Maria,,6
+75,PERSON:Maria know Fred?,,2
+76,PERSON:lucy,,12
+77,PERSON:maria,,6
+78,SPEAKER:I,,48
+79,pos:ADJ,,24
+80,pos:ADP,,24
+81,pos:ADV,,8
+82,pos:AUX,,62
+83,pos:CCONJ,,4
+84,pos:DET,,6
+85,pos:INTJ,,12
+86,pos:NOUN,,54
+87,pos:PART,,16
+88,pos:PRON,,122
+89,pos:PROPN,,84
+90,pos:PUNCT,,342
+91,pos:SCONJ,,12
+92,pos:SPACE,,18
+93,pos:VERB,,122
+94,Nr. of annotations,2,0
+95,Nr. of images,2,0
+96,ObjectType:apple,1,
+97,ObjectType:spoon,1,
