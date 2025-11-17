@@ -1,10 +1,7 @@
 numpy==1.22.0
 torch==2.2.2
 transformers==4.51.3
-deepeval
-pandas
-matplotlib
-seaborn
+ollama
 emissor
 cltl-dialogue-evaluation  @ git+https://github.com/leolani/cltl-dialogueevaluation
 jupyter

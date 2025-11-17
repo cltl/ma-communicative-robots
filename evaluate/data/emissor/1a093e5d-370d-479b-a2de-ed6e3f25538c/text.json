@@ -1,0 +1,2040 @@
+[
+  {
+    "@context": {
+      "TextSignal": "https://emissor.org#TextSignal",
+      "id": "@id",
+      "text": "https://emissor.org#text",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "seq": "https://emissor.org#seq",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "modality": "TEXT",
+    "ruler": {
+      "container_id": "9356d52e-5ef2-4f52-9a0f-e1ac04e753af",
+      "@context": {
+        "Index": "https://emissor.org#Index",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "stop": "https://emissor.org#stop",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "stop": 43,
+      "@type": "Index",
+      "start": 0,
+      "_py_type": "emissor.representation.container-Index"
+    },
+    "@type": "TextSignal",
+    "time": {
+      "container_id": "1a093e5d-370d-479b-a2de-ed6e3f25538c",
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "end": 1762866891174,
+      "start": 1762866891174
+    },
+    "text": "What's up? Do you want to talk to me Susan?",
+    "files": [],
+    "seq": [
+      "W",
+      "h",
+      "a",
+      "t",
+      "'",
+      "s",
+      " ",
+      "u",
+      "p",
+      "?",
+      " ",
+      "D",
+      "o",
+      " ",
+      "y",
+      "o",
+      "u",
+      " ",
+      "w",
+      "a",
+      "n",
+      "t",
+      " ",
+      "t",
+      "o",
+      " ",
+      "t",
+      "a",
+      "l",
+      "k",
+      " ",
+      "t",
+      "o",
+      " ",
+      "m",
+      "e",
+      " ",
+      "S",
+      "u",
+      "s",
+      "a",
+      "n",
+      "?"
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "value": "LEOLANI",
+            "type": "ConversationalAgent",
+            "timestamp": 1762866891174,
+            "source": "LEOLANI",
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ],
+        "segment": [
+          {
+            "container_id": "9356d52e-5ef2-4f52-9a0f-e1ac04e753af",
+            "@context": {
+              "Index": "https://emissor.org#Index",
+              "id": "@id",
+              "start": "https://emissor.org#start",
+              "stop": "https://emissor.org#stop",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "stop": 43,
+            "@type": "Index",
+            "start": 0,
+            "_py_type": "emissor.representation.container-Index"
+          }
+        ],
+        "@type": "Mention",
+        "id": "9e996ae3-513a-4919-ac00-0f4a22d5ef31"
+      }
+    ],
+    "id": "9356d52e-5ef2-4f52-9a0f-e1ac04e753af"
+  },
+  {
+    "@context": {
+      "TextSignal": "https://emissor.org#TextSignal",
+      "id": "@id",
+      "text": "https://emissor.org#text",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "seq": "https://emissor.org#seq",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "modality": "TEXT",
+    "ruler": {
+      "container_id": "2f187ec0-b899-4029-88f7-503fda93b06b",
+      "@context": {
+        "Index": "https://emissor.org#Index",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "stop": "https://emissor.org#stop",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "stop": 3,
+      "@type": "Index",
+      "start": 0,
+      "_py_type": "emissor.representation.container-Index"
+    },
+    "@type": "TextSignal",
+    "time": {
+      "container_id": "1a093e5d-370d-479b-a2de-ed6e3f25538c",
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "end": 1762867384739,
+      "start": 1762867384739
+    },
+    "text": "yes",
+    "files": [],
+    "seq": [
+      "y",
+      "e",
+      "s"
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "value": "SPEAKER",
+            "type": "ConversationalAgent",
+            "timestamp": 1762867384739,
+            "source": "LEOLANI",
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ],
+        "segment": [
+          {
+            "container_id": "2f187ec0-b899-4029-88f7-503fda93b06b",
+            "@context": {
+              "Index": "https://emissor.org#Index",
+              "id": "@id",
+              "start": "https://emissor.org#start",
+              "stop": "https://emissor.org#stop",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "stop": 3,
+            "@type": "Index",
+            "start": 0,
+            "_py_type": "emissor.representation.container-Index"
+          }
+        ],
+        "@type": "Mention",
+        "id": "3631c56b-73c2-42a2-a475-7666f64ef92c"
+      }
+    ],
+    "id": "2f187ec0-b899-4029-88f7-503fda93b06b"
+  },
+  {
+    "@context": {
+      "TextSignal": "https://emissor.org#TextSignal",
+      "id": "@id",
+      "text": "https://emissor.org#text",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "seq": "https://emissor.org#seq",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "modality": "TEXT",
+    "ruler": {
+      "container_id": "89a93dc2-41fd-453f-9581-cf91105100ea",
+      "@context": {
+        "Index": "https://emissor.org#Index",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "stop": "https://emissor.org#stop",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "stop": 38,
+      "@type": "Index",
+      "start": 0,
+      "_py_type": "emissor.representation.container-Index"
+    },
+    "@type": "TextSignal",
+    "time": {
+      "container_id": "1a093e5d-370d-479b-a2de-ed6e3f25538c",
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "end": 1762867384767,
+      "start": 1762867384767
+    },
+    "text": "See you Let me know when you are back.",
+    "files": [],
+    "seq": [
+      "S",
+      "e",
+      "e",
+      " ",
+      "y",
+      "o",
+      "u",
+      " ",
+      "L",
+      "e",
+      "t",
+      " ",
+      "m",
+      "e",
+      " ",
+      "k",
+      "n",
+      "o",
+      "w",
+      " ",
+      "w",
+      "h",
+      "e",
+      "n",
+      " ",
+      "y",
+      "o",
+      "u",
+      " ",
+      "a",
+      "r",
+      "e",
+      " ",
+      "b",
+      "a",
+      "c",
+      "k",
+      "."
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "value": "LEOLANI",
+            "type": "ConversationalAgent",
+            "timestamp": 1762867384767,
+            "source": "LEOLANI",
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ],
+        "segment": [
+          {
+            "container_id": "89a93dc2-41fd-453f-9581-cf91105100ea",
+            "@context": {
+              "Index": "https://emissor.org#Index",
+              "id": "@id",
+              "start": "https://emissor.org#start",
+              "stop": "https://emissor.org#stop",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "stop": 38,
+            "@type": "Index",
+            "start": 0,
+            "_py_type": "emissor.representation.container-Index"
+          }
+        ],
+        "@type": "Mention",
+        "id": "cfb8d0e3-8697-4f61-ae42-ce53317bb951"
+      }
+    ],
+    "id": "89a93dc2-41fd-453f-9581-cf91105100ea"
+  },
+  {
+    "@context": {
+      "TextSignal": "https://emissor.org#TextSignal",
+      "id": "@id",
+      "text": "https://emissor.org#text",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "seq": "https://emissor.org#seq",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "modality": "TEXT",
+    "ruler": {
+      "container_id": "33e2307f-399b-4e77-8081-7b003e1630fa",
+      "@context": {
+        "Index": "https://emissor.org#Index",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "stop": "https://emissor.org#stop",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "stop": 44,
+      "@type": "Index",
+      "start": 0,
+      "_py_type": "emissor.representation.container-Index"
+    },
+    "@type": "TextSignal",
+    "time": {
+      "container_id": "1a093e5d-370d-479b-a2de-ed6e3f25538c",
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "end": 1762867387778,
+      "start": 1762867387778
+    },
+    "text": "What's new? Do you want to talk to me Susan?",
+    "files": [],
+    "seq": [
+      "W",
+      "h",
+      "a",
+      "t",
+      "'",
+      "s",
+      " ",
+      "n",
+      "e",
+      "w",
+      "?",
+      " ",
+      "D",
+      "o",
+      " ",
+      "y",
+      "o",
+      "u",
+      " ",
+      "w",
+      "a",
+      "n",
+      "t",
+      " ",
+      "t",
+      "o",
+      " ",
+      "t",
+      "a",
+      "l",
+      "k",
+      " ",
+      "t",
+      "o",
+      " ",
+      "m",
+      "e",
+      " ",
+      "S",
+      "u",
+      "s",
+      "a",
+      "n",
+      "?"
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "value": "LEOLANI",
+            "type": "ConversationalAgent",
+            "timestamp": 1762867387778,
+            "source": "LEOLANI",
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ],
+        "segment": [
+          {
+            "container_id": "33e2307f-399b-4e77-8081-7b003e1630fa",
+            "@context": {
+              "Index": "https://emissor.org#Index",
+              "id": "@id",
+              "start": "https://emissor.org#start",
+              "stop": "https://emissor.org#stop",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "stop": 44,
+            "@type": "Index",
+            "start": 0,
+            "_py_type": "emissor.representation.container-Index"
+          }
+        ],
+        "@type": "Mention",
+        "id": "625c30fc-549a-4541-a19d-4210cb154805"
+      }
+    ],
+    "id": "33e2307f-399b-4e77-8081-7b003e1630fa"
+  },
+  {
+    "@context": {
+      "TextSignal": "https://emissor.org#TextSignal",
+      "id": "@id",
+      "text": "https://emissor.org#text",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "seq": "https://emissor.org#seq",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "modality": "TEXT",
+    "ruler": {
+      "container_id": "086433ce-a2c7-4d02-ab00-33abdf20f636",
+      "@context": {
+        "Index": "https://emissor.org#Index",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "stop": "https://emissor.org#stop",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "stop": 27,
+      "@type": "Index",
+      "start": 0,
+      "_py_type": "emissor.representation.container-Index"
+    },
+    "@type": "TextSignal",
+    "time": {
+      "container_id": "1a093e5d-370d-479b-a2de-ed6e3f25538c",
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "end": 1762867406041,
+      "start": 1762867406041
+    },
+    "text": "I have nothing more to say.",
+    "files": [],
+    "seq": [
+      "I",
+      " ",
+      "h",
+      "a",
+      "v",
+      "e",
+      " ",
+      "n",
+      "o",
+      "t",
+      "h",
+      "i",
+      "n",
+      "g",
+      " ",
+      "m",
+      "o",
+      "r",
+      "e",
+      " ",
+      "t",
+      "o",
+      " ",
+      "s",
+      "a",
+      "y",
+      "."
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "value": "LEOLANI",
+            "type": "ConversationalAgent",
+            "timestamp": 1762867406041,
+            "source": "LEOLANI",
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ],
+        "segment": [
+          {
+            "container_id": "086433ce-a2c7-4d02-ab00-33abdf20f636",
+            "@context": {
+              "Index": "https://emissor.org#Index",
+              "id": "@id",
+              "start": "https://emissor.org#start",
+              "stop": "https://emissor.org#stop",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "stop": 27,
+            "@type": "Index",
+            "start": 0,
+            "_py_type": "emissor.representation.container-Index"
+          }
+        ],
+        "@type": "Mention",
+        "id": "ffbb3e63-c99a-4f26-af4a-e7ae3954e366"
+      }
+    ],
+    "id": "086433ce-a2c7-4d02-ab00-33abdf20f636"
+  },
+  {
+    "@context": {
+      "TextSignal": "https://emissor.org#TextSignal",
+      "id": "@id",
+      "text": "https://emissor.org#text",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "seq": "https://emissor.org#seq",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "modality": "TEXT",
+    "ruler": {
+      "container_id": "d7da1d29-fef3-451b-b8d2-e28d8938222d",
+      "@context": {
+        "Index": "https://emissor.org#Index",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "stop": "https://emissor.org#stop",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "stop": 11,
+      "@type": "Index",
+      "start": 0,
+      "_py_type": "emissor.representation.container-Index"
+    },
+    "@type": "TextSignal",
+    "time": {
+      "container_id": "1a093e5d-370d-479b-a2de-ed6e3f25538c",
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "end": 1762867502124,
+      "start": 1762867502124
+    },
+    "text": "how are you",
+    "files": [],
+    "seq": [
+      "h",
+      "o",
+      "w",
+      " ",
+      "a",
+      "r",
+      "e",
+      " ",
+      "y",
+      "o",
+      "u"
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "value": "SPEAKER",
+            "type": "ConversationalAgent",
+            "timestamp": 1762867502124,
+            "source": "LEOLANI",
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ],
+        "segment": [
+          {
+            "container_id": "d7da1d29-fef3-451b-b8d2-e28d8938222d",
+            "@context": {
+              "Index": "https://emissor.org#Index",
+              "id": "@id",
+              "start": "https://emissor.org#start",
+              "stop": "https://emissor.org#stop",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "stop": 11,
+            "@type": "Index",
+            "start": 0,
+            "_py_type": "emissor.representation.container-Index"
+          }
+        ],
+        "@type": "Mention",
+        "id": "701b5565-9ded-4611-af23-5e08c3de6e91"
+      }
+    ],
+    "id": "d7da1d29-fef3-451b-b8d2-e28d8938222d"
+  },
+  {
+    "@context": {
+      "TextSignal": "https://emissor.org#TextSignal",
+      "id": "@id",
+      "text": "https://emissor.org#text",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "seq": "https://emissor.org#seq",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "modality": "TEXT",
+    "ruler": {
+      "container_id": "238b1052-caa5-4977-8dcc-d24d5875d0d2",
+      "@context": {
+        "Index": "https://emissor.org#Index",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "stop": "https://emissor.org#stop",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "stop": 94,
+      "@type": "Index",
+      "start": 0,
+      "_py_type": "emissor.representation.container-Index"
+    },
+    "@type": "TextSignal",
+    "time": {
+      "container_id": "1a093e5d-370d-479b-a2de-ed6e3f25538c",
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "end": 1762867502163,
+      "start": 1762867502163
+    },
+    "text": "Look stranger My programmers are Lenka, Selene, Bram, Thomas, Jaap, Tae and Piek. I like them!",
+    "files": [],
+    "seq": [
+      "L",
+      "o",
+      "o",
+      "k",
+      " ",
+      "s",
+      "t",
+      "r",
+      "a",
+      "n",
+      "g",
+      "e",
+      "r",
+      " ",
+      "M",
+      "y",
+      " ",
+      "p",
+      "r",
+      "o",
+      "g",
+      "r",
+      "a",
+      "m",
+      "m",
+      "e",
+      "r",
+      "s",
+      " ",
+      "a",
+      "r",
+      "e",
+      " ",
+      "L",
+      "e",
+      "n",
+      "k",
+      "a",
+      ",",
+      " ",
+      "S",
+      "e",
+      "l",
+      "e",
+      "n",
+      "e",
+      ",",
+      " ",
+      "B",
+      "r",
+      "a",
+      "m",
+      ",",
+      " ",
+      "T",
+      "h",
+      "o",
+      "m",
+      "a",
+      "s",
+      ",",
+      " ",
+      "J",
+      "a",
+      "a",
+      "p",
+      ",",
+      " ",
+      "T",
+      "a",
+      "e",
+      " ",
+      "a",
+      "n",
+      "d",
+      " ",
+      "P",
+      "i",
+      "e",
+      "k",
+      ".",
+      " ",
+      "I",
+      " ",
+      "l",
+      "i",
+      "k",
+      "e",
+      " ",
+      "t",
+      "h",
+      "e",
+      "m",
+      "!"
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "value": "LEOLANI",
+            "type": "ConversationalAgent",
+            "timestamp": 1762867502163,
+            "source": "LEOLANI",
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ],
+        "segment": [
+          {
+            "container_id": "238b1052-caa5-4977-8dcc-d24d5875d0d2",
+            "@context": {
+              "Index": "https://emissor.org#Index",
+              "id": "@id",
+              "start": "https://emissor.org#start",
+              "stop": "https://emissor.org#stop",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "stop": 94,
+            "@type": "Index",
+            "start": 0,
+            "_py_type": "emissor.representation.container-Index"
+          }
+        ],
+        "@type": "Mention",
+        "id": "813d7e71-aac4-4e4d-a40d-0a24002e39d7"
+      }
+    ],
+    "id": "238b1052-caa5-4977-8dcc-d24d5875d0d2"
+  },
+  {
+    "@context": {
+      "TextSignal": "https://emissor.org#TextSignal",
+      "id": "@id",
+      "text": "https://emissor.org#text",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "seq": "https://emissor.org#seq",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "modality": "TEXT",
+    "ruler": {
+      "container_id": "4c46db8b-ae48-4b89-bd41-a31748203395",
+      "@context": {
+        "Index": "https://emissor.org#Index",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "stop": "https://emissor.org#stop",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "stop": 3,
+      "@type": "Index",
+      "start": 0,
+      "_py_type": "emissor.representation.container-Index"
+    },
+    "@type": "TextSignal",
+    "time": {
+      "container_id": "1a093e5d-370d-479b-a2de-ed6e3f25538c",
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "end": 1762867518937,
+      "start": 1762867518937
+    },
+    "text": "BYE",
+    "files": [],
+    "seq": [
+      "B",
+      "Y",
+      "E"
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "value": "SPEAKER",
+            "type": "ConversationalAgent",
+            "timestamp": 1762867518937,
+            "source": "LEOLANI",
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ],
+        "segment": [
+          {
+            "container_id": "4c46db8b-ae48-4b89-bd41-a31748203395",
+            "@context": {
+              "Index": "https://emissor.org#Index",
+              "id": "@id",
+              "start": "https://emissor.org#start",
+              "stop": "https://emissor.org#stop",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "stop": 3,
+            "@type": "Index",
+            "start": 0,
+            "_py_type": "emissor.representation.container-Index"
+          }
+        ],
+        "@type": "Mention",
+        "id": "fd302f0c-a129-4019-b039-ecddcabbc3e4"
+      }
+    ],
+    "id": "4c46db8b-ae48-4b89-bd41-a31748203395"
+  },
+  {
+    "@context": {
+      "TextSignal": "https://emissor.org#TextSignal",
+      "id": "@id",
+      "text": "https://emissor.org#text",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "seq": "https://emissor.org#seq",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "modality": "TEXT",
+    "ruler": {
+      "container_id": "54beac0d-a33e-4066-9625-4dc2552e1952",
+      "@context": {
+        "Index": "https://emissor.org#Index",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "stop": "https://emissor.org#stop",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "stop": 46,
+      "@type": "Index",
+      "start": 0,
+      "_py_type": "emissor.representation.container-Index"
+    },
+    "@type": "TextSignal",
+    "time": {
+      "container_id": "1a093e5d-370d-479b-a2de-ed6e3f25538c",
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "end": 1762867518964,
+      "start": 1762867518964
+    },
+    "text": "Have a nice day Let me know when you are back.",
+    "files": [],
+    "seq": [
+      "H",
+      "a",
+      "v",
+      "e",
+      " ",
+      "a",
+      " ",
+      "n",
+      "i",
+      "c",
+      "e",
+      " ",
+      "d",
+      "a",
+      "y",
+      " ",
+      "L",
+      "e",
+      "t",
+      " ",
+      "m",
+      "e",
+      " ",
+      "k",
+      "n",
+      "o",
+      "w",
+      " ",
+      "w",
+      "h",
+      "e",
+      "n",
+      " ",
+      "y",
+      "o",
+      "u",
+      " ",
+      "a",
+      "r",
+      "e",
+      " ",
+      "b",
+      "a",
+      "c",
+      "k",
+      "."
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "value": "LEOLANI",
+            "type": "ConversationalAgent",
+            "timestamp": 1762867518964,
+            "source": "LEOLANI",
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ],
+        "segment": [
+          {
+            "container_id": "54beac0d-a33e-4066-9625-4dc2552e1952",
+            "@context": {
+              "Index": "https://emissor.org#Index",
+              "id": "@id",
+              "start": "https://emissor.org#start",
+              "stop": "https://emissor.org#stop",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "stop": 46,
+            "@type": "Index",
+            "start": 0,
+            "_py_type": "emissor.representation.container-Index"
+          }
+        ],
+        "@type": "Mention",
+        "id": "52a4485b-863e-4315-ba11-da1911b6613d"
+      }
+    ],
+    "id": "54beac0d-a33e-4066-9625-4dc2552e1952"
+  },
+  {
+    "@context": {
+      "TextSignal": "https://emissor.org#TextSignal",
+      "id": "@id",
+      "text": "https://emissor.org#text",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "seq": "https://emissor.org#seq",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "modality": "TEXT",
+    "ruler": {
+      "container_id": "e0e26959-6c03-42f0-9057-e1049bd7d5d9",
+      "@context": {
+        "Index": "https://emissor.org#Index",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "stop": "https://emissor.org#stop",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "stop": 49,
+      "@type": "Index",
+      "start": 0,
+      "_py_type": "emissor.representation.container-Index"
+    },
+    "@type": "TextSignal",
+    "time": {
+      "container_id": "1a093e5d-370d-479b-a2de-ed6e3f25538c",
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "end": 1762867521976,
+      "start": 1762867521976
+    },
+    "text": "What's going on? Do you want to talk to me Susan?",
+    "files": [],
+    "seq": [
+      "W",
+      "h",
+      "a",
+      "t",
+      "'",
+      "s",
+      " ",
+      "g",
+      "o",
+      "i",
+      "n",
+      "g",
+      " ",
+      "o",
+      "n",
+      "?",
+      " ",
+      "D",
+      "o",
+      " ",
+      "y",
+      "o",
+      "u",
+      " ",
+      "w",
+      "a",
+      "n",
+      "t",
+      " ",
+      "t",
+      "o",
+      " ",
+      "t",
+      "a",
+      "l",
+      "k",
+      " ",
+      "t",
+      "o",
+      " ",
+      "m",
+      "e",
+      " ",
+      "S",
+      "u",
+      "s",
+      "a",
+      "n",
+      "?"
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "value": "LEOLANI",
+            "type": "ConversationalAgent",
+            "timestamp": 1762867521977,
+            "source": "LEOLANI",
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ],
+        "segment": [
+          {
+            "container_id": "e0e26959-6c03-42f0-9057-e1049bd7d5d9",
+            "@context": {
+              "Index": "https://emissor.org#Index",
+              "id": "@id",
+              "start": "https://emissor.org#start",
+              "stop": "https://emissor.org#stop",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "stop": 49,
+            "@type": "Index",
+            "start": 0,
+            "_py_type": "emissor.representation.container-Index"
+          }
+        ],
+        "@type": "Mention",
+        "id": "bcc3a3e4-bf0d-4938-a87c-006847498b38"
+      }
+    ],
+    "id": "e0e26959-6c03-42f0-9057-e1049bd7d5d9"
+  },
+  {
+    "@context": {
+      "TextSignal": "https://emissor.org#TextSignal",
+      "id": "@id",
+      "text": "https://emissor.org#text",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "seq": "https://emissor.org#seq",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "modality": "TEXT",
+    "ruler": {
+      "container_id": "85ff818e-adcb-4ed5-ad1f-ceb1c799d3a6",
+      "@context": {
+        "Index": "https://emissor.org#Index",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "stop": "https://emissor.org#stop",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "stop": 5,
+      "@type": "Index",
+      "start": 0,
+      "_py_type": "emissor.representation.container-Index"
+    },
+    "@type": "TextSignal",
+    "time": {
+      "container_id": "1a093e5d-370d-479b-a2de-ed6e3f25538c",
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "end": 1762867528029,
+      "start": 1762867528029
+    },
+    "text": "hello",
+    "files": [],
+    "seq": [
+      "h",
+      "e",
+      "l",
+      "l",
+      "o"
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "value": "SPEAKER",
+            "type": "ConversationalAgent",
+            "timestamp": 1762867528029,
+            "source": "LEOLANI",
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ],
+        "segment": [
+          {
+            "container_id": "85ff818e-adcb-4ed5-ad1f-ceb1c799d3a6",
+            "@context": {
+              "Index": "https://emissor.org#Index",
+              "id": "@id",
+              "start": "https://emissor.org#start",
+              "stop": "https://emissor.org#stop",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "stop": 5,
+            "@type": "Index",
+            "start": 0,
+            "_py_type": "emissor.representation.container-Index"
+          }
+        ],
+        "@type": "Mention",
+        "id": "d27d38f9-7e8d-4ef2-9d29-7d6be6e92841"
+      }
+    ],
+    "id": "85ff818e-adcb-4ed5-ad1f-ceb1c799d3a6"
+  },
+  {
+    "@context": {
+      "TextSignal": "https://emissor.org#TextSignal",
+      "id": "@id",
+      "text": "https://emissor.org#text",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "seq": "https://emissor.org#seq",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "modality": "TEXT",
+    "ruler": {
+      "container_id": "11382b41-e958-43bf-85b6-c71ea5d1e7a7",
+      "@context": {
+        "Index": "https://emissor.org#Index",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "stop": "https://emissor.org#stop",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "stop": 2,
+      "@type": "Index",
+      "start": 0,
+      "_py_type": "emissor.representation.container-Index"
+    },
+    "@type": "TextSignal",
+    "time": {
+      "container_id": "1a093e5d-370d-479b-a2de-ed6e3f25538c",
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "end": 1762867534611,
+      "start": 1762867534611
+    },
+    "text": "hi",
+    "files": [],
+    "seq": [
+      "h",
+      "i"
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "value": "SPEAKER",
+            "type": "ConversationalAgent",
+            "timestamp": 1762867534612,
+            "source": "LEOLANI",
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ],
+        "segment": [
+          {
+            "container_id": "11382b41-e958-43bf-85b6-c71ea5d1e7a7",
+            "@context": {
+              "Index": "https://emissor.org#Index",
+              "id": "@id",
+              "start": "https://emissor.org#start",
+              "stop": "https://emissor.org#stop",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "stop": 2,
+            "@type": "Index",
+            "start": 0,
+            "_py_type": "emissor.representation.container-Index"
+          }
+        ],
+        "@type": "Mention",
+        "id": "b9dcc563-97f1-4b9f-9627-2ec1709c0382"
+      }
+    ],
+    "id": "11382b41-e958-43bf-85b6-c71ea5d1e7a7"
+  },
+  {
+    "@context": {
+      "TextSignal": "https://emissor.org#TextSignal",
+      "id": "@id",
+      "text": "https://emissor.org#text",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "seq": "https://emissor.org#seq",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "modality": "TEXT",
+    "ruler": {
+      "container_id": "ae74f90f-3b8a-4ee7-b301-6d6aba613edf",
+      "@context": {
+        "Index": "https://emissor.org#Index",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "stop": "https://emissor.org#stop",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "stop": 58,
+      "@type": "Index",
+      "start": 0,
+      "_py_type": "emissor.representation.container-Index"
+    },
+    "@type": "TextSignal",
+    "time": {
+      "container_id": "1a093e5d-370d-479b-a2de-ed6e3f25538c",
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "end": 1762867535313,
+      "start": 1762867535313
+    },
+    "text": "I\u2019ve already heard this, and I\u2019ve heard about None before.",
+    "files": [],
+    "seq": [
+      "I",
+      "\u2019",
+      "v",
+      "e",
+      " ",
+      "a",
+      "l",
+      "r",
+      "e",
+      "a",
+      "d",
+      "y",
+      " ",
+      "h",
+      "e",
+      "a",
+      "r",
+      "d",
+      " ",
+      "t",
+      "h",
+      "i",
+      "s",
+      ",",
+      " ",
+      "a",
+      "n",
+      "d",
+      " ",
+      "I",
+      "\u2019",
+      "v",
+      "e",
+      " ",
+      "h",
+      "e",
+      "a",
+      "r",
+      "d",
+      " ",
+      "a",
+      "b",
+      "o",
+      "u",
+      "t",
+      " ",
+      "N",
+      "o",
+      "n",
+      "e",
+      " ",
+      "b",
+      "e",
+      "f",
+      "o",
+      "r",
+      "e",
+      "."
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "value": "LEOLANI",
+            "type": "ConversationalAgent",
+            "timestamp": 1762867535313,
+            "source": "LEOLANI",
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ],
+        "segment": [
+          {
+            "container_id": "ae74f90f-3b8a-4ee7-b301-6d6aba613edf",
+            "@context": {
+              "Index": "https://emissor.org#Index",
+              "id": "@id",
+              "start": "https://emissor.org#start",
+              "stop": "https://emissor.org#stop",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "stop": 58,
+            "@type": "Index",
+            "start": 0,
+            "_py_type": "emissor.representation.container-Index"
+          }
+        ],
+        "@type": "Mention",
+        "id": "d46f2f51-9e7e-49b7-9b81-01d2b74e3fd9"
+      }
+    ],
+    "id": "ae74f90f-3b8a-4ee7-b301-6d6aba613edf"
+  },
+  {
+    "@context": {
+      "TextSignal": "https://emissor.org#TextSignal",
+      "id": "@id",
+      "text": "https://emissor.org#text",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "seq": "https://emissor.org#seq",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "modality": "TEXT",
+    "ruler": {
+      "container_id": "1f7800d2-370e-412d-b16f-95b16635c9dc",
+      "@context": {
+        "Index": "https://emissor.org#Index",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "stop": "https://emissor.org#stop",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "stop": 40,
+      "@type": "Index",
+      "start": 0,
+      "_py_type": "emissor.representation.container-Index"
+    },
+    "@type": "TextSignal",
+    "time": {
+      "container_id": "1a093e5d-370d-479b-a2de-ed6e3f25538c",
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "end": 1762867544570,
+      "start": 1762867544570
+    },
+    "text": "It seems familiar. I have heard of None.",
+    "files": [],
+    "seq": [
+      "I",
+      "t",
+      " ",
+      "s",
+      "e",
+      "e",
+      "m",
+      "s",
+      " ",
+      "f",
+      "a",
+      "m",
+      "i",
+      "l",
+      "i",
+      "a",
+      "r",
+      ".",
+      " ",
+      "I",
+      " ",
+      "h",
+      "a",
+      "v",
+      "e",
+      " ",
+      "h",
+      "e",
+      "a",
+      "r",
+      "d",
+      " ",
+      "o",
+      "f",
+      " ",
+      "N",
+      "o",
+      "n",
+      "e",
+      "."
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "value": "LEOLANI",
+            "type": "ConversationalAgent",
+            "timestamp": 1762867544570,
+            "source": "LEOLANI",
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ],
+        "segment": [
+          {
+            "container_id": "1f7800d2-370e-412d-b16f-95b16635c9dc",
+            "@context": {
+              "Index": "https://emissor.org#Index",
+              "id": "@id",
+              "start": "https://emissor.org#start",
+              "stop": "https://emissor.org#stop",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "stop": 40,
+            "@type": "Index",
+            "start": 0,
+            "_py_type": "emissor.representation.container-Index"
+          }
+        ],
+        "@type": "Mention",
+        "id": "5f9cb1ba-2573-4b64-a4f4-bb99e0ae789a"
+      }
+    ],
+    "id": "1f7800d2-370e-412d-b16f-95b16635c9dc"
+  },
+  {
+    "@context": {
+      "TextSignal": "https://emissor.org#TextSignal",
+      "id": "@id",
+      "text": "https://emissor.org#text",
+      "modality": "https://emissor.org#modality",
+      "time": "https://emissor.org#time",
+      "files": "https://emissor.org#files",
+      "mentions": "https://emissor.org#mentions",
+      "seq": "https://emissor.org#seq",
+      "ruler": "https://emissor.org#ruler"
+    },
+    "modality": "TEXT",
+    "ruler": {
+      "container_id": "62d6ed22-67bf-4bd4-a8a6-04dec709c15e",
+      "@context": {
+        "Index": "https://emissor.org#Index",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "stop": "https://emissor.org#stop",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "stop": 45,
+      "@type": "Index",
+      "start": 0,
+      "_py_type": "emissor.representation.container-Index"
+    },
+    "@type": "TextSignal",
+    "time": {
+      "container_id": "1a093e5d-370d-479b-a2de-ed6e3f25538c",
+      "@context": {
+        "TemporalRuler": "https://emissor.org#TemporalRuler",
+        "id": "@id",
+        "start": "https://emissor.org#start",
+        "end": "https://emissor.org#end",
+        "container_id": {
+          "@id": "https://emissor.org#container_id",
+          "@type": "@id"
+        }
+      },
+      "@type": "TemporalRuler",
+      "end": 1762867554205,
+      "start": 1762867554205
+    },
+    "text": "It seems familiar. I've heard of None before.",
+    "files": [],
+    "seq": [
+      "I",
+      "t",
+      " ",
+      "s",
+      "e",
+      "e",
+      "m",
+      "s",
+      " ",
+      "f",
+      "a",
+      "m",
+      "i",
+      "l",
+      "i",
+      "a",
+      "r",
+      ".",
+      " ",
+      "I",
+      "'",
+      "v",
+      "e",
+      " ",
+      "h",
+      "e",
+      "a",
+      "r",
+      "d",
+      " ",
+      "o",
+      "f",
+      " ",
+      "N",
+      "o",
+      "n",
+      "e",
+      " ",
+      "b",
+      "e",
+      "f",
+      "o",
+      "r",
+      "e",
+      "."
+    ],
+    "mentions": [
+      {
+        "@context": {
+          "Mention": "https://emissor.org#Mention",
+          "id": "@id",
+          "segment": "https://emissor.org#segment",
+          "annotations": "https://emissor.org#annotations"
+        },
+        "annotations": [
+          {
+            "@context": {
+              "Annotation": "https://emissor.org#Annotation",
+              "id": "@id",
+              "type": "https://emissor.org#type",
+              "value": "https://emissor.org#value",
+              "source": "https://emissor.org#source",
+              "timestamp": "https://emissor.org#timestamp"
+            },
+            "@type": "Annotation",
+            "value": "LEOLANI",
+            "type": "ConversationalAgent",
+            "timestamp": 1762867554205,
+            "source": "LEOLANI",
+            "_py_type": "emissor.representation.scenario-Annotation"
+          }
+        ],
+        "segment": [
+          {
+            "container_id": "62d6ed22-67bf-4bd4-a8a6-04dec709c15e",
+            "@context": {
+              "Index": "https://emissor.org#Index",
+              "id": "@id",
+              "start": "https://emissor.org#start",
+              "stop": "https://emissor.org#stop",
+              "container_id": {
+                "@id": "https://emissor.org#container_id",
+                "@type": "@id"
+              }
+            },
+            "stop": 45,
+            "@type": "Index",
+            "start": 0,
+            "_py_type": "emissor.representation.container-Index"
+          }
+        ],
+        "@type": "Mention",
+        "id": "2c3c931b-c977-4f04-b78e-48f630fce116"
+      }
+    ],
+    "id": "62d6ed22-67bf-4bd4-a8a6-04dec709c15e"
+  }
+]
