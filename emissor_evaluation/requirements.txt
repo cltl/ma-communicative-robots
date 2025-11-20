@@ -1,8 +1,9 @@
-numpy==1.22.0
+numpy==1.26.4
 torch==2.2.2
 transformers==4.51.3
 ollama
 emissor
 pandas
-cltl-dialogue-evaluation  @ git+https://github.com/leolani/cltl-dialogueevaluation
+seaborn
+matplotlib
 jupyter
