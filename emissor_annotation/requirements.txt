@@ -1,0 +1,6 @@
+torch==2.2.2
+transformers==4.51.3
+spacy==3.7.5
+cltl.dialogueclassification @ git+https://github.com/leolani/cltl-dialogueclassification
+cltl.emotionrecognition @ git+https://github.com/leolani/cltl-emotionrecognition
+cltl.mention-detection @ git+https://github.com/leolani/cltl-mention-detection
