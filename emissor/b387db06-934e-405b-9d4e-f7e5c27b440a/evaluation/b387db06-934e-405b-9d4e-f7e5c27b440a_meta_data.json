@@ -1,0 +1,61 @@
+{
+    "Scenario": {
+        "Scenario_id": "b387db06-934e-405b-9d4e-f7e5c27b440a",
+        "Agent": "Leolani",
+        "Speaker": "Luis",
+        "Location": "c71a2871-ad63-4f43-890b-02342b465385",
+        "People_seen ": "[]",
+        "Objects_seen": "[]",
+        "Date": "None",
+        "Duration_in_minutes": "0"
+    },
+    "Text": {
+        "Nr. of signals": "9",
+        "Average_utterance_length": "24.333333333333332",
+        "Average_tokens_per_utterance": "5.111111111111111",
+        "Average_token_length": "3.9565217391304346",
+        "Nr. of annotations": "240",
+        "Text_annotations": {
+            "ConversationalAgent:LEOLANI": "5",
+            "ConversationalAgent:SPEAKER": "4",
+            "pos:PROPN": "33",
+            "pos:AUX": "9",
+            "pos:PRON": "27",
+            "pos:VERB": "33",
+            "pos:PART": "6",
+            "pos:ADP": "6",
+            "pos:PUNCT": "27",
+            "pos:INTJ": "3",
+            "pos:ADJ": "3",
+            "pos:DET": "3",
+            "pos:NOUN": "12",
+            "pos:SCONJ": "3",
+            "PERSON:Luis": "6",
+            "ORG:Amstelveen": "3",
+            "PERSON:Piek": "9",
+            "PERSON:Heeft Luis": "3",
+            "HEARER:you": "6",
+            "SPEAKER:I": "12",
+            "MIDAS:command": "2",
+            "MIDAS:pos_answer": "1",
+            "MIDAS:statement": "4",
+            "MIDAS:yes_no_question": "2",
+            "GO:curiosity": "3",
+            "GO:approval": "1",
+            "GO:neutral": "5",
+            "Likelihood:0.37": "1",
+            "Likelihood:0.0": "2",
+            "Likelihood:0.35": "1",
+            "Likelihood:0.36": "1",
+            "Likelihood:0.02": "1",
+            "Likelihood:0.27": "1",
+            "Likelihood:0.01": "1",
+            "Likelihood:0.04": "1"
+        }
+    },
+    "Image": {
+        "Nr. of images": "0",
+        "Nr. of annotations": "0",
+        "Image_annotations": {}
+    }
+}

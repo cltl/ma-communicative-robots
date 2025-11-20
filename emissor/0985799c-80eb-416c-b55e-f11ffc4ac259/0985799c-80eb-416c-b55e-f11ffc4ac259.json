@@ -1,4 +1,9 @@
 {
+  "@type": "Scenario",
+  "signals": {
+    "text": "./text.json",
+    "image": "./image.json"
+  },
   "@context": {
     "Scenario": "https://emissor.org#Scenario",
     "id": "@id",
@@ -7,7 +12,9 @@
     "ruler": "https://emissor.org#ruler"
   },
   "ruler": {
-    "container_id": "0985799c-80eb-416c-b55e-f11ffc4ac259",
+    "start": 1760106906162,
+    "end": 1760108481266,
+    "@type": "TemporalRuler",
     "@context": {
       "TemporalRuler": "https://emissor.org#TemporalRuler",
       "id": "@id",
@@ -18,9 +25,7 @@
         "@type": "@id"
       }
     },
-    "start": 1760106906162,
-    "end": 1760108481266,
-    "@type": "TemporalRuler",
+    "container_id": "0985799c-80eb-416c-b55e-f11ffc4ac259",
     "_py_type": "emissor.representation.container-TemporalRuler"
   },
   "context": {
@@ -34,10 +39,5 @@
     },
     "_py_type": "emissor.representation.util-PickleableDict"
   },
-  "signals": {
-    "text": "./text.json",
-    "image": "./image.json"
-  },
-  "id": "0985799c-80eb-416c-b55e-f11ffc4ac259",
-  "@type": "Scenario"
+  "id": "0985799c-80eb-416c-b55e-f11ffc4ac259"
 }
