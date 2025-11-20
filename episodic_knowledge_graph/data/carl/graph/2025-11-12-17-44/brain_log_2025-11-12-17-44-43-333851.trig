@@ -1,0 +1,152 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time1: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniTalk:Interactions {
+    leolaniContext:context99 a eps:Context ;
+        rdfs:label "context99" ;
+        n2mu:id "99"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2021-03-12 ;
+        sem:hasEvent leolaniTalk:chat289ddc49-0221-4fb4-8ab1-466a17b01a73 ;
+        sem:hasPlace leolaniContext:carl-s-room .
+
+    leolaniContext:2021-03-12 a sem:Time,
+            time1:DateTimeDescription ;
+        rdfs:label "2021-03-12" ;
+        time1:day "12"^^xml1:gDay ;
+        time1:month "3"^^xml1:gMonthDay ;
+        time1:unitType time1:unitDay ;
+        time1:year "2021"^^xml1:gYear .
+
+    leolaniContext:carl-s-room a n2mu:location,
+            sem:Place ;
+        rdfs:label "carl-s-room" ;
+        n2mu:id "162"^^xml1:string ;
+        n2mu:in leolaniWorld:Amsterdam,
+            leolaniWorld:NL,
+            leolaniWorld:North_Holland .
+
+    leolaniTalk:chat289ddc49-0221-4fb4-8ab1-466a17b01a73 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat289ddc49-0221-4fb4-8ab1-466a17b01a73" ;
+        n2mu:id "289ddc49-0221-4fb4-8ab1-466a17b01a73"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat289ddc49-0221-4fb4-8ab1-466a17b01a73_utterance5e57b7ce-616f-492c-98c3-70ebbf26f6b5 .
+
+    leolaniTalk:chat289ddc49-0221-4fb4-8ab1-466a17b01a73_utterance5e57b7ce-616f-492c-98c3-70ebbf26f6b5 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat289ddc49-0221-4fb4-8ab1-466a17b01a73_utterance5e57b7ce-616f-492c-98c3-70ebbf26f6b5" ;
+        n2mu:id "5e57b7ce-616f-492c-98c3-70ebbf26f6b5"^^xml1:string ;
+        sem:hasActor leolaniWorld:castor .
+
+    leolaniWorld:Amsterdam a n2mu:city,
+            n2mu:location,
+            sem:Place ;
+        rdfs:label "Amsterdam" .
+
+    leolaniWorld:NL a n2mu:country,
+            n2mu:location,
+            sem:Place ;
+        rdfs:label "NL" .
+
+    leolaniWorld:North_Holland a n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "North Holland" .
+
+    leolaniWorld:castor a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "castor" .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:castor_likes_berries_3110 a grasp:Attribution ;
+        rdfs:label "castor_likes_berries_3110" ;
+        grasp:isAttributionFor leolaniTalk:chat289ddc49-0221-4fb4-8ab1-466a17b01a73_utterance5e57b7ce-616f-492c-98c3-70ebbf26f6b5_char0-14 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:CERTAIN,
+            graspf:POSITIVE,
+            grasps:POSITIVE .
+
+    leolaniTalk:chat289ddc49-0221-4fb4-8ab1-466a17b01a73_utterance5e57b7ce-616f-492c-98c3-70ebbf26f6b5_char0-14 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat289ddc49-0221-4fb4-8ab1-466a17b01a73_utterance5e57b7ce-616f-492c-98c3-70ebbf26f6b5_char0-14" ;
+        gaf:containsDenotation leolaniWorld:berries,
+            leolaniWorld:castor ;
+        gaf:denotes leolaniWorld:castor_likes_berries ;
+        grasp:hasAttribution leolaniTalk:castor_likes_berries_3110 ;
+        grasp:wasAttributedTo leolaniWorld:castor ;
+        sem:hasBeginTimeStamp "1762944328172"^^xml1:string ;
+        rdf:value "I like rabbits"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat289ddc49-0221-4fb4-8ab1-466a17b01a73_utterance5e57b7ce-616f-492c-98c3-70ebbf26f6b5 .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:CERTAIN a grasp:AttributionValue,
+            graspf:CertaintyValue ;
+        rdfs:label "CERTAIN" .
+
+    graspf:POSITIVE a grasp:AttributionValue,
+            graspf:PolarityValue ;
+        rdfs:label "POSITIVE" .
+
+    grasps:POSITIVE a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "POSITIVE" .
+}
+
+leolaniWorld:castor_likes_berries {
+    leolaniWorld:castor n2mu:likes leolaniWorld:berries .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:berries a n2mu:berries,
+            gaf:Instance ;
+        rdfs:label "berries" ;
+        gaf:denotedIn leolaniTalk:chat289ddc49-0221-4fb4-8ab1-466a17b01a73_utterance5e57b7ce-616f-492c-98c3-70ebbf26f6b5_char0-14 .
+
+    leolaniWorld:castor a n2mu:agent,
+            n2mu:person,
+            gaf:Instance ;
+        rdfs:label "castor" ;
+        gaf:denotedIn leolaniTalk:chat289ddc49-0221-4fb4-8ab1-466a17b01a73_utterance5e57b7ce-616f-492c-98c3-70ebbf26f6b5_char0-14 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+}
+
+leolaniWorld:leolani_know_castor {
+    leolaniWorld:leolani n2mu:know leolaniWorld:castor .
+}
+
+leolaniWorld:Claims {
+    leolaniWorld:castor_likes_berries a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "castor_likes_berries" ;
+        gaf:denotedBy leolaniTalk:chat289ddc49-0221-4fb4-8ab1-466a17b01a73_utterance5e57b7ce-616f-492c-98c3-70ebbf26f6b5_char0-14 .
+
+    leolaniWorld:leolani_know_castor a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_castor" .
+
+    leolaniWorld:castor owl:sameAs leolaniWorld:castor .
+}
+

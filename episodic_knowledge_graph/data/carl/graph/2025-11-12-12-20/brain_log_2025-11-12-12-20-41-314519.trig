@@ -1,0 +1,50 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time1: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniTalk:Interactions {
+    leolaniContext:context21 a eps:Context ;
+        rdfs:label "context21" ;
+        n2mu:id "21"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2021-03-12 ;
+        sem:hasPlace leolaniContext:carl-s-room .
+
+    leolaniContext:2021-03-12 a sem:Time,
+            time1:DateTimeDescription ;
+        rdfs:label "2021-03-12" ;
+        time1:day "12"^^xml1:gDay ;
+        time1:month "3"^^xml1:gMonthDay ;
+        time1:unitType time1:unitDay ;
+        time1:year "2021"^^xml1:gYear .
+
+    leolaniContext:carl-s-room a n2mu:location,
+            sem:Place ;
+        rdfs:label "carl-s-room" ;
+        n2mu:id "242"^^xml1:string ;
+        n2mu:in leolaniWorld:Amsterdam,
+            leolaniWorld:NL,
+            leolaniWorld:North_Holland .
+
+    leolaniWorld:Amsterdam a n2mu:city,
+            n2mu:location,
+            sem:Place ;
+        rdfs:label "Amsterdam" .
+
+    leolaniWorld:NL a n2mu:country,
+            n2mu:location,
+            sem:Place ;
+        rdfs:label "NL" .
+
+    leolaniWorld:North_Holland a n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "North Holland" .
+}
+

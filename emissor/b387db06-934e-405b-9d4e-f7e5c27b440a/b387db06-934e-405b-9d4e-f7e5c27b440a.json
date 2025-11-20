@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "Scenario": "https://emissor.org#Scenario",
+    "id": "@id",
+    "context": "https://emissor.org#context",
+    "signals": "https://emissor.org#signals",
+    "ruler": "https://emissor.org#ruler"
+  },
+  "ruler": {
+    "container_id": "b387db06-934e-405b-9d4e-f7e5c27b440a",
+    "@context": {
+      "TemporalRuler": "https://emissor.org#TemporalRuler",
+      "id": "@id",
+      "start": "https://emissor.org#start",
+      "end": "https://emissor.org#end",
+      "container_id": {
+        "@id": "https://emissor.org#container_id",
+        "@type": "@id"
+      }
+    },
+    "start": 1762517202633,
+    "end": null,
+    "@type": "TemporalRuler",
+    "_py_type": "emissor.representation.container-TemporalRuler"
+  },
+  "context": {
+    "location_id": "c71a2871-ad63-4f43-890b-02342b465385",
+    "@context": {
+      "ScenarioContext": "https://emissor.org#ScenarioContext",
+      "id": "@id",
+      "agent": "https://emissor.org#agent"
+    },
+    "location": "{'ip': '82.168.151.64', 'hostname': '82-168-151-64.fixed.kpn.net', 'city': 'Maarheeze', 'region': 'North Brabant', 'country': 'NL', 'loc': '51.3117,5.6167', 'org': 'AS1136 KPN B.V.', 'postal': '6026', 'timezone': 'Europe/Amsterdam', 'readme': 'https://ipinfo.io/missingauth'}",
+    "agent": {
+      "name": "Leolani",
+      "uri": "http://cltl.nl/leolani/world/leolani"
+    },
+    "objects": [],
+    "persons": [],
+    "speaker": {
+      "name": "Luis",
+      "uri": "http://cltl.nl/leolani/world/luis"
+    },
+    "@type": "ScenarioContext",
+    "_py_type": "cltl.combot.event.emissor-LeolaniContext"
+  },
+  "signals": {
+    "text": "./text.json"
+  },
+  "id": "b387db06-934e-405b-9d4e-f7e5c27b440a",
+  "@type": "Scenario"
+}

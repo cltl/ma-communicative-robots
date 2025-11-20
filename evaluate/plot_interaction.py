@@ -7,9 +7,9 @@ import sys
 from emissor.representation.scenario import Signal
 from emissor.persistence import ScenarioStorage
 from emissor.representation.scenario import Modality
-import cltl.dialogue_evaluation.utils.text_signal as text_signal_util
-import cltl.dialogue_evaluation.utils.image_signal as image_signal_util
-import cltl.dialogue_evaluation.utils.scenario_check as check
+import text_signal as text_signal_util
+import image_signal as image_signal_util
+import scenario_check as check
 
 class PlotSettings():
     _LLH_THRESHOLD = 0

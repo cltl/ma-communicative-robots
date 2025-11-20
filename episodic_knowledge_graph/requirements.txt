@@ -1,4 +1,5 @@
-cltl.brain==1.0.dev2
+#cltl.brain==1.0.dev2
+cltl.brain[service] @ git+https://github.com/leolani/cltl-knowledgerepresentation@07690b3d1e01595a14b2613bc0632d686bfae27e
 cltl.combot==1.0.dev0
 cltl.entity_linking==0.0.dev1
 cltl.triple-extraction==2.0.dev1

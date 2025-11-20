@@ -1,0 +1,157 @@
+@prefix eps: <http://cltl.nl/episodicawareness/> .
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniFriends: <http://cltl.nl/leolani/friends/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix ns1: <urn:x-rdflib:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix time1: <http://www.w3.org/TR/owl-time/#> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniTalk:Perspectives {
+    leolaniTalk:carl-1_see_pills-1_3-1-10 a grasp:Attribution ;
+        rdfs:label "carl-1_see_pills-1_3-1-10" ;
+        grasp:isAttributionFor leolaniTalk:chat1_utterance1_char0-25 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:CERTAIN,
+            graspf:NEGATIVE,
+            grasps:NEGATIVE .
+
+    leolaniTalk:chat1_utterance1_char0-25 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat1_utterance1_char0-25" ;
+        gaf:containsDenotation leolaniWorld:carl-1,
+            leolaniWorld:pills-1 ;
+        gaf:denotes leolaniWorld:carl-1_see_pills-1 ;
+        grasp:hasAttribution leolaniTalk:carl-1_see_pills-1_3-1-10 ;
+        grasp:wasAttributedTo leolaniFriends:carl-1 ;
+        sem:hasBeginTimeStamp "2021-03-12 11:30:43.540143"^^xml1:string ;
+        rdf:value "I need to take my pills, but I cannot find them."^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat1_utterance1 .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:CERTAIN a grasp:AttributionValue,
+            graspf:CertaintyValue ;
+        rdfs:label "CERTAIN" .
+
+    graspf:NEGATIVE a grasp:AttributionValue,
+            graspf:PolarityValue ;
+        rdfs:label "NEGATIVE" .
+
+    grasps:NEGATIVE a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "NEGATIVE" .
+}
+
+leolaniWorld:carl-1_see_pills-1 {
+    leolaniWorld:carl-1 n2mu:see leolaniWorld:pills-1 .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context21 a eps:Context ;
+        rdfs:label "context21" ;
+        n2mu:id "21"^^xml1:string ;
+        sem:hasBeginTimeStamp leolaniContext:2021-03-12 ;
+        sem:hasEvent leolaniTalk:chat1 ;
+        sem:hasPlace leolaniContext:carl-s-room .
+
+    leolaniContext:2021-03-12 a sem:Time,
+            time1:DateTimeDescription ;
+        rdfs:label "2021-03-12" ;
+        time1:day "12"^^xml1:gDay ;
+        time1:month "3"^^xml1:gMonthDay ;
+        time1:unitType time1:unitDay ;
+        time1:year "2021"^^xml1:gYear .
+
+    leolaniContext:carl-s-room a n2mu:location,
+            sem:Place ;
+        rdfs:label "carl-s-room" ;
+        n2mu:id "242"^^xml1:string ;
+        n2mu:in leolaniWorld:Amsterdam,
+            leolaniWorld:NL,
+            leolaniWorld:North_Holland .
+
+    leolaniFriends:carl-1 a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "carl" .
+
+    leolaniTalk:chat1 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat1" ;
+        n2mu:id "1"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat1_utterance1 .
+
+    leolaniTalk:chat1_utterance1 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat1_utterance1" ;
+        n2mu:id "1"^^xml1:string ;
+        sem:hasActor leolaniFriends:carl-1 .
+
+    leolaniWorld:Amsterdam a n2mu:city,
+            n2mu:location,
+            sem:Place ;
+        rdfs:label "Amsterdam" .
+
+    leolaniWorld:NL a n2mu:country,
+            n2mu:location,
+            sem:Place ;
+        rdfs:label "NL" .
+
+    leolaniWorld:North_Holland a n2mu:location,
+            n2mu:region,
+            sem:Place ;
+        rdfs:label "North Holland" .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:carl a n2mu:person,
+            gaf:Instance ;
+        rdfs:label "carl" .
+
+    leolaniWorld:carl-1 a n2mu:person,
+            gaf:Instance ;
+        rdfs:label "carl" ;
+        gaf:denotedIn leolaniTalk:chat1_utterance1_char0-25 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:pills-1 a n2mu:medicine,
+            n2mu:object,
+            gaf:Instance ;
+        rdfs:label "pills" ;
+        gaf:denotedIn leolaniTalk:chat1_utterance1_char0-25 .
+}
+
+leolaniWorld:leolani_know_carl-1 {
+    leolaniWorld:leolani n2mu:know leolaniFriends:carl-1 .
+}
+
+leolaniWorld:Claims {
+    leolaniFriends:carl-1 owl:sameAs leolaniWorld:carl .
+
+    leolaniWorld:carl-1_see_pills-1 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "carl-1_see_pills-1" ;
+        gaf:denotedBy leolaniTalk:chat1_utterance1_char0-25 .
+
+    leolaniWorld:leolani_know_carl-1 a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_carl-1" .
+}
+
