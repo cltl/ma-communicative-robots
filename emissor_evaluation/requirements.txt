@@ -3,5 +3,6 @@ torch==2.2.2
 transformers==4.51.3
 ollama
 emissor
+pandas
 cltl-dialogue-evaluation  @ git+https://github.com/leolani/cltl-dialogueevaluation
 jupyter
