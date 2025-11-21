@@ -1,0 +1,10 @@
+Turn;Speaker;Response;llh;model_turn;max_llh
+fa29f41f-7bea-42b1-bc64-17c6a1bd320e;LEOLANI;Yo Do you want to talk to me Luis?;0.6618538565105863; .  do  you  want  to  talk  to  me  ? ;0.7863020814127393
+4df4c74e-44cf-471a-b0cb-5233d96dbb21;SPEAKER;Yes;0.0; :) ;0.11841640621423721
+d9f4848a-87ab-4599-b6ef-e5bff1149e26;LEOLANI;I have nothing more to say.;0.5601766426116228; i  have  much  else  to  say ;0.6760334124167761
+f37db5d2-63b5-4a49-8a5f-8825c31aafc0;SPEAKER;I live in Amstelveen.;0.45567943155765533; i  am  in  dc ;0.670751117169857
+74258a25-80b6-4b7c-b4a1-9cc929ec5149;LEOLANI;Has Luis visited the agent?;0.03934321403503418;have  anyone  been  your  city ;0.4078414857387543
+9991e850-8707-45ef-b3e0-cd0f97c88fbd;SPEAKER;I visited Piek.;0.0;he  think  him ;0.1333875631292661
+1374843a-4515-4978-ac48-b25b86132e51;SPEAKER;Do you know Piek?;0.5272090956568718;do  you  like  about ;0.5807945244014263
+ba3d2213-2e45-469a-8cd6-ef0f085b3888;LEOLANI;Ik wil het weten. Heeft Luis muzikale werken?;0.0;what  is  van  be e  is t  . ;0.1699034539051354
+999719b8-abab-42e6-8155-7d74f547b7b1;LEOLANI;Someone said that I know Piek.;0.14702950666348139; i  asked  ,  i  do  ! ;0.3402186433474223

@@ -1,0 +1,10 @@
+Turn;Speaker;Response;llm_coherence;llm_explanation
+fa29f41f-7bea-42b1-bc64-17c6a1bd320e;LEOLANI;Yo Do you want to talk to me Luis?;0.2;The statement is a casual greeting with a direct question, but without prior context it's only loosely coherent.
+4df4c74e-44cf-471a-b0cb-5233d96dbb21;SPEAKER;Yes;0.9;The response \
+d9f4848a-87ab-4599-b6ef-e5bff1149e26;LEOLANI;I have nothing more to say.;0.3;The statement provides no clear connection to any prior content, making it only minimally coherent.
+f37db5d2-63b5-4a49-8a5f-8825c31aafc0;SPEAKER;I live in Amstelveen.;0.3;The speaker says they have nothing more to say, yet immediately provides additional information, which contradicts the preceding claim and reduces coherence.
+74258a25-80b6-4b7c-b4a1-9cc929ec5149;LEOLANI;Has Luis visited the agent?;0.2;The question about Luis visiting the agent is unrelated to the prior statement about living in Amstelveen, resulting in low conversational coherence.
+9991e850-8707-45ef-b3e0-cd0f97c88fbd;SPEAKER;I visited Piek.;0;"No response was provided to evaluate; therefore it cannot be coherent with the user's questions."
+1374843a-4515-4978-ac48-b25b86132e51;SPEAKER;Do you know Piek?;0.9;The question \
+ba3d2213-2e45-469a-8cd6-ef0f085b3888;LEOLANI;Ik wil het weten. Heeft Luis muzikale werken?;0;No assistant response was provided to assess against the user's input, so coherence cannot be evaluated.
+999719b8-abab-42e6-8155-7d74f547b7b1;LEOLANI;Someone said that I know Piek.;0;"No response was provided to evaluate; therefore coherence cannot be assessed."
