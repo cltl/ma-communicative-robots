@@ -1,0 +1,133 @@
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:Claims {
+    leolaniWorld:harris_go-to_gym a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "harris_go-to_gym" ;
+        gaf:denotedBy leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterancedef65059-e2b3-46e6-be34-20c24a62d2e6_char0-30 .
+
+    leolaniWorld:leolani_know_harris a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_harris" .
+
+    leolaniWorld:leolani_know_john a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_john" .
+
+    leolaniWorld:harris owl:sameAs leolaniWorld:harris .
+
+    leolaniWorld:john owl:sameAs leolaniWorld:john .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:gym a n2mu:11z-11-eicosenyl-oleate,
+            gaf:Instance ;
+        rdfs:label "gym" ;
+        gaf:denotedIn leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterancedef65059-e2b3-46e6-be34-20c24a62d2e6_char0-30 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:harris a n2mu:human,
+            n2mu:person,
+            gaf:Instance ;
+        rdfs:label "harris" ;
+        gaf:denotedIn leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterancedef65059-e2b3-46e6-be34-20c24a62d2e6_char0-30 .
+
+    leolaniWorld:john a n2mu:person,
+            gaf:Instance ;
+        rdfs:label "john" .
+}
+
+leolaniWorld:leolani_know_john {
+    leolaniWorld:leolani n2mu:know leolaniWorld:john .
+}
+
+leolaniWorld:harris_go-to_gym {
+    leolaniWorld:harris n2mu:go-to leolaniWorld:gym .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:harris_go-to_gym_3100 a grasp:Attribution ;
+        rdfs:label "harris_go-to_gym_3100" ;
+        grasp:isAttributionFor leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterancedef65059-e2b3-46e6-be34-20c24a62d2e6_char0-30 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:CERTAIN,
+            graspf:POSITIVE,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:CERTAIN a grasp:AttributionValue,
+            graspf:CertaintyValue ;
+        rdfs:label "CERTAIN" .
+
+    graspf:POSITIVE a grasp:AttributionValue,
+            graspf:PolarityValue ;
+        rdfs:label "POSITIVE" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterancedef65059-e2b3-46e6-be34-20c24a62d2e6_char0-30 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f_utterancedef65059-e2b3-46e6-be34-20c24a62d2e6_char0-30" ;
+        gaf:containsDenotation leolaniWorld:gym,
+            leolaniWorld:harris ;
+        gaf:denotes leolaniWorld:harris_go-to_gym ;
+        grasp:hasAttribution leolaniTalk:harris_go-to_gym_3100 ;
+        grasp:wasAttributedTo leolaniWorld:harris ;
+        sem:hasBeginTimeStamp "1763579515345"^^xml1:string ;
+        rdf:value "I go to the gym 8 times a week"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterancedef65059-e2b3-46e6-be34-20c24a62d2e6 .
+}
+
+leolaniWorld:leolani_know_harris {
+    leolaniWorld:leolani n2mu:know leolaniWorld:harris .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context880f3438-97be-4247-b954-e53708c28d0f sem:hasEvent leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f" ;
+        n2mu:id "880f3438-97be-4247-b954-e53708c28d0f"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterancedef65059-e2b3-46e6-be34-20c24a62d2e6 .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterancedef65059-e2b3-46e6-be34-20c24a62d2e6 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f_utterancedef65059-e2b3-46e6-be34-20c24a62d2e6" ;
+        n2mu:id "def65059-e2b3-46e6-be34-20c24a62d2e6"^^xml1:string ;
+        sem:hasActor leolaniWorld:harris .
+
+    leolaniWorld:john a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "john" .
+
+    leolaniWorld:harris a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "harris" .
+}
+

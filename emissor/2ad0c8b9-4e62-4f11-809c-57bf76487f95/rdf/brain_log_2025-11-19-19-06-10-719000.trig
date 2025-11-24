@@ -1,0 +1,135 @@
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_harris a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_harris" .
+
+    leolaniWorld:leolani_know_john a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_john" .
+
+    leolaniWorld:messi_be-than_ronaldo a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "messi_be-than_ronaldo" ;
+        gaf:denotedBy leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1092d473-c472-435b-a326-4e8b5bcea9dd_char0-28 .
+
+    leolaniWorld:harris owl:sameAs leolaniWorld:harris .
+
+    leolaniWorld:john owl:sameAs leolaniWorld:john .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:messi a gaf:Instance ;
+        rdfs:label "messi" ;
+        gaf:denotedIn leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1092d473-c472-435b-a326-4e8b5bcea9dd_char0-28 .
+
+    leolaniWorld:ronaldo a n2mu:human,
+            gaf:Instance ;
+        rdfs:label "ronaldo" ;
+        gaf:denotedIn leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1092d473-c472-435b-a326-4e8b5bcea9dd_char0-28 .
+
+    leolaniWorld:harris a n2mu:person,
+            gaf:Instance ;
+        rdfs:label "harris" .
+
+    leolaniWorld:john a n2mu:person,
+            gaf:Instance ;
+        rdfs:label "john" .
+}
+
+leolaniWorld:leolani_know_john {
+    leolaniWorld:leolani n2mu:know leolaniWorld:john .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:messi_be-than_ronaldo_3110 a grasp:Attribution ;
+        rdfs:label "messi_be-than_ronaldo_3110" ;
+        grasp:isAttributionFor leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1092d473-c472-435b-a326-4e8b5bcea9dd_char0-28 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:CERTAIN,
+            graspf:POSITIVE,
+            grasps:POSITIVE .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:CERTAIN a grasp:AttributionValue,
+            graspf:CertaintyValue ;
+        rdfs:label "CERTAIN" .
+
+    graspf:POSITIVE a grasp:AttributionValue,
+            graspf:PolarityValue ;
+        rdfs:label "POSITIVE" .
+
+    grasps:POSITIVE a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "POSITIVE" .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1092d473-c472-435b-a326-4e8b5bcea9dd_char0-28 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f_utterance1092d473-c472-435b-a326-4e8b5bcea9dd_char0-28" ;
+        gaf:containsDenotation leolaniWorld:messi,
+            leolaniWorld:ronaldo ;
+        gaf:denotes leolaniWorld:messi_be-than_ronaldo ;
+        grasp:hasAttribution leolaniTalk:messi_be-than_ronaldo_3110 ;
+        grasp:wasAttributedTo leolaniWorld:harris ;
+        sem:hasBeginTimeStamp "1763579161545"^^xml1:string ;
+        rdf:value "Messi is better than Ronaldo"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1092d473-c472-435b-a326-4e8b5bcea9dd .
+}
+
+leolaniWorld:messi_be-than_ronaldo {
+    leolaniWorld:messi n2mu:be-than leolaniWorld:ronaldo .
+}
+
+leolaniWorld:leolani_know_harris {
+    leolaniWorld:leolani n2mu:know leolaniWorld:harris .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context880f3438-97be-4247-b954-e53708c28d0f sem:hasEvent leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f" ;
+        n2mu:id "880f3438-97be-4247-b954-e53708c28d0f"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1092d473-c472-435b-a326-4e8b5bcea9dd .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1092d473-c472-435b-a326-4e8b5bcea9dd a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f_utterance1092d473-c472-435b-a326-4e8b5bcea9dd" ;
+        n2mu:id "1092d473-c472-435b-a326-4e8b5bcea9dd"^^xml1:string ;
+        sem:hasActor leolaniWorld:harris .
+
+    leolaniWorld:john a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "john" .
+
+    leolaniWorld:harris a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "harris" .
+}
+

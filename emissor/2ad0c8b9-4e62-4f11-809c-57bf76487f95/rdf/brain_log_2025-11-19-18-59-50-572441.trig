@@ -1,0 +1,187 @@
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:Claims {
+    leolaniWorld:harris_like-to_-watch-fishing-and-hunting a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "harris_like-to_-watch-fishing-and-hunting" ;
+        gaf:denotedBy leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance7ce008ab-2ee6-4f23-b791-244068f0de6f_char0-36 .
+
+    leolaniWorld:leolani_None_ a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_None_" ;
+        gaf:denotedBy leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancecc7c4583-557d-424f-aa45-c1e5268f5d95_char0-8 .
+
+    leolaniWorld:leolani_know_harris a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_harris" .
+
+    leolaniWorld:leolani_know_john a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_john" .
+
+    leolaniWorld:harris owl:sameAs leolaniWorld:harris .
+
+    leolaniWorld:john owl:sameAs leolaniWorld:john .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld: a n2mu:hsa-mir-548q,
+            gaf:Instance ;
+        rdfs:label "None" ;
+        gaf:denotedIn leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancecc7c4583-557d-424f-aa45-c1e5268f5d95_char0-8 .
+
+    <http://cltl.nl/leolani/world/-watch-fishing-and-hunting> a gaf:Instance ;
+        rdfs:label "watch-fishing-and-hunting" ;
+        gaf:denotedIn leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance7ce008ab-2ee6-4f23-b791-244068f0de6f_char0-36 .
+
+    leolaniWorld:leolani a n2mu:gpe,
+            n2mu:robot,
+            gaf:Instance ;
+        rdfs:label "leolani" ;
+        gaf:denotedIn leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancecc7c4583-557d-424f-aa45-c1e5268f5d95_char0-8 .
+
+    leolaniWorld:harris a n2mu:human,
+            n2mu:person,
+            gaf:Instance ;
+        rdfs:label "harris" ;
+        gaf:denotedIn leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance7ce008ab-2ee6-4f23-b791-244068f0de6f_char0-36 .
+
+    leolaniWorld:john a n2mu:person,
+            gaf:Instance ;
+        rdfs:label "john" .
+}
+
+leolaniWorld:leolani_None_ {
+    leolaniWorld:leolani n2mu: leolaniWorld: .
+}
+
+leolaniWorld:harris_like-to_-watch-fishing-and-hunting {
+    leolaniWorld:harris n2mu:like-to <http://cltl.nl/leolani/world/-watch-fishing-and-hunting> .
+}
+
+leolaniWorld:leolani_know_john {
+    leolaniWorld:leolani n2mu:know leolaniWorld:john .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:harris_like-to_-watch-fishing-and-hunting_3110 a grasp:Attribution ;
+        rdfs:label "harris_like-to_-watch-fishing-and-hunting_3110" ;
+        grasp:isAttributionFor leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance7ce008ab-2ee6-4f23-b791-244068f0de6f_char0-36 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:CERTAIN,
+            graspf:POSITIVE,
+            grasps:POSITIVE .
+
+    leolaniTalk:leolani_None__3100 a grasp:Attribution ;
+        rdfs:label "leolani_None__3100" ;
+        grasp:isAttributionFor leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancecc7c4583-557d-424f-aa45-c1e5268f5d95_char0-8 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:CERTAIN,
+            graspf:POSITIVE,
+            grasps:UNDERSPECIFIED .
+
+    grasps:POSITIVE a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "POSITIVE" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:CERTAIN a grasp:AttributionValue,
+            graspf:CertaintyValue ;
+        rdfs:label "CERTAIN" .
+
+    graspf:POSITIVE a grasp:AttributionValue,
+            graspf:PolarityValue ;
+        rdfs:label "POSITIVE" .
+
+    leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancecc7c4583-557d-424f-aa45-c1e5268f5d95_char0-8 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancecc7c4583-557d-424f-aa45-c1e5268f5d95_char0-8" ;
+        gaf:containsDenotation leolaniWorld:,
+            leolaniWorld:leolani ;
+        gaf:denotes leolaniWorld:leolani_None_ ;
+        grasp:hasAttribution leolaniTalk:leolani_None__3100 ;
+        grasp:wasAttributedTo leolaniWorld:john ;
+        sem:hasBeginTimeStamp "1763578773889"^^xml1:string ;
+        rdf:value "you too "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancecc7c4583-557d-424f-aa45-c1e5268f5d95 .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance7ce008ab-2ee6-4f23-b791-244068f0de6f_char0-36 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f_utterance7ce008ab-2ee6-4f23-b791-244068f0de6f_char0-36" ;
+        gaf:containsDenotation <http://cltl.nl/leolani/world/-watch-fishing-and-hunting>,
+            leolaniWorld:harris ;
+        gaf:denotes leolaniWorld:harris_like-to_-watch-fishing-and-hunting ;
+        grasp:hasAttribution leolaniTalk:harris_like-to_-watch-fishing-and-hunting_3110 ;
+        grasp:wasAttributedTo leolaniWorld:harris ;
+        sem:hasBeginTimeStamp "1763578781590"^^xml1:string ;
+        rdf:value "I like to watch fishing and hunting "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance7ce008ab-2ee6-4f23-b791-244068f0de6f .
+}
+
+leolaniWorld:leolani_know_harris {
+    leolaniWorld:leolani n2mu:know leolaniWorld:harris .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context2ad0c8b9-4e62-4f11-809c-57bf76487f95 sem:hasEvent leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95 .
+
+    leolaniContext:context880f3438-97be-4247-b954-e53708c28d0f sem:hasEvent leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f .
+
+    leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat2ad0c8b9-4e62-4f11-809c-57bf76487f95" ;
+        n2mu:id "2ad0c8b9-4e62-4f11-809c-57bf76487f95"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancecc7c4583-557d-424f-aa45-c1e5268f5d95 .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f" ;
+        n2mu:id "880f3438-97be-4247-b954-e53708c28d0f"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance7ce008ab-2ee6-4f23-b791-244068f0de6f .
+
+    leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancecc7c4583-557d-424f-aa45-c1e5268f5d95 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancecc7c4583-557d-424f-aa45-c1e5268f5d95" ;
+        n2mu:id "cc7c4583-557d-424f-aa45-c1e5268f5d95"^^xml1:string ;
+        sem:hasActor leolaniWorld:john .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance7ce008ab-2ee6-4f23-b791-244068f0de6f a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f_utterance7ce008ab-2ee6-4f23-b791-244068f0de6f" ;
+        n2mu:id "7ce008ab-2ee6-4f23-b791-244068f0de6f"^^xml1:string ;
+        sem:hasActor leolaniWorld:harris .
+
+    leolaniWorld:john a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "john" .
+
+    leolaniWorld:harris a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "harris" .
+}
+

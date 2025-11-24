@@ -1,5 +1,6 @@
 {
   "@type": "Scenario",
+  "id": "0985799c-80eb-416c-b55e-f11ffc4ac259",
   "signals": {
     "text": "./text.json",
     "image": "./image.json"
@@ -12,9 +13,8 @@
     "ruler": "https://emissor.org#ruler"
   },
   "ruler": {
-    "start": 1760106906162,
-    "end": 1760108481266,
     "@type": "TemporalRuler",
+    "end": 1760108481266,
     "@context": {
       "TemporalRuler": "https://emissor.org#TemporalRuler",
       "id": "@id",
@@ -25,6 +25,7 @@
         "@type": "@id"
       }
     },
+    "start": 1760106906162,
     "container_id": "0985799c-80eb-416c-b55e-f11ffc4ac259",
     "_py_type": "emissor.representation.container-TemporalRuler"
   },
@@ -38,6 +39,5 @@
       "uri": "http://cltl.nl/leolani/world/piek"
     },
     "_py_type": "emissor.representation.util-PickleableDict"
-  },
-  "id": "0985799c-80eb-416c-b55e-f11ffc4ac259"
+  }
 }

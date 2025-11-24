@@ -1,0 +1,132 @@
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:Claims {
+    leolaniWorld:john_live-in_oxford a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "john_live-in_oxford" ;
+        gaf:denotedBy leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancec1caf39a-b022-41d7-bc3e-5c56b62ccde6_char0-27 .
+
+    leolaniWorld:leolani_know_harris a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_harris" .
+
+    leolaniWorld:leolani_know_john a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_john" .
+
+    leolaniWorld:harris owl:sameAs leolaniWorld:harris .
+
+    leolaniWorld:john owl:sameAs leolaniWorld:john .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:oxford a n2mu:higher-education-institution,
+            gaf:Instance ;
+        rdfs:label "oxford" ;
+        gaf:denotedIn leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancec1caf39a-b022-41d7-bc3e-5c56b62ccde6_char0-27 .
+
+    leolaniWorld:harris a n2mu:person,
+            gaf:Instance ;
+        rdfs:label "harris" .
+
+    leolaniWorld:john a n2mu:person,
+            gaf:Instance ;
+        rdfs:label "john" ;
+        gaf:denotedIn leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancec1caf39a-b022-41d7-bc3e-5c56b62ccde6_char0-27 .
+}
+
+leolaniWorld:leolani_know_john {
+    leolaniWorld:leolani n2mu:know leolaniWorld:john .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:john_live-in_oxford_3100 a grasp:Attribution ;
+        rdfs:label "john_live-in_oxford_3100" ;
+        grasp:isAttributionFor leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancec1caf39a-b022-41d7-bc3e-5c56b62ccde6_char0-27 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:CERTAIN,
+            graspf:POSITIVE,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:CERTAIN a grasp:AttributionValue,
+            graspf:CertaintyValue ;
+        rdfs:label "CERTAIN" .
+
+    graspf:POSITIVE a grasp:AttributionValue,
+            graspf:PolarityValue ;
+        rdfs:label "POSITIVE" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancec1caf39a-b022-41d7-bc3e-5c56b62ccde6_char0-27 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancec1caf39a-b022-41d7-bc3e-5c56b62ccde6_char0-27" ;
+        gaf:containsDenotation leolaniWorld:john,
+            leolaniWorld:oxford ;
+        gaf:denotes leolaniWorld:john_live-in_oxford ;
+        grasp:hasAttribution leolaniTalk:john_live-in_oxford_3100 ;
+        grasp:wasAttributedTo leolaniWorld:john ;
+        sem:hasBeginTimeStamp "1763579137548"^^xml1:string ;
+        rdf:value "I live in Oxford. Who am I?"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancec1caf39a-b022-41d7-bc3e-5c56b62ccde6 .
+}
+
+leolaniWorld:john_live-in_oxford {
+    leolaniWorld:john n2mu:live-in leolaniWorld:oxford .
+}
+
+leolaniWorld:leolani_know_harris {
+    leolaniWorld:leolani n2mu:know leolaniWorld:harris .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context2ad0c8b9-4e62-4f11-809c-57bf76487f95 sem:hasEvent leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95 .
+
+    leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat2ad0c8b9-4e62-4f11-809c-57bf76487f95" ;
+        n2mu:id "2ad0c8b9-4e62-4f11-809c-57bf76487f95"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancec1caf39a-b022-41d7-bc3e-5c56b62ccde6 .
+
+    leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancec1caf39a-b022-41d7-bc3e-5c56b62ccde6 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterancec1caf39a-b022-41d7-bc3e-5c56b62ccde6" ;
+        n2mu:id "c1caf39a-b022-41d7-bc3e-5c56b62ccde6"^^xml1:string ;
+        sem:hasActor leolaniWorld:john .
+
+    leolaniWorld:harris a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "harris" .
+
+    leolaniWorld:john a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "john" .
+}
+

@@ -1,0 +1,129 @@
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:Claims {
+    leolaniWorld:_be_ a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "_be_" ;
+        gaf:denotedBy leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance368658d4-75c6-4258-a415-a748dd28d152_char0-3 .
+
+    leolaniWorld:leolani_know_john a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_john" .
+
+    leolaniWorld:leolani_know_yasemin a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_yasemin" .
+
+    leolaniWorld:john owl:sameAs leolaniWorld:john .
+
+    leolaniWorld:yasemin owl:sameAs leolaniWorld:yasemin .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld: a gaf:Instance ;
+        rdfs:label "None" ;
+        gaf:denotedIn leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance368658d4-75c6-4258-a415-a748dd28d152_char0-3 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:john a n2mu:person,
+            gaf:Instance ;
+        rdfs:label "john" .
+
+    leolaniWorld:yasemin a n2mu:person,
+            gaf:Instance ;
+        rdfs:label "yasemin" .
+}
+
+leolaniWorld:_be_ {
+    leolaniWorld: n2mu:be leolaniWorld: .
+}
+
+leolaniWorld:leolani_know_yasemin {
+    leolaniWorld:leolani n2mu:know leolaniWorld:yasemin .
+}
+
+leolaniWorld:leolani_know_john {
+    leolaniWorld:leolani n2mu:know leolaniWorld:john .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:_be__3110 a grasp:Attribution ;
+        rdfs:label "_be__3110" ;
+        grasp:isAttributionFor leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance368658d4-75c6-4258-a415-a748dd28d152_char0-3 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:CERTAIN,
+            graspf:POSITIVE,
+            grasps:POSITIVE .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:CERTAIN a grasp:AttributionValue,
+            graspf:CertaintyValue ;
+        rdfs:label "CERTAIN" .
+
+    graspf:POSITIVE a grasp:AttributionValue,
+            graspf:PolarityValue ;
+        rdfs:label "POSITIVE" .
+
+    grasps:POSITIVE a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "POSITIVE" .
+
+    leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance368658d4-75c6-4258-a415-a748dd28d152_char0-3 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance368658d4-75c6-4258-a415-a748dd28d152_char0-3" ;
+        gaf:containsDenotation leolaniWorld: ;
+        gaf:denotes leolaniWorld:_be_ ;
+        grasp:hasAttribution leolaniTalk:_be__3110 ;
+        grasp:wasAttributedTo leolaniWorld:john ;
+        sem:hasBeginTimeStamp "1763578258523"^^xml1:string ;
+        rdf:value "Yes"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance368658d4-75c6-4258-a415-a748dd28d152 .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context2ad0c8b9-4e62-4f11-809c-57bf76487f95 sem:hasEvent leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95 .
+
+    leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat2ad0c8b9-4e62-4f11-809c-57bf76487f95" ;
+        n2mu:id "2ad0c8b9-4e62-4f11-809c-57bf76487f95"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance368658d4-75c6-4258-a415-a748dd28d152 .
+
+    leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance368658d4-75c6-4258-a415-a748dd28d152 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance368658d4-75c6-4258-a415-a748dd28d152" ;
+        n2mu:id "368658d4-75c6-4258-a415-a748dd28d152"^^xml1:string ;
+        sem:hasActor leolaniWorld:john .
+
+    leolaniWorld:yasemin a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "yasemin" .
+
+    leolaniWorld:john a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "john" .
+}
+

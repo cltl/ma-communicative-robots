@@ -1,0 +1,115 @@
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_harris a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_harris" .
+
+    leolaniWorld:people_go-to_-build-muscles a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "people_go-to_-build-muscles" ;
+        gaf:denotedBy leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance11f4219c-86d1-46bb-b4be-dc211b93285e_char0-48 .
+
+    leolaniWorld:harris owl:sameAs leolaniWorld:harris .
+}
+
+leolaniWorld:Instances {
+    <http://cltl.nl/leolani/world/-build-muscles> a gaf:Instance ;
+        rdfs:label "build-muscles" ;
+        gaf:denotedIn leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance11f4219c-86d1-46bb-b4be-dc211b93285e_char0-48 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:people a n2mu:newspaper,
+            gaf:Instance ;
+        rdfs:label "people" ;
+        gaf:denotedIn leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance11f4219c-86d1-46bb-b4be-dc211b93285e_char0-48 .
+
+    leolaniWorld:harris a n2mu:person,
+            gaf:Instance ;
+        rdfs:label "harris" .
+}
+
+leolaniWorld:people_go-to_-build-muscles {
+    leolaniWorld:people n2mu:go-to <http://cltl.nl/leolani/world/-build-muscles> .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:people_go-to_-build-muscles_3100 a grasp:Attribution ;
+        rdfs:label "people_go-to_-build-muscles_3100" ;
+        grasp:isAttributionFor leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance11f4219c-86d1-46bb-b4be-dc211b93285e_char0-48 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:CERTAIN,
+            graspf:POSITIVE,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:CERTAIN a grasp:AttributionValue,
+            graspf:CertaintyValue ;
+        rdfs:label "CERTAIN" .
+
+    graspf:POSITIVE a grasp:AttributionValue,
+            graspf:PolarityValue ;
+        rdfs:label "POSITIVE" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance11f4219c-86d1-46bb-b4be-dc211b93285e_char0-48 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f_utterance11f4219c-86d1-46bb-b4be-dc211b93285e_char0-48" ;
+        gaf:containsDenotation <http://cltl.nl/leolani/world/-build-muscles>,
+            leolaniWorld:people ;
+        gaf:denotes leolaniWorld:people_go-to_-build-muscles ;
+        grasp:hasAttribution leolaniTalk:people_go-to_-build-muscles_3100 ;
+        grasp:wasAttributedTo leolaniWorld:harris ;
+        sem:hasBeginTimeStamp "1763579554672"^^xml1:string ;
+        rdf:value "Gym is a place where people go to build muscles "^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance11f4219c-86d1-46bb-b4be-dc211b93285e .
+}
+
+leolaniWorld:leolani_know_harris {
+    leolaniWorld:leolani n2mu:know leolaniWorld:harris .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context880f3438-97be-4247-b954-e53708c28d0f sem:hasEvent leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f" ;
+        n2mu:id "880f3438-97be-4247-b954-e53708c28d0f"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance11f4219c-86d1-46bb-b4be-dc211b93285e .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance11f4219c-86d1-46bb-b4be-dc211b93285e a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f_utterance11f4219c-86d1-46bb-b4be-dc211b93285e" ;
+        n2mu:id "11f4219c-86d1-46bb-b4be-dc211b93285e"^^xml1:string ;
+        sem:hasActor leolaniWorld:harris .
+
+    leolaniWorld:harris a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "harris" .
+}
+

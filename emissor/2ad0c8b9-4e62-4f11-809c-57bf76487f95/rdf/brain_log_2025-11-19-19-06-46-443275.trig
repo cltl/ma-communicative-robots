@@ -1,0 +1,115 @@
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:Claims {
+    leolaniWorld:leolani_know_harris a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_harris" .
+
+    leolaniWorld:you_have_harris-trust a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "you_have_harris-trust" ;
+        gaf:denotedBy leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1e4cd5d1-966d-43d5-8e0e-b4ab1689667f_char0-17 .
+
+    leolaniWorld:harris owl:sameAs leolaniWorld:harris .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:harris-trust a gaf:Instance ;
+        rdfs:label "harris-trust" ;
+        gaf:denotedIn leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1e4cd5d1-966d-43d5-8e0e-b4ab1689667f_char0-17 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:you a n2mu:you,
+            gaf:Instance ;
+        rdfs:label "you" ;
+        gaf:denotedIn leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1e4cd5d1-966d-43d5-8e0e-b4ab1689667f_char0-17 .
+
+    leolaniWorld:harris a n2mu:person,
+            gaf:Instance ;
+        rdfs:label "harris" .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:you_have_harris-trust_3100 a grasp:Attribution ;
+        rdfs:label "you_have_harris-trust_3100" ;
+        grasp:isAttributionFor leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1e4cd5d1-966d-43d5-8e0e-b4ab1689667f_char0-17 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:CERTAIN,
+            graspf:POSITIVE,
+            grasps:UNDERSPECIFIED .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:CERTAIN a grasp:AttributionValue,
+            graspf:CertaintyValue ;
+        rdfs:label "CERTAIN" .
+
+    graspf:POSITIVE a grasp:AttributionValue,
+            graspf:PolarityValue ;
+        rdfs:label "POSITIVE" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1e4cd5d1-966d-43d5-8e0e-b4ab1689667f_char0-17 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f_utterance1e4cd5d1-966d-43d5-8e0e-b4ab1689667f_char0-17" ;
+        gaf:containsDenotation leolaniWorld:harris-trust,
+            leolaniWorld:you ;
+        gaf:denotes leolaniWorld:you_have_harris-trust ;
+        grasp:hasAttribution leolaniTalk:you_have_harris-trust_3100 ;
+        grasp:wasAttributedTo leolaniWorld:harris ;
+        sem:hasBeginTimeStamp "1763579197420"^^xml1:string ;
+        rdf:value "You have my trust"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1e4cd5d1-966d-43d5-8e0e-b4ab1689667f .
+}
+
+leolaniWorld:you_have_harris-trust {
+    leolaniWorld:you n2mu:have leolaniWorld:harris-trust .
+}
+
+leolaniWorld:leolani_know_harris {
+    leolaniWorld:leolani n2mu:know leolaniWorld:harris .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context880f3438-97be-4247-b954-e53708c28d0f sem:hasEvent leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f" ;
+        n2mu:id "880f3438-97be-4247-b954-e53708c28d0f"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1e4cd5d1-966d-43d5-8e0e-b4ab1689667f .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1e4cd5d1-966d-43d5-8e0e-b4ab1689667f a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f_utterance1e4cd5d1-966d-43d5-8e0e-b4ab1689667f" ;
+        n2mu:id "1e4cd5d1-966d-43d5-8e0e-b4ab1689667f"^^xml1:string ;
+        sem:hasActor leolaniWorld:harris .
+
+    leolaniWorld:harris a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "harris" .
+}
+

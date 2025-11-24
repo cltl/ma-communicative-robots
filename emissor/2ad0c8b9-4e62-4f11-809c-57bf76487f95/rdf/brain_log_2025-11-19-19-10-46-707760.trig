@@ -1,0 +1,188 @@
+@prefix gaf: <http://groundedannotationframework.org/gaf#> .
+@prefix grasp: <http://groundedannotationframework.org/grasp#> .
+@prefix graspe: <http://groundedannotationframework.org/grasp/emotion#> .
+@prefix graspf: <http://groundedannotationframework.org/grasp/factuality#> .
+@prefix grasps: <http://groundedannotationframework.org/grasp/sentiment#> .
+@prefix leolaniContext: <http://cltl.nl/leolani/context/> .
+@prefix leolaniTalk: <http://cltl.nl/leolani/talk/> .
+@prefix leolaniWorld: <http://cltl.nl/leolani/world/> .
+@prefix n2mu: <http://cltl.nl/leolani/n2mu/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix xml1: <https://www.w3.org/TR/xmlschema-2/#> .
+
+leolaniWorld:Claims {
+    leolaniWorld:john_be_son-of-theo a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "john_be_son-of-theo" ;
+        gaf:denotedBy leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1eaf0bb3-8dae-4951-acb5-91e396e9686a_char0-28 .
+
+    leolaniWorld:josh_be_wrong a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "josh_be_wrong" ;
+        gaf:denotedBy leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance0e49cbaf-c68c-4adc-a181-1118f62d67a0_char0-25 .
+
+    leolaniWorld:leolani_know_harris a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_harris" .
+
+    leolaniWorld:leolani_know_john a gaf:Assertion,
+            sem:Event ;
+        rdfs:label "leolani_know_john" .
+
+    leolaniWorld:harris owl:sameAs leolaniWorld:harris .
+
+    leolaniWorld:john owl:sameAs leolaniWorld:john .
+}
+
+leolaniWorld:Instances {
+    leolaniWorld:josh a n2mu:none,
+            gaf:Instance ;
+        rdfs:label "josh" ;
+        gaf:denotedIn leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance0e49cbaf-c68c-4adc-a181-1118f62d67a0_char0-25 .
+
+    leolaniWorld:leolani a n2mu:robot ;
+        rdfs:label "leolani" .
+
+    leolaniWorld:son-of-theo a gaf:Instance ;
+        rdfs:label "son-of-theo" ;
+        gaf:denotedIn leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1eaf0bb3-8dae-4951-acb5-91e396e9686a_char0-28 .
+
+    leolaniWorld:wrong a n2mu:11z-11-eicosenyl-oleate,
+            gaf:Instance ;
+        rdfs:label "wrong" ;
+        gaf:denotedIn leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance0e49cbaf-c68c-4adc-a181-1118f62d67a0_char0-25 .
+
+    leolaniWorld:harris a n2mu:person,
+            gaf:Instance ;
+        rdfs:label "harris" .
+
+    leolaniWorld:john a n2mu:person,
+            gaf:Instance ;
+        rdfs:label "john" ;
+        gaf:denotedIn leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1eaf0bb3-8dae-4951-acb5-91e396e9686a_char0-28 .
+}
+
+leolaniWorld:josh_be_wrong {
+    leolaniWorld:josh n2mu:be leolaniWorld:wrong .
+}
+
+leolaniWorld:leolani_know_john {
+    leolaniWorld:leolani n2mu:know leolaniWorld:john .
+}
+
+leolaniTalk:Perspectives {
+    leolaniTalk:john_be_son-of-theo_3100 a grasp:Attribution ;
+        rdfs:label "john_be_son-of-theo_3100" ;
+        grasp:isAttributionFor leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1eaf0bb3-8dae-4951-acb5-91e396e9686a_char0-28 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:CERTAIN,
+            graspf:POSITIVE,
+            grasps:UNDERSPECIFIED .
+
+    leolaniTalk:josh_be_wrong_31-10 a grasp:Attribution ;
+        rdfs:label "josh_be_wrong_31-10" ;
+        grasp:isAttributionFor leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance0e49cbaf-c68c-4adc-a181-1118f62d67a0_char0-25 ;
+        rdf:value graspe:UNDERSPECIFIED,
+            graspf:CERTAIN,
+            graspf:POSITIVE,
+            grasps:NEGATIVE .
+
+    grasps:NEGATIVE a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "NEGATIVE" .
+
+    grasps:UNDERSPECIFIED a grasp:AttributionValue,
+            grasps:SentimentValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspe:UNDERSPECIFIED a grasp:AttributionValue,
+            graspe:EmotionValue ;
+        rdfs:label "UNDERSPECIFIED" .
+
+    graspf:CERTAIN a grasp:AttributionValue,
+            graspf:CertaintyValue ;
+        rdfs:label "CERTAIN" .
+
+    graspf:POSITIVE a grasp:AttributionValue,
+            graspf:PolarityValue ;
+        rdfs:label "POSITIVE" .
+
+    leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance0e49cbaf-c68c-4adc-a181-1118f62d67a0_char0-25 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance0e49cbaf-c68c-4adc-a181-1118f62d67a0_char0-25" ;
+        gaf:containsDenotation leolaniWorld:josh,
+            leolaniWorld:wrong ;
+        gaf:denotes leolaniWorld:josh_be_wrong ;
+        grasp:hasAttribution leolaniTalk:josh_be_wrong_31-10 ;
+        grasp:wasAttributedTo leolaniWorld:john ;
+        sem:hasBeginTimeStamp "1763579441189"^^xml1:string ;
+        rdf:value "Josh is wrong I like dogs"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance0e49cbaf-c68c-4adc-a181-1118f62d67a0 .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1eaf0bb3-8dae-4951-acb5-91e396e9686a_char0-28 a gaf:Mention,
+            grasp:Statement ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f_utterance1eaf0bb3-8dae-4951-acb5-91e396e9686a_char0-28" ;
+        gaf:containsDenotation leolaniWorld:john,
+            leolaniWorld:son-of-theo ;
+        gaf:denotes leolaniWorld:john_be_son-of-theo ;
+        grasp:hasAttribution leolaniTalk:john_be_son-of-theo_3100 ;
+        grasp:wasAttributedTo leolaniWorld:harris ;
+        sem:hasBeginTimeStamp "1763579422747"^^xml1:string ;
+        rdf:value "yes, John is the son of Theo"^^xml1:string ;
+        prov:wasDerivedFrom leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1eaf0bb3-8dae-4951-acb5-91e396e9686a .
+}
+
+leolaniWorld:leolani_know_harris {
+    leolaniWorld:leolani n2mu:know leolaniWorld:harris .
+}
+
+leolaniWorld:john_be_son-of-theo {
+    leolaniWorld:john n2mu:be leolaniWorld:son-of-theo .
+}
+
+leolaniTalk:Interactions {
+    leolaniContext:context2ad0c8b9-4e62-4f11-809c-57bf76487f95 sem:hasEvent leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95 .
+
+    leolaniContext:context880f3438-97be-4247-b954-e53708c28d0f sem:hasEvent leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f .
+
+    leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95 a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat2ad0c8b9-4e62-4f11-809c-57bf76487f95" ;
+        n2mu:id "2ad0c8b9-4e62-4f11-809c-57bf76487f95"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance0e49cbaf-c68c-4adc-a181-1118f62d67a0 .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f a grasp:Chat,
+            sem:Event ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f" ;
+        n2mu:id "880f3438-97be-4247-b954-e53708c28d0f"^^xml1:string ;
+        sem:hasSubEvent leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1eaf0bb3-8dae-4951-acb5-91e396e9686a .
+
+    leolaniTalk:chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance0e49cbaf-c68c-4adc-a181-1118f62d67a0 a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat2ad0c8b9-4e62-4f11-809c-57bf76487f95_utterance0e49cbaf-c68c-4adc-a181-1118f62d67a0" ;
+        n2mu:id "0e49cbaf-c68c-4adc-a181-1118f62d67a0"^^xml1:string ;
+        sem:hasActor leolaniWorld:john .
+
+    leolaniTalk:chat880f3438-97be-4247-b954-e53708c28d0f_utterance1eaf0bb3-8dae-4951-acb5-91e396e9686a a grasp:Utterance,
+            sem:Event ;
+        rdfs:label "chat880f3438-97be-4247-b954-e53708c28d0f_utterance1eaf0bb3-8dae-4951-acb5-91e396e9686a" ;
+        n2mu:id "1eaf0bb3-8dae-4951-acb5-91e396e9686a"^^xml1:string ;
+        sem:hasActor leolaniWorld:harris .
+
+    leolaniWorld:harris a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "harris" .
+
+    leolaniWorld:john a n2mu:person,
+            gaf:Instance,
+            grasp:Source,
+            sem:Actor ;
+        rdfs:label "john" .
+}
+
