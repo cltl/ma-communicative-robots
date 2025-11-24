@@ -22,7 +22,7 @@ class GraphEvaluator():
         returns: None
         """
 
-    def evaluate_conversation(self, scenario_folder, rdf_folder, metrics_to_plot=None):
+    def evaluate_conversation(self, scenario, scenario_folder, rdf_folder, metrics_to_plot=None):
         print(f'----------SCENARIO:{scenario_folder}, EVALUATION:graph metrics---------')
 
         # Read mapping of rdf log file to turn
@@ -42,7 +42,7 @@ class GraphEvaluator():
                 # Calculate metrics on empty graph
                 brain_as_graph = ConjunctiveGraph()
                 brain_as_netx = rdflib_to_networkx_multidigraph(brain_as_graph)
-                full_df = self._calculate_metrics(brain_as_graph, brain_as_netx, full_df, idx)
+                full_df = self._calculate_metrics(brain_as_graph, brain_as_netx, full_df, idx, metrics_to_plot)
 
             # if row has a file to rdf, process it and calculate metrics
             elif row['rdf_file']:
@@ -71,7 +71,7 @@ class GraphEvaluator():
         evaluation_folder = os.path.join(scenario_folder, 'evaluation')
         if not os.path.exists(evaluation_folder):
             os.mkdir(evaluation_folder)
-        self._save(full_df, evaluation_folder)
+        self._save(full_df, evaluation_folder, scenario)
 
         if metrics_to_plot:
             self.plot_metrics_progression(metrics_to_plot, [full_df], evaluation_folder)
@@ -190,7 +190,7 @@ class GraphEvaluator():
 
         metric = 'GROUP C - Ratio claim to triples'
         if metric in metrics_to_plot:
-            df.loc[idx, metric metric] = df.loc[idx, 'GROUP C - Total claims'] / df.loc[
+            df.loc[idx, metric] = df.loc[idx, 'GROUP C - Total claims'] / df.loc[
                 idx, 'GROUP C - Total triples']  # how much knowledge
         metric = 'GROUP C - Ratio perspectives to triples'
         if metric in metrics_to_plot: df.loc[idx, metric] = df.loc[idx, 'GROUP C - Total perspectives'] / df.loc[
@@ -262,9 +262,9 @@ class GraphEvaluator():
         return df
 
     @staticmethod
-    def _save(df, evaluation_folder):
+    def _save(df, evaluation_folder, scenario):
         #df = df.drop(columns=['Speaker', 'Response', 'rdf_file'])
-        file = os.path.join(evaluation_folder, 'graph_evaluation2.csv')
+        file = os.path.join(evaluation_folder,  scenario+'_graph_evaluation.csv')
         df.to_csv(file, sep=";", index=False)
         print(f"\n\tSaved to file: {file}")
 
@@ -339,7 +339,7 @@ def main(emissor_path:str, scenario:str):
     if os.path.exists(rdf):
         evaluator = GraphEvaluator()
         rdf_path = Path(rdf)
-        evaluator.evaluate_conversation(scenario_path, rdf_folder=rdf_path, metrics_to_plot = metrics)
+        evaluator.evaluate_conversation(scenario, scenario_path, rdf_folder=rdf_path, metrics_to_plot = metrics)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Statistical evaluation emissor scenario')

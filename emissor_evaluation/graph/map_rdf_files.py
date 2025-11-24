@@ -113,7 +113,7 @@ def map_emissor(data, files, speaker):
                 rdf_file, utterance_speaker = process_mentions(ann, utt_id, rdf_file, speaker=speaker, files=files)
 
         # Add utterance, with rdf file pointers if available
-        utterance = {"Mention ID": utt_id, "Turn": index, "Speaker": utterance_speaker,
+        utterance = {"Turn": utt_id, "Turn nr": index, "Speaker": utterance_speaker,
                      "Response": item['text'], "rdf_file": rdf_file}
         utterances.append(utterance)
 
