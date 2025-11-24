@@ -8,3 +8,5 @@ seaborn
 matplotlib
 cltl.dialogueevaluation @ git+https://github.com/leolani/cltl-dialogueevaluation
 jupyter
+scipy
+rdflib
