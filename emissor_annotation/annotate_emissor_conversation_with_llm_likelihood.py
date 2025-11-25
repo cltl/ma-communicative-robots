@@ -44,8 +44,19 @@ class MLM:
 
     def mask_target_sentence(self, context, target):
         masked_targets = []
+        target_tokens = re.split(' ', target)
+        context_tokens = re.split(' ', context)
         ## We limit the length of the target as too long utterance break the token limit
-        target_tokens = re.split(' ', target[:500])
+        if len(context_tokens)>250:
+            context_tokens = context_tokens[:250]
+            print('Cut off to 250', context_tokens)
+            context = ""
+            for context_token in context_tokens:
+                context += context_token+" "
+            context = context.strip()
+        if len(target_tokens)>250:
+            target_tokens = target_tokens[:250]
+            print('Cut off to 250', target_tokens)
         for index, token in enumerate(target_tokens):
             sequence = context + " "
             for token in target_tokens[:index]:
@@ -55,7 +66,7 @@ class MLM:
                 sequence += " " + token
             masked_targets.append(sequence)
         return masked_targets, target_tokens
-
+    
     def sentence_likelihood(self, context, target):
         masked_targets, target_tokens = self.mask_target_sentence(context, target)
         expected_target = ""
