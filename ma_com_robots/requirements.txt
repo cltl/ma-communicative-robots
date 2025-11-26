@@ -1,0 +1,30 @@
+# Core
+ai2thor>=5.0.0
+prior>=0.1.0
+
+# Image Processing
+transformers>=4.35.2
+torch>=2.1.0
+torchvision>=0.16.0
+Pillow>=9.4.0
+
+# Text Processing
+sentence-transformers>=2.2.0
+scikit-learn>=1.3.0
+
+# EMISSOR
+emissor>=0.1.0
+cltl.combot>=1.0.0
+
+# Optional: OpenAI
+openai>=1.0.0
+python-dotenv>=1.0.0
+
+# Utils
+numpy>=1.24.0
+requests>=2.31.0
+
+# Development
+jupyter>=1.0.0
+ipykernel>=6.20.0
+pytest>=7.0.0
