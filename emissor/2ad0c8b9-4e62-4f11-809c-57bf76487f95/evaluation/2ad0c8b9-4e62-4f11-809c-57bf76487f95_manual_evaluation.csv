@@ -1,0 +1,74 @@
+Turn;Speaker;Response;Reference Response;Overall Human Rating;Engaging;Specific;Relevant;Correct;Understandable;Coherent
+763b7c2a-0168-41b5-8677-411b79e21ca8;LEOLANI;What's up? Do you want to talk to me John?;;;;;;;;
+368658d4-75c6-4258-a415-a748dd28d152;SPEAKER;Yes;;;;;;;;
+c781fffc-3385-426d-aa40-eba99c88fdc0;LEOLANI;You have my confidence.;;;;;;;;
+6dfb5b29-fb8b-40f6-85f2-4f8dfbe862cc;SPEAKER;I am John from Oxford;;;;;;;;
+a52f2bbf-b681-4cb8-b9bc-01f4fd55becb;LEOLANI;I’m curious. Has John ever been a grandparent?;;;;;;;;
+c628f26e-09a9-4daf-8315-d6b088f90218;SPEAKER;yes I am, I am 57 ;;;;;;;;
+a946b35b-dd55-47cb-a1a5-c53911da165d;LEOLANI;You are trusted by me.;;;;;;;;
+60948efe-b4f8-4f36-9297-872feb286e7e;SPEAKER;I am also ceo ;;;;;;;;
+e054695c-461d-4ed5-a831-0f61bb4ead30;SPEAKER;I like mango ;;;;;;;;
+afc2b575-aefd-4263-acc5-71430eb3d31d;LEOLANI;You have my confidence.;;;;;;;;
+8e11222f-f326-4967-ac7e-b7ce6c4c471d;SPEAKER;do you like mango?;;;;;;;;
+d91b92c1-a5fb-42e2-8f4c-ee632c2e06cd;LEOLANI;I have no idea.;;;;;;;;
+6736f894-2502-4641-b758-ad86d7d6b97c;SPEAKER;remember you like mango;;;;;;;;
+829c9b7f-7a0b-4302-bb5b-5e282d115ac6;LEOLANI;"I'm hearing this for the first time; I've never heard you compared to a mango before.";;;;;;;;
+7709e7b1-38c2-4133-ade1-548f856bb099;SPEAKER;You have my confidence;;;;;;;;
+a2abb0d0-294a-4f34-8535-b018230b5f2d;LEOLANI;You are trusted by me.;;;;;;;;
+cc7c4583-557d-424f-aa45-c1e5268f5d95;SPEAKER;you too ;;;;;;;;
+dc54e912-15c9-4ef6-94d0-8d4588288e5b;SPEAKER;I like fish with mango ;;;;;;;;
+1a55f7d9-665c-4f62-80e4-b46d6c52deac;LEOLANI;I want to know. Has John ever been a grandfather?;;;;;;;;
+c9855ebf-ec7a-43fa-a673-a9efe5c534e6;SPEAKER;Yes;;;;;;;;
+c9a6d572-44c7-4f96-a2b3-8bfaefba4e95;SPEAKER;I have no wife;;;;;;;;
+4d5797a7-6261-41a3-9b47-ab9f06241ae2;LEOLANI;I heard that before. I heard about you before.;;;;;;;;
+7810b61f-5d7d-406d-890c-b0a4af4101f8;SPEAKER;Do I have friends?;;;;;;;;
+8d13c0ce-caa5-4cb7-a990-963d4b4a0670;LEOLANI;I might be ignorant, but I don't know. Sorry, I have no idea.;;;;;;;;
+a86104a9-70fa-4b2d-b143-e24ad80e24fd;SPEAKER;I like Harris;;;;;;;;
+201f70a2-21cf-4050-bb4b-8dbe80ed1ebf;LEOLANI;I want to know if anyone has ever been Harris's grandfather.;;;;;;;;
+1de80770-ac22-4b3b-9e2f-8f2a149a2b8d;SPEAKER;Yes, Gilbert was Harris's grandfather ;;;;;;;;
+2aa6d6b7-8623-4914-84a6-6894380327c4;LEOLANI;I believe I trust you.;;;;;;;;
+c1caf39a-b022-41d7-bc3e-5c56b62ccde6;SPEAKER;I live in Oxford. Who am I?;;;;;;;;
+69a7d5a4-cc1f-498c-81a5-74ba96df61b9;LEOLANI;This seems familiar. I've heard of you before.;;;;;;;;
+c82a2fd5-0409-49b8-a73b-af7eddf46e48;SPEAKER;who am I then?;;;;;;;;
+05c7e54a-d5dd-4166-a907-5c6822512d86;LEOLANI;You said that you are you.;;;;;;;;
+59a4cf9d-db5f-4eb6-8552-d1055fd31c9e;SPEAKER;What is my name?;;;;;;;;
+27801817-dc0d-4b9f-9af6-c3461c6ea5e3;SPEAKER;What do you know about John?;;;;;;;;
+8e0f05be-d587-422b-af9b-d7474498cfbc;LEOLANI;You said you like Harris, mango, and fish with mango. You said you are from Oxford, live in Oxford, are a CEO, are named John, are 57, and have no wife. Josh said you both like and dislike cats. I noted your FaceID is c018cf8e 3785 42b5 9510 4abe9c0b5c5b.;;;;;;;;
+0e49cbaf-c68c-4adc-a181-1118f62d67a0;SPEAKER;Josh is wrong I like dogs;;;;;;;;
+4fb06a03-443c-41a3-bc07-bcf337bc4497;LEOLANI;You are trusted by me.;;;;;;;;
+3bdc08e3-ac5c-4159-b71c-094371f82110;SPEAKER;What do you know about John?;;;;;;;;
+e78d36f5-6d7d-4e4a-80c2-93ceaaa8cf03;LEOLANI;Someone said I know you. Harris said he likes you, and you said you are you. Josh said I know you. Thomas said he is married to you and that he hears you.;;;;;;;;
+763aa8f5-aa2c-4753-bd59-0ca6139b4222;SPEAKER;I am John I like dogs ;;;;;;;;
+eca6073d-a1df-4ccf-982d-a2a363333c27;LEOLANI;I wonder if an agent has ever owned a dog.;;;;;;;;
+347ec8f8-d2bb-43c4-8463-384c8ae0182b;SPEAKER;yes;;;;;;;;
+399efd76-8726-47f6-97a1-e0e8a7955909;LEOLANI;I believe I trust you.;;;;;;;;
+9494fb93-840c-4c64-bfa1-33f0ef86de2f;SPEAKER;Tell me about you ;;;;;;;;
+325c864b-f742-4679-be4b-82d43b02d704;LEOLANI;"Angus said I like myself.  
+Arthur said my name is I and that Arthur’s name is I.  
+Brian said my name is I and that Brian’s name is I.  
+Carla said Carla has I and that I have I.  
+Fred told Leolani about me.  
+Carla trusts me and I trust Carla.  
+Carl cooks for me, is a partner of me, and told Leolani about me.  
+Carl said a person is my sibling.  
+Estelle said Estelle’s name is I, my name is I, I have I, and that I am an agent.  
+Estelle also said I have I and that the agent is my sister.  
+Fredrique said someone is my wife, Fredrique has I, and Fredrique thought about Leolani asking me.  
+Fred said I hear I, Fred hears I, I think about Leolani asking me, the agent thinks about Leolani asking me, Fred sees I, and the agent has been my colleague.  
+Herman said my name is I, I have I, Herman has I, I hear I, the Czech Republic hears I, I trust I, Herman trusts I, Herman does not think I, Herman knows I, and Herman told Leolani about me.  
+Jeff said my name is I.  
+Joe said Joe’s name is I, Joe’s name speaks I, Joe’s name gives Leolani I, Joe’s name is happy to I, someone is my spouse, someone is my brother, I hear I, Joe hears I, Joe believes I, I trust I, Joe trusts I, an agent is my colleague, someone’s spouse chats with me, and Joe chats with me.  
+Josh said someone is my brother.  
+Luis said my name is I and Luis’s name is I.  
+Pete maybe does not believe I.  
+A stranger said I speak I.  
+Susan met I.  
+Thomas said Thomas speaks I.  
+Yannis said Yannis’s name is I, Yannis’s name gives Leolani I, Yannis’s name tells Leolani I, I know I, Yannis knows I, I am I, I have I, a person has I, Yannis has I, I want I, I hear I, a cat hears I, Yannis hears I, Bob hears I, I think about Leolani asking I, Yannis thinks about Leolani asking I, Marie told Leolani about I, I trust I, Yannis trusts I, I see I, Yannis talked to I, an agent has been my friend, Yannis has been my friend, and Yannis speaks I.  
+Zula said a person is my grandmother, Zula has I, Fred has I, I hear I, Zula hears I, a person thinks about Leolani asking I, and Carl speaks I.";;;;;;;;
+964c7548-ee39-4d04-8505-dcbc2dde5307;SPEAKER;You have a big family, John has no family, John wants a family, can I have family?;;;;;;;;
+6b19fd4e-fa7e-4da9-87f6-fa8c18b37a53;LEOLANI;I think you.;;;;;;;;
+667f1cef-d5bb-454f-a705-63932871ff01;SPEAKER;Do you have quesitons to me ?;;;;;;;;
+c5226d12-7527-447f-a86c-e2d42f032796;LEOLANI;I have no idea!;;;;;;;;
+3134b6aa-e371-4808-9832-893ad312901b;SPEAKER;Goodbye;;;;;;;;
+9b77e6e9-3dd9-4782-8165-2344b5e8f9e6;LEOLANI;Have a nice day;;;;;;;;

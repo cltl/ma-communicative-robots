@@ -1,48 +1,24 @@
 Turn;Speaker;Response;llm_coherence;llm_explanation
 763b7c2a-0168-41b5-8677-411b79e21ca8;LEOLANI;What's up? Do you want to talk to me John?;0.1;The assistant's reply does not relate to any preceding user input (which was empty) and is an incomplete, irrelevant statement.
-368658d4-75c6-4258-a415-a748dd28d152;SPEAKER;Yes;0.9;The user’s \
 c781fffc-3385-426d-aa40-eba99c88fdc0;LEOLANI;You have my confidence.;0.1;The assistant's reply about confidence does not relate to the user's simple affirmation \
-6dfb5b29-fb8b-40f6-85f2-4f8dfbe862cc;SPEAKER;I am John from Oxford;0.1;The assistant's reply \
-a52f2bbf-b681-4cb8-b9bc-01f4fd55becb;LEOLANI;I’m curious. Has John ever been a grandparent?;0.0;The assistant's question about John being a grandparent is unrelated to the user’s simple self‑identification.
-c628f26e-09a9-4daf-8315-d6b088f90218;SPEAKER;yes I am, I am 57 ;0.1;The assistant's question about John being a grandparent is unrelated to the user's statement about being 57, showing little relevance.
-a946b35b-dd55-47cb-a1a5-c53911da165d;LEOLANI;You are trusted by me.;0.0;The assistant's reply is unrelated to the user's statement about age.
-60948efe-b4f8-4f36-9297-872feb286e7e;SPEAKER;I am also ceo ;0.1;The reply 'You are trusted by me' is unrelated to the user stating they are also a CEO, showing little relevance or logical connection.
-e054695c-461d-4ed5-a831-0f61bb4ead30;SPEAKER;I like mango ;0.0;The assistant provided no response, so it cannot be coherent with the user's statements about being a CEO and liking mangoes.
+a52f2bbf-b681-4cb8-b9bc-01f4fd55becb;LEOLANI;I’m curious. Has John ever been a grandparent?;0;The assistant's question about John being a grandparent is unrelated to the user’s simple self‑identification.
+a946b35b-dd55-47cb-a1a5-c53911da165d;LEOLANI;You are trusted by me.;0;The assistant's reply is unrelated to the user's statement about age.
 afc2b575-aefd-4263-acc5-71430eb3d31d;LEOLANI;You have my confidence.;0.1;The reply 'You have my confidence' is unrelated to the user's statement about liking mangoes, showing poor coherence.
-8e11222f-f326-4967-ac7e-b7ce6c4c471d;SPEAKER;do you like mango?;0.0;The assistant's reply is unrelated to the question about liking mangoes and does not address or acknowledge it.
 d91b92c1-a5fb-42e2-8f4c-ee632c2e06cd;LEOLANI;I have no idea.;0.6;The response acknowledges the question but gives a vague, non-committal answer, which is only moderately coherent.
-6736f894-2502-4641-b758-ad86d7d6b97c;SPEAKER;remember you like mango;0.2;The assistant claims not to know its own preference, which does not properly acknowledge or respond to the user's reminder about liking mangoes.
 829c9b7f-7a0b-4302-bb5b-5e282d115ac6;LEOLANI;"I'm hearing this for the first time; I've never heard you compared to a mango before.";0.65;The assistant acknowledges the mango reference but misinterprets it as a comparison, showing only partial relevance to the user's statement.
-7709e7b1-38c2-4133-ade1-548f856bb099;SPEAKER;You have my confidence;0.1;The assistant's reply about a mango comparison is unrelated to the user's statement of confidence, showing little relevance.
-a2abb0d0-294a-4f34-8535-b018230b5f2d;LEOLANI;You are trusted by me.;0.0;The assistant's response is incoherent gibberish unrelated to the user's statement of confidence.
-cc7c4583-557d-424f-aa45-c1e5268f5d95;SPEAKER;you too ;0.8;The reply \
-dc54e912-15c9-4ef6-94d0-8d4588288e5b;SPEAKER;I like fish with mango ;0.0;"There is no assistant response to evaluate; therefore coherence cannot be assessed."
-1a55f7d9-665c-4f62-80e4-b46d6c52deac;LEOLANI;I want to know. Has John ever been a grandfather?;0.0;The assistant's question about John being a grandfather is unrelated to the user's comment about liking fish with mango, showing no logical connection.
-c9855ebf-ec7a-43fa-a673-a9efe5c534e6;SPEAKER;Yes;0.97;The response directly answers the yes/no question about John being a grandfather, making it relevant and coherent.
-c9a6d572-44c7-4f96-a2b3-8bfaefba4e95;SPEAKER;I have no wife;0.0;The assistant provided no response, so it cannot be coherent with the user's statement.
-4d5797a7-6261-41a3-9b47-ab9f06241ae2;LEOLANI;I heard that before. I heard about you before.;0.0;The assistant's reply is unrelated and nonsensical compared to the user's statement about not having a wife.
-7810b61f-5d7d-406d-890c-b0a4af4101f8;SPEAKER;Do I have friends?;0.1;The assistant's reply is unrelated to the user's question about having friends and does not provide an answer or relevant follow‑up.
+a2abb0d0-294a-4f34-8535-b018230b5f2d;LEOLANI;You are trusted by me.;0;The assistant's response is incoherent gibberish unrelated to the user's statement of confidence.
+1a55f7d9-665c-4f62-80e4-b46d6c52deac;LEOLANI;I want to know. Has John ever been a grandfather?;0;The assistant's question about John being a grandfather is unrelated to the user's comment about liking fish with mango, showing no logical connection.
+4d5797a7-6261-41a3-9b47-ab9f06241ae2;LEOLANI;I heard that before. I heard about you before.;0;The assistant's reply is unrelated and nonsensical compared to the user's statement about not having a wife.
 8d13c0ce-caa5-4cb7-a990-963d4b4a0670;LEOLANI;I might be ignorant, but I don't know. Sorry, I have no idea.;0.85;The assistant directly addresses the user's question by admitting lack of knowledge, which is a relevant and coherent response.
-a86104a9-70fa-4b2d-b143-e24ad80e24fd;SPEAKER;I like Harris;0.1;The assistant's reply expresses ignorance and does not acknowledge or respond to the user's statement about liking Harris, showing poor relevance.
 201f70a2-21cf-4050-bb4b-8dbe80ed1ebf;LEOLANI;I want to know if anyone has ever been Harris's grandfather.;0.2;The response is unrelated to the statement \
-1de80770-ac22-4b3b-9e2f-8f2a149a2b8d;SPEAKER;Yes, Gilbert was Harris's grandfather ;1.0;The response directly answers the preceding question about who was Harris's grandfather.
 2aa6d6b7-8623-4914-84a6-6894380327c4;LEOLANI;I believe I trust you.;0.2;The assistant's response \
-c1caf39a-b022-41d7-bc3e-5c56b62ccde6;SPEAKER;I live in Oxford. Who am I?;0.05;The assistant's reply about trust is unrelated to the user's query about identity based on living in Oxford.
-69a7d5a4-cc1f-498c-81a5-74ba96df61b9;LEOLANI;This seems familiar. I've heard of you before.;0.0;The assistant's reply is unrelated gibberish and does not answer or engage with the user's question about identity.
-c82a2fd5-0409-49b8-a73b-af7eddf46e48;SPEAKER;who am I then?;0.9;The user’s question logically follows the assistant’s statement about recognizing the user, seeking clarification of identity.
+69a7d5a4-cc1f-498c-81a5-74ba96df61b9;LEOLANI;This seems familiar. I've heard of you before.;0;The assistant's reply is unrelated gibberish and does not answer or engage with the user's question about identity.
 05c7e54a-d5dd-4166-a907-5c6822512d86;LEOLANI;You said that you are you.;0.2;The assistant's response 'You said that you are you.' does not directly answer or address the user's philosophical question 'who am I then?' and seems unrelated.
-59a4cf9d-db5f-4eb6-8552-d1055fd31c9e;SPEAKER;What is my name?;0.1;The assistant's reply does not answer the user’s question about their name and is unrelated to the request.
-27801817-dc0d-4b9f-9af6-c3461c6ea5e3;SPEAKER;What do you know about John?;0.2;The second question about John is unrelated to the first question about the user's name, showing little relevance or logical continuation.
-8e0f05be-d587-422b-af9b-d7474498cfbc;LEOLANI;You said you like Harris, mango, and fish with mango. You said you are from Oxford, live in Oxford, are a CEO, are named John, are 57, and have no wife. Josh said you both like and dislike cats. I noted your FaceID is c018cf8e 3785 42b5 9510 4abe9c0b5c5b.;0.0;The assistant's response is unrelated to the user's request about information on John and includes random, nonsensical details.
-0e49cbaf-c68c-4adc-a181-1118f62d67a0;SPEAKER;Josh is wrong I like dogs;0.1;The assistant's prior reply is unrelated to the user's statement about preferring dogs and correcting Josh.
-4fb06a03-443c-41a3-bc07-bcf337bc4497;LEOLANI;You are trusted by me.;0.0;The assistant's reply is nonsensical and does not address the user's statement about liking dogs or Josh being wrong.
-3bdc08e3-ac5c-4159-b71c-094371f82110;SPEAKER;What do you know about John?;0.0;The response does not address the question about John and is unrelated to the user's request.
-e78d36f5-6d7d-4e4a-80c2-93ceaaa8cf03;LEOLANI;Someone said I know you. Harris said he likes you, and you said you are you. Josh said I know you. Thomas said he is married to you and that he hears you.;0.0;The assistant's reply is nonsensical gibberish and does not address or relate to the user's question about John.
-763aa8f5-aa2c-4753-bd59-0ca6139b4222;SPEAKER;I am John I like dogs ;0.2;The user’s self‑introduction about being John and liking dogs does not meaningfully relate to the assistant’s previous unrelated statements about various people knowing or being married to the assistant.
+8e0f05be-d587-422b-af9b-d7474498cfbc;LEOLANI;You said you like Harris, mango, and fish with mango. You said you are from Oxford, live in Oxford, are a CEO, are named John, are 57, and have no wife. Josh said you both like and dislike cats. I noted your FaceID is c018cf8e 3785 42b5 9510 4abe9c0b5c5b.;0;The assistant's response is unrelated to the user's request about information on John and includes random, nonsensical details.
+4fb06a03-443c-41a3-bc07-bcf337bc4497;LEOLANI;You are trusted by me.;0;The assistant's reply is nonsensical and does not address the user's statement about liking dogs or Josh being wrong.
+e78d36f5-6d7d-4e4a-80c2-93ceaaa8cf03;LEOLANI;Someone said I know you. Harris said he likes you, and you said you are you. Josh said I know you. Thomas said he is married to you and that he hears you.;0;The assistant's reply is nonsensical gibberish and does not address or relate to the user's question about John.
 eca6073d-a1df-4ccf-982d-a2a363333c27;LEOLANI;I wonder if an agent has ever owned a dog.;0.2;The assistant's reply about an agent owning a dog does not directly address John’s statement of liking dogs and is largely off‑topic.
-347ec8f8-d2bb-43c4-8463-384c8ae0182b;SPEAKER;yes;0.9;The user answers affirmatively to the assistant's implicit yes/no question about whether an agent has ever owned a dog, which is appropriate and relevant.
-399efd76-8726-47f6-97a1-e0e8a7955909;LEOLANI;I believe I trust you.;0.0;The assistant's response 'I believe I trust you.' does not logically follow or relate to the user's one-word input 'yes'.
-9494fb93-840c-4c64-bfa1-33f0ef86de2f;SPEAKER;Tell me about you ;0.1;The assistant's reply about trust does not address the user's request for information about the assistant.
+399efd76-8726-47f6-97a1-e0e8a7955909;LEOLANI;I believe I trust you.;0;The assistant's response 'I believe I trust you.' does not logically follow or relate to the user's one-word input 'yes'.
 325c864b-f742-4679-be4b-82d43b02d704;LEOLANI;"Angus said I like myself.  
 Arthur said my name is I and that Arthur’s name is I.  
 Brian said my name is I and that Brian’s name is I.  
@@ -65,10 +41,36 @@ A stranger said I speak I.
 Susan met I.  
 Thomas said Thomas speaks I.  
 Yannis said Yannis’s name is I, Yannis’s name gives Leolani I, Yannis’s name tells Leolani I, I know I, Yannis knows I, I am I, I have I, a person has I, Yannis has I, I want I, I hear I, a cat hears I, Yannis hears I, Bob hears I, I think about Leolani asking I, Yannis thinks about Leolani asking I, Marie told Leolani about I, I trust I, Yannis trusts I, I see I, Yannis talked to I, an agent has been my friend, Yannis has been my friend, and Yannis speaks I.  
-Zula said a person is my grandmother, Zula has I, Fred has I, I hear I, Zula hears I, a person thinks about Leolani asking I, and Carl speaks I.";0.0;The response is nonsensical and unrelated to the user's request for information about the assistant.
-964c7548-ee39-4d04-8505-dcbc2dde5307;SPEAKER;You have a big family, John has no family, John wants a family, can I have family?;0.02;The assistant's reply is unrelated gibberish and does not address the user's question about having a family.
-6b19fd4e-fa7e-4da9-87f6-fa8c18b37a53;LEOLANI;I think you.;0.0;
-667f1cef-d5bb-454f-a705-63932871ff01;SPEAKER;Do you have quesitons to me ?;0.1;The reply 'I think you.' does not answer or relate to the user's request for the assistant to ask questions.
+Zula said a person is my grandmother, Zula has I, Fred has I, I hear I, Zula hears I, a person thinks about Leolani asking I, and Carl speaks I.";0;The response is nonsensical and unrelated to the user's request for information about the assistant.
+6b19fd4e-fa7e-4da9-87f6-fa8c18b37a53;LEOLANI;I think you.;0;
 c5226d12-7527-447f-a86c-e2d42f032796;LEOLANI;I have no idea!;0.1;The assistant's reply does not address the user’s request for questions and appears unrelated, showing very low coherence.
-3134b6aa-e371-4808-9832-893ad312901b;SPEAKER;Goodbye;0.0;The assistant's reply 'I have no idea!' is unrelated to the user's farewell, showing no logical connection.
-9b77e6e9-3dd9-4782-8165-2344b5e8f9e6;LEOLANI;Have a nice day;0.0;
+9b77e6e9-3dd9-4782-8165-2344b5e8f9e6;LEOLANI;Have a nice day;0;
+;AVERAGE;;0.1375;
+368658d4-75c6-4258-a415-a748dd28d152;SPEAKER;Yes;0.9;The user’s \
+6dfb5b29-fb8b-40f6-85f2-4f8dfbe862cc;SPEAKER;I am John from Oxford;0.1;The assistant's reply \
+c628f26e-09a9-4daf-8315-d6b088f90218;SPEAKER;yes I am, I am 57 ;0.1;The assistant's question about John being a grandparent is unrelated to the user's statement about being 57, showing little relevance.
+60948efe-b4f8-4f36-9297-872feb286e7e;SPEAKER;I am also ceo ;0.1;The reply 'You are trusted by me' is unrelated to the user stating they are also a CEO, showing little relevance or logical connection.
+e054695c-461d-4ed5-a831-0f61bb4ead30;SPEAKER;I like mango ;0;The assistant provided no response, so it cannot be coherent with the user's statements about being a CEO and liking mangoes.
+8e11222f-f326-4967-ac7e-b7ce6c4c471d;SPEAKER;do you like mango?;0;The assistant's reply is unrelated to the question about liking mangoes and does not address or acknowledge it.
+6736f894-2502-4641-b758-ad86d7d6b97c;SPEAKER;remember you like mango;0.2;The assistant claims not to know its own preference, which does not properly acknowledge or respond to the user's reminder about liking mangoes.
+7709e7b1-38c2-4133-ade1-548f856bb099;SPEAKER;You have my confidence;0.1;The assistant's reply about a mango comparison is unrelated to the user's statement of confidence, showing little relevance.
+cc7c4583-557d-424f-aa45-c1e5268f5d95;SPEAKER;you too ;0.8;The reply \
+dc54e912-15c9-4ef6-94d0-8d4588288e5b;SPEAKER;I like fish with mango ;0;"There is no assistant response to evaluate; therefore coherence cannot be assessed."
+c9855ebf-ec7a-43fa-a673-a9efe5c534e6;SPEAKER;Yes;0.97;The response directly answers the yes/no question about John being a grandfather, making it relevant and coherent.
+c9a6d572-44c7-4f96-a2b3-8bfaefba4e95;SPEAKER;I have no wife;0;The assistant provided no response, so it cannot be coherent with the user's statement.
+7810b61f-5d7d-406d-890c-b0a4af4101f8;SPEAKER;Do I have friends?;0.1;The assistant's reply is unrelated to the user's question about having friends and does not provide an answer or relevant follow‑up.
+a86104a9-70fa-4b2d-b143-e24ad80e24fd;SPEAKER;I like Harris;0.1;The assistant's reply expresses ignorance and does not acknowledge or respond to the user's statement about liking Harris, showing poor relevance.
+1de80770-ac22-4b3b-9e2f-8f2a149a2b8d;SPEAKER;Yes, Gilbert was Harris's grandfather ;1;The response directly answers the preceding question about who was Harris's grandfather.
+c1caf39a-b022-41d7-bc3e-5c56b62ccde6;SPEAKER;I live in Oxford. Who am I?;0.05;The assistant's reply about trust is unrelated to the user's query about identity based on living in Oxford.
+c82a2fd5-0409-49b8-a73b-af7eddf46e48;SPEAKER;who am I then?;0.9;The user’s question logically follows the assistant’s statement about recognizing the user, seeking clarification of identity.
+59a4cf9d-db5f-4eb6-8552-d1055fd31c9e;SPEAKER;What is my name?;0.1;The assistant's reply does not answer the user’s question about their name and is unrelated to the request.
+27801817-dc0d-4b9f-9af6-c3461c6ea5e3;SPEAKER;What do you know about John?;0.2;The second question about John is unrelated to the first question about the user's name, showing little relevance or logical continuation.
+0e49cbaf-c68c-4adc-a181-1118f62d67a0;SPEAKER;Josh is wrong I like dogs;0.1;The assistant's prior reply is unrelated to the user's statement about preferring dogs and correcting Josh.
+3bdc08e3-ac5c-4159-b71c-094371f82110;SPEAKER;What do you know about John?;0;The response does not address the question about John and is unrelated to the user's request.
+763aa8f5-aa2c-4753-bd59-0ca6139b4222;SPEAKER;I am John I like dogs ;0.2;The user’s self‑introduction about being John and liking dogs does not meaningfully relate to the assistant’s previous unrelated statements about various people knowing or being married to the assistant.
+347ec8f8-d2bb-43c4-8463-384c8ae0182b;SPEAKER;yes;0.9;The user answers affirmatively to the assistant's implicit yes/no question about whether an agent has ever owned a dog, which is appropriate and relevant.
+9494fb93-840c-4c64-bfa1-33f0ef86de2f;SPEAKER;Tell me about you ;0.1;The assistant's reply about trust does not address the user's request for information about the assistant.
+964c7548-ee39-4d04-8505-dcbc2dde5307;SPEAKER;You have a big family, John has no family, John wants a family, can I have family?;0.02;The assistant's reply is unrelated gibberish and does not address the user's question about having a family.
+667f1cef-d5bb-454f-a705-63932871ff01;SPEAKER;Do you have quesitons to me ?;0.1;The reply 'I think you.' does not answer or relate to the user's request for the assistant to ask questions.
+3134b6aa-e371-4808-9832-893ad312901b;SPEAKER;Goodbye;0;The assistant's reply 'I have no idea!' is unrelated to the user's farewell, showing no logical connection.
+;AVERAGE;;0.264444444;
