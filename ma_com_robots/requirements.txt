@@ -1,30 +1,46 @@
-# Core
-ai2thor>=5.0.0
-prior>=0.1.0
-
-# Image Processing
-transformers>=4.35.2
-torch>=2.1.0
-torchvision>=0.16.0
-Pillow>=9.4.0
-
-# Text Processing
-sentence-transformers>=2.2.0
-scikit-learn>=1.3.0
-
-# EMISSOR
-emissor>=0.1.0
-cltl.combot>=1.0.0
-
-# Optional: OpenAI
-openai>=1.0.0
-python-dotenv>=1.0.0
-
-# Utils
-numpy>=1.24.0
-requests>=2.31.0
-
-# Development
-jupyter>=1.0.0
-ipykernel>=6.20.0
-pytest>=7.0.0
+ai2thor==5.0.0
+aws-requests-auth==0.4.3
+blinker==1.9.0
+botocore==1.41.5
+certifi==2025.11.12
+cffi==2.0.0
+charset-normalizer==3.4.4
+click==8.3.1
+contourpy==1.3.3
+cryptography==46.0.3
+cycler==0.12.1
+Flask==3.1.2
+fonttools==4.60.1
+idna==3.11
+itsdangerous==2.2.0
+Jinja2==3.1.6
+jmespath==1.0.1
+joblib==1.5.2
+kiwisolver==1.4.9
+MarkupSafe==3.0.3
+matplotlib==3.10.7
+msgpack==1.1.2
+numpy==1.26.4
+opencv-python==4.7.0.72
+packaging==25.0
+pillow==12.0.0
+prior==1.0.3
+progressbar2==4.5.0
+pycparser==2.23
+PyGithub==2.8.1
+PyJWT==2.10.1
+PyNaCl==1.6.1
+pyparsing==3.2.5
+python-dateutil==2.9.0.post0
+python-utils==3.9.1
+python-xlib==0.33
+PyYAML==6.0.3
+requests==2.32.5
+scikit-learn==1.7.2
+scipy==1.16.3
+six==1.17.0
+threadpoolctl==3.6.0
+tqdm==4.67.1
+typing_extensions==4.15.0
+urllib3==2.5.0
+Werkzeug==3.1.3

@@ -1,41 +1,102 @@
-'''
-AI2-THOR Object Locator - Main Entry Point
-'''
+#!/usr/bin/env python3
+import sys
+from pathlib import Path
 
-from src.core.robot_controller import RobotController
-from config.settings import Config
-import os
+# Add both project root AND src to path
+project_root = Path(__file__).parent
+src_path = project_root / 'src'
+
+sys.path.insert(0, str(project_root))
+sys.path.insert(0, str(src_path))
+
+from integration.coordinator import SearchCoordinator
+from object_search.object_searcher import ObjectSearcher
+from room_mapping.room_mapper import RoomMapper
+
+import prior
+from ai2thor.controller import Controller
+
+try:
+    from config import AI2THOR_CONFIG
+except:
+    AI2THOR_CONFIG = {
+        'visibilityDistance': 2,
+        'width': 750,
+        'height': 750,
+        'default_house_id': 15
+    }
+
 
 def main():
-    print("\n" + "="*60)
-    print("     AI2-THOR OBJECT LOCATOR - GROUP PROJECT")
-    print("="*60 + "\n")
-
-    # Initialize robot
-    robot = RobotController(
-        emissor_path=Config.EMISSOR_DATA_PATH,
-        scene="FloorPlan28",
-        use_openai=Config.USE_OPENAI,
-        api_key=Config.OPENAI_API_KEY
-    )
+    print("=" * 70)
+    print("COMMUNICATIVE ROBOT SEARCH SYSTEM")
+    print("=" * 70)
 
     try:
-        # Run interaction
-        robot.run()
+        house_id = AI2THOR_CONFIG['default_house_id']
 
-    except KeyboardInterrupt:
-        print("\n\nInterrupted by user")
+        print(f"\nLoading house {house_id}...")
+        dataset = prior.load_dataset("procthor-10k")
+        house = dataset["train"][house_id]
 
-    finally:
-        # Print summary
-        print(f"\n{'='*60}")
-        print("INTERACTION SUMMARY")
-        print(f"{'='*60}")
-        print(f"Physical actions: {robot.action_count}")
-        print(f"Dialogue turns: {robot.dialogue_count}")
-        print(f"Success: {robot.found_object}")
-        print(f"Scenario: {robot.leolani_client._scenario_path}")
-        print(f"{'='*60}\n")
+        controller = Controller(
+            scene=house,
+            visibilityDistance=AI2THOR_CONFIG['visibilityDistance'],
+            width=AI2THOR_CONFIG['width'],
+            height=AI2THOR_CONFIG['height']
+        )
+
+        print("\nInitializing components...")
+        print("  - Room mapper (Timo)")
+        room_mapper = RoomMapper(controller)
+        room_mapper.initialize_house_map()
+
+        print("  - Object searcher (Mohammed)")
+        object_searcher = ObjectSearcher(controller)
+
+        coordinator = SearchCoordinator(room_mapper, object_searcher)
+
+        print("\n" + "=" * 70)
+        print("SEARCH: Painting in living room")
+        print("=" * 70)
+
+        result = coordinator.find_object(
+            target_object='Painting',
+            room_type='living room',
+            context_objects=['Sofa', 'ArmChair', 'Television']
+        )
+
+        print("\n" + "=" * 70)
+        print("RESULTS")
+        print("=" * 70)
+        print(f"Success: {result['success']}")
+        print(f"Objects found: {len(result.get('objects', []))}")
+
+        if result.get('objects'):
+            print("\nFound objects:")
+            for i, obj in enumerate(result['objects'], 1):
+                pos = obj['position']
+                print(f"  {i}. {obj['object_type']} at ({pos['x']:.1f}, {pos['z']:.1f})")
+
+        metrics = coordinator.get_metrics()
+        print(f"\nPERFORMANCE")
+        print(f"  Physical actions: {metrics['total_actions']}")
+        print(f"  Communications: {metrics['total_communications']}")
+
+        if metrics['total_actions'] > 0:
+            reduction = ((95 - metrics['total_actions']) / 95) * 100
+            print(f"  Improvement: {reduction:.1f}% vs traditional")
+
+        controller.stop()
+        print("\nComplete!")
+        return 0
+
+    except Exception as e:
+        print(f"\nError: {e}")
+        import traceback
+        traceback.print_exc()
+        return 1
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
