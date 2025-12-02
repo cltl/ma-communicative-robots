@@ -1,8 +1,6 @@
-#!/usr/bin/env python3
 import sys
 from pathlib import Path
 
-# Add both project root AND src to path
 project_root = Path(__file__).parent
 src_path = project_root / 'src'
 
@@ -28,9 +26,9 @@ except:
 
 
 def main():
-    print("=" * 70)
+    
     print("COMMUNICATIVE ROBOT SEARCH SYSTEM")
-    print("=" * 70)
+    
 
     try:
         house_id = AI2THOR_CONFIG['default_house_id']
@@ -56,9 +54,9 @@ def main():
 
         coordinator = SearchCoordinator(room_mapper, object_searcher)
 
-        print("\n" + "=" * 70)
+        
         print("SEARCH: Painting in living room")
-        print("=" * 70)
+        
 
         result = coordinator.find_object(
             target_object='Painting',
@@ -66,9 +64,9 @@ def main():
             context_objects=['Sofa', 'ArmChair', 'Television']
         )
 
-        print("\n" + "=" * 70)
+        
         print("RESULTS")
-        print("=" * 70)
+        
         print(f"Success: {result['success']}")
         print(f"Objects found: {len(result.get('objects', []))}")
 

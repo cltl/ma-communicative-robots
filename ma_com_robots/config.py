@@ -17,7 +17,7 @@ AI2THOR_CONFIG = {
 '''
 
 SEARCH_STRATEGIES = {
-    'default': 'adaptive',
+    'default': 'thorough',
     'max_positions_per_room': 3,
     'enable_vertical_search': True
 }

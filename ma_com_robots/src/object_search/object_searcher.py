@@ -1,17 +1,8 @@
+from typing import List, Dict, Tuple
 from ai2thor.controller import Controller
-from typing import List, Dict, Optional, Tuple
-from collections import defaultdict
 
 
 class ObjectSearcher:
-    """
-    Object search with multiple strategies optimized for minimal actions.
-    
-    Strategies:
-    - minimal: Only 360° rotation (4 actions)
-    - thorough: Rotation + vertical search (12 actions)
-    - adaptive: Start minimal, expand if needed (4-8 actions)
-    """
     
     def __init__(self, controller: Controller):
 
@@ -25,18 +16,8 @@ class ObjectSearcher:
                             position: Dict, 
                             target_object_type: str,
                             strategy: str = "adaptive") -> List[Dict]:
-        """
-        Search for objects from a given position using specified strategy.
-        
-        Args:
-            position: Starting position dict with x, y, z coordinates
-            target_object_type: Type of object to find (e.g., "Painting")
-            strategy: Search strategy - "minimal", "thorough", or "adaptive"
-        
-        Returns:
-            List of found objects with metadata
-        """
-        print(f"\n🔍 Starting {strategy} search for {target_object_type}")
+
+        print(f"\nStarting {strategy} search for {target_object_type}")
         print(f"   Position: ({position['x']:.2f}, {position['z']:.2f})")
         
         if strategy == "minimal":
@@ -47,9 +28,6 @@ class ObjectSearcher:
             return self._adaptive_search(position, target_object_type)
     
     def _minimal_search(self, position: Dict, target_type: str) -> List[Dict]:
-        """
-        Minimal action search: Only 360° rotation.
-        """
         # Teleport to position
         self.controller.step(action="Teleport", position=position, rotation=0)
         self.action_count += 1
@@ -59,7 +37,7 @@ class ObjectSearcher:
         rotations = [0, 90, 180, 270]
         
         for i, rot in enumerate(rotations):
-            if i > 0:  # First rotation (0°) is free - already facing that way
+            if i > 0:
                 self.controller.step(action="RotateRight")
                 self.action_count += 1
                 self._log_action("RotateRight", rot)
@@ -79,7 +57,7 @@ class ObjectSearcher:
                             'strategy_used': 'minimal'
                         })
         
-        print(f"   ✓ Minimal search complete: {len(found)} {target_type}(s) found with {self.action_count} actions")
+        print(f" Minimal search complete: {len(found)} {target_type}(s) found with {self.action_count} actions")
         return found
     
     def _thorough_search(self, position: Dict, target_type: str) -> List[Dict]:
@@ -115,17 +93,11 @@ class ObjectSearcher:
             self.action_count += 1
             self._log_action("LookDown", "reset to horizontal")
         
-        print(f"   ✓ Thorough search complete: {len(found)} {target_type}(s) found with {self.action_count} actions")
+        print(f" Thorough search complete: {len(found)} {target_type}(s) found with {self.action_count} actions")
         return found
     
     def _adaptive_search(self, position: Dict, target_type: str) -> List[Dict]:
-        """
-        Adaptive search: Start minimal, expand only if needed.
-        
-        Default strategy - balances efficiency and thoroughness
-        Actions: 4 minimal + up to 4 additional if nothing found = 4-8 actions
-        """
-        # Start with minimal search
+
         found = self._minimal_search(position, target_type)
         
         if found:
@@ -144,7 +116,7 @@ class ObjectSearcher:
             # Reset view
             self.controller.step(action="LookDown")
             self.action_count += 1
-            print(f"   ✓ Adaptive search complete: {len(found)} {target_type}(s) found with {self.action_count} actions")
+            print(f"Adaptive search complete: {len(found)} {target_type}(s) found with {self.action_count} actions")
             return found
         
         # Still nothing - rotate and look up at other angles
@@ -158,11 +130,10 @@ class ObjectSearcher:
             if found:
                 break
         
-        # Reset view
         self.controller.step(action="LookDown")
         self.action_count += 1
         
-        print(f"   ✓ Adaptive search complete: {len(found)} {target_type}(s) found with {self.action_count} actions")
+        print(f"Adaptive search complete: {len(found)} {target_type}(s) found with {self.action_count} actions")
         return found
     
     def _check_visible_objects(self, target_type: str, found: List[Dict], 
@@ -170,7 +141,6 @@ class ObjectSearcher:
         event = self.controller.last_event
         for obj in event.metadata["objects"]:
             if obj["visible"] and obj["objectType"] == target_type:
-                # Avoid duplicates
                 if not any(f['object_id'] == obj['objectId'] for f in found):
                     found.append({
                         'object_id': obj['objectId'],
@@ -185,9 +155,7 @@ class ObjectSearcher:
                                   positions: List[Dict], 
                                   target_type: str,
                                   max_positions: int = 3) -> Tuple[List[Dict], int]:
-        """
-        Search from multiple positions (for when object not found initially).
-        """
+ 
         for i, pos in enumerate(positions[:max_positions]):
             print(f"\n🔍 Searching position {i+1}/{min(len(positions), max_positions)}")
             found = self.search_from_position(pos, target_type, strategy="adaptive")
@@ -198,29 +166,22 @@ class ObjectSearcher:
         return [], -1
     
     def describe_object(self, obj: Dict) -> str:
-        """
-        Generate natural language description of found object.
-        """
         description_parts = []
         
         # Basic type
         description_parts.append(f"a {obj['object_type']}")
         
-        # Position description
         pos = obj['position']
         description_parts.append(f"at position ({pos['x']:.1f}, {pos['z']:.1f})")
         
-        # Distance if available
         if 'distance' in obj and obj['distance'] > 0:
             description_parts.append(f"about {obj['distance']:.1f}m away")
         
-        # Vertical position
         if obj.get('vertical') == 'up':
             description_parts.append("mounted high (on wall or shelf)")
         elif obj.get('vertical') == 'down':
             description_parts.append("on the floor or low surface")
         
-        # Direction
         rotation = obj.get('rotation', 0)
         directions = {0: "ahead", 90: "to the right", 180: "behind", 270: "to the left"}
         if rotation in directions:
@@ -229,9 +190,6 @@ class ObjectSearcher:
         return " ".join(description_parts)
     
     def get_search_summary(self) -> Dict:
-        """
-        Get summary of search performance.
-        """
         return {
             'total_actions': self.action_count,
             'objects_found': len(self.found_objects),
@@ -263,12 +221,6 @@ class ObjectSearcher:
 # Test code
 if __name__ == "__main__":
     import prior
-    
-    print("="*60)
-    print("TESTING MOHAMMED'S OBJECT SEARCH")
-    print("="*60)
-    
-    # Setup AI2Thor
     dataset = prior.load_dataset("procthor-10k")
     house = dataset["train"][15]
     controller = Controller(
@@ -278,17 +230,14 @@ if __name__ == "__main__":
         height=750
     )
     
-    # Get test positions
     event = controller.step(action="GetReachablePositions")
     positions = event.metadata["actionReturn"]
-    
-    # Initialize searcher
     searcher = ObjectSearcher(controller)
     
     # Test 1: Minimal search
-    print("\n" + "="*60)
+    
     print("TEST 1: MINIMAL SEARCH FOR PAINTING")
-    print("="*60)
+    
     searcher.reset()
     results = searcher.search_from_position(
         positions[10], 
@@ -296,12 +245,12 @@ if __name__ == "__main__":
         strategy="minimal"
     )
     print(f"\nResults: {len(results)} painting(s) found")
-    print(f"⚡ Actions: {searcher.get_action_count()}")
+    print(f"Actions: {searcher.get_action_count()}")
     
     # Test 2: Adaptive search
-    print("\n" + "="*60)
+    
     print("TEST 2: ADAPTIVE SEARCH FOR CHAIR")
-    print("="*60)
+    
     searcher.reset()
     results = searcher.search_from_position(
         positions[5], 
@@ -309,15 +258,15 @@ if __name__ == "__main__":
         strategy="adaptive"
     )
     print(f"\nResults: {len(results)} chair(s) found")
-    print(f"⚡ Actions: {searcher.get_action_count()}")
+    print(f"Actions: {searcher.get_action_count()}")
     
     for i, obj in enumerate(results):
         print(f"   {i+1}. {searcher.describe_object(obj)}")
     
     # Test 3: Multiple position search
-    print("\n" + "="*60)
+    
     print("TEST 3: SEARCH MULTIPLE POSITIONS FOR BED")
-    print("="*60)
+    
     searcher.reset()
     test_positions = positions[0:5]
     found, found_at = searcher.search_multiple_positions(
@@ -330,12 +279,12 @@ if __name__ == "__main__":
         print(f"Found at position {found_at + 1}")
     else:
         print(f"Not found in first 3 positions")
-    print(f"⚡ Total actions: {searcher.get_action_count()}")
+    print(f"Total actions: {searcher.get_action_count()}")
     
     # Summary
-    print("\n" + "="*60)
+    
     print("SEARCH SUMMARY")
-    print("="*60)
+    
     summary = searcher.get_search_summary()
     print(f"Total actions across all tests: {summary['total_actions']}")
     print(f"Objects found: {summary['objects_found']}")
