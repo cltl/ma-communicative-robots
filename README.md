@@ -11,23 +11,34 @@ Clone this repository and the submodule. Do the following from CLI:
    >git submodule update --init  
 ```
 
-## Prerequisites
+# Analysing and evaluating interactions
+This subproject shows how interactions can be analysed and evaluated. Interactions need to be captured in EMISSOR format as different scenarios.
 
-1. python 3.10 or python3.11. Running in a virtual environment (e.g., conda, virtualenv, etc.) is highly recommended so that you don't mess up with the system python.
+## Requirements
 
-2. Content
+Before opening the  notebooks, make sure Jupyter is running in a virtual environment with the packages installed from the ```requirements.txt``` file.
 
-2.1. ai2thor (env = ai2thor)
-2.2. emissor_chat (env = emissor)
-2.3. cltl-emissor-annotation (env = annotate)
-2.4. evaluate (env = evaluate)
-2.5. episodic_knowledge_graph
-
-3. Virtual environments
-
-For the different submodules, specific environments need to be created as described in the README of each subproject.
-
+Using venv:
    ```
+    python -m venv --python=3.11 evaluate
+    source venv/bin/activate
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
+    python -m ipykernel install --user --name=evaluate
+   ```
+
+
+Using Conda:
+```
+    conda create -n evaluate python=3.11
+    conda activate evaluate
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
+    python -m ipykernel install --user --name=evaluate
+```
+
+With the environment active, launch Jupyter lab from the CLI.
+
 
 ## Emissor
 

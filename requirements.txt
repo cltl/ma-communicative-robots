@@ -1,0 +1,13 @@
+torch
+transformers
+openai
+ollama
+pandas
+seaborn
+matplotlib
+emissor @ git+https://github.com/leolani/emissor@ref_scenarios
+cltl.combot[external] @ git+https://github.com/leolani/cltl-combot.git@ref_scenarios
+jupyter
+rdflib
+networkx
+scipy
