@@ -1,9 +1,0 @@
-sentence-transformers
-numpy==1.26.4
-torch==2.2.2
-transformers==4.51.3
-Pillow
-openai
-ai2thor
-prior
-jupyter
