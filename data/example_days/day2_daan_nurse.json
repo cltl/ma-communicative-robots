@@ -1,0 +1,1095 @@
+{
+  "event1": {
+    "event_type": "personal_care",
+    "event_label": "waking up",
+    "who": [
+      "Daan"
+    ],
+    "what": [],
+    "description": "woke up early for his day shift",
+    "human_turn": "My alarm went off at quarter to six, day shift again. Ruben was still fast asleep.",
+    "where": [
+      "bedroom of his apartment",
+      "bedroom",
+      "his apartment",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "05:45",
+      "quarter to six",
+      "6 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 5,
+    "with_what": [
+      "alarm clock"
+    ],
+    "with_whom": [
+      "his partner Ruben"
+    ]
+  },
+  "event2": {
+    "event_type": "personal_care",
+    "event_label": "getting ready",
+    "who": [
+      "Daan"
+    ],
+    "what": [
+      "beard",
+      "work clothes"
+    ],
+    "description": "showered, shaved and put on his work clothes",
+    "human_turn": "Quick shower, a shave, and into my work clothes.",
+    "where": [
+      "bathroom of his apartment",
+      "bathroom",
+      "his apartment",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "05:50",
+      "ten to six",
+      "6 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "shower",
+      "razor"
+    ],
+    "with_whom": []
+  },
+  "event3": {
+    "event_type": "meal",
+    "event_label": "breakfast",
+    "who": [
+      "Daan"
+    ],
+    "what": [
+      "oatmeal",
+      "banana",
+      "coffee"
+    ],
+    "description": "ate oatmeal with banana and drank a strong coffee",
+    "human_turn": "Breakfast was oatmeal with a banana and a really strong coffee, on my own in the kitchen.",
+    "where": [
+      "kitchen of his apartment",
+      "kitchen",
+      "his apartment",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "06:10",
+      "ten past six",
+      "6 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 15,
+    "with_what": [
+      "bowl",
+      "coffee machine"
+    ],
+    "with_whom": []
+  },
+  "event4": {
+    "event_type": "travel",
+    "event_label": "cycling to the hospital",
+    "who": [
+      "Daan"
+    ],
+    "what": [],
+    "description": "cycled to the hospital",
+    "human_turn": "Then I cycled to the hospital on my e-bike, about twenty minutes.",
+    "where": [
+      "from his apartment to the university hospital",
+      "on the road",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "06:30",
+      "half past six",
+      "6 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "e-bike"
+    ],
+    "with_whom": []
+  },
+  "event5": {
+    "event_type": "work",
+    "event_label": "shift handover",
+    "who": [
+      "Daan"
+    ],
+    "what": [
+      "patient files"
+    ],
+    "description": "received the handover from the night shift about the patients on the ward",
+    "human_turn": "At seven Fatima, who had done the night shift, gave me and two of my day-shift colleagues the handover about the patients on the ward.",
+    "where": [
+      "nurses' station, cardiology ward",
+      "nurses' station",
+      "cardiology ward",
+      "university hospital",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "07:00",
+      "7 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 30,
+    "with_what": [
+      "computer"
+    ],
+    "with_whom": [
+      "night nurse Fatima",
+      "two day-shift colleagues"
+    ]
+  },
+  "event6": {
+    "event_type": "work",
+    "event_label": "morning rounds",
+    "who": [
+      "Daan"
+    ],
+    "what": [
+      "vital signs",
+      "morning medication"
+    ],
+    "description": "checked vital signs and gave morning medication to six patients",
+    "human_turn": "Then the morning round: checking vital signs and handing out morning medication to my six patients. That took an hour and a half.",
+    "where": [
+      "patient rooms, cardiology ward",
+      "patient rooms",
+      "cardiology ward",
+      "university hospital",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "07:30",
+      "half past seven",
+      "7 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 90,
+    "with_what": [
+      "blood pressure monitor",
+      "medication trolley"
+    ],
+    "with_whom": [
+      "six patients"
+    ]
+  },
+  "event7": {
+    "event_type": "work",
+    "event_label": "doctor's visit",
+    "who": [
+      "Daan"
+    ],
+    "what": [
+      "treatment plans"
+    ],
+    "description": "joined the cardiologist on the ward round to discuss treatment plans",
+    "human_turn": "At quarter past nine I joined Dr. Visser, the cardiologist, and one of the medical interns on the ward round to go over the treatment plans.",
+    "where": [
+      "cardiology ward",
+      "university hospital",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "09:15",
+      "quarter past nine",
+      "9 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 60,
+    "with_what": [
+      "tablet with electronic patient records"
+    ],
+    "with_whom": [
+      "cardiologist Dr. Visser",
+      "a medical intern"
+    ]
+  },
+  "event8": {
+    "event_type": "meal",
+    "event_label": "coffee break",
+    "who": [
+      "Daan"
+    ],
+    "what": [
+      "coffee",
+      "biscuit"
+    ],
+    "description": "had a coffee and a biscuit",
+    "human_turn": "Finally a coffee break with my colleague Ingrid in the pantry, coffee and a biscuit.",
+    "where": [
+      "staff pantry",
+      "university hospital",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "10:20",
+      "twenty past ten",
+      "10 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 15,
+    "with_what": [
+      "mug"
+    ],
+    "with_whom": [
+      "colleague Ingrid"
+    ]
+  },
+  "event9": {
+    "event_type": "work",
+    "event_label": "admitting a patient",
+    "who": [
+      "Daan"
+    ],
+    "what": [
+      "admission form",
+      "ECG recording"
+    ],
+    "description": "admitted a new patient, took her history and explained the ward routine",
+    "human_turn": "Then I admitted a new patient in room 12. I took her history, made an ECG and explained the ward routine to her and her daughter.",
+    "where": [
+      "room 12, cardiology ward",
+      "room 12",
+      "cardiology ward",
+      "university hospital",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "10:40",
+      "twenty to eleven",
+      "11 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 45,
+    "with_what": [
+      "computer",
+      "ECG machine"
+    ],
+    "with_whom": [
+      "the new patient",
+      "her daughter"
+    ]
+  },
+  "event10": {
+    "event_type": "meal",
+    "event_label": "lunch",
+    "who": [
+      "Daan"
+    ],
+    "what": "<PHOTO>",
+    "description": "ate soup and a bread roll",
+    "human_turn": "Lunch in the canteen with Ingrid and Mark at quarter past twelve. Someone took this picture of the three of us.",
+    "where": [
+      "hospital staff canteen",
+      "staff canteen",
+      "university hospital",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "12:15",
+      "quarter past twelve",
+      "12 o'clock",
+      "around noon",
+      "midday"
+    ],
+    "how_long": 30,
+    "with_what": "<PHOTO>",
+    "with_whom": [
+      "Ingrid",
+      "Mark"
+    ],
+    "photo": {
+      "file": "photos/generated/day2_daan_event10.png",
+      "note": "Photo a colleague took at the canteen table during lunch; three nurses with trays of soup and bread rolls",
+      "fills": [
+        "what",
+        "with_what"
+      ],
+      "gold": {
+        "what": [
+          "tomato soup",
+          "bread roll"
+        ],
+        "with_what": [
+          "bowl",
+          "spoon"
+        ]
+      },
+      "people_in_photo": [
+        {
+          "name": "Daan",
+          "role": "the narrator",
+          "position": "left",
+          "appearance": "man in his thirties with short brown hair and light stubble, light-blue nurse scrubs"
+        },
+        {
+          "name": "Ingrid",
+          "role": "colleague",
+          "position": "middle",
+          "appearance": "woman in her fifties with a short grey bob, white nurse uniform"
+        },
+        {
+          "name": "Mark",
+          "role": "colleague",
+          "position": "right",
+          "appearance": "bald man in his forties with black-rimmed glasses, navy scrubs"
+        }
+      ]
+    }
+  },
+  "event11": {
+    "event_type": "work",
+    "event_label": "paperwork",
+    "who": [
+      "Daan"
+    ],
+    "what": [
+      "patient records",
+      "nursing reports"
+    ],
+    "description": "updated patient records and wrote nursing reports",
+    "human_turn": "After lunch I spent an hour at the nurses' station updating patient records and writing my nursing reports.",
+    "where": [
+      "nurses' station",
+      "cardiology ward",
+      "university hospital",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "12:50",
+      "ten to one",
+      "1 o'clock",
+      "around noon",
+      "midday"
+    ],
+    "how_long": 60,
+    "with_what": [
+      "computer",
+      "electronic patient record system"
+    ],
+    "with_whom": []
+  },
+  "event12": {
+    "event_type": "work",
+    "event_label": "discharging a patient",
+    "who": [
+      "Daan"
+    ],
+    "what": [
+      "discharge letter",
+      "medication list"
+    ],
+    "description": "discharged an elderly patient and explained his new medication",
+    "human_turn": "At two I discharged an elderly gentleman from room 8 and went through his new medication with him and his wife.",
+    "where": [
+      "room 8, cardiology ward",
+      "room 8",
+      "cardiology ward",
+      "university hospital",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "14:00",
+      "2 o'clock",
+      "early in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 30,
+    "with_what": [
+      "printer"
+    ],
+    "with_whom": [
+      "the patient",
+      "his wife"
+    ]
+  },
+  "event13": {
+    "event_type": "work",
+    "event_label": "shift handover",
+    "who": [
+      "Daan"
+    ],
+    "what": [
+      "patient files"
+    ],
+    "description": "handed over his patients to the evening shift",
+    "human_turn": "At three I handed my patients over to Tom and Sanne from the evening shift.",
+    "where": [
+      "nurses' station",
+      "cardiology ward",
+      "university hospital",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "15:00",
+      "3 o'clock",
+      "late in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 30,
+    "with_what": [
+      "computer"
+    ],
+    "with_whom": [
+      "Tom",
+      "Sanne"
+    ]
+  },
+  "event14": {
+    "event_type": "special",
+    "event_label": "giving first aid at an accident",
+    "who": [
+      "Daan"
+    ],
+    "what": [
+      "wounds of the cyclist"
+    ],
+    "description": "on his way home he saw a cyclist get hit by a car; he gave first aid, kept the man stable and stayed with him until the ambulance arrived",
+    "human_turn": "On my way home I saw a car hit a cyclist right in front of me. I gave him first aid, kept him stable and stayed with him until the ambulance came. Someone took this photo after it arrived.",
+    "where": "<PHOTO>",
+    "when": [
+      "15:45",
+      "quarter to four",
+      "4 o'clock",
+      "late in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 35,
+    "with_what": [
+      "first-aid knowledge",
+      "his jacket as a blanket",
+      "a bystander's phone to call 112"
+    ],
+    "with_whom": "<PHOTO>",
+    "photo": {
+      "file": "photos/generated/day2_daan_event14.png",
+      "note": "Photo a bystander took after the ambulance arrived; shows the street sign, the paramedics, the police officer and bystanders",
+      "fills": [
+        "where",
+        "with_whom"
+      ],
+      "gold": {
+        "where": [
+          "crossing at the Biltstraat",
+          "Biltstraat",
+          "Utrecht",
+          "Netherlands",
+          "Europe"
+        ],
+        "with_whom": [
+          "the injured cyclist",
+          "two bystanders",
+          "ambulance paramedics",
+          "a police officer"
+        ]
+      }
+    }
+  },
+  "event15": {
+    "event_type": "travel",
+    "event_label": "cycling home",
+    "who": [
+      "Daan"
+    ],
+    "what": [],
+    "description": "cycled the rest of the way home, still shaken",
+    "human_turn": "I cycled the rest of the way home, still pretty shaken.",
+    "where": [
+      "from the Biltstraat to his apartment",
+      "on the road",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "16:25",
+      "twenty-five past four",
+      "4 o'clock",
+      "late in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 10,
+    "with_what": [
+      "e-bike"
+    ],
+    "with_whom": []
+  },
+  "event16": {
+    "event_type": "social",
+    "event_label": "talking about the day",
+    "who": [
+      "Daan"
+    ],
+    "what": [
+      "tea"
+    ],
+    "description": "told his partner about the accident over a cup of tea",
+    "human_turn": "When I got home I told Ruben all about the accident over a cup of tea.",
+    "where": [
+      "living room of his apartment",
+      "living room",
+      "his apartment",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "16:40",
+      "twenty to five",
+      "5 o'clock",
+      "late in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 45,
+    "with_what": [
+      "teapot",
+      "cups"
+    ],
+    "with_whom": [
+      "his partner Ruben"
+    ]
+  },
+  "event17": {
+    "event_type": "sport",
+    "event_label": "running",
+    "who": [
+      "Daan"
+    ],
+    "what": [],
+    "description": "went for a run to clear his head",
+    "human_turn": "Around quarter to six I went for a run in the Wilhelminapark to clear my head.",
+    "where": [
+      "Wilhelminapark",
+      "park",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "17:45",
+      "quarter to six",
+      "6 o'clock",
+      "early in the evening",
+      "evening"
+    ],
+    "how_long": 40,
+    "with_what": [
+      "running shoes",
+      "sports watch"
+    ],
+    "with_whom": []
+  },
+  "event18": {
+    "event_type": "meal",
+    "event_label": "dinner",
+    "who": [
+      "Daan"
+    ],
+    "what": [
+      "chicken stir-fry",
+      "rice"
+    ],
+    "description": "ate a stir-fry that Ruben had cooked",
+    "human_turn": "Ruben had cooked a chicken stir-fry with rice for dinner, which was exactly what I needed.",
+    "where": [
+      "dining table at home",
+      "his apartment",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "19:00",
+      "7 o'clock",
+      "in the evening",
+      "evening"
+    ],
+    "how_long": 45,
+    "with_what": [
+      "plates",
+      "chopsticks"
+    ],
+    "with_whom": [
+      "his partner Ruben"
+    ]
+  },
+  "event19": {
+    "event_type": "leisure",
+    "event_label": "reading",
+    "who": [
+      "Daan"
+    ],
+    "what": [
+      "thriller novel"
+    ],
+    "description": "read a thriller novel on the sofa",
+    "human_turn": "After dinner I read my thriller on the sofa while Ruben watched football.",
+    "where": [
+      "living room of his apartment",
+      "living room",
+      "his apartment",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "20:00",
+      "8 o'clock",
+      "in the evening",
+      "evening"
+    ],
+    "how_long": 90,
+    "with_what": [
+      "reading lamp"
+    ],
+    "with_whom": [
+      "Ruben"
+    ]
+  },
+  "event20": {
+    "event_type": "personal_care",
+    "event_label": "going to sleep",
+    "who": [
+      "Daan"
+    ],
+    "what": [],
+    "description": "went to bed early because of the early shift the next day",
+    "human_turn": "I went to bed early, at quarter to ten, because I have the early shift again tomorrow.",
+    "where": [
+      "bedroom of his apartment",
+      "bedroom",
+      "his apartment",
+      "Utrecht",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "21:45",
+      "quarter to ten",
+      "10 o'clock",
+      "late in the evening",
+      "evening"
+    ],
+    "how_long": 480,
+    "with_what": [
+      "alarm clock"
+    ],
+    "with_whom": [
+      "his partner Ruben"
+    ]
+  },
+  "coreference_chains": [
+    {
+      "entity_id": "daan",
+      "name": "Daan",
+      "type": "person",
+      "description": "the narrator, a nurse",
+      "mentions": [
+        {
+          "event": "event1",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event2",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event3",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event4",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event5",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event6",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event7",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event8",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event9",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event10",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event11",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event12",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event13",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event14",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event15",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event16",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event17",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event18",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event19",
+          "field": "who",
+          "mention": "Daan"
+        },
+        {
+          "event": "event20",
+          "field": "who",
+          "mention": "Daan"
+        }
+      ]
+    },
+    {
+      "entity_id": "ruben",
+      "name": "Ruben",
+      "type": "person",
+      "description": "Daan's partner",
+      "mentions": [
+        {
+          "event": "event1",
+          "field": "with_whom",
+          "mention": "his partner Ruben"
+        },
+        {
+          "event": "event16",
+          "field": "with_whom",
+          "mention": "his partner Ruben"
+        },
+        {
+          "event": "event18",
+          "field": "with_whom",
+          "mention": "his partner Ruben"
+        },
+        {
+          "event": "event19",
+          "field": "with_whom",
+          "mention": "Ruben"
+        },
+        {
+          "event": "event20",
+          "field": "with_whom",
+          "mention": "his partner Ruben"
+        }
+      ]
+    },
+    {
+      "entity_id": "fatima",
+      "name": "Fatima",
+      "type": "person",
+      "description": "night nurse",
+      "mentions": [
+        {
+          "event": "event5",
+          "field": "with_whom",
+          "mention": "night nurse Fatima"
+        }
+      ]
+    },
+    {
+      "entity_id": "dayshift_colleagues",
+      "name": "day-shift colleagues",
+      "type": "group",
+      "description": "two nurses on the day shift",
+      "mentions": [
+        {
+          "event": "event5",
+          "field": "with_whom",
+          "mention": "two day-shift colleagues"
+        }
+      ]
+    },
+    {
+      "entity_id": "six_patients",
+      "name": "six patients",
+      "type": "group",
+      "description": "the patients Daan cares for",
+      "mentions": [
+        {
+          "event": "event6",
+          "field": "with_whom",
+          "mention": "six patients"
+        }
+      ]
+    },
+    {
+      "entity_id": "dr_visser",
+      "name": "Dr. Visser",
+      "type": "person",
+      "description": "cardiologist",
+      "mentions": [
+        {
+          "event": "event7",
+          "field": "with_whom",
+          "mention": "cardiologist Dr. Visser"
+        }
+      ]
+    },
+    {
+      "entity_id": "intern",
+      "name": "medical intern",
+      "type": "person",
+      "description": "medical intern on the ward round",
+      "mentions": [
+        {
+          "event": "event7",
+          "field": "with_whom",
+          "mention": "a medical intern"
+        }
+      ]
+    },
+    {
+      "entity_id": "ingrid",
+      "name": "Ingrid",
+      "type": "person",
+      "description": "Daan's colleague",
+      "mentions": [
+        {
+          "event": "event8",
+          "field": "with_whom",
+          "mention": "colleague Ingrid"
+        },
+        {
+          "event": "event10",
+          "field": "with_whom",
+          "mention": "Ingrid"
+        }
+      ]
+    },
+    {
+      "entity_id": "mark",
+      "name": "Mark",
+      "type": "person",
+      "description": "Daan's colleague",
+      "mentions": [
+        {
+          "event": "event10",
+          "field": "with_whom",
+          "mention": "Mark"
+        }
+      ]
+    },
+    {
+      "entity_id": "new_patient",
+      "name": "the new patient",
+      "type": "person",
+      "description": "patient admitted to room 12",
+      "mentions": [
+        {
+          "event": "event9",
+          "field": "with_whom",
+          "mention": "the new patient"
+        }
+      ]
+    },
+    {
+      "entity_id": "patient_daughter",
+      "name": "daughter of the new patient",
+      "type": "person",
+      "description": "daughter of the patient in room 12",
+      "mentions": [
+        {
+          "event": "event9",
+          "field": "with_whom",
+          "mention": "her daughter"
+        }
+      ]
+    },
+    {
+      "entity_id": "discharged_patient",
+      "name": "the discharged patient",
+      "type": "person",
+      "description": "elderly patient discharged from room 8",
+      "mentions": [
+        {
+          "event": "event12",
+          "field": "with_whom",
+          "mention": "the patient"
+        }
+      ]
+    },
+    {
+      "entity_id": "patient_wife",
+      "name": "wife of the discharged patient",
+      "type": "person",
+      "description": "wife of the patient in room 8",
+      "mentions": [
+        {
+          "event": "event12",
+          "field": "with_whom",
+          "mention": "his wife"
+        }
+      ]
+    },
+    {
+      "entity_id": "tom",
+      "name": "Tom",
+      "type": "person",
+      "description": "evening nurse",
+      "mentions": [
+        {
+          "event": "event13",
+          "field": "with_whom",
+          "mention": "Tom"
+        }
+      ]
+    },
+    {
+      "entity_id": "sanne",
+      "name": "Sanne",
+      "type": "person",
+      "description": "evening nurse",
+      "mentions": [
+        {
+          "event": "event13",
+          "field": "with_whom",
+          "mention": "Sanne"
+        }
+      ]
+    },
+    {
+      "entity_id": "cyclist",
+      "name": "the injured cyclist",
+      "type": "person",
+      "description": "cyclist hit by a car",
+      "mentions": [
+        {
+          "event": "event14",
+          "field": "photo.gold.with_whom",
+          "mention": "the injured cyclist"
+        }
+      ]
+    },
+    {
+      "entity_id": "bystanders",
+      "name": "bystanders",
+      "type": "group",
+      "description": "two bystanders at the accident",
+      "mentions": [
+        {
+          "event": "event14",
+          "field": "photo.gold.with_whom",
+          "mention": "two bystanders"
+        }
+      ]
+    },
+    {
+      "entity_id": "paramedics",
+      "name": "paramedics",
+      "type": "group",
+      "description": "ambulance paramedics",
+      "mentions": [
+        {
+          "event": "event14",
+          "field": "photo.gold.with_whom",
+          "mention": "ambulance paramedics"
+        }
+      ]
+    },
+    {
+      "entity_id": "police_officer",
+      "name": "police officer",
+      "type": "person",
+      "description": "police officer at the accident",
+      "mentions": [
+        {
+          "event": "event14",
+          "field": "photo.gold.with_whom",
+          "mention": "a police officer"
+        }
+      ]
+    }
+  ]
+}

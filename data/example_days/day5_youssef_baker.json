@@ -1,0 +1,1104 @@
+{
+  "event1": {
+    "event_type": "personal_care",
+    "event_label": "waking up",
+    "who": [
+      "Youssef"
+    ],
+    "what": [],
+    "description": "woke up in the middle of the night to go to work",
+    "human_turn": "My alarm went off at half past three, the middle of the night. Samira didn't even notice.",
+    "where": [
+      "bedroom of his house in Haarlem",
+      "bedroom",
+      "his house",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "03:30",
+      "half past three",
+      "3 o'clock",
+      "in the middle of the night",
+      "night"
+    ],
+    "how_long": 5,
+    "with_what": [
+      "alarm clock"
+    ],
+    "with_whom": [
+      "his wife Samira"
+    ]
+  },
+  "event2": {
+    "event_type": "meal",
+    "event_label": "quick breakfast",
+    "who": [
+      "Youssef"
+    ],
+    "what": [
+      "mint tea",
+      "dates"
+    ],
+    "description": "drank mint tea and ate a few dates",
+    "human_turn": "I had a glass of mint tea and a few dates in the kitchen.",
+    "where": [
+      "kitchen at home",
+      "kitchen",
+      "his house",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "03:40",
+      "twenty to four",
+      "4 o'clock",
+      "in the middle of the night",
+      "night"
+    ],
+    "how_long": 10,
+    "with_what": [
+      "teapot",
+      "glass"
+    ],
+    "with_whom": []
+  },
+  "event3": {
+    "event_type": "travel",
+    "event_label": "driving to the bakery",
+    "who": [
+      "Youssef"
+    ],
+    "what": [],
+    "description": "drove through the empty streets to his bakery",
+    "human_turn": "Then I drove the van to the bakery. The streets were completely empty.",
+    "where": [
+      "from his house to his bakery in the city centre",
+      "on the road",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "03:55",
+      "five to four",
+      "4 o'clock",
+      "in the middle of the night",
+      "night"
+    ],
+    "how_long": 10,
+    "with_what": [
+      "delivery van"
+    ],
+    "with_whom": []
+  },
+  "event4": {
+    "event_type": "work",
+    "event_label": "preparing dough",
+    "who": [
+      "Youssef"
+    ],
+    "what": [
+      "flour",
+      "yeast",
+      "water",
+      "bread dough"
+    ],
+    "description": "mixed and kneaded dough for bread and rolls",
+    "human_turn": "From five past four my assistant Kevin and I were mixing and kneading the dough for the bread and rolls.",
+    "where": [
+      "bakery workshop",
+      "workshop",
+      "his bakery",
+      "Haarlem city centre",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "04:05",
+      "five past four",
+      "4 o'clock",
+      "in the middle of the night",
+      "night"
+    ],
+    "how_long": 75,
+    "with_what": [
+      "dough mixer",
+      "scale"
+    ],
+    "with_whom": [
+      "his assistant baker Kevin"
+    ]
+  },
+  "event5": {
+    "event_type": "work",
+    "event_label": "baking bread",
+    "who": [
+      "Youssef"
+    ],
+    "what": [
+      "bread loaves"
+    ],
+    "description": "shaped the loaves and baked the first batches of bread",
+    "human_turn": "Then Kevin and I shaped the loaves and got the first batches into the oven.",
+    "where": [
+      "bakery workshop",
+      "workshop",
+      "his bakery",
+      "Haarlem city centre",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "05:20",
+      "twenty past five",
+      "5 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 90,
+    "with_what": [
+      "deck oven",
+      "baking trays",
+      "peel"
+    ],
+    "with_whom": [
+      "Kevin"
+    ]
+  },
+  "event6": {
+    "event_type": "work",
+    "event_label": "making pastries",
+    "who": [
+      "Youssef"
+    ],
+    "what": [
+      "puff pastry",
+      "butter",
+      "apples",
+      "croissants",
+      "apple turnovers"
+    ],
+    "description": "made croissants and apple turnovers",
+    "human_turn": "Around ten to seven I made the croissants and apple turnovers on my own.",
+    "where": [
+      "bakery workshop",
+      "workshop",
+      "his bakery",
+      "Haarlem city centre",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "06:50",
+      "ten to seven",
+      "7 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 60,
+    "with_what": [
+      "rolling pin",
+      "oven"
+    ],
+    "with_whom": []
+  },
+  "event7": {
+    "event_type": "work",
+    "event_label": "opening the shop",
+    "who": [
+      "Youssef"
+    ],
+    "what": [
+      "bread",
+      "pastries"
+    ],
+    "description": "filled the display counters and opened the shop doors",
+    "human_turn": "At ten to eight Linda, my shop assistant, and I filled the display counters and opened the doors.",
+    "where": [
+      "bakery shop",
+      "shop",
+      "his bakery",
+      "Haarlem city centre",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "07:50",
+      "ten to eight",
+      "8 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "display trays"
+    ],
+    "with_whom": [
+      "shop assistant Linda"
+    ]
+  },
+  "event8": {
+    "event_type": "work",
+    "event_label": "serving customers",
+    "who": [
+      "Youssef"
+    ],
+    "what": [
+      "bread",
+      "pastries"
+    ],
+    "description": "helped customers during the morning rush",
+    "human_turn": "Then the morning rush: customers non-stop for over an hour, most of them regulars. Linda and I were both serving.",
+    "where": [
+      "bakery shop",
+      "shop",
+      "his bakery",
+      "Haarlem city centre",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "08:10",
+      "ten past eight",
+      "8 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 80,
+    "with_what": [
+      "cash register",
+      "paper bags",
+      "bread slicer"
+    ],
+    "with_whom": [
+      "Linda",
+      "many regular customers"
+    ]
+  },
+  "event9": {
+    "event_type": "special",
+    "event_label": "TV crew visiting the bakery",
+    "who": [
+      "Youssef"
+    ],
+    "what": "<PHOTO>",
+    "description": "a regional TV crew filmed his bakery and interviewed him about his award-winning bread",
+    "human_turn": "And at half past nine a crew from the regional TV station came to film the bakery and interview me about our award-winning bread! Linda took this photo during the interview.",
+    "where": [
+      "bakery workshop and shop",
+      "his bakery",
+      "Haarlem city centre",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "09:30",
+      "half past nine",
+      "9 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 90,
+    "with_what": "<PHOTO>",
+    "with_whom": "<PHOTO>",
+    "photo": {
+      "file": "photos/generated/day5_youssef_event9.png",
+      "note": "Photo Linda took during the interview; shows the sourdough loaf, the starter jar, the camera, the microphone and the TV crew",
+      "fills": [
+        "what",
+        "with_what",
+        "with_whom"
+      ],
+      "gold": {
+        "what": [
+          "sourdough bread",
+          "sourdough starter"
+        ],
+        "with_what": [
+          "TV camera",
+          "microphone"
+        ],
+        "with_whom": [
+          "a reporter from the regional TV station",
+          "a cameraman from the regional TV station",
+          "Kevin",
+          "Linda"
+        ]
+      }
+    }
+  },
+  "event10": {
+    "event_type": "meal",
+    "event_label": "late breakfast",
+    "who": [
+      "Youssef"
+    ],
+    "what": [
+      "roll",
+      "cheese",
+      "coffee"
+    ],
+    "description": "ate a fresh roll with cheese and drank coffee",
+    "human_turn": "After all that excitement I finally had breakfast at five past eleven: a fresh roll with cheese and a coffee in the office with Kevin.",
+    "where": [
+      "small office behind the bakery",
+      "office",
+      "his bakery",
+      "Haarlem city centre",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "11:05",
+      "five past eleven",
+      "11 o'clock",
+      "late in the morning",
+      "morning"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "coffee machine"
+    ],
+    "with_whom": [
+      "Kevin"
+    ]
+  },
+  "event11": {
+    "event_type": "work",
+    "event_label": "ordering supplies",
+    "who": [
+      "Youssef"
+    ],
+    "what": [
+      "flour",
+      "butter",
+      "packaging"
+    ],
+    "description": "ordered flour, butter and packaging for next week",
+    "human_turn": "Then I called our supplier's sales rep and ordered flour, butter and packaging for next week.",
+    "where": [
+      "office behind the bakery",
+      "office",
+      "his bakery",
+      "Haarlem city centre",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "11:25",
+      "twenty-five past eleven",
+      "11 o'clock",
+      "late in the morning",
+      "morning"
+    ],
+    "how_long": 30,
+    "with_what": [
+      "laptop",
+      "phone"
+    ],
+    "with_whom": [
+      "the supplier's sales representative"
+    ]
+  },
+  "event12": {
+    "event_type": "work",
+    "event_label": "delivering bread",
+    "who": [
+      "Youssef"
+    ],
+    "what": [
+      "bread"
+    ],
+    "description": "delivered bread to two restaurants and a care home",
+    "human_turn": "At noon I delivered bread to two restaurants in the centre and to the care home in Schalkwijk.",
+    "where": [
+      "Haarlem city centre and the care home in Schalkwijk",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "12:00",
+      "12 o'clock",
+      "around noon",
+      "midday"
+    ],
+    "how_long": 60,
+    "with_what": [
+      "delivery van",
+      "bread crates"
+    ],
+    "with_whom": [
+      "restaurant staff",
+      "the care home kitchen manager"
+    ]
+  },
+  "event13": {
+    "event_type": "work",
+    "event_label": "cleaning the workshop",
+    "who": [
+      "Youssef"
+    ],
+    "what": [
+      "ovens",
+      "dough mixer",
+      "work tables"
+    ],
+    "description": "cleaned the ovens, mixer and work tables",
+    "human_turn": "Back at the bakery Kevin and I cleaned the ovens, the mixer and the work tables.",
+    "where": [
+      "bakery workshop",
+      "workshop",
+      "his bakery",
+      "Haarlem city centre",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "13:10",
+      "ten past one",
+      "1 o'clock",
+      "early in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 45,
+    "with_what": [
+      "brushes",
+      "cloths",
+      "cleaning products"
+    ],
+    "with_whom": [
+      "Kevin"
+    ]
+  },
+  "event14": {
+    "event_type": "travel",
+    "event_label": "driving home",
+    "who": [
+      "Youssef"
+    ],
+    "what": [],
+    "description": "drove home after closing his part of the day",
+    "human_turn": "I drove home at two.",
+    "where": [
+      "from the bakery to his house",
+      "on the road",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "14:00",
+      "2 o'clock",
+      "early in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 10,
+    "with_what": [
+      "delivery van"
+    ],
+    "with_whom": []
+  },
+  "event15": {
+    "event_type": "personal_care",
+    "event_label": "afternoon nap",
+    "who": [
+      "Youssef"
+    ],
+    "what": [],
+    "description": "took a nap to recover from the early start",
+    "human_turn": "Then I took a two-hour nap. I really needed it after starting so early.",
+    "where": [
+      "bedroom at home",
+      "bedroom",
+      "his house",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "14:20",
+      "twenty past two",
+      "2 o'clock",
+      "early in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 120,
+    "with_what": [
+      "bed"
+    ],
+    "with_whom": []
+  },
+  "event16": {
+    "event_type": "family",
+    "event_label": "helping with homework",
+    "who": [
+      "Youssef"
+    ],
+    "what": [
+      "history test material"
+    ],
+    "description": "helped his daughter prepare for a history test",
+    "human_turn": "After my nap I helped my daughter Amira study for her history test with flashcards.",
+    "where": [
+      "living room at home",
+      "living room",
+      "his house",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "16:40",
+      "twenty to five",
+      "5 o'clock",
+      "late in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 40,
+    "with_what": [
+      "history book",
+      "flashcards"
+    ],
+    "with_whom": [
+      "his daughter Amira"
+    ]
+  },
+  "event17": {
+    "event_type": "meal",
+    "event_label": "family dinner",
+    "who": [
+      "Youssef"
+    ],
+    "what": "<PHOTO>",
+    "description": "ate chicken tagine with couscous",
+    "human_turn": "At six we had dinner with the whole family, Samira, Amira, Adam and me. Here's a photo of the table.",
+    "where": [
+      "dining table at home",
+      "his house",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "18:00",
+      "6 o'clock",
+      "early in the evening",
+      "evening"
+    ],
+    "how_long": 45,
+    "with_what": "<PHOTO>",
+    "with_whom": [
+      "his wife Samira",
+      "his daughter Amira",
+      "his son Adam"
+    ],
+    "photo": {
+      "file": "photos/generated/day5_youssef_event17.png",
+      "note": "Photo taken at the family dinner table; a chicken tagine in the middle, couscous and bread from the bakery",
+      "fills": [
+        "what",
+        "with_what"
+      ],
+      "gold": {
+        "what": [
+          "chicken tagine",
+          "couscous",
+          "bread"
+        ],
+        "with_what": [
+          "tagine pot",
+          "plates"
+        ]
+      },
+      "people_in_photo": [
+        {
+          "name": "Youssef",
+          "role": "the narrator",
+          "position": "left",
+          "appearance": "man of 45 with short black hair and a beard, checked shirt"
+        },
+        {
+          "name": "Samira",
+          "role": "wife",
+          "position": "middle left",
+          "appearance": "woman wearing a dark green headscarf"
+        },
+        {
+          "name": "Amira",
+          "role": "daughter, 13",
+          "position": "middle right",
+          "appearance": "girl of 13 with a long dark ponytail, purple sweater"
+        },
+        {
+          "name": "Adam",
+          "role": "son, 10",
+          "position": "right",
+          "appearance": "boy of 10 with short black hair, orange football shirt"
+        }
+      ]
+    }
+  },
+  "event18": {
+    "event_type": "leisure",
+    "event_label": "watching himself on TV",
+    "who": [
+      "Youssef"
+    ],
+    "what": [
+      "TV news item about the bakery"
+    ],
+    "description": "watched the regional news broadcast with the item about his bakery",
+    "human_turn": "At seven we all watched the regional news together, and there I was! I recorded it on my phone.",
+    "where": [
+      "living room at home",
+      "living room",
+      "his house",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "19:00",
+      "7 o'clock",
+      "in the evening",
+      "evening"
+    ],
+    "how_long": 30,
+    "with_what": [
+      "television",
+      "phone to record it"
+    ],
+    "with_whom": [
+      "Samira",
+      "Amira",
+      "Adam"
+    ]
+  },
+  "event19": {
+    "event_type": "communication",
+    "event_label": "reading messages",
+    "who": [
+      "Youssef"
+    ],
+    "what": [
+      "congratulation messages"
+    ],
+    "description": "read and answered congratulation messages from friends and customers",
+    "human_turn": "Afterwards I spent half an hour on the sofa answering all the congratulation messages on Instagram from friends, family and customers.",
+    "where": [
+      "sofa in the living room",
+      "living room",
+      "his house",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "19:30",
+      "half past seven",
+      "7 o'clock",
+      "in the evening",
+      "evening"
+    ],
+    "how_long": 30,
+    "with_what": [
+      "mobile phone",
+      "Instagram"
+    ],
+    "with_whom": [
+      "friends",
+      "family",
+      "customers"
+    ]
+  },
+  "event20": {
+    "event_type": "personal_care",
+    "event_label": "going to sleep",
+    "who": [
+      "Youssef"
+    ],
+    "what": [],
+    "description": "went to bed early for the next night's baking",
+    "human_turn": "Then I went to bed at half past eight, because the baking starts again tonight.",
+    "where": [
+      "bedroom at home",
+      "bedroom",
+      "his house",
+      "Haarlem",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "20:30",
+      "half past eight",
+      "8 o'clock",
+      "in the evening",
+      "evening"
+    ],
+    "how_long": 420,
+    "with_what": [
+      "alarm clock"
+    ],
+    "with_whom": []
+  },
+  "coreference_chains": [
+    {
+      "entity_id": "youssef",
+      "name": "Youssef",
+      "type": "person",
+      "description": "the narrator, a baker",
+      "mentions": [
+        {
+          "event": "event1",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event2",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event3",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event4",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event5",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event6",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event7",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event8",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event9",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event10",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event11",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event12",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event13",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event14",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event15",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event16",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event17",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event18",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event19",
+          "field": "who",
+          "mention": "Youssef"
+        },
+        {
+          "event": "event20",
+          "field": "who",
+          "mention": "Youssef"
+        }
+      ]
+    },
+    {
+      "entity_id": "samira",
+      "name": "Samira",
+      "type": "person",
+      "description": "Youssef's wife",
+      "mentions": [
+        {
+          "event": "event1",
+          "field": "with_whom",
+          "mention": "his wife Samira"
+        },
+        {
+          "event": "event17",
+          "field": "with_whom",
+          "mention": "his wife Samira"
+        },
+        {
+          "event": "event18",
+          "field": "with_whom",
+          "mention": "Samira"
+        }
+      ]
+    },
+    {
+      "entity_id": "amira",
+      "name": "Amira",
+      "type": "person",
+      "description": "Youssef's daughter, 13",
+      "mentions": [
+        {
+          "event": "event16",
+          "field": "with_whom",
+          "mention": "his daughter Amira"
+        },
+        {
+          "event": "event17",
+          "field": "with_whom",
+          "mention": "his daughter Amira"
+        },
+        {
+          "event": "event18",
+          "field": "with_whom",
+          "mention": "Amira"
+        }
+      ]
+    },
+    {
+      "entity_id": "adam",
+      "name": "Adam",
+      "type": "person",
+      "description": "Youssef's son, 10",
+      "mentions": [
+        {
+          "event": "event17",
+          "field": "with_whom",
+          "mention": "his son Adam"
+        },
+        {
+          "event": "event18",
+          "field": "with_whom",
+          "mention": "Adam"
+        }
+      ]
+    },
+    {
+      "entity_id": "kevin",
+      "name": "Kevin",
+      "type": "person",
+      "description": "Youssef's assistant baker",
+      "mentions": [
+        {
+          "event": "event4",
+          "field": "with_whom",
+          "mention": "his assistant baker Kevin"
+        },
+        {
+          "event": "event5",
+          "field": "with_whom",
+          "mention": "Kevin"
+        },
+        {
+          "event": "event9",
+          "field": "photo.gold.with_whom",
+          "mention": "Kevin"
+        },
+        {
+          "event": "event10",
+          "field": "with_whom",
+          "mention": "Kevin"
+        },
+        {
+          "event": "event13",
+          "field": "with_whom",
+          "mention": "Kevin"
+        }
+      ]
+    },
+    {
+      "entity_id": "linda",
+      "name": "Linda",
+      "type": "person",
+      "description": "shop assistant in the bakery",
+      "mentions": [
+        {
+          "event": "event7",
+          "field": "with_whom",
+          "mention": "shop assistant Linda"
+        },
+        {
+          "event": "event8",
+          "field": "with_whom",
+          "mention": "Linda"
+        },
+        {
+          "event": "event9",
+          "field": "photo.gold.with_whom",
+          "mention": "Linda"
+        }
+      ]
+    },
+    {
+      "entity_id": "regular_customers",
+      "name": "regular customers",
+      "type": "group",
+      "description": "regular customers during the morning rush",
+      "mentions": [
+        {
+          "event": "event8",
+          "field": "with_whom",
+          "mention": "many regular customers"
+        }
+      ]
+    },
+    {
+      "entity_id": "reporter",
+      "name": "the reporter",
+      "type": "person",
+      "description": "reporter of the regional TV station",
+      "mentions": [
+        {
+          "event": "event9",
+          "field": "photo.gold.with_whom",
+          "mention": "a reporter from the regional TV station"
+        }
+      ]
+    },
+    {
+      "entity_id": "cameraman",
+      "name": "the cameraman",
+      "type": "person",
+      "description": "cameraman of the regional TV station",
+      "mentions": [
+        {
+          "event": "event9",
+          "field": "photo.gold.with_whom",
+          "mention": "a cameraman from the regional TV station"
+        }
+      ]
+    },
+    {
+      "entity_id": "sales_rep",
+      "name": "the sales representative",
+      "type": "person",
+      "description": "the supplier's sales representative",
+      "mentions": [
+        {
+          "event": "event11",
+          "field": "with_whom",
+          "mention": "the supplier's sales representative"
+        }
+      ]
+    },
+    {
+      "entity_id": "restaurant_staff",
+      "name": "restaurant staff",
+      "type": "group",
+      "description": "staff of the two restaurants Youssef delivers to",
+      "mentions": [
+        {
+          "event": "event12",
+          "field": "with_whom",
+          "mention": "restaurant staff"
+        }
+      ]
+    },
+    {
+      "entity_id": "kitchen_manager",
+      "name": "the care home kitchen manager",
+      "type": "person",
+      "description": "kitchen manager of the care home in Schalkwijk",
+      "mentions": [
+        {
+          "event": "event12",
+          "field": "with_whom",
+          "mention": "the care home kitchen manager"
+        }
+      ]
+    },
+    {
+      "entity_id": "friends",
+      "name": "friends",
+      "type": "group",
+      "description": "friends sending congratulations online",
+      "mentions": [
+        {
+          "event": "event19",
+          "field": "with_whom",
+          "mention": "friends"
+        }
+      ]
+    },
+    {
+      "entity_id": "family",
+      "name": "family",
+      "type": "group",
+      "description": "relatives sending congratulations online",
+      "mentions": [
+        {
+          "event": "event19",
+          "field": "with_whom",
+          "mention": "family"
+        }
+      ]
+    },
+    {
+      "entity_id": "customers",
+      "name": "customers",
+      "type": "group",
+      "description": "customers sending congratulations online",
+      "mentions": [
+        {
+          "event": "event19",
+          "field": "with_whom",
+          "mention": "customers"
+        }
+      ]
+    }
+  ]
+}

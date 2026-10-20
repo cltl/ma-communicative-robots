@@ -1,0 +1,1013 @@
+{
+  "event1": {
+    "event_type": "personal_care",
+    "event_label": "waking up",
+    "who": [
+      "Henk"
+    ],
+    "what": [
+      "radio news"
+    ],
+    "description": "woke up without an alarm and listened to the radio news in bed",
+    "human_turn": "I woke up at quarter to seven, no alarm needed, and listened to the news on the radio for a bit. Gerda was still lying next to me.",
+    "where": [
+      "bedroom of his house in Zwolle",
+      "bedroom",
+      "his house",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "06:45",
+      "quarter to seven",
+      "7 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 15,
+    "with_what": [
+      "bedside radio"
+    ],
+    "with_whom": [
+      "his wife Gerda"
+    ]
+  },
+  "event2": {
+    "event_type": "pet_care",
+    "event_label": "walking the dog",
+    "who": [
+      "Henk"
+    ],
+    "what": [],
+    "description": "took the dog for a morning walk along the river",
+    "human_turn": "Then I took Bobbie for his morning walk along the IJssel. Forty minutes or so.",
+    "where": [
+      "path along the IJssel river",
+      "IJssel river",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "07:10",
+      "ten past seven",
+      "7 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 40,
+    "with_what": [
+      "leash",
+      "poop bags"
+    ],
+    "with_whom": [
+      "his dog Bobbie"
+    ]
+  },
+  "event3": {
+    "event_type": "meal",
+    "event_label": "breakfast",
+    "who": [
+      "Henk"
+    ],
+    "what": [
+      "brown bread",
+      "cheese",
+      "boiled egg",
+      "tea"
+    ],
+    "description": "ate brown bread with cheese and a boiled egg and drank tea",
+    "human_turn": "Breakfast with Gerda at the kitchen table: brown bread with cheese, a boiled egg and a pot of tea.",
+    "where": [
+      "kitchen table at home",
+      "kitchen",
+      "his house",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "08:00",
+      "8 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 30,
+    "with_what": [
+      "plate",
+      "knife",
+      "teapot"
+    ],
+    "with_whom": [
+      "his wife Gerda"
+    ]
+  },
+  "event4": {
+    "event_type": "leisure",
+    "event_label": "reading the newspaper",
+    "who": [
+      "Henk"
+    ],
+    "what": [
+      "local newspaper",
+      "crossword puzzle"
+    ],
+    "description": "read the local newspaper and did the crossword puzzle",
+    "human_turn": "After that I sat in my armchair with the local paper and did the crossword.",
+    "where": [
+      "armchair in the living room",
+      "living room",
+      "his house",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "08:30",
+      "half past eight",
+      "8 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 45,
+    "with_what": [
+      "reading glasses",
+      "pen"
+    ],
+    "with_whom": []
+  },
+  "event5": {
+    "event_type": "health",
+    "event_label": "taking medication",
+    "who": [
+      "Henk"
+    ],
+    "what": [
+      "blood pressure pills"
+    ],
+    "description": "took his blood pressure pills",
+    "human_turn": "At quarter past nine it was time for my blood pressure pills, with a glass of water in the kitchen.",
+    "where": [
+      "kitchen",
+      "his house",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "09:15",
+      "quarter past nine",
+      "9 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 2,
+    "with_what": [
+      "pill organiser",
+      "glass of water"
+    ],
+    "with_whom": []
+  },
+  "event6": {
+    "event_type": "hobby",
+    "event_label": "gardening",
+    "who": [
+      "Henk"
+    ],
+    "what": [
+      "tomato plants",
+      "tomatoes",
+      "rose bushes"
+    ],
+    "description": "picked the last tomatoes and pruned the rose bushes",
+    "human_turn": "Then I spent over an hour in the back garden. I picked the last of the tomatoes and pruned the rose bushes.",
+    "where": [
+      "back garden",
+      "garden",
+      "his house",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "09:30",
+      "half past nine",
+      "9 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 75,
+    "with_what": [
+      "pruning shears",
+      "gardening gloves",
+      "basket"
+    ],
+    "with_whom": []
+  },
+  "event7": {
+    "event_type": "social",
+    "event_label": "coffee with the neighbour",
+    "who": [
+      "Henk"
+    ],
+    "what": [
+      "coffee",
+      "cake"
+    ],
+    "description": "drank coffee and talked about the neighbourhood and football",
+    "human_turn": "Willem from next door had me over for coffee and cake on his porch. We talked about the neighbourhood and the football, as usual.",
+    "where": [
+      "neighbour's front porch",
+      "neighbour's house",
+      "his street",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "10:50",
+      "ten to eleven",
+      "11 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 30,
+    "with_what": [
+      "cups",
+      "plates"
+    ],
+    "with_whom": [
+      "neighbour Willem"
+    ]
+  },
+  "event8": {
+    "event_type": "communication",
+    "event_label": "hearing about the birth",
+    "who": [
+      "Henk"
+    ],
+    "what": [
+      "news of the birth"
+    ],
+    "description": "received a phone call from his son that his first grandchild, a girl named Noor, had just been born healthy",
+    "human_turn": "And then, around twenty-five past eleven, my son Jeroen called: our first grandchild has been born, a healthy little girl called Noor! Gerda was right beside me.",
+    "where": [
+      "his living room",
+      "living room",
+      "his house",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "11:25",
+      "twenty-five past eleven",
+      "11 o'clock",
+      "late in the morning",
+      "morning"
+    ],
+    "how_long": 10,
+    "with_what": [
+      "landline telephone"
+    ],
+    "with_whom": [
+      "his son Jeroen",
+      "his wife Gerda"
+    ]
+  },
+  "event9": {
+    "event_type": "communication",
+    "event_label": "spreading the news",
+    "who": [
+      "Henk"
+    ],
+    "what": [
+      "news of the birth"
+    ],
+    "description": "called his sister and his brother to tell them about the baby",
+    "human_turn": "Of course I immediately rang my sister Annie and my brother Kees to tell them about the baby.",
+    "where": [
+      "living room at home",
+      "living room",
+      "his house",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "11:40",
+      "twenty to twelve",
+      "12 o'clock",
+      "late in the morning",
+      "morning"
+    ],
+    "how_long": 25,
+    "with_what": [
+      "landline telephone"
+    ],
+    "with_whom": [
+      "his sister Annie",
+      "his brother Kees"
+    ]
+  },
+  "event10": {
+    "event_type": "meal",
+    "event_label": "lunch",
+    "who": [
+      "Henk"
+    ],
+    "what": [
+      "pea soup",
+      "bread"
+    ],
+    "description": "ate a quick lunch of soup and bread",
+    "human_turn": "Gerda and I had a quick lunch, pea soup and some bread.",
+    "where": [
+      "kitchen table at home",
+      "kitchen",
+      "his house",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "12:10",
+      "ten past twelve",
+      "12 o'clock",
+      "around noon",
+      "midday"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "bowl",
+      "spoon"
+    ],
+    "with_whom": [
+      "his wife Gerda"
+    ]
+  },
+  "event11": {
+    "event_type": "shopping",
+    "event_label": "buying a gift",
+    "who": [
+      "Henk"
+    ],
+    "what": [
+      "teddy bear",
+      "flowers",
+      "beschuit met muisjes"
+    ],
+    "description": "bought a teddy bear, flowers and a box of traditional 'beschuit met muisjes'",
+    "human_turn": "Then we went into town to buy presents: a teddy bear, flowers and a box of beschuit met muisjes.",
+    "where": [
+      "shops in the city centre of Zwolle",
+      "city centre",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "12:45",
+      "quarter to one",
+      "1 o'clock",
+      "around noon",
+      "midday"
+    ],
+    "how_long": 45,
+    "with_what": [
+      "wallet",
+      "shopping bag"
+    ],
+    "with_whom": [
+      "his wife Gerda"
+    ]
+  },
+  "event12": {
+    "event_type": "travel",
+    "event_label": "driving to the hospital",
+    "who": [
+      "Henk"
+    ],
+    "what": [],
+    "description": "drove to the hospital where his grandchild was born",
+    "human_turn": "At quarter to two Gerda and I drove to the hospital in Deventer.",
+    "where": [
+      "from Zwolle to the hospital in Deventer",
+      "on the road",
+      "between Zwolle and Deventer",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "13:45",
+      "quarter to two",
+      "2 o'clock",
+      "early in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 45,
+    "with_what": [
+      "car"
+    ],
+    "with_whom": [
+      "his wife Gerda"
+    ]
+  },
+  "event13": {
+    "event_type": "special",
+    "event_label": "meeting his granddaughter",
+    "who": [
+      "Henk"
+    ],
+    "what": "<PHOTO>",
+    "description": "held his first grandchild in his arms for the first time and gave the family the gifts he had bought",
+    "human_turn": "And there she was. I held my granddaughter in my arms for the very first time. Jeroen took this photo of us all.",
+    "where": "<PHOTO>",
+    "when": [
+      "14:35",
+      "twenty-five to three",
+      "3 o'clock",
+      "early in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 90,
+    "with_what": [
+      "phone camera"
+    ],
+    "with_whom": "<PHOTO>",
+    "photo": {
+      "file": "photos/generated/day3_henk_event13.png",
+      "note": "Photo his son took in the hospital room; shows the ward sign, the gifts, the family and the cot with the baby's name",
+      "fills": [
+        "what",
+        "where",
+        "with_whom"
+      ],
+      "gold": {
+        "what": [
+          "teddy bear",
+          "flowers",
+          "beschuit met muisjes"
+        ],
+        "where": [
+          "maternity ward of the Deventer hospital",
+          "maternity ward",
+          "Deventer hospital",
+          "Deventer",
+          "Netherlands",
+          "Europe"
+        ],
+        "with_whom": [
+          "his wife Gerda",
+          "his son Jeroen",
+          "daughter-in-law Sarah",
+          "his newborn granddaughter Noor"
+        ]
+      }
+    }
+  },
+  "event14": {
+    "event_type": "travel",
+    "event_label": "driving home",
+    "who": [
+      "Henk"
+    ],
+    "what": [],
+    "description": "drove back home",
+    "human_turn": "At ten past four we drove back home.",
+    "where": [
+      "from Deventer to Zwolle",
+      "on the road",
+      "between Deventer and Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "16:10",
+      "ten past four",
+      "4 o'clock",
+      "late in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 50,
+    "with_what": [
+      "car"
+    ],
+    "with_whom": [
+      "his wife Gerda"
+    ]
+  },
+  "event15": {
+    "event_type": "pet_care",
+    "event_label": "feeding the dog",
+    "who": [
+      "Henk"
+    ],
+    "what": [
+      "dog food"
+    ],
+    "description": "fed the dog and let him out in the garden",
+    "human_turn": "Back home I fed Bobbie and let him out in the garden.",
+    "where": [
+      "kitchen and back garden",
+      "his house",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "17:05",
+      "five past five",
+      "5 o'clock",
+      "early in the evening",
+      "evening"
+    ],
+    "how_long": 10,
+    "with_what": [
+      "bowl"
+    ],
+    "with_whom": [
+      "his dog Bobbie"
+    ]
+  },
+  "event16": {
+    "event_type": "household",
+    "event_label": "cooking dinner",
+    "who": [
+      "Henk"
+    ],
+    "what": [
+      "potatoes",
+      "green beans",
+      "meatballs"
+    ],
+    "description": "cooked potatoes, green beans and meatballs",
+    "human_turn": "Then I cooked dinner myself: potatoes, green beans and meatballs.",
+    "where": [
+      "kitchen at home",
+      "kitchen",
+      "his house",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "17:20",
+      "twenty past five",
+      "5 o'clock",
+      "early in the evening",
+      "evening"
+    ],
+    "how_long": 40,
+    "with_what": [
+      "pots",
+      "frying pan",
+      "stove"
+    ],
+    "with_whom": []
+  },
+  "event17": {
+    "event_type": "meal",
+    "event_label": "dinner",
+    "who": [
+      "Henk"
+    ],
+    "what": "<PHOTO>",
+    "description": "ate dinner and looked at photos of the baby on the phone",
+    "human_turn": "At dinner I kept showing Gerda the photos of the baby on my phone. Here's a picture of us at the table.",
+    "where": [
+      "dining table at home",
+      "his house",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "18:00",
+      "6 o'clock",
+      "early in the evening",
+      "evening"
+    ],
+    "how_long": 45,
+    "with_what": "<PHOTO>",
+    "with_whom": [
+      "his wife Gerda"
+    ],
+    "photo": {
+      "file": "photos/generated/day3_henk_event17.png",
+      "note": "Photo taken at the dinner table; Henk shows Gerda photos of the newborn baby on his phone next to their plates",
+      "fills": [
+        "what",
+        "with_what"
+      ],
+      "gold": {
+        "what": [
+          "potatoes",
+          "green beans",
+          "meatballs",
+          "baby photos"
+        ],
+        "with_what": [
+          "plates",
+          "cutlery",
+          "mobile phone"
+        ]
+      },
+      "people_in_photo": [
+        {
+          "name": "Henk",
+          "role": "the narrator",
+          "position": "left",
+          "appearance": "man of 71 with short grey hair, navy sweater"
+        },
+        {
+          "name": "Gerda",
+          "role": "wife",
+          "position": "right",
+          "appearance": "woman of 70 with shoulder-length grey-brown hair and glasses, beige cardigan"
+        }
+      ]
+    }
+  },
+  "event18": {
+    "event_type": "leisure",
+    "event_label": "watching TV",
+    "who": [
+      "Henk"
+    ],
+    "what": [
+      "evening news",
+      "quiz show"
+    ],
+    "description": "watched the evening news and a quiz show",
+    "human_turn": "In the evening Gerda and I watched the news and then a quiz show.",
+    "where": [
+      "living room at home",
+      "living room",
+      "his house",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "19:00",
+      "7 o'clock",
+      "in the evening",
+      "evening"
+    ],
+    "how_long": 90,
+    "with_what": [
+      "television"
+    ],
+    "with_whom": [
+      "his wife Gerda"
+    ]
+  },
+  "event19": {
+    "event_type": "pet_care",
+    "event_label": "evening dog walk",
+    "who": [
+      "Henk"
+    ],
+    "what": [],
+    "description": "took the dog out for a short evening walk around the block",
+    "human_turn": "At half past nine I took Bobbie around the block once more, with a flashlight because it was already dark.",
+    "where": [
+      "his street and the nearby park",
+      "his neighbourhood",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "21:30",
+      "half past nine",
+      "9 o'clock",
+      "late in the evening",
+      "evening"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "leash",
+      "flashlight"
+    ],
+    "with_whom": [
+      "his dog Bobbie"
+    ]
+  },
+  "event20": {
+    "event_type": "personal_care",
+    "event_label": "going to sleep",
+    "who": [
+      "Henk"
+    ],
+    "what": [
+      "front door",
+      "back door"
+    ],
+    "description": "locked the doors and went to bed",
+    "human_turn": "Then I locked the doors and Gerda and I went to bed, around quarter past ten.",
+    "where": [
+      "bedroom of his house",
+      "bedroom",
+      "his house",
+      "Zwolle",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "22:15",
+      "quarter past ten",
+      "10 o'clock",
+      "late in the evening",
+      "evening"
+    ],
+    "how_long": 510,
+    "with_what": [
+      "house keys"
+    ],
+    "with_whom": [
+      "his wife Gerda"
+    ]
+  },
+  "coreference_chains": [
+    {
+      "entity_id": "henk",
+      "name": "Henk",
+      "type": "person",
+      "description": "the narrator, a retiree",
+      "mentions": [
+        {
+          "event": "event1",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event2",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event3",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event4",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event5",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event6",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event7",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event8",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event9",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event10",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event11",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event12",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event13",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event14",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event15",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event16",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event17",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event18",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event19",
+          "field": "who",
+          "mention": "Henk"
+        },
+        {
+          "event": "event20",
+          "field": "who",
+          "mention": "Henk"
+        }
+      ]
+    },
+    {
+      "entity_id": "gerda",
+      "name": "Gerda",
+      "type": "person",
+      "description": "Henk's wife",
+      "mentions": [
+        {
+          "event": "event1",
+          "field": "with_whom",
+          "mention": "his wife Gerda"
+        },
+        {
+          "event": "event3",
+          "field": "with_whom",
+          "mention": "his wife Gerda"
+        },
+        {
+          "event": "event8",
+          "field": "with_whom",
+          "mention": "his wife Gerda"
+        },
+        {
+          "event": "event10",
+          "field": "with_whom",
+          "mention": "his wife Gerda"
+        },
+        {
+          "event": "event11",
+          "field": "with_whom",
+          "mention": "his wife Gerda"
+        },
+        {
+          "event": "event12",
+          "field": "with_whom",
+          "mention": "his wife Gerda"
+        },
+        {
+          "event": "event13",
+          "field": "photo.gold.with_whom",
+          "mention": "his wife Gerda"
+        },
+        {
+          "event": "event14",
+          "field": "with_whom",
+          "mention": "his wife Gerda"
+        },
+        {
+          "event": "event17",
+          "field": "with_whom",
+          "mention": "his wife Gerda"
+        },
+        {
+          "event": "event18",
+          "field": "with_whom",
+          "mention": "his wife Gerda"
+        },
+        {
+          "event": "event20",
+          "field": "with_whom",
+          "mention": "his wife Gerda"
+        }
+      ]
+    },
+    {
+      "entity_id": "bobbie",
+      "name": "Bobbie",
+      "type": "animal",
+      "description": "Henk's dog",
+      "mentions": [
+        {
+          "event": "event2",
+          "field": "with_whom",
+          "mention": "his dog Bobbie"
+        },
+        {
+          "event": "event15",
+          "field": "with_whom",
+          "mention": "his dog Bobbie"
+        },
+        {
+          "event": "event19",
+          "field": "with_whom",
+          "mention": "his dog Bobbie"
+        }
+      ]
+    },
+    {
+      "entity_id": "willem",
+      "name": "Willem",
+      "type": "person",
+      "description": "Henk's neighbour",
+      "mentions": [
+        {
+          "event": "event7",
+          "field": "with_whom",
+          "mention": "neighbour Willem"
+        }
+      ]
+    },
+    {
+      "entity_id": "jeroen",
+      "name": "Jeroen",
+      "type": "person",
+      "description": "Henk's son",
+      "mentions": [
+        {
+          "event": "event8",
+          "field": "with_whom",
+          "mention": "his son Jeroen"
+        },
+        {
+          "event": "event13",
+          "field": "photo.gold.with_whom",
+          "mention": "his son Jeroen"
+        }
+      ]
+    },
+    {
+      "entity_id": "annie",
+      "name": "Annie",
+      "type": "person",
+      "description": "Henk's sister",
+      "mentions": [
+        {
+          "event": "event9",
+          "field": "with_whom",
+          "mention": "his sister Annie"
+        }
+      ]
+    },
+    {
+      "entity_id": "kees",
+      "name": "Kees",
+      "type": "person",
+      "description": "Henk's brother",
+      "mentions": [
+        {
+          "event": "event9",
+          "field": "with_whom",
+          "mention": "his brother Kees"
+        }
+      ]
+    },
+    {
+      "entity_id": "sarah",
+      "name": "Sarah",
+      "type": "person",
+      "description": "Henk's daughter-in-law, Jeroen's partner",
+      "mentions": [
+        {
+          "event": "event13",
+          "field": "photo.gold.with_whom",
+          "mention": "daughter-in-law Sarah"
+        }
+      ]
+    },
+    {
+      "entity_id": "noor",
+      "name": "Noor",
+      "type": "person",
+      "description": "Henk's newborn granddaughter",
+      "mentions": [
+        {
+          "event": "event13",
+          "field": "photo.gold.with_whom",
+          "mention": "his newborn granddaughter Noor"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1054 @@
+{
+  "event1": {
+    "event_type": "personal_care",
+    "event_label": "waking up",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "woke up to her phone alarm and snoozed it once",
+    "human_turn": "My alarm went off at half past seven this morning and of course I hit snooze once before I actually got up.",
+    "where": [
+      "bedroom in her student flat",
+      "bedroom",
+      "her student flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "07:30",
+      "half past seven",
+      "7 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 10,
+    "with_what": [
+      "phone alarm"
+    ],
+    "with_whom": []
+  },
+  "event2": {
+    "event_type": "personal_care",
+    "event_label": "showering",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "clothes"
+    ],
+    "description": "took a shower and got dressed",
+    "human_turn": "Then I jumped in the shower, dried my hair and got dressed.",
+    "where": [
+      "shared bathroom in the student flat",
+      "bathroom",
+      "her student flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "07:40",
+      "twenty to eight",
+      "8 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "shower",
+      "towel",
+      "hairdryer"
+    ],
+    "with_whom": []
+  },
+  "event3": {
+    "event_type": "meal",
+    "event_label": "breakfast",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "yoghurt",
+      "granola",
+      "coffee"
+    ],
+    "description": "ate yoghurt with granola and drank coffee while chatting",
+    "human_turn": "I had breakfast in the kitchen with my flatmate Lotte, just yoghurt with granola and a coffee, and we chatted for a bit.",
+    "where": [
+      "shared kitchen in the student flat",
+      "kitchen",
+      "her student flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "08:00",
+      "8 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "bowl",
+      "spoon",
+      "mug"
+    ],
+    "with_whom": [
+      "flatmate Lotte"
+    ]
+  },
+  "event4": {
+    "event_type": "travel",
+    "event_label": "cycling to university",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "cycled to the university campus in light rain",
+    "human_turn": "Around twenty-five past eight I cycled to campus. It was drizzling the whole way, so I was glad I had my rain jacket.",
+    "where": [
+      "from her flat in Oost to the university campus",
+      "on the road",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "08:25",
+      "twenty-five past eight",
+      "8 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "bicycle",
+      "rain jacket"
+    ],
+    "with_whom": []
+  },
+  "event5": {
+    "event_type": "study",
+    "event_label": "attending lecture",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "lecture notes"
+    ],
+    "description": "attended a lecture on cognitive psychology and took notes",
+    "human_turn": "At nine I had a cognitive psychology lecture, almost two hours. The hall was packed, there must have been 150 of us, and I took notes the whole time.",
+    "where": [
+      "lecture hall in the main university building",
+      "lecture hall",
+      "main university building",
+      "university campus",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "09:00",
+      "9 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 105,
+    "with_what": [
+      "laptop",
+      "notebook"
+    ],
+    "with_whom": [
+      "about 150 fellow students",
+      "the lecturer"
+    ]
+  },
+  "event6": {
+    "event_type": "social",
+    "event_label": "coffee break",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "cappuccino"
+    ],
+    "description": "bought a cappuccino and talked about the upcoming exam",
+    "human_turn": "After the lecture I grabbed a cappuccino at the campus café with my classmates Jonas and Mila. We mostly talked about the exam that's coming up.",
+    "where": [
+      "campus café",
+      "café",
+      "university campus",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "10:50",
+      "ten to eleven",
+      "11 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 15,
+    "with_what": [
+      "debit card"
+    ],
+    "with_whom": [
+      "Jonas",
+      "Mila"
+    ]
+  },
+  "event7": {
+    "event_type": "study",
+    "event_label": "group project meeting",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "presentation slides"
+    ],
+    "description": "worked on a group presentation about memory experiments",
+    "human_turn": "Then Jonas, Mila, Sven and I sat in a study room in the library for over an hour working on our group presentation about memory experiments.",
+    "where": [
+      "study room in the university library",
+      "study room",
+      "university library",
+      "university campus",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "11:10",
+      "ten past eleven",
+      "11 o'clock",
+      "late in the morning",
+      "morning"
+    ],
+    "how_long": 80,
+    "with_what": [
+      "laptop",
+      "whiteboard"
+    ],
+    "with_whom": [
+      "Jonas",
+      "Mila",
+      "Sven"
+    ]
+  },
+  "event8": {
+    "event_type": "meal",
+    "event_label": "lunch",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "cheese sandwich",
+      "apple"
+    ],
+    "description": "ate a cheese sandwich and an apple she brought from home",
+    "human_turn": "Lunch was just a cheese sandwich and an apple I'd brought from home. Mila and I ate on the bench outside the library.",
+    "where": [
+      "bench outside the library",
+      "bench",
+      "outside the university library",
+      "university campus",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "12:35",
+      "twenty-five to one",
+      "1 o'clock",
+      "around noon",
+      "midday"
+    ],
+    "how_long": 25,
+    "with_what": [
+      "lunch box",
+      "water bottle"
+    ],
+    "with_whom": [
+      "Mila"
+    ]
+  },
+  "event9": {
+    "event_type": "special",
+    "event_label": "signing an internship contract",
+    "who": [
+      "Emma"
+    ],
+    "what": "<PHOTO>",
+    "description": "cycled to the hospital lab she had interviewed at, was offered a paid research internship and signed the contract on the spot",
+    "human_turn": "Big news! Just after one I cycled over to the hospital lab where I had my interview, and they offered me a paid research internship. I signed on the spot! They took this photo of me.",
+    "where": "<PHOTO>",
+    "when": [
+      "13:05",
+      "five past one",
+      "1 o'clock",
+      "early in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 40,
+    "with_what": [
+      "pen"
+    ],
+    "with_whom": "<PHOTO>",
+    "photo": {
+      "file": "photos/generated/day1_emma_event9.png",
+      "note": "Photo the lab took of Emma signing; shows the lab sign, the contract and Dr. Bakker's name badge",
+      "fills": [
+        "what",
+        "where",
+        "with_whom"
+      ],
+      "gold": {
+        "what": [
+          "internship contract"
+        ],
+        "where": [
+          "Memory Research Lab, City Hospital",
+          "Memory Research Lab",
+          "City Hospital",
+          "Amsterdam",
+          "Netherlands",
+          "Europe"
+        ],
+        "with_whom": [
+          "Dr. Bakker, the lab supervisor"
+        ]
+      }
+    }
+  },
+  "event10": {
+    "event_type": "communication",
+    "event_label": "calling parents",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "called her parents to tell them the news about the internship",
+    "human_turn": "Right after that I stood outside the hospital and video-called my mum and dad to tell them the news. They were so happy for me.",
+    "where": [
+      "outside the hospital",
+      "City Hospital",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "13:50",
+      "ten to two",
+      "2 o'clock",
+      "early in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 15,
+    "with_what": [
+      "mobile phone (video call)"
+    ],
+    "with_whom": [
+      "her mother",
+      "her father"
+    ]
+  },
+  "event11": {
+    "event_type": "study",
+    "event_label": "self-study",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "summary notes",
+      "textbook"
+    ],
+    "description": "studied lecture slides and made summary notes for her exam",
+    "human_turn": "Then back to the silent area of the library for an hour and a half, going through the lecture slides and making summary notes for my exam.",
+    "where": [
+      "silent study area of the university library",
+      "silent study area",
+      "university library",
+      "university campus",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "14:15",
+      "quarter past two",
+      "2 o'clock",
+      "early in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 90,
+    "with_what": [
+      "laptop",
+      "highlighters"
+    ],
+    "with_whom": []
+  },
+  "event12": {
+    "event_type": "travel",
+    "event_label": "cycling to the supermarket",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "cycled from campus to the supermarket",
+    "human_turn": "At ten to four I biked from campus to the Albert Heijn near my place.",
+    "where": [
+      "from campus to the Albert Heijn near her flat",
+      "on the road",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "15:50",
+      "ten to four",
+      "4 o'clock",
+      "late in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 15,
+    "with_what": [
+      "bicycle"
+    ],
+    "with_whom": []
+  },
+  "event13": {
+    "event_type": "shopping",
+    "event_label": "grocery shopping",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "pasta",
+      "vegetables",
+      "cheese",
+      "bottle of prosecco"
+    ],
+    "description": "bought pasta, vegetables, cheese and a bottle of prosecco to celebrate",
+    "human_turn": "I bought pasta, vegetables, cheese and a bottle of prosecco, because this obviously needed celebrating!",
+    "where": [
+      "Albert Heijn supermarket",
+      "supermarket",
+      "near her flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "16:05",
+      "five past four",
+      "4 o'clock",
+      "late in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "shopping bag",
+      "debit card"
+    ],
+    "with_whom": []
+  },
+  "event14": {
+    "event_type": "sport",
+    "event_label": "going to the gym",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "did a spinning class",
+    "human_turn": "At five I did a spinning class at the university sports centre. It was quite full, about twenty people plus the instructor.",
+    "where": [
+      "university sports centre",
+      "sports centre",
+      "university campus",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "17:00",
+      "5 o'clock",
+      "early in the evening",
+      "evening"
+    ],
+    "how_long": 45,
+    "with_what": [
+      "spinning bike",
+      "water bottle"
+    ],
+    "with_whom": [
+      "the instructor",
+      "about 20 other participants"
+    ]
+  },
+  "event15": {
+    "event_type": "household",
+    "event_label": "cooking dinner",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "pasta",
+      "vegetables"
+    ],
+    "description": "cooked pasta with roasted vegetables",
+    "human_turn": "Back home I cooked pasta with roasted vegetables, and Lotte kept me company in the kitchen.",
+    "where": [
+      "shared kitchen in the student flat",
+      "kitchen",
+      "her student flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "18:15",
+      "quarter past six",
+      "6 o'clock",
+      "early in the evening",
+      "evening"
+    ],
+    "how_long": 40,
+    "with_what": [
+      "pan",
+      "oven",
+      "cutting board",
+      "knife"
+    ],
+    "with_whom": [
+      "flatmate Lotte"
+    ]
+  },
+  "event16": {
+    "event_type": "meal",
+    "event_label": "celebratory dinner",
+    "who": [
+      "Emma"
+    ],
+    "what": "<PHOTO>",
+    "description": "ate dinner and toasted to her new internship",
+    "human_turn": "Then we had a little celebration dinner in the living room, Lotte, Ahmed and me. Ahmed set his phone on a timer for this picture!",
+    "where": [
+      "living room of the student flat",
+      "living room",
+      "her student flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "19:00",
+      "7 o'clock",
+      "in the evening",
+      "evening"
+    ],
+    "how_long": 60,
+    "with_what": "<PHOTO>",
+    "with_whom": [
+      "Lotte",
+      "Ahmed"
+    ],
+    "photo": {
+      "file": "photos/generated/day1_emma_event16.png",
+      "note": "Photo Ahmed took with a timer during the celebratory dinner; three flatmates toast with prosecco over plates of pasta",
+      "fills": [
+        "what",
+        "with_what"
+      ],
+      "gold": {
+        "what": [
+          "pasta",
+          "prosecco"
+        ],
+        "with_what": [
+          "plates",
+          "cutlery",
+          "glasses"
+        ]
+      },
+      "people_in_photo": [
+        {
+          "name": "Lotte",
+          "role": "flatmate",
+          "position": "left",
+          "appearance": "young woman with short curly blond hair and round glasses, green T-shirt"
+        },
+        {
+          "name": "Emma",
+          "role": "the narrator",
+          "position": "middle",
+          "appearance": "young woman with long light-brown wavy hair, cream sweater"
+        },
+        {
+          "name": "Ahmed",
+          "role": "flatmate",
+          "position": "right",
+          "appearance": "young man with short black hair and a trimmed beard, grey hoodie"
+        }
+      ]
+    }
+  },
+  "event17": {
+    "event_type": "household",
+    "event_label": "doing the dishes",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "dishes",
+      "kitchen counter"
+    ],
+    "description": "washed the dishes and cleaned the kitchen counter",
+    "human_turn": "Afterwards Ahmed and I did the dishes and wiped down the kitchen counter.",
+    "where": [
+      "shared kitchen in the student flat",
+      "kitchen",
+      "her student flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "20:00",
+      "8 o'clock",
+      "in the evening",
+      "evening"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "sponge",
+      "dish soap",
+      "tea towel"
+    ],
+    "with_whom": [
+      "Ahmed"
+    ]
+  },
+  "event18": {
+    "event_type": "leisure",
+    "event_label": "watching a series",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "crime series"
+    ],
+    "description": "watched two episodes of a crime series",
+    "human_turn": "Then I watched two episodes of my crime series on my laptop in my room.",
+    "where": [
+      "her bedroom",
+      "bedroom",
+      "her student flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "20:30",
+      "half past eight",
+      "8 o'clock",
+      "in the evening",
+      "evening"
+    ],
+    "how_long": 90,
+    "with_what": [
+      "laptop",
+      "streaming service"
+    ],
+    "with_whom": []
+  },
+  "event19": {
+    "event_type": "communication",
+    "event_label": "messaging friends",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "weekend plans"
+    ],
+    "description": "texted friends about the internship and planned a drink for the weekend",
+    "human_turn": "In bed I texted my friends from secondary school about the internship, and we planned to go for drinks this weekend.",
+    "where": [
+      "in bed",
+      "her bedroom",
+      "her student flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "22:05",
+      "five past ten",
+      "10 o'clock",
+      "late in the evening",
+      "evening"
+    ],
+    "how_long": 25,
+    "with_what": [
+      "mobile phone",
+      "WhatsApp"
+    ],
+    "with_whom": [
+      "her friends from secondary school"
+    ]
+  },
+  "event20": {
+    "event_type": "personal_care",
+    "event_label": "going to sleep",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "teeth"
+    ],
+    "description": "brushed her teeth, set her alarm and went to sleep",
+    "human_turn": "Finally I brushed my teeth, set my alarm and went to sleep at about twenty to eleven.",
+    "where": [
+      "bathroom and bedroom of the student flat",
+      "her student flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "22:40",
+      "twenty to eleven",
+      "11 o'clock",
+      "late in the evening",
+      "evening"
+    ],
+    "how_long": 480,
+    "with_what": [
+      "toothbrush",
+      "phone alarm"
+    ],
+    "with_whom": []
+  },
+  "coreference_chains": [
+    {
+      "entity_id": "emma",
+      "name": "Emma",
+      "type": "person",
+      "description": "the narrator, a student",
+      "mentions": [
+        {
+          "event": "event1",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event2",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event3",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event4",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event5",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event6",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event7",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event8",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event9",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event10",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event11",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event12",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event13",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event14",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event15",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event16",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event17",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event18",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event19",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event20",
+          "field": "who",
+          "mention": "Emma"
+        }
+      ]
+    },
+    {
+      "entity_id": "lotte",
+      "name": "Lotte",
+      "type": "person",
+      "description": "Emma's flatmate",
+      "mentions": [
+        {
+          "event": "event3",
+          "field": "with_whom",
+          "mention": "flatmate Lotte"
+        },
+        {
+          "event": "event15",
+          "field": "with_whom",
+          "mention": "flatmate Lotte"
+        },
+        {
+          "event": "event16",
+          "field": "with_whom",
+          "mention": "Lotte"
+        }
+      ]
+    },
+    {
+      "entity_id": "ahmed",
+      "name": "Ahmed",
+      "type": "person",
+      "description": "Emma's flatmate",
+      "mentions": [
+        {
+          "event": "event16",
+          "field": "with_whom",
+          "mention": "Ahmed"
+        },
+        {
+          "event": "event17",
+          "field": "with_whom",
+          "mention": "Ahmed"
+        }
+      ]
+    },
+    {
+      "entity_id": "jonas",
+      "name": "Jonas",
+      "type": "person",
+      "description": "classmate, member of the project group",
+      "mentions": [
+        {
+          "event": "event6",
+          "field": "with_whom",
+          "mention": "Jonas"
+        },
+        {
+          "event": "event7",
+          "field": "with_whom",
+          "mention": "Jonas"
+        }
+      ]
+    },
+    {
+      "entity_id": "mila",
+      "name": "Mila",
+      "type": "person",
+      "description": "classmate, member of the project group",
+      "mentions": [
+        {
+          "event": "event6",
+          "field": "with_whom",
+          "mention": "Mila"
+        },
+        {
+          "event": "event7",
+          "field": "with_whom",
+          "mention": "Mila"
+        },
+        {
+          "event": "event8",
+          "field": "with_whom",
+          "mention": "Mila"
+        }
+      ]
+    },
+    {
+      "entity_id": "sven",
+      "name": "Sven",
+      "type": "person",
+      "description": "member of the project group",
+      "mentions": [
+        {
+          "event": "event7",
+          "field": "with_whom",
+          "mention": "Sven"
+        }
+      ]
+    },
+    {
+      "entity_id": "fellow_students",
+      "name": "fellow students",
+      "type": "group",
+      "description": "about 150 students at the lecture",
+      "mentions": [
+        {
+          "event": "event5",
+          "field": "with_whom",
+          "mention": "about 150 fellow students"
+        }
+      ]
+    },
+    {
+      "entity_id": "lecturer",
+      "name": "the lecturer",
+      "type": "person",
+      "description": "lecturer of the cognitive psychology course",
+      "mentions": [
+        {
+          "event": "event5",
+          "field": "with_whom",
+          "mention": "the lecturer"
+        }
+      ]
+    },
+    {
+      "entity_id": "dr_bakker",
+      "name": "Dr. Bakker",
+      "type": "person",
+      "description": "supervisor of the Memory Research Lab",
+      "mentions": [
+        {
+          "event": "event9",
+          "field": "photo.gold.with_whom",
+          "mention": "Dr. Bakker, the lab supervisor"
+        }
+      ]
+    },
+    {
+      "entity_id": "mother",
+      "name": "Emma's mother",
+      "type": "person",
+      "description": "Emma's mother",
+      "mentions": [
+        {
+          "event": "event10",
+          "field": "with_whom",
+          "mention": "her mother"
+        }
+      ]
+    },
+    {
+      "entity_id": "father",
+      "name": "Emma's father",
+      "type": "person",
+      "description": "Emma's father",
+      "mentions": [
+        {
+          "event": "event10",
+          "field": "with_whom",
+          "mention": "her father"
+        }
+      ]
+    },
+    {
+      "entity_id": "instructor",
+      "name": "the instructor",
+      "type": "person",
+      "description": "spinning instructor",
+      "mentions": [
+        {
+          "event": "event14",
+          "field": "with_whom",
+          "mention": "the instructor"
+        }
+      ]
+    },
+    {
+      "entity_id": "participants",
+      "name": "other participants",
+      "type": "group",
+      "description": "about 20 people in the spinning class",
+      "mentions": [
+        {
+          "event": "event14",
+          "field": "with_whom",
+          "mention": "about 20 other participants"
+        }
+      ]
+    },
+    {
+      "entity_id": "school_friends",
+      "name": "friends from secondary school",
+      "type": "group",
+      "description": "Emma's friends from secondary school",
+      "mentions": [
+        {
+          "event": "event19",
+          "field": "with_whom",
+          "mention": "her friends from secondary school"
+        }
+      ]
+    }
+  ]
+}
