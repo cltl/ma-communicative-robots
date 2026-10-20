@@ -107,7 +107,7 @@ def get_multimodal_signal_rows(signals:[Signal], human, agent, settings: PlotSet
                     score += text_signal_util.get_likelihood_from_text_signal(signal, settings._LLH_THRESHOLD)
 
                 label = text_signal_util.make_annotation_label(signal, settings._SENTIMENT_THRESHOLD, settings._ANNOTATIONS)
-                row = {'turn':i+margin, 'utterance': text, 'score': score, "speaker": speaker, "type":signal.modality, "annotation": label, "rotation": 70}
+                row = {'turn':i+margin, 'utterance': text, 'score': score, "speaker": speaker, "type":signal.modality, "annotation": label}
                 data.append(row)
                 last_signal_type = Modality.TEXT
             elif signal.modality==Modality.IMAGE:
@@ -119,14 +119,14 @@ def get_multimodal_signal_rows(signals:[Signal], human, agent, settings: PlotSet
                 if "-" in object:
                     object_type = object[:object.index("-")]
                 if not id == previous_image_id and last_signal_type==Modality.TEXT:
-                    row = {'turn':i+margin, 'utterance': id[:5], 'score': score, "speaker": "camera", "type":signal.modality, "annotation": face+";"+emotion+";"+object, "rotation": 70}
+                    row = {'turn':i+margin, 'utterance': id[:5], 'score': score, "speaker": "camera", "type":signal.modality, "annotation": face+";"+emotion+";"+object}
                 elif not object_type==previous_image_label and last_signal_type==Modality.TEXT:
-                    row = {'turn':i+margin, 'utterance': id[:5], 'score': score, "speaker": "camera", "type":signal.modality, "annotation": face+";"+emotion+";"+object, "rotation": 70}
+                    row = {'turn':i+margin, 'utterance': id[:5], 'score': score, "speaker": "camera", "type":signal.modality, "annotation": face+";"+emotion+";"+object}
                 elif i+margin>last_image_turn and last_signal_type== Modality.TEXT:
                         print(i+margin, last_image_turn)
                         print(id)
                         print(object_type)
-                        row = {'turn':i+margin, 'utterance': id[:5], 'score': score, "speaker": "camera", "type":signal.modality, "annotation": emotion, "rotation": 70}
+                        row = {'turn':i+margin, 'utterance': id[:5], 'score': score, "speaker": "camera", "type":signal.modality, "annotation": emotion}
                 previous_image_label = object_type
                 previous_image_id = id
                 last_image_turn = i+margin
@@ -160,13 +160,13 @@ def create_timeline_image(emissor_path, scenario, settings: PlotSettings):
         name += "_S"+ str(settings._START)
     if settings._END>-1:
         name += "_E"+str(settings._END)
-    path =  os.path.join(evaluation_folder, "_plot.png")
+    path = os.path.join(evaluation_folder, name+"_plot.png")
     draw_timeline(rows, path)
 
 
-# Size of the timeline plots: the width grows with the number of turns, the height leaves room for the labels
+# Size of the timeline plots: the width grows with the number of turns, the text of the turns goes below the plot
 TURN_WIDTH = 2.5
-PLOT_HEIGHT = 12
+PLOT_HEIGHT = 8
 # Height in pixels of the plot shown in a notebook, the plot can be scrolled horizontally
 DISPLAY_HEIGHT = 800
 
@@ -188,6 +188,11 @@ def draw_timeline(rows, path, ylim=(-5, 5)):
     plt.close(fig)
     show_scrollable(path)
 
+def get_point_label(row):
+    """The label of a data point: the annotation with the score, three annotations per line."""
+    annotations = [annotation for annotation in row['annotation'].split(";") if annotation]
+    return "\n".join(";".join(annotations[i:i+3]) for i in range(0, len(annotations), 3))
+
 def draw_timeline_on_axis(ax, rows, ylim=(-5, 5)):
     df = pd.DataFrame(rows)
     ax = sns.lineplot(x='turn', y='score', data=df, hue='speaker', style='speaker', markers=True, palette="deep",
@@ -197,50 +202,26 @@ def draw_timeline_on_axis(ax, rows, ylim=(-5, 5)):
             if row['speaker']:
                 x = row['turn']
                 y = row['score']
-                rotation = row['rotation']
-                speaker = row['speaker'].upper()
-                category = speaker+":\n"
-                words = row['utterance'].split(" ")
-                phrase_length = 0
-                utt_length = 0
-                for i, word in enumerate(words):
-                    utt_length+= len(word)
-                    phrase_length+= len(word)
-                    if utt_length>=150:
-                        category += "..."
-                        break
-                    if phrase_length>25:
-                        category+="\n"
-                        phrase_length=0
-                    category +=word+" "
-                annotations = row['annotation'].split(";")
-                for i, annotation in enumerate(annotations):
-                    if i==0 or i%3==0:
-                        category+="\n"
-                    category += annotation+";"
+                category = get_point_label(row)
                 signalType = row['type']
                 if signalType==Modality.TEXT:
-                    ax.text(x, y,
-                            s=" " + str(category),
-                            rotation=rotation,
-                            horizontalalignment='left', size='small', color='black', verticalalignment='bottom',
-                            linespacing=1.5, bbox=LABEL_BOX)
+                    ax.annotate(category, (x, y), xytext=(8, 8), textcoords='offset points',
+                                horizontalalignment='left', size='small', color='black', verticalalignment='bottom',
+                                linespacing=1.3, bbox=LABEL_BOX, rotation=POINT_LABEL_ROTATION, rotation_mode='anchor')
                 elif signalType==Modality.IMAGE:
-                    ax.text(x, y,
-                            s=" " + str(category),
-                            rotation=rotation,
-                            horizontalalignment='right', size='small', color='blue', verticalalignment='top',
-                            linespacing=1.5, bbox=LABEL_BOX)
+                    ax.annotate(category, (x, y), xytext=(-8, -8), textcoords='offset points',
+                                horizontalalignment='right', size='small', color='blue', verticalalignment='top',
+                                linespacing=1.3, bbox=LABEL_BOX, rotation=POINT_LABEL_ROTATION, rotation_mode='anchor')
 
-    # a tick for every turn
-    ax.set_xticks(sorted(df['turn'].unique()))
-    ax.tick_params(axis='x', rotation=0)
-    ax.set_xlabel('turn')
-    # Save the plot
+    # the text of every turn on the x-axis
+    set_turn_labels(ax, {row['turn']: get_turn_label(row) for _, row in df.iterrows()})
     ax.legend(loc='lower right', frameon=True)
     if ylim:
         # widen the range if scores fall outside it, so that no turn is cut off
         ax.set_ylim(min(ylim[0], df['score'].min() - 1), max(ylim[1], df['score'].max() + 1))
+
+# Angle of the labels of the data points, so that labels of neighbouring turns do not overlap
+POINT_LABEL_ROTATION = 45
 
 # White background behind the labels so that they stay readable when they cross lines or other labels
 LABEL_BOX = dict(facecolor='white', alpha=0.8, edgecolor='none', pad=2)
@@ -263,13 +244,14 @@ def show_scrollable(path, height=DISPLAY_HEIGHT):
 
 ## CSV
 def get_csv_rows(csv_file, score_column, settings: PlotSettings, turn_order=None,
-                 turn_column='Turn', speaker_column='Speaker', text_column='Response'):
+                 turn_column='Turn', speaker_column='Speaker', text_column='Response', label_column=None):
     """Creates the rows for the timeline from a csv file with a column for the turn id, the speaker, the turn and the score,
     such as the evaluation files saved by the notebooks in emissor_evaluation.
     Rows without a turn id, such as AVERAGE rows, are skipped. If turn_order (turn id -> position) is given,
-    the rows are sorted in the order of the conversation, otherwise the order of the csv file is used."""
+    the rows are sorted in the order of the conversation, otherwise the order of the csv file is used.
+    If label_column is given, its value is added to the label of each data point, e.g. the dialogue act."""
     df = read_csv(csv_file)
-    for column in [turn_column, speaker_column, text_column, score_column]:
+    for column in [turn_column, speaker_column, text_column, score_column] + ([label_column] if label_column else []):
         if column not in df.columns:
             raise ValueError(f"Column '{column}' not found in {csv_file}, the columns are: {list(df.columns)}")
     df = df[df[turn_column].notna()]
@@ -288,8 +270,12 @@ def get_csv_rows(csv_file, score_column, settings: PlotSettings, turn_order=None
             score = csv_row[score_column]
             score = 0 if pd.isna(score) else float(score)
             text = "" if pd.isna(csv_row[text_column]) else str(csv_row[text_column])
+            annotation = f"{score_column}={score:.2f}"
+            if label_column and not pd.isna(csv_row[label_column]):
+                # the label on the first line and the score below it
+                annotation = f"{csv_row[label_column]}\n{annotation}"
             row = {'turn':i+1, 'utterance': text, 'score': score, "speaker": str(csv_row[speaker_column]),
-                   "type":Modality.TEXT, "annotation": f"{score_column}={score:.2f}", "rotation": 70}
+                   "type":Modality.TEXT, "annotation": annotation}
             data.append(row)
     return data
 
@@ -314,18 +300,23 @@ def get_turn_order(emissor_path, scenario):
     return {signal.id: index for index, signal in enumerate(text_signals)}
 
 def create_timeline_image_from_csv(csv_file, score_column, settings: PlotSettings, emissor_path=None, scenario=None,
-                                   turn_column='Turn', speaker_column='Speaker', text_column='Response'):
+                                   turn_column='Turn', speaker_column='Speaker', text_column='Response',
+                                   label_column=None):
     """Plots the interaction as a timeline with the scores from a column in a csv file.
     If emissor_path and scenario are given, the turns are put in the order of the conversation in the scenario,
-    which is needed when the csv file was sorted, e.g. by speaker. The plot is saved next to the csv file
-    and the path of the plot is returned."""
+    which is needed when the csv file was sorted, e.g. by speaker.
+    label_column: optional column whose value is added to the score in the label of each data point,
+                  e.g. 'dialogue_act' for the dialogue act files or 'go_emotion' for the emotion files.
+                  None for scores without such a value, such as likelihood and coherence.
+    The plot is saved next to the csv file and the path of the plot is returned."""
     turn_order = None
     if emissor_path and scenario:
         try:
             turn_order = get_turn_order(emissor_path, scenario)
         except Exception as e:
             print('Could not load the turns of the scenario, using the order of the csv file:', e)
-    rows = get_csv_rows(csv_file, score_column, settings, turn_order, turn_column, speaker_column, text_column)
+    rows = get_csv_rows(csv_file, score_column, settings, turn_order, turn_column, speaker_column, text_column,
+                        label_column)
     if not rows:
         print('No turns to plot in', csv_file)
         return
@@ -405,14 +396,15 @@ def create_stacked_timeline_image_from_csvs(emissor_path, scenario, settings: Pl
 
     set_plot_style()
     nr_of_turns = max(row['turn'] for _, _, rows in plots for row in rows)
-    fig, axes = plt.subplots(len(plots), 1, sharex=True, squeeze=False,
+    fig, axes = plt.subplots(len(plots), 1, squeeze=False,
                              figsize=(max(10, TURN_WIDTH*nr_of_turns), PLOT_HEIGHT*len(plots)))
+    # the turns of all csv files under every plot, so that the plots line up even if a file misses some turns
+    turn_labels = {row['turn']: get_turn_label(row) for _, _, rows in plots for row in rows}
     for ax, (name, score_column, rows) in zip(axes[:, 0], plots):
         draw_timeline_on_axis(ax, rows, ylim=get_csv_ylim(rows))
+        set_turn_labels(ax, turn_labels)
         ax.set_title(f"{name}: {score_column}", loc='left', fontweight='bold')
         ax.set_ylabel(score_column)
-        # turn numbers under every plot, not only the bottom one
-        ax.tick_params(axis='x', labelbottom=True)
 
     name = scenario + "_stacked"
     if settings._START>0:
@@ -420,7 +412,7 @@ def create_stacked_timeline_image_from_csvs(emissor_path, scenario, settings: Pl
     if settings._END>-1:
         name += "_E"+str(settings._END)
     path = os.path.join(evaluation_folder, name + "_plot.png")
-    fig.subplots_adjust(hspace=0.5)
+    fig.subplots_adjust(hspace=0.9)
     fig.savefig(path, bbox_inches='tight')
     print('Saved plot to', path)
     plt.close(fig)
@@ -438,6 +430,14 @@ def get_turn_label(row, max_length=120, line_length=30):
             lines.append('')
         lines[-1] += word + ' '
     return f"{row['turn']} {row['speaker'].upper()}:\n" + '\n'.join(line.strip() for line in lines)
+
+def set_turn_labels(ax, turn_labels):
+    """Puts a tick for every turn on the x-axis with the turn number, the speaker and the utterance as label."""
+    turns = sorted(turn_labels)
+    ax.set_xticks(turns)
+    ax.set_xticklabels([turn_labels[turn] for turn in turns], rotation=90, size='small', linespacing=1.3)
+    ax.set_xlim(turns[0] - 0.5, turns[-1] + 0.5)
+    ax.set_xlabel('')
 
 def scale_scores(rows):
     """Divides the scores by the largest absolute score, so that all scores fall between -1 and 1 and 0 stays 0."""
@@ -467,19 +467,22 @@ def create_combined_timeline_image_from_csvs(emissor_path, scenario, settings: P
     for name, score_column, rows in plots:
         for row in (scale_scores(rows) if scale else rows):
             data.append({'turn': row['turn'], 'score': row['score'], 'speaker': row['speaker'],
-                         'evaluation': f"{name}: {score_column}"})
+                         'evaluation': f"{name}: {score_column}", 'annotation': row['annotation']})
             turn_labels.setdefault(row['turn'], get_turn_label(row))
     df = pd.DataFrame(data)
 
     set_plot_style()
     fig, ax = plt.subplots(figsize=(max(10, TURN_WIDTH*len(turn_labels)), PLOT_HEIGHT))
+    evaluations = list(df['evaluation'].unique())
+    palette = dict(zip(evaluations, sns.color_palette("deep", len(evaluations))))
     sns.lineplot(x='turn', y='score', data=df, hue='evaluation', style='speaker', markers=True, dashes=True,
-                 palette="deep", linewidth=2.5, markersize=12, ax=ax)
-    turns = sorted(turn_labels)
-    ax.set_xticks(turns)
-    ax.set_xticklabels([turn_labels[turn] for turn in turns], rotation=90, size='small', linespacing=1.3)
-    ax.set_xlim(turns[0] - 0.5, turns[-1] + 0.5)
-    ax.set_xlabel('')
+                 palette=palette, linewidth=2.5, markersize=12, ax=ax)
+    # the speaker and the unscaled score next to each point, in the colour of its line
+    for _, row in df.iterrows():
+        ax.annotate(get_point_label(row), (row['turn'], row['score']), xytext=(8, 4), textcoords='offset points',
+                    size='x-small', color=palette[row['evaluation']], verticalalignment='bottom',
+                    linespacing=1.2, bbox=LABEL_BOX, rotation=POINT_LABEL_ROTATION, rotation_mode='anchor')
+    set_turn_labels(ax, turn_labels)
     ax.set_ylabel('scaled score' if scale else 'score')
     if scale:
         ax.set_ylim(-1.1, 1.1)
@@ -521,7 +524,7 @@ def process_all_scenarios(emissor:str, scenarios:[], settings):
                 else:
                     create_timeline_image(emissor_path=emissor, scenario=scenario, settings=settings)
 
-def main(emissor_path:str, scenario:str, annotations:[], sentiment_threshold=0, llh_threshold=0, start=0, end=-1, csv_file='', score_column='', stacked=False, combined=False):
+def main(emissor_path:str, scenario:str, annotations:[], sentiment_threshold=0, llh_threshold=0, start=0, end=-1, csv_file='', score_column='', label_column=None, stacked=False, combined=False):
     settings = PlotSettings()
     if annotations:
         settings._ANNOTATIONS = annotations
@@ -535,7 +538,7 @@ def main(emissor_path:str, scenario:str, annotations:[], sentiment_threshold=0, 
         settings._END = end
 
     if csv_file:
-        create_timeline_image_from_csv(csv_file, score_column, settings, emissor_path, scenario)
+        create_timeline_image_from_csv(csv_file, score_column, settings, emissor_path, scenario, label_column=label_column)
         return
     if stacked:
         create_stacked_timeline_image_from_csvs(emissor_path, scenario, settings)
@@ -565,6 +568,7 @@ if __name__ == '__main__':
     parser.add_argument('--end', type=int, required=False, help="End signal for plotting, -1 means until the last signal" , default=-1)
     parser.add_argument('--csv', type=str, required=False, help="Csv file with the columns Turn, Speaker, Response and a score column to plot instead of the EMISSOR annotations", default='')
     parser.add_argument('--score', type=str, required=False, help="Name of the score column in the csv file, e.g. llh or llm_coherence", default='')
+    parser.add_argument('--label', type=str, required=False, help="Column in the csv file with a value to add to the label of each data point, e.g. dialogue_act or go_emotion", default=None)
     parser.add_argument('--stacked', action='store_true', help="Plot all csv files in the evaluation folder of the scenario under each other in one image")
     parser.add_argument('--combined', action='store_true', help="Plot the scores of all csv files in the evaluation folder of the scenario as lines in one plot")
     args, _ = parser.parse_known_args()
@@ -579,5 +583,6 @@ if __name__ == '__main__':
          end=args.end,
          csv_file=args.csv,
          score_column=args.score,
+         label_column=args.label,
          stacked=args.stacked,
          combined=args.combined)

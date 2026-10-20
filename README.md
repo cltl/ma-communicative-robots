@@ -1,25 +1,50 @@
-# Communicative Robots, 2025
+#  Conversational AI & Robots, 2026
 
-Communicative Robots is a master's course taught at VU Amsterdam.
+Conversational AI & Robots is a master's course taught at the Vrije Universiteit Amsterdam.
+We use the LEOLANI platform for interacting with agents and robots (Baier et al 2025). 
+Interactions through LEOLANI are captured in the EMISSOR format (Baez et al 2022). 
+[EMISSOR](https://github.com/leolani/cltl-combot/blob/main/src/cltl/combot/event/emissor.py) is a frequently used JSON structure in which interactions are stored on disk as ```scenarios``` in separate folders.
+EMISSOR stores incoming streams of signals (audio, text, image) as separate data points that are aligned through a temporal ruler that is shared by the scenario.
 
+This project shows how interactions saved in EMISSOR can be analysed and evaluated in different way:
 
-Clone this repository and the submodule. Do the following from CLI:
+* scoring the likelihood of turns based on the previous context using a transformer model and masked token predictions
+* scoring the coherence of turns based on the previous context using a generative LLM as a judge
+* scoring dialogue acts as positive, negative or neutral moves in the interaction
+* scoring the emotions expressed in each turn as positive, negative or neutral moves in the interaction
+* evaluating the properties of knowledge added to a knowledge graph on a positive/negative axis
+* human assessment of each turn on a likert scale
 
-```
-   >git clone git@github.com:cltl/ma-communicative-robots.git
-   >cd ma-communicative-robots
-   >git submodule update --init  
-```
+For each of the above analysis, a notebook is provided that shows how one or more EMISSOR scenarios can be loaded and scored according to the method.
+The result of the scoring is saved in a CSV file in an ```evaluation``` folder, where each row contains the ```turn id```, the ```speaker```, the ```utterance``` and additional values for the analysis and the scores.
 
-# Analysing and evaluating interactions
-This subproject shows how interactions can be analysed and evaluated. Interactions need to be captured in EMISSOR format as different scenarios.
+The ```plots``` module has two notebooks for reading the CSV files and generating plots for each interaction that show the conversation on the X-axis as a sequence of turns and the scored analysis on the Y-axis.
+
+The ```data``` folder contains an ```emissor``` folder with the interaction data for a few scenarios to demonstrate the notebooks.
+Replace the path to your own emissor data to apply the analysis on your interactions.
+
+## How to proceed
+
+1. Apply any of the analyses (likelihood, coherence, dialogue act, emotion) to the scenario of your choice by adapting the path to your emissor folder and the name of your scenario to the corresponding notebook. The output is saved in a CSV file in the ```evaluation``` folder. 
+2. Create a plot for any of the saved CSV file or combine CSV files in a single plot. You can use ```metrics_plotting.ipynb``` or ```plot_analysis_from_csv.ipynb``` for plotting.
+
+You could also create your own code to create a CSV file following the same format and plot the result.
+
+In addition to plotting the interactions with the result of the analysis, the notebooks also provide other results in each analysis notebook.
 
 ## Requirements
 
-Before opening the  notebooks, make sure Jupyter is running in a virtual environment with the packages installed from the ```requirements.txt``` file.
+Clone this repository to prepare for the course:
+
+```bash
+   >git clone git@github.com:cltl/ma-communicative-robots.git
+   >cd ma-communicative-robots
+```
+
+Create a virtual environment for running the code.
 
 Using venv:
-   ```
+   ```bash
     python -m venv --python=3.11 evaluate
     source venv/bin/activate
     python -m pip install --upgrade pip
@@ -27,9 +52,8 @@ Using venv:
     python -m ipykernel install --user --name=evaluate
    ```
 
-
 Using Conda:
-```
+```bash
     conda create -n evaluate python=3.11
     conda activate evaluate
     python -m pip install --upgrade pip
@@ -37,36 +61,12 @@ Using Conda:
     python -m ipykernel install --user --name=evaluate
 ```
 
-With the environment active, launch Jupyter lab from the CLI.
+With the environment active, launch Jupyter lab from the CLI and open the notebooks
 
-
-## Emissor
-
-We use EMISSOR to capture interactions. EMISSOR is a frequently used JSON structure in which interactions are stored in disk as ```scenarios```` in separate folders.
-EMISSOR stores signals for each modality: audio, text, image as separate data points that are aligned through a temporal ruler that is shared by the scenario. 
-The alignment is stored in a separate JSON for each modality. The interpretation of signals is stored as annotations in the JSON file as well, e.g. named entities mentioned in text, people and objects detected in images.
-
-In *emissor_chat* you find notebooks that demonstrate how you can connect chatbots with emissor to capture the interaction.
-
-## Interaction analysis
-
-In *interaction_analysis* you find code and notebooks for:
-
-1. augmenting text conversations with named entity, dialogue act and emotion annotations
-2. structural analysis of interactions stored in EMISSOR
-3. graph analysis of EMISSOR in case the interaction is combined with an episodic Knowledge Graph
-4. reference evaluation using BLUE, ROUGE, METEOR and BERTScore
-
-## Episodic Knowledge Graph
-
-In *episodic_knowledge_graph*, you find code and notebooks that demonstrate how knowedge and be pushed and retrieved from an episodic Knowledge Graph
-optimized for capturing interactions.
-
-## Leolani
-
-In *leolani_text_to_ekg*, you find the files and instructions how to run ```Leolani``` in chatonly mode through a docker image. In this mode it extracts triples and emotions from
-the Knowledge Graph and pushes these to the episodic Knowlege Graph (eKG). New information will prompt the eKG to reflect on this knowlege and formulate a response.
-This keeps the interaction going. You can also ask questions to find out what the *agent* knows.
+## References
+Feel free to use our work but cite us:
+* Baez Santamaria, S., Baier, T., Kim, T., Krause, L., Kruijt, J., & Vossen, P. (2021). EMISSOR: A platform for capturing multimodal interactions as episodic memories and interpretations with situated scenario-based ontological references. In Proceedings of the First workshop Beyond Language: Multimodal Semantic Representations in conjunction with IWCS 2022
+* T. Baier, S. Báez Santamaría, P. Vossen: A modular architecture for creating multimodal embodied agents with an episodic Knowledge Graph as an explainable and controllable long-term memory, in: Dialogue & Discourse Volume 14, ed. 3, pages 25-59
 
 ## Troubleshooting
 
