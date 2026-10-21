@@ -1,0 +1,35 @@
+Turn;Turn nr.;Speaker;Response;Event;nr_of_events;nr_of_roles;nr_of_correct_events_exact;nr_of_correct_events_jaccard;nr_of_correct_roles_exact;nr_of_correct_roles_jaccard
+turn11;0;AGENT;What did you do at 7 o'clock?;event1;;;;;;
+turn12;1;Emma;My alarm went off and I got out of bed;event1;1;3;1;1;1.6;1.933
+turn13;2;AGENT;Who were you with?;event1;;;;;;
+turn14;3;Emma;I was alone;event1;0;0;0;0;0;0
+turn15;4;AGENT;What did you use for it, such as tools, devices or a vehicle?;event1;;;;;;
+turn17;5;AGENT;Where were you?;event1;;;;;;
+turn18;6;Emma;in my bedroom in my studio;event1;0;1;0;0;0.857;0.857
+turn19;7;AGENT;How long did it take?;event1;;;;;;
+turn20;8;Emma;2 minutes;event1;0;1;0;0;0.0;0.2
+turn21;9;AGENT;What did you do at 8 o'clock?;event2;;;;;;
+turn22;10;Emma;I had breakfast with my;event2;1;2;1;1;1.6;1.6
+turn23;11;AGENT;What did it involve? For example, what did you eat, make, read or talk about?;event2;;;;;;
+turn24;12;Emma;I took a shower and got dressed;event2;0;0;0;0;0;0
+turn25;13;AGENT;What did you use for it, such as tools, devices or a vehicle?;event2;;;;;;
+turn26;14;Emma;bathroom and clothes;event2;0;3;0;0;1.357;1.357
+turn27;15;AGENT;Where were you?;event2;;;;;;
+turn29;16;AGENT;How long did it take?;event2;;;;;;
+turn30;17;Emma;15 minutes;event2;0;1;0;0;0.0;0.75
+turn31;18;AGENT;What did you do at 9 o'clock?;event3;;;;;;
+turn32;19;Emma;I had breakfast with Lotte;event3;1;5;0;0;0;0
+turn33;20;AGENT;What did it involve? For example, what did you eat, make, read or talk about?;event3;;;;;;
+turn34;21;Emma;yoghurt with fruits and a coffee;event3;0;1;0;0;0;0
+turn35;22;AGENT;What did you use for it, such as tools, devices or a vehicle?;event3;;;;;;
+turn37;23;AGENT;Where were you?;event3;;;;;;
+turn38;24;Emma;in our shared kitchen;event3;0;1;0;0;0;0
+turn39;25;AGENT;How long did it take?;event3;;;;;;
+turn40;26;Emma;half an hour;event3;0;0;0;0;0;0
+turn41;27;AGENT;What did you do at 10 o'clock?;event4;;;;;;
+turn42;28;Emma;I went to the Uni;event4;1;4;0;0;0;0
+turn43;29;AGENT;Who were you with?;event4;;;;;;
+turn45;30;AGENT;What did you use for it, such as tools, devices or a vehicle?;event4;;;;;;
+turn46;31;Emma;I went by bike;event4;0;0;0;0;0;0
+turn47;32;AGENT;How long did it take?;event4;;;;;;
+turn48;33;Emma;15 minutes;event4;0;1;0;0;0;0

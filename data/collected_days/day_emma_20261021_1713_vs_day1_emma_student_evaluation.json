@@ -1,0 +1,359 @@
+{
+  "gold": "/Users/piek/Desktop/Combot2026/ma-communicative-robots/data/example_days/day1_emma_student.json",
+  "system": "/Users/piek/Desktop/Combot2026/ma-communicative-robots/data/collected_days/day_emma_20261021_1713.json",
+  "event_threshold": 0.55,
+  "modes": {
+    "exact": {
+      "events": {
+        "tp": 2.0,
+        "fp": 2.0,
+        "fn": 18.0,
+        "tn": null,
+        "precision": 0.5,
+        "recall": 0.1,
+        "f1": 0.167
+      },
+      "roles": {
+        "total": {
+          "tp": 11.0,
+          "fp": 12.0,
+          "fn": 116.0,
+          "tn": 3.0,
+          "precision": 0.478,
+          "recall": 0.087,
+          "f1": 0.147
+        },
+        "who": {
+          "tp": 2.0,
+          "fp": 2.0,
+          "fn": 18.0,
+          "tn": 0.0,
+          "precision": 0.5,
+          "recall": 0.1,
+          "f1": 0.167
+        },
+        "what": {
+          "tp": 1.0,
+          "fp": 1.0,
+          "fn": 14.0,
+          "tn": 1.0,
+          "precision": 0.5,
+          "recall": 0.067,
+          "f1": 0.118
+        },
+        "with_what": {
+          "tp": 2.0,
+          "fp": 2.0,
+          "fn": 18.0,
+          "tn": 0.0,
+          "precision": 0.5,
+          "recall": 0.1,
+          "f1": 0.167
+        },
+        "with_whom": {
+          "tp": 0.0,
+          "fp": 1.0,
+          "fn": 12.0,
+          "tn": 2.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "where": {
+          "tp": 2.0,
+          "fp": 2.0,
+          "fn": 18.0,
+          "tn": 0.0,
+          "precision": 0.5,
+          "recall": 0.1,
+          "f1": 0.167
+        },
+        "when": {
+          "tp": 2.0,
+          "fp": 2.0,
+          "fn": 18.0,
+          "tn": 0.0,
+          "precision": 0.5,
+          "recall": 0.1,
+          "f1": 0.167
+        },
+        "how_long": {
+          "tp": 2.0,
+          "fp": 2.0,
+          "fn": 18.0,
+          "tn": 0.0,
+          "precision": 0.5,
+          "recall": 0.1,
+          "f1": 0.167
+        }
+      },
+      "role_fillers": {
+        "total": {
+          "tp": 5.914,
+          "fp": 22.086,
+          "fn": 159.086,
+          "tn": null,
+          "precision": 0.211,
+          "recall": 0.036,
+          "f1": 0.061
+        },
+        "who": {
+          "tp": 2.0,
+          "fp": 2.0,
+          "fn": 18.0,
+          "tn": null,
+          "precision": 0.5,
+          "recall": 0.1,
+          "f1": 0.167
+        },
+        "what": {
+          "tp": 1.0,
+          "fp": 4.0,
+          "fn": 24.0,
+          "tn": null,
+          "precision": 0.2,
+          "recall": 0.04,
+          "f1": 0.067
+        },
+        "with_what": {
+          "tp": 0.0,
+          "fp": 6.0,
+          "fn": 41.0,
+          "tn": null,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "with_whom": {
+          "tp": 0.0,
+          "fp": 1.0,
+          "fn": 19.0,
+          "tn": null,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "where": {
+          "tp": 1.714,
+          "fp": 2.286,
+          "fn": 18.286,
+          "tn": null,
+          "precision": 0.429,
+          "recall": 0.086,
+          "f1": 0.143
+        },
+        "when": {
+          "tp": 1.2,
+          "fp": 2.8,
+          "fn": 18.8,
+          "tn": null,
+          "precision": 0.3,
+          "recall": 0.06,
+          "f1": 0.1
+        },
+        "how_long": {
+          "tp": 0.0,
+          "fp": 4.0,
+          "fn": 20.0,
+          "tn": null,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "event_alignment": [
+        {
+          "gold": "event1",
+          "system": "event1",
+          "similarity": 0.75,
+          "gold_label": "waking up",
+          "system_label": "waking up"
+        },
+        {
+          "gold": "event2",
+          "system": "event2",
+          "similarity": 0.583,
+          "gold_label": "showering",
+          "system_label": "showering and getting dressed"
+        }
+      ],
+      "entity_alignment": {}
+    },
+    "jaccard": {
+      "events": {
+        "tp": 2.0,
+        "fp": 2.0,
+        "fn": 18.0,
+        "tn": null,
+        "precision": 0.5,
+        "recall": 0.1,
+        "f1": 0.167
+      },
+      "roles": {
+        "total": {
+          "tp": 11.0,
+          "fp": 12.0,
+          "fn": 116.0,
+          "tn": 3.0,
+          "precision": 0.478,
+          "recall": 0.087,
+          "f1": 0.147
+        },
+        "who": {
+          "tp": 2.0,
+          "fp": 2.0,
+          "fn": 18.0,
+          "tn": 0.0,
+          "precision": 0.5,
+          "recall": 0.1,
+          "f1": 0.167
+        },
+        "what": {
+          "tp": 1.0,
+          "fp": 1.0,
+          "fn": 14.0,
+          "tn": 1.0,
+          "precision": 0.5,
+          "recall": 0.067,
+          "f1": 0.118
+        },
+        "with_what": {
+          "tp": 2.0,
+          "fp": 2.0,
+          "fn": 18.0,
+          "tn": 0.0,
+          "precision": 0.5,
+          "recall": 0.1,
+          "f1": 0.167
+        },
+        "with_whom": {
+          "tp": 0.0,
+          "fp": 1.0,
+          "fn": 12.0,
+          "tn": 2.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "where": {
+          "tp": 2.0,
+          "fp": 2.0,
+          "fn": 18.0,
+          "tn": 0.0,
+          "precision": 0.5,
+          "recall": 0.1,
+          "f1": 0.167
+        },
+        "when": {
+          "tp": 2.0,
+          "fp": 2.0,
+          "fn": 18.0,
+          "tn": 0.0,
+          "precision": 0.5,
+          "recall": 0.1,
+          "f1": 0.167
+        },
+        "how_long": {
+          "tp": 2.0,
+          "fp": 2.0,
+          "fn": 18.0,
+          "tn": 0.0,
+          "precision": 0.5,
+          "recall": 0.1,
+          "f1": 0.167
+        }
+      },
+      "role_fillers": {
+        "total": {
+          "tp": 7.198,
+          "fp": 20.802,
+          "fn": 157.802,
+          "tn": null,
+          "precision": 0.257,
+          "recall": 0.044,
+          "f1": 0.075
+        },
+        "who": {
+          "tp": 2.0,
+          "fp": 2.0,
+          "fn": 18.0,
+          "tn": null,
+          "precision": 0.5,
+          "recall": 0.1,
+          "f1": 0.167
+        },
+        "what": {
+          "tp": 1.0,
+          "fp": 4.0,
+          "fn": 24.0,
+          "tn": null,
+          "precision": 0.2,
+          "recall": 0.04,
+          "f1": 0.067
+        },
+        "with_what": {
+          "tp": 0.333,
+          "fp": 5.667,
+          "fn": 40.667,
+          "tn": null,
+          "precision": 0.056,
+          "recall": 0.008,
+          "f1": 0.014
+        },
+        "with_whom": {
+          "tp": 0.0,
+          "fp": 1.0,
+          "fn": 19.0,
+          "tn": null,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "where": {
+          "tp": 1.714,
+          "fp": 2.286,
+          "fn": 18.286,
+          "tn": null,
+          "precision": 0.429,
+          "recall": 0.086,
+          "f1": 0.143
+        },
+        "when": {
+          "tp": 1.2,
+          "fp": 2.8,
+          "fn": 18.8,
+          "tn": null,
+          "precision": 0.3,
+          "recall": 0.06,
+          "f1": 0.1
+        },
+        "how_long": {
+          "tp": 0.95,
+          "fp": 3.05,
+          "fn": 19.05,
+          "tn": null,
+          "precision": 0.237,
+          "recall": 0.048,
+          "f1": 0.079
+        }
+      },
+      "event_alignment": [
+        {
+          "gold": "event1",
+          "system": "event1",
+          "similarity": 0.75,
+          "gold_label": "waking up",
+          "system_label": "waking up"
+        },
+        {
+          "gold": "event2",
+          "system": "event2",
+          "similarity": 0.833,
+          "gold_label": "showering",
+          "system_label": "showering and getting dressed"
+        }
+      ],
+      "entity_alignment": {}
+    }
+  }
+}

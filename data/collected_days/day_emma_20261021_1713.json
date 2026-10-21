@@ -1,0 +1,293 @@
+{
+  "event1": {
+    "event_type": "personal_care",
+    "event_label": "waking up",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "got out of bed after the alarm went off",
+    "agent_turn": [
+      {
+        "turn_id": 11,
+        "utterance": "What did you do at 7 o'clock?"
+      },
+      {
+        "turn_id": 13,
+        "utterance": "Who were you with?"
+      },
+      {
+        "turn_id": 15,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 17,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 19,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 12,
+        "utterance": "My alarm went off and I got out of bed"
+      },
+      {
+        "turn_id": 14,
+        "utterance": "I was alone"
+      },
+      {
+        "turn_id": 16,
+        "utterance": ""
+      },
+      {
+        "turn_id": 18,
+        "utterance": "in my bedroom in my studio"
+      },
+      {
+        "turn_id": 20,
+        "utterance": "2 minutes"
+      }
+    ],
+    "where": [
+      "bedroom of her studio",
+      "bedroom",
+      "her studio",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "07:00",
+      "7 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 2,
+    "with_what": [
+      "alarm clock"
+    ],
+    "with_whom": []
+  },
+  "event2": {
+    "event_type": "personal_care",
+    "event_label": "showering and getting dressed",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "shower",
+      "clothes"
+    ],
+    "description": "took a shower and got dressed",
+    "agent_turn": [
+      {
+        "turn_id": 21,
+        "utterance": "What did you do at 8 o'clock?"
+      },
+      {
+        "turn_id": 23,
+        "utterance": "What did it involve? For example, what did you eat, make, read or talk about?"
+      },
+      {
+        "turn_id": 25,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 27,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 29,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 22,
+        "utterance": "I had breakfast with my"
+      },
+      {
+        "turn_id": 24,
+        "utterance": "I took a shower and got dressed"
+      },
+      {
+        "turn_id": 26,
+        "utterance": "bathroom and clothes"
+      },
+      {
+        "turn_id": 28,
+        "utterance": ""
+      },
+      {
+        "turn_id": 30,
+        "utterance": "15 minutes"
+      }
+    ],
+    "where": [
+      "bathroom of her house",
+      "bathroom",
+      "her house",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "08:00",
+      "8 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 15,
+    "with_what": [
+      "bathroom"
+    ],
+    "with_whom": []
+  },
+  "event3": {
+    "event_type": "meal",
+    "event_label": "breakfast",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "yoghurt",
+      "fruits",
+      "coffee"
+    ],
+    "description": "ate yoghurt with fruits and drank coffee",
+    "agent_turn": [
+      {
+        "turn_id": 31,
+        "utterance": "What did you do at 9 o'clock?"
+      },
+      {
+        "turn_id": 33,
+        "utterance": "What did it involve? For example, what did you eat, make, read or talk about?"
+      },
+      {
+        "turn_id": 35,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 37,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 39,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 32,
+        "utterance": "I had breakfast with Lotte"
+      },
+      {
+        "turn_id": 34,
+        "utterance": "yoghurt with fruits and a coffee"
+      },
+      {
+        "turn_id": 36,
+        "utterance": ""
+      },
+      {
+        "turn_id": 38,
+        "utterance": "in our shared kitchen"
+      },
+      {
+        "turn_id": 40,
+        "utterance": "half an hour"
+      }
+    ],
+    "where": [
+      "shared kitchen in the student flat",
+      "kitchen",
+      "her student flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "09:00",
+      "9 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 30,
+    "with_what": [
+      "bowl",
+      "spoon",
+      "mug"
+    ],
+    "with_whom": [
+      "flatmate Lotte"
+    ]
+  },
+  "event4": {
+    "event_type": "travel",
+    "event_label": "cycling to Uni",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "cycled to the university",
+    "agent_turn": [
+      {
+        "turn_id": 41,
+        "utterance": "What did you do at 10 o'clock?"
+      },
+      {
+        "turn_id": 43,
+        "utterance": "Who were you with?"
+      },
+      {
+        "turn_id": 45,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 47,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 42,
+        "utterance": "I went to the Uni"
+      },
+      {
+        "turn_id": 44,
+        "utterance": ""
+      },
+      {
+        "turn_id": 46,
+        "utterance": "I went by bike"
+      },
+      {
+        "turn_id": 48,
+        "utterance": "15 minutes"
+      }
+    ],
+    "where": [
+      "university",
+      "her university",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "10:00",
+      "10 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 15,
+    "with_what": [
+      "bicycle"
+    ],
+    "with_whom": []
+  }
+}
