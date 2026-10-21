@@ -7,7 +7,12 @@
     ],
     "what": [],
     "description": "woke up to her phone alarm and snoozed it once",
-    "human_turn": "My alarm went off at half past seven this morning and of course I hit snooze once before I actually got up.",
+    "human_turn": [
+      {
+        "turn_id": 1,
+        "utterance": "My alarm went off at half past seven this morning and of course I hit snooze once before I actually got up."
+      }
+    ],
     "where": [
       "bedroom in her student flat",
       "bedroom",
@@ -40,7 +45,12 @@
       "clothes"
     ],
     "description": "took a shower and got dressed",
-    "human_turn": "Then I jumped in the shower, dried my hair and got dressed.",
+    "human_turn": [
+      {
+        "turn_id": 2,
+        "utterance": "Then I jumped in the shower, dried my hair and got dressed."
+      }
+    ],
     "where": [
       "shared bathroom in the student flat",
       "bathroom",
@@ -77,7 +87,12 @@
       "coffee"
     ],
     "description": "ate yoghurt with granola and drank coffee while chatting",
-    "human_turn": "I had breakfast in the kitchen with my flatmate Lotte, just yoghurt with granola and a coffee, and we chatted for a bit.",
+    "human_turn": [
+      {
+        "turn_id": 3,
+        "utterance": "I had breakfast in the kitchen with my flatmate Lotte, just yoghurt with granola and a coffee, and we chatted for a bit."
+      }
+    ],
     "where": [
       "shared kitchen in the student flat",
       "kitchen",
@@ -111,7 +126,12 @@
     ],
     "what": [],
     "description": "cycled to the university campus in light rain",
-    "human_turn": "Around twenty-five past eight I cycled to campus. It was drizzling the whole way, so I was glad I had my rain jacket.",
+    "human_turn": [
+      {
+        "turn_id": 4,
+        "utterance": "Around twenty-five past eight I cycled to campus. It was drizzling the whole way, so I was glad I had my rain jacket."
+      }
+    ],
     "where": [
       "from her flat in Oost to the university campus",
       "on the road",
@@ -143,7 +163,12 @@
       "lecture notes"
     ],
     "description": "attended a lecture on cognitive psychology and took notes",
-    "human_turn": "At nine I had a cognitive psychology lecture, almost two hours. The hall was packed, there must have been 150 of us, and I took notes the whole time.",
+    "human_turn": [
+      {
+        "turn_id": 5,
+        "utterance": "At nine I had a cognitive psychology lecture, almost two hours. The hall was packed, there must have been 150 of us, and I took notes the whole time."
+      }
+    ],
     "where": [
       "lecture hall in the main university building",
       "lecture hall",
@@ -179,7 +204,12 @@
       "cappuccino"
     ],
     "description": "bought a cappuccino and talked about the upcoming exam",
-    "human_turn": "After the lecture I grabbed a cappuccino at the campus café with my classmates Jonas and Mila. We mostly talked about the exam that's coming up.",
+    "human_turn": [
+      {
+        "turn_id": 6,
+        "utterance": "After the lecture I grabbed a cappuccino at the campus café with my classmates Jonas and Mila. We mostly talked about the exam that's coming up."
+      }
+    ],
     "where": [
       "campus café",
       "café",
@@ -214,7 +244,12 @@
       "presentation slides"
     ],
     "description": "worked on a group presentation about memory experiments",
-    "human_turn": "Then Jonas, Mila, Sven and I sat in a study room in the library for over an hour working on our group presentation about memory experiments.",
+    "human_turn": [
+      {
+        "turn_id": 7,
+        "utterance": "Then Jonas, Mila, Sven and I sat in a study room in the library for over an hour working on our group presentation about memory experiments."
+      }
+    ],
     "where": [
       "study room in the university library",
       "study room",
@@ -253,7 +288,12 @@
       "apple"
     ],
     "description": "ate a cheese sandwich and an apple she brought from home",
-    "human_turn": "Lunch was just a cheese sandwich and an apple I'd brought from home. Mila and I ate on the bench outside the library.",
+    "human_turn": [
+      {
+        "turn_id": 8,
+        "utterance": "Lunch was just a cheese sandwich and an apple I'd brought from home. Mila and I ate on the bench outside the library."
+      }
+    ],
     "where": [
       "bench outside the library",
       "bench",
@@ -287,7 +327,12 @@
     ],
     "what": "<PHOTO>",
     "description": "cycled to the hospital lab she had interviewed at, was offered a paid research internship and signed the contract on the spot",
-    "human_turn": "Big news! Just after one I cycled over to the hospital lab where I had my interview, and they offered me a paid research internship. I signed on the spot! They took this photo of me.",
+    "human_turn": [
+      {
+        "turn_id": 9,
+        "utterance": "Big news! Just after one I cycled over to the hospital lab where I had my interview, and they offered me a paid research internship. I signed on the spot! They took this photo of me."
+      }
+    ],
     "where": "<PHOTO>",
     "when": [
       "13:05",
@@ -335,7 +380,12 @@
     ],
     "what": [],
     "description": "called her parents to tell them the news about the internship",
-    "human_turn": "Right after that I stood outside the hospital and video-called my mum and dad to tell them the news. They were so happy for me.",
+    "human_turn": [
+      {
+        "turn_id": 10,
+        "utterance": "Right after that I stood outside the hospital and video-called my mum and dad to tell them the news. They were so happy for me."
+      }
+    ],
     "where": [
       "outside the hospital",
       "City Hospital",
@@ -370,7 +420,12 @@
       "textbook"
     ],
     "description": "studied lecture slides and made summary notes for her exam",
-    "human_turn": "Then back to the silent area of the library for an hour and a half, going through the lecture slides and making summary notes for my exam.",
+    "human_turn": [
+      {
+        "turn_id": 11,
+        "utterance": "Then back to the silent area of the library for an hour and a half, going through the lecture slides and making summary notes for my exam."
+      }
+    ],
     "where": [
       "silent study area of the university library",
       "silent study area",
@@ -402,7 +457,12 @@
     ],
     "what": [],
     "description": "cycled from campus to the supermarket",
-    "human_turn": "At ten to four I biked from campus to the Albert Heijn near my place.",
+    "human_turn": [
+      {
+        "turn_id": 12,
+        "utterance": "At ten to four I biked from campus to the Albert Heijn near my place."
+      }
+    ],
     "where": [
       "from campus to the Albert Heijn near her flat",
       "on the road",
@@ -436,7 +496,12 @@
       "bottle of prosecco"
     ],
     "description": "bought pasta, vegetables, cheese and a bottle of prosecco to celebrate",
-    "human_turn": "I bought pasta, vegetables, cheese and a bottle of prosecco, because this obviously needed celebrating!",
+    "human_turn": [
+      {
+        "turn_id": 13,
+        "utterance": "I bought pasta, vegetables, cheese and a bottle of prosecco, because this obviously needed celebrating!"
+      }
+    ],
     "where": [
       "Albert Heijn supermarket",
       "supermarket",
@@ -468,7 +533,12 @@
     ],
     "what": [],
     "description": "did a spinning class",
-    "human_turn": "At five I did a spinning class at the university sports centre. It was quite full, about twenty people plus the instructor.",
+    "human_turn": [
+      {
+        "turn_id": 14,
+        "utterance": "At five I did a spinning class at the university sports centre. It was quite full, about twenty people plus the instructor."
+      }
+    ],
     "where": [
       "university sports centre",
       "sports centre",
@@ -504,7 +574,12 @@
       "vegetables"
     ],
     "description": "cooked pasta with roasted vegetables",
-    "human_turn": "Back home I cooked pasta with roasted vegetables, and Lotte kept me company in the kitchen.",
+    "human_turn": [
+      {
+        "turn_id": 15,
+        "utterance": "Back home I cooked pasta with roasted vegetables, and Lotte kept me company in the kitchen."
+      }
+    ],
     "where": [
       "shared kitchen in the student flat",
       "kitchen",
@@ -540,7 +615,12 @@
     ],
     "what": "<PHOTO>",
     "description": "ate dinner and toasted to her new internship",
-    "human_turn": "Then we had a little celebration dinner in the living room, Lotte, Ahmed and me. Ahmed set his phone on a timer for this picture!",
+    "human_turn": [
+      {
+        "turn_id": 16,
+        "utterance": "Then we had a little celebration dinner in the living room, Lotte, Ahmed and me. Ahmed set his phone on a timer for this picture!"
+      }
+    ],
     "where": [
       "living room of the student flat",
       "living room",
@@ -613,7 +693,12 @@
       "kitchen counter"
     ],
     "description": "washed the dishes and cleaned the kitchen counter",
-    "human_turn": "Afterwards Ahmed and I did the dishes and wiped down the kitchen counter.",
+    "human_turn": [
+      {
+        "turn_id": 17,
+        "utterance": "Afterwards Ahmed and I did the dishes and wiped down the kitchen counter."
+      }
+    ],
     "where": [
       "shared kitchen in the student flat",
       "kitchen",
@@ -649,7 +734,12 @@
       "crime series"
     ],
     "description": "watched two episodes of a crime series",
-    "human_turn": "Then I watched two episodes of my crime series on my laptop in my room.",
+    "human_turn": [
+      {
+        "turn_id": 18,
+        "utterance": "Then I watched two episodes of my crime series on my laptop in my room."
+      }
+    ],
     "where": [
       "her bedroom",
       "bedroom",
@@ -683,7 +773,12 @@
       "weekend plans"
     ],
     "description": "texted friends about the internship and planned a drink for the weekend",
-    "human_turn": "In bed I texted my friends from secondary school about the internship, and we planned to go for drinks this weekend.",
+    "human_turn": [
+      {
+        "turn_id": 19,
+        "utterance": "In bed I texted my friends from secondary school about the internship, and we planned to go for drinks this weekend."
+      }
+    ],
     "where": [
       "in bed",
       "her bedroom",
@@ -719,7 +814,12 @@
       "teeth"
     ],
     "description": "brushed her teeth, set her alarm and went to sleep",
-    "human_turn": "Finally I brushed my teeth, set my alarm and went to sleep at about twenty to eleven.",
+    "human_turn": [
+      {
+        "turn_id": 20,
+        "utterance": "Finally I brushed my teeth, set my alarm and went to sleep at about twenty to eleven."
+      }
+    ],
     "where": [
       "bathroom and bedroom of the student flat",
       "her student flat",

@@ -11,3 +11,4 @@ jupyter
 rdflib
 networkx
 scipy
+ipywidgets

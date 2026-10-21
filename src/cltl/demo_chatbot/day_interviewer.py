@@ -24,6 +24,8 @@ from datetime import datetime
 
 from openai import OpenAI
 
+from src.cltl.demo_chatbot.day_statistics import make_turn, get_utterances
+
 LLAMA_CPP_URL = "http://localhost:8080/v1"
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 EXAMPLE_DAYS = os.path.join(PROJECT_ROOT, "data", "example_days")
@@ -98,6 +100,17 @@ def parse_hour(text):
         hour += 12
     return hour if hour < 24 else None
 
+# A name after e.g. 'my name is', anywhere in the answer: the phrase is matched in any case, the name has capitals
+NAME_PATTERN = re.compile(r"\b(?i:my name is|i am|i'm|this is|call me|it's|it is)\s+([A-Z][\w'-]*(?:\s+[A-Z][\w'-]*)?)")
+
+def parse_name(text):
+    """The name in an answer such as 'Henk', 'My name is Henk' or 'Hi! I'm Henk, nice to meet you.'. Without such a
+    phrase, the first words of the answer are taken."""
+    match = NAME_PATTERN.search(text)
+    if match:
+        return match.group(1)
+    return " ".join(re.findall(r"[\w'-]+", text)[:3]) or "the user"
+
 def say_hour(hour):
     return f"{hour % 12 or 12} o'clock" + (" in the afternoon" if 12 < hour < 18 else " in the evening" if hour >= 18 else "")
 
@@ -113,6 +126,10 @@ def load_example_days(folder):
 def get_events(day):
     return [event for key, event in day.items() if key.startswith("event")]
 
+def get_human_turns(event):
+    """The utterances of the user about an event, without the empty answers to skipped questions."""
+    return [utterance for utterance in get_utterances(event, "human_turn") if utterance]
+
 def get_event_types(days):
     return sorted({event["event_type"] for day in days for event in get_events(day)})
 
@@ -127,7 +144,8 @@ def get_example_prompts(days, nr_of_examples=3):
                          "description": event["description"], "what": event["what"],
                          "with_what": event["with_what"], "with_whom": event["with_whom"], "where": event["where"],
                          "start_time": event["when"][0], "how_long": event["how_long"]}
-                examples.append(f"User: {event['human_turn']}\nJSON: {json.dumps(slots)}")
+                turns = "\n".join(f"User: {turn}" for turn in get_human_turns(event))
+                examples.append(f"{turns}\nJSON: {json.dumps(slots)}")
                 break
         if len(examples) == nr_of_examples:
             break
@@ -186,6 +204,10 @@ class DayInterviewer:
         self.home = ""
         self.hour = 7
         self.question = ""
+        # the number of the last turn in the conversation, of the agent or the user, and of the current question
+        self.turn_id = 0
+        self.question_id = 0
+        # the turns about the current event as (speaker, turn_id, utterance)
         self.turns = []
         self.pending_slots = []
         self.day = {}
@@ -196,19 +218,24 @@ class DayInterviewer:
         return self.state == "done"
 
     def start(self):
+        self.turn_id = 1
         return "Hi! I would like to hear about your day, hour by hour. You can type 'stop' at any time. What is your name?"
 
     def respond(self, utterance):
         """Takes the answer of the user and returns the next question or the closing of the conversation."""
         utterance = utterance.strip()
+        # the answer of the user is the next turn, the reply of the agent the turn after it
+        self.turn_id += 1
         if utterance.lower().strip(".! ") in STOP_WORDS:
-            return self.finish()
-        return getattr(self, f"_on_{self.state}")(utterance)
+            reply = self.finish()
+        else:
+            reply = getattr(self, f"_on_{self.state}")(utterance)
+        self.turn_id += 1
+        return reply
 
     ## Getting to know the user
     def _on_name(self, utterance):
-        name = re.sub(r"^(my name is|i am|i'm|it's|it is|this is|call me)\s+", "", utterance, flags=re.IGNORECASE)
-        self.name = name.strip(" .!") or "the user"
+        self.name = parse_name(utterance)
         self.state = "pronoun"
         return f"Nice to meet you, {self.name}. Should I refer to you as he, she or they?"
 
@@ -235,13 +262,14 @@ class DayInterviewer:
         self.state = "event"
         self.turns = []
         self.question = f"What did you do at {say_hour(self.hour)}?"
+        self.question_id = self.turn_id + 1
         return self.question
 
     def _on_event(self, utterance):
         if not utterance:
             # nothing to tell for this hour, move on to the next one
             return self.next_hour(self.hour + 1)
-        self.turns = [("Agent", self.question), ("User", utterance)]
+        self.turns = [("Agent", self.question_id, self.question), ("User", self.turn_id, utterance)]
         mentioned = {} if self.ask_all else self.get_mentioned_slots()
         self.pending_slots = [slot for slot in SLOT_ORDER if not mentioned.get(slot)]
         return self.ask_slot()
@@ -251,11 +279,12 @@ class DayInterviewer:
             return self.save_event()
         self.state = "slot"
         self.question = QUESTIONS[self.pending_slots.pop(0)]
+        self.question_id = self.turn_id + 1
         return self.question
 
     def _on_slot(self, utterance):
-        self.turns.append(("Agent", self.question))
-        self.turns.append(("User", utterance))
+        self.turns.append(("Agent", self.question_id, self.question))
+        self.turns.append(("User", self.turn_id, utterance))
         return self.ask_slot()
 
     def save_event(self):
@@ -282,7 +311,7 @@ class DayInterviewer:
 
     ## Filling the slots with the LLM
     def get_conversation(self):
-        return "\n".join(f"{speaker}: {text}" for speaker, text in self.turns)
+        return "\n".join(f"{speaker}: {text}" for speaker, _, text in self.turns)
 
     def get_mentioned_slots(self):
         """Asks the LLM which slots the user already answered, so that the agent only asks for the others.
@@ -362,7 +391,11 @@ class DayInterviewer:
                 "who": [self.name],
                 "what": lists["what"],
                 "description": slots.get("description") or "",
-                "human_turn": " ".join(text for speaker, text in self.turns if speaker == "User" and text),
+                # the questions of the agent about this event and the answers of the user with the number of the
+                # turn in the conversation: human_turn[i] is the answer to agent_turn[i], with the next turn_id,
+                # and has an empty utterance if the question was skipped
+                "agent_turn": [make_turn(turn_id, text) for speaker, turn_id, text in self.turns if speaker == "Agent"],
+                "human_turn": [make_turn(turn_id, text) for speaker, turn_id, text in self.turns if speaker == "User"],
                 "where": lists["where"],
                 "when": make_when(start_time),
                 "how_long": how_long,
@@ -433,7 +466,7 @@ class DayInterviewer:
             return
         if not self.path:
             os.makedirs(self.output_folder, exist_ok=True)
-            file_name = f"day_{slug(self.name)}_{datetime.now():%Y%m%d_%H%M}.json"
+            file_name = f"day_{slug(self.name)[:40]}_{datetime.now():%Y%m%d_%H%M}.json"
             self.path = os.path.join(self.output_folder, file_name)
         day = dict(self.day)
         if with_chains:

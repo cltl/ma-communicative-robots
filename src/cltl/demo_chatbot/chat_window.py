@@ -56,6 +56,11 @@ class ChatWindow():
         display(self.window)
         self.add_message("Agent", self.agent.start())
 
+    def show_conversation(self):
+        """Shows only the conversation and the font size, without the text field and the buttons, e.g. to follow a
+        conversation between the agent and a simulated user. The utterances are added with add_message."""
+        display(widgets.VBox([self.font_size, self.conversation_box, self.status]))
+
     def set_font_size(self):
         size = f"{self.font_size.value}px"
         for widget in [self.answer, self.skip_button, self.stop_button, self.status, self.saved]:
@@ -76,8 +81,9 @@ class ChatWindow():
         """Shows the conversation: the agent on the left and the user on the right."""
         bubbles = []
         for speaker, text in self.messages:
-            align = "right" if speaker == "You" else "left"
-            color = USER_COLOR if speaker == "You" else AGENT_COLOR
+            # the agent on the left, the user on the right, also a simulated user with another name
+            align = "left" if speaker == "Agent" else "right"
+            color = AGENT_COLOR if speaker == "Agent" else USER_COLOR
             text = html.escape(text) if text else "<i>(no answer)</i>"
             bubbles.append(f'<div style="text-align:{align};"><div style="{BUBBLE_STYLE.format(color=color)}">'
                            f'<b>{speaker}:</b> {text}</div></div>')

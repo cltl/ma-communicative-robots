@@ -7,7 +7,12 @@
     ],
     "what": [],
     "description": "woke up early for his day shift",
-    "human_turn": "My alarm went off at quarter to six, day shift again. Ruben was still fast asleep.",
+    "human_turn": [
+      {
+        "turn_id": 1,
+        "utterance": "My alarm went off at quarter to six, day shift again. Ruben was still fast asleep."
+      }
+    ],
     "where": [
       "bedroom of his apartment",
       "bedroom",
@@ -42,7 +47,12 @@
       "work clothes"
     ],
     "description": "showered, shaved and put on his work clothes",
-    "human_turn": "Quick shower, a shave, and into my work clothes.",
+    "human_turn": [
+      {
+        "turn_id": 2,
+        "utterance": "Quick shower, a shave, and into my work clothes."
+      }
+    ],
     "where": [
       "bathroom of his apartment",
       "bathroom",
@@ -77,7 +87,12 @@
       "coffee"
     ],
     "description": "ate oatmeal with banana and drank a strong coffee",
-    "human_turn": "Breakfast was oatmeal with a banana and a really strong coffee, on my own in the kitchen.",
+    "human_turn": [
+      {
+        "turn_id": 3,
+        "utterance": "Breakfast was oatmeal with a banana and a really strong coffee, on my own in the kitchen."
+      }
+    ],
     "where": [
       "kitchen of his apartment",
       "kitchen",
@@ -108,7 +123,12 @@
     ],
     "what": [],
     "description": "cycled to the hospital",
-    "human_turn": "Then I cycled to the hospital on my e-bike, about twenty minutes.",
+    "human_turn": [
+      {
+        "turn_id": 4,
+        "utterance": "Then I cycled to the hospital on my e-bike, about twenty minutes."
+      }
+    ],
     "where": [
       "from his apartment to the university hospital",
       "on the road",
@@ -139,7 +159,12 @@
       "patient files"
     ],
     "description": "received the handover from the night shift about the patients on the ward",
-    "human_turn": "At seven Fatima, who had done the night shift, gave me and two of my day-shift colleagues the handover about the patients on the ward.",
+    "human_turn": [
+      {
+        "turn_id": 5,
+        "utterance": "At seven Fatima, who had done the night shift, gave me and two of my day-shift colleagues the handover about the patients on the ward."
+      }
+    ],
     "where": [
       "nurses' station, cardiology ward",
       "nurses' station",
@@ -175,7 +200,12 @@
       "morning medication"
     ],
     "description": "checked vital signs and gave morning medication to six patients",
-    "human_turn": "Then the morning round: checking vital signs and handing out morning medication to my six patients. That took an hour and a half.",
+    "human_turn": [
+      {
+        "turn_id": 6,
+        "utterance": "Then the morning round: checking vital signs and handing out morning medication to my six patients. That took an hour and a half."
+      }
+    ],
     "where": [
       "patient rooms, cardiology ward",
       "patient rooms",
@@ -211,7 +241,12 @@
       "treatment plans"
     ],
     "description": "joined the cardiologist on the ward round to discuss treatment plans",
-    "human_turn": "At quarter past nine I joined Dr. Visser, the cardiologist, and one of the medical interns on the ward round to go over the treatment plans.",
+    "human_turn": [
+      {
+        "turn_id": 7,
+        "utterance": "At quarter past nine I joined Dr. Visser, the cardiologist, and one of the medical interns on the ward round to go over the treatment plans."
+      }
+    ],
     "where": [
       "cardiology ward",
       "university hospital",
@@ -246,7 +281,12 @@
       "biscuit"
     ],
     "description": "had a coffee and a biscuit",
-    "human_turn": "Finally a coffee break with my colleague Ingrid in the pantry, coffee and a biscuit.",
+    "human_turn": [
+      {
+        "turn_id": 8,
+        "utterance": "Finally a coffee break with my colleague Ingrid in the pantry, coffee and a biscuit."
+      }
+    ],
     "where": [
       "staff pantry",
       "university hospital",
@@ -280,7 +320,12 @@
       "ECG recording"
     ],
     "description": "admitted a new patient, took her history and explained the ward routine",
-    "human_turn": "Then I admitted a new patient in room 12. I took her history, made an ECG and explained the ward routine to her and her daughter.",
+    "human_turn": [
+      {
+        "turn_id": 9,
+        "utterance": "Then I admitted a new patient in room 12. I took her history, made an ECG and explained the ward routine to her and her daughter."
+      }
+    ],
     "where": [
       "room 12, cardiology ward",
       "room 12",
@@ -315,7 +360,12 @@
     ],
     "what": "<PHOTO>",
     "description": "ate soup and a bread roll",
-    "human_turn": "Lunch in the canteen with Ingrid and Mark at quarter past twelve. Someone took this picture of the three of us.",
+    "human_turn": [
+      {
+        "turn_id": 10,
+        "utterance": "Lunch in the canteen with Ingrid and Mark at quarter past twelve. Someone took this picture of the three of us."
+      }
+    ],
     "where": [
       "hospital staff canteen",
       "staff canteen",
@@ -387,7 +437,12 @@
       "nursing reports"
     ],
     "description": "updated patient records and wrote nursing reports",
-    "human_turn": "After lunch I spent an hour at the nurses' station updating patient records and writing my nursing reports.",
+    "human_turn": [
+      {
+        "turn_id": 11,
+        "utterance": "After lunch I spent an hour at the nurses' station updating patient records and writing my nursing reports."
+      }
+    ],
     "where": [
       "nurses' station",
       "cardiology ward",
@@ -421,7 +476,12 @@
       "medication list"
     ],
     "description": "discharged an elderly patient and explained his new medication",
-    "human_turn": "At two I discharged an elderly gentleman from room 8 and went through his new medication with him and his wife.",
+    "human_turn": [
+      {
+        "turn_id": 12,
+        "utterance": "At two I discharged an elderly gentleman from room 8 and went through his new medication with him and his wife."
+      }
+    ],
     "where": [
       "room 8, cardiology ward",
       "room 8",
@@ -456,7 +516,12 @@
       "patient files"
     ],
     "description": "handed over his patients to the evening shift",
-    "human_turn": "At three I handed my patients over to Tom and Sanne from the evening shift.",
+    "human_turn": [
+      {
+        "turn_id": 13,
+        "utterance": "At three I handed my patients over to Tom and Sanne from the evening shift."
+      }
+    ],
     "where": [
       "nurses' station",
       "cardiology ward",
@@ -490,7 +555,12 @@
       "wounds of the cyclist"
     ],
     "description": "on his way home he saw a cyclist get hit by a car; he gave first aid, kept the man stable and stayed with him until the ambulance arrived",
-    "human_turn": "On my way home I saw a car hit a cyclist right in front of me. I gave him first aid, kept him stable and stayed with him until the ambulance came. Someone took this photo after it arrived.",
+    "human_turn": [
+      {
+        "turn_id": 14,
+        "utterance": "On my way home I saw a car hit a cyclist right in front of me. I gave him first aid, kept him stable and stayed with him until the ambulance came. Someone took this photo after it arrived."
+      }
+    ],
     "where": "<PHOTO>",
     "when": [
       "15:45",
@@ -538,7 +608,12 @@
     ],
     "what": [],
     "description": "cycled the rest of the way home, still shaken",
-    "human_turn": "I cycled the rest of the way home, still pretty shaken.",
+    "human_turn": [
+      {
+        "turn_id": 15,
+        "utterance": "I cycled the rest of the way home, still pretty shaken."
+      }
+    ],
     "where": [
       "from the Biltstraat to his apartment",
       "on the road",
@@ -569,7 +644,12 @@
       "tea"
     ],
     "description": "told his partner about the accident over a cup of tea",
-    "human_turn": "When I got home I told Ruben all about the accident over a cup of tea.",
+    "human_turn": [
+      {
+        "turn_id": 16,
+        "utterance": "When I got home I told Ruben all about the accident over a cup of tea."
+      }
+    ],
     "where": [
       "living room of his apartment",
       "living room",
@@ -602,7 +682,12 @@
     ],
     "what": [],
     "description": "went for a run to clear his head",
-    "human_turn": "Around quarter to six I went for a run in the Wilhelminapark to clear my head.",
+    "human_turn": [
+      {
+        "turn_id": 17,
+        "utterance": "Around quarter to six I went for a run in the Wilhelminapark to clear my head."
+      }
+    ],
     "where": [
       "Wilhelminapark",
       "park",
@@ -635,7 +720,12 @@
       "rice"
     ],
     "description": "ate a stir-fry that Ruben had cooked",
-    "human_turn": "Ruben had cooked a chicken stir-fry with rice for dinner, which was exactly what I needed.",
+    "human_turn": [
+      {
+        "turn_id": 18,
+        "utterance": "Ruben had cooked a chicken stir-fry with rice for dinner, which was exactly what I needed."
+      }
+    ],
     "where": [
       "dining table at home",
       "his apartment",
@@ -668,7 +758,12 @@
       "thriller novel"
     ],
     "description": "read a thriller novel on the sofa",
-    "human_turn": "After dinner I read my thriller on the sofa while Ruben watched football.",
+    "human_turn": [
+      {
+        "turn_id": 19,
+        "utterance": "After dinner I read my thriller on the sofa while Ruben watched football."
+      }
+    ],
     "where": [
       "living room of his apartment",
       "living room",
@@ -699,7 +794,12 @@
     ],
     "what": [],
     "description": "went to bed early because of the early shift the next day",
-    "human_turn": "I went to bed early, at quarter to ten, because I have the early shift again tomorrow.",
+    "human_turn": [
+      {
+        "turn_id": 20,
+        "utterance": "I went to bed early, at quarter to ten, because I have the early shift again tomorrow."
+      }
+    ],
     "where": [
       "bedroom of his apartment",
       "bedroom",

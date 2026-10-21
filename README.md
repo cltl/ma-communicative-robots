@@ -19,9 +19,16 @@ For each of the above analysis, a notebook is provided that shows how one or mor
 The result of the scoring is saved in a CSV file in an ```evaluation``` folder, where each row contains the ```turn id```, the ```speaker```, the ```utterance``` and additional values for the analysis and the scores.
 
 The ```plots``` module has two notebooks for reading the CSV files and generating plots for each interaction that show the conversation on the X-axis as a sequence of turns and the scored analysis on the Y-axis.
+Each turn is shown on the X-axis with its number, speaker and utterance, and each data point is labelled with its score. An additional label can be added to the data points with ```label_column```, e.g. the dialogue act (```dialogue_act```) or the emotion (```go_emotion```).
 
-The ```data``` folder contains an ```emissor``` folder with the interaction data for a few scenarios to demonstrate the notebooks.
-Replace the path to your own emissor data to apply the analysis on your interactions.
+In addition, the project has a task-based evaluation: an agent collects a description of a day in somebody's life and the collected description is evaluated against a GOLD description of that day (see [Task-based evaluation: describing a day](#task-based-evaluation-describing-a-day)).
+
+The ```data``` folder contains:
+
+* ```emissor```: the interaction data for a few scenarios to demonstrate the notebooks. Replace the path to your own emissor data to apply the analysis on your interactions.
+* ```example_days```: five GOLD descriptions of a day in somebody's life, with 20 events each, and a ```photos``` folder with photos of some of the events.
+* ```collected_days```: the days collected by the day interviewer agent. This folder is created when you save your first day.
+* ```simulated_days```: the days collected by the day interviewer agent from a simulated user.
 
 ## How to proceed
 
@@ -31,6 +38,78 @@ Replace the path to your own emissor data to apply the analysis on your interact
 You could also create your own code to create a CSV file following the same format and plot the result.
 
 In addition to plotting the interactions with the result of the analysis, the notebooks also provide other results in each analysis notebook.
+
+## Task-based evaluation: describing a day
+
+In this task, an agent asks a user about their day and stores the answers as a structured description of the events of that day. The quality of the conversation is then measured by how well the collected description matches a GOLD description of the same day.
+
+### The day descriptions
+
+A day is a JSON file with the events ```event1```, ```event2```, ... and the ```coreference_chains``` of the people in the events, as in the examples in ```data/example_days```. Each event has the following fields:
+
+* ```event_type``` (e.g. ```meal```, ```travel```, ```work```), ```event_label``` and ```description```
+* ```human_turn```: a list with the turns of the user about the event, each turn with its number in the conversation and the utterance, e.g. ```{"turn_id": 10, "utterance": "I woke up to my phone alarm."}```
+* ```agent_turn```: only in the collected days, a list with the questions of the agent about the event in the same structure, e.g. ```{"turn_id": 9, "utterance": "What did you do at 7 o'clock?"}```. ```human_turn[i]``` is the answer to ```agent_turn[i]``` (with an empty utterance if the question was skipped). The example days have no conversation with an agent, their turns are numbered in the order of the events
+* the roles of the event: ```who```, ```what```, ```with_what``` and ```with_whom``` (lists of values), ```where``` (a list of places from the most specific to the most general, e.g. ```["kitchen", "her flat", "Amsterdam", "Netherlands", "Europe"]```), ```when``` (a list from the most specific to the most general time, e.g. ```["07:30", "half past seven", "7 o'clock", "early in the morning", "morning"]```) and ```how_long``` (minutes)
+
+In some of the example days, a role has the value ```<PHOTO>```: the value is shown on a photo in ```data/example_days/photos``` and the GOLD value is given in the ```photo``` field of the event.
+
+Each coreference chain is an entity (a person, group or animal) with the mentions of that entity in the ```who``` and ```with_whom``` roles of the events.
+
+### 1. Collecting a day with the day interviewer
+
+The day interviewer in ```src/cltl/demo_chatbot``` is a scripted agent that asks the user about their day, hour by hour: what did you do at hour X, with whom, what, with what, where, when and for how long. It only asks the follow-up questions for the details that the user did not mention yet. An LLM served by a local [llama.cpp](https://github.com/ggml-org/llama.cpp) server interprets the answers and fills the roles of the event. After each event, the agent moves on to the next hour after the event, until the user stops or the day is over.
+
+Start the llama.cpp server with a model before running the agent, e.g.:
+
+```bash
+llama-server -hf Qwen/Qwen2.5-7B-Instruct-GGUF:Q4_K_M --port 8080 -c 4096
+```
+
+Then open the notebook ```src/cltl/demo_chatbot/day_interviewer.ipynb```, which shows the conversation in a chat window with an adjustable font size, or run the agent from a terminal in the root of the project:
+
+```bash
+python -m src.cltl.demo_chatbot.day_interviewer
+```
+
+Click **Stop** in the chat window or type ```stop```, ```bye``` or ```done``` to end the conversation. The day is saved after each event in ```data/collected_days/day_<name>_<date>.json```, and the coreference chains are added when the conversation is stopped. Note that ```data``` is in ```.gitignore```, so your collected days are not committed.
+
+### 2. Statistics of a day
+
+```src/cltl/demo_chatbot/day_statistics.py``` gives the number of events, the number of filled roles, the number of coreference chains, the average number of mentions per chain and the unique values of ```what``` and ```with_what``` with their frequencies. The statistics are saved next to the day as ```<name>_meta.json```:
+
+```bash
+python -m src.cltl.demo_chatbot.day_statistics data/example_days data/collected_days
+```
+
+### 3. Evaluating a collected day against a GOLD day
+
+```src/cltl/task_evaluation/day_evaluation.py``` evaluates a collected day against a GOLD day on three levels:
+
+* **events**: the collected events are aligned one-to-one with the GOLD events on their time, event type and label
+* **roles**: are the roles of the aligned events filled in both days?
+* **role-fillers**: do the values of the roles match?
+
+For each level, it gives a contingency table with the true positives, false positives, false negatives and true negatives (only defined for roles) and the precision, recall and f1. The values are compared in two modes: an **exact** match of the labels and a **jaccard** match of the words of the labels, which gives partial credit to partial matches. In both modes, ```where``` and ```when``` are weighted by the specificity of the match and ```who``` and ```with_whom``` are matched through the coreference chains.
+
+```bash
+python -m src.cltl.task_evaluation.day_evaluation --key data/example_days/day1_emma_student.json --collected data/collected_days/<your day>.json
+```
+
+The results are saved next to the collected day as ```<collected>_vs_<key>_evaluation.json```.
+The evaluation per turn of the user is saved as ```<collected>_vs_<key>_turn_evaluation.csv```, in the same format as the CSV files of the EMISSOR analyses, with a row for each question of the agent and each answer of the user (```turn<turn_id>```), the number of events and roles extracted from each turn and the number of correct events and roles in both modes. The effectiveness of the communication is reported and saved as ```<collected>_vs_<key>_turn_effectiveness.json```: for the events, the roles and the correct events and roles, the total, the average per turn of the user and the ratio of the total to all turns of the conversation (the questions of the agent included). An agent that gets more correct roles with fewer turns communicates more effectively. The turn evaluation can be plotted with the ```plots``` module, e.g. with ```create_timeline_image_from_csv(csv_file, "nr_of_correct_roles_jaccard", settings)```. The notebook ```src/cltl/task_evaluation/day_evaluation.ipynb``` runs the statistics and the evaluation for two days and shows the results as tables, including the aligned and missed events.
+
+To evaluate the agent, pick one of the example days, tell the agent about the day of that person as if it were your own day, and evaluate the collected day against the example day.
+
+### 4. Simulating the user
+
+Instead of telling the agent about an example day yourself, a simulated user can do it. ```src/cltl/simulated_user/simulated_user.py``` plays the person of an example day: an LLM gets the facts of all the events of that day from the GOLD JSON, but not the words of the person in ```human_turn```, and answers the questions of the agent naturally as that person. It knows nothing about the strategy of the agent and uses no techniques to interpret the questions. The conversation stops when the agent is done, when the agent has collected 20 events, when the agent repeats itself or after a maximum number of turns.
+
+The notebook ```src/cltl/simulated_user/simulated_day_interview.ipynb``` lets you select an example day, shows the conversation between the agent and the simulated user in a chat window, saves the collected day and the conversation in ```data/simulated_days```, computes the statistics, evaluates the collected day against the example day and converts the conversation to an EMISSOR CSV file that is plotted and reports the effectiveness of the communication. A simulated interview can also be run from a terminal:
+
+```bash
+python -m src.cltl.simulated_user.simulated_user --day data/example_days/day1_emma_student.json
+```
 
 ## Requirements
 
@@ -45,8 +124,8 @@ Create a virtual environment for running the code.
 
 Using venv:
    ```bash
-    python -m venv --python=3.11 evaluate
-    source venv/bin/activate
+    python3.11 -m venv evaluate
+    source evaluate/bin/activate
     python -m pip install --upgrade pip
     pip install -r requirements.txt
     python -m ipykernel install --user --name=evaluate
@@ -61,7 +140,9 @@ Using Conda:
     python -m ipykernel install --user --name=evaluate
 ```
 
-With the environment active, launch Jupyter lab from the CLI and open the notebooks
+With the environment active, launch Jupyter lab from the CLI and open the notebooks.
+
+The LLM as a judge notebook and the day interviewer also need a local installation of [llama.cpp](https://github.com/ggml-org/llama.cpp) (e.g. ```brew install llama.cpp``` on macOS) and a model in GGUF format, e.g. from [huggingface.co](https://huggingface.co/models?library=gguf).
 
 ## References
 Feel free to use our work but cite us:

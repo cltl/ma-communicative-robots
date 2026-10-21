@@ -7,7 +7,12 @@
     ],
     "what": [],
     "description": "woke up when her son climbed into bed",
-    "human_turn": "Luca climbed into our bed at ten to seven, so he was my alarm this morning. Mehmet was still half asleep.",
+    "human_turn": [
+      {
+        "turn_id": 1,
+        "utterance": "Luca climbed into our bed at ten to seven, so he was my alarm this morning. Mehmet was still half asleep."
+      }
+    ],
     "where": [
       "bedroom of her house in Rotterdam",
       "bedroom",
@@ -42,7 +47,12 @@
       "lunch boxes"
     ],
     "description": "helped the children get dressed and packed their school bags",
-    "human_turn": "Then the usual morning chaos: getting Luca and Yara dressed and packing their school bags and lunch boxes.",
+    "human_turn": [
+      {
+        "turn_id": 2,
+        "utterance": "Then the usual morning chaos: getting Luca and Yara dressed and packing their school bags and lunch boxes."
+      }
+    ],
     "where": [
       "children's bedrooms",
       "her house",
@@ -71,7 +81,12 @@
     ],
     "what": "<PHOTO>",
     "description": "ate bread with peanut butter and drank coffee",
-    "human_turn": "We managed a quick breakfast together at the kitchen table before school. Here's a photo of the four of us.",
+    "human_turn": [
+      {
+        "turn_id": 3,
+        "utterance": "We managed a quick breakfast together at the kitchen table before school. Here's a photo of the four of us."
+      }
+    ],
     "where": [
       "kitchen table",
       "kitchen",
@@ -148,7 +163,12 @@
     ],
     "what": [],
     "description": "brought the children to school by cargo bike",
-    "human_turn": "At ten past eight I took the kids to school on the cargo bike.",
+    "human_turn": [
+      {
+        "turn_id": 4,
+        "utterance": "At ten past eight I took the kids to school on the cargo bike."
+      }
+    ],
     "where": [
       "from home to the primary school",
       "on the road",
@@ -182,7 +202,12 @@
       "progress report"
     ],
     "description": "joined the online team stand-up and reported on her progress",
-    "human_turn": "At nine I joined our online stand-up and told my team where I was with my work.",
+    "human_turn": [
+      {
+        "turn_id": 5,
+        "utterance": "At nine I joined our online stand-up and told my team where I was with my work."
+      }
+    ],
     "where": [
       "home office",
       "her house",
@@ -216,7 +241,12 @@
       "bug in the payment module"
     ],
     "description": "fixed a bug in the payment module of a web shop",
-    "human_turn": "Then I spent over two hours hunting down a bug in the payment module of a web shop we're building. Finally fixed it!",
+    "human_turn": [
+      {
+        "turn_id": 6,
+        "utterance": "Then I spent over two hours hunting down a bug in the payment module of a web shop we're building. Finally fixed it!"
+      }
+    ],
     "where": [
       "home office",
       "her house",
@@ -249,7 +279,12 @@
       "pull request"
     ],
     "description": "reviewed a pull request of a junior colleague and gave feedback",
-    "human_turn": "At half past eleven I reviewed a pull request from Pieter, one of our junior developers, and gave him feedback on a video call.",
+    "human_turn": [
+      {
+        "turn_id": 7,
+        "utterance": "At half past eleven I reviewed a pull request from Pieter, one of our junior developers, and gave him feedback on a video call."
+      }
+    ],
     "where": [
       "home office",
       "her house",
@@ -285,7 +320,12 @@
       "sparkling water"
     ],
     "description": "ate leftover pasta salad",
-    "human_turn": "For lunch I ate leftover pasta salad in the garden, with a sparkling water.",
+    "human_turn": [
+      {
+        "turn_id": 8,
+        "utterance": "For lunch I ate leftover pasta salad in the garden, with a sparkling water."
+      }
+    ],
     "where": [
       "garden",
       "her house",
@@ -316,7 +356,12 @@
       "podcast"
     ],
     "description": "took a short walk around the block to get some fresh air",
-    "human_turn": "Then a short walk around the block with a podcast on, just to get some fresh air.",
+    "human_turn": [
+      {
+        "turn_id": 9,
+        "utterance": "Then a short walk around the block with a podcast on, just to get some fresh air."
+      }
+    ],
     "where": [
       "her neighbourhood",
       "Rotterdam",
@@ -347,7 +392,12 @@
       "checkout page demo"
     ],
     "description": "presented a demo of the new checkout page to the client",
-    "human_turn": "At one I demoed the new checkout page to the client. Two people from their side were on the call, plus Anouk, our project manager.",
+    "human_turn": [
+      {
+        "turn_id": 10,
+        "utterance": "At one I demoed the new checkout page to the client. Two people from their side were on the call, plus Anouk, our project manager."
+      }
+    ],
     "where": [
       "home office",
       "her house",
@@ -382,7 +432,12 @@
       "checkout page"
     ],
     "description": "implemented the changes requested by the client",
-    "human_turn": "After that I worked on the changes the client asked for.",
+    "human_turn": [
+      {
+        "turn_id": 11,
+        "utterance": "After that I worked on the changes the client asked for."
+      }
+    ],
     "where": [
       "home office",
       "her house",
@@ -412,7 +467,12 @@
     ],
     "what": [],
     "description": "picked the children up from school",
-    "human_turn": "At quarter past three I picked Luca and Yara up from school.",
+    "human_turn": [
+      {
+        "turn_id": 12,
+        "utterance": "At quarter past three I picked Luca and Yara up from school."
+      }
+    ],
     "where": [
       "primary school",
       "Rotterdam",
@@ -447,7 +507,12 @@
       "maths homework"
     ],
     "description": "gave the kids a snack and helped Yara with her maths homework",
-    "human_turn": "At home the kids got some fruit and crackers, and I helped Yara with her maths homework while Luca had his snack.",
+    "human_turn": [
+      {
+        "turn_id": 13,
+        "utterance": "At home the kids got some fruit and crackers, and I helped Yara with her maths homework while Luca had his snack."
+      }
+    ],
     "where": [
       "kitchen table",
       "kitchen",
@@ -481,7 +546,12 @@
     ],
     "what": [],
     "description": "took Luca to his swimming lesson and watched from the stands",
-    "human_turn": "Then I took Luca to his swimming lesson and watched from the stands for an hour.",
+    "human_turn": [
+      {
+        "turn_id": 14,
+        "utterance": "Then I took Luca to his swimming lesson and watched from the stands for an hour."
+      }
+    ],
     "where": [
       "local swimming pool",
       "swimming pool",
@@ -515,7 +585,12 @@
       "overnight bags"
     ],
     "description": "brought the children to their grandmother for a sleepover",
-    "human_turn": "At six I dropped both kids off at my mother Elena's place for a sleepover.",
+    "human_turn": [
+      {
+        "turn_id": 15,
+        "utterance": "At six I dropped both kids off at my mother Elena's place for a sleepover."
+      }
+    ],
     "where": [
       "her mother's apartment",
       "Netherlands",
@@ -548,7 +623,12 @@
       "make-up"
     ],
     "description": "changed into a dress for a dinner Mehmet had planned",
-    "human_turn": "Then I changed into a dress and did my make-up, because Mehmet had planned a dinner for us.",
+    "human_turn": [
+      {
+        "turn_id": 16,
+        "utterance": "Then I changed into a dress and did my make-up, because Mehmet had planned a dinner for us."
+      }
+    ],
     "where": [
       "bedroom at home",
       "bedroom",
@@ -581,7 +661,12 @@
       "wine"
     ],
     "description": "had a three-course dinner",
-    "human_turn": "We went to a restaurant by the Maas and had a three-course dinner with wine.",
+    "human_turn": [
+      {
+        "turn_id": 17,
+        "utterance": "We went to a restaurant by the Maas and had a three-course dinner with wine."
+      }
+    ],
     "where": [
       "restaurant at the Maas river",
       "restaurant",
@@ -614,7 +699,12 @@
     ],
     "what": "<PHOTO>",
     "description": "during dessert her partner asked her to marry him, holding out an open ring box; she said yes",
-    "human_turn": "And then, during dessert, Mehmet asked me to marry him!! I said yes, and the whole restaurant applauded. A waiter took this photo.",
+    "human_turn": [
+      {
+        "turn_id": 18,
+        "utterance": "And then, during dessert, Mehmet asked me to marry him!! I said yes, and the whole restaurant applauded. A waiter took this photo."
+      }
+    ],
     "where": "<PHOTO>",
     "when": [
       "21:10",
@@ -663,7 +753,12 @@
       "news of the engagement"
     ],
     "description": "video-called her mother and the kids to share the news",
-    "human_turn": "Right after, outside on the quay, Mehmet and I video-called my mum and the kids to tell them the news.",
+    "human_turn": [
+      {
+        "turn_id": 19,
+        "utterance": "Right after, outside on the quay, Mehmet and I video-called my mum and the kids to tell them the news."
+      }
+    ],
     "where": [
       "outside the restaurant on the quay",
       "quay",
@@ -698,7 +793,12 @@
     ],
     "what": [],
     "description": "walked home along the river and went to bed",
-    "human_turn": "Then we walked home along the river and went to bed, around quarter past ten.",
+    "human_turn": [
+      {
+        "turn_id": 20,
+        "utterance": "Then we walked home along the river and went to bed, around quarter past ten."
+      }
+    ],
     "where": [
       "from the restaurant to her house",
       "along the Maas river",

@@ -9,7 +9,12 @@
       "radio news"
     ],
     "description": "woke up without an alarm and listened to the radio news in bed",
-    "human_turn": "I woke up at quarter to seven, no alarm needed, and listened to the news on the radio for a bit. Gerda was still lying next to me.",
+    "human_turn": [
+      {
+        "turn_id": 1,
+        "utterance": "I woke up at quarter to seven, no alarm needed, and listened to the news on the radio for a bit. Gerda was still lying next to me."
+      }
+    ],
     "where": [
       "bedroom of his house in Zwolle",
       "bedroom",
@@ -41,7 +46,12 @@
     ],
     "what": [],
     "description": "took the dog for a morning walk along the river",
-    "human_turn": "Then I took Bobbie for his morning walk along the IJssel. Forty minutes or so.",
+    "human_turn": [
+      {
+        "turn_id": 2,
+        "utterance": "Then I took Bobbie for his morning walk along the IJssel. Forty minutes or so."
+      }
+    ],
     "where": [
       "path along the IJssel river",
       "IJssel river",
@@ -78,7 +88,12 @@
       "tea"
     ],
     "description": "ate brown bread with cheese and a boiled egg and drank tea",
-    "human_turn": "Breakfast with Gerda at the kitchen table: brown bread with cheese, a boiled egg and a pot of tea.",
+    "human_turn": [
+      {
+        "turn_id": 3,
+        "utterance": "Breakfast with Gerda at the kitchen table: brown bread with cheese, a boiled egg and a pot of tea."
+      }
+    ],
     "where": [
       "kitchen table at home",
       "kitchen",
@@ -114,7 +129,12 @@
       "crossword puzzle"
     ],
     "description": "read the local newspaper and did the crossword puzzle",
-    "human_turn": "After that I sat in my armchair with the local paper and did the crossword.",
+    "human_turn": [
+      {
+        "turn_id": 4,
+        "utterance": "After that I sat in my armchair with the local paper and did the crossword."
+      }
+    ],
     "where": [
       "armchair in the living room",
       "living room",
@@ -147,7 +167,12 @@
       "blood pressure pills"
     ],
     "description": "took his blood pressure pills",
-    "human_turn": "At quarter past nine it was time for my blood pressure pills, with a glass of water in the kitchen.",
+    "human_turn": [
+      {
+        "turn_id": 5,
+        "utterance": "At quarter past nine it was time for my blood pressure pills, with a glass of water in the kitchen."
+      }
+    ],
     "where": [
       "kitchen",
       "his house",
@@ -181,7 +206,12 @@
       "rose bushes"
     ],
     "description": "picked the last tomatoes and pruned the rose bushes",
-    "human_turn": "Then I spent over an hour in the back garden. I picked the last of the tomatoes and pruned the rose bushes.",
+    "human_turn": [
+      {
+        "turn_id": 6,
+        "utterance": "Then I spent over an hour in the back garden. I picked the last of the tomatoes and pruned the rose bushes."
+      }
+    ],
     "where": [
       "back garden",
       "garden",
@@ -216,7 +246,12 @@
       "cake"
     ],
     "description": "drank coffee and talked about the neighbourhood and football",
-    "human_turn": "Willem from next door had me over for coffee and cake on his porch. We talked about the neighbourhood and the football, as usual.",
+    "human_turn": [
+      {
+        "turn_id": 7,
+        "utterance": "Willem from next door had me over for coffee and cake on his porch. We talked about the neighbourhood and the football, as usual."
+      }
+    ],
     "where": [
       "neighbour's front porch",
       "neighbour's house",
@@ -251,7 +286,12 @@
       "news of the birth"
     ],
     "description": "received a phone call from his son that his first grandchild, a girl named Noor, had just been born healthy",
-    "human_turn": "And then, around twenty-five past eleven, my son Jeroen called: our first grandchild has been born, a healthy little girl called Noor! Gerda was right beside me.",
+    "human_turn": [
+      {
+        "turn_id": 8,
+        "utterance": "And then, around twenty-five past eleven, my son Jeroen called: our first grandchild has been born, a healthy little girl called Noor! Gerda was right beside me."
+      }
+    ],
     "where": [
       "his living room",
       "living room",
@@ -286,7 +326,12 @@
       "news of the birth"
     ],
     "description": "called his sister and his brother to tell them about the baby",
-    "human_turn": "Of course I immediately rang my sister Annie and my brother Kees to tell them about the baby.",
+    "human_turn": [
+      {
+        "turn_id": 9,
+        "utterance": "Of course I immediately rang my sister Annie and my brother Kees to tell them about the baby."
+      }
+    ],
     "where": [
       "living room at home",
       "living room",
@@ -322,7 +367,12 @@
       "bread"
     ],
     "description": "ate a quick lunch of soup and bread",
-    "human_turn": "Gerda and I had a quick lunch, pea soup and some bread.",
+    "human_turn": [
+      {
+        "turn_id": 10,
+        "utterance": "Gerda and I had a quick lunch, pea soup and some bread."
+      }
+    ],
     "where": [
       "kitchen table at home",
       "kitchen",
@@ -359,7 +409,12 @@
       "beschuit met muisjes"
     ],
     "description": "bought a teddy bear, flowers and a box of traditional 'beschuit met muisjes'",
-    "human_turn": "Then we went into town to buy presents: a teddy bear, flowers and a box of beschuit met muisjes.",
+    "human_turn": [
+      {
+        "turn_id": 11,
+        "utterance": "Then we went into town to buy presents: a teddy bear, flowers and a box of beschuit met muisjes."
+      }
+    ],
     "where": [
       "shops in the city centre of Zwolle",
       "city centre",
@@ -391,7 +446,12 @@
     ],
     "what": [],
     "description": "drove to the hospital where his grandchild was born",
-    "human_turn": "At quarter to two Gerda and I drove to the hospital in Deventer.",
+    "human_turn": [
+      {
+        "turn_id": 12,
+        "utterance": "At quarter to two Gerda and I drove to the hospital in Deventer."
+      }
+    ],
     "where": [
       "from Zwolle to the hospital in Deventer",
       "on the road",
@@ -422,7 +482,12 @@
     ],
     "what": "<PHOTO>",
     "description": "held his first grandchild in his arms for the first time and gave the family the gifts he had bought",
-    "human_turn": "And there she was. I held my granddaughter in my arms for the very first time. Jeroen took this photo of us all.",
+    "human_turn": [
+      {
+        "turn_id": 13,
+        "utterance": "And there she was. I held my granddaughter in my arms for the very first time. Jeroen took this photo of us all."
+      }
+    ],
     "where": "<PHOTO>",
     "when": [
       "14:35",
@@ -475,7 +540,12 @@
     ],
     "what": [],
     "description": "drove back home",
-    "human_turn": "At ten past four we drove back home.",
+    "human_turn": [
+      {
+        "turn_id": 14,
+        "utterance": "At ten past four we drove back home."
+      }
+    ],
     "where": [
       "from Deventer to Zwolle",
       "on the road",
@@ -508,7 +578,12 @@
       "dog food"
     ],
     "description": "fed the dog and let him out in the garden",
-    "human_turn": "Back home I fed Bobbie and let him out in the garden.",
+    "human_turn": [
+      {
+        "turn_id": 15,
+        "utterance": "Back home I fed Bobbie and let him out in the garden."
+      }
+    ],
     "where": [
       "kitchen and back garden",
       "his house",
@@ -543,7 +618,12 @@
       "meatballs"
     ],
     "description": "cooked potatoes, green beans and meatballs",
-    "human_turn": "Then I cooked dinner myself: potatoes, green beans and meatballs.",
+    "human_turn": [
+      {
+        "turn_id": 16,
+        "utterance": "Then I cooked dinner myself: potatoes, green beans and meatballs."
+      }
+    ],
     "where": [
       "kitchen at home",
       "kitchen",
@@ -575,7 +655,12 @@
     ],
     "what": "<PHOTO>",
     "description": "ate dinner and looked at photos of the baby on the phone",
-    "human_turn": "At dinner I kept showing Gerda the photos of the baby on my phone. Here's a picture of us at the table.",
+    "human_turn": [
+      {
+        "turn_id": 17,
+        "utterance": "At dinner I kept showing Gerda the photos of the baby on my phone. Here's a picture of us at the table."
+      }
+    ],
     "where": [
       "dining table at home",
       "his house",
@@ -641,7 +726,12 @@
       "quiz show"
     ],
     "description": "watched the evening news and a quiz show",
-    "human_turn": "In the evening Gerda and I watched the news and then a quiz show.",
+    "human_turn": [
+      {
+        "turn_id": 18,
+        "utterance": "In the evening Gerda and I watched the news and then a quiz show."
+      }
+    ],
     "where": [
       "living room at home",
       "living room",
@@ -672,7 +762,12 @@
     ],
     "what": [],
     "description": "took the dog out for a short evening walk around the block",
-    "human_turn": "At half past nine I took Bobbie around the block once more, with a flashlight because it was already dark.",
+    "human_turn": [
+      {
+        "turn_id": 19,
+        "utterance": "At half past nine I took Bobbie around the block once more, with a flashlight because it was already dark."
+      }
+    ],
     "where": [
       "his street and the nearby park",
       "his neighbourhood",
@@ -707,7 +802,12 @@
       "back door"
     ],
     "description": "locked the doors and went to bed",
-    "human_turn": "Then I locked the doors and Gerda and I went to bed, around quarter past ten.",
+    "human_turn": [
+      {
+        "turn_id": 20,
+        "utterance": "Then I locked the doors and Gerda and I went to bed, around quarter past ten."
+      }
+    ],
     "where": [
       "bedroom of his house",
       "bedroom",

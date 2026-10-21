@@ -7,7 +7,12 @@
     ],
     "what": [],
     "description": "woke up in the middle of the night to go to work",
-    "human_turn": "My alarm went off at half past three, the middle of the night. Samira didn't even notice.",
+    "human_turn": [
+      {
+        "turn_id": 1,
+        "utterance": "My alarm went off at half past three, the middle of the night. Samira didn't even notice."
+      }
+    ],
     "where": [
       "bedroom of his house in Haarlem",
       "bedroom",
@@ -42,7 +47,12 @@
       "dates"
     ],
     "description": "drank mint tea and ate a few dates",
-    "human_turn": "I had a glass of mint tea and a few dates in the kitchen.",
+    "human_turn": [
+      {
+        "turn_id": 2,
+        "utterance": "I had a glass of mint tea and a few dates in the kitchen."
+      }
+    ],
     "where": [
       "kitchen at home",
       "kitchen",
@@ -73,7 +83,12 @@
     ],
     "what": [],
     "description": "drove through the empty streets to his bakery",
-    "human_turn": "Then I drove the van to the bakery. The streets were completely empty.",
+    "human_turn": [
+      {
+        "turn_id": 3,
+        "utterance": "Then I drove the van to the bakery. The streets were completely empty."
+      }
+    ],
     "where": [
       "from his house to his bakery in the city centre",
       "on the road",
@@ -107,7 +122,12 @@
       "bread dough"
     ],
     "description": "mixed and kneaded dough for bread and rolls",
-    "human_turn": "From five past four my assistant Kevin and I were mixing and kneading the dough for the bread and rolls.",
+    "human_turn": [
+      {
+        "turn_id": 4,
+        "utterance": "From five past four my assistant Kevin and I were mixing and kneading the dough for the bread and rolls."
+      }
+    ],
     "where": [
       "bakery workshop",
       "workshop",
@@ -143,7 +163,12 @@
       "bread loaves"
     ],
     "description": "shaped the loaves and baked the first batches of bread",
-    "human_turn": "Then Kevin and I shaped the loaves and got the first batches into the oven.",
+    "human_turn": [
+      {
+        "turn_id": 5,
+        "utterance": "Then Kevin and I shaped the loaves and got the first batches into the oven."
+      }
+    ],
     "where": [
       "bakery workshop",
       "workshop",
@@ -184,7 +209,12 @@
       "apple turnovers"
     ],
     "description": "made croissants and apple turnovers",
-    "human_turn": "Around ten to seven I made the croissants and apple turnovers on my own.",
+    "human_turn": [
+      {
+        "turn_id": 6,
+        "utterance": "Around ten to seven I made the croissants and apple turnovers on my own."
+      }
+    ],
     "where": [
       "bakery workshop",
       "workshop",
@@ -219,7 +249,12 @@
       "pastries"
     ],
     "description": "filled the display counters and opened the shop doors",
-    "human_turn": "At ten to eight Linda, my shop assistant, and I filled the display counters and opened the doors.",
+    "human_turn": [
+      {
+        "turn_id": 7,
+        "utterance": "At ten to eight Linda, my shop assistant, and I filled the display counters and opened the doors."
+      }
+    ],
     "where": [
       "bakery shop",
       "shop",
@@ -255,7 +290,12 @@
       "pastries"
     ],
     "description": "helped customers during the morning rush",
-    "human_turn": "Then the morning rush: customers non-stop for over an hour, most of them regulars. Linda and I were both serving.",
+    "human_turn": [
+      {
+        "turn_id": 8,
+        "utterance": "Then the morning rush: customers non-stop for over an hour, most of them regulars. Linda and I were both serving."
+      }
+    ],
     "where": [
       "bakery shop",
       "shop",
@@ -291,7 +331,12 @@
     ],
     "what": "<PHOTO>",
     "description": "a regional TV crew filmed his bakery and interviewed him about his award-winning bread",
-    "human_turn": "And at half past nine a crew from the regional TV station came to film the bakery and interview me about our award-winning bread! Linda took this photo during the interview.",
+    "human_turn": [
+      {
+        "turn_id": 9,
+        "utterance": "And at half past nine a crew from the regional TV station came to film the bakery and interview me about our award-winning bread! Linda took this photo during the interview."
+      }
+    ],
     "where": [
       "bakery workshop and shop",
       "his bakery",
@@ -348,7 +393,12 @@
       "coffee"
     ],
     "description": "ate a fresh roll with cheese and drank coffee",
-    "human_turn": "After all that excitement I finally had breakfast at five past eleven: a fresh roll with cheese and a coffee in the office with Kevin.",
+    "human_turn": [
+      {
+        "turn_id": 10,
+        "utterance": "After all that excitement I finally had breakfast at five past eleven: a fresh roll with cheese and a coffee in the office with Kevin."
+      }
+    ],
     "where": [
       "small office behind the bakery",
       "office",
@@ -385,7 +435,12 @@
       "packaging"
     ],
     "description": "ordered flour, butter and packaging for next week",
-    "human_turn": "Then I called our supplier's sales rep and ordered flour, butter and packaging for next week.",
+    "human_turn": [
+      {
+        "turn_id": 11,
+        "utterance": "Then I called our supplier's sales rep and ordered flour, butter and packaging for next week."
+      }
+    ],
     "where": [
       "office behind the bakery",
       "office",
@@ -421,7 +476,12 @@
       "bread"
     ],
     "description": "delivered bread to two restaurants and a care home",
-    "human_turn": "At noon I delivered bread to two restaurants in the centre and to the care home in Schalkwijk.",
+    "human_turn": [
+      {
+        "turn_id": 12,
+        "utterance": "At noon I delivered bread to two restaurants in the centre and to the care home in Schalkwijk."
+      }
+    ],
     "where": [
       "Haarlem city centre and the care home in Schalkwijk",
       "Haarlem",
@@ -456,7 +516,12 @@
       "work tables"
     ],
     "description": "cleaned the ovens, mixer and work tables",
-    "human_turn": "Back at the bakery Kevin and I cleaned the ovens, the mixer and the work tables.",
+    "human_turn": [
+      {
+        "turn_id": 13,
+        "utterance": "Back at the bakery Kevin and I cleaned the ovens, the mixer and the work tables."
+      }
+    ],
     "where": [
       "bakery workshop",
       "workshop",
@@ -491,7 +556,12 @@
     ],
     "what": [],
     "description": "drove home after closing his part of the day",
-    "human_turn": "I drove home at two.",
+    "human_turn": [
+      {
+        "turn_id": 14,
+        "utterance": "I drove home at two."
+      }
+    ],
     "where": [
       "from the bakery to his house",
       "on the road",
@@ -519,7 +589,12 @@
     ],
     "what": [],
     "description": "took a nap to recover from the early start",
-    "human_turn": "Then I took a two-hour nap. I really needed it after starting so early.",
+    "human_turn": [
+      {
+        "turn_id": 15,
+        "utterance": "Then I took a two-hour nap. I really needed it after starting so early."
+      }
+    ],
     "where": [
       "bedroom at home",
       "bedroom",
@@ -551,7 +626,12 @@
       "history test material"
     ],
     "description": "helped his daughter prepare for a history test",
-    "human_turn": "After my nap I helped my daughter Amira study for her history test with flashcards.",
+    "human_turn": [
+      {
+        "turn_id": 16,
+        "utterance": "After my nap I helped my daughter Amira study for her history test with flashcards."
+      }
+    ],
     "where": [
       "living room at home",
       "living room",
@@ -584,7 +664,12 @@
     ],
     "what": "<PHOTO>",
     "description": "ate chicken tagine with couscous",
-    "human_turn": "At six we had dinner with the whole family, Samira, Amira, Adam and me. Here's a photo of the table.",
+    "human_turn": [
+      {
+        "turn_id": 17,
+        "utterance": "At six we had dinner with the whole family, Samira, Amira, Adam and me. Here's a photo of the table."
+      }
+    ],
     "where": [
       "dining table at home",
       "his house",
@@ -661,7 +746,12 @@
       "TV news item about the bakery"
     ],
     "description": "watched the regional news broadcast with the item about his bakery",
-    "human_turn": "At seven we all watched the regional news together, and there I was! I recorded it on my phone.",
+    "human_turn": [
+      {
+        "turn_id": 18,
+        "utterance": "At seven we all watched the regional news together, and there I was! I recorded it on my phone."
+      }
+    ],
     "where": [
       "living room at home",
       "living room",
@@ -697,7 +787,12 @@
       "congratulation messages"
     ],
     "description": "read and answered congratulation messages from friends and customers",
-    "human_turn": "Afterwards I spent half an hour on the sofa answering all the congratulation messages on Instagram from friends, family and customers.",
+    "human_turn": [
+      {
+        "turn_id": 19,
+        "utterance": "Afterwards I spent half an hour on the sofa answering all the congratulation messages on Instagram from friends, family and customers."
+      }
+    ],
     "where": [
       "sofa in the living room",
       "living room",
@@ -732,7 +827,12 @@
     ],
     "what": [],
     "description": "went to bed early for the next night's baking",
-    "human_turn": "Then I went to bed at half past eight, because the baking starts again tonight.",
+    "human_turn": [
+      {
+        "turn_id": 20,
+        "utterance": "Then I went to bed at half past eight, because the baking starts again tonight."
+      }
+    ],
     "where": [
       "bedroom at home",
       "bedroom",
