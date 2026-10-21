@@ -24,7 +24,7 @@ from datetime import datetime
 
 from openai import OpenAI
 
-from src.cltl.demo_chatbot.day_statistics import make_turn, get_utterances
+from src.cltl.demo_chatbot.day_statistics import make_turn, get_utterances, get_role_values, PHOTO_PLACEHOLDER
 
 LLAMA_CPP_URL = "http://localhost:8080/v1"
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
@@ -38,6 +38,12 @@ STOP_WORDS = {"stop", "quit", "exit", "bye", "goodbye", "done", "end", "finish",
 SLOT_ORDER = ["with_whom", "what", "with_what", "where", "start_time", "how_long"]
 LIST_SLOTS = ["what", "with_what", "with_whom", "where"]
 NOT_OTHERS = {"alone", "nobody", "no one", "none", "myself", "herself", "himself", "themselves", "themself", "self"}
+# When the user mentions a photo of an event, the agent asks what is on it. The roles that can be seen on the photo
+# get the value <PHOTO> and their values are kept in the photo of the event, as in the example days
+PHOTO_WORDS = re.compile(r"\b(photos?|pictures?|pics?|snapshots?|selfies?)\b", re.IGNORECASE)
+PHOTO_QUESTION = "You mentioned a photo. Could you describe what is on it: who and what can be seen, and where was it taken?"
+PHOTO_ROLES = ["what", "with_what", "with_whom", "where"]
+
 QUESTIONS = {
     "with_whom": "Who were you with?",
     "what": "What did it involve? For example, what did you eat, make, read or talk about?",
@@ -172,6 +178,9 @@ def parse_json(text):
         match = re.search(r"\{.*\}", text, re.DOTALL)
         return json.loads(match.group(0)) if match else {}
 
+def get_with_whom_field(event):
+    return "photo.gold.with_whom" if event.get("with_whom") == PHOTO_PLACEHOLDER else "with_whom"
+
 def slug(text):
     return re.sub(r"[^a-z0-9]+", "_", text.lower()).strip("_") or "entity"
 
@@ -210,6 +219,9 @@ class DayInterviewer:
         # the turns about the current event as (speaker, turn_id, utterance)
         self.turns = []
         self.pending_slots = []
+        # the description of the photo of the current event by the user and what the LLM got from it
+        self.photo_description = None
+        self.photo = None
         self.day = {}
         self.path = None
 
@@ -261,6 +273,8 @@ class DayInterviewer:
     def ask_hour(self):
         self.state = "event"
         self.turns = []
+        self.photo_description = None
+        self.photo = None
         self.question = f"What did you do at {say_hour(self.hour)}?"
         self.question_id = self.turn_id + 1
         return self.question
@@ -272,6 +286,25 @@ class DayInterviewer:
         self.turns = [("Agent", self.question_id, self.question), ("User", self.turn_id, utterance)]
         mentioned = {} if self.ask_all else self.get_mentioned_slots()
         self.pending_slots = [slot for slot in SLOT_ORDER if not mentioned.get(slot)]
+        return self.ask_next()
+
+    def ask_next(self):
+        """Asks about the photo if the user has a photo of the event, otherwise the next slot."""
+        if self.photo_description is None and self.has_photo():
+            self.state = "photo"
+            self.question = PHOTO_QUESTION
+            self.question_id = self.turn_id + 1
+            return self.question
+        return self.ask_slot()
+
+    def _on_photo(self, utterance):
+        self.turns.append(("Agent", self.question_id, self.question))
+        self.turns.append(("User", self.turn_id, utterance))
+        self.photo_description = utterance
+        if utterance:
+            self.photo = self.describe_photo()
+            # the roles that can be seen on the photo are not asked anymore
+            self.pending_slots = [slot for slot in self.pending_slots if slot not in self.photo["fills"]]
         return self.ask_slot()
 
     def ask_slot(self):
@@ -285,7 +318,7 @@ class DayInterviewer:
     def _on_slot(self, utterance):
         self.turns.append(("Agent", self.question_id, self.question))
         self.turns.append(("User", self.turn_id, utterance))
-        return self.ask_slot()
+        return self.ask_next()
 
     def save_event(self):
         event = self.add_event()
@@ -300,6 +333,8 @@ class DayInterviewer:
         event = self.make_event(self.fill_slots())
         self.day[f"event{len(self.day) + 1}"] = event
         self.turns = []
+        self.photo_description = None
+        self.photo = None
         self.save()
         return event
 
@@ -373,6 +408,80 @@ class DayInterviewer:
             response_format={"type": "json_schema", "json_schema": {"name": "event", "schema": self.schema}})
         return parse_json(response.choices[0].message.content)
 
+    def has_photo(self):
+        """Whether the user has a photo of the event: the LLM checks it if the user used a word such as photo, so that
+        e.g. 'we looked at photos of the baby' is not taken for a photo of the event."""
+        utterances = [text for speaker, _, text in self.turns if speaker == "User"]
+        if not any(PHOTO_WORDS.search(text) for text in utterances):
+            return False
+        instruction = """
+            Read what the user said about an activity. Does the user say that they have, took or show a photo of the
+            activity, e.g. "Here's a photo of us" or "Someone took a picture of me"? Answer false if photos are only
+            part of the activity, e.g. "we looked at photos" or "I printed photos".
+            """
+        schema = {"type": "object", "required": ["has_photo"], "properties": {"has_photo": {"type": "boolean"}}}
+        response = self.client.chat.completions.create(
+            model=self.model, temperature=0,
+            messages=[{"role": "system", "content": instruction},
+                      {"role": "user", "content": self.get_conversation() + "\n\nJSON:"}],
+            response_format={"type": "json_schema", "json_schema": {"name": "photo", "schema": schema}})
+        return bool(parse_json(response.choices[0].message.content).get("has_photo"))
+
+    def describe_photo(self):
+        """Asks the LLM what can be seen on the photo according to the description of the user: a note about the
+        photo, the roles that the photo shows (fills) with their values and the people on the photo."""
+        instruction = f"""
+            {self.name} has a photo of an activity and describes what is on it. Return a JSON object with:
+            - note: one sentence about the photo, in the third person, e.g. "Photo {self.pronoun} colleague took at
+              the canteen table during lunch; shows three nurses with trays of soup"
+            - fills: the roles that can be seen on the photo, from: what (the food, objects or topics), with_what (the
+              tools, devices or vehicles), with_whom (the people or animals with {self.name}), where (the place)
+            - what, with_what, with_whom, where: the values of these roles that can be seen on the photo, e.g.
+              {{"what": ["tomato soup"], "with_what": ["spoon"], "with_whom": ["{self.pronoun} colleague Ingrid"],
+              "where": ["hospital canteen"]}}, an empty list for a role that cannot be seen
+            - people_in_photo: the people on the photo, also {self.name}, with their name, e.g. "{self.name}", their
+              role, e.g. "the narrator" for {self.name} or "colleague", their position on the photo, e.g. "left", and
+              their appearance, e.g. "woman with short grey hair", an empty string for what the user did not say
+            Only use what the user said about the photo, do not make things up.
+            """
+        people = {"type": "array", "items": {"type": "object", "required": ["name", "role", "position", "appearance"],
+                                             "properties": {key: {"type": "string"} for key in
+                                                            ["name", "role", "position", "appearance"]}}}
+        schema = {"type": "object", "required": ["note", "fills", *PHOTO_ROLES, "people_in_photo"],
+                  "properties": {"note": {"type": "string"},
+                                 "fills": {"type": "array", "items": {"type": "string", "enum": PHOTO_ROLES}},
+                                 **{role: {"type": "array", "items": {"type": "string"}} for role in PHOTO_ROLES},
+                                 "people_in_photo": people}}
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model, temperature=0,
+                messages=[{"role": "system", "content": instruction},
+                          {"role": "user", "content": self.get_conversation() + "\n\nJSON:"}],
+                response_format={"type": "json_schema", "json_schema": {"name": "photo", "schema": schema}})
+            photo = parse_json(response.choices[0].message.content)
+        except Exception as e:
+            print("Could not describe the photo:", e)
+            photo = {}
+        photo["fills"] = [role for role in PHOTO_ROLES if role in photo.get("fills", [])]
+        return photo
+
+    def make_photo(self, lists):
+        """The photo of the event as in the example days: the roles that the photo shows (fills) and their values
+        (gold). The values are taken from the slots, which the LLM filled with the whole conversation, e.g. with a
+        where that ends with the town, country and continent, or else from the description of the photo."""
+        gold = {}
+        for role in self.photo["fills"]:
+            values = lists[role] or [str(value) for value in self.photo.get(role) or []]
+            if role == "with_whom":
+                values = [person for person in values if person.lower() not in NOT_OTHERS | {self.name.lower()}]
+            if values:
+                gold[role] = values
+        photo = {"file": None, "note": self.photo.get("note") or self.photo_description, "fills": list(gold),
+                 "gold": gold}
+        if self.photo.get("people_in_photo"):
+            photo["people_in_photo"] = self.photo["people_in_photo"]
+        return photo
+
     def make_event(self, slots):
         """An event with the slots in the order of the example days."""
         start_time = slots.get("start_time")
@@ -386,7 +495,7 @@ class DayInterviewer:
         not_others = NOT_OTHERS | {self.name.lower()}
         lists["with_whom"] = [person for person in lists["with_whom"] if person.lower() not in not_others]
         event_type = slots.get("event_type")
-        return {"event_type": event_type if event_type in self.event_types else "special",
+        event = {"event_type": event_type if event_type in self.event_types else "special",
                 "event_label": slots.get("event_label") or "",
                 "who": [self.name],
                 "what": lists["what"],
@@ -401,6 +510,12 @@ class DayInterviewer:
                 "how_long": how_long,
                 "with_what": lists["with_what"],
                 "with_whom": lists["with_whom"]}
+        if self.photo:
+            # the roles on the photo have the placeholder, their values are in the gold of the photo
+            event["photo"] = self.make_photo(lists)
+            for role in event["photo"]["fills"]:
+                event[role] = PHOTO_PLACEHOLDER
+        return event
 
     ## Coreference chains
     def get_coreference_chains(self):
@@ -409,7 +524,8 @@ class DayInterviewer:
         narrator_id = slug(self.name)
         chains = [{"entity_id": narrator_id, "name": self.name, "type": "person", "description": "the narrator",
                    "mentions": [{"event": key, "field": "who", "mention": self.name} for key in self.day]}]
-        mentions = list(dict.fromkeys(mention for event in self.day.values() for mention in event["with_whom"]))
+        mentions = list(dict.fromkeys(mention for event in self.day.values()
+                                      for mention in get_role_values(event, "with_whom")))
         if not mentions:
             return chains
 
@@ -426,8 +542,10 @@ class DayInterviewer:
             entity_ids.add(entity_id)
             chains.append({"entity_id": entity_id, "name": entity["name"], "type": entity["type"],
                            "description": entity["description"],
-                           "mentions": [{"event": key, "field": "with_whom", "mention": mention}
-                                        for key, event in self.day.items() for mention in event["with_whom"]
+                           # a mention on a photo has the field photo.gold.with_whom, as in the example days
+                           "mentions": [{"event": key, "field": get_with_whom_field(event), "mention": mention}
+                                        for key, event in self.day.items()
+                                        for mention in get_role_values(event, "with_whom")
                                         if mention in entity["mentions"]]})
         return chains
 
@@ -480,7 +598,7 @@ class DayInterviewer:
 
     def finish(self):
         # an event of which the user answered only some of the follow-up questions is also kept
-        if self.state == "slot" and self.turns:
+        if self.state in ("slot", "photo") and self.turns:
             self.add_event()
         self.state = "done"
         if not self.day:

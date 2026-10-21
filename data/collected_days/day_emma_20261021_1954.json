@@ -1,0 +1,420 @@
+{
+  "event1": {
+    "event_type": "personal_care",
+    "event_label": "morning routine",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "shower",
+      "clothes",
+      "hair"
+    ],
+    "description": "got out of bed, took a shower, got dressed, and did her hair",
+    "agent_turn": [
+      {
+        "turn_id": 11,
+        "utterance": "What did you do at 7 o'clock?"
+      },
+      {
+        "turn_id": 13,
+        "utterance": "Who were you with?"
+      },
+      {
+        "turn_id": 15,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 17,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 19,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 12,
+        "utterance": "I got out of bed, took a shower and got dressed"
+      },
+      {
+        "turn_id": 14,
+        "utterance": "nobody"
+      },
+      {
+        "turn_id": 16,
+        "utterance": ""
+      },
+      {
+        "turn_id": 18,
+        "utterance": "in my bedroom"
+      },
+      {
+        "turn_id": 20,
+        "utterance": "20 minutes, had to do my hair"
+      }
+    ],
+    "where": [
+      "bedroom of her house",
+      "bedroom",
+      "her house",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "07:00",
+      "7 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "showerhead",
+      "hairbrush"
+    ],
+    "with_whom": []
+  },
+  "event2": {
+    "event_type": "meal",
+    "event_label": "breakfast",
+    "who": [
+      "Emma"
+    ],
+    "what": "<PHOTO>",
+    "description": "ate yoghurt and orange juice and drank two coffees while chatting and reading the newspaper",
+    "agent_turn": [
+      {
+        "turn_id": 21,
+        "utterance": "What did you do at 8 o'clock?"
+      },
+      {
+        "turn_id": 23,
+        "utterance": "What did it involve? For example, what did you eat, make, read or talk about?"
+      },
+      {
+        "turn_id": 25,
+        "utterance": "You mentioned a photo. Could you describe what is on it: who and what can be seen, and where was it taken?"
+      },
+      {
+        "turn_id": 27,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 22,
+        "utterance": "I had breakfast with Lotte"
+      },
+      {
+        "turn_id": 24,
+        "utterance": "I can show you a picture"
+      },
+      {
+        "turn_id": 26,
+        "utterance": "Lotte and me. Yoghurt, orange juice, two coffees, a table, a messy kitchen and a newspaper."
+      },
+      {
+        "turn_id": 28,
+        "utterance": "45 minutes"
+      }
+    ],
+    "where": "<PHOTO>",
+    "when": [
+      "08:00",
+      "8 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 45,
+    "with_what": "<PHOTO>",
+    "with_whom": "<PHOTO>",
+    "photo": {
+      "file": null,
+      "note": "Photo showing Emma and Lotte having breakfast in a kitchen; includes yoghurt, orange juice, two coffees, and a newspaper on a table",
+      "fills": [
+        "what",
+        "with_what",
+        "with_whom",
+        "where"
+      ],
+      "gold": {
+        "what": [
+          "yoghurt",
+          "orange juice",
+          "coffees",
+          "newspaper"
+        ],
+        "with_what": [
+          "plates",
+          "cups",
+          "table",
+          "kitchen"
+        ],
+        "with_whom": [
+          "flatmate Lotte"
+        ],
+        "where": [
+          "shared kitchen in the student flat",
+          "kitchen",
+          "her student flat",
+          "Amsterdam Oost",
+          "Amsterdam",
+          "Netherlands",
+          "Europe"
+        ]
+      },
+      "people_in_photo": [
+        {
+          "name": "Lotte",
+          "role": "friend",
+          "position": "right",
+          "appearance": "not specified"
+        },
+        {
+          "name": "Emma",
+          "role": "the narrator",
+          "position": "left",
+          "appearance": "not specified"
+        }
+      ]
+    }
+  },
+  "event3": {
+    "event_type": "study",
+    "event_label": "commuting to university",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "went by bike to the university to study",
+    "agent_turn": [
+      {
+        "turn_id": 29,
+        "utterance": "What did you do at 9 o'clock?"
+      },
+      {
+        "turn_id": 31,
+        "utterance": "Who were you with?"
+      },
+      {
+        "turn_id": 33,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 35,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 30,
+        "utterance": "I went to the University to study"
+      },
+      {
+        "turn_id": 32,
+        "utterance": "by myself"
+      },
+      {
+        "turn_id": 34,
+        "utterance": "I went by bike"
+      },
+      {
+        "turn_id": 36,
+        "utterance": "45 minutes"
+      }
+    ],
+    "where": [
+      "university",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "09:00",
+      "9 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 45,
+    "with_what": [
+      "bicycle"
+    ],
+    "with_whom": []
+  },
+  "event4": {
+    "event_type": "study",
+    "event_label": "group study session",
+    "who": [
+      "Emma"
+    ],
+    "what": "<PHOTO>",
+    "description": "sat at a table with laptops and printouts, had water bottles, and talked while a few students stood behind",
+    "agent_turn": [
+      {
+        "turn_id": 37,
+        "utterance": "What did you do at 10 o'clock?"
+      },
+      {
+        "turn_id": 39,
+        "utterance": "What did it involve? For example, what did you eat, make, read or talk about?"
+      },
+      {
+        "turn_id": 41,
+        "utterance": "You mentioned a photo. Could you describe what is on it: who and what can be seen, and where was it taken?"
+      },
+      {
+        "turn_id": 43,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 38,
+        "utterance": "I studied with my friends"
+      },
+      {
+        "turn_id": 40,
+        "utterance": "I show you a picture"
+      },
+      {
+        "turn_id": 42,
+        "utterance": "Me, Lotte, Kim and Francis sitting at a table with laptops and print outs, having water bottles and talking while a few students stand behind us."
+      },
+      {
+        "turn_id": 44,
+        "utterance": "Two hours"
+      }
+    ],
+    "where": "<PHOTO>",
+    "when": [
+      "10:00",
+      "10 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 120,
+    "with_what": "<PHOTO>",
+    "with_whom": "<PHOTO>",
+    "photo": {
+      "file": null,
+      "note": "Photo showing Emma, Lotte, Kim, and Francis sitting at a table with laptops and printouts, having water bottles and talking, with a few students standing behind them",
+      "fills": [
+        "what",
+        "with_what",
+        "with_whom",
+        "where"
+      ],
+      "gold": {
+        "what": [
+          "laptops",
+          "printouts",
+          "water bottles"
+        ],
+        "with_what": [
+          "table"
+        ],
+        "with_whom": [
+          "friends Lotte, Kim, and Francis"
+        ],
+        "where": [
+          "study room of her house",
+          "study room",
+          "her house",
+          "Amsterdam",
+          "Netherlands",
+          "Europe"
+        ]
+      },
+      "people_in_photo": [
+        {
+          "name": "Emma",
+          "role": "with_whom",
+          "position": "at the table",
+          "appearance": "not specified"
+        },
+        {
+          "name": "Lotte",
+          "role": "with_whom",
+          "position": "at the table",
+          "appearance": "not specified"
+        },
+        {
+          "name": "Kim",
+          "role": "with_whom",
+          "position": "at the table",
+          "appearance": "not specified"
+        },
+        {
+          "name": "Francis",
+          "role": "with_whom",
+          "position": "at the table",
+          "appearance": "not specified"
+        },
+        {
+          "name": "students",
+          "role": "with_whom",
+          "position": "standing behind the table",
+          "appearance": "not specified"
+        }
+      ]
+    }
+  },
+  "coreference_chains": [
+    {
+      "entity_id": "emma",
+      "name": "Emma",
+      "type": "person",
+      "description": "the narrator",
+      "mentions": [
+        {
+          "event": "event1",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event2",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event3",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event4",
+          "field": "who",
+          "mention": "Emma"
+        }
+      ]
+    },
+    {
+      "entity_id": "lotte",
+      "name": "Lotte",
+      "type": "person",
+      "description": "Emma's flatmate",
+      "mentions": [
+        {
+          "event": "event2",
+          "field": "photo.gold.with_whom",
+          "mention": "flatmate Lotte"
+        }
+      ]
+    },
+    {
+      "entity_id": "lotte_kim_and_francis",
+      "name": "Lotte, Kim, and Francis",
+      "type": "group",
+      "description": "Emma's friends",
+      "mentions": [
+        {
+          "event": "event4",
+          "field": "photo.gold.with_whom",
+          "mention": "friends Lotte, Kim, and Francis"
+        }
+      ]
+    }
+  ]
+}

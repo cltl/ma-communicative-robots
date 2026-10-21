@@ -5,7 +5,7 @@ The evaluation is done on three levels, each with a contingency table (true posi
 false negatives and true negatives) and the precision, recall and f1:
 
 * events: the events of the collected day are aligned one-to-one with the GOLD events, using the start time and
-  the overlap in time, the event type and the label and description. Aligned events are true positives, collected
+  the overlap in time, the event type and the event label. Aligned events are true positives, collected
   events without a GOLD event are false positives and GOLD events without a collected event are false negatives.
 * roles: for each role (who, what, with_what, with_whom, where, when, how_long) of an event: is the role filled?
   A role filled in both events is a true positive, a role filled in the collected event only a false positive,
@@ -175,15 +175,14 @@ def get_time_similarity(gold_event, system_event):
     return max(overlap / union if union else 0.0, closeness)
 
 def get_event_similarity(gold_event, system_event, mode):
-    """Half the time similarity, a quarter the event type and a quarter the label or description.
-    Time alone is not enough to align two events, the type or the label has to match as well."""
+    """Half the time similarity, a quarter the event type and a quarter the event label.
+    Time alone is not enough to align two events, the type or the label has to match as well. The description is
+    not compared: it is a free sentence, not a label of the event."""
     match = MATCHES[mode]
     type_similarity = exact_match(gold_event.get("event_type", ""), system_event.get("event_type", ""))
-    text_similarity = max(match(gold_event.get("event_label", ""), system_event.get("event_label", "")),
-                          match(gold_event.get("description", ""), system_event.get("description", ""))
-                          if mode == "jaccard" else 0.0)
+    label_similarity = match(gold_event.get("event_label", ""), system_event.get("event_label", ""))
     return (0.5 * get_time_similarity(gold_event, system_event) + 0.25 * type_similarity
-            + 0.25 * text_similarity)
+            + 0.25 * label_similarity)
 
 def align_events(gold_events, system_events, mode, threshold=EVENT_THRESHOLD):
     """Aligns the events one-to-one with the highest total similarity. Returns (gold key, system key, similarity)."""

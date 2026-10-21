@@ -58,7 +58,7 @@ Each coreference chain is an entity (a person, group or animal) with the mention
 
 ### 1. Collecting a day with the day interviewer
 
-The day interviewer in ```src/cltl/demo_chatbot``` is a scripted agent that asks the user about their day, hour by hour: what did you do at hour X, with whom, what, with what, where, when and for how long. It only asks the follow-up questions for the details that the user did not mention yet. An LLM served by a local [llama.cpp](https://github.com/ggml-org/llama.cpp) server interprets the answers and fills the roles of the event. After each event, the agent moves on to the next hour after the event, until the user stops or the day is over.
+The day interviewer in ```src/cltl/demo_chatbot``` is a scripted agent that asks the user about their day, hour by hour: what did you do at hour X, with whom, what, with what, where, when and for how long. It only asks the follow-up questions for the details that the user did not mention yet. An LLM served by a local [llama.cpp](https://github.com/ggml-org/llama.cpp) server interprets the answers and fills the roles of the event. After each event, the agent moves on to the next hour after the event, until the user stops or the day is over. When the user says to have a photo of an activity, the agent asks what is on it: as in the example days, the roles that the photo shows get the value ```<PHOTO>``` and their values are kept in the ```photo``` of the event (```note```, ```fills```, ```gold``` and ```people_in_photo```).
 
 Start the llama.cpp server with a model before running the agent, e.g.:
 
@@ -86,7 +86,7 @@ python -m src.cltl.demo_chatbot.day_statistics data/example_days data/collected_
 
 ```src/cltl/task_evaluation/day_evaluation.py``` evaluates a collected day against a GOLD day on three levels:
 
-* **events**: the collected events are aligned one-to-one with the GOLD events on their time, event type and label
+* **events**: the collected events are aligned one-to-one with the GOLD events on their time, event type and label (not the description, which is a free sentence)
 * **roles**: are the roles of the aligned events filled in both days?
 * **role-fillers**: do the values of the roles match?
 
@@ -103,7 +103,7 @@ To evaluate the agent, pick one of the example days, tell the agent about the da
 
 ### 4. Simulating the user
 
-Instead of telling the agent about an example day yourself, a simulated user can do it. ```src/cltl/simulated_user/simulated_user.py``` plays the person of an example day: an LLM gets the facts of all the events of that day from the GOLD JSON, but not the words of the person in ```human_turn```, and answers the questions of the agent naturally as that person. It knows nothing about the strategy of the agent and uses no techniques to interpret the questions. The conversation stops when the agent is done, when the agent has collected 20 events, when the agent repeats itself or after a maximum number of turns.
+Instead of telling the agent about an example day yourself, a simulated user can do it. ```src/cltl/simulated_user/simulated_user.py``` plays the person of an example day: an LLM gets the facts of all the events of that day from the GOLD JSON, but not the words of the person in ```human_turn``` and, by default, not the ```description``` of the events, and answers the questions of the agent naturally as that person. The simulated user is not optimised to match the GOLD: like a real user, it describes the day in its own words and the agent has to match what it extracts with a GOLD it does not know. Use ```--use-description``` (or ```USE_DESCRIPTION = True``` in the notebook) to also give it the descriptions, which makes the answers closer to the GOLD. It knows nothing about the strategy of the agent and uses no techniques to interpret the questions. The conversation stops when the agent is done, when the agent has collected 20 events, when the agent repeats itself or after a maximum number of turns.
 
 The notebook ```src/cltl/simulated_user/simulated_day_interview.ipynb``` lets you select an example day, shows the conversation between the agent and the simulated user in a chat window, saves the collected day and the conversation in ```data/simulated_days```, computes the statistics, evaluates the collected day against the example day and converts the conversation to an EMISSOR CSV file that is plotted and reports the effectiveness of the communication. A simulated interview can also be run from a terminal:
 
