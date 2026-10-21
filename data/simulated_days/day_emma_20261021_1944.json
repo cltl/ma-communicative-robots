@@ -1,0 +1,1398 @@
+{
+  "event1": {
+    "event_type": "personal_care",
+    "event_label": "waking up",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "phone alarm"
+    ],
+    "description": "woke up to the phone alarm and prepared for the day ahead",
+    "agent_turn": [
+      {
+        "turn_id": 9,
+        "utterance": "What did you do at 7 o'clock?"
+      },
+      {
+        "turn_id": 11,
+        "utterance": "Who were you with?"
+      },
+      {
+        "turn_id": 13,
+        "utterance": "What did it involve? For example, what did you eat, make, read or talk about?"
+      },
+      {
+        "turn_id": 15,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 17,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 19,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 10,
+        "utterance": "At 7 o'clock, I was still sleeping. My day officially started at 7:30 when my alarm went off."
+      },
+      {
+        "turn_id": 12,
+        "utterance": "I was alone. My day started when my alarm went off at 7:30."
+      },
+      {
+        "turn_id": 14,
+        "utterance": "I woke up to my phone alarm. It was a quiet start as I prepared for the day ahead."
+      },
+      {
+        "turn_id": 16,
+        "utterance": "I used my phone alarm to wake up."
+      },
+      {
+        "turn_id": 18,
+        "utterance": "I was in my bedroom in my student flat in Amsterdam Oost, Amsterdam, Netherlands."
+      },
+      {
+        "turn_id": 20,
+        "utterance": "It took 10 minutes from 07:30 to 07:40 to wake up."
+      }
+    ],
+    "where": [
+      "bedroom of her student flat in Amsterdam Oost, Amsterdam, Netherlands",
+      "bedroom",
+      "student flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "07:30",
+      "half past seven",
+      "7 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 10,
+    "with_what": [
+      "phone"
+    ],
+    "with_whom": []
+  },
+  "event2": {
+    "event_type": "meal",
+    "event_label": "breakfast",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "yoghurt",
+      "granola",
+      "coffee"
+    ],
+    "description": "ate yoghurt with granola and drank coffee while chatting",
+    "agent_turn": [
+      {
+        "turn_id": 21,
+        "utterance": "What did you do at 8 o'clock?"
+      },
+      {
+        "turn_id": 23,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 25,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 27,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 22,
+        "utterance": "At 8 o'clock, I was having breakfast with my flatmate Lotte. We enjoyed yoghurt, granola, and coffee together in the shared kitchen of our student flat."
+      },
+      {
+        "turn_id": 24,
+        "utterance": "For breakfast, I used a bowl, spoon, and mug. I also used a debit card to pay for the coffee."
+      },
+      {
+        "turn_id": 26,
+        "utterance": "I was in the shared kitchen of my student flat."
+      },
+      {
+        "turn_id": 28,
+        "utterance": "It took 20 minutes from 08:00 to 08:20 to have breakfast."
+      }
+    ],
+    "where": [
+      "shared kitchen in the student flat",
+      "kitchen",
+      "student flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "08:00",
+      "8 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "bowl",
+      "spoon",
+      "mug",
+      "debit card"
+    ],
+    "with_whom": [
+      "flatmate Lotte"
+    ]
+  },
+  "event3": {
+    "event_type": "study",
+    "event_label": "lecture",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "lecture content"
+    ],
+    "description": "attended a lecture with 150 fellow students and the lecturer",
+    "agent_turn": [
+      {
+        "turn_id": 29,
+        "utterance": "What did you do at 9 o'clock?"
+      },
+      {
+        "turn_id": 31,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 33,
+        "utterance": "Where were you?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 30,
+        "utterance": "At 9 o'clock, I was attending a lecture with about 150 fellow students and the lecturer. The lecture lasted for 105 minutes."
+      },
+      {
+        "turn_id": 32,
+        "utterance": "I used a laptop and a notebook for the lecture."
+      },
+      {
+        "turn_id": 34,
+        "utterance": "I was in the lecture hall in the main university building on the campus."
+      }
+    ],
+    "where": [
+      "lecture hall in the main university building on the campus",
+      "lecture hall",
+      "main university building",
+      "campus",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "09:00",
+      "9 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 105,
+    "with_what": [
+      "laptop",
+      "notebook"
+    ],
+    "with_whom": [
+      "150 fellow students",
+      "lecturer"
+    ]
+  },
+  "event4": {
+    "event_type": "leisure",
+    "event_label": "coffee break",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "cappuccinos"
+    ],
+    "description": "had cappuccinos with Jonas and Mila",
+    "agent_turn": [
+      {
+        "turn_id": 35,
+        "utterance": "What did you do at 11 o'clock?"
+      },
+      {
+        "turn_id": 37,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 39,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 41,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 36,
+        "utterance": "At 11 o'clock, I had a coffee break with Jonas and Mila. We got cappuccinos."
+      },
+      {
+        "turn_id": 38,
+        "utterance": "I used a debit card for the cappuccinos."
+      },
+      {
+        "turn_id": 40,
+        "utterance": "I was at the campus café."
+      },
+      {
+        "turn_id": 42,
+        "utterance": "The coffee break took 15 minutes."
+      }
+    ],
+    "where": [
+      "campus café",
+      "café",
+      "campus",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "11:00",
+      "11 o'clock",
+      "late in the morning",
+      "morning"
+    ],
+    "how_long": 15,
+    "with_what": [
+      "debit card"
+    ],
+    "with_whom": [
+      "friend Jonas",
+      "friend Mila"
+    ]
+  },
+  "event5": {
+    "event_type": "meal",
+    "event_label": "lunch",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "cheese sandwich",
+      "apple"
+    ],
+    "description": "ate a cheese sandwich and an apple while sitting on a bench outside the library",
+    "agent_turn": [
+      {
+        "turn_id": 43,
+        "utterance": "What did you do at 12 o'clock?"
+      },
+      {
+        "turn_id": 45,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 47,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 49,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 44,
+        "utterance": "At 12 o'clock, I was having lunch with Mila. We ate a cheese sandwich and an apple."
+      },
+      {
+        "turn_id": 46,
+        "utterance": "I used a lunch box and a water bottle."
+      },
+      {
+        "turn_id": 48,
+        "utterance": "I was sitting on a bench outside the library."
+      },
+      {
+        "turn_id": 50,
+        "utterance": "The lunch break took 25 minutes."
+      }
+    ],
+    "where": [
+      "bench outside the library",
+      "bench",
+      "library",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "12:00",
+      "12 o'clock",
+      "around noon",
+      "midday"
+    ],
+    "how_long": 25,
+    "with_what": [
+      "lunch box",
+      "water bottle"
+    ],
+    "with_whom": [
+      "friend Mila"
+    ]
+  },
+  "event6": {
+    "event_type": "work",
+    "event_label": "signing internship contract",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "internship contract"
+    ],
+    "description": "signed the internship contract with Dr. Bakker, the lab supervisor",
+    "agent_turn": [
+      {
+        "turn_id": 51,
+        "utterance": "What did you do at 1 o'clock in the afternoon?"
+      },
+      {
+        "turn_id": 53,
+        "utterance": "Who were you with?"
+      },
+      {
+        "turn_id": 55,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 57,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 52,
+        "utterance": "At 1 o'clock in the afternoon, I was signing an internship contract at the Memory Research Lab."
+      },
+      {
+        "turn_id": 54,
+        "utterance": "I was with Dr. Bakker, the lab supervisor."
+      },
+      {
+        "turn_id": 56,
+        "utterance": "I used a pen for signing the internship contract."
+      },
+      {
+        "turn_id": 58,
+        "utterance": "It took 40 minutes."
+      }
+    ],
+    "where": [
+      "Memory Research Lab, her workplace",
+      "Memory Research Lab",
+      "her workplace",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "13:00",
+      "1 o'clock",
+      "early in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 40,
+    "with_what": [
+      "pen"
+    ],
+    "with_whom": [
+      "Dr. Bakker, the lab supervisor"
+    ]
+  },
+  "event7": {
+    "event_type": "shopping",
+    "event_label": "cycling to the supermarket",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "cycled to the supermarket",
+    "agent_turn": [
+      {
+        "turn_id": 59,
+        "utterance": "What did you do at 2 o'clock in the afternoon?"
+      },
+      {
+        "turn_id": 61,
+        "utterance": "Who were you with?"
+      },
+      {
+        "turn_id": 63,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 60,
+        "utterance": "At 2 o'clock in the afternoon, I was cycling to the supermarket."
+      },
+      {
+        "turn_id": 62,
+        "utterance": "I was alone."
+      },
+      {
+        "turn_id": 64,
+        "utterance": "It took 15 minutes."
+      }
+    ],
+    "where": [
+      "supermarket",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "14:00",
+      "2 o'clock",
+      "early in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 15,
+    "with_what": [
+      "bicycle"
+    ],
+    "with_whom": []
+  },
+  "event8": {
+    "event_type": "shopping",
+    "event_label": "grocery shopping",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "groceries"
+    ],
+    "description": "went to the Albert Heijn supermarket near her flat to do grocery shopping",
+    "agent_turn": [
+      {
+        "turn_id": 65,
+        "utterance": "What did you do at 3 o'clock in the afternoon?"
+      },
+      {
+        "turn_id": 67,
+        "utterance": "Who were you with?"
+      },
+      {
+        "turn_id": 69,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 71,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 73,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 66,
+        "utterance": "At 3 o'clock in the afternoon, I was grocery shopping."
+      },
+      {
+        "turn_id": 68,
+        "utterance": "I was alone."
+      },
+      {
+        "turn_id": 70,
+        "utterance": "I used my bicycle for grocery shopping."
+      },
+      {
+        "turn_id": 72,
+        "utterance": "I was at the Albert Heijn supermarket near my flat."
+      },
+      {
+        "turn_id": 74,
+        "utterance": "It took 20 minutes."
+      }
+    ],
+    "where": [
+      "Albert Heijn supermarket near her flat",
+      "supermarket",
+      "her flat",
+      "I live in Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "15:00",
+      "3 o'clock",
+      "late in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "bicycle"
+    ],
+    "with_whom": []
+  },
+  "event9": {
+    "event_type": "sport",
+    "event_label": "gym session",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "spinning bike",
+      "water bottle"
+    ],
+    "description": "used the spinning bike and brought a water bottle for the session",
+    "agent_turn": [
+      {
+        "turn_id": 75,
+        "utterance": "What did you do at 4 o'clock in the afternoon?"
+      },
+      {
+        "turn_id": 77,
+        "utterance": "Who were you with?"
+      },
+      {
+        "turn_id": 79,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 81,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 83,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 76,
+        "utterance": "At 4 o'clock in the afternoon, I was going to the gym."
+      },
+      {
+        "turn_id": 78,
+        "utterance": "I was with the instructor and about 20 other participants."
+      },
+      {
+        "turn_id": 80,
+        "utterance": "I used the spinning bike and brought a water bottle."
+      },
+      {
+        "turn_id": 82,
+        "utterance": "I was at the university sports centre."
+      },
+      {
+        "turn_id": 84,
+        "utterance": "It took 45 minutes."
+      }
+    ],
+    "where": [
+      "university sports centre",
+      "sports centre",
+      "university",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "16:00",
+      "4 o'clock",
+      "late in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 45,
+    "with_what": [
+      "spinning bike",
+      "water bottle"
+    ],
+    "with_whom": [
+      "instructor",
+      "20 other participants"
+    ]
+  },
+  "event10": {
+    "event_type": "meal",
+    "event_label": "cooking dinner",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "dinner ingredients"
+    ],
+    "description": "cooked dinner using a pan, oven, cutting board, and knife",
+    "agent_turn": [
+      {
+        "turn_id": 85,
+        "utterance": "What did you do at 5 o'clock in the afternoon?"
+      },
+      {
+        "turn_id": 87,
+        "utterance": "Who were you with?"
+      },
+      {
+        "turn_id": 89,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 91,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 93,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 86,
+        "utterance": "At 5 o'clock in the afternoon, I was cooking dinner."
+      },
+      {
+        "turn_id": 88,
+        "utterance": "I was with my flatmate Lotte."
+      },
+      {
+        "turn_id": 90,
+        "utterance": "I used a pan, oven, cutting board, and knife."
+      },
+      {
+        "turn_id": 92,
+        "utterance": "I was in the shared kitchen of the student flat."
+      },
+      {
+        "turn_id": 94,
+        "utterance": "It took 40 minutes."
+      }
+    ],
+    "where": [
+      "shared kitchen in the student flat",
+      "kitchen",
+      "student flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "17:00",
+      "5 o'clock",
+      "early in the evening",
+      "evening"
+    ],
+    "how_long": 40,
+    "with_what": [
+      "pan",
+      "oven",
+      "cutting board",
+      "knife"
+    ],
+    "with_whom": [
+      "flatmate Lotte"
+    ]
+  },
+  "event11": {
+    "event_type": "household",
+    "event_label": "doing the dishes",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "dishes",
+      "kitchen counter"
+    ],
+    "description": "washed the dishes and cleaned the kitchen counter with Ahmed",
+    "agent_turn": [
+      {
+        "turn_id": 95,
+        "utterance": "What did you do at 6 o'clock in the evening?"
+      },
+      {
+        "turn_id": 97,
+        "utterance": "What did it involve? For example, what did you eat, make, read or talk about?"
+      },
+      {
+        "turn_id": 99,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 101,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 103,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 96,
+        "utterance": "At 6 o'clock in the evening, I was doing the dishes with Ahmed."
+      },
+      {
+        "turn_id": 98,
+        "utterance": "It involved washing the dishes, including the kitchen counter. I used a sponge, dish soap, and a tea towel. We didn't eat or read during this time; we were just doing the dishes together."
+      },
+      {
+        "turn_id": 100,
+        "utterance": "I used a sponge, dish soap, and a tea towel."
+      },
+      {
+        "turn_id": 102,
+        "utterance": "I was in the shared kitchen of the student flat."
+      },
+      {
+        "turn_id": 104,
+        "utterance": "It took 20 minutes."
+      }
+    ],
+    "where": [
+      "shared kitchen of the student flat",
+      "kitchen",
+      "student flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "18:00",
+      "6 o'clock",
+      "early in the evening",
+      "evening"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "sponge",
+      "dish soap",
+      "tea towel"
+    ],
+    "with_whom": [
+      "Ahmed"
+    ]
+  },
+  "event12": {
+    "event_type": "leisure",
+    "event_label": "watching a crime series",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "crime series"
+    ],
+    "description": "watched a crime series on the laptop",
+    "agent_turn": [
+      {
+        "turn_id": 105,
+        "utterance": "What did you do at 7 o'clock in the evening?"
+      },
+      {
+        "turn_id": 107,
+        "utterance": "Who were you with?"
+      },
+      {
+        "turn_id": 109,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 111,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 106,
+        "utterance": "At 7 o'clock in the evening, I was watching a crime series on my laptop."
+      },
+      {
+        "turn_id": 108,
+        "utterance": "I was alone."
+      },
+      {
+        "turn_id": 110,
+        "utterance": "I was in my bedroom, in the student flat."
+      },
+      {
+        "turn_id": 112,
+        "utterance": "It took 90 minutes."
+      }
+    ],
+    "where": [
+      "bedroom of her student flat",
+      "bedroom",
+      "her student flat",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "19:00",
+      "7 o'clock",
+      "in the evening",
+      "evening"
+    ],
+    "how_long": 90,
+    "with_what": [
+      "laptop"
+    ],
+    "with_whom": []
+  },
+  "event13": {
+    "event_type": "household",
+    "event_label": "doing the dishes",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "dishes from the celebratory dinner"
+    ],
+    "description": "cleaned the dishes from the celebratory dinner using a sponge and dish soap at the kitchen counter",
+    "agent_turn": [
+      {
+        "turn_id": 113,
+        "utterance": "What did you do at 8 o'clock in the evening?"
+      },
+      {
+        "turn_id": 115,
+        "utterance": "What did it involve? For example, what did you eat, make, read or talk about?"
+      },
+      {
+        "turn_id": 117,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 119,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 121,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 114,
+        "utterance": "At 8 o'clock in the evening, I was doing the dishes with Ahmed."
+      },
+      {
+        "turn_id": 116,
+        "utterance": "We did the dishes together. We cleaned the dishes from the celebratory dinner, using a sponge and dish soap at the kitchen counter."
+      },
+      {
+        "turn_id": 118,
+        "utterance": "We used a sponge, dish soap, and a tea towel for the dishes. There was no vehicle involved in this task."
+      },
+      {
+        "turn_id": 120,
+        "utterance": "I was in the shared kitchen of the student flat."
+      },
+      {
+        "turn_id": 122,
+        "utterance": "It took 20 minutes."
+      }
+    ],
+    "where": [
+      "shared kitchen of the student flat",
+      "kitchen",
+      "student flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "20:00",
+      "8 o'clock",
+      "in the evening",
+      "evening"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "sponge",
+      "dish soap",
+      "tea towel"
+    ],
+    "with_whom": [
+      "Ahmed"
+    ]
+  },
+  "event14": {
+    "event_type": "leisure",
+    "event_label": "watching a crime series",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "crime series"
+    ],
+    "description": "watched a crime series on the laptop",
+    "agent_turn": [
+      {
+        "turn_id": 123,
+        "utterance": "What did you do at 9 o'clock in the evening?"
+      },
+      {
+        "turn_id": 125,
+        "utterance": "Who were you with?"
+      },
+      {
+        "turn_id": 127,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 129,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 124,
+        "utterance": "At 9 o'clock in the evening, I was watching a crime series on my laptop."
+      },
+      {
+        "turn_id": 126,
+        "utterance": "I was alone."
+      },
+      {
+        "turn_id": 128,
+        "utterance": "I was in my bedroom, in the student flat."
+      },
+      {
+        "turn_id": 130,
+        "utterance": "It took 90 minutes."
+      }
+    ],
+    "where": [
+      "bedroom of her student flat",
+      "bedroom",
+      "her student flat",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "21:00",
+      "9 o'clock",
+      "late in the evening",
+      "evening"
+    ],
+    "how_long": 90,
+    "with_what": [
+      "laptop"
+    ],
+    "with_whom": []
+  },
+  "event15": {
+    "event_type": "household",
+    "event_label": "doing the dishes",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "plates",
+      "cutlery",
+      "glasses"
+    ],
+    "description": "washed dishes with Ahmed after the celebratory dinner",
+    "agent_turn": [
+      {
+        "turn_id": 131,
+        "utterance": "What did you do at 10 o'clock in the evening?"
+      },
+      {
+        "turn_id": 133,
+        "utterance": "What did it involve? For example, what did you eat, make, read or talk about?"
+      },
+      {
+        "turn_id": 135,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 137,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 139,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 132,
+        "utterance": "At 10 o'clock in the evening, I was doing the dishes with Ahmed."
+      },
+      {
+        "turn_id": 134,
+        "utterance": "It involved washing dishes with Ahmed. We cleaned the dishes from the celebratory dinner, including the plates, cutlery, and glasses."
+      },
+      {
+        "turn_id": 136,
+        "utterance": "We used a sponge, dish soap, and a tea towel for cleaning the dishes."
+      },
+      {
+        "turn_id": 138,
+        "utterance": "I was in the shared kitchen of the student flat."
+      },
+      {
+        "turn_id": 140,
+        "utterance": "It took 20 minutes."
+      }
+    ],
+    "where": [
+      "shared kitchen in the student flat",
+      "kitchen",
+      "student flat",
+      "Amsterdam Oost",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "22:00",
+      "10 o'clock",
+      "late in the evening",
+      "evening"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "sponge",
+      "dish soap",
+      "tea towel"
+    ],
+    "with_whom": [
+      "friend Ahmed"
+    ]
+  },
+  "event16": {
+    "event_type": "communication",
+    "event_label": "messaging friends",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "weekend plans"
+    ],
+    "description": "messaged friends on WhatsApp about weekend plans",
+    "agent_turn": [
+      {
+        "turn_id": 141,
+        "utterance": "What did you do at 11 o'clock in the evening?"
+      },
+      {
+        "turn_id": 143,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 145,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 147,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 142,
+        "utterance": "At 11 o'clock in the evening, I was messaging friends on WhatsApp about weekend plans."
+      },
+      {
+        "turn_id": 144,
+        "utterance": "I used my mobile phone and WhatsApp to message my friends."
+      },
+      {
+        "turn_id": 146,
+        "utterance": "I was in my bedroom of the student flat."
+      },
+      {
+        "turn_id": 148,
+        "utterance": "It took 25 minutes."
+      }
+    ],
+    "where": [
+      "bedroom of her student flat",
+      "bedroom",
+      "her student flat",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "23:00",
+      "11 o'clock",
+      "late in the evening",
+      "evening"
+    ],
+    "how_long": 25,
+    "with_what": [
+      "mobile phone",
+      "WhatsApp"
+    ],
+    "with_whom": [
+      "friends"
+    ]
+  },
+  "coreference_chains": [
+    {
+      "entity_id": "emma",
+      "name": "Emma",
+      "type": "person",
+      "description": "the narrator",
+      "mentions": [
+        {
+          "event": "event1",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event2",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event3",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event4",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event5",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event6",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event7",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event8",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event9",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event10",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event11",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event12",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event13",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event14",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event15",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event16",
+          "field": "who",
+          "mention": "Emma"
+        }
+      ]
+    },
+    {
+      "entity_id": "lotte",
+      "name": "Lotte",
+      "type": "person",
+      "description": "Lotte is Emma's flatmate.",
+      "mentions": [
+        {
+          "event": "event2",
+          "field": "with_whom",
+          "mention": "flatmate Lotte"
+        },
+        {
+          "event": "event10",
+          "field": "with_whom",
+          "mention": "flatmate Lotte"
+        }
+      ]
+    },
+    {
+      "entity_id": "fellow_students",
+      "name": "Fellow students",
+      "type": "group",
+      "description": "The group consists of 150 students that are not specifically mentioned.",
+      "mentions": [
+        {
+          "event": "event3",
+          "field": "with_whom",
+          "mention": "150 fellow students"
+        }
+      ]
+    },
+    {
+      "entity_id": "lecturer",
+      "name": "Lecturer",
+      "type": "person",
+      "description": "The lecturer is a person who teaches Emma.",
+      "mentions": [
+        {
+          "event": "event3",
+          "field": "with_whom",
+          "mention": "lecturer"
+        }
+      ]
+    },
+    {
+      "entity_id": "jonas",
+      "name": "Jonas",
+      "type": "person",
+      "description": "Jonas is a friend of Emma.",
+      "mentions": [
+        {
+          "event": "event4",
+          "field": "with_whom",
+          "mention": "friend Jonas"
+        }
+      ]
+    },
+    {
+      "entity_id": "mila",
+      "name": "Mila",
+      "type": "person",
+      "description": "Mila is a friend of Emma.",
+      "mentions": [
+        {
+          "event": "event4",
+          "field": "with_whom",
+          "mention": "friend Mila"
+        },
+        {
+          "event": "event5",
+          "field": "with_whom",
+          "mention": "friend Mila"
+        }
+      ]
+    },
+    {
+      "entity_id": "dr_bakker",
+      "name": "Dr. Bakker",
+      "type": "person",
+      "description": "Dr. Bakker is the lab supervisor who works with Emma.",
+      "mentions": [
+        {
+          "event": "event6",
+          "field": "with_whom",
+          "mention": "Dr. Bakker, the lab supervisor"
+        }
+      ]
+    },
+    {
+      "entity_id": "instructor",
+      "name": "Instructor",
+      "type": "person",
+      "description": "The instructor is a person who teaches or guides Emma.",
+      "mentions": [
+        {
+          "event": "event9",
+          "field": "with_whom",
+          "mention": "instructor"
+        }
+      ]
+    },
+    {
+      "entity_id": "other_participants",
+      "name": "Other participants",
+      "type": "group",
+      "description": "The group consists of 20 other participants that are not specifically mentioned.",
+      "mentions": [
+        {
+          "event": "event9",
+          "field": "with_whom",
+          "mention": "20 other participants"
+        }
+      ]
+    },
+    {
+      "entity_id": "ahmed",
+      "name": "Ahmed",
+      "type": "person",
+      "description": "Ahmed is a friend of Emma.",
+      "mentions": [
+        {
+          "event": "event11",
+          "field": "with_whom",
+          "mention": "Ahmed"
+        },
+        {
+          "event": "event13",
+          "field": "with_whom",
+          "mention": "Ahmed"
+        },
+        {
+          "event": "event15",
+          "field": "with_whom",
+          "mention": "friend Ahmed"
+        }
+      ]
+    },
+    {
+      "entity_id": "friends",
+      "name": "Friends",
+      "type": "group",
+      "description": "The group includes friends of Emma, including Jonas, Mila, and Ahmed.",
+      "mentions": [
+        {
+          "event": "event16",
+          "field": "with_whom",
+          "mention": "friends"
+        }
+      ]
+    }
+  ]
+}

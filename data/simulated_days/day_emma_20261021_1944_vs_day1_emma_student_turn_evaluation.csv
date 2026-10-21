@@ -1,0 +1,141 @@
+Turn;Turn nr.;Speaker;Response;Event;nr_of_events;nr_of_roles;nr_of_correct_events_exact;nr_of_correct_events_jaccard;nr_of_correct_roles_exact;nr_of_correct_roles_jaccard
+turn9;0;AGENT;What did you do at 7 o'clock?;event1;;;;;;
+turn10;1;Emma;At 7 o'clock, I was still sleeping. My day officially started at 7:30 when my alarm went off.;event1;1;1;1;1;1.0;1.0
+turn11;2;AGENT;Who were you with?;event1;;;;;;
+turn12;3;Emma;I was alone. My day started when my alarm went off at 7:30.;event1;0;0;0;0;0;0
+turn13;4;AGENT;What did it involve? For example, what did you eat, make, read or talk about?;event1;;;;;;
+turn14;5;Emma;I woke up to my phone alarm. It was a quiet start as I prepared for the day ahead.;event1;0;0;0;0;0;0
+turn15;6;AGENT;What did you use for it, such as tools, devices or a vehicle?;event1;;;;;;
+turn16;7;Emma;I used my phone alarm to wake up.;event1;0;2;0;0;0.0;0.5
+turn17;8;AGENT;Where were you?;event1;;;;;;
+turn18;9;Emma;I was in my bedroom in my student flat in Amsterdam Oost, Amsterdam, Netherlands.;event1;0;1;0;0;0.857;0.857
+turn19;10;AGENT;How long did it take?;event1;;;;;;
+turn20;11;Emma;It took 10 minutes from 07:30 to 07:40 to wake up.;event1;0;2;0;0;2.0;2.0
+turn21;12;AGENT;What did you do at 8 o'clock?;event2;;;;;;
+turn22;13;Emma;At 8 o'clock, I was having breakfast with my flatmate Lotte. We enjoyed yoghurt, granola, and coffee together in the shared kitchen of our student flat.;event2;1;2;1;1;2.0;2.0
+turn23;14;AGENT;What did you use for it, such as tools, devices or a vehicle?;event2;;;;;;
+turn24;15;Emma;For breakfast, I used a bowl, spoon, and mug. I also used a debit card to pay for the coffee.;event2;0;2;0;0;1.75;1.75
+turn25;16;AGENT;Where were you?;event2;;;;;;
+turn26;17;Emma;I was in the shared kitchen of my student flat.;event2;0;1;0;0;1.0;1.0
+turn27;18;AGENT;How long did it take?;event2;;;;;;
+turn28;19;Emma;It took 20 minutes from 08:00 to 08:20 to have breakfast.;event2;0;2;0;0;2.0;2.0
+turn29;20;AGENT;What did you do at 9 o'clock?;event3;;;;;;
+turn30;21;Emma;At 9 o'clock, I was attending a lecture with about 150 fellow students and the lecturer. The lecture lasted for 105 minutes.;event3;1;4;1;1;3.5;4.0
+turn31;22;AGENT;What did you use for it, such as tools, devices or a vehicle?;event3;;;;;;
+turn32;23;Emma;I used a laptop and a notebook for the lecture.;event3;0;1;0;0;1.0;1.0
+turn33;24;AGENT;Where were you?;event3;;;;;;
+turn34;25;Emma;I was in the lecture hall in the main university building on the campus.;event3;0;2;0;0;0.857;1.19
+turn35;26;AGENT;What did you do at 11 o'clock?;event4;;;;;;
+turn36;27;Emma;At 11 o'clock, I had a coffee break with Jonas and Mila. We got cappuccinos.;event4;1;3;1;1;2.6;2.6
+turn37;28;AGENT;What did you use for it, such as tools, devices or a vehicle?;event4;;;;;;
+turn38;29;Emma;I used a debit card for the cappuccinos.;event4;0;2;0;0;1.0;1.0
+turn39;30;AGENT;Where were you?;event4;;;;;;
+turn40;31;Emma;I was at the campus café.;event4;0;1;0;0;1.0;1.0
+turn41;32;AGENT;How long did it take?;event4;;;;;;
+turn42;33;Emma;The coffee break took 15 minutes.;event4;0;1;0;0;1.0;1.0
+turn43;34;AGENT;What did you do at 12 o'clock?;event5;;;;;;
+turn44;35;Emma;At 12 o'clock, I was having lunch with Mila. We ate a cheese sandwich and an apple.;event5;1;4;1;1;3.4;3.4
+turn45;36;AGENT;What did you use for it, such as tools, devices or a vehicle?;event5;;;;;;
+turn46;37;Emma;I used a lunch box and a water bottle.;event5;0;1;0;0;1.0;1.0
+turn47;38;AGENT;Where were you?;event5;;;;;;
+turn48;39;Emma;I was sitting on a bench outside the library.;event5;0;1;0;0;1.0;1.0
+turn49;40;AGENT;How long did it take?;event5;;;;;;
+turn50;41;Emma;The lunch break took 25 minutes.;event5;0;1;0;0;1.0;1.0
+turn51;42;AGENT;What did you do at 1 o'clock in the afternoon?;event6;;;;;;
+turn52;43;Emma;At 1 o'clock in the afternoon, I was signing an internship contract at the Memory Research Lab.;event6;1;3;0;1;0;2.433
+turn53;44;AGENT;Who were you with?;event6;;;;;;
+turn54;45;Emma;I was with Dr. Bakker, the lab supervisor.;event6;0;1;0;0;0;1.0
+turn55;46;AGENT;What did you use for it, such as tools, devices or a vehicle?;event6;;;;;;
+turn56;47;Emma;I used a pen for signing the internship contract.;event6;0;2;0;0;0;2.0
+turn57;48;AGENT;How long did it take?;event6;;;;;;
+turn58;49;Emma;It took 40 minutes.;event6;0;1;0;0;0;1.0
+turn59;50;AGENT;What did you do at 2 o'clock in the afternoon?;event7;;;;;;
+turn60;51;Emma;At 2 o'clock in the afternoon, I was cycling to the supermarket.;event7;1;4;0;0;0;0
+turn61;52;AGENT;Who were you with?;event7;;;;;;
+turn62;53;Emma;I was alone.;event7;0;0;0;0;0;0
+turn63;54;AGENT;How long did it take?;event7;;;;;;
+turn64;55;Emma;It took 15 minutes.;event7;0;1;0;0;0;0
+turn65;56;AGENT;What did you do at 3 o'clock in the afternoon?;event8;;;;;;
+turn66;57;Emma;At 3 o'clock in the afternoon, I was grocery shopping.;event8;1;3;0;0;0;0
+turn67;58;AGENT;Who were you with?;event8;;;;;;
+turn68;59;Emma;I was alone.;event8;0;0;0;0;0;0
+turn69;60;AGENT;What did you use for it, such as tools, devices or a vehicle?;event8;;;;;;
+turn70;61;Emma;I used my bicycle for grocery shopping.;event8;0;1;0;0;0;0
+turn71;62;AGENT;Where were you?;event8;;;;;;
+turn72;63;Emma;I was at the Albert Heijn supermarket near my flat.;event8;0;1;0;0;0;0
+turn73;64;AGENT;How long did it take?;event8;;;;;;
+turn74;65;Emma;It took 20 minutes.;event8;0;1;0;0;0;0
+turn75;66;AGENT;What did you do at 4 o'clock in the afternoon?;event9;;;;;;
+turn76;67;Emma;At 4 o'clock in the afternoon, I was going to the gym.;event9;1;2;0;0;0;0
+turn77;68;AGENT;Who were you with?;event9;;;;;;
+turn78;69;Emma;I was with the instructor and about 20 other participants.;event9;0;1;0;0;0;0
+turn79;70;AGENT;What did you use for it, such as tools, devices or a vehicle?;event9;;;;;;
+turn80;71;Emma;I used the spinning bike and brought a water bottle.;event9;0;2;0;0;0;0
+turn81;72;AGENT;Where were you?;event9;;;;;;
+turn82;73;Emma;I was at the university sports centre.;event9;0;1;0;0;0;0
+turn83;74;AGENT;How long did it take?;event9;;;;;;
+turn84;75;Emma;It took 45 minutes.;event9;0;1;0;0;0;0
+turn85;76;AGENT;What did you do at 5 o'clock in the afternoon?;event10;;;;;;
+turn86;77;Emma;At 5 o'clock in the afternoon, I was cooking dinner.;event10;1;3;0;0;0;0
+turn87;78;AGENT;Who were you with?;event10;;;;;;
+turn88;79;Emma;I was with my flatmate Lotte.;event10;0;1;0;0;0;0
+turn89;80;AGENT;What did you use for it, such as tools, devices or a vehicle?;event10;;;;;;
+turn90;81;Emma;I used a pan, oven, cutting board, and knife.;event10;0;1;0;0;0;0
+turn91;82;AGENT;Where were you?;event10;;;;;;
+turn92;83;Emma;I was in the shared kitchen of the student flat.;event10;0;1;0;0;0;0
+turn93;84;AGENT;How long did it take?;event10;;;;;;
+turn94;85;Emma;It took 40 minutes.;event10;0;1;0;0;0;0
+turn95;86;AGENT;What did you do at 6 o'clock in the evening?;event11;;;;;;
+turn96;87;Emma;At 6 o'clock in the evening, I was doing the dishes with Ahmed.;event11;1;3;1;1;1.6;1.6
+turn97;88;AGENT;What did it involve? For example, what did you eat, make, read or talk about?;event11;;;;;;
+turn98;89;Emma;"It involved washing the dishes, including the kitchen counter. I used a sponge, dish soap, and a tea towel. We didn't eat or read during this time; we were just doing the dishes together.";event11;0;1;0;0;0.0;0.0
+turn99;90;AGENT;What did you use for it, such as tools, devices or a vehicle?;event11;;;;;;
+turn100;91;Emma;I used a sponge, dish soap, and a tea towel.;event11;0;1;0;0;0.0;0.0
+turn101;92;AGENT;Where were you?;event11;;;;;;
+turn102;93;Emma;I was in the shared kitchen of the student flat.;event11;0;1;0;0;0.857;1.0
+turn103;94;AGENT;How long did it take?;event11;;;;;;
+turn104;95;Emma;It took 20 minutes.;event11;0;1;0;0;0.0;0.5
+turn105;96;AGENT;What did you do at 7 o'clock in the evening?;event12;;;;;;
+turn106;97;Emma;At 7 o'clock in the evening, I was watching a crime series on my laptop.;event12;1;4;0;0;0;0
+turn107;98;AGENT;Who were you with?;event12;;;;;;
+turn108;99;Emma;I was alone.;event12;0;0;0;0;0;0
+turn109;100;AGENT;Where were you?;event12;;;;;;
+turn110;101;Emma;I was in my bedroom, in the student flat.;event12;0;1;0;0;0;0
+turn111;102;AGENT;How long did it take?;event12;;;;;;
+turn112;103;Emma;It took 90 minutes.;event12;0;1;0;0;0;0
+turn113;104;AGENT;What did you do at 8 o'clock in the evening?;event13;;;;;;
+turn114;105;Emma;At 8 o'clock in the evening, I was doing the dishes with Ahmed.;event13;1;3;1;1;3.0;3.0
+turn115;106;AGENT;What did it involve? For example, what did you eat, make, read or talk about?;event13;;;;;;
+turn116;107;Emma;We did the dishes together. We cleaned the dishes from the celebratory dinner, using a sponge and dish soap at the kitchen counter.;event13;0;1;0;0;0.0;0.333
+turn117;108;AGENT;What did you use for it, such as tools, devices or a vehicle?;event13;;;;;;
+turn118;109;Emma;We used a sponge, dish soap, and a tea towel for the dishes. There was no vehicle involved in this task.;event13;0;1;0;0;1.0;1.0
+turn119;110;AGENT;Where were you?;event13;;;;;;
+turn120;111;Emma;I was in the shared kitchen of the student flat.;event13;0;1;0;0;0.857;1.0
+turn121;112;AGENT;How long did it take?;event13;;;;;;
+turn122;113;Emma;It took 20 minutes.;event13;0;1;0;0;1.0;1.0
+turn123;114;AGENT;What did you do at 9 o'clock in the evening?;event14;;;;;;
+turn124;115;Emma;At 9 o'clock in the evening, I was watching a crime series on my laptop.;event14;1;4;0;1;0;3.4
+turn125;116;AGENT;Who were you with?;event14;;;;;;
+turn126;117;Emma;I was alone.;event14;0;0;0;0;0;0
+turn127;118;AGENT;Where were you?;event14;;;;;;
+turn128;119;Emma;I was in my bedroom, in the student flat.;event14;0;1;0;0;0;1.0
+turn129;120;AGENT;How long did it take?;event14;;;;;;
+turn130;121;Emma;It took 90 minutes.;event14;0;1;0;0;0;1.0
+turn131;122;AGENT;What did you do at 10 o'clock in the evening?;event15;;;;;;
+turn132;123;Emma;At 10 o'clock in the evening, I was doing the dishes with Ahmed.;event15;1;2;0;0;0;0
+turn133;124;AGENT;What did it involve? For example, what did you eat, make, read or talk about?;event15;;;;;;
+turn134;125;Emma;It involved washing dishes with Ahmed. We cleaned the dishes from the celebratory dinner, including the plates, cutlery, and glasses.;event15;0;2;0;0;0;0
+turn135;126;AGENT;What did you use for it, such as tools, devices or a vehicle?;event15;;;;;;
+turn136;127;Emma;We used a sponge, dish soap, and a tea towel for cleaning the dishes.;event15;0;1;0;0;0;0
+turn137;128;AGENT;Where were you?;event15;;;;;;
+turn138;129;Emma;I was in the shared kitchen of the student flat.;event15;0;1;0;0;0;0
+turn139;130;AGENT;How long did it take?;event15;;;;;;
+turn140;131;Emma;It took 20 minutes.;event15;0;1;0;0;0;0
+turn141;132;AGENT;What did you do at 11 o'clock in the evening?;event16;;;;;;
+turn142;133;Emma;At 11 o'clock in the evening, I was messaging friends on WhatsApp about weekend plans.;event16;1;3;0;0;0;0
+turn143;134;AGENT;What did you use for it, such as tools, devices or a vehicle?;event16;;;;;;
+turn144;135;Emma;I used my mobile phone and WhatsApp to message my friends.;event16;0;2;0;0;0;0
+turn145;136;AGENT;Where were you?;event16;;;;;;
+turn146;137;Emma;I was in my bedroom of the student flat.;event16;0;1;0;0;0;0
+turn147;138;AGENT;How long did it take?;event16;;;;;;
+turn148;139;Emma;It took 25 minutes.;event16;0;1;0;0;0;0
