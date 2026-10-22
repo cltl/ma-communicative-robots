@@ -1,0 +1,398 @@
+{
+  "event1": {
+    "event_type": "personal_care",
+    "event_label": "waking up",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "woke up to the alarm and stayed in bed for a few minutes",
+    "agent_turn": [
+      {
+        "turn_id": 9,
+        "utterance": "What did you do at 7 o'clock?"
+      },
+      {
+        "turn_id": 11,
+        "utterance": "Who were you with?"
+      },
+      {
+        "turn_id": 13,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 15,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 17,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 10,
+        "utterance": "My alarm went off"
+      },
+      {
+        "turn_id": 12,
+        "utterance": "in my bed in my appartment"
+      },
+      {
+        "turn_id": 14,
+        "utterance": ""
+      },
+      {
+        "turn_id": 16,
+        "utterance": "in my bed in my appartment"
+      },
+      {
+        "turn_id": 18,
+        "utterance": "5 minutes"
+      }
+    ],
+    "where": [
+      "bedroom of her house",
+      "bedroom",
+      "her house",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "07:00",
+      "7 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 5,
+    "with_what": [
+      "alarm clock"
+    ],
+    "with_whom": []
+  },
+  "event2": {
+    "event_type": "personal_care",
+    "event_label": "showering and getting dressed",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "shower",
+      "clothes"
+    ],
+    "description": "took a shower and got dressed",
+    "agent_turn": [
+      {
+        "turn_id": 19,
+        "utterance": "What did you do at 8 o'clock?"
+      },
+      {
+        "turn_id": 21,
+        "utterance": "Who were you with?"
+      },
+      {
+        "turn_id": 23,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 25,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 27,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 20,
+        "utterance": "I took a shower and got dressed"
+      },
+      {
+        "turn_id": 22,
+        "utterance": ""
+      },
+      {
+        "turn_id": 24,
+        "utterance": "shower and clothes"
+      },
+      {
+        "turn_id": 26,
+        "utterance": "our shared bathroom"
+      },
+      {
+        "turn_id": 28,
+        "utterance": "20 minutes"
+      }
+    ],
+    "where": [
+      "shared bathroom",
+      "bathroom",
+      "her house",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "08:00",
+      "8 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "shower",
+      "clothes"
+    ],
+    "with_whom": []
+  },
+  "event3": {
+    "event_type": "meal",
+    "event_label": "breakfast",
+    "who": [
+      "Emma"
+    ],
+    "what": "<PHOTO>",
+    "description": "ate food including yoghurt, fruit, marmalade, and drank coffee and orange juice while at the breakfast table",
+    "agent_turn": [
+      {
+        "turn_id": 29,
+        "utterance": "What did you do at 9 o'clock?"
+      },
+      {
+        "turn_id": 31,
+        "utterance": "What did it involve? For example, what did you eat, make, read or talk about?"
+      },
+      {
+        "turn_id": 33,
+        "utterance": "You mentioned a photo. Could you describe what is on it: who and what can be seen, and where was it taken?"
+      },
+      {
+        "turn_id": 35,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 30,
+        "utterance": "I had breakfast with Lotte"
+      },
+      {
+        "turn_id": 32,
+        "utterance": "I can show you a picture"
+      },
+      {
+        "turn_id": 34,
+        "utterance": "Me, Lotte and Suzie at the breakfast table. There is food, yoghurt, fruit, marmalade, coffee and orange juice on the table with mugs and plates."
+      },
+      {
+        "turn_id": 36,
+        "utterance": "45 minutes"
+      }
+    ],
+    "where": "<PHOTO>",
+    "when": [
+      "09:00",
+      "9 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 45,
+    "with_what": "<PHOTO>",
+    "with_whom": "<PHOTO>",
+    "photo": {
+      "file": null,
+      "note": "Photo of Emma, Lotte, and Suzie at the breakfast table during their breakfast; shows food including yoghurt, fruit, marmalade, coffee, and orange juice with mugs and plates",
+      "fills": [
+        "what",
+        "with_what",
+        "with_whom",
+        "where"
+      ],
+      "gold": {
+        "what": [
+          "yoghurt",
+          "fruit",
+          "marmalade",
+          "coffee",
+          "orange juice"
+        ],
+        "with_what": [
+          "plates",
+          "mugs"
+        ],
+        "with_whom": [
+          "flatmate Lotte",
+          "friend Suzie"
+        ],
+        "where": [
+          "breakfast table in the kitchen of her house",
+          "kitchen",
+          "her house",
+          "Amsterdam",
+          "Netherlands",
+          "Europe"
+        ]
+      },
+      "people_in_photo": [
+        {
+          "name": "Emma",
+          "role": "the narrator",
+          "position": "not specified",
+          "appearance": "not specified"
+        },
+        {
+          "name": "Lotte",
+          "role": "friend",
+          "position": "at the table",
+          "appearance": "not specified"
+        },
+        {
+          "name": "Suzie",
+          "role": "friend",
+          "position": "at the table",
+          "appearance": "not specified"
+        }
+      ]
+    }
+  },
+  "event4": {
+    "event_type": "travel",
+    "event_label": "cycling to uni",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "cycled to the university",
+    "agent_turn": [
+      {
+        "turn_id": 37,
+        "utterance": "What did you do at 10 o'clock?"
+      },
+      {
+        "turn_id": 39,
+        "utterance": "Who were you with?"
+      },
+      {
+        "turn_id": 41,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 43,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 38,
+        "utterance": "I went to the uni"
+      },
+      {
+        "turn_id": 40,
+        "utterance": ""
+      },
+      {
+        "turn_id": 42,
+        "utterance": "I went on my bike"
+      },
+      {
+        "turn_id": 44,
+        "utterance": "30 minutes"
+      }
+    ],
+    "where": [
+      "university",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "10:00",
+      "10 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 30,
+    "with_what": [
+      "bicycle"
+    ],
+    "with_whom": []
+  },
+  "event5": {
+    "event_type": "study",
+    "event_label": "studying",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "books",
+      "laptop"
+    ],
+    "description": "studied for her class with Lotte",
+    "agent_turn": [
+      {
+        "turn_id": 45,
+        "utterance": "What did you do at 11 o'clock?"
+      },
+      {
+        "turn_id": 47,
+        "utterance": "Who were you with?"
+      },
+      {
+        "turn_id": 49,
+        "utterance": "What did you use for it, such as tools, devices or a vehicle?"
+      },
+      {
+        "turn_id": 51,
+        "utterance": "Where were you?"
+      },
+      {
+        "turn_id": 53,
+        "utterance": "How long did it take?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 46,
+        "utterance": "studied for my class"
+      },
+      {
+        "turn_id": 48,
+        "utterance": "Lotte"
+      },
+      {
+        "turn_id": 50,
+        "utterance": "books and a laptop"
+      },
+      {
+        "turn_id": 52,
+        "utterance": "in the library"
+      },
+      {
+        "turn_id": 54,
+        "utterance": "one hour"
+      }
+    ],
+    "where": [
+      "library",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "11:00",
+      "11 o'clock",
+      "late in the morning",
+      "morning"
+    ],
+    "how_long": 60,
+    "with_what": [
+      "books",
+      "laptop"
+    ],
+    "with_whom": [
+      "Lotte"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+Turn;Turn nr.;Speaker;Response
+turn1;0;AGENT;Hi! I would like to hear about your day, part by part. You can type 'stop' at any time. What is your name?
+turn2;1;Emma;Hi! My name is Emma. Go ahead and ask about any part of my day, or just start with what you'd like to know!
+turn3;2;AGENT;Nice to meet you, Emma. Should I refer to you as he, she or they?
+turn4;3;Emma;You can refer to me as she, since I identify as female.
+turn5;4;AGENT;Where do you live? Please give the town and the country.
+turn6;5;Emma;I live in Amsterdam, Netherlands.
+turn7;6;AGENT;What did you do in the morning?
+turn8;7;Emma;In the morning, I woke up at 07:30 to my phone alarm. Then I had a quick shower from 07:40 to 08:00. After that, I had breakfast with my flatmate Lotte from 08:00 to 08:20. We had yoghurt, granola, and coffee.
+turn9;8;AGENT;What did you do in the afternoon?
+turn10;9;Emma;In the afternoon, I cycled to the university at 08:25 and attended a lecture from 09:00 to 10:45. After the lecture, I had a coffee break with Jonas and Mila from 10:50 to 11:05. Then, I had a group project meeting with Jonas, Mila, and Sven from 11:10 to 12:30. For lunch, I had a cheese sandwich and an apple with Mila outside the library from 12:35 to 13:00.
+turn11;10;AGENT;What did you do in the evening?
+turn12;11;Emma;In the evening, I signed an internship contract with Dr. Bakker at the Memory Research Lab from 13:05 to 13:45. Then, I called my parents for a video call from 13:50 to 14:05. After that, I did self-study in the silent study area of the university library from 14:15 to 15:45. I cycled to the supermarket at 15:50 and did some grocery shopping from 16:05 to 16:25. I went to the gym with about 20 other participants from 17:00 to 17:45
+turn13;12;AGENT;Thank you for telling me about your day! I saved 13 events to data/simulated_days/day_emma_part_of_day_20261022_1211.json

@@ -1,0 +1,47 @@
+{
+  "nr_of_events": 13,
+  "nr_of_roles": 55,
+  "nr_of_roles_per_role": {
+    "who": 13,
+    "what": 5,
+    "with_what": 6,
+    "with_whom": 4,
+    "where": 13,
+    "when": 13,
+    "how_long": 1
+  },
+  "nr_of_roles_from_photos": 0,
+  "nr_of_coreference_chains": 3,
+  "average_nr_of_mentions_per_chain": 6.33,
+  "nr_of_mentions_per_chain": {
+    "emma": 13,
+    "lotte": 4,
+    "suzie": 2
+  },
+  "nr_of_unique_what": 9,
+  "what": {
+    "coffee": 2,
+    "yoghurt": 1,
+    "fruit": 1,
+    "laptops": 1,
+    "readings": 1,
+    "sandwich": 1,
+    "lasagna": 1,
+    "wine": 1,
+    "paper": 1
+  },
+  "nr_of_unique_with_what": 11,
+  "with_what": {
+    "kitchen of her house": 1,
+    "kitchen": 1,
+    "her house": 1,
+    "Amsterdam": 1,
+    "Europe": 1,
+    "bicycle": 1,
+    "library": 1,
+    "pan": 1,
+    "wine glass": 1,
+    "Netflix": 1,
+    "book light": 1
+  }
+}

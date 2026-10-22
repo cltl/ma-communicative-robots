@@ -5,7 +5,8 @@ The evaluation is done on three levels, each with a contingency table (true posi
 false negatives and true negatives) and the precision, recall and f1:
 
 * events: the events of the collected day are aligned one-to-one with the GOLD events, using the start time and
-  the overlap in time, the event type and the event label. Aligned events are true positives, collected
+  the overlap in time, the event type and the event label. An event without a clock time, e.g. with only
+  'morning' in when, gets half the time similarity if the other event starts in that part of the day. Aligned events are true positives, collected
   events without a GOLD event are false positives and GOLD events without a collected event are false negatives.
 * roles: for each role (who, what, with_what, with_whom, where, when, how_long) of an event: is the role filled?
   A role filled in both events is a true positive, a role filled in the collected event only a false positive,
@@ -42,6 +43,11 @@ Run it from the root of the project:
         --collected data/collected_days/day_emma_20261021_1100.json
 
 The results are printed and saved as <collected>_vs_<gold>_evaluation.json next to the collected day.
+With max_gold_events (--max-gold-events), only the first events of the GOLD day are evaluated, e.g. when the
+conversation stopped early: a number of events, or "collected" for as many GOLD events as the collected day has.
+
+Each aligned event in event_alignment has a comment that explains its similarity (time, type and label) and the
+roles of which the values do not fully match the GOLD, with their score.
 The evaluation per turn of the user is saved as <collected>_vs_<gold>_turn_evaluation.csv, in the same format as the
 evaluation files of the EMISSOR scenarios, so that it can be plotted with the plots module (see save_turn_evaluation).
 """
@@ -67,6 +73,11 @@ STOPWORDS = {"a", "an", "the", "of", "in", "at", "on", "to", "from", "with", "an
 
 # Minimal similarity of two events to align them, see get_event_similarity
 EVENT_THRESHOLD = 0.55
+# The hours (from, to) of the parts of the day in when, for events without a clock time
+PART_OF_DAY_HOURS = {"night": (0, 5), "morning": (5, 12), "midday": (12, 13), "afternoon": (12, 18),
+                     "evening": (18, 24)}
+# The time similarity of an event without a clock time and an event that starts in its part of the day
+PART_OF_DAY_SIMILARITY = 0.5
 # Minimal similarity of the names and mentions of two entities to align them, per mode
 ENTITY_THRESHOLDS = {"exact": 1.0, "jaccard": 0.5}
 
@@ -163,12 +174,28 @@ def get_start_and_end(event):
     duration = how_long[0] if how_long and isinstance(how_long[0], (int, float)) else 0
     return start, start + duration
 
+def get_parts_of_day(event):
+    return [value for value in get_role_values(event, "when") if value in PART_OF_DAY_HOURS]
+
+def in_part_of_day(event, time):
+    """Whether the start of the time interval is in a part of the day in when of the event."""
+    return any(PART_OF_DAY_HOURS[part][0] * 60 <= time[0] < PART_OF_DAY_HOURS[part][1] * 60
+               for part in get_parts_of_day(event))
+
 def get_time_similarity(gold_event, system_event):
     """The overlap of the two time intervals (intersection over union), or the closeness of the start times
-    if that is higher: 1 for the same start time, 0 for an hour or more apart."""
+    if that is higher: 1 for the same start time, 0 for an hour or more apart. If one of the events has no clock
+    time, only a part of the day such as 'morning', it is PART_OF_DAY_SIMILARITY if the other event starts in that
+    part of the day or has the same part, and 0 otherwise."""
     gold_time, system_time = get_start_and_end(gold_event), get_start_and_end(system_event)
     if not gold_time or not system_time:
-        return 0.0
+        if gold_time:
+            same_part = in_part_of_day(system_event, gold_time)
+        elif system_time:
+            same_part = in_part_of_day(gold_event, system_time)
+        else:
+            same_part = bool(set(get_parts_of_day(gold_event)) & set(get_parts_of_day(system_event)))
+        return PART_OF_DAY_SIMILARITY if same_part else 0.0
     overlap = max(0, min(gold_time[1], system_time[1]) - max(gold_time[0], system_time[0]))
     union = max(gold_time[1], system_time[1]) - min(gold_time[0], system_time[0])
     closeness = max(0.0, 1 - abs(gold_time[0] - system_time[0]) / 60)
@@ -281,8 +308,89 @@ def evaluate_role(gold_event, system_event, gold_key, system_key, role, mode, en
     filler_table.fn += len(gold_values) - matched
     return role_table, filler_table
 
-def evaluate_day(gold_day, system_day, mode, event_threshold=EVENT_THRESHOLD):
-    """Evaluates a collected day against a GOLD day in the given mode (exact or jaccard)."""
+## DESCRIBING THE MISMATCHES OF ALIGNED EVENTS
+def format_minutes(minutes):
+    return f"{minutes // 60:02d}:{minutes % 60:02d}"
+
+def describe_time(event):
+    time = get_start_and_end(event)
+    if not time:
+        return "no clock time" + (f" ({', '.join(get_role_values(event, 'when'))})" if get_role_values(event, "when") else "")
+    duration = time[1] - time[0]
+    return format_minutes(time[0]) + (f" for {duration} minutes" if duration else "")
+
+def describe_event_similarity(gold_event, system_event, mode):
+    """Explains the similarity of two aligned events from its parts: time, event type and event label."""
+    time = get_time_similarity(gold_event, system_event)
+    type_similarity = exact_match(gold_event.get("event_type", ""), system_event.get("event_type", ""))
+    label = MATCHES[mode](gold_event.get("event_label", ""), system_event.get("event_label", ""))
+    parts = [f"similarity = 0.5 * time {time:.2f} + 0.25 * type {type_similarity:.2f} + 0.25 * label {label:.2f}"]
+    if time < 1:
+        parts.append(f"time: {describe_time(system_event)} instead of {describe_time(gold_event)}")
+    if type_similarity < 1:
+        parts.append(f"type: '{system_event.get('event_type', '')}' instead of '{gold_event.get('event_type', '')}'")
+    if label < 1:
+        parts.append(f"label: '{system_event.get('event_label', '')}' instead of '{gold_event.get('event_label', '')}'")
+    return parts
+
+def describe_role_mismatch(gold_event, system_event, role, filler_table, mode):
+    """Explains why the fillers of a role of two aligned events do not fully match, or None if they do."""
+    if filler_table.fp < 1e-6 and filler_table.fn < 1e-6:
+        return None
+    gold_values, system_values = get_role_values(gold_event, role), get_role_values(system_event, role)
+    if not gold_values:
+        return f"{role}: {system_values} is not in the GOLD"
+    if not system_values:
+        return f"{role}: missing, GOLD {gold_values}"
+    if role == "how_long":
+        return f"{role} {filler_table.tp:.2f}: {system_values[0]} instead of {gold_values[0]} minutes"
+    if role in SPECIFICITY_ROLES:
+        # the GOLD value that gives the best score, weighted by its position in the GOLD list
+        match = MATCHES[mode]
+        n = len(gold_values)
+        i, gold, system = max(((i, gold, system) for i, gold in enumerate(gold_values) for system in system_values),
+                              key=lambda item: (n - item[0]) / n * match(item[1], item[2]))
+        best = f"'{system}'" if normalize(system) == normalize(gold) else f"'{system}' with '{gold}'"
+        return (f"{role} {filler_table.tp:.2f}: the best match is {best}, GOLD value {i + 1} of {n}, which scores "
+                f"{n - i}/{n}, the most specific GOLD value is '{gold_values[0]}'")
+    return (f"{role} {filler_table.tp:.2f} of {len(gold_values)} GOLD values matched: "
+            f"collected {system_values}, GOLD {gold_values}")
+
+## LIMITING THE GOLD EVENTS
+# max_gold_events for as many GOLD events as the collected day has
+AS_COLLECTED = "collected"
+
+def get_nr_of_gold_events(gold_day, system_day, max_gold_events=None):
+    """The number of GOLD events to evaluate: all with None, the number of collected events with "collected",
+    otherwise max_gold_events, but never more than the GOLD day has."""
+    nr_of_gold_events = len(get_events(gold_day))
+    if max_gold_events is None:
+        return nr_of_gold_events
+    if max_gold_events == AS_COLLECTED:
+        max_gold_events = len(get_events(system_day))
+    return min(int(max_gold_events), nr_of_gold_events)
+
+def limit_gold_events(gold_day, system_day, max_gold_events=None):
+    """A copy of the GOLD day with only its first events (see get_nr_of_gold_events), e.g. to evaluate a conversation
+    that stopped early only against the part of the day it got to. The coreference chains only keep the mentions in
+    these events."""
+    if max_gold_events is None:
+        return gold_day
+    keys = list(get_events(gold_day))[:get_nr_of_gold_events(gold_day, system_day, max_gold_events)]
+    day = {key: value for key, value in gold_day.items() if not key.startswith("event") or key in keys}
+    chains = []
+    for chain in gold_day.get("coreference_chains", []):
+        mentions = [mention for mention in chain.get("mentions", []) if mention.get("event") in keys]
+        if mentions:
+            chains.append({**chain, "mentions": mentions})
+    if "coreference_chains" in gold_day:
+        day["coreference_chains"] = chains
+    return day
+
+def evaluate_day(gold_day, system_day, mode, event_threshold=EVENT_THRESHOLD, max_gold_events=None):
+    """Evaluates a collected day against a GOLD day in the given mode (exact or jaccard). With max_gold_events, only
+    the first GOLD events are evaluated, see limit_gold_events."""
+    gold_day = limit_gold_events(gold_day, system_day, max_gold_events)
     gold_events, system_events = get_events(gold_day), get_events(system_day)
     alignment = align_events(gold_events, system_events, mode, event_threshold)
     gold_entities, system_entities = Entities(gold_day), Entities(system_day)
@@ -291,13 +399,21 @@ def evaluate_day(gold_day, system_day, mode, event_threshold=EVENT_THRESHOLD):
     events = Contingency(with_true_negatives=False)
     roles = {role: Contingency() for role in ROLES}
     fillers = {role: Contingency(with_true_negatives=False) for role in ROLES}
+    # for each aligned pair, a comment that explains the similarity and the roles that do not fully match
+    comments = {}
     for gold_key, system_key, _ in alignment:
         events.tp += 1
+        gold_event, system_event = gold_events[gold_key], system_events[system_key]
+        comment = describe_event_similarity(gold_event, system_event, mode)
         for role in ROLES:
-            role_table, filler_table = evaluate_role(gold_events[gold_key], system_events[system_key],
+            role_table, filler_table = evaluate_role(gold_event, system_event,
                                                      gold_key, system_key, role, mode, entities)
             roles[role].add(role_table)
             fillers[role].add(filler_table)
+            mismatch = describe_role_mismatch(gold_event, system_event, role, filler_table, mode)
+            if mismatch:
+                comment.append(mismatch)
+        comments[(gold_key, system_key)] = "; ".join(comment)
 
     # events that are not aligned: their roles and fillers are missed or wrong
     aligned_gold = {gold_key for gold_key, _, _ in alignment}
@@ -318,7 +434,8 @@ def evaluate_day(gold_day, system_day, mode, event_threshold=EVENT_THRESHOLD):
     return {"events": events, "roles": with_total(roles), "role_fillers": with_total(fillers),
             "event_alignment": [{"gold": gold_key, "system": system_key, "similarity": round(similarity, 3),
                                  "gold_label": gold_events[gold_key].get("event_label", ""),
-                                 "system_label": system_events[system_key].get("event_label", "")}
+                                 "system_label": system_events[system_key].get("event_label", ""),
+                                 "comment": comments[(gold_key, system_key)]}
                                 for gold_key, system_key, similarity in alignment],
             "entity_alignment": entities[2]}
 
@@ -377,15 +494,34 @@ def get_correct_roles(gold_day, system_day, mode, event_threshold=EVENT_THRESHOL
                 correct_roles[system_key][role] = filler_table.precision
     return correct_roles
 
-def get_turn_rows(gold_day, system_day, event_threshold=EVENT_THRESHOLD):
+def get_turn_rows(gold_day, system_day, event_threshold=EVENT_THRESHOLD, max_gold_events=None):
     """A row for each turn in the collected day: the questions of the agent (agent_turn) and the answers of the user
     (human_turn), in the order of the conversation. The Turn of a row is turn<turn_id>, with the turn_id of the turn
     in the conversation, as in the conversation files of the simulated user. The rows of the user have the number of
     events and roles extracted from the turn and the number of correct events and roles in both modes. An event is
     counted at its first turn, a role at the turn that mentions it (see get_role_turns). The rows of the agent have
-    no numbers, since the agent does not extract anything itself. Skipped questions have no row for the answer."""
+    no numbers, since the agent does not extract anything itself. Skipped questions have no row for the answer.
+    A turn from which several events were extracted, e.g. an answer about the whole morning, has one row with the
+    numbers of all these events. With max_gold_events, only the first GOLD events are evaluated (see
+    limit_gold_events)."""
+    gold_day = limit_gold_events(gold_day, system_day, max_gold_events)
     correct_roles = {mode: get_correct_roles(gold_day, system_day, mode, event_threshold) for mode in MODES}
     rows = []
+    rows_by_turn = {}
+
+    def add_row(row):
+        """Adds the row, or adds its numbers to the row of the same turn of an earlier event."""
+        if row["Turn"] not in rows_by_turn:
+            row["Turn nr."] = len(rows)
+            rows_by_turn[row["Turn"]] = row
+            rows.append(row)
+            return
+        earlier = rows_by_turn[row["Turn"]]
+        earlier["Event"] += "," + row["Event"]
+        for key, value in row.items():
+            if key.startswith("nr_of_"):
+                earlier[key] = round(earlier[key] + value, 3)
+
     for event_key, event in get_events(system_day).items():
         # human_turn[i] is the answer to agent_turn[i], older files have no agent_turn
         agent_turns = get_turns(event, "agent_turn")
@@ -395,19 +531,19 @@ def get_turn_rows(gold_day, system_day, event_threshold=EVENT_THRESHOLD):
         speaker = (get_role_values(event, "who") or ["SPEAKER"])[0]
         for i in range(max(len(agent_turns), len(turns))):
             if i < len(agent_turns):
-                rows.append({"Turn": f"turn{agent_turns[i]['turn_id']}", "Turn nr.": len(rows),
-                             "Speaker": AGENT_SPEAKER, "Response": agent_turns[i]["utterance"], "Event": event_key})
+                add_row({"Turn": f"turn{agent_turns[i]['turn_id']}", "Speaker": AGENT_SPEAKER,
+                         "Response": agent_turns[i]["utterance"], "Event": event_key})
             if i >= len(turns) or not turns[i]:
                 continue
             roles = [role for role, role_turn in role_turns.items() if role_turn == i]
-            row = {"Turn": f"turn{human_turns[i]['turn_id']}", "Turn nr.": len(rows), "Speaker": speaker,
+            row = {"Turn": f"turn{human_turns[i]['turn_id']}", "Speaker": speaker,
                    "Response": turns[i], "Event": event_key, "nr_of_events": 1 if i == 0 else 0, "nr_of_roles": len(roles)}
             for mode in MODES:
                 aligned = event_key in correct_roles[mode]
                 row[f"nr_of_correct_events_{mode}"] = 1 if i == 0 and aligned else 0
                 row[f"nr_of_correct_roles_{mode}"] = round(sum(correct_roles[mode][event_key].get(role, 0.0)
                                                                for role in roles), 3) if aligned else 0
-            rows.append(row)
+            add_row(row)
     return rows
 
 def get_turn_output_path(gold_file, system_file):
@@ -455,7 +591,8 @@ def print_turn_effectiveness(effectiveness):
 def get_effectiveness_path(turn_csv):
     return os.path.splitext(turn_csv)[0].replace("_turn_evaluation", "") + "_turn_effectiveness.json"
 
-def save_turn_evaluation(gold_file, system_file, output_file=None, event_threshold=EVENT_THRESHOLD, verbose=True):
+def save_turn_evaluation(gold_file, system_file, output_file=None, event_threshold=EVENT_THRESHOLD, verbose=True,
+                         max_gold_events=None):
     """Saves the evaluation per turn of the user as a CSV file with ';' as separator, in the same format as the
     evaluation files of the EMISSOR scenarios, so that it can be plotted with the plots module, e.g.:
 
@@ -463,12 +600,13 @@ def save_turn_evaluation(gold_file, system_file, output_file=None, event_thresho
 
     The file is saved next to the collected day as <collected>_vs_<key>_turn_evaluation.csv by default.
     The effectiveness of the communication (see get_turn_effectiveness) is saved next to it as
-    <collected>_vs_<key>_turn_effectiveness.json and printed unless verbose=False. Returns the path of the CSV file."""
+    <collected>_vs_<key>_turn_effectiveness.json and printed unless verbose=False. With max_gold_events, only the
+    first GOLD events are evaluated (see limit_gold_events). Returns the path of the CSV file."""
     with open(gold_file) as json_file:
         gold_day = json.load(json_file)
     with open(system_file) as json_file:
         system_day = json.load(json_file)
-    rows = get_turn_rows(gold_day, system_day, event_threshold)
+    rows = get_turn_rows(gold_day, system_day, event_threshold, max_gold_events)
     columns = TURN_COLUMNS + [f"nr_of_correct_{level}_{mode}" for level in ["events", "roles"] for mode in MODES]
     output_file = output_file or get_turn_output_path(gold_file, system_file)
     with open(output_file, "w", newline="") as csv_file:
@@ -478,7 +616,9 @@ def save_turn_evaluation(gold_file, system_file, output_file=None, event_thresho
 
     effectiveness = get_turn_effectiveness(rows)
     with open(get_effectiveness_path(output_file), "w") as json_file:
-        json.dump({"gold": gold_file, "system": system_file, **effectiveness}, json_file, indent=2)
+        json.dump({"gold": gold_file, "system": system_file, "max_gold_events": max_gold_events,
+                   "nr_of_gold_events": get_nr_of_gold_events(gold_day, system_day, max_gold_events),
+                   **effectiveness}, json_file, indent=2)
     if verbose:
         print_turn_effectiveness(effectiveness)
         print("Saved the effectiveness to", get_effectiveness_path(output_file))
@@ -511,16 +651,23 @@ def get_output_path(gold_file, system_file):
     system_name, _ = os.path.splitext(system_file)
     return f"{system_name}_vs_{gold_name}_evaluation.json"
 
-def evaluate_files(gold_file, system_file, output_file=None, event_threshold=EVENT_THRESHOLD, verbose=True):
+def evaluate_files(gold_file, system_file, output_file=None, event_threshold=EVENT_THRESHOLD, verbose=True,
+                   max_gold_events=None):
     """Evaluates a collected day file against a GOLD day file in both modes, prints and saves the results.
-    With verbose=False nothing is printed, e.g. when the results are shown as tables in a notebook."""
+    With verbose=False nothing is printed, e.g. when the results are shown as tables in a notebook.
+    With max_gold_events, only the first GOLD events are evaluated: a number, or "collected" for as many GOLD events
+    as the collected day has (see limit_gold_events)."""
     with open(gold_file) as json_file:
         gold_day = json.load(json_file)
     with open(system_file) as json_file:
         system_day = json.load(json_file)
-    evaluation = {"gold": gold_file, "system": system_file, "event_threshold": event_threshold, "modes": {}}
+    nr_of_gold_events = get_nr_of_gold_events(gold_day, system_day, max_gold_events)
+    evaluation = {"gold": gold_file, "system": system_file, "event_threshold": event_threshold,
+                  "max_gold_events": max_gold_events, "nr_of_gold_events": nr_of_gold_events, "modes": {}}
+    if verbose and nr_of_gold_events < len(get_events(gold_day)):
+        print(f"Evaluating the first {nr_of_gold_events} of the {len(get_events(gold_day))} GOLD events")
     for mode in MODES:
-        results = evaluate_day(gold_day, system_day, mode, event_threshold)
+        results = evaluate_day(gold_day, system_day, mode, event_threshold, max_gold_events)
         if verbose:
             print_results(mode, results)
         evaluation["modes"][mode] = results_to_dict(results)
@@ -543,10 +690,17 @@ def main():
                                       "by default <collected>_vs_<key>_turn_evaluation.csv")
     parser.add_argument("--event-threshold", type=float, default=EVENT_THRESHOLD,
                         help="Minimal similarity to align a collected event with a GOLD event")
+    parser.add_argument("--max-gold-events",
+                        help="Only evaluate the first GOLD events: a number, or 'collected' for as many as the "
+                             "collected day has. By default all GOLD events are evaluated")
     args = parser.parse_args()
-    evaluate_files(args.key, args.collected, args.output, args.event_threshold)
+    max_gold_events = args.max_gold_events
+    if max_gold_events and max_gold_events != AS_COLLECTED:
+        max_gold_events = int(max_gold_events)
+    evaluate_files(args.key, args.collected, args.output, args.event_threshold, max_gold_events=max_gold_events)
     print("Saved the evaluation per turn to", save_turn_evaluation(args.key, args.collected, args.csv,
-                                                                    args.event_threshold))
+                                                                    args.event_threshold,
+                                                                    max_gold_events=max_gold_events))
 
 
 if __name__ == "__main__":

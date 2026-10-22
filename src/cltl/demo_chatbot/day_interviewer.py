@@ -1,8 +1,13 @@
-"""A scripted conversational agent that asks a user about their day, hour by hour.
+"""A scripted conversational agent that asks a user about their day, hour by hour or per part of the day.
 
-For each hour, the agent asks what the user did and then asks follow-up questions for the slots that are still
-unknown: with whom, what, with what, where, when and for how long. An LLM served by a llama.cpp server fills the slots
-of the event from the answers of the user. The day is saved as a JSON file with the same structure as the examples
+Hour by hour (the default), the agent asks what the user did at each hour and then asks follow-up questions for the
+slots that are still unknown: with whom, what, with what, where, when and for how long. An LLM served by a llama.cpp
+server fills the slots of the event from the answers of the user.
+
+With part_of_day=True (or --part-of-day), the agent only asks what the user did in the morning, in the afternoon and
+in the evening. The LLM extracts all the activities from that single answer, in temporal order, without follow-up
+questions. This takes far fewer turns, but the roles the user does not mention stay empty and the start time and the
+duration are left out if the user does not give them. The day is saved as a JSON file with the same structure as the examples
 in data/example_days: an object with event1, event2, ... and the coreference_chains of the people in the events.
 
 Start the llama.cpp server before running the agent, e.g.:
@@ -43,6 +48,10 @@ NOT_OTHERS = {"alone", "nobody", "no one", "none", "myself", "herself", "himself
 PHOTO_WORDS = re.compile(r"\b(photos?|pictures?|pics?|snapshots?|selfies?)\b", re.IGNORECASE)
 PHOTO_QUESTION = "You mentioned a photo. Could you describe what is on it: who and what can be seen, and where was it taken?"
 PHOTO_ROLES = ["what", "with_what", "with_whom", "where"]
+# The parts of the day the agent asks about with part_of_day=True, with the question
+PART_QUESTIONS = [("morning", "What did you do in the morning?"),
+                  ("afternoon", "What did you do in the afternoon?"),
+                  ("evening", "What did you do in the evening?")]
 
 QUESTIONS = {
     "with_whom": "Who were you with?",
@@ -170,6 +179,11 @@ def get_slot_schema(event_types):
                   "how_long": {"anyOf": [{"type": "integer"}, {"type": "null"}]}}
     return {"type": "object", "properties": properties, "required": list(properties)}
 
+def get_events_schema(event_types):
+    """JSON schema for a list of events, each with the slots of get_slot_schema."""
+    return {"type": "object", "required": ["events"],
+            "properties": {"events": {"type": "array", "items": get_slot_schema(event_types)}}}
+
 def parse_json(text):
     """Parses the JSON in the answer of the LLM, also when there is text around it."""
     try:
@@ -187,7 +201,7 @@ def slug(text):
 
 class DayInterviewer:
     def __init__(self, client: OpenAI, model, examples_folder=EXAMPLE_DAYS, output_folder=OUTPUT_FOLDER,
-                 ask_all=False):
+                 ask_all=False, part_of_day=False):
         """Creates the agent.
         params
         client: OpenAI client for the llama.cpp server
@@ -195,11 +209,14 @@ class DayInterviewer:
         examples_folder: folder with the example days, used for the event types and as examples for the LLM
         output_folder: folder in which the day is saved
         ask_all: ask every slot, also when the user already mentioned it
+        part_of_day: ask once per part of the day (morning, afternoon, evening) and extract all the activities from
+        the answer, instead of asking hour by hour with follow-up questions
         """
         self.client = client
         self.model = model
         self.output_folder = output_folder
         self.ask_all = ask_all
+        self.part_of_day = part_of_day
         days = load_example_days(examples_folder)
         if not days:
             raise ValueError(f"No example days found in {examples_folder}")
@@ -212,6 +229,8 @@ class DayInterviewer:
         self.pronoun = "their"
         self.home = ""
         self.hour = 7
+        # the index in PART_QUESTIONS of the part of the day the agent asks about, with part_of_day=True
+        self.part = 0
         self.question = ""
         # the number of the last turn in the conversation, of the agent or the user, and of the current question
         self.turn_id = 0
@@ -231,7 +250,8 @@ class DayInterviewer:
 
     def start(self):
         self.turn_id = 1
-        return "Hi! I would like to hear about your day, hour by hour. You can type 'stop' at any time. What is your name?"
+        how = "part by part" if self.part_of_day else "hour by hour"
+        return f"Hi! I would like to hear about your day, {how}. You can type 'stop' at any time. What is your name?"
 
     def respond(self, utterance):
         """Takes the answer of the user and returns the next question or the closing of the conversation."""
@@ -259,6 +279,8 @@ class DayInterviewer:
 
     def _on_home(self, utterance):
         self.home = utterance.strip(" .") or "unknown"
+        if self.part_of_day:
+            return self.ask_part(0)
         self.state = "start"
         return "At what hour did your day start? For example 7."
 
@@ -269,7 +291,27 @@ class DayInterviewer:
         self.hour = hour
         return self.ask_hour()
 
-    ## Asking for the events
+    ## Asking for the events per part of the day
+    def ask_part(self, part):
+        if part >= len(PART_QUESTIONS):
+            return self.finish()
+        self.state = "part"
+        self.part = part
+        self.question = PART_QUESTIONS[part][1]
+        self.question_id = self.turn_id + 1
+        return self.question
+
+    def _on_part(self, utterance):
+        """Extracts all the activities from the answer as events, all with the question and the answer as turns."""
+        if utterance:
+            self.turns = [("Agent", self.question_id, self.question), ("User", self.turn_id, utterance)]
+            for slots in self.extract_events():
+                self.day[f"event{len(self.day) + 1}"] = self.make_event(slots)
+            self.turns = []
+            self.save()
+        return self.ask_part(self.part + 1)
+
+    ## Asking for the events hour by hour
     def ask_hour(self):
         self.state = "event"
         self.turns = []
@@ -372,10 +414,13 @@ class DayInterviewer:
             response_format={"type": "json_schema", "json_schema": {"name": "mentioned", "schema": schema}})
         return parse_json(response.choices[0].message.content)
 
-    def get_slot_prompt(self):
+    def get_example_where(self):
         # the home of the user as the end of the example for where, e.g. ["Leiden", "the Netherlands", "Europe"]
         home = [part.strip() for part in self.home.split(",") if part.strip()] + ["Europe"]
-        example_where = json.dumps([f"kitchen of {self.pronoun} house", "kitchen", f"{self.pronoun} house"] + home)
+        return json.dumps([f"kitchen of {self.pronoun} house", "kitchen", f"{self.pronoun} house"] + home)
+
+    def get_slot_prompt(self):
+        example_where = self.get_example_where()
         instruction = f"""
             You fill the slots of an event in the day of {self.name} from an interview with {self.name}.
             {self.name} lives in {self.home}. Write about {self.name} in the third person, using "{self.pronoun}"
@@ -407,6 +452,44 @@ class DayInterviewer:
             model=self.model, messages=self.get_slot_prompt(), temperature=0,
             response_format={"type": "json_schema", "json_schema": {"name": "event", "schema": self.schema}})
         return parse_json(response.choices[0].message.content)
+
+    def extract_events(self):
+        """Asks the LLM for all the activities in the answer about a part of the day, in temporal order."""
+        part = PART_QUESTIONS[self.part][0]
+        instruction = f"""
+            You extract the activities in the {part} of {self.name} from what {self.name} said in an interview.
+            {self.name} lives in {self.home}. Write about {self.name} in the third person, using "{self.pronoun}"
+            as possessive pronoun, e.g. "bedroom of {self.pronoun} house".
+
+            Return a JSON object with a list of events, one for each activity, in the order in which they happened.
+            If the user does not say when, put them in the order that makes sense, e.g. waking up before breakfast.
+            Each event has the slots:
+            - event_type: one of {", ".join(self.event_types)}
+            - event_label: a short label for the activity, e.g. "breakfast" or "cycling to work"
+            - description: one short sentence about the activity without the subject, e.g. "made coffee and read the news"
+            - what: the things the activity was about: food, objects, topics, e.g. ["coffee", "newspaper"]
+            - with_what: the tools, devices or vehicles that were used, e.g. ["coffee machine", "bicycle"]
+            - with_whom: the people or animals that took part, with their relation if known, e.g. ["his colleague Tom"]
+            - where: the place from the most specific to the most general, ending with the town, country and continent,
+              e.g. {self.get_example_where()}
+            - start_time: the time at which the activity started as "HH:MM" in 24 hours
+            - how_long: the duration in minutes
+
+            Only use what the user said: use an empty list if the user did not mention anything for a list,
+            e.g. ["alone"] or ["herself"] is wrong, [] is right. Use null for start_time and how_long if the user
+            did not say them, do not estimate them. Do not make things up.
+            """
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model, temperature=0,
+                messages=[{"role": "system", "content": instruction},
+                          {"role": "user", "content": self.get_conversation() + "\n\nJSON:"}],
+                response_format={"type": "json_schema",
+                                 "json_schema": {"name": "events", "schema": get_events_schema(self.event_types)}})
+            return parse_json(response.choices[0].message.content).get("events", [])
+        except Exception as e:
+            print("Could not extract the events:", e)
+            return []
 
     def has_photo(self):
         """Whether the user has a photo of the event: the LLM checks it if the user used a word such as photo, so that
@@ -483,13 +566,15 @@ class DayInterviewer:
         return photo
 
     def make_event(self, slots):
-        """An event with the slots in the order of the example days."""
+        """An event with the slots in the order of the example days. Hour by hour, an event without a start time or
+        duration gets the hour that was asked and 60 minutes. Per part of the day, they are left out: when only has
+        the part of the day and how_long is null."""
         start_time = slots.get("start_time")
         if not start_time or not re.fullmatch(r"([01][0-9]|2[0-3]):[0-5][0-9]", start_time):
-            start_time = f"{self.hour:02d}:00"
+            start_time = None if self.part_of_day else f"{self.hour:02d}:00"
         how_long = slots.get("how_long")
         if not isinstance(how_long, int) or how_long <= 0:
-            how_long = 60
+            how_long = None if self.part_of_day else 60
         lists = {slot: [str(value) for value in (slots.get(slot) or [])] for slot in LIST_SLOTS}
         # the LLM sometimes puts the narrator in with_whom when the user was alone
         not_others = NOT_OTHERS | {self.name.lower()}
@@ -506,7 +591,7 @@ class DayInterviewer:
                 "agent_turn": [make_turn(turn_id, text) for speaker, turn_id, text in self.turns if speaker == "Agent"],
                 "human_turn": [make_turn(turn_id, text) for speaker, turn_id, text in self.turns if speaker == "User"],
                 "where": lists["where"],
-                "when": make_when(start_time),
+                "when": make_when(start_time) if start_time else [PART_QUESTIONS[self.part][0]],
                 "how_long": how_long,
                 "with_what": lists["with_what"],
                 "with_whom": lists["with_whom"]}
@@ -584,7 +669,9 @@ class DayInterviewer:
             return
         if not self.path:
             os.makedirs(self.output_folder, exist_ok=True)
-            file_name = f"day_{slug(self.name)[:40]}_{datetime.now():%Y%m%d_%H%M}.json"
+            # the file name tells which strategy the agent used
+            strategy = "part_of_day" if self.part_of_day else "hour_by_hour"
+            file_name = f"day_{slug(self.name)[:40]}_{strategy}_{datetime.now():%Y%m%d_%H%M}.json"
             self.path = os.path.join(self.output_folder, file_name)
         day = dict(self.day)
         if with_chains:
@@ -614,11 +701,13 @@ class DayInterviewer:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Scripted agent that asks a user about their day, hour by hour")
+    parser = argparse.ArgumentParser(description="Scripted agent that asks a user about their day")
     parser.add_argument("--url", default=LLAMA_CPP_URL, help="URL of the llama.cpp server")
     parser.add_argument("--examples", default=EXAMPLE_DAYS, help="Folder with the example days")
     parser.add_argument("--output", default=OUTPUT_FOLDER, help="Folder in which the day is saved")
     parser.add_argument("--ask-all", action="store_true", help="Ask every slot, also when it was already mentioned")
+    parser.add_argument("--part-of-day", action="store_true",
+                        help="Ask once for the morning, afternoon and evening instead of hour by hour")
     args = parser.parse_args()
 
     client = OpenAI(base_url=args.url, api_key="sk-no-key-required")
@@ -628,7 +717,7 @@ def main():
         raise SystemExit(f"Could not reach the llama.cpp server at {args.url}, is it running? ({e})")
     print("Model served by llama.cpp:", model)
 
-    agent = DayInterviewer(client, model, args.examples, args.output, args.ask_all)
+    agent = DayInterviewer(client, model, args.examples, args.output, args.ask_all, args.part_of_day)
     print("Agent:", agent.start())
     while not agent.done:
         try:

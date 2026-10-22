@@ -274,8 +274,9 @@ def get_csv_rows(csv_file, score_column, settings: PlotSettings, turn_order=None
             if label_column and not pd.isna(csv_row[label_column]):
                 # the label on the first line and the score below it
                 annotation = f"{csv_row[label_column]}\n{annotation}"
+            # has_score is False for turns without a score, e.g. the questions of the agent in the turn evaluation
             row = {'turn':i+1, 'utterance': text, 'score': score, "speaker": str(csv_row[speaker_column]),
-                   "type":Modality.TEXT, "annotation": annotation}
+                   "type":Modality.TEXT, "annotation": annotation, "has_score": not pd.isna(csv_row[score_column])}
             data.append(row)
     return data
 
@@ -328,6 +329,57 @@ def create_timeline_image_from_csv(csv_file, score_column, settings: PlotSetting
         name += "_E"+str(settings._END)
     path = os.path.join(os.path.dirname(os.path.abspath(csv_file)), name+"_plot.png")
     draw_timeline(rows, path, ylim=get_csv_ylim(rows))
+    return path
+
+def create_timeline_image_from_csv_columns(csv_file, score_columns, settings: PlotSettings, name=None,
+                                           turn_column='Turn', speaker_column='Speaker', text_column='Response'):
+    """Plots several score columns of a csv file as lines in a single plot, with a different colour for each column
+    and a different line style for each speaker, e.g. the number of events and roles extracted from each turn in the
+    turn evaluation of a collected day:
+
+        create_timeline_image_from_csv_columns(csv_file, ["nr_of_events", "nr_of_roles"], settings)
+
+    Turns without a score for a column, such as the questions of the agent in the turn evaluation, are shown on the
+    x-axis but have no point on the line. The plot is saved next to the csv file as <csv>_<name>_plot.png, by default
+    with the names of the columns, and its path is returned."""
+    data = []
+    turn_labels = {}
+    for score_column in score_columns:
+        for row in get_csv_rows(csv_file, score_column, settings, turn_column=turn_column,
+                                speaker_column=speaker_column, text_column=text_column):
+            turn_labels.setdefault(row['turn'], get_turn_label(row))
+            if row['has_score']:
+                data.append({'turn': row['turn'], 'score': row['score'], 'speaker': row['speaker'],
+                             'column': score_column, 'annotation': f"{row['score']:g}"})
+    if not data:
+        print('No scores to plot in', csv_file)
+        return
+    df = pd.DataFrame(data)
+
+    set_plot_style()
+    fig, ax = plt.subplots(figsize=(max(10, TURN_WIDTH*len(turn_labels)), PLOT_HEIGHT))
+    palette = dict(zip(score_columns, sns.color_palette("deep", len(score_columns))))
+    sns.lineplot(x='turn', y='score', data=df, hue='column', style='speaker', markers=True, dashes=True,
+                 palette=palette, linewidth=2.5, markersize=12, ax=ax)
+    # the score next to each point, in the colour of its line
+    for _, row in df.iterrows():
+        ax.annotate(row['annotation'], (row['turn'], row['score']), xytext=(8, 4), textcoords='offset points',
+                    size='small', color=palette[row['column']], verticalalignment='bottom', bbox=LABEL_BOX)
+    set_turn_labels(ax, turn_labels)
+    ax.set_ylabel('score')
+    ax.set_ylim(min(0, df['score'].min()) - 0.5, df['score'].max() * 1.15 + 0.5)
+    ax.legend(loc='upper left', bbox_to_anchor=(1.0, 1.0), frameon=True)
+
+    name = os.path.splitext(os.path.basename(csv_file))[0] + "_" + (name or "_".join(score_columns))
+    if settings._START>0:
+        name += "_S"+ str(settings._START)
+    if settings._END>-1:
+        name += "_E"+str(settings._END)
+    path = os.path.join(os.path.dirname(os.path.abspath(csv_file)), name + "_plot.png")
+    fig.savefig(path, bbox_inches='tight')
+    print('Saved plot to', path)
+    plt.close(fig)
+    show_scrollable(path)
     return path
 
 # Score columns of the evaluation files saved by the notebooks in emissor_evaluation, other files use their first score column

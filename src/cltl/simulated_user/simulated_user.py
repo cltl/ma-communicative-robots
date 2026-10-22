@@ -196,13 +196,14 @@ def save_conversation(conversation, day_file):
     return path
 
 def simulate_day(client, model, day_file, output_folder=OUTPUT_FOLDER, max_events=MAX_EVENTS, max_turns=MAX_TURNS,
-                 on_turn=None, use_description=False):
+                 on_turn=None, use_description=False, part_of_day=False):
     """Runs an interview of the DayInterviewer with a simulated user of the example day in day_file. The collected day
     and the conversation are saved in output_folder. With use_description, the simulated user also knows the
-    descriptions of the events. Returns the agent, the simulated user and the conversation."""
+    descriptions of the events. With part_of_day, the agent asks per part of the day instead of hour by hour.
+    Returns the agent, the simulated user and the conversation."""
     with open(day_file) as json_file:
         day = json.load(json_file)
-    agent = DayInterviewer(client, model, output_folder=output_folder)
+    agent = DayInterviewer(client, model, output_folder=output_folder, part_of_day=part_of_day)
     user = SimulatedUser(client, model, day, use_description)
     conversation = run_interview(agent, user, max_events, max_turns, on_turn)
     if agent.path:
@@ -218,13 +219,15 @@ def main():
     parser.add_argument("--max-events", type=int, default=MAX_EVENTS, help="Stop after this number of events")
     parser.add_argument("--use-description", action="store_true",
                         help="Also give the descriptions of the events in the example day to the simulated user")
+    parser.add_argument("--part-of-day", action="store_true",
+                        help="Let the agent ask for the morning, afternoon and evening instead of hour by hour")
     args = parser.parse_args()
 
     client = OpenAI(base_url=args.url, api_key="sk-no-key-required")
     model = client.models.list().data[0].id
     agent, _, _ = simulate_day(client, model, args.day, args.output, args.max_events,
                                on_turn=lambda speaker, text: print(f"{speaker}: {text}"),
-                               use_description=args.use_description)
+                               use_description=args.use_description, part_of_day=args.part_of_day)
     print("Saved the collected day to", agent.path)
 
 

@@ -60,6 +60,8 @@ Each coreference chain is an entity (a person, group or animal) with the mention
 
 The day interviewer in ```src/cltl/demo_chatbot``` is a scripted agent that asks the user about their day, hour by hour: what did you do at hour X, with whom, what, with what, where, when and for how long. It only asks the follow-up questions for the details that the user did not mention yet. An LLM served by a local [llama.cpp](https://github.com/ggml-org/llama.cpp) server interprets the answers and fills the roles of the event. After each event, the agent moves on to the next hour after the event, until the user stops or the day is over. When the user says to have a photo of an activity, the agent asks what is on it: as in the example days, the roles that the photo shows get the value ```<PHOTO>``` and their values are kept in the ```photo``` of the event (```note```, ```fills```, ```gold``` and ```people_in_photo```).
 
+With ```--part-of-day``` (or ```PART_OF_DAY = True``` in the notebooks), the agent only asks what the user did in the morning, in the afternoon and in the evening. The LLM extracts all the activities from each answer as events in temporal order, using only what the user said: without follow-up questions, a start time or duration that is not given is left out (```when``` only has the part of the day, ```how_long``` is ```null```). This minimises the number of turns, but the coverage of the roles is poor. In the evaluation, an event without a clock time can be aligned with a GOLD event in the same part of the day.
+
 Start the llama.cpp server with a model before running the agent, e.g.:
 
 ```bash
@@ -72,7 +74,7 @@ Then open the notebook ```src/cltl/demo_chatbot/day_interviewer.ipynb```, which 
 python -m src.cltl.demo_chatbot.day_interviewer
 ```
 
-Click **Stop** in the chat window or type ```stop```, ```bye``` or ```done``` to end the conversation. The day is saved after each event in ```data/collected_days/day_<name>_<date>.json```, and the coreference chains are added when the conversation is stopped. Note that ```data``` is in ```.gitignore```, so your collected days are not committed.
+Click **Stop** in the chat window or type ```stop```, ```bye``` or ```done``` to end the conversation. The day is saved after each event in ```data/collected_days/day_<name>_<strategy>_<date>.json``` (```<strategy>``` is ```hour_by_hour``` or ```part_of_day```), and the coreference chains are added when the conversation is stopped. Note that ```data``` is in ```.gitignore```, so your collected days are not committed.
 
 ### 2. Statistics of a day
 
@@ -97,7 +99,8 @@ python -m src.cltl.task_evaluation.day_evaluation --key data/example_days/day1_e
 ```
 
 The results are saved next to the collected day as ```<collected>_vs_<key>_evaluation.json```.
-The evaluation per turn of the user is saved as ```<collected>_vs_<key>_turn_evaluation.csv```, in the same format as the CSV files of the EMISSOR analyses, with a row for each question of the agent and each answer of the user (```turn<turn_id>```), the number of events and roles extracted from each turn and the number of correct events and roles in both modes. The effectiveness of the communication is reported and saved as ```<collected>_vs_<key>_turn_effectiveness.json```: for the events, the roles and the correct events and roles, the total, the average per turn of the user and the ratio of the total to all turns of the conversation (the questions of the agent included). An agent that gets more correct roles with fewer turns communicates more effectively. The turn evaluation can be plotted with the ```plots``` module, e.g. with ```create_timeline_image_from_csv(csv_file, "nr_of_correct_roles_jaccard", settings)```. The notebook ```src/cltl/task_evaluation/day_evaluation.ipynb``` runs the statistics and the evaluation for two days and shows the results as tables, including the aligned and missed events.
+If the conversation stopped early, add ```--max-gold-events 4``` to evaluate only the first 4 events of the GOLD day, or ```--max-gold-events collected``` for as many GOLD events as were collected (```MAX_GOLD_EVENTS``` in the notebooks). The GOLD events that are left out do not count as missed.
+The evaluation per turn of the user is saved as ```<collected>_vs_<key>_turn_evaluation.csv```, in the same format as the CSV files of the EMISSOR analyses, with a row for each question of the agent and each answer of the user (```turn<turn_id>```), the number of events and roles extracted from each turn and the number of correct events and roles in both modes. The effectiveness of the communication is reported and saved as ```<collected>_vs_<key>_turn_effectiveness.json```: for the events, the roles and the correct events and roles, the total, the average per turn of the user and the ratio of the total to all turns of the conversation (the questions of the agent included). An agent that gets more correct roles with fewer turns communicates more effectively. The turn evaluation can be plotted with the ```plots``` module, e.g. with ```create_timeline_image_from_csv_columns(csv_file, ["nr_of_events", "nr_of_roles"], settings)```. The notebook ```src/cltl/task_evaluation/day_evaluation.ipynb``` runs the statistics and the evaluation for two days and shows the results as tables, including the aligned and missed events.
 
 To evaluate the agent, pick one of the example days, tell the agent about the day of that person as if it were your own day, and evaluate the collected day against the example day.
 

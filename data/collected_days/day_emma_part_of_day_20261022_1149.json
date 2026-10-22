@@ -1,0 +1,613 @@
+{
+  "event1": {
+    "event_type": "personal_care",
+    "event_label": "wake up",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "woke up when the alarm went off",
+    "agent_turn": [
+      {
+        "turn_id": 7,
+        "utterance": "What did you do in the morning?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 8,
+        "utterance": "I woke up at 7:30 when my alarm went off. I got out of bed, took a show and got dressed. Next I had breakfast with Lotte and Suzie in our shared kitchen. I had yoghurt with fruit and a coffee. At 9am I went to the university on my bike. It took me about 30 minutes. I went to the library, where I met Lotte again. We studied together for our class using our laptops and readings."
+      }
+    ],
+    "where": [
+      "bedroom of her house",
+      "her house",
+      "Amsterdam",
+      "Europe"
+    ],
+    "when": [
+      "07:30",
+      "half past seven",
+      "7 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": null,
+    "with_what": [],
+    "with_whom": []
+  },
+  "event2": {
+    "event_type": "personal_care",
+    "event_label": "shower",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "took a shower",
+    "agent_turn": [
+      {
+        "turn_id": 7,
+        "utterance": "What did you do in the morning?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 8,
+        "utterance": "I woke up at 7:30 when my alarm went off. I got out of bed, took a show and got dressed. Next I had breakfast with Lotte and Suzie in our shared kitchen. I had yoghurt with fruit and a coffee. At 9am I went to the university on my bike. It took me about 30 minutes. I went to the library, where I met Lotte again. We studied together for our class using our laptops and readings."
+      }
+    ],
+    "where": [
+      "bathroom of her house",
+      "bathroom",
+      "her house",
+      "Amsterdam",
+      "Europe"
+    ],
+    "when": [
+      "morning"
+    ],
+    "how_long": null,
+    "with_what": [],
+    "with_whom": []
+  },
+  "event3": {
+    "event_type": "personal_care",
+    "event_label": "get dressed",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "got dressed",
+    "agent_turn": [
+      {
+        "turn_id": 7,
+        "utterance": "What did you do in the morning?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 8,
+        "utterance": "I woke up at 7:30 when my alarm went off. I got out of bed, took a show and got dressed. Next I had breakfast with Lotte and Suzie in our shared kitchen. I had yoghurt with fruit and a coffee. At 9am I went to the university on my bike. It took me about 30 minutes. I went to the library, where I met Lotte again. We studied together for our class using our laptops and readings."
+      }
+    ],
+    "where": [
+      "bedroom of her house",
+      "her house",
+      "Amsterdam",
+      "Europe"
+    ],
+    "when": [
+      "morning"
+    ],
+    "how_long": null,
+    "with_what": [],
+    "with_whom": []
+  },
+  "event4": {
+    "event_type": "meal",
+    "event_label": "breakfast",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "yoghurt",
+      "fruit",
+      "coffee"
+    ],
+    "description": "had yoghurt with fruit and a coffee with Lotte and Suzie",
+    "agent_turn": [
+      {
+        "turn_id": 7,
+        "utterance": "What did you do in the morning?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 8,
+        "utterance": "I woke up at 7:30 when my alarm went off. I got out of bed, took a show and got dressed. Next I had breakfast with Lotte and Suzie in our shared kitchen. I had yoghurt with fruit and a coffee. At 9am I went to the university on my bike. It took me about 30 minutes. I went to the library, where I met Lotte again. We studied together for our class using our laptops and readings."
+      }
+    ],
+    "where": [
+      "kitchen of her house",
+      "kitchen",
+      "her house",
+      "Amsterdam",
+      "Europe"
+    ],
+    "when": [
+      "08:00",
+      "8 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": null,
+    "with_what": [
+      "kitchen of her house",
+      "kitchen",
+      "her house",
+      "Amsterdam",
+      "Europe"
+    ],
+    "with_whom": [
+      "Lotte",
+      "Suzie"
+    ]
+  },
+  "event5": {
+    "event_type": "travel",
+    "event_label": "bike to university",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "went to the university on her bike",
+    "agent_turn": [
+      {
+        "turn_id": 7,
+        "utterance": "What did you do in the morning?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 8,
+        "utterance": "I woke up at 7:30 when my alarm went off. I got out of bed, took a show and got dressed. Next I had breakfast with Lotte and Suzie in our shared kitchen. I had yoghurt with fruit and a coffee. At 9am I went to the university on my bike. It took me about 30 minutes. I went to the library, where I met Lotte again. We studied together for our class using our laptops and readings."
+      }
+    ],
+    "where": [
+      "university",
+      "Amsterdam",
+      "Europe"
+    ],
+    "when": [
+      "09:00",
+      "9 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": null,
+    "with_what": [
+      "bicycle"
+    ],
+    "with_whom": []
+  },
+  "event6": {
+    "event_type": "study",
+    "event_label": "study at the library",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "laptops",
+      "readings"
+    ],
+    "description": "studied together for her class using her laptop and readings with Lotte",
+    "agent_turn": [
+      {
+        "turn_id": 7,
+        "utterance": "What did you do in the morning?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 8,
+        "utterance": "I woke up at 7:30 when my alarm went off. I got out of bed, took a show and got dressed. Next I had breakfast with Lotte and Suzie in our shared kitchen. I had yoghurt with fruit and a coffee. At 9am I went to the university on my bike. It took me about 30 minutes. I went to the library, where I met Lotte again. We studied together for our class using our laptops and readings."
+      }
+    ],
+    "where": [
+      "library",
+      "university",
+      "Amsterdam",
+      "Europe"
+    ],
+    "when": [
+      "10:00",
+      "10 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": null,
+    "with_what": [
+      "library"
+    ],
+    "with_whom": [
+      "Lotte"
+    ]
+  },
+  "event7": {
+    "event_type": "study",
+    "event_label": "going to class",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "went to class with Lotte",
+    "agent_turn": [
+      {
+        "turn_id": 9,
+        "utterance": "What did you do in the afternoon?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 10,
+        "utterance": "I went to class with Lotte after having a lunch. Just a quick sandwich and more coffee. After class I went home to do some shoppings and prepare dinner. I also cleaned my room a bit."
+      }
+    ],
+    "where": [
+      "classroom",
+      "school",
+      "Amsterdam",
+      "Europe"
+    ],
+    "when": [
+      "afternoon"
+    ],
+    "how_long": null,
+    "with_what": [],
+    "with_whom": [
+      "Lotte"
+    ]
+  },
+  "event8": {
+    "event_type": "meal",
+    "event_label": "having lunch",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "sandwich",
+      "coffee"
+    ],
+    "description": "had a quick sandwich and more coffee",
+    "agent_turn": [
+      {
+        "turn_id": 9,
+        "utterance": "What did you do in the afternoon?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 10,
+        "utterance": "I went to class with Lotte after having a lunch. Just a quick sandwich and more coffee. After class I went home to do some shoppings and prepare dinner. I also cleaned my room a bit."
+      }
+    ],
+    "where": [
+      "lunch place",
+      "cafeteria",
+      "Amsterdam",
+      "Europe"
+    ],
+    "when": [
+      "afternoon"
+    ],
+    "how_long": null,
+    "with_what": [],
+    "with_whom": []
+  },
+  "event9": {
+    "event_type": "shopping",
+    "event_label": "doing some shopping",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "went home to do some shoppings",
+    "agent_turn": [
+      {
+        "turn_id": 9,
+        "utterance": "What did you do in the afternoon?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 10,
+        "utterance": "I went to class with Lotte after having a lunch. Just a quick sandwich and more coffee. After class I went home to do some shoppings and prepare dinner. I also cleaned my room a bit."
+      }
+    ],
+    "where": [
+      "home",
+      "Amsterdam",
+      "Europe"
+    ],
+    "when": [
+      "afternoon"
+    ],
+    "how_long": null,
+    "with_what": [],
+    "with_whom": []
+  },
+  "event10": {
+    "event_type": "household",
+    "event_label": "cleaning her room",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "cleaned her room a bit",
+    "agent_turn": [
+      {
+        "turn_id": 9,
+        "utterance": "What did you do in the afternoon?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 10,
+        "utterance": "I went to class with Lotte after having a lunch. Just a quick sandwich and more coffee. After class I went home to do some shoppings and prepare dinner. I also cleaned my room a bit."
+      }
+    ],
+    "where": [
+      "bedroom of her house",
+      "her house",
+      "Amsterdam",
+      "Europe"
+    ],
+    "when": [
+      "afternoon"
+    ],
+    "how_long": null,
+    "with_what": [],
+    "with_whom": []
+  },
+  "event11": {
+    "event_type": "social",
+    "event_label": "dinner with friends",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "lasagna",
+      "wine"
+    ],
+    "description": "had dinner with Lotte and Suzie, making lasagna and having a glass of wine",
+    "agent_turn": [
+      {
+        "turn_id": 11,
+        "utterance": "What did you do in the evening?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 12,
+        "utterance": "I had dinner with Lotte and Suzie. I made lasagna and we had a glass of wine. After dinner we watched a Netflix series. Next I went to my room, read a paper and went to sleep at 22:00."
+      }
+    ],
+    "where": [
+      "kitchen of her house",
+      "kitchen",
+      "her house",
+      "Amsterdam",
+      "Europe"
+    ],
+    "when": [
+      "evening"
+    ],
+    "how_long": null,
+    "with_what": [
+      "pan",
+      "wine glass"
+    ],
+    "with_whom": [
+      "Lotte",
+      "Suzie"
+    ]
+  },
+  "event12": {
+    "event_type": "leisure",
+    "event_label": "watching a Netflix series",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "watched a Netflix series after dinner",
+    "agent_turn": [
+      {
+        "turn_id": 11,
+        "utterance": "What did you do in the evening?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 12,
+        "utterance": "I had dinner with Lotte and Suzie. I made lasagna and we had a glass of wine. After dinner we watched a Netflix series. Next I went to my room, read a paper and went to sleep at 22:00."
+      }
+    ],
+    "where": [
+      "living room of her house",
+      "living room",
+      "her house",
+      "Amsterdam",
+      "Europe"
+    ],
+    "when": [
+      "evening"
+    ],
+    "how_long": null,
+    "with_what": [
+      "Netflix"
+    ],
+    "with_whom": []
+  },
+  "event13": {
+    "event_type": "personal_care",
+    "event_label": "reading before bed",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "paper"
+    ],
+    "description": "read a paper before going to sleep",
+    "agent_turn": [
+      {
+        "turn_id": 11,
+        "utterance": "What did you do in the evening?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 12,
+        "utterance": "I had dinner with Lotte and Suzie. I made lasagna and we had a glass of wine. After dinner we watched a Netflix series. Next I went to my room, read a paper and went to sleep at 22:00."
+      }
+    ],
+    "where": [
+      "bedroom of her house",
+      "bedroom",
+      "her house",
+      "Amsterdam",
+      "Europe"
+    ],
+    "when": [
+      "22:00",
+      "10 o'clock",
+      "late in the evening",
+      "evening"
+    ],
+    "how_long": 30,
+    "with_what": [
+      "book light"
+    ],
+    "with_whom": []
+  },
+  "coreference_chains": [
+    {
+      "entity_id": "emma",
+      "name": "Emma",
+      "type": "person",
+      "description": "the narrator",
+      "mentions": [
+        {
+          "event": "event1",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event2",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event3",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event4",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event5",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event6",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event7",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event8",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event9",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event10",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event11",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event12",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event13",
+          "field": "who",
+          "mention": "Emma"
+        }
+      ]
+    },
+    {
+      "entity_id": "lotte",
+      "name": "Lotte",
+      "type": "person",
+      "description": "A person related to Emma",
+      "mentions": [
+        {
+          "event": "event4",
+          "field": "with_whom",
+          "mention": "Lotte"
+        },
+        {
+          "event": "event6",
+          "field": "with_whom",
+          "mention": "Lotte"
+        },
+        {
+          "event": "event7",
+          "field": "with_whom",
+          "mention": "Lotte"
+        },
+        {
+          "event": "event11",
+          "field": "with_whom",
+          "mention": "Lotte"
+        }
+      ]
+    },
+    {
+      "entity_id": "suzie",
+      "name": "Suzie",
+      "type": "person",
+      "description": "A person related to Emma",
+      "mentions": [
+        {
+          "event": "event4",
+          "field": "with_whom",
+          "mention": "Suzie"
+        },
+        {
+          "event": "event11",
+          "field": "with_whom",
+          "mention": "Suzie"
+        }
+      ]
+    }
+  ]
+}

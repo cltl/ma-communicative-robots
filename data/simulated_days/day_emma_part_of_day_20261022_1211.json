@@ -1,0 +1,689 @@
+{
+  "event1": {
+    "event_type": "personal_care",
+    "event_label": "wake up",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "woke up to the phone alarm",
+    "agent_turn": [
+      {
+        "turn_id": 7,
+        "utterance": "What did you do in the morning?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 8,
+        "utterance": "In the morning, I woke up at 07:30 to my phone alarm. Then I had a quick shower from 07:40 to 08:00. After that, I had breakfast with my flatmate Lotte from 08:00 to 08:20. We had yoghurt, granola, and coffee."
+      }
+    ],
+    "where": [
+      "bedroom of her house",
+      "her house",
+      "I live in Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "07:30",
+      "half past seven",
+      "7 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": null,
+    "with_what": [
+      "phone"
+    ],
+    "with_whom": []
+  },
+  "event2": {
+    "event_type": "personal_care",
+    "event_label": "shower",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "had a quick shower",
+    "agent_turn": [
+      {
+        "turn_id": 7,
+        "utterance": "What did you do in the morning?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 8,
+        "utterance": "In the morning, I woke up at 07:30 to my phone alarm. Then I had a quick shower from 07:40 to 08:00. After that, I had breakfast with my flatmate Lotte from 08:00 to 08:20. We had yoghurt, granola, and coffee."
+      }
+    ],
+    "where": [
+      "bathroom of her house",
+      "bathroom",
+      "her house",
+      "I live in Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "07:40",
+      "twenty to eight",
+      "8 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "shower"
+    ],
+    "with_whom": []
+  },
+  "event3": {
+    "event_type": "meal",
+    "event_label": "breakfast",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "yoghurt",
+      "granola",
+      "coffee"
+    ],
+    "description": "had breakfast with her flatmate Lotte",
+    "agent_turn": [
+      {
+        "turn_id": 7,
+        "utterance": "What did you do in the morning?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 8,
+        "utterance": "In the morning, I woke up at 07:30 to my phone alarm. Then I had a quick shower from 07:40 to 08:00. After that, I had breakfast with my flatmate Lotte from 08:00 to 08:20. We had yoghurt, granola, and coffee."
+      }
+    ],
+    "where": [
+      "kitchen of her house",
+      "kitchen",
+      "her house",
+      "I live in Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "08:00",
+      "8 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": 20,
+    "with_what": [],
+    "with_whom": [
+      "Lotte"
+    ]
+  },
+  "event4": {
+    "event_type": "study",
+    "event_label": "cycling to the university",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "cycled to the university",
+    "agent_turn": [
+      {
+        "turn_id": 9,
+        "utterance": "What did you do in the afternoon?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 10,
+        "utterance": "In the afternoon, I cycled to the university at 08:25 and attended a lecture from 09:00 to 10:45. After the lecture, I had a coffee break with Jonas and Mila from 10:50 to 11:05. Then, I had a group project meeting with Jonas, Mila, and Sven from 11:10 to 12:30. For lunch, I had a cheese sandwich and an apple with Mila outside the library from 12:35 to 13:00."
+      }
+    ],
+    "where": [
+      "university",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "08:25",
+      "twenty-five past eight",
+      "8 o'clock",
+      "early in the morning",
+      "morning"
+    ],
+    "how_long": null,
+    "with_what": [
+      "bicycle"
+    ],
+    "with_whom": []
+  },
+  "event5": {
+    "event_type": "study",
+    "event_label": "attending a lecture",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "attended a lecture",
+    "agent_turn": [
+      {
+        "turn_id": 9,
+        "utterance": "What did you do in the afternoon?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 10,
+        "utterance": "In the afternoon, I cycled to the university at 08:25 and attended a lecture from 09:00 to 10:45. After the lecture, I had a coffee break with Jonas and Mila from 10:50 to 11:05. Then, I had a group project meeting with Jonas, Mila, and Sven from 11:10 to 12:30. For lunch, I had a cheese sandwich and an apple with Mila outside the library from 12:35 to 13:00."
+      }
+    ],
+    "where": [
+      "university",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "09:00",
+      "9 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 105,
+    "with_what": [],
+    "with_whom": []
+  },
+  "event6": {
+    "event_type": "leisure",
+    "event_label": "coffee break",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "coffee"
+    ],
+    "description": "had a coffee break with Jonas and Mila",
+    "agent_turn": [
+      {
+        "turn_id": 9,
+        "utterance": "What did you do in the afternoon?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 10,
+        "utterance": "In the afternoon, I cycled to the university at 08:25 and attended a lecture from 09:00 to 10:45. After the lecture, I had a coffee break with Jonas and Mila from 10:50 to 11:05. Then, I had a group project meeting with Jonas, Mila, and Sven from 11:10 to 12:30. For lunch, I had a cheese sandwich and an apple with Mila outside the library from 12:35 to 13:00."
+      }
+    ],
+    "where": [
+      "outside the library",
+      "university",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "10:50",
+      "ten to eleven",
+      "11 o'clock",
+      "in the morning",
+      "morning"
+    ],
+    "how_long": 15,
+    "with_what": [],
+    "with_whom": [
+      "Jonas",
+      "Mila"
+    ]
+  },
+  "event7": {
+    "event_type": "study",
+    "event_label": "group project meeting",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "had a group project meeting with Jonas, Mila, and Sven",
+    "agent_turn": [
+      {
+        "turn_id": 9,
+        "utterance": "What did you do in the afternoon?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 10,
+        "utterance": "In the afternoon, I cycled to the university at 08:25 and attended a lecture from 09:00 to 10:45. After the lecture, I had a coffee break with Jonas and Mila from 10:50 to 11:05. Then, I had a group project meeting with Jonas, Mila, and Sven from 11:10 to 12:30. For lunch, I had a cheese sandwich and an apple with Mila outside the library from 12:35 to 13:00."
+      }
+    ],
+    "where": [
+      "university",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "11:10",
+      "ten past eleven",
+      "11 o'clock",
+      "late in the morning",
+      "morning"
+    ],
+    "how_long": 90,
+    "with_what": [],
+    "with_whom": [
+      "Jonas",
+      "Mila",
+      "Sven"
+    ]
+  },
+  "event8": {
+    "event_type": "meal",
+    "event_label": "lunch",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "cheese sandwich",
+      "apple"
+    ],
+    "description": "had a cheese sandwich and an apple with Mila",
+    "agent_turn": [
+      {
+        "turn_id": 9,
+        "utterance": "What did you do in the afternoon?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 10,
+        "utterance": "In the afternoon, I cycled to the university at 08:25 and attended a lecture from 09:00 to 10:45. After the lecture, I had a coffee break with Jonas and Mila from 10:50 to 11:05. Then, I had a group project meeting with Jonas, Mila, and Sven from 11:10 to 12:30. For lunch, I had a cheese sandwich and an apple with Mila outside the library from 12:35 to 13:00."
+      }
+    ],
+    "where": [
+      "outside the library",
+      "university",
+      "Amsterdam",
+      "Netherlands",
+      "Europe"
+    ],
+    "when": [
+      "12:35",
+      "twenty-five to one",
+      "1 o'clock",
+      "around noon",
+      "midday"
+    ],
+    "how_long": 25,
+    "with_what": [],
+    "with_whom": [
+      "Mila"
+    ]
+  },
+  "event9": {
+    "event_type": "work",
+    "event_label": "signing an internship contract",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "signed an internship contract with Dr. Bakker at the Memory Research Lab",
+    "agent_turn": [
+      {
+        "turn_id": 11,
+        "utterance": "What did you do in the evening?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 12,
+        "utterance": "In the evening, I signed an internship contract with Dr. Bakker at the Memory Research Lab from 13:05 to 13:45. Then, I called my parents for a video call from 13:50 to 14:05. After that, I did self-study in the silent study area of the university library from 14:15 to 15:45. I cycled to the supermarket at 15:50 and did some grocery shopping from 16:05 to 16:25. I went to the gym with about 20 other participants from 17:00 to 17:45"
+      }
+    ],
+    "where": [
+      "Memory Research Lab"
+    ],
+    "when": [
+      "13:05",
+      "five past one",
+      "1 o'clock",
+      "early in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 40,
+    "with_what": [],
+    "with_whom": [
+      "Dr. Bakker"
+    ]
+  },
+  "event10": {
+    "event_type": "communication",
+    "event_label": "video call",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "called my parents for a video call",
+    "agent_turn": [
+      {
+        "turn_id": 11,
+        "utterance": "What did you do in the evening?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 12,
+        "utterance": "In the evening, I signed an internship contract with Dr. Bakker at the Memory Research Lab from 13:05 to 13:45. Then, I called my parents for a video call from 13:50 to 14:05. After that, I did self-study in the silent study area of the university library from 14:15 to 15:45. I cycled to the supermarket at 15:50 and did some grocery shopping from 16:05 to 16:25. I went to the gym with about 20 other participants from 17:00 to 17:45"
+      }
+    ],
+    "where": [
+      "her house"
+    ],
+    "when": [
+      "13:50",
+      "ten to two",
+      "2 o'clock",
+      "early in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 15,
+    "with_what": [],
+    "with_whom": [
+      "parents"
+    ]
+  },
+  "event11": {
+    "event_type": "study",
+    "event_label": "self-study",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "did self-study in the silent study area of the university library",
+    "agent_turn": [
+      {
+        "turn_id": 11,
+        "utterance": "What did you do in the evening?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 12,
+        "utterance": "In the evening, I signed an internship contract with Dr. Bakker at the Memory Research Lab from 13:05 to 13:45. Then, I called my parents for a video call from 13:50 to 14:05. After that, I did self-study in the silent study area of the university library from 14:15 to 15:45. I cycled to the supermarket at 15:50 and did some grocery shopping from 16:05 to 16:25. I went to the gym with about 20 other participants from 17:00 to 17:45"
+      }
+    ],
+    "where": [
+      "silent study area of the university library"
+    ],
+    "when": [
+      "14:15",
+      "quarter past two",
+      "2 o'clock",
+      "early in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 90,
+    "with_what": [],
+    "with_whom": []
+  },
+  "event12": {
+    "event_type": "shopping",
+    "event_label": "grocery shopping",
+    "who": [
+      "Emma"
+    ],
+    "what": [
+      "groceries"
+    ],
+    "description": "cycled to the supermarket and did some grocery shopping",
+    "agent_turn": [
+      {
+        "turn_id": 11,
+        "utterance": "What did you do in the evening?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 12,
+        "utterance": "In the evening, I signed an internship contract with Dr. Bakker at the Memory Research Lab from 13:05 to 13:45. Then, I called my parents for a video call from 13:50 to 14:05. After that, I did self-study in the silent study area of the university library from 14:15 to 15:45. I cycled to the supermarket at 15:50 and did some grocery shopping from 16:05 to 16:25. I went to the gym with about 20 other participants from 17:00 to 17:45"
+      }
+    ],
+    "where": [
+      "supermarket"
+    ],
+    "when": [
+      "15:50",
+      "ten to four",
+      "4 o'clock",
+      "late in the afternoon",
+      "afternoon"
+    ],
+    "how_long": 20,
+    "with_what": [
+      "bicycle"
+    ],
+    "with_whom": []
+  },
+  "event13": {
+    "event_type": "sport",
+    "event_label": "gym session",
+    "who": [
+      "Emma"
+    ],
+    "what": [],
+    "description": "went to the gym with about 20 other participants",
+    "agent_turn": [
+      {
+        "turn_id": 11,
+        "utterance": "What did you do in the evening?"
+      }
+    ],
+    "human_turn": [
+      {
+        "turn_id": 12,
+        "utterance": "In the evening, I signed an internship contract with Dr. Bakker at the Memory Research Lab from 13:05 to 13:45. Then, I called my parents for a video call from 13:50 to 14:05. After that, I did self-study in the silent study area of the university library from 14:15 to 15:45. I cycled to the supermarket at 15:50 and did some grocery shopping from 16:05 to 16:25. I went to the gym with about 20 other participants from 17:00 to 17:45"
+      }
+    ],
+    "where": [
+      "gym"
+    ],
+    "when": [
+      "17:00",
+      "5 o'clock",
+      "early in the evening",
+      "evening"
+    ],
+    "how_long": 45,
+    "with_what": [],
+    "with_whom": [
+      "20 other participants"
+    ]
+  },
+  "coreference_chains": [
+    {
+      "entity_id": "emma",
+      "name": "Emma",
+      "type": "person",
+      "description": "the narrator",
+      "mentions": [
+        {
+          "event": "event1",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event2",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event3",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event4",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event5",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event6",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event7",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event8",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event9",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event10",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event11",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event12",
+          "field": "who",
+          "mention": "Emma"
+        },
+        {
+          "event": "event13",
+          "field": "who",
+          "mention": "Emma"
+        }
+      ]
+    },
+    {
+      "entity_id": "lotte",
+      "name": "Lotte",
+      "type": "person",
+      "description": "A person related to Emma",
+      "mentions": [
+        {
+          "event": "event3",
+          "field": "with_whom",
+          "mention": "Lotte"
+        }
+      ]
+    },
+    {
+      "entity_id": "jonas",
+      "name": "Jonas",
+      "type": "person",
+      "description": "A person related to Emma",
+      "mentions": [
+        {
+          "event": "event6",
+          "field": "with_whom",
+          "mention": "Jonas"
+        },
+        {
+          "event": "event7",
+          "field": "with_whom",
+          "mention": "Jonas"
+        }
+      ]
+    },
+    {
+      "entity_id": "mila",
+      "name": "Mila",
+      "type": "person",
+      "description": "A person related to Emma",
+      "mentions": [
+        {
+          "event": "event6",
+          "field": "with_whom",
+          "mention": "Mila"
+        },
+        {
+          "event": "event7",
+          "field": "with_whom",
+          "mention": "Mila"
+        },
+        {
+          "event": "event8",
+          "field": "with_whom",
+          "mention": "Mila"
+        }
+      ]
+    },
+    {
+      "entity_id": "sven",
+      "name": "Sven",
+      "type": "person",
+      "description": "A person related to Emma",
+      "mentions": [
+        {
+          "event": "event7",
+          "field": "with_whom",
+          "mention": "Sven"
+        }
+      ]
+    },
+    {
+      "entity_id": "dr_bakker",
+      "name": "Dr. Bakker",
+      "type": "person",
+      "description": "A person related to Emma",
+      "mentions": [
+        {
+          "event": "event9",
+          "field": "with_whom",
+          "mention": "Dr. Bakker"
+        }
+      ]
+    },
+    {
+      "entity_id": "parents",
+      "name": "parents",
+      "type": "group",
+      "description": "A group of people related to Emma",
+      "mentions": [
+        {
+          "event": "event10",
+          "field": "with_whom",
+          "mention": "parents"
+        }
+      ]
+    },
+    {
+      "entity_id": "20_other_participants",
+      "name": "20 other participants",
+      "type": "group",
+      "description": "A group of people related to Emma",
+      "mentions": [
+        {
+          "event": "event13",
+          "field": "with_whom",
+          "mention": "20 other participants"
+        }
+      ]
+    }
+  ]
+}

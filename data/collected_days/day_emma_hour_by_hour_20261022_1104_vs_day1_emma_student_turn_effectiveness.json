@@ -1,0 +1,41 @@
+{
+  "gold": "/Users/piek/Desktop/Combot2026/ma-communicative-robots/data/example_days/day1_emma_student.json",
+  "system": "/Users/piek/Desktop/Combot2026/ma-communicative-robots/data/collected_days/day_emma_hour_by_hour_20261022_1104.json",
+  "max_gold_events": "collected",
+  "nr_of_gold_events": 5,
+  "nr_of_turns": 43,
+  "nr_of_agent_turns": 23,
+  "nr_of_user_turns": 20,
+  "counts": {
+    "nr_of_events": {
+      "total": 5.0,
+      "average_per_user_turn": 0.25,
+      "ratio_per_turn": 0.116
+    },
+    "nr_of_roles": {
+      "total": 30.0,
+      "average_per_user_turn": 1.5,
+      "ratio_per_turn": 0.698
+    },
+    "nr_of_correct_events_exact": {
+      "total": 2.0,
+      "average_per_user_turn": 0.1,
+      "ratio_per_turn": 0.047
+    },
+    "nr_of_correct_events_jaccard": {
+      "total": 2.0,
+      "average_per_user_turn": 0.1,
+      "ratio_per_turn": 0.047
+    },
+    "nr_of_correct_roles_exact": {
+      "total": 6.914,
+      "average_per_user_turn": 0.346,
+      "ratio_per_turn": 0.161
+    },
+    "nr_of_correct_roles_jaccard": {
+      "total": 7.747,
+      "average_per_user_turn": 0.387,
+      "ratio_per_turn": 0.18
+    }
+  }
+}

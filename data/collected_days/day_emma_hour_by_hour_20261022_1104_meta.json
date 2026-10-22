@@ -1,0 +1,40 @@
+{
+  "nr_of_events": 5,
+  "nr_of_roles": 30,
+  "nr_of_roles_per_role": {
+    "who": 5,
+    "what": 3,
+    "with_what": 5,
+    "with_whom": 2,
+    "where": 5,
+    "when": 5,
+    "how_long": 5
+  },
+  "nr_of_roles_from_photos": 4,
+  "nr_of_coreference_chains": 0,
+  "average_nr_of_mentions_per_chain": 0,
+  "nr_of_mentions_per_chain": {},
+  "nr_of_unique_what": 9,
+  "what": {
+    "shower": 1,
+    "clothes": 1,
+    "yoghurt": 1,
+    "fruit": 1,
+    "marmalade": 1,
+    "coffee": 1,
+    "orange juice": 1,
+    "books": 1,
+    "laptop": 1
+  },
+  "nr_of_unique_with_what": 8,
+  "with_what": {
+    "alarm clock": 1,
+    "shower": 1,
+    "clothes": 1,
+    "plates": 1,
+    "mugs": 1,
+    "bicycle": 1,
+    "books": 1,
+    "laptop": 1
+  }
+}

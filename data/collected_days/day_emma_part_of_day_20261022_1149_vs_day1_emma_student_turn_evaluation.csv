@@ -1,0 +1,7 @@
+Turn;Turn nr.;Speaker;Response;Event;nr_of_events;nr_of_roles;nr_of_correct_events_exact;nr_of_correct_events_jaccard;nr_of_correct_roles_exact;nr_of_correct_roles_jaccard
+turn7;0;AGENT;What did you do in the morning?;event1,event2,event3,event4,event5,event6;;;;;;
+turn8;1;Emma;I woke up at 7:30 when my alarm went off. I got out of bed, took a show and got dressed. Next I had breakfast with Lotte and Suzie in our shared kitchen. I had yoghurt with fruit and a coffee. At 9am I went to the university on my bike. It took me about 30 minutes. I went to the library, where I met Lotte again. We studied together for our class using our laptops and readings.;event1,event2,event3,event4,event5,event6;6;25;2;2;6.453;6.453
+turn9;2;AGENT;What did you do in the afternoon?;event7,event8,event9,event10;;;;;;
+turn10;3;Emma;I went to class with Lotte after having a lunch. Just a quick sandwich and more coffee. After class I went home to do some shoppings and prepare dinner. I also cleaned my room a bit.;event7,event8,event9,event10;4;14;0;2;0;3.308
+turn11;4;AGENT;What did you do in the evening?;event11,event12,event13;;;;;;
+turn12;5;Emma;I had dinner with Lotte and Suzie. I made lasagna and we had a glass of wine. After dinner we watched a Netflix series. Next I went to my room, read a paper and went to sleep at 22:00.;event11,event12,event13;3;16;0;1;0;1.829

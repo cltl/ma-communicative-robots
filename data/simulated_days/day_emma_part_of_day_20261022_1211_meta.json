@@ -1,0 +1,41 @@
+{
+  "nr_of_events": 13,
+  "nr_of_roles": 65,
+  "nr_of_roles_per_role": {
+    "who": 13,
+    "what": 4,
+    "with_what": 4,
+    "with_whom": 7,
+    "where": 13,
+    "when": 13,
+    "how_long": 11
+  },
+  "nr_of_roles_from_photos": 0,
+  "nr_of_coreference_chains": 8,
+  "average_nr_of_mentions_per_chain": 2.88,
+  "nr_of_mentions_per_chain": {
+    "emma": 13,
+    "lotte": 1,
+    "jonas": 2,
+    "mila": 3,
+    "sven": 1,
+    "dr_bakker": 1,
+    "parents": 1,
+    "20_other_participants": 1
+  },
+  "nr_of_unique_what": 6,
+  "what": {
+    "coffee": 2,
+    "yoghurt": 1,
+    "granola": 1,
+    "cheese sandwich": 1,
+    "apple": 1,
+    "groceries": 1
+  },
+  "nr_of_unique_with_what": 3,
+  "with_what": {
+    "bicycle": 2,
+    "phone": 1,
+    "shower": 1
+  }
+}

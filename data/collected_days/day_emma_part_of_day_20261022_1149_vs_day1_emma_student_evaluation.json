@@ -1,0 +1,395 @@
+{
+  "gold": "/Users/piek/Desktop/Combot2026/ma-communicative-robots/data/example_days/day1_emma_student.json",
+  "system": "/Users/piek/Desktop/Combot2026/ma-communicative-robots/data/collected_days/day_emma_part_of_day_20261022_1149.json",
+  "event_threshold": 0.55,
+  "max_gold_events": null,
+  "nr_of_gold_events": 20,
+  "modes": {
+    "exact": {
+      "events": {
+        "tp": 2.0,
+        "fp": 11.0,
+        "fn": 18.0,
+        "tn": null,
+        "precision": 0.154,
+        "recall": 0.1,
+        "f1": 0.121
+      },
+      "roles": {
+        "total": {
+          "tp": 9.0,
+          "fp": 46.0,
+          "fn": 118.0,
+          "tn": 2.0,
+          "precision": 0.164,
+          "recall": 0.071,
+          "f1": 0.099
+        },
+        "who": {
+          "tp": 2.0,
+          "fp": 11.0,
+          "fn": 18.0,
+          "tn": 0.0,
+          "precision": 0.154,
+          "recall": 0.1,
+          "f1": 0.121
+        },
+        "what": {
+          "tp": 1.0,
+          "fp": 4.0,
+          "fn": 14.0,
+          "tn": 1.0,
+          "precision": 0.2,
+          "recall": 0.067,
+          "f1": 0.1
+        },
+        "with_what": {
+          "tp": 1.0,
+          "fp": 5.0,
+          "fn": 19.0,
+          "tn": 0.0,
+          "precision": 0.167,
+          "recall": 0.05,
+          "f1": 0.077
+        },
+        "with_whom": {
+          "tp": 1.0,
+          "fp": 3.0,
+          "fn": 11.0,
+          "tn": 1.0,
+          "precision": 0.25,
+          "recall": 0.083,
+          "f1": 0.125
+        },
+        "where": {
+          "tp": 2.0,
+          "fp": 11.0,
+          "fn": 18.0,
+          "tn": 0.0,
+          "precision": 0.154,
+          "recall": 0.1,
+          "f1": 0.121
+        },
+        "when": {
+          "tp": 2.0,
+          "fp": 11.0,
+          "fn": 18.0,
+          "tn": 0.0,
+          "precision": 0.154,
+          "recall": 0.1,
+          "f1": 0.121
+        },
+        "how_long": {
+          "tp": 0.0,
+          "fp": 1.0,
+          "fn": 20.0,
+          "tn": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "role_fillers": {
+        "total": {
+          "tp": 8.286,
+          "fp": 58.714,
+          "fn": 156.714,
+          "tn": null,
+          "precision": 0.124,
+          "recall": 0.05,
+          "f1": 0.071
+        },
+        "who": {
+          "tp": 2.0,
+          "fp": 11.0,
+          "fn": 18.0,
+          "tn": null,
+          "precision": 0.154,
+          "recall": 0.1,
+          "f1": 0.121
+        },
+        "what": {
+          "tp": 2.0,
+          "fp": 8.0,
+          "fn": 23.0,
+          "tn": null,
+          "precision": 0.2,
+          "recall": 0.08,
+          "f1": 0.114
+        },
+        "with_what": {
+          "tp": 0.0,
+          "fp": 11.0,
+          "fn": 41.0,
+          "tn": null,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "with_whom": {
+          "tp": 1.0,
+          "fp": 5.0,
+          "fn": 18.0,
+          "tn": null,
+          "precision": 0.167,
+          "recall": 0.053,
+          "f1": 0.08
+        },
+        "where": {
+          "tp": 1.286,
+          "fp": 11.714,
+          "fn": 18.714,
+          "tn": null,
+          "precision": 0.099,
+          "recall": 0.064,
+          "f1": 0.078
+        },
+        "when": {
+          "tp": 2.0,
+          "fp": 11.0,
+          "fn": 18.0,
+          "tn": null,
+          "precision": 0.154,
+          "recall": 0.1,
+          "f1": 0.121
+        },
+        "how_long": {
+          "tp": 0.0,
+          "fp": 1.0,
+          "fn": 20.0,
+          "tn": null,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "event_alignment": [
+        {
+          "gold": "event1",
+          "system": "event1",
+          "similarity": 0.75,
+          "gold_label": "waking up",
+          "system_label": "wake up",
+          "comment": "similarity = 0.5 * time 1.00 + 0.25 * type 1.00 + 0.25 * label 0.00; label: 'wake up' instead of 'waking up'; with_what: missing, GOLD ['phone alarm']; where 0.43: the best match is 'Amsterdam', GOLD value 5 of 7, which scores 3/7, the most specific GOLD value is 'bedroom in her student flat'; how_long: missing, GOLD [10]"
+        },
+        {
+          "gold": "event3",
+          "system": "event4",
+          "similarity": 1.0,
+          "gold_label": "breakfast",
+          "system_label": "breakfast",
+          "comment": "similarity = 0.5 * time 1.00 + 0.25 * type 1.00 + 0.25 * label 1.00; what 2.00 of 3 GOLD values matched: collected ['yoghurt', 'fruit', 'coffee'], GOLD ['yoghurt', 'granola', 'coffee']; with_what 0.00 of 3 GOLD values matched: collected ['kitchen of her house', 'kitchen', 'her house', 'Amsterdam', 'Europe'], GOLD ['bowl', 'spoon', 'mug']; with_whom 1.00 of 1 GOLD values matched: collected ['Lotte', 'Suzie'], GOLD ['flatmate Lotte']; where 0.86: the best match is 'kitchen', GOLD value 2 of 7, which scores 6/7, the most specific GOLD value is 'shared kitchen in the student flat'; how_long: missing, GOLD [20]"
+        }
+      ],
+      "entity_alignment": {
+        "emma": "emma",
+        "lotte": "lotte"
+      }
+    },
+    "jaccard": {
+      "events": {
+        "tp": 5.0,
+        "fp": 8.0,
+        "fn": 15.0,
+        "tn": null,
+        "precision": 0.385,
+        "recall": 0.25,
+        "f1": 0.303
+      },
+      "roles": {
+        "total": {
+          "tp": 20.0,
+          "fp": 35.0,
+          "fn": 107.0,
+          "tn": 4.0,
+          "precision": 0.364,
+          "recall": 0.157,
+          "f1": 0.22
+        },
+        "who": {
+          "tp": 5.0,
+          "fp": 8.0,
+          "fn": 15.0,
+          "tn": 0.0,
+          "precision": 0.385,
+          "recall": 0.25,
+          "f1": 0.303
+        },
+        "what": {
+          "tp": 2.0,
+          "fp": 3.0,
+          "fn": 13.0,
+          "tn": 1.0,
+          "precision": 0.4,
+          "recall": 0.133,
+          "f1": 0.2
+        },
+        "with_what": {
+          "tp": 2.0,
+          "fp": 4.0,
+          "fn": 18.0,
+          "tn": 0.0,
+          "precision": 0.333,
+          "recall": 0.1,
+          "f1": 0.154
+        },
+        "with_whom": {
+          "tp": 1.0,
+          "fp": 3.0,
+          "fn": 11.0,
+          "tn": 3.0,
+          "precision": 0.25,
+          "recall": 0.083,
+          "f1": 0.125
+        },
+        "where": {
+          "tp": 5.0,
+          "fp": 8.0,
+          "fn": 15.0,
+          "tn": 0.0,
+          "precision": 0.385,
+          "recall": 0.25,
+          "f1": 0.303
+        },
+        "when": {
+          "tp": 5.0,
+          "fp": 8.0,
+          "fn": 15.0,
+          "tn": 0.0,
+          "precision": 0.385,
+          "recall": 0.25,
+          "f1": 0.303
+        },
+        "how_long": {
+          "tp": 0.0,
+          "fp": 1.0,
+          "fn": 20.0,
+          "tn": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "role_fillers": {
+        "total": {
+          "tp": 13.671,
+          "fp": 53.329,
+          "fn": 151.329,
+          "tn": null,
+          "precision": 0.204,
+          "recall": 0.083,
+          "f1": 0.118
+        },
+        "who": {
+          "tp": 5.0,
+          "fp": 8.0,
+          "fn": 15.0,
+          "tn": null,
+          "precision": 0.385,
+          "recall": 0.25,
+          "f1": 0.303
+        },
+        "what": {
+          "tp": 2.5,
+          "fp": 7.5,
+          "fn": 22.5,
+          "tn": null,
+          "precision": 0.25,
+          "recall": 0.1,
+          "f1": 0.143
+        },
+        "with_what": {
+          "tp": 0.0,
+          "fp": 11.0,
+          "fn": 41.0,
+          "tn": null,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "with_whom": {
+          "tp": 1.0,
+          "fp": 5.0,
+          "fn": 18.0,
+          "tn": null,
+          "precision": 0.167,
+          "recall": 0.053,
+          "f1": 0.08
+        },
+        "where": {
+          "tp": 2.571,
+          "fp": 10.429,
+          "fn": 17.429,
+          "tn": null,
+          "precision": 0.198,
+          "recall": 0.129,
+          "f1": 0.156
+        },
+        "when": {
+          "tp": 2.6,
+          "fp": 10.4,
+          "fn": 17.4,
+          "tn": null,
+          "precision": 0.2,
+          "recall": 0.13,
+          "f1": 0.158
+        },
+        "how_long": {
+          "tp": 0.0,
+          "fp": 1.0,
+          "fn": 20.0,
+          "tn": null,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "event_alignment": [
+        {
+          "gold": "event1",
+          "system": "event1",
+          "similarity": 0.833,
+          "gold_label": "waking up",
+          "system_label": "wake up",
+          "comment": "similarity = 0.5 * time 1.00 + 0.25 * type 1.00 + 0.25 * label 0.33; label: 'wake up' instead of 'waking up'; with_what: missing, GOLD ['phone alarm']; where 0.43: the best match is 'bedroom of her house' with 'bedroom', GOLD value 2 of 7, which scores 6/7, the most specific GOLD value is 'bedroom in her student flat'; how_long: missing, GOLD [10]"
+        },
+        {
+          "gold": "event3",
+          "system": "event4",
+          "similarity": 1.0,
+          "gold_label": "breakfast",
+          "system_label": "breakfast",
+          "comment": "similarity = 0.5 * time 1.00 + 0.25 * type 1.00 + 0.25 * label 1.00; what 2.00 of 3 GOLD values matched: collected ['yoghurt', 'fruit', 'coffee'], GOLD ['yoghurt', 'granola', 'coffee']; with_what 0.00 of 3 GOLD values matched: collected ['kitchen of her house', 'kitchen', 'her house', 'Amsterdam', 'Europe'], GOLD ['bowl', 'spoon', 'mug']; with_whom 1.00 of 1 GOLD values matched: collected ['Lotte', 'Suzie'], GOLD ['flatmate Lotte']; where 0.86: the best match is 'kitchen', GOLD value 2 of 7, which scores 6/7, the most specific GOLD value is 'shared kitchen in the student flat'; how_long: missing, GOLD [20]"
+        },
+        {
+          "gold": "event8",
+          "system": "event8",
+          "similarity": 0.625,
+          "gold_label": "lunch",
+          "system_label": "having lunch",
+          "comment": "similarity = 0.5 * time 0.50 + 0.25 * type 1.00 + 0.25 * label 0.50; time: no clock time (afternoon) instead of 12:35 for 25 minutes; label: 'having lunch' instead of 'lunch'; what 0.50 of 2 GOLD values matched: collected ['sandwich', 'coffee'], GOLD ['cheese sandwich', 'apple']; with_what: missing, GOLD ['lunch box', 'water bottle']; with_whom: missing, GOLD ['Mila']; where 0.43: the best match is 'Amsterdam', GOLD value 5 of 7, which scores 3/7, the most specific GOLD value is 'bench outside the library'; when 0.00: the best match is 'afternoon' with '12:35', GOLD value 1 of 5, which scores 5/5, the most specific GOLD value is '12:35'; how_long: missing, GOLD [25]"
+        },
+        {
+          "gold": "event13",
+          "system": "event9",
+          "similarity": 0.562,
+          "gold_label": "grocery shopping",
+          "system_label": "doing some shopping",
+          "comment": "similarity = 0.5 * time 0.50 + 0.25 * type 1.00 + 0.25 * label 0.25; time: no clock time (afternoon) instead of 16:05 for 20 minutes; label: 'doing some shopping' instead of 'grocery shopping'; what: missing, GOLD ['pasta', 'vegetables', 'cheese', 'bottle of prosecco']; with_what: missing, GOLD ['shopping bag', 'debit card']; where 0.43: the best match is 'Amsterdam', GOLD value 5 of 7, which scores 3/7, the most specific GOLD value is 'Albert Heijn supermarket'; when 0.20: the best match is 'afternoon' with 'late in the afternoon', GOLD value 4 of 5, which scores 2/5, the most specific GOLD value is '16:05'; how_long: missing, GOLD [20]"
+        },
+        {
+          "gold": "event18",
+          "system": "event12",
+          "similarity": 0.667,
+          "gold_label": "watching a series",
+          "system_label": "watching a Netflix series",
+          "comment": "similarity = 0.5 * time 0.50 + 0.25 * type 1.00 + 0.25 * label 0.67; time: no clock time (evening) instead of 20:30 for 90 minutes; label: 'watching a Netflix series' instead of 'watching a series'; what: missing, GOLD ['crime series']; with_what 0.00 of 2 GOLD values matched: collected ['Netflix'], GOLD ['laptop', 'streaming service']; where 0.43: the best match is 'Amsterdam', GOLD value 5 of 7, which scores 3/7, the most specific GOLD value is 'her bedroom'; when 0.40: the best match is 'evening' with 'in the evening', GOLD value 4 of 5, which scores 2/5, the most specific GOLD value is '20:30'; how_long: missing, GOLD [90]"
+        }
+      ],
+      "entity_alignment": {
+        "emma": "emma",
+        "lotte": "lotte"
+      }
+    }
+  }
+}
