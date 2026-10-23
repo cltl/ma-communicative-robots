@@ -69,21 +69,21 @@ The code is tested with Python 3.11. Create a virtual environment with venv or C
 Using venv:
 
 ```bash
-python3.11 -m venv evaluate
-source evaluate/bin/activate          # on Windows: evaluate\Scripts\activate
+python3.11 -m venv combot
+source combot/bin/activate          # on Windows: evaluate\Scripts\activate
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-python -m ipykernel install --user --name=evaluate
+python -m ipykernel install --user --name=combot
 ```
 
 Using Conda:
 
 ```bash
-conda create -n evaluate python=3.11
-conda activate evaluate
+conda create -n combot python=3.11
+conda activate combot
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-python -m ipykernel install --user --name=evaluate
+python -m ipykernel install --user --name=combot
 ```
 
 ```requirements.txt``` installs:
